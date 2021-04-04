@@ -1,0 +1,1535 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十一年法律第百三十二号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十一年法律第百三十二号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等に関する法律<wbr></span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等に関する法律<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第九条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第九条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　基本方針（第十条―第十条の三）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　基本方針（第十条―第十条の三）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　求職者及び求人者に対する指導等（第十一条―第十五条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　求職者及び求人者に対する指導等（第十一条―第十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　職業訓練等の充実（第十六条・第十七条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　職業訓練等の充実（第十六条・第十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　職業転換給付金（第十八条―第二十三条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　職業転換給付金（第十八条―第二十三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第六章　事業主による再就職の援助を促進するための措置等（第二十四条―第二十七条<wbr>）</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第六章　事業主による再就職の援助を促進するための措置等（第二十四条―第二十七条<wbr>）</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第七章　外国人の雇用管理の改善、再就職の促進等の措置（第二十八条―第三十条）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第七章　外国人の雇用管理の改善、再就職の促進等の措置（第二十八条―第三十条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第八章　職場における優越的な関係を背景とした言動に起因する問題に関して事業主の<wbr>講ずべき措置等（第三十条の二―第三十条の八）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第八章　職場における優越的な関係を背景とした言動に起因する問題に関して事業主の<wbr>講ずべき措置等（第三十条の二―第三十条の八）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第九章　国と地方公共団体との連携等（第三十一条・第三十二条）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第九章　国と地方公共団体との連携等（第三十一条・第三十二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第十章　雑則（第三十三条―第四十一条）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第十章　雑則（第三十三条―第四十一条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、国が、少子高齢化による人口構造の変化等の経済社会情勢の変化<wbr>に対応して、労働に関し、その政策全般にわたり、必要な施策を総合的に講ずることに<wbr>より、労働市場の機能が適切に発揮され、労働者の多様な事情に応じた雇用の安定及び<wbr>職業生活の充実並びに労働生産性の向上を促進して、労働者がその有する能力を有効に<wbr>発揮することができるようにし、これを通じて、労働者の職業の安定と経済的社会的地<wbr>位の向上とを図るとともに、経済及び社会の発展並びに完全雇用の達成に資することを<wbr>目的とする。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、国が、少子高齢化による人口構造の変化等の経済社会情勢の変化<wbr>に対応して、労働に関し、その政策全般にわたり、必要な施策を総合的に講ずることに<wbr>より、労働市場の機能が適切に発揮され、労働者の多様な事情に応じた雇用の安定及び<wbr>職業生活の充実並びに労働生産性の向上を促進して、労働者がその有する能力を有効に<wbr>発揮することができるようにし、これを通じて、労働者の職業の安定と経済的社会的地<wbr>位の向上とを図るとともに、経済及び社会の発展並びに完全雇用の達成に資することを<wbr>目的とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の運用に当たつては、労働者の職業選択の自由及び事業主の雇用の管理に<wbr>ついての自主性を尊重しなければならず、また、職業能力の開発及び向上を図り、職業<wbr>を通じて自立しようとする労働者の意欲を高め、かつ、労働者の職業を安定させるため<wbr>の事業主の努力を助長するように努めなければならない。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の運用に当たつては、労働者の職業選択の自由及び事業主の雇用の管理に<wbr>ついての自主性を尊重しなければならず、また、職業能力の開発及び向上を図り、職業<wbr>を通じて自立しようとする労働者の意欲を高め、かつ、労働者の職業を安定させるため<wbr>の事業主の努力を助長するように努めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「職業紹介機関」とは、公共職業安定所（職業安定法（昭和<wbr>二十二年法律第百四十一号）の規定により公共職業安定所の業務の一部を分担する学校<wbr>の長を含む。）、同法の規定により無料の職業紹介事業を行う地方公共団体及び同法の<wbr>規定により許可を受けて、又は届出をして職業紹介事業を行う者をいう。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「職業紹介機関」とは、公共職業安定所（職業安定法（昭和<wbr>二十二年法律第百四十一号）の規定により公共職業安定所の業務の一部を分担する学校<wbr>の長を含む。）、同法の規定により無料の職業紹介事業を行う地方公共団体及び同法の<wbr>規定により許可を受けて、又は届出をして職業紹介事業を行う者をいう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（基本的理念）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（基本的理念）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第三条　労働者は、その職業生活の設計が適切に行われ、並びにその設計に即した能力<wbr>の開発及び向上並びに転職に当たつての円滑な再就職の促進その他の措置が効果的に実<wbr>施されることにより、職業生活の全期間を通じて、その職業の安定が図られるように配<wbr>慮されるものとする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第三条　労働者は、その職業生活の設計が適切に行われ、並びにその設計に即した能力<wbr>の開発及び向上並びに転職に当たつての円滑な再就職の促進その他の措置が効果的に実<wbr>施されることにより、職業生活の全期間を通じて、その職業の安定が図られるように配<wbr>慮されるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　労働者は、職務の内容及び職務に必要な能力、経験その他の職務遂行上必要な事項<wbr>（以下この項において「能力等」という。）の内容が明らかにされ、並びにこれらに即<wbr>した評価方法により能力等を公正に評価され、当該評価に基づく処遇を受けることその<wbr>他の適切な処遇を確保するための措置が効果的に実施されることにより、その職業の安<wbr>定が図られるように配慮されるものとする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　労働者は、職務の内容及び職務に必要な能力、経験その他の職務遂行上必要な事項<wbr>（以下この項において「能力等」という。）の内容が明らかにされ、並びにこれらに即<wbr>した評価方法により能力等を公正に評価され、当該評価に基づく処遇を受けることその<wbr>他の適切な処遇を確保するための措置が効果的に実施されることにより、その職業の安<wbr>定が図られるように配慮されるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（国の施策）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（国の施策）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第四条　国は、第一条第一項の目的を達成するため、前条に規定する基本的理念に従つ<wbr>て、次に掲げる事項について、総合的に取り組まなければならない。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第四条　国は、第一条第一項の目的を達成するため、前条に規定する基本的理念に従つ<wbr>て、次に掲げる事項について、総合的に取り組まなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">一　各人が生活との調和を保ちつつその意欲及び能力に応じて就業することを促進する<wbr>ため、労働時間の短縮その他の労働条件の改善、多様な就業形態の普及及び雇用形態又<wbr>は就業形態の異なる労働者の間の均衡のとれた待遇の確保に関する施策を充実すること<wbr>。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">一　各人が生活との調和を保ちつつその意欲及び能力に応じて就業することを促進する<wbr>ため、労働時間の短縮その他の労働条件の改善、多様な就業形態の普及及び雇用形態又<wbr>は就業形態の異なる労働者の間の均衡のとれた待遇の確保に関する施策を充実すること<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">二　各人がその有する能力に適合する職業に就くことをあつせんするため、及び産業の<wbr>必要とする労働力を充足するため、職業指導及び職業紹介に関する施策を充実すること<wbr>。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">二　各人がその有する能力に適合する職業に就くことをあつせんするため、及び産業の<wbr>必要とする労働力を充足するため、職業指導及び職業紹介に関する施策を充実すること<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">三　各人がその有する能力に適し、かつ、技術の進歩、産業構造の変動等に即応した技<wbr>能及びこれに関する知識を習得し、これらにふさわしい評価を受けることを促進するた<wbr>め、職業訓練及び職業能力検定に関する施策を充実すること。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">三　各人がその有する能力に適し、かつ、技術の進歩、産業構造の変動等に即応した技<wbr>能及びこれに関する知識を習得し、これらにふさわしい評価を受けることを促進するた<wbr>め、職業訓練及び職業能力検定に関する施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">四　就職が困難な者の就職を容易にし、かつ、労働力の需給の不均衡を是正するため、<wbr>労働者の職業の転換、地域間の移動、職場への適応等を援助するために必要な施策を充<wbr>実すること。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">四　就職が困難な者の就職を容易にし、かつ、労働力の需給の不均衡を是正するため、<wbr>労働者の職業の転換、地域間の移動、職場への適応等を援助するために必要な施策を充<wbr>実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">五　事業規模の縮小等（事業規模若しくは事業活動の縮小又は事業の転換若しくは廃止<wbr>をいう。以下同じ。）の際に、失業を予防するとともに、離職を余儀なくされる労働者<wbr>の円滑な再就職を促進するために必要な施策を充実すること。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">五　事業規模の縮小等（事業規模若しくは事業活動の縮小又は事業の転換若しくは廃止<wbr>をいう。以下同じ。）の際に、失業を予防するとともに、離職を余儀なくされる労働者<wbr>の円滑な再就職を促進するために必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">六　女性の職業及び子の養育又は家族の介護を行う者の職業の安定を図るため、雇用の<wbr>継続、円滑な再就職の促進、母子家庭の母及び父子家庭の父並びに寡婦の雇用の促進そ<wbr>の他のこれらの者の就業を促進するために必要な施策を充実すること。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">六　女性の職業及び子の養育又は家族の介護を行う者の職業の安定を図るため、雇用の<wbr>継続、円滑な再就職の促進、母子家庭の母及び父子家庭の父並びに寡婦の雇用の促進そ<wbr>の他のこれらの者の就業を促進するために必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">七　青少年の職業の安定を図るため、職業についての青少年の関心と理解を深めるとと<wbr>もに、雇用管理の改善の促進、実践的な職業能力の開発及び向上の促進その他の青少年<wbr>の雇用を促進するために必要な施策を充実すること。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">七　青少年の職業の安定を図るため、職業についての青少年の関心と理解を深めるとと<wbr>もに、雇用管理の改善の促進、実践的な職業能力の開発及び向上の促進その他の青少年<wbr>の雇用を促進するために必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">八　高年齢者の職業の安定を図るため、定年の引上げ、継続雇用制度の導入等の円滑な<wbr>実施の促進、再就職の促進、多様な就業機会の確保その他の高年齢者がその年齢にかか<wbr>わりなくその意欲及び能力に応じて就業することができるようにするために必要な施策<wbr>を充実すること。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">八　高年齢者の職業の安定を図るため、定年の引上げ、継続雇用制度の導入等の円滑な<wbr>実施の促進、再就職の促進、多様な就業機会の確保その他の高年齢者がその年齢にかか<wbr>わりなくその意欲及び能力に応じて就業することができるようにするために必要な施策<wbr>を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">九　疾病、負傷その他の理由により治療を受ける者の職業の安定を図るため、雇用の継<wbr>続、離職を余儀なくされる労働者の円滑な再就職の促進その他の治療の状況に応じた就<wbr>業を促進するために必要な施策を充実すること。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">九　疾病、負傷その他の理由により治療を受ける者の職業の安定を図るため、雇用の継<wbr>続、離職を余儀なくされる労働者の円滑な再就職の促進その他の治療の状況に応じた就<wbr>業を促進するために必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">十　障害者の職業の安定を図るため、雇用の促進、職業リハビリテーションの推進その<wbr>他の障害者がその職業生活において自立することを促進するために必要な施策を充実す<wbr>ること。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">十　障害者の職業の安定を図るため、雇用の促進、職業リハビリテーションの推進その<wbr>他の障害者がその職業生活において自立することを促進するために必要な施策を充実す<wbr>ること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">十一　不安定な雇用状態の是正を図るため、雇用形態及び就業形態の改善等を促進する<wbr>ために必要な施策を充実すること。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">十一　不安定な雇用状態の是正を図るため、雇用形態及び就業形態の改善等を促進する<wbr>ために必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">十二　高度の専門的な知識又は技術を有する外国人（日本の国籍を有しない者をいう。<wbr>以下この条において同じ。）の我が国における就業を促進するとともに、労働に従事す<wbr>ることを目的として在留する外国人について、適切な雇用機会の確保が図られるように<wbr>するため、雇用管理の改善の促進及び離職した場合の再就職の促進を図るために必要な<wbr>施策を充実すること。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">十二　高度の専門的な知識又は技術を有する外国人（日本の国籍を有しない者をいう。<wbr>以下この条において同じ。）の我が国における就業を促進するとともに、労働に従事す<wbr>ることを目的として在留する外国人について、適切な雇用機会の確保が図られるように<wbr>するため、雇用管理の改善の促進及び離職した場合の再就職の促進を図るために必要な<wbr>施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">十三　地域的な雇用構造の改善を図るため、雇用機会が不足している地域における労働<wbr>者の雇用を促進するために必要な施策を充実すること。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">十三　地域的な雇用構造の改善を図るため、雇用機会が不足している地域における労働<wbr>者の雇用を促進するために必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">十四　職場における労働者の就業環境を害する言動に起因する問題の解決を促進するた<wbr>めに必要な施策を充実すること。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">十四　職場における労働者の就業環境を害する言動に起因する問題の解決を促進するた<wbr>めに必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">十五　前各号に掲げるもののほか、職業の安定、産業の必要とする労働力の確保等に資<wbr>する雇用管理の改善の促進その他労働者がその有する能力を有効に発揮することができ<wbr>るようにするために必要な施策を充実すること。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">十五　前各号に掲げるもののほか、職業の安定、産業の必要とする労働力の確保等に資<wbr>する雇用管理の改善の促進その他労働者がその有する能力を有効に発揮することができ<wbr>るようにするために必要な施策を充実すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">２　国は、前項各号に掲げる施策及びこれに関連する施策の充実に取り組むに際しては<wbr>、国民経済の健全な発展、それに即応する企業経営の基盤の改善、地域振興等の諸施策<wbr>と相まつて、雇用機会の着実な増大及び地域間における就業機会等の不均衡の是正を図<wbr>るとともに、労働者がその有する能力を有効に発揮することの妨げとなつている雇用慣<wbr>行の是正を期するように配慮しなければならない。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">２　国は、前項各号に掲げる施策及びこれに関連する施策の充実に取り組むに際しては<wbr>、国民経済の健全な発展、それに即応する企業経営の基盤の改善、地域振興等の諸施策<wbr>と相まつて、雇用機会の着実な増大及び地域間における就業機会等の不均衡の是正を図<wbr>るとともに、労働者がその有する能力を有効に発揮することの妨げとなつている雇用慣<wbr>行の是正を期するように配慮しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　国は、第一項第十二号に規定する施策の充実に取り組むに際しては、外国人の入国<wbr>及び在留の管理に関する施策と相まつて、外国人の不法就労活動（出入国管理及び難民<wbr>認定法（昭和二十六年政令第三百十九号）第二十四条第三号の四イに規定する不法就労<wbr>活動をいう。）を防止し、労働力の不適正な供給が行われないようにすることにより、<wbr>労働市場を通じた需給調整の機能が適切に発揮されるよう努めなければならない。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　国は、第一項第十二号に規定する施策の充実に取り組むに際しては、外国人の入国<wbr>及び在留の管理に関する施策と相まつて、外国人の不法就労活動（出入国管理及び難民<wbr>認定法（昭和二十六年政令第三百十九号）第二十四条第三号の四イに規定する不法就労<wbr>活動をいう。）を防止し、労働力の不適正な供給が行われないようにすることにより、<wbr>労働市場を通じた需給調整の機能が適切に発揮されるよう努めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体の施策）</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体の施策）</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第五条　地方公共団体は、国の施策と相まつて、当該地域の実情に応じ、労働に関する<wbr>必要な施策を講ずるように努めなければならない。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第五条　地方公共団体は、国の施策と相まつて、当該地域の実情に応じ、労働に関する<wbr>必要な施策を講ずるように努めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（事業主の責務）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（事業主の責務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第六条　事業主は、その雇用する労働者の労働時間の短縮その他の労働条件の改善その<wbr>他の労働者が生活との調和を保ちつつその意欲及び能力に応じて就業することができる<wbr>環境の整備に努めなければならない。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第六条　事業主は、その雇用する労働者の労働時間の短縮その他の労働条件の改善その<wbr>他の労働者が生活との調和を保ちつつその意欲及び能力に応じて就業することができる<wbr>環境の整備に努めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、事業規模の縮小等に伴い離職を余儀なくされる労働者について、当該労<wbr>働者が行う求職活動に対する援助その他の再就職の援助を行うことにより、その職業の<wbr>安定を図るように努めなければならない。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、事業規模の縮小等に伴い離職を余儀なくされる労働者について、当該労<wbr>働者が行う求職活動に対する援助その他の再就職の援助を行うことにより、その職業の<wbr>安定を図るように努めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第七条　事業主は、外国人（日本の国籍を有しない者をいい、厚生労働省令で定める者<wbr>を除く。以下同じ。）が我が国の雇用慣行に関する知識及び求職活動に必要な雇用に関<wbr>する情報を十分に有していないこと等にかんがみ、その雇用する外国人がその有する能<wbr>力を有効に発揮できるよう、職業に適応することを容易にするための措置の実施その他<wbr>の雇用管理の改善に努めるとともに、その雇用する外国人が解雇（自己の責めに帰すべ<wbr>き理由によるものを除く。）その他の厚生労働省令で定める理由により離職する場合に<wbr>おいて、当該外国人が再就職を希望するときは、求人の開拓その他当該外国人の再就職<wbr>の援助に関し必要な措置を講ずるように努めなければならない。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第七条　事業主は、外国人（日本の国籍を有しない者をいい、厚生労働省令で定める者<wbr>を除く。以下同じ。）が我が国の雇用慣行に関する知識及び求職活動に必要な雇用に関<wbr>する情報を十分に有していないこと等にかんがみ、その雇用する外国人がその有する能<wbr>力を有効に発揮できるよう、職業に適応することを容易にするための措置の実施その他<wbr>の雇用管理の改善に努めるとともに、その雇用する外国人が解雇（自己の責めに帰すべ<wbr>き理由によるものを除く。）その他の厚生労働省令で定める理由により離職する場合に<wbr>おいて、当該外国人が再就職を希望するときは、求人の開拓その他当該外国人の再就職<wbr>の援助に関し必要な措置を講ずるように努めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（指針）</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（指針）</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第八条　厚生労働大臣は、前条に定める事項に関し、事業主が適切に対処するために必<wbr>要な指針を定め、これを公表するものとする。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第八条　厚生労働大臣は、前条に定める事項に関し、事業主が適切に対処するために必<wbr>要な指針を定め、これを公表するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（募集及び採用における年齢にかかわりない均等な機会の確保）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（募集及び採用における年齢にかかわりない均等な機会の確保）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第九条　事業主は、労働者がその有する能力を有効に発揮するために必要であると認め<wbr>られるときとして厚生労働省令で定めるときは、労働者の募集及び採用について、厚生<wbr>労働省令で定めるところにより、その年齢にかかわりなく均等な機会を与えなければな<wbr>らない。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第九条　事業主は、労働者がその有する能力を有効に発揮するために必要であると認め<wbr>られるときとして厚生労働省令で定めるときは、労働者の募集及び採用について、厚生<wbr>労働省令で定めるところにより、その年齢にかかわりなく均等な機会を与えなければな<wbr>らない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第二章　基本方針</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第二章　基本方針</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（基本方針）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（基本方針）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第十条　国は、労働者がその有する能力を有効に発揮することができるようにするため<wbr>に必要な労働に関する施策の総合的な推進に関する基本的な方針（以下「基本方針」と<wbr>いう。）を定めなければならない。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第十条　国は、労働者がその有する能力を有効に発揮することができるようにするため<wbr>に必要な労働に関する施策の総合的な推進に関する基本的な方針（以下「基本方針」と<wbr>いう。）を定めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　基本方針に定める事項は、次のとおりとする。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　基本方針に定める事項は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　労働者がその有する能力を有効に発揮することができるようにすることの意義に関<wbr>する事項</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　労働者がその有する能力を有効に発揮することができるようにすることの意義に関<wbr>する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">二　第四条第一項各号に掲げる事項について講ずる施策に関する基本的事項</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">二　第四条第一項各号に掲げる事項について講ずる施策に関する基本的事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">三　前二号に掲げるもののほか、労働者がその有する能力を有効に発揮することができ<wbr>るようにすることに関する重要事項</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">三　前二号に掲げるもののほか、労働者がその有する能力を有効に発揮することができ<wbr>るようにすることに関する重要事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、基本方針の案を作成し、閣議の決定を求めなければならない。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、基本方針の案を作成し、閣議の決定を求めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">４　厚生労働大臣は、基本方針の案を作成しようとするときは、あらかじめ、都道府県<wbr>知事の意見を求めるとともに、労働政策審議会の意見を聴かなければならない。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">４　厚生労働大臣は、基本方針の案を作成しようとするときは、あらかじめ、都道府県<wbr>知事の意見を求めるとともに、労働政策審議会の意見を聴かなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">５　厚生労働大臣は、第三項の規定による閣議の決定があつたときは、遅滞なく、基本<wbr>方針を公表しなければならない。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">５　厚生労働大臣は、第三項の規定による閣議の決定があつたときは、遅滞なく、基本<wbr>方針を公表しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">６　厚生労働大臣は、基本方針の案を作成するため必要があると認めるときは、関係行<wbr>政機関の長に対し、資料の提出その他必要な協力を求めることができる。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">６　厚生労働大臣は、基本方針の案を作成するため必要があると認めるときは、関係行<wbr>政機関の長に対し、資料の提出その他必要な協力を求めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">７　国は、労働に関する施策をめぐる経済社会情勢の変化を勘案し、基本方針に検討を<wbr>加え、必要があると認めるときは、これを変更しなければならない。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">７　国は、労働に関する施策をめぐる経済社会情勢の変化を勘案し、基本方針に検討を<wbr>加え、必要があると認めるときは、これを変更しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">８　第三項から第六項までの規定は、基本方針の変更について準用する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">８　第三項から第六項までの規定は、基本方針の変更について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（関係機関への要請）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（関係機関への要請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十条の二　厚生労働大臣は、必要があると認めるときは、関係行政機関の長に対し、<wbr>基本方針において定められた施策で、関係行政機関の所管に係るものの実施について、<wbr>必要な要請をすることができる。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十条の二　厚生労働大臣は、必要があると認めるときは、関係行政機関の長に対し、<wbr>基本方針において定められた施策で、関係行政機関の所管に係るものの実施について、<wbr>必要な要請をすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（中小企業における取組の推進のための関係者間の連携体制の整備）</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（中小企業における取組の推進のための関係者間の連携体制の整備）</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">第十条の三　国は、労働時間の短縮その他の労働条件の改善、多様な就業形態の普及、<wbr>雇用形態又は就業形態の異なる労働者の間の均衡のとれた待遇の確保その他の基本方針<wbr>において定められた施策の実施に関し、中小企業における取組が円滑に進むよう、地方<wbr>公共団体、中小企業者を構成員とする団体その他の事業主団体、労働者団体その他の関<wbr>係者により構成される協議会の設置その他のこれらの者の間の連携体制の整備に必要な<wbr>施策を講ずるように努めるものとする。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">第十条の三　国は、労働時間の短縮その他の労働条件の改善、多様な就業形態の普及、<wbr>雇用形態又は就業形態の異なる労働者の間の均衡のとれた待遇の確保その他の基本方針<wbr>において定められた施策の実施に関し、中小企業における取組が円滑に進むよう、地方<wbr>公共団体、中小企業者を構成員とする団体その他の事業主団体、労働者団体その他の関<wbr>係者により構成される協議会の設置その他のこれらの者の間の連携体制の整備に必要な<wbr>施策を講ずるように努めるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第三章　求職者及び求人者に対する指導等</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第三章　求職者及び求人者に対する指導等</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（雇用情報）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（雇用情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十一条　厚生労働大臣は、求人と求職との迅速かつ適正な結合に資するため、労働力<wbr>の需給の状況、求人及び求職の条件その他必要な雇用に関する情報（以下「雇用情報」<wbr>という。）を収集し、及び整理しなければならない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十一条　厚生労働大臣は、求人と求職との迅速かつ適正な結合に資するため、労働力<wbr>の需給の状況、求人及び求職の条件その他必要な雇用に関する情報（以下「雇用情報」<wbr>という。）を収集し、及び整理しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　厚生労働大臣は、雇用情報を、求職者、求人者その他の関係者及び職業紹介機関、<wbr>職業訓練機関、教育機関その他の関係機関が、職業の選択、労働者の雇入れ、職業指導<wbr>、職業紹介、職業訓練その他の措置を行うに際して活用することができるように提供す<wbr>るものとする。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　厚生労働大臣は、雇用情報を、求職者、求人者その他の関係者及び職業紹介機関、<wbr>職業訓練機関、教育機関その他の関係機関が、職業の選択、労働者の雇入れ、職業指導<wbr>、職業紹介、職業訓練その他の措置を行うに際して活用することができるように提供す<wbr>るものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、雇用情報の収集、整理及び活用並びに利用のための提供が迅速か<wbr>つ効果的に行われるために必要な組織を維持し、及び整備しなければならない。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、雇用情報の収集、整理及び活用並びに利用のための提供が迅速か<wbr>つ効果的に行われるために必要な組織を維持し、及び整備しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（職業に関する調査研究）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（職業に関する調査研究）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第十二条　厚生労働大臣は、職業の現況及び動向の分析、職業に関する適性の検査及び<wbr>適応性の増大並びに職務分析のための方法その他職業に関する基礎的事項について、調<wbr>査研究をしなければならない。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第十二条　厚生労働大臣は、職業の現況及び動向の分析、職業に関する適性の検査及び<wbr>適応性の増大並びに職務分析のための方法その他職業に関する基礎的事項について、調<wbr>査研究をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項の規定は、前項の調査研究の成果（以下「職業に関する調査研究の成果<wbr>」という。）について準用する。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項の規定は、前項の調査研究の成果（以下「職業に関する調査研究の成果<wbr>」という。）について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（求職者に対する指導）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（求職者に対する指導）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第十三条　職業紹介機関は、求職者に対して、雇用情報、職業に関する調査研究の成果<wbr>等を提供し、かつ、これに基づき職種、就職地その他の求職の内容、必要な技能等につ<wbr>いて指導することにより、求職者がその適性、能力、経験、技能の程度等にふさわしい<wbr>職業を選択することを促進し、もつて職業選択の自由が積極的に生かされるように努め<wbr>なければならない。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第十三条　職業紹介機関は、求職者に対して、雇用情報、職業に関する調査研究の成果<wbr>等を提供し、かつ、これに基づき職種、就職地その他の求職の内容、必要な技能等につ<wbr>いて指導することにより、求職者がその適性、能力、経験、技能の程度等にふさわしい<wbr>職業を選択することを促進し、もつて職業選択の自由が積極的に生かされるように努め<wbr>なければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（求人者に対する指導）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（求人者に対する指導）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第十四条　職業紹介機関は、求人者に対して、雇用情報、職業に関する調査研究の成果<wbr>等を提供し、かつ、これに基づき求人の内容について指導することにより、求人者が当<wbr>該作業又は職務に適合する労働者を雇い入れることを促進するように努めなければなら<wbr>ない。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第十四条　職業紹介機関は、求人者に対して、雇用情報、職業に関する調査研究の成果<wbr>等を提供し、かつ、これに基づき求人の内容について指導することにより、求人者が当<wbr>該作業又は職務に適合する労働者を雇い入れることを促進するように努めなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">２　職業紹介機関は、労働力の需給の適正な均衡を図るために必要があると認めるとき<wbr>は、求人者に対して、雇用情報等を提供し、かつ、これに基づき求人の時期、人員又は<wbr>地域その他の求人の方法について指導することができる。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">２　職業紹介機関は、労働力の需給の適正な均衡を図るために必要があると認めるとき<wbr>は、求人者に対して、雇用情報等を提供し、かつ、これに基づき求人の時期、人員又は<wbr>地域その他の求人の方法について指導することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（雇用に関する援助）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（雇用に関する援助）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第十五条　職業安定機関及び公共職業能力開発施設は、労働者の雇入れ又は配置、適性<wbr>検査、職業訓練その他の雇用に関する事項について事業主、労働組合その他の関係者か<wbr>ら援助を求められたときは、雇用情報、職業に関する調査研究の成果等を活用してその<wbr>者に対して必要な助言その他の措置を行わなければならない。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第十五条　職業安定機関及び公共職業能力開発施設は、労働者の雇入れ又は配置、適性<wbr>検査、職業訓練その他の雇用に関する事項について事業主、労働組合その他の関係者か<wbr>ら援助を求められたときは、雇用情報、職業に関する調査研究の成果等を活用してその<wbr>者に対して必要な助言その他の措置を行わなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第四章　職業訓練等の充実</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第四章　職業訓練等の充実</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（職業訓練の充実）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（職業訓練の充実）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第十六条　国は、職業訓練施設の整備、職業訓練の内容の充実及び方法の研究開発、職<wbr>業訓練指導員の養成確保及び資質の向上等職業訓練を充実するために必要な施策を積極<wbr>的に講ずるものとする。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第十六条　国は、職業訓練施設の整備、職業訓練の内容の充実及び方法の研究開発、職<wbr>業訓練指導員の養成確保及び資質の向上等職業訓練を充実するために必要な施策を積極<wbr>的に講ずるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　国は、労働者の職業能力の開発及び向上が効果的に図られるようにするため、公共<wbr>職業能力開発施設が行う職業訓練と事業主又はその団体が行う職業訓練とが相互に密接<wbr>な関連の下で行われるように努めなければならない。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　国は、労働者の職業能力の開発及び向上が効果的に図られるようにするため、公共<wbr>職業能力開発施設が行う職業訓練と事業主又はその団体が行う職業訓練とが相互に密接<wbr>な関連の下で行われるように努めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（職業能力検定制度の充実）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（職業能力検定制度の充実）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十七条　国は、技術の進歩の状況、円滑な再就職のために必要な職業能力の水準その<wbr>他の事情を考慮して、事業主団体その他の関係者の協力の下に、職業能力の評価のため<wbr>の適正な基準を設定し、これに準拠して労働者の有する職業能力の程度を検定する制度<wbr>を確立し、及びその充実を図ることにより、労働者の職業能力の開発及び向上、職業の<wbr>安定並びに経済的社会的地位の向上を図るように努めるものとする。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十七条　国は、技術の進歩の状況、円滑な再就職のために必要な職業能力の水準その<wbr>他の事情を考慮して、事業主団体その他の関係者の協力の下に、職業能力の評価のため<wbr>の適正な基準を設定し、これに準拠して労働者の有する職業能力の程度を検定する制度<wbr>を確立し、及びその充実を図ることにより、労働者の職業能力の開発及び向上、職業の<wbr>安定並びに経済的社会的地位の向上を図るように努めるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第五章　職業転換給付金</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第五章　職業転換給付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（職業転換給付金の支給）</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（職業転換給付金の支給）</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第十八条　国及び都道府県は、他の法令の規定に基づき支給するものを除くほか、労働<wbr>者がその有する能力に適合する職業に就くことを容易にし、及び促進するため、求職者<wbr>その他の労働者又は事業主に対して、政令で定める区分に従い、次に掲げる給付金（以<wbr>下「職業転換給付金」という。）を支給することができる。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第十八条　国及び都道府県は、他の法令の規定に基づき支給するものを除くほか、労働<wbr>者がその有する能力に適合する職業に就くことを容易にし、及び促進するため、求職者<wbr>その他の労働者又は事業主に対して、政令で定める区分に従い、次に掲げる給付金（以<wbr>下「職業転換給付金」という。）を支給することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">一　求職者の求職活動の促進とその生活の安定とを図るための給付金</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">一　求職者の求職活動の促進とその生活の安定とを図るための給付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">二　求職者の知識及び技能の習得を容易にするための給付金</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">二　求職者の知識及び技能の習得を容易にするための給付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">三　広範囲の地域にわたる求職活動又は求職活動を容易にするための役務の利用に要す<wbr>る費用に充てるための給付金</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">三　広範囲の地域にわたる求職活動又は求職活動を容易にするための役務の利用に要す<wbr>る費用に充てるための給付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">四　就職又は知識若しくは技能の習得をするための移転に要する費用に充てるための給<wbr>付金</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">四　就職又は知識若しくは技能の習得をするための移転に要する費用に充てるための給<wbr>付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">五　求職者を作業環境に適応させる訓練を行うことを促進するための給付金</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">五　求職者を作業環境に適応させる訓練を行うことを促進するための給付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げるもののほか、政令で定める給付金</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げるもののほか、政令で定める給付金 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（支給基準等）</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（支給基準等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第十九条　職業転換給付金の支給に関し必要な基準は、厚生労働省令で定める。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第十九条　職業転換給付金の支給に関し必要な基準は、厚生労働省令で定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">２　前項の基準の作成及びその運用に当たつては、他の法令の規定に基づき支給する給<wbr>付金でこれに類するものとの関連を十分に参酌し、求職者の雇用が促進されるように配<wbr>慮しなければならない。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">２　前項の基準の作成及びその運用に当たつては、他の法令の規定に基づき支給する給<wbr>付金でこれに類するものとの関連を十分に参酌し、求職者の雇用が促進されるように配<wbr>慮しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（国の負担）</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（国の負担）</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第二十条　国は、政令で定めるところにより、都道府県が支給する職業転換給付金に要<wbr>する費用の一部を負担する。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第二十条　国は、政令で定めるところにより、都道府県が支給する職業転換給付金に要<wbr>する費用の一部を負担する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（譲渡等の禁止）</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（譲渡等の禁止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　職業転換給付金の支給を受けることとなつた者の当該支給を受ける権利は<wbr>、譲り渡し、担保に供し、又は差し押えることができない。ただし、事業主に係る当該<wbr>権利については、国税滞納処分（その例による処分を含む。）により差し押える場合は<wbr>、この限りでない。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　職業転換給付金の支給を受けることとなつた者の当該支給を受ける権利は<wbr>、譲り渡し、担保に供し、又は差し押えることができない。ただし、事業主に係る当該<wbr>権利については、国税滞納処分（その例による処分を含む。）により差し押える場合は<wbr>、この限りでない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（公課の禁止）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（公課の禁止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　租税その他の公課は、職業転換給付金（事業主に対して支給するものを除<wbr>く。）を標準として、課することができない。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　租税その他の公課は、職業転換給付金（事業主に対して支給するものを除<wbr>く。）を標準として、課することができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（連絡及び協力）</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（連絡及び協力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　都道府県労働局、公共職業安定所、都道府県及び独立行政法人高齢・障害<wbr>・求職者雇用支援機構は、職業転換給付金の支給が円滑かつ効果的に行われるように相<wbr>互に緊密に連絡し、及び協力しなければならない。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　都道府県労働局、公共職業安定所、都道府県及び独立行政法人高齢・障害<wbr>・求職者雇用支援機構は、職業転換給付金の支給が円滑かつ効果的に行われるように相<wbr>互に緊密に連絡し、及び協力しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第六章　事業主による再就職の援助を促進するための措置等</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第六章　事業主による再就職の援助を促進するための措置等</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（再就職援助計画の作成等）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（再就職援助計画の作成等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　事業主は、その実施に伴い一の事業所において相当数の労働者が離職を余<wbr>儀なくされることが見込まれる事業規模の縮小等であつて厚生労働省令で定めるものを<wbr>行おうとするときは、厚生労働省令で定めるところにより、当該離職を余儀なくされる<wbr>労働者の再就職の援助のための措置に関する計画（以下「再就職援助計画」という。）<wbr>を作成しなければならない。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　事業主は、その実施に伴い一の事業所において相当数の労働者が離職を余<wbr>儀なくされることが見込まれる事業規模の縮小等であつて厚生労働省令で定めるものを<wbr>行おうとするときは、厚生労働省令で定めるところにより、当該離職を余儀なくされる<wbr>労働者の再就職の援助のための措置に関する計画（以下「再就職援助計画」という。）<wbr>を作成しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、前項の規定により再就職援助計画を作成するに当たつては、当該再就職<wbr>援助計画に係る事業所に、労働者の過半数で組織する労働組合がある場合においてはそ<wbr>の労働組合の、労働者の過半数で組織する労働組合がない場合においては労働者の過半<wbr>数を代表する者の意見を聴かなければならない。当該再就職援助計画を変更しようとす<wbr>るときも、同様とする。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、前項の規定により再就職援助計画を作成するに当たつては、当該再就職<wbr>援助計画に係る事業所に、労働者の過半数で組織する労働組合がある場合においてはそ<wbr>の労働組合の、労働者の過半数で組織する労働組合がない場合においては労働者の過半<wbr>数を代表する者の意見を聴かなければならない。当該再就職援助計画を変更しようとす<wbr>るときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">３　事業主は、前二項の規定により再就職援助計画を作成したときは、厚生労働省令で<wbr>定めるところにより、公共職業安定所長に提出し、その認定を受けなければならない。<wbr>当該再就職援助計画を変更したときも、同様とする。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">３　事業主は、前二項の規定により再就職援助計画を作成したときは、厚生労働省令で<wbr>定めるところにより、公共職業安定所長に提出し、その認定を受けなければならない。<wbr>当該再就職援助計画を変更したときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">４　公共職業安定所長は、前項の認定の申請があつた場合において、その再就職援助計<wbr>画で定める措置の内容が再就職の促進を図る上で適当でないと認めるときは、当該事業<wbr>主に対して、その変更を求めることができる。その変更を求めた場合において、当該事<wbr>業主がその求めに応じなかつたときは、公共職業安定所長は、同項の認定を行わないこ<wbr>とができる。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">４　公共職業安定所長は、前項の認定の申請があつた場合において、その再就職援助計<wbr>画で定める措置の内容が再就職の促進を図る上で適当でないと認めるときは、当該事業<wbr>主に対して、その変更を求めることができる。その変更を求めた場合において、当該事<wbr>業主がその求めに応じなかつたときは、公共職業安定所長は、同項の認定を行わないこ<wbr>とができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">５　第三項の認定の申請をした事業主は、当該申請をした日に、第二十七条第一項の規<wbr>定による届出をしたものとみなす。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">５　第三項の認定の申請をした事業主は、当該申請をした日に、第二十七条第一項の規<wbr>定による届出をしたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　事業主は、一の事業所について行おうとする事業規模の縮小等が前条第一<wbr>項の規定に該当しない場合においても、厚生労働省令で定めるところにより、当該事業<wbr>規模の縮小等に伴い離職を余儀なくされる労働者に関し、再就職援助計画を作成し、公<wbr>共職業安定所長に提出して、その認定を受けることができる。当該再就職援助計画を変<wbr>更したときも、同様とする。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　事業主は、一の事業所について行おうとする事業規模の縮小等が前条第一<wbr>項の規定に該当しない場合においても、厚生労働省令で定めるところにより、当該事業<wbr>規模の縮小等に伴い離職を余儀なくされる労働者に関し、再就職援助計画を作成し、公<wbr>共職業安定所長に提出して、その認定を受けることができる。当該再就職援助計画を変<wbr>更したときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項の規定は前項の規定により再就職援助計画を作成し、又は変更する場合<wbr>について、同条第四項及び第五項の規定は前項の認定の申請があつた場合について準用<wbr>する。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項の規定は前項の規定により再就職援助計画を作成し、又は変更する場合<wbr>について、同条第四項及び第五項の規定は前項の認定の申請があつた場合について準用<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">（円滑な再就職の促進のための助成及び援助）</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">（円滑な再就職の促進のための助成及び援助）</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　政府は、事業規模の縮小等に伴い離職を余儀なくされる労働者（以下この<wbr>条において「援助対象労働者」という。）の円滑な再就職を促進するため、雇用保険法<wbr>（昭和四十九年法律第百十六号）第六十二条の雇用安定事業として、第二十四条第三項<wbr>又は前条第一項の規定による認定を受けた再就職援助計画に基づき、その雇用する援助<wbr>対象労働者に関し、求職活動をするための休暇（労働基準法（昭和二十二年法律第四十<wbr>九号）第三十九条の規定による年次有給休暇として与えられるものを除く。）の付与そ<wbr>の他の再就職の促進に特に資すると認められる措置を講ずる事業主に対して、必要な助<wbr>成及び援助を行うものとする。</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　政府は、事業規模の縮小等に伴い離職を余儀なくされる労働者（以下この<wbr>条において「援助対象労働者」という。）の円滑な再就職を促進するため、雇用保険法<wbr>（昭和四十九年法律第百十六号）第六十二条の雇用安定事業として、第二十四条第三項<wbr>又は前条第一項の規定による認定を受けた再就職援助計画に基づき、その雇用する援助<wbr>対象労働者に関し、求職活動をするための休暇（労働基準法（昭和二十二年法律第四十<wbr>九号）第三十九条の規定による年次有給休暇として与えられるものを除く。）の付与そ<wbr>の他の再就職の促進に特に資すると認められる措置を講ずる事業主に対して、必要な助<wbr>成及び援助を行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（大量の雇用変動の届出等）</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（大量の雇用変動の届出等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　事業主は、その事業所における雇用量の変動（事業規模の縮小その他の理<wbr>由により一定期間内に相当数の離職者が発生することをいう。）であつて、厚生労働省<wbr>令で定める場合に該当するもの（以下この条において「大量雇用変動」という。）につ<wbr>いては、当該大量雇用変動の前に、厚生労働省令で定めるところにより、当該離職者の<wbr>数その他の厚生労働省令で定める事項を厚生労働大臣に届け出なければならない。</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　事業主は、その事業所における雇用量の変動（事業規模の縮小その他の理<wbr>由により一定期間内に相当数の離職者が発生することをいう。）であつて、厚生労働省<wbr>令で定める場合に該当するもの（以下この条において「大量雇用変動」という。）につ<wbr>いては、当該大量雇用変動の前に、厚生労働省令で定めるところにより、当該離職者の<wbr>数その他の厚生労働省令で定める事項を厚生労働大臣に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">２　国又は地方公共団体に係る大量雇用変動については、前項の規定は、適用しない。<wbr>この場合において、国又は地方公共団体の任命権者（委任を受けて任命権を行う者を含<wbr>む。次条第三項において同じ。）は、当該大量雇用変動の前に、政令で定めるところに<wbr>より、厚生労働大臣に通知するものとする。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">２　国又は地方公共団体に係る大量雇用変動については、前項の規定は、適用しない。<wbr>この場合において、国又は地方公共団体の任命権者（委任を受けて任命権を行う者を含<wbr>む。次条第三項において同じ。）は、当該大量雇用変動の前に、政令で定めるところに<wbr>より、厚生労働大臣に通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による届出又は前項の規定による通知があつたときは、国は、次に掲<wbr>げる措置を講ずることにより、当該届出又は通知に係る労働者の再就職の促進に努める<wbr>ものとする。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による届出又は前項の規定による通知があつたときは、国は、次に掲<wbr>げる措置を講ずることにより、当該届出又は通知に係る労働者の再就職の促進に努める<wbr>ものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">一　職業安定機関において、相互に連絡を緊密にしつつ、当該労働者の求めに応じて、<wbr>その離職前から、当該労働者その他の関係者に対する雇用情報の提供並びに広範囲にわ<wbr>たる求人の開拓及び職業紹介を行うこと。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">一　職業安定機関において、相互に連絡を緊密にしつつ、当該労働者の求めに応じて、<wbr>その離職前から、当該労働者その他の関係者に対する雇用情報の提供並びに広範囲にわ<wbr>たる求人の開拓及び職業紹介を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">二　公共職業能力開発施設において必要な職業訓練を行うこと。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">二　公共職業能力開発施設において必要な職業訓練を行うこと。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第七章　外国人の雇用管理の改善、再就職の促進等の措置</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第七章　外国人の雇用管理の改善、再就職の促進等の措置</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">（外国人雇用状況の届出等）</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">（外国人雇用状況の届出等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　事業主は、新たに外国人を雇い入れた場合又はその雇用する外国人が離職<wbr>した場合には、厚生労働省令で定めるところにより、その者の氏名、在留資格（出入国<wbr>管理及び難民認定法第二条の二第一項に規定する在留資格をいう。次項において同じ。<wbr>）、在留期間（同条第三項に規定する在留期間をいう。）その他厚生労働省令で定める<wbr>事項について確認し、当該事項を厚生労働大臣に届け出なければならない。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　事業主は、新たに外国人を雇い入れた場合又はその雇用する外国人が離職<wbr>した場合には、厚生労働省令で定めるところにより、その者の氏名、在留資格（出入国<wbr>管理及び難民認定法第二条の二第一項に規定する在留資格をいう。次項において同じ。<wbr>）、在留期間（同条第三項に規定する在留期間をいう。）その他厚生労働省令で定める<wbr>事項について確認し、当該事項を厚生労働大臣に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出があつたときは、国は、次に掲げる措置を講ずることにより<wbr>、当該届出に係る外国人の雇用管理の改善の促進又は再就職の促進に努めるものとする<wbr>。</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出があつたときは、国は、次に掲げる措置を講ずることにより<wbr>、当該届出に係る外国人の雇用管理の改善の促進又は再就職の促進に努めるものとする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">一　職業安定機関において、事業主に対して、当該外国人の有する在留資格、知識経験<wbr>等に応じた適正な雇用管理を行うことについて必要な指導及び助言を行うこと。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">一　職業安定機関において、事業主に対して、当該外国人の有する在留資格、知識経験<wbr>等に応じた適正な雇用管理を行うことについて必要な指導及び助言を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">二　職業安定機関において、事業主に対して、その求めに応じて、当該外国人に対する<wbr>再就職の援助を行うことについて必要な指導及び助言を行うこと。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">二　職業安定機関において、事業主に対して、その求めに応じて、当該外国人に対する<wbr>再就職の援助を行うことについて必要な指導及び助言を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">三　職業安定機関において、当該外国人の有する能力、在留資格等に応じて、当該外国<wbr>人に対する雇用情報の提供並びに求人の開拓及び職業紹介を行うこと。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">三　職業安定機関において、当該外国人の有する能力、在留資格等に応じて、当該外国<wbr>人に対する雇用情報の提供並びに求人の開拓及び職業紹介を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">四　公共職業能力開発施設において必要な職業訓練を行うこと。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">四　公共職業能力開発施設において必要な職業訓練を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">３　国又は地方公共団体に係る外国人の雇入れ又は離職については、第一項の規定は、<wbr>適用しない。この場合において、国又は地方公共団体の任命権者は、新たに外国人を雇<wbr>い入れた場合又はその雇用する外国人が離職した場合には、政令で定めるところにより<wbr>、厚生労働大臣に通知するものとする。</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">３　国又は地方公共団体に係る外国人の雇入れ又は離職については、第一項の規定は、<wbr>適用しない。この場合において、国又は地方公共団体の任命権者は、新たに外国人を雇<wbr>い入れた場合又はその雇用する外国人が離職した場合には、政令で定めるところにより<wbr>、厚生労働大臣に通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">４　第二項（第一号及び第二号を除く。）の規定は、前項の規定による通知があつた場<wbr>合について準用する。</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">４　第二項（第一号及び第二号を除く。）の規定は、前項の規定による通知があつた場<wbr>合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（届出に係る情報の提供）</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（届出に係る情報の提供）</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　厚生労働大臣は、法務大臣又は出入国在留管理庁長官から、出入国管理及<wbr>び難民認定法に定める事務の処理に関し、外国人の在留に関する事項の確認のための求<wbr>めがあつたときは、前条第一項の規定による届出及び同条第三項の規定による通知に係<wbr>る情報を提供するものとする。</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　厚生労働大臣は、法務大臣又は出入国在留管理庁長官から、出入国管理及<wbr>び難民認定法に定める事務の処理に関し、外国人の在留に関する事項の確認のための求<wbr>めがあつたときは、前条第一項の規定による届出及び同条第三項の規定による通知に係<wbr>る情報を提供するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣等の連絡又は協力）</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣等の連絡又は協力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三十条　厚生労働大臣は、労働力の需要供給の適正かつ円滑な調整等を図るため、法<wbr>務大臣又は出入国在留管理庁長官に対し、労働に従事することを目的として在留する外<wbr>国人の出入国に関する必要な連絡又は協力を求めることができる。</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三十条　厚生労働大臣は、労働力の需要供給の適正かつ円滑な調整等を図るため、法<wbr>務大臣又は出入国在留管理庁長官に対し、労働に従事することを目的として在留する外<wbr>国人の出入国に関する必要な連絡又は協力を求めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣又は出入国在留管理庁長官は、前項の規定による連絡又は協力を求められ<wbr>たときは、本来の任務の遂行を妨げない範囲において、できるだけその求めに応じなけ<wbr>ればならない。</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣又は出入国在留管理庁長官は、前項の規定による連絡又は協力を求められ<wbr>たときは、本来の任務の遂行を妨げない範囲において、できるだけその求めに応じなけ<wbr>ればならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第八章　職場における優越的な関係を背景とした言動に起因する問題に関して事業主の<wbr>講ずべき措置等</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第八章　職場における優越的な関係を背景とした言動に起因する問題に関して事業主の<wbr>講ずべき措置等</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（雇用管理上の措置等）</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（雇用管理上の措置等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第三十条の二　事業主は、職場において行われる優越的な関係を背景とした言動であつ<wbr>て、業務上必要かつ相当な範囲を超えたものによりその雇用する労働者の就業環境が害<wbr>されることのないよう、当該労働者からの相談に応じ、適切に対応するために必要な体<wbr>制の整備その他の雇用管理上必要な措置を講じなければならない。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第三十条の二　事業主は、職場において行われる優越的な関係を背景とした言動であつ<wbr>て、業務上必要かつ相当な範囲を超えたものによりその雇用する労働者の就業環境が害<wbr>されることのないよう、当該労働者からの相談に応じ、適切に対応するために必要な体<wbr>制の整備その他の雇用管理上必要な措置を講じなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、労働者が前項の相談を行つたこと又は事業主による当該相談への対応に<wbr>協力した際に事実を述べたことを理由として、当該労働者に対して解雇その他不利益な<wbr>取扱いをしてはならない。</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、労働者が前項の相談を行つたこと又は事業主による当該相談への対応に<wbr>協力した際に事実を述べたことを理由として、当該労働者に対して解雇その他不利益な<wbr>取扱いをしてはならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、前二項の規定に基づき事業主が講ずべき措置等に関して、その適<wbr>切かつ有効な実施を図るために必要な指針（以下この条において「指針」という。）を<wbr>定めるものとする。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、前二項の規定に基づき事業主が講ずべき措置等に関して、その適<wbr>切かつ有効な実施を図るために必要な指針（以下この条において「指針」という。）を<wbr>定めるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">４　厚生労働大臣は、指針を定めるに当たつては、あらかじめ、労働政策審議会の意見<wbr>を聴くものとする。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">４　厚生労働大臣は、指針を定めるに当たつては、あらかじめ、労働政策審議会の意見<wbr>を聴くものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">５　厚生労働大臣は、指針を定めたときは、遅滞なく、これを公表するものとする。</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">５　厚生労働大臣は、指針を定めたときは、遅滞なく、これを公表するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">６　前二項の規定は、指針の変更について準用する。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">６　前二項の規定は、指針の変更について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（国、事業主及び労働者の責務）</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（国、事業主及び労働者の責務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第三十条の三　国は、労働者の就業環境を害する前条第一項に規定する言動を行つては<wbr>ならないことその他当該言動に起因する問題（以下この条において「優越的言動問題」<wbr>という。）に対する事業主その他国民一般の関心と理解を深めるため、広報活動、啓発<wbr>活動その他の措置を講ずるように努めなければならない。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第三十条の三　国は、労働者の就業環境を害する前条第一項に規定する言動を行つては<wbr>ならないことその他当該言動に起因する問題（以下この条において「優越的言動問題」<wbr>という。）に対する事業主その他国民一般の関心と理解を深めるため、広報活動、啓発<wbr>活動その他の措置を講ずるように努めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、優越的言動問題に対するその雇用する労働者の関心と理解を深めるとと<wbr>もに、当該労働者が他の労働者に対する言動に必要な注意を払うよう、研修の実施その<wbr>他の必要な配慮をするほか、国の講ずる前項の措置に協力するように努めなければなら<wbr>ない。</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">２　事業主は、優越的言動問題に対するその雇用する労働者の関心と理解を深めるとと<wbr>もに、当該労働者が他の労働者に対する言動に必要な注意を払うよう、研修の実施その<wbr>他の必要な配慮をするほか、国の講ずる前項の措置に協力するように努めなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">３　事業主（その者が法人である場合にあつては、その役員）は、自らも、優越的言動<wbr>問題に対する関心と理解を深め、労働者に対する言動に必要な注意を払うように努めな<wbr>ければならない。</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">３　事業主（その者が法人である場合にあつては、その役員）は、自らも、優越的言動<wbr>問題に対する関心と理解を深め、労働者に対する言動に必要な注意を払うように努めな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">４　労働者は、優越的言動問題に対する関心と理解を深め、他の労働者に対する言動に<wbr>必要な注意を払うとともに、事業主の講ずる前条第一項の措置に協力するように努めな<wbr>ければならない。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">４　労働者は、優越的言動問題に対する関心と理解を深め、他の労働者に対する言動に<wbr>必要な注意を払うとともに、事業主の講ずる前条第一項の措置に協力するように努めな<wbr>ければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">（紛争の解決の促進に関する特例）</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">（紛争の解決の促進に関する特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第三十条の四　第三十条の二第一項及び第二項に定める事項についての労働者と事業主<wbr>との間の紛争については、個別労働関係紛争の解決の促進に関する法律（平成十三年法<wbr>律第百十二号）第四条、第五条及び第十二条から第十九条までの規定は適用せず、次条<wbr>から第三十条の八までに定めるところによる。</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第三十条の四　第三十条の二第一項及び第二項に定める事項についての労働者と事業主<wbr>との間の紛争については、個別労働関係紛争の解決の促進に関する法律（平成十三年法<wbr>律第百十二号）第四条、第五条及び第十二条から第十九条までの規定は適用せず、次条<wbr>から第三十条の八までに定めるところによる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（紛争の解決の援助）</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（紛争の解決の援助）</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第三十条の五　都道府県労働局長は、前条に規定する紛争に関し、当該紛争の当事者の<wbr>双方又は一方からその解決につき援助を求められた場合には、当該紛争の当事者に対し<wbr>、必要な助言、指導又は勧告をすることができる。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第三十条の五　都道府県労働局長は、前条に規定する紛争に関し、当該紛争の当事者の<wbr>双方又は一方からその解決につき援助を求められた場合には、当該紛争の当事者に対し<wbr>、必要な助言、指導又は勧告をすることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">２　第三十条の二第二項の規定は、労働者が前項の援助を求めた場合について準用する<wbr>。</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">２　第三十条の二第二項の規定は、労働者が前項の援助を求めた場合について準用する<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（調停の委任）</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（調停の委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第三十条の六　都道府県労働局長は、第三十条の四に規定する紛争について、当該紛争<wbr>の当事者の双方又は一方から調停の申請があつた場合において当該紛争の解決のために<wbr>必要があると認めるときは、個別労働関係紛争の解決の促進に関する法律第六条第一項<wbr>の紛争調整委員会に調停を行わせるものとする。</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第三十条の六　都道府県労働局長は、第三十条の四に規定する紛争について、当該紛争<wbr>の当事者の双方又は一方から調停の申請があつた場合において当該紛争の解決のために<wbr>必要があると認めるときは、個別労働関係紛争の解決の促進に関する法律第六条第一項<wbr>の紛争調整委員会に調停を行わせるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">２　第三十条の二第二項の規定は、労働者が前項の申請をした場合について準用する。<wbr></span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">２　第三十条の二第二項の規定は、労働者が前項の申請をした場合について準用する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（調停）</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（調停）</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第三十条の七　雇用の分野における男女の均等な機会及び待遇の確保等に関する法律（<wbr>昭和四十七年法律第百十三号）第十九条から第二十六条までの規定は、前条第一項の調<wbr>停の手続について準用する。この場合において、同法第十九条第一項中「前条第一項」<wbr>とあるのは「労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等<wbr>に関する法律（昭和四十一年法律第百三十二号）第三十条の六第一項」と、同法第二十<wbr>条中「事業場」とあるのは「事業所」と、同法第二十五条第一項中「第十八条第一項」<wbr>とあるのは「労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等<wbr>に関する法律第三十条の四」と読み替えるものとする。</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第三十条の七　雇用の分野における男女の均等な機会及び待遇の確保等に関する法律（<wbr>昭和四十七年法律第百十三号）第十九条から第二十六条までの規定は、前条第一項の調<wbr>停の手続について準用する。この場合において、同法第十九条第一項中「前条第一項」<wbr>とあるのは「労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等<wbr>に関する法律（昭和四十一年法律第百三十二号）第三十条の六第一項」と、同法第二十<wbr>条中「事業場」とあるのは「事業所」と、同法第二十五条第一項中「第十八条第一項」<wbr>とあるのは「労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等<wbr>に関する法律第三十条の四」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（厚生労働省令への委任）</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（厚生労働省令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第三十条の八　前二条に定めるもののほか、調停の手続に関し必要な事項は、厚生労働<wbr>省令で定める。</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第三十条の八　前二条に定めるもののほか、調停の手続に関し必要な事項は、厚生労働<wbr>省令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第九章　国と地方公共団体との連携等</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第九章　国と地方公共団体との連携等</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（国と地方公共団体との連携）</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（国と地方公共団体との連携）</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　国及び地方公共団体は、国の行う職業指導及び職業紹介の事業等と地方公<wbr>共団体の講ずる雇用に関する施策について、相互の連携協力の確保に関する協定の締結<wbr>、同一の施設における一体的な実施その他の措置を講ずることにより、密接な関連の下<wbr>に円滑かつ効果的に実施されるように相互に連絡し、及び協力するものとする。</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　国及び地方公共団体は、国の行う職業指導及び職業紹介の事業等と地方公<wbr>共団体の講ずる雇用に関する施策について、相互の連携協力の確保に関する協定の締結<wbr>、同一の施設における一体的な実施その他の措置を講ずることにより、密接な関連の下<wbr>に円滑かつ効果的に実施されるように相互に連絡し、及び協力するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（要請）</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（要請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　地方公共団体の長は、当該地方公共団体の区域内において、多数の離職者<wbr>が発生し、又はそのおそれがあると認めるときその他労働者の職業の安定のため必要が<wbr>あると認めるときは、厚生労働大臣に対し、労働者の職業の安定に関し必要な措置の実<wbr>施を要請することができる。</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　地方公共団体の長は、当該地方公共団体の区域内において、多数の離職者<wbr>が発生し、又はそのおそれがあると認めるときその他労働者の職業の安定のため必要が<wbr>あると認めるときは、厚生労働大臣に対し、労働者の職業の安定に関し必要な措置の実<wbr>施を要請することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">２　厚生労働大臣は、前項の規定による要請（以下この条において「措置要請」という<wbr>。）に基づき労働者の職業の安定に関し必要な措置を実施するときはその旨を、当該措<wbr>置要請に係る措置を実施する必要がないと認めるときはその旨及びその理由を、遅滞な<wbr>く、当該措置要請をした地方公共団体の長に通知しなければならない。</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">２　厚生労働大臣は、前項の規定による要請（以下この条において「措置要請」という<wbr>。）に基づき労働者の職業の安定に関し必要な措置を実施するときはその旨を、当該措<wbr>置要請に係る措置を実施する必要がないと認めるときはその旨及びその理由を、遅滞な<wbr>く、当該措置要請をした地方公共団体の長に通知しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、措置要請に係る措置を行う必要があるか否かを判断するに当たつ<wbr>ては、あらかじめ、厚生労働省令で定めるところにより、学識経験者その他の厚生労働<wbr>省令で定める者の意見を聴かなければならない。</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、措置要請に係る措置を行う必要があるか否かを判断するに当たつ<wbr>ては、あらかじめ、厚生労働省令で定めるところにより、学識経験者その他の厚生労働<wbr>省令で定める者の意見を聴かなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">４　前項の規定により意見を求められた者は、その意見を求められた事案に関して知り<wbr>得た秘密を漏らしてはならない。</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">４　前項の規定により意見を求められた者は、その意見を求められた事案に関して知り<wbr>得た秘密を漏らしてはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">第十章　雑則</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">第十章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">（助言、指導及び勧告並びに公表）</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">（助言、指導及び勧告並びに公表）</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　厚生労働大臣は、この法律の施行に関し必要があると認めるときは、事業<wbr>主に対して、助言、指導又は勧告をすることができる。</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　厚生労働大臣は、この法律の施行に関し必要があると認めるときは、事業<wbr>主に対して、助言、指導又は勧告をすることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">２　厚生労働大臣は、第三十条の二第一項及び第二項（第三十条の五第二項及び第三十<wbr>条の六第二項において準用する場合を含む。第三十五条及び第三十六条第一項において<wbr>同じ。）の規定に違反している事業主に対し、前項の規定による勧告をした場合におい<wbr>て、その勧告を受けた者がこれに従わなかつたときは、その旨を公表することができる<wbr>。</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">２　厚生労働大臣は、第三十条の二第一項及び第二項（第三十条の五第二項及び第三十<wbr>条の六第二項において準用する場合を含む。第三十五条及び第三十六条第一項において<wbr>同じ。）の規定に違反している事業主に対し、前項の規定による勧告をした場合におい<wbr>て、その勧告を受けた者がこれに従わなかつたときは、その旨を公表することができる<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（報告等）</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（報告等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　厚生労働大臣は、第二十七条第一項及び第二十八条第一項の規定を施行す<wbr>るために必要な限度において、厚生労働省令で定めるところにより、事業主に対して、<wbr>労働者の雇用に関する状況その他の事項についての報告を命じ、又はその職員に、事業<wbr>主の事業所に立ち入り、関係者に対して質問させ、若しくは帳簿書類その他の物件の検<wbr>査をさせることができる。</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　厚生労働大臣は、第二十七条第一項及び第二十八条第一項の規定を施行す<wbr>るために必要な限度において、厚生労働省令で定めるところにより、事業主に対して、<wbr>労働者の雇用に関する状況その他の事項についての報告を命じ、又はその職員に、事業<wbr>主の事業所に立ち入り、関係者に対して質問させ、若しくは帳簿書類その他の物件の検<wbr>査をさせることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により立入検査をする職員は、その身分を示す証明書を携帯し、関係者<wbr>に提示しなければならない。</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により立入検査をする職員は、その身分を示す証明書を携帯し、関係者<wbr>に提示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による立入検査の権限は、犯罪捜査のために認められたものと解釈し<wbr>てはならない。</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による立入検査の権限は、犯罪捜査のために認められたものと解釈し<wbr>てはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">（資料の提出の要求等）</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">（資料の提出の要求等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　厚生労働大臣は、この法律（第二十七条第一項、第二十八条第一項並びに<wbr>第三十条の二第一項及び第二項を除く。）を施行するために必要があると認めるときは<wbr>、事業主に対して、必要な資料の提出及び説明を求めることができる。</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　厚生労働大臣は、この法律（第二十七条第一項、第二十八条第一項並びに<wbr>第三十条の二第一項及び第二項を除く。）を施行するために必要があると認めるときは<wbr>、事業主に対して、必要な資料の提出及び説明を求めることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（報告の請求）</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（報告の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　厚生労働大臣は、事業主から第三十条の二第一項及び第二項の規定の施行<wbr>に関し必要な事項について報告を求めることができる。</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　厚生労働大臣は、事業主から第三十条の二第一項及び第二項の規定の施行<wbr>に関し必要な事項について報告を求めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事又は公共職業安定所長は、職業転換給付金の支給を受け、又は受けた<wbr>者から当該給付金の支給に関し必要な事項について報告を求めることができる。</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事又は公共職業安定所長は、職業転換給付金の支給を受け、又は受けた<wbr>者から当該給付金の支給に関し必要な事項について報告を求めることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　この法律に定める厚生労働大臣の権限は、厚生労働省令で定めるところに<wbr>より、その一部を都道府県労働局長に委任することができる。</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　この法律に定める厚生労働大臣の権限は、厚生労働省令で定めるところに<wbr>より、その一部を都道府県労働局長に委任することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により都道府県労働局長に委任された権限は、厚生労働省令で定めると<wbr>ころにより、公共職業安定所長に委任することができる。</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により都道府県労働局長に委任された権限は、厚生労働省令で定めると<wbr>ころにより、公共職業安定所長に委任することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">（船員に関する特例）</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">（船員に関する特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　この法律（第一条、第四条第一項第十四号及び第二項、第八章（第三十条<wbr>の七及び第三十条の八を除く。）、第三十三条、第三十六条第一項、前条第一項並びに<wbr>第四十一条を除く。）の規定は、船員職業安定法（昭和二十三年法律第百三十号）第六<wbr>条第一項に規定する船員（次項において「船員」という。）については、適用しない。<wbr></span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　この法律（第一条、第四条第一項第十四号及び第二項、第八章（第三十条<wbr>の七及び第三十条の八を除く。）、第三十三条、第三十六条第一項、前条第一項並びに<wbr>第四十一条を除く。）の規定は、船員職業安定法（昭和二十三年法律第百三十号）第六<wbr>条第一項に規定する船員（次項において「船員」という。）については、適用しない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">２　船員に関しては、第三十条の二第三項から第五項まで、第三十三条、第三十六条第<wbr>一項及び前条第一項中「厚生労働大臣」とあるのは「国土交通大臣」と、第三十条の二<wbr>第四項中「労働政策審議会」とあるのは「交通政策審議会」と、第三十条の四中「から<wbr>第三十条の八まで」とあるのは「、第三十条の六及び第三十八条第三項」と、第三十条<wbr>の五第一項、第三十条の六第一項及び前条第一項中「都道府県労働局長」とあるのは「<wbr>地方運輸局長（運輸監理部長を含む。）」と、第三十条の六第一項中「第六条第一項の<wbr>紛争調整委員会」とあるのは「第二十一条第三項のあつせん員候補者名簿に記載されて<wbr>いる者のうちから指名する調停員」と、第三十三条第二項中「第三十五条及び第三十六<wbr>条第一項」とあるのは「第三十六条第一項」と、前条第一項中「厚生労働省令」とある<wbr>のは「国土交通省令」とする。</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">２　船員に関しては、第三十条の二第三項から第五項まで、第三十三条、第三十六条第<wbr>一項及び前条第一項中「厚生労働大臣」とあるのは「国土交通大臣」と、第三十条の二<wbr>第四項中「労働政策審議会」とあるのは「交通政策審議会」と、第三十条の四中「から<wbr>第三十条の八まで」とあるのは「、第三十条の六及び第三十八条第三項」と、第三十条<wbr>の五第一項、第三十条の六第一項及び前条第一項中「都道府県労働局長」とあるのは「<wbr>地方運輸局長（運輸監理部長を含む。）」と、第三十条の六第一項中「第六条第一項の<wbr>紛争調整委員会」とあるのは「第二十一条第三項のあつせん員候補者名簿に記載されて<wbr>いる者のうちから指名する調停員」と、第三十三条第二項中「第三十五条及び第三十六<wbr>条第一項」とあるのは「第三十六条第一項」と、前条第一項中「厚生労働省令」とある<wbr>のは「国土交通省令」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">195</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　雇用の分野における男女の均等な機会及び待遇の確保等に関する法律</span><span style="color: #000000; background-color: #efcb05; ">から第二十七<wbr>条まで並びに第三十一条第三項及び第四項の規定は、前項の規定により読み替えて適用<wbr>する第三十条の六第一項の規定により指名を受けて調停員が行う調停について準用する<wbr>。この場合において、同法第二十条から第二十三条まで及び第二十六条中「委員会は」<wbr>とあるのは「調停員は」と、同法第二十条中「事業場」とあるのは「事業所」と、同法<wbr>第二十一条中「当該委員会が置かれる都道府県労働局」とあるのは「当該調停員を指名<wbr>した地方運輸局長（運輸監理部長を含む。）が置かれる地方運輸局（運輸監理部を含む<wbr>。）」と、同法第二十五条第一項中「第十八条第一項」とあるのは「労働施策の総合的<wbr>な推進並びに労働者の雇用の安定及び職業生活の充実等に関する法律（昭和四十一年法<wbr>律第百三十二号）第三十条の四」と、同法第二十六条中「当該委員会に係属している」<wbr>とあるのは「当該調停員が取り扱つている」と、同法第二十七条中「この節」とあるの<wbr>は「労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等に関する<wbr>法律第三十八条第三項において準用する第二十条から前条まで並びに第三十一条第三項<wbr>及び第四項」と、「調停」とあるのは「合議体及び調停」と、「厚生労働省令」とある<wbr>のは「国土交通省令」と、同法第三十一条第三項中「前項」とあるのは「労働施策の総<wbr>合的な推進並びに労働者の雇用の安定及び職業生活の充実等に関する法律第三十条の六<wbr>第一項」と読み替えるものとする。</span></code></td>
+<td class="ln">195</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　雇用の分野における男女の均等な機会及び待遇の確保等に関する法律</span><span class="sf17b18">第二十条</span><span style="color: #000000; background-color: #efcb05; ">から<wbr>第二十七条まで並びに第三十一条第三項及び第四項の規定は、前項の規定により読み替<wbr>えて適用する第三十条の六第一項の規定により指名を受けて調停員が行う調停について<wbr>準用する。この場合において、同法第二十条から第二十三条まで及び第二十六条中「委<wbr>員会は」とあるのは「調停員は」と、同法第二十条中「事業場」とあるのは「事業所」<wbr>と、同法第二十一条中「当該委員会が置かれる都道府県労働局」とあるのは「当該調停<wbr>員を指名した地方運輸局長（運輸監理部長を含む。）が置かれる地方運輸局（運輸監理<wbr>部を含む。）」と、同法第二十五条第一項中「第十八条第一項」とあるのは「労働施策<wbr>の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等に関する法律（昭和四<wbr>十一年法律第百三十二号）第三十条の四」と、同法第二十六条中「当該委員会に係属し<wbr>ている」とあるのは「当該調停員が取り扱つている」と、同法第二十七条中「この節」<wbr>とあるのは「労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等<wbr>に関する法律第三十八条第三項において準用する第二十条から前条まで並びに第三十一<wbr>条第三項及び第四項」と、「調停」とあるのは「合議体及び調停」と、「厚生労働省令<wbr>」とあるのは「国土交通省令」と、同法第三十一条第三項中「前項」とあるのは「労働<wbr>施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等に関する法律第三<wbr>十条の六第一項」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">（適用除外）</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">（適用除外）</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">第三十八条の二　第六条から第九条まで、第六章（第二十七条を除く。）、第三十条の<wbr>四から第三十条の八まで、第三十三条第一項（第八章の規定の施行に関するものに限る<wbr>。）及び第二項並びに第三十六条第一項の規定は国家公務員及び地方公務員について、<wbr>第三十条の二及び第三十条の三の規定は一般職の国家公務員（行政執行法人の労働関係<wbr>に関する法律（昭和二十三年法律第二百五十七号）第二条第二号の職員を除く。）、裁<wbr>判所職員臨時措置法（昭和二十六年法律第二百九十九号）の適用を受ける裁判所職員、<wbr>国会職員法（昭和二十二年法律第八十五号）第一条に規定する国会職員及び自衛隊法（<wbr>昭和二十九年法律第百六十五号）第二条第五項に規定する隊員については、適用しない<wbr>。</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">第三十八条の二　第六条から第九条まで、第六章（第二十七条を除く。）、第三十条の<wbr>四から第三十条の八まで、第三十三条第一項（第八章の規定の施行に関するものに限る<wbr>。）及び第二項並びに第三十六条第一項の規定は国家公務員及び地方公務員について、<wbr>第三十条の二及び第三十条の三の規定は一般職の国家公務員（行政執行法人の労働関係<wbr>に関する法律（昭和二十三年法律第二百五十七号）第二条第二号の職員を除く。）、裁<wbr>判所職員臨時措置法（昭和二十六年法律第二百九十九号）の適用を受ける裁判所職員、<wbr>国会職員法（昭和二十二年法律第八十五号）第一条に規定する国会職員及び自衛隊法（<wbr>昭和二十九年法律第百六十五号）第二条第五項に規定する隊員については、適用しない<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　第三十二条第四項の規定に違反した者は、六月以下の懲役又は五十万円以<wbr>下の罰金に処する。</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　第三十二条第四項の規定に違反した者は、六月以下の懲役又は五十万円以<wbr>下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">第四十条　次の各号のいずれかに該当する者は、三十万円以下の罰金に処する。</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">第四十条　次の各号のいずれかに該当する者は、三十万円以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">一　第二十七条第一項の規定に違反して届出をせず、又は虚偽の届出をした者</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">一　第二十七条第一項の規定に違反して届出をせず、又は虚偽の届出をした者</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">二　第二十八条第一項の規定による届出をせず、又は虚偽の届出をした者</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">二　第二十八条第一項の規定による届出をせず、又は虚偽の届出をした者</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">三　第三十四条第一項の規定による報告をせず、若しくは虚偽の報告をし、又は同項の<wbr>規定による当該職員の質問に対して答弁せず、若しくは虚偽の陳述をし、若しくは同項<wbr>の規定による検査を拒み、妨げ、若しくは忌避した者</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">三　第三十四条第一項の規定による報告をせず、若しくは虚偽の報告をし、又は同項の<wbr>規定による当該職員の質問に対して答弁せず、若しくは虚偽の陳述をし、若しくは同項<wbr>の規定による検査を拒み、妨げ、若しくは忌避した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">四　第三十六条第二項の規定による報告をせず、又は虚偽の報告をした者</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">四　第三十六条第二項の規定による報告をせず、又は虚偽の報告をした者</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">２　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対しても、同項の刑を科する。</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">２　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対しても、同項の刑を科する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　第三十六条第一項の規定による報告をせず、又は虚偽の報告をした者は、<wbr>二十万円以下の過料に処する。</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　第三十六条第一項の規定による報告をせず、又は虚偽の報告をした者は、<wbr>二十万円以下の過料に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、第二十一条の規定は、公布の日<wbr>から起算して六月を経過した日から施行する。</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、第二十一条の規定は、公布の日<wbr>から起算して六月を経過した日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年一〇月一日法律第一〇七号）</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年一〇月一日法律第一〇七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第一条中雇用対策法第二十一条の改<wbr>正規定は、公布の日から起算して六月を経過した日から施行する。</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第一条中雇用対策法第二十一条の改<wbr>正規定は、公布の日から起算して六月を経過した日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">２　この法律による改正後の雇用対策法第二十一条の規定（離職に係る雇用量の変動に<wbr>関する部分に限る。）は、同条に規定する雇用量の変動であつて、当該雇用量の変動に<wbr>係る離職の全部がこの法律の施行（前項ただし書の規定による施行をいう。以下同じ。<wbr>）の日以後であるものについて適用し、当該雇用量の変動に係る離職の全部又は一部が<wbr>同日前であるものについては、なお従前の例による。</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">２　この法律による改正後の雇用対策法第二十一条の規定（離職に係る雇用量の変動に<wbr>関する部分に限る。）は、同条に規定する雇用量の変動であつて、当該雇用量の変動に<wbr>係る離職の全部がこの法律の施行（前項ただし書の規定による施行をいう。以下同じ。<wbr>）の日以後であるものについて適用し、当該雇用量の変動に係る離職の全部又は一部が<wbr>同日前であるものについては、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">３　この法律の施行前にした行為及び前項の規定により従前の例によることとされる雇<wbr>用量の変動についての届出に係るこの法律の施行後にした行為に対する罰則の適用につ<wbr>いては、なお従前の例による。</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">３　この法律の施行前にした行為及び前項の規定により従前の例によることとされる雇<wbr>用量の変動についての届出に係るこの法律の施行後にした行為に対する罰則の適用につ<wbr>いては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年四月三〇日法律第四三号）　抄</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年四月三〇日法律第四三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十一年十月一日から施行する。</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十一年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年六月一日法律第四一号）　抄</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年六月一日法律第四一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十三年四月一日から施行する。</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　この附則に定めるもののほか、この法律の施行に伴い必要な経過措置は、<wbr>政令で定める。</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　この附則に定めるもののほか、この法律の施行に伴い必要な経過措置は、<wbr>政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年六月一七日法律第三四号）　抄</span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年六月一七日法律第三四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成七年四月一日から施行する。</span></code></td>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年四月九日法律第三二号）　抄</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年四月九日法律第三二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十年七月一日から施行する。</span></code></td>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年九月二八日法律第一一〇号）</span></code></td>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年九月二八日法律第一一〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">この法律は、平成十一年四月一日から施行する。</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">この法律は、平成十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月三一日法律第二〇号）　抄</span></code></td>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月三一日法律第二〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、附則第十二条から第四十九条ま<wbr>での規定は、公布の日から起算して九月を超えない範囲内において政令で定める日から<wbr>施行する。</span></code></td>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、附則第十二条から第四十九条ま<wbr>での規定は、公布の日から起算して九月を超えない範囲内において政令で定める日から<wbr>施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中地方自治法第二百五十条の次に五条、節名並びに二款及び款名を加える改<wbr>正規定（同法第二百五十条の九第一項に係る部分（両議院の同意を得ることに係る部分<wbr>に限る。）に限る。）、第四十条中自然公園法附則第九項及び第十項の改正規定（同法<wbr>附則第十項に係る部分に限る。）、第二百四十四条の規定（農業改良助長法第十四条の<wbr>三の改正規定に係る部分を除く。）並びに第四百七十二条の規定（市町村の合併の特例<wbr>に関する法律第六条、第八条及び第十七条の改正規定に係る部分を除く。）並びに附則<wbr>第七条、第十条、第十二条、第五十九条ただし書、第六十条第四項及び第五項、第七十<wbr>三条、第七十七条、第百五十七条第四項から第六項まで、第百六十条、第百六十三条、<wbr>第百六十四条並びに第二百二条の規定　公布の日</span></code></td>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中地方自治法第二百五十条の次に五条、節名並びに二款及び款名を加える改<wbr>正規定（同法第二百五十条の九第一項に係る部分（両議院の同意を得ることに係る部分<wbr>に限る。）に限る。）、第四十条中自然公園法附則第九項及び第十項の改正規定（同法<wbr>附則第十項に係る部分に限る。）、第二百四十四条の規定（農業改良助長法第十四条の<wbr>三の改正規定に係る部分を除く。）並びに第四百七十二条の規定（市町村の合併の特例<wbr>に関する法律第六条、第八条及び第十七条の改正規定に係る部分を除く。）並びに附則<wbr>第七条、第十条、第十二条、第五十九条ただし書、第六十条第四項及び第五項、第七十<wbr>三条、第七十七条、第百五十七条第四項から第六項まで、第百六十条、第百六十三条、<wbr>第百六十四条並びに第二百二条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">（国等の事務）</span></code></td>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">（国等の事務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">第百五十九条　この法律による改正前のそれぞれの法律に規定するもののほか、この法<wbr>律の施行前において、地方公共団体の機関が法律又はこれに基づく政令により管理し又<wbr>は執行する国、他の地方公共団体その他公共団体の事務（附則第百六十一条において「<wbr>国等の事務」という。）は、この法律の施行後は、地方公共団体が法律又はこれに基づ<wbr>く政令により当該地方公共団体の事務として処理するものとする。</span></code></td>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">第百五十九条　この法律による改正前のそれぞれの法律に規定するもののほか、この法<wbr>律の施行前において、地方公共団体の機関が法律又はこれに基づく政令により管理し又<wbr>は執行する国、他の地方公共団体その他公共団体の事務（附則第百六十一条において「<wbr>国等の事務」という。）は、この法律の施行後は、地方公共団体が法律又はこれに基づ<wbr>く政令により当該地方公共団体の事務として処理するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">（不服申立てに関する経過措置）</span></code></td>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">（不服申立てに関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">第百六十一条　施行日前にされた国等の事務に係る処分であって、当該処分をした行政<wbr>庁（以下この条において「処分庁」という。）に施行日前に行政不服審査法に規定する<wbr>上級行政庁（以下この条において「上級行政庁」という。）があったものについての同<wbr>法による不服申立てについては、施行日以後においても、当該処分庁に引き続き上級行<wbr>政庁があるものとみなして、行政不服審査法の規定を適用する。この場合において、当<wbr>該処分庁の上級行政庁とみなされる行政庁は、施行日前に当該処分庁の上級行政庁であ<wbr>った行政庁とする。</span></code></td>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">第百六十一条　施行日前にされた国等の事務に係る処分であって、当該処分をした行政<wbr>庁（以下この条において「処分庁」という。）に施行日前に行政不服審査法に規定する<wbr>上級行政庁（以下この条において「上級行政庁」という。）があったものについての同<wbr>法による不服申立てについては、施行日以後においても、当該処分庁に引き続き上級行<wbr>政庁があるものとみなして、行政不服審査法の規定を適用する。この場合において、当<wbr>該処分庁の上級行政庁とみなされる行政庁は、施行日前に当該処分庁の上級行政庁であ<wbr>った行政庁とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、上級行政庁とみなされる行政庁が地方公共団体の機関である<wbr>ときは、当該機関が行政不服審査法の規定により処理することとされる事務は、新地方<wbr>自治法第二条第九項第一号に規定する第一号法定受託事務とする。</span></code></td>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、上級行政庁とみなされる行政庁が地方公共団体の機関である<wbr>ときは、当該機関が行政不服審査法の規定により処理することとされる事務は、新地方<wbr>自治法第二条第九項第一号に規定する第一号法定受託事務とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">第百六十三条　この法律の施行前にした行為に対する罰則の適用については、なお従前<wbr>の例による。</span></code></td>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">第百六十三条　この法律の施行前にした行為に対する罰則の適用については、なお従前<wbr>の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">第百六十四条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置<wbr>（罰則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">第百六十四条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置<wbr>（罰則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+</tr>
+<tr>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。</span></code></td>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。</span></code></td>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日</span></code></td>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月一二日法律第六〇号）　抄</span></code></td>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月一二日法律第六〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年十月一日から施行する。</span></code></td>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年四月二五日法律第三五号）　抄</span></code></td>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年四月二五日法律第三五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年十月一日から施行する。ただし、第一条及び第六条の<wbr>規定並びに次条（第二項後段を除く。）及び附則第六条の規定、附則第十一条の規定（<wbr>社会保険労務士法（昭和四十三年法律第八十九号）別表第一第二十号の十三の改正規定<wbr>を除く。）並びに附則第十二条の規定は、同年六月三十日から施行する。</span></code></td>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年十月一日から施行する。ただし、第一条及び第六条の<wbr>規定並びに次条（第二項後段を除く。）及び附則第六条の規定、附則第十一条の規定（<wbr>社会保険労務士法（昭和四十三年法律第八十九号）別表第一第二十号の十三の改正規定<wbr>を除く。）並びに附則第十二条の規定は、同年六月三十日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">第五条　この附則に定めるもののほか、この法律の施行に関して必要な経過措置は、政<wbr>令で定める。</span></code></td>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">第五条　この附則に定めるもののほか、この法律の施行に関して必要な経過措置は、政<wbr>令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律（附則第一条ただし書に規定する規定については、当該規定。以下同<wbr>じ。）の施行前にした行為並びに附則第二条第三項及び第四条第一項の規定によりなお<wbr>従前の例によることとされる場合におけるこの法律の施行後にした行為に対する罰則の<wbr>適用については、なお従前の例による。</span></code></td>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律（附則第一条ただし書に規定する規定については、当該規定。以下同<wbr>じ。）の施行前にした行為並びに附則第二条第三項及び第四条第一項の規定によりなお<wbr>従前の例によることとされる場合におけるこの法律の施行後にした行為に対する罰則の<wbr>適用については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一二月一三日法律第一七〇号）　抄</span></code></td>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一二月一三日法律第一七〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、附則第六条から第九条まで及び<wbr>第十一条から第三十四条までの規定については、平成十六年三月一日から施行する。</span></code></td>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、附則第六条から第九条まで及び<wbr>第十一条から第三十四条までの規定については、平成十六年三月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年六月一一日法律第一〇三号）　抄</span></code></td>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年六月一一日法律第一〇三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">二　第二条中高年齢者等の雇用の安定等に関する法律第九条、第十条、第十五条、第十<wbr>六条第一項及び第十七条第一項の改正規定、同法第五十三条の次に一条を加える改正規<wbr>定並びに同法附則に三条を加える改正規定並びに附則第四条及び第五条の規定　平成十<wbr>八年四月一日</span></code></td>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">二　第二条中高年齢者等の雇用の安定等に関する法律第九条、第十条、第十五条、第十<wbr>六条第一項及び第十七条第一項の改正規定、同法第五十三条の次に一条を加える改正規<wbr>定並びに同法附則に三条を加える改正規定並びに附則第四条及び第五条の規定　平成十<wbr>八年四月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年六月八日法律第七九号）　抄</span></code></td>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年六月八日法律第七九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中雇用対策法第十二条を削り、第十一条を第十二条とし、第十条を第十一条<wbr>とする改正規定、同法第七条の改正規定、同法第一章中同条を第十条とし、第六条の次<wbr>に三条を加える改正規定、同法第六章の章名の改正規定、同法第二十四条第五項の改正<wbr>規定、同法第三十一条第一項の改正規定（同項第二号中「第二十九条」を「第三十五条<wbr>」に改める部分を除く。）、同法第三十条第二項の改正規定、同法第二十八条を削り、<wbr>第二十七条を第三十一条とする改正規定、同条の次に三条を加える改正規定（第三十二<wbr>条に係る部分を除く。）、同法第六章中第二十六条の次に一条を加える改正規定及び同<wbr>法第六章を第五章とし、同章の次に一章を加える改正規定並びに次条、附則第六条及び<wbr>第九条の規定　平成十九年十月一日</span></code></td>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中雇用対策法第十二条を削り、第十一条を第十二条とし、第十条を第十一条<wbr>とする改正規定、同法第七条の改正規定、同法第一章中同条を第十条とし、第六条の次<wbr>に三条を加える改正規定、同法第六章の章名の改正規定、同法第二十四条第五項の改正<wbr>規定、同法第三十一条第一項の改正規定（同項第二号中「第二十九条」を「第三十五条<wbr>」に改める部分を除く。）、同法第三十条第二項の改正規定、同法第二十八条を削り、<wbr>第二十七条を第三十一条とする改正規定、同条の次に三条を加える改正規定（第三十二<wbr>条に係る部分を除く。）、同法第六章中第二十六条の次に一条を加える改正規定及び同<wbr>法第六章を第五章とし、同章の次に一章を加える改正規定並びに次条、附則第六条及び<wbr>第九条の規定　平成十九年十月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">（外国人雇用状況の届出等に関する経過措置）</span></code></td>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">（外国人雇用状況の届出等に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">第二条　前条第一号に掲げる規定の施行の際現に外国人（第一条の規定による改正後の<wbr>雇用対策法（以下「新雇用対策法」という。）第八条に規定する外国人をいう。以下こ<wbr>の条において同じ。）を雇い入れている事業主は、平成二十年十月一日までに、厚生労<wbr>働省令で定めるところにより、当該外国人に係る新雇用対策法第二十八条第一項に規定<wbr>する事項について確認し、当該事項を厚生労働大臣に届け出なければならない。ただし<wbr>、当該外国人が同号に掲げる規定の施行の日から平成二十年十月一日までの間に離職し<wbr>た場合については、この限りでない。</span></code></td>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">第二条　前条第一号に掲げる規定の施行の際現に外国人（第一条の規定による改正後の<wbr>雇用対策法（以下「新雇用対策法」という。）第八条に規定する外国人をいう。以下こ<wbr>の条において同じ。）を雇い入れている事業主は、平成二十年十月一日までに、厚生労<wbr>働省令で定めるところにより、当該外国人に係る新雇用対策法第二十八条第一項に規定<wbr>する事項について確認し、当該事項を厚生労働大臣に届け出なければならない。ただし<wbr>、当該外国人が同号に掲げる規定の施行の日から平成二十年十月一日までの間に離職し<wbr>た場合については、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">２　国又は地方公共団体に係る外国人の雇入れについては、前項の規定は、適用しない<wbr>。この場合において、国又は地方公共団体の任命権者（委任を受けて任命権を行う者を<wbr>含む。）は、平成二十年十月一日までに、政令で定めるところにより、前条第一号に掲<wbr>げる規定の施行の際現に雇い入れている外国人に係る新雇用対策法第二十八条第一項に<wbr>規定する事項を厚生労働大臣に通知するものとする。ただし、当該外国人が同号に掲げ<wbr>る規定の施行の日から平成二十年十月一日までの間に離職した場合については、この限<wbr>りでない。</span></code></td>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">２　国又は地方公共団体に係る外国人の雇入れについては、前項の規定は、適用しない<wbr>。この場合において、国又は地方公共団体の任命権者（委任を受けて任命権を行う者を<wbr>含む。）は、平成二十年十月一日までに、政令で定めるところにより、前条第一号に掲<wbr>げる規定の施行の際現に雇い入れている外国人に係る新雇用対策法第二十八条第一項に<wbr>規定する事項を厚生労働大臣に通知するものとする。ただし、当該外国人が同号に掲げ<wbr>る規定の施行の日から平成二十年十月一日までの間に離職した場合については、この限<wbr>りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">３　新雇用対策法第二十八条第二項（第三号を除く。）の規定は、第一項の規定による<wbr>届出があった場合について準用する。</span></code></td>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">３　新雇用対策法第二十八条第二項（第三号を除く。）の規定は、第一項の規定による<wbr>届出があった場合について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">４　新雇用対策法第二十九条の規定は、第一項の規定による届出及び第二項の規定によ<wbr>る通知について準用する。</span></code></td>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">４　新雇用対策法第二十九条の規定は、第一項の規定による届出及び第二項の規定によ<wbr>る通知について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">280</td><td class="sf3b2"><code><span class="sf3b2">５　新雇用対策法第三十三条の規定は、第一項の規定の施行について準用する。</span></code></td>
+<td class="ln">280</td><td class="sf3b2"><code><span class="sf3b2">５　新雇用対策法第三十三条の規定は、第一項の規定の施行について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">６　第一項及び第二項並びに前項において準用する新雇用対策法第三十三条第一項の規<wbr>定による厚生労働大臣の権限については、厚生労働省令で定めるところにより、その一<wbr>部を都道府県労働局長に委任することができる。</span></code></td>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">６　第一項及び第二項並びに前項において準用する新雇用対策法第三十三条第一項の規<wbr>定による厚生労働大臣の権限については、厚生労働省令で定めるところにより、その一<wbr>部を都道府県労働局長に委任することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">７　前項の規定により都道府県労働局長に委任された権限は、厚生労働省令で定めると<wbr>ころにより、公共職業安定所長に委任することができる。</span></code></td>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">７　前項の規定により都道府県労働局長に委任された権限は、厚生労働省令で定めると<wbr>ころにより、公共職業安定所長に委任することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">第六条　次の各号のいずれかに該当する者は、三十万円以下の罰金に処する。</span></code></td>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">第六条　次の各号のいずれかに該当する者は、三十万円以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">一　附則第二条第一項の規定による届出をせず、又は虚偽の届出をした者</span></code></td>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">一　附則第二条第一項の規定による届出をせず、又は虚偽の届出をした者</span></code></td>
+</tr>
+<tr>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">二　附則第二条第五項において準用する新雇用対策法第三十三条第一項の規定による報<wbr>告をせず、若しくは虚偽の報告をし、又は同項の規定による当該職員の質問に対して答<wbr>弁せず、若しくは虚偽の陳述をし、若しくは同項の規定による検査を拒み、妨げ、若し<wbr>くは忌避した者</span></code></td>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">二　附則第二条第五項において準用する新雇用対策法第三十三条第一項の規定による報<wbr>告をせず、若しくは虚偽の報告をし、又は同項の規定による当該職員の質問に対して答<wbr>弁せず、若しくは虚偽の陳述をし、若しくは同項の規定による検査を拒み、妨げ、若し<wbr>くは忌避した者 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">第七条　この附則に定めるもののほか、この法律の施行に関して必要な経過措置は、政<wbr>令で定める。</span></code></td>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">第七条　この附則に定めるもののほか、この法律の施行に関して必要な経過措置は、政<wbr>令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+</tr>
+<tr>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">第八条　政府は、この法律の施行後五年を経過した場合において、この法律による改正<wbr>後の雇用対策法及び地域雇用開発促進法の規定について、その施行の状況を勘案しつつ<wbr>検討を加え、その結果に基づいて必要な措置を講ずるものとする。</span></code></td>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">第八条　政府は、この法律の施行後五年を経過した場合において、この法律による改正<wbr>後の雇用対策法及び地域雇用開発促進法の規定について、その施行の状況を勘案しつつ<wbr>検討を加え、その結果に基づいて必要な措置を講ずるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年七月一五日法律第七九号）　抄</span></code></td>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年七月一五日法律第七九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">293</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">293</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">三　第一条の規定（入管法第二十三条（見出しを含む。）、第五十三条第三項、第七十<wbr>六条及び第七十七条の二の改正規定を除く。）並びに次条から附則第五条まで、附則第<wbr>四十四条（第六号を除く。）及び第五十一条の規定、附則第五十三条中雇用対策法（昭<wbr>和四十一年法律第百三十二号）第四条第三項の改正規定、附則第五十五条第一項の規定<wbr>並びに附則第五十七条のうち行政手続等における情報通信の技術の利用に関する法律（<wbr>平成十四年法律第百五十一号）別表出入国管理及び難民認定法（昭和二十六年政令第三<wbr>百十九号）の項中「第二十条第四項（」の下に「第二十一条第四項及び」を加え、「、<wbr>第二十一条第四項」を削る改正規定　公布の日から起算して一年を超えない範囲内にお<wbr>いて政令で定める日</span></code></td>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">三　第一条の規定（入管法第二十三条（見出しを含む。）、第五十三条第三項、第七十<wbr>六条及び第七十七条の二の改正規定を除く。）並びに次条から附則第五条まで、附則第<wbr>四十四条（第六号を除く。）及び第五十一条の規定、附則第五十三条中雇用対策法（昭<wbr>和四十一年法律第百三十二号）第四条第三項の改正規定、附則第五十五条第一項の規定<wbr>並びに附則第五十七条のうち行政手続等における情報通信の技術の利用に関する法律（<wbr>平成十四年法律第百五十一号）別表出入国管理及び難民認定法（昭和二十六年政令第三<wbr>百十九号）の項中「第二十条第四項（」の下に「第二十一条第四項及び」を加え、「、<wbr>第二十一条第四項」を削る改正規定　公布の日から起算して一年を超えない範囲内にお<wbr>いて政令で定める日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">296</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年四月二七日法律第二六号）　抄</span></code></td>
+<td class="ln">296</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年四月二七日法律第二六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">297</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">297</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">298</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十三年十月一日から施行する。</span></code></td>
+<td class="ln">298</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十三年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">299</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月一八日法律第七二号）　抄</span></code></td>
+<td class="ln">299</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月一八日法律第七二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">300</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">300</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">301</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十七年十月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">301</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十七年十月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">302</td><td class="sf3b2"><code><span class="sf3b2">一　附則第三条、第四条及び第十九条の規定　公布の日</span></code></td>
+<td class="ln">302</td><td class="sf3b2"><code><span class="sf3b2">一　附則第三条、第四条及び第十九条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">303</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">303</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">304</td><td class="sf3b2"><code><span class="sf3b2">第十八条　この法律（附則第一条第二号及び第三号に掲げる規定にあっては、当該規定<wbr>）の施行前にした行為に対する罰則の適用については、なお従前の例による。</span></code></td>
+<td class="ln">304</td><td class="sf3b2"><code><span class="sf3b2">第十八条　この法律（附則第一条第二号及び第三号に掲げる規定にあっては、当該規定<wbr>）の施行前にした行為に対する罰則の適用については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">305</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">305</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">306</td><td class="sf3b2"><code><span class="sf3b2">第十九条　この附則に定めるもののほか、この法律の施行に関し必要な経過措置は、政<wbr>令で定める。</span></code></td>
+<td class="ln">306</td><td class="sf3b2"><code><span class="sf3b2">第十九条　この附則に定めるもののほか、この法律の施行に関し必要な経過措置は、政<wbr>令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">307</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月三一日法律第一七号）　抄</span></code></td>
+<td class="ln">307</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月三一日法律第一七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">308</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">308</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">309</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十九年一月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">309</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十九年一月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">310</td><td class="sf3b2"><code><span class="sf3b2">一　第七条の規定並びに附則第十三条、第三十二条及び第三十三条の規定　公布の日</span></code></td>
+<td class="ln">310</td><td class="sf3b2"><code><span class="sf3b2">一　第七条の規定並びに附則第十三条、第三十二条及び第三十三条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">311</td><td class="sf3b2"><code><span class="sf3b2">（雇用対策法の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">311</td><td class="sf3b2"><code><span class="sf3b2">（雇用対策法の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">312</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　前条の規定による改正後の雇用対策法第十八条（第三号に係る部分に限る<wbr>。）の規定は、施行日以後に同号に規定する求職活動（当該求職活動に関し、前条の規<wbr>定による改正前の雇用対策法第十八条の規定による給付金が支給されている場合におけ<wbr>る当該求職活動を除く。）又は役務の利用をした者について適用し、施行日前に広範囲<wbr>の地域にわたる求職活動をした者に対する当該求職活動に係る給付金の支給については<wbr>、なお従前の例による。</span></code></td>
+<td class="ln">312</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　前条の規定による改正後の雇用対策法第十八条（第三号に係る部分に限る<wbr>。）の規定は、施行日以後に同号に規定する求職活動（当該求職活動に関し、前条の規<wbr>定による改正前の雇用対策法第十八条の規定による給付金が支給されている場合におけ<wbr>る当該求職活動を除く。）又は役務の利用をした者について適用し、施行日前に広範囲<wbr>の地域にわたる求職活動をした者に対する当該求職活動に係る給付金の支給については<wbr>、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">313</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">313</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">314</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置は<wbr>、政令で定める。</span></code></td>
+<td class="ln">314</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置は<wbr>、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">315</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年五月二〇日法律第四七号）　抄</span></code></td>
+<td class="ln">315</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年五月二〇日法律第四七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">316</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">316</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">317</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十九年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">317</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十九年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">318</td><td class="sf3b2"><code><span class="sf3b2">一　第一条、第三条、第七条、第十条及び第十五条の規定並びに次条並びに附則第四条<wbr>第一項及び第二項、第六条から第十条まで、第四十二条（東日本大震災復興特別区域法<wbr>（平成二十三年法律第百二十二号）第四十八条第二項及び第三項の改正規定に限る。）<wbr>、第四十四条並びに第四十六条の規定　公布の日</span></code></td>
+<td class="ln">318</td><td class="sf3b2"><code><span class="sf3b2">一　第一条、第三条、第七条、第十条及び第十五条の規定並びに次条並びに附則第四条<wbr>第一項及び第二項、第六条から第十条まで、第四十二条（東日本大震災復興特別区域法<wbr>（平成二十三年法律第百二十二号）第四十八条第二項及び第三項の改正規定に限る。）<wbr>、第四十四条並びに第四十六条の規定　公布の日</span></code></td>
+</tr>
+<tr>
+<td class="ln">319</td><td class="sf3b2"><code><span class="sf3b2">二　第六条、第八条及び第十四条の規定並びに附則第三条、第十三条、第二十四条から<wbr>第二十六条まで、第二十九条から第三十一条まで、第三十三条、第三十五条及び第四十<wbr>八条の規定　公布の日から起算して三月を経過した日</span></code></td>
+<td class="ln">319</td><td class="sf3b2"><code><span class="sf3b2">二　第六条、第八条及び第十四条の規定並びに附則第三条、第十三条、第二十四条から<wbr>第二十六条まで、第二十九条から第三十一条まで、第三十三条、第三十五条及び第四十<wbr>八条の規定　公布の日から起算して三月を経過した日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">320</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+<td class="ln">320</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">321</td><td class="sf3b2"><code><span class="sf3b2">第七条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下この条<wbr>及び次条において同じ。）の施行の日前にこの法律による改正前のそれぞれの法律の規<wbr>定によりされた承認等の処分その他の行為（以下この項において「処分等の行為」とい<wbr>う。）又はこの法律の施行の際現にこの法律による改正前のそれぞれの法律の規定によ<wbr>りされている承認等の申請その他の行為（以下この項において「申請等の行為」という<wbr>。）で、この法律の施行の日においてこれらの行為に係る行政事務を行うべき者が異な<wbr>ることとなるものは、この附則又は附則第九条の規定に基づく政令に定めるものを除き<wbr>、この法律の施行の日以後におけるこの法律による改正後のそれぞれの法律の適用につ<wbr>いては、この法律による改正後のそれぞれの法律の相当規定によりされた処分等の行為<wbr>又は申請等の行為とみなす。</span></code></td>
+<td class="ln">321</td><td class="sf3b2"><code><span class="sf3b2">第七条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下この条<wbr>及び次条において同じ。）の施行の日前にこの法律による改正前のそれぞれの法律の規<wbr>定によりされた承認等の処分その他の行為（以下この項において「処分等の行為」とい<wbr>う。）又はこの法律の施行の際現にこの法律による改正前のそれぞれの法律の規定によ<wbr>りされている承認等の申請その他の行為（以下この項において「申請等の行為」という<wbr>。）で、この法律の施行の日においてこれらの行為に係る行政事務を行うべき者が異な<wbr>ることとなるものは、この附則又は附則第九条の規定に基づく政令に定めるものを除き<wbr>、この法律の施行の日以後におけるこの法律による改正後のそれぞれの法律の適用につ<wbr>いては、この法律による改正後のそれぞれの法律の相当規定によりされた処分等の行為<wbr>又は申請等の行為とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">322</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の日前にこの法律による改正前のそれぞれの法律の規定により国又<wbr>は地方公共団体の機関に対し、届出その他の手続をしなければならない事項で、この法<wbr>律の施行の日前にその手続がされていないものについては、この附則又は附則第九条の<wbr>規定に基づく政令に定めるもののほか、これを、この法律による改正後のそれぞれの法<wbr>律の相当規定により国又は地方公共団体の相当の機関に対して届出その他の手続をしな<wbr>ければならない事項についてその手続がされていないものとみなして、この法律による<wbr>改正後のそれぞれの法律の規定を適用する。</span></code></td>
+<td class="ln">322</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の日前にこの法律による改正前のそれぞれの法律の規定により国又<wbr>は地方公共団体の機関に対し、届出その他の手続をしなければならない事項で、この法<wbr>律の施行の日前にその手続がされていないものについては、この附則又は附則第九条の<wbr>規定に基づく政令に定めるもののほか、これを、この法律による改正後のそれぞれの法<wbr>律の相当規定により国又は地方公共団体の相当の機関に対して届出その他の手続をしな<wbr>ければならない事項についてその手続がされていないものとみなして、この法律による<wbr>改正後のそれぞれの法律の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">323</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">323</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">324</td><td class="sf3b2"><code><span class="sf3b2">第八条　この法律の施行前にした行為及びこの附則の規定によりなお従前の例によるこ<wbr>ととされる場合におけるこの法律の施行後にした行為に対する罰則の適用については、<wbr>なお従前の例による。</span></code></td>
+<td class="ln">324</td><td class="sf3b2"><code><span class="sf3b2">第八条　この法律の施行前にした行為及びこの附則の規定によりなお従前の例によるこ<wbr>ととされる場合におけるこの法律の施行後にした行為に対する罰則の適用については、<wbr>なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">325</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">325</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">326</td><td class="sf3b2"><code><span class="sf3b2">第九条　この附則に定めるもののほか、この法律の施行に関し必要な経過措置（罰則に<wbr>関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">326</td><td class="sf3b2"><code><span class="sf3b2">第九条　この附則に定めるもののほか、この法律の施行に関し必要な経過措置（罰則に<wbr>関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">327</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年七月六日法律第七一号）　抄</span></code></td>
+<td class="ln">327</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年七月六日法律第七一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">328</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">328</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">329</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成三十一年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">329</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成三十一年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">330</td><td class="sf3b2"><code><span class="sf3b2">一　第三条の規定並びに附則第七条第二項、第八条第二項、第十四条及び第十五条の規<wbr>定、附則第十八条中社会保険労務士法（昭和四十三年法律第八十九号）別表第一第十八<wbr>号の改正規定、附則第十九条中高年齢者等の雇用の安定等に関する法律（昭和四十六年<wbr>法律第六十八号）第二十八条及び第三十八条第三項の改正規定、附則第二十条中建設労<wbr>働者の雇用の改善等に関する法律（昭和五十一年法律第三十三号）第三十条第二項の改<wbr>正規定、附則第二十七条の規定、附則第二十八条中厚生労働省設置法（平成十一年法律<wbr>第九十七号）第四条第一項第五十二号の改正規定及び同法第九条第一項第四号の改正規<wbr>定（「（平成十年法律第四十六号）」の下に「、労働施策の総合的な推進並びに労働者<wbr>の雇用の安定及び職業生活の充実等に関する法律」を加える部分に限る。）並びに附則<wbr>第三十条の規定　公布の日</span></code></td>
+<td class="ln">330</td><td class="sf3b2"><code><span class="sf3b2">一　第三条の規定並びに附則第七条第二項、第八条第二項、第十四条及び第十五条の規<wbr>定、附則第十八条中社会保険労務士法（昭和四十三年法律第八十九号）別表第一第十八<wbr>号の改正規定、附則第十九条中高年齢者等の雇用の安定等に関する法律（昭和四十六年<wbr>法律第六十八号）第二十八条及び第三十八条第三項の改正規定、附則第二十条中建設労<wbr>働者の雇用の改善等に関する法律（昭和五十一年法律第三十三号）第三十条第二項の改<wbr>正規定、附則第二十七条の規定、附則第二十八条中厚生労働省設置法（平成十一年法律<wbr>第九十七号）第四条第一項第五十二号の改正規定及び同法第九条第一項第四号の改正規<wbr>定（「（平成十年法律第四十六号）」の下に「、労働施策の総合的な推進並びに労働者<wbr>の雇用の安定及び職業生活の充実等に関する法律」を加える部分に限る。）並びに附則<wbr>第三十条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">331</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+<td class="ln">331</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+</tr>
+<tr>
+<td class="ln">332</td><td class="sf3b2"><code><span class="sf3b2">第十二条　</span></code></td>
+<td class="ln">332</td><td class="sf3b2"><code><span class="sf3b2">第十二条　</span></code></td>
+</tr>
+<tr>
+<td class="ln">333</td><td class="sf3b2"><code><span class="sf3b2">３　政府は、前二項に定める事項のほか、この法律の施行後五年を目途として、この法<wbr>律による改正後のそれぞれの法律（以下この項において「改正後の各法律」という。）<wbr>の規定について、労働者と使用者の協議の促進等を通じて、仕事と生活の調和、労働条<wbr>件の改善、雇用形態又は就業形態の異なる労働者の間の均衡のとれた待遇の確保その他<wbr>の労働者の職業生活の充実を図る観点から、改正後の各法律の施行の状況等を勘案しつ<wbr>つ検討を加え、必要があると認めるときは、その結果に基づいて所要の措置を講ずるも<wbr>のとする。</span></code></td>
+<td class="ln">333</td><td class="sf3b2"><code><span class="sf3b2">３　政府は、前二項に定める事項のほか、この法律の施行後五年を目途として、この法<wbr>律による改正後のそれぞれの法律（以下この項において「改正後の各法律」という。）<wbr>の規定について、労働者と使用者の協議の促進等を通じて、仕事と生活の調和、労働条<wbr>件の改善、雇用形態又は就業形態の異なる労働者の間の均衡のとれた待遇の確保その他<wbr>の労働者の職業生活の充実を図る観点から、改正後の各法律の施行の状況等を勘案しつ<wbr>つ検討を加え、必要があると認めるときは、その結果に基づいて所要の措置を講ずるも<wbr>のとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">334</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">334</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">335</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律（附則第一条第三号に掲げる規定にあっては、当該規定）の施行<wbr>前にした行為並びにこの附則の規定によりなお従前の例によることとされる場合及びこ<wbr>の附則の規定によりなおその効力を有することとされる場合におけるこの法律の施行後<wbr>にした行為に対する罰則の適用については、なお従前の例による。</span></code></td>
+<td class="ln">335</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律（附則第一条第三号に掲げる規定にあっては、当該規定）の施行<wbr>前にした行為並びにこの附則の規定によりなお従前の例によることとされる場合及びこ<wbr>の附則の規定によりなおその効力を有することとされる場合におけるこの法律の施行後<wbr>にした行為に対する罰則の適用については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">336</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">336</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">337</td><td class="sf3b2"><code><span class="sf3b2">第三十条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置（罰<wbr>則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">337</td><td class="sf3b2"><code><span class="sf3b2">第三十条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置（罰<wbr>則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">338</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年一二月一四日法律第一〇二号）　抄</span></code></td>
+<td class="ln">338</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年一二月一四日法律第一〇二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">339</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">339</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">340</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成三十一年四月一日から施行する。</span></code></td>
+<td class="ln">340</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成三十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">341</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年六月五日法律第二四号）　抄</span></code></td>
+<td class="ln">341</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年六月五日法律第二四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">342</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">342</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">343</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">343</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">344</td><td class="sf3b2"><code><span class="sf3b2">一　第三条中労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等<wbr>に関する法律第四条の改正規定並びに次条及び附則第六条の規定　公布の日</span></code></td>
+<td class="ln">344</td><td class="sf3b2"><code><span class="sf3b2">一　第三条中労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等<wbr>に関する法律第四条の改正規定並びに次条及び附則第六条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">345</td><td class="sf3b2"><code><span class="sf3b2">（準備行為）</span></code></td>
+<td class="ln">345</td><td class="sf3b2"><code><span class="sf3b2">（準備行為）</span></code></td>
+</tr>
+<tr>
+<td class="ln">346</td><td class="sf3b2"><code><span class="sf3b2">第二条　第三条の規定による改正後の労働施策の総合的な推進並びに労働者の雇用の安<wbr>定及び職業生活の充実等に関する法律（以下「新労働施策総合推進法」という。）第三<wbr>十条の二第三項（新労働施策総合推進法第三十八条第二項の規定により読み替えて適用<wbr>する場合を含む。）に規定する指針の策定及びこれに関し必要な手続その他の行為は、<wbr>この法律の施行前においても、新労働施策総合推進法第三十条の二第三項から第五項ま<wbr>で（これらの規定を新労働施策総合推進法第三十八条第二項の規定により読み替えて適<wbr>用する場合を含む。）の規定の例により行うことができる。</span></code></td>
+<td class="ln">346</td><td class="sf3b2"><code><span class="sf3b2">第二条　第三条の規定による改正後の労働施策の総合的な推進並びに労働者の雇用の安<wbr>定及び職業生活の充実等に関する法律（以下「新労働施策総合推進法」という。）第三<wbr>十条の二第三項（新労働施策総合推進法第三十八条第二項の規定により読み替えて適用<wbr>する場合を含む。）に規定する指針の策定及びこれに関し必要な手続その他の行為は、<wbr>この法律の施行前においても、新労働施策総合推進法第三十条の二第三項から第五項ま<wbr>で（これらの規定を新労働施策総合推進法第三十八条第二項の規定により読み替えて適<wbr>用する場合を含む。）の規定の例により行うことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">347</td><td class="sf3b2"><code><span class="sf3b2">（中小事業主に関する経過措置）</span></code></td>
+<td class="ln">347</td><td class="sf3b2"><code><span class="sf3b2">（中小事業主に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">348</td><td class="sf3b2"><code><span class="sf3b2">第三条　中小事業主（国、地方公共団体及び行政執行法人以外の事業主であって、その<wbr>資本金の額又は出資の総額が三億円（小売業又はサービス業を主たる事業とする事業主<wbr>については五千万円、卸売業を主たる事業とする事業主については一億円）以下である<wbr>もの及びその常時使用する労働者の数が三百人（小売業を主たる事業とする事業主につ<wbr>いては五十人、卸売業又はサービス業を主たる事業とする事業主については百人）以下<wbr>であるものをいう。次条第二項において同じ。）については、公布の日から起算して三<wbr>年を超えない範囲内において政令で定める日までの間、新労働施策総合推進法第三十条<wbr>の二第一項（第五条の規定による改正後の労働者派遣事業の適正な運営の確保及び派遣<wbr>労働者の保護等に関する法律第四十七条の四の規定により読み替えて適用する場合を含<wbr>む。次条第二項において同じ。）中「講じなければ」とあるのは「講じるように努めな<wbr>ければ」と、新労働施策総合推進法第三十条の四、第三十三条第二項及び第三十六条第<wbr>一項（これらの規定を新労働施策総合推進法第三十八条第二項の規定により読み替えて<wbr>適用する場合を含む。）中「第三十条の二第一項及び第二項」とあるのは「第三十条の<wbr>二第二項」と、新労働施策総合推進法第三十五条中「並びに第三十条の二第一項及び第<wbr>二項」とあるのは「及び第三十条の二第二項」とする。</span></code></td>
+<td class="ln">348</td><td class="sf3b2"><code><span class="sf3b2">第三条　中小事業主（国、地方公共団体及び行政執行法人以外の事業主であって、その<wbr>資本金の額又は出資の総額が三億円（小売業又はサービス業を主たる事業とする事業主<wbr>については五千万円、卸売業を主たる事業とする事業主については一億円）以下である<wbr>もの及びその常時使用する労働者の数が三百人（小売業を主たる事業とする事業主につ<wbr>いては五十人、卸売業又はサービス業を主たる事業とする事業主については百人）以下<wbr>であるものをいう。次条第二項において同じ。）については、公布の日から起算して三<wbr>年を超えない範囲内において政令で定める日までの間、新労働施策総合推進法第三十条<wbr>の二第一項（第五条の規定による改正後の労働者派遣事業の適正な運営の確保及び派遣<wbr>労働者の保護等に関する法律第四十七条の四の規定により読み替えて適用する場合を含<wbr>む。次条第二項において同じ。）中「講じなければ」とあるのは「講じるように努めな<wbr>ければ」と、新労働施策総合推進法第三十条の四、第三十三条第二項及び第三十六条第<wbr>一項（これらの規定を新労働施策総合推進法第三十八条第二項の規定により読み替えて<wbr>適用する場合を含む。）中「第三十条の二第一項及び第二項」とあるのは「第三十条の<wbr>二第二項」と、新労働施策総合推進法第三十五条中「並びに第三十条の二第一項及び第<wbr>二項」とあるのは「及び第三十条の二第二項」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">349</td><td class="sf3b2"><code><span class="sf3b2">（紛争の解決の促進に関する特例に関する経過措置）</span></code></td>
+<td class="ln">349</td><td class="sf3b2"><code><span class="sf3b2">（紛争の解決の促進に関する特例に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">350</td><td class="sf3b2"><code><span class="sf3b2">第四条　この法律の施行の際現に個別労働関係紛争の解決の促進に関する法律（平成十<wbr>三年法律第百十二号）第六条第一項の紛争調整委員会又は同法第二十一条第一項の規定<wbr>により読み替えて適用する同法第五条第一項の規定により指名するあっせん員に係属し<wbr>ている同法第五条第一項（同法第二十一条第一項の規定により読み替えて適用する場合<wbr>を含む。次項において同じ。）のあっせんに係る紛争であって、新労働施策総合推進法<wbr>第三十条の四（新労働施策総合推進法第三十八条第二項及び前条の規定により読み替え<wbr>て適用する場合を含む。以下この項において同じ。）に規定する紛争に該当するものに<wbr>ついては、新労働施策総合推進法第三十条の四の規定にかかわらず、なお従前の例によ<wbr>る。</span></code></td>
+<td class="ln">350</td><td class="sf3b2"><code><span class="sf3b2">第四条　この法律の施行の際現に個別労働関係紛争の解決の促進に関する法律（平成十<wbr>三年法律第百十二号）第六条第一項の紛争調整委員会又は同法第二十一条第一項の規定<wbr>により読み替えて適用する同法第五条第一項の規定により指名するあっせん員に係属し<wbr>ている同法第五条第一項（同法第二十一条第一項の規定により読み替えて適用する場合<wbr>を含む。次項において同じ。）のあっせんに係る紛争であって、新労働施策総合推進法<wbr>第三十条の四（新労働施策総合推進法第三十八条第二項及び前条の規定により読み替え<wbr>て適用する場合を含む。以下この項において同じ。）に規定する紛争に該当するものに<wbr>ついては、新労働施策総合推進法第三十条の四の規定にかかわらず、なお従前の例によ<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">351</td><td class="sf3b2"><code><span class="sf3b2">２　前条の政令で定める日において現に個別労働関係紛争の解決の促進に関する法律第<wbr>六条第一項の紛争調整委員会又は同法第二十一条第一項の規定により読み替えて適用す<wbr>る同法第五条第一項の規定により指名するあっせん員に係属している同法第五条第一項<wbr>のあっせんに係る紛争であって、新労働施策総合推進法第三十条の二第一項に定める事<wbr>項についての労働者と中小事業主との間の紛争に該当するものについては、新労働施策<wbr>総合推進法第三十条の四（新労働施策総合推進法第三十八条第二項の規定により読み替<wbr>えて適用する場合を含む。）の規定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">351</td><td class="sf3b2"><code><span class="sf3b2">２　前条の政令で定める日において現に個別労働関係紛争の解決の促進に関する法律第<wbr>六条第一項の紛争調整委員会又は同法第二十一条第一項の規定により読み替えて適用す<wbr>る同法第五条第一項の規定により指名するあっせん員に係属している同法第五条第一項<wbr>のあっせんに係る紛争であって、新労働施策総合推進法第三十条の二第一項に定める事<wbr>項についての労働者と中小事業主との間の紛争に該当するものについては、新労働施策<wbr>総合推進法第三十条の四（新労働施策総合推進法第三十八条第二項の規定により読み替<wbr>えて適用する場合を含む。）の規定にかかわらず、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">352</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">352</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">353</td><td class="sf3b2"><code><span class="sf3b2">第五条　この法律の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。</span></code></td>
+<td class="ln">353</td><td class="sf3b2"><code><span class="sf3b2">第五条　この法律の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">354</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">354</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">355</td><td class="sf3b2"><code><span class="sf3b2">第六条　この附則に定めるもののほか、この法律の施行に関して必要な経過措置は、政<wbr>令で定める。</span></code></td>
+<td class="ln">355</td><td class="sf3b2"><code><span class="sf3b2">第六条　この附則に定めるもののほか、この法律の施行に関して必要な経過措置は、政<wbr>令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">356</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+<td class="ln">356</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+</tr>
+<tr>
+<td class="ln">357</td><td class="sf3b2"><code><span class="sf3b2">第七条　政府は、この法律の施行後五年を経過した場合において、この法律による改正<wbr>後の規定の施行の状況について検討を加え、必要があると認めるときは、その結果に基<wbr>づいて所要の措置を講ずるものとする。</span></code></td>
+<td class="ln">357</td><td class="sf3b2"><code><span class="sf3b2">第七条　政府は、この法律の施行後五年を経過した場合において、この法律による改正<wbr>後の規定の施行の状況について検討を加え、必要があると認めるときは、その結果に基<wbr>づいて所要の措置を講ずるものとする。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

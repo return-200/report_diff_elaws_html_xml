@@ -1,0 +1,747 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十一年労働省令第十七号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十一年労働省令第十七号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">労働保険審査官及び労働保険審査会法施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">労働保険審査官及び労働保険審査会法施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">労働保険審査官及び労働保険審査会法（昭和三十一年法律第百二十六号）を実施するた<wbr>め、及び労働保険審査官及び労働保険審査会法施行令（昭和三十一年政令第二百四十八<wbr>号）の規定に基き、労働保険審査官及び労働保険審査会法施行規則を次のように定める<wbr>。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">労働保険審査官及び労働保険審査会法（昭和三十一年法律第百二十六号）を実施するた<wbr>め、及び労働保険審査官及び労働保険審査会法施行令（昭和三十一年政令第二百四十八<wbr>号）の規定に基き、労働保険審査官及び労働保険審査会法施行規則を次のように定める<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（関係労働者及び関係事業主を代表する者の名称）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（関係労働者及び関係事業主を代表する者の名称）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　労働保険審査官及び労働保険審査会法（以下「法」という。）第五条の規定に<wbr>より指名された者の名称は、労働者災害補償保険制度の関係労働者又は関係事業主を代<wbr>表する者は労働者災害補償保険審査参与とし、雇用保険制度の関係労働者又は関係事業<wbr>主を代表する者は雇用保険審査参与とし、それぞれ当該都道府県の名を冠する。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　労働保険審査官及び労働保険審査会法（以下「法」という。）第五条の規定に<wbr>より指名された者の名称は、労働者災害補償保険制度の関係労働者又は関係事業主を代<wbr>表する者は労働者災害補償保険審査参与とし、雇用保険制度の関係労働者又は関係事業<wbr>主を代表する者は雇用保険審査参与とし、それぞれ当該都道府県の名を冠する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十六条の規定により指名された者の名称は、労働保険審査会参与とする。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十六条の規定により指名された者の名称は、労働保険審査会参与とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（審査請求書又は再審査請求書）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（審査請求書又は再審査請求書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二条　労働保険審査官及び労働保険審査会法施行令（以下「令」という。）第四条に<wbr>規定する審査請求書の様式は、労働者災害補償保険法（昭和二十二年法律第五十号）第<wbr>三十八条第一項の規定による審査請求の場合にあつては様式第一号とし、雇用保険法（<wbr>昭和四十九年法律第百十六号）第六十九条第一項の規定による審査請求の場合にあつて<wbr>は様式第二号とする。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二条　労働保険審査官及び労働保険審査会法施行令（以下「令」という。）第四条に<wbr>規定する審査請求書の様式は、労働者災害補償保険法（昭和二十二年法律第五十号）第<wbr>三十八条第一項の規定による審査請求の場合にあつては様式第一号とし、雇用保険法（<wbr>昭和四十九年法律第百十六号）第六十九条第一項の規定による審査請求の場合にあつて<wbr>は様式第二号とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">２　令第二十四条に規定する再審査請求書の様式は、労働者災害補償保険法第三十八条<wbr>第一項の規定による再審査請求の場合にあつては様式第三号とし、雇用保険法第六十九<wbr>条第一項の規定による再審査請求の場合にあつては様式第四号とする。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">２　令第二十四条に規定する再審査請求書の様式は、労働者災害補償保険法第三十八条<wbr>第一項の規定による再審査請求の場合にあつては様式第三号とし、雇用保険法第六十九<wbr>条第一項の規定による再審査請求の場合にあつては様式第四号とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（審理のための処分の申立書）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（審理のための処分の申立書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三条　令第十三条第二項又は第三十条第一項に規定する審理のための処分の申立書の<wbr>様式は、様式第五号とする。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三条　令第十三条第二項又は第三十条第一項に規定する審理のための処分の申立書の<wbr>様式は、様式第五号とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（証票）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（証票）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十五条第三項の規定により労働者災害補償保険審査官又は雇用保険審査官<wbr>が携帯すべき証票の様式は、様式第六号又は様式第七号とする。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十五条第三項の規定により労働者災害補償保険審査官又は雇用保険審査官<wbr>が携帯すべき証票の様式は、様式第六号又は様式第七号とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　法第四十六条第三項の規定により審査員が携帯すべき証票の様式は、様式第八号と<wbr>する。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　法第四十六条第三項の規定により審査員が携帯すべき証票の様式は、様式第八号と<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（電磁的記録に記録された事項の表示方法）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（電磁的記録に記録された事項の表示方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　法第十六条の三第一項（法第五十条において読み替えて準用する場合を含<wbr>む。）の規定による電磁的記録に記録された事項の表示は、紙面又は出力装置の映像面<wbr>に表示する方法によつて行うものとする。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　法第十六条の三第一項（法第五十条において読み替えて準用する場合を含<wbr>む。）の規定による電磁的記録に記録された事項の表示は、紙面又は出力装置の映像面<wbr>に表示する方法によつて行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（費用の弁償）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（費用の弁償）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">18</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第五条　令第十四条第一項（令第三十三条第一項において準用する場合を含む。）の規<wbr>定により、法第十五条第一項第一号若しくは第二項又は法第四十六条第一項第一号若し<wbr>くは第二項の規定により出頭を求められた審査請求人、再審査請求人又は代理人に対し<wbr>て支給する旅費の額は、鉄道賃、船賃、車賃及び宿泊料（以下この項において「鉄道賃<wbr>等」という。）にあつては実費額とし、日当にあつては一般職の職員の給与に関する法<wbr>律（昭和二十五年法律第九十五号）第六条第一項第一号イに規定する行政職俸給表（一<wbr>）（以下「行政職俸給表（一）」という。）の二級の職務にある者が国家公務員等の旅<wbr>費に関する法律（昭和二十五年法律第百十四号。以下「</span><span style="color: #000000; background-color: #efcb05; ">」という。）の規定に基づいて<wbr>受ける額と同一とする。ただし、鉄道賃等の実費額が、行政職俸給表（一）の二級の職<wbr>務にある者が旅費法の規定に基づいて受ける額を超えるときは、鉄道賃等の額は、当該<wbr>旅費法の規定に基づいて受ける額と同一とする。</span></code></td>
+<td class="ln">18</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第五条　令第十四条第一項（令第三十三条第一項において準用する場合を含む。）の規<wbr>定により、法第十五条第一項第一号若しくは第二項又は法第四十六条第一項第一号若し<wbr>くは第二項の規定により出頭を求められた審査請求人、再審査請求人又は代理人に対し<wbr>て支給する旅費の額は、鉄道賃、船賃、車賃及び宿泊料（以下この項において「鉄道賃<wbr>等」という。）にあつては実費額とし、日当にあつては一般職の職員の給与に関する法<wbr>律（昭和二十五年法律第九十五号）第六条第一項第一号イに規定する行政職俸給表（一<wbr>）（以下「行政職俸給表（一）」という。）の二級の職務にある者が国家公務員等の旅<wbr>費に関する法律（昭和二十五年法律第百十四号。以下「</span><span class="sf17b18">旅費法</span><span style="color: #000000; background-color: #efcb05; ">」という。）の規定に基<wbr>づいて受ける額と同一とする。ただし、鉄道賃等の実費額が、行政職俸給表（一）の二<wbr>級の職務にある者が旅費法の規定に基づいて受ける額を超えるときは、鉄道賃等の額は<wbr>、当該旅費法の規定に基づいて受ける額と同一とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">２　令第十四条第一項（令第三十三条第一項において準用する場合を含む。）の規定に<wbr>より、法第十五条第一項第一号若しくは第二項又は法第四十六条第一項第一号若しくは<wbr>第二項の規定により出頭を求められた参考人又は法第十五条第一項第三号若しくは法第<wbr>四十六条第一項第三号の鑑定人に対して支給する旅費の額は、行政職俸給表（一）の二<wbr>級の職務にある者が旅費法の規定に基づいて受ける鉄道賃、船賃、車賃、日当及び宿泊<wbr>料の額と同一とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">２　令第十四条第一項（令第三十三条第一項において準用する場合を含む。）の規定に<wbr>より、法第十五条第一項第一号若しくは第二項又は法第四十六条第一項第一号若しくは<wbr>第二項の規定により出頭を求められた参考人又は法第十五条第一項第三号若しくは法第<wbr>四十六条第一項第三号の鑑定人に対して支給する旅費の額は、行政職俸給表（一）の二<wbr>級の職務にある者が旅費法の規定に基づいて受ける鉄道賃、船賃、車賃、日当及び宿泊<wbr>料の額と同一とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">３　令第十四条第三項（令第三十三条第一項において準用する場合を含む。）に規定す<wbr>る鑑定人に対して支給する鑑定料の額は、鑑定の難易の程度その他の事情を勘案して、<wbr>労働者災害補償保険法第三十八条第一項の規定による審査請求の場合にあつては当該労<wbr>働者災害補償保険審査官が、雇用保険法第六十九条第一項の規定による審査請求の場合<wbr>にあつては当該雇用保険審査官が、再審査請求の場合にあつては労働保険審査会（以下<wbr>「審査会」という。）が、それぞれ、定める額とする。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">３　令第十四条第三項（令第三十三条第一項において準用する場合を含む。）に規定す<wbr>る鑑定人に対して支給する鑑定料の額は、鑑定の難易の程度その他の事情を勘案して、<wbr>労働者災害補償保険法第三十八条第一項の規定による審査請求の場合にあつては当該労<wbr>働者災害補償保険審査官が、雇用保険法第六十九条第一項の規定による審査請求の場合<wbr>にあつては当該雇用保険審査官が、再審査請求の場合にあつては労働保険審査会（以下<wbr>「審査会」という。）が、それぞれ、定める額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">４　費用の弁償は、労働者災害補償保険法第三十八条第一項又は雇用保険法第六十九条<wbr>第一項の規定による審査請求の場合にあつては当該労働者災害補償保険審査官又は当該<wbr>雇用保険審査官の置かれている都道府県労働局の長が、再審査請求の場合にあつては厚<wbr>生労働省大臣官房会計課長が、それぞれ、支給するものとする。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">４　費用の弁償は、労働者災害補償保険法第三十八条第一項又は雇用保険法第六十九条<wbr>第一項の規定による審査請求の場合にあつては当該労働者災害補償保険審査官又は当該<wbr>雇用保険審査官の置かれている都道府県労働局の長が、再審査請求の場合にあつては厚<wbr>生労働省大臣官房会計課長が、それぞれ、支給するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（収入印紙を貼付するための書面）</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（収入印紙を貼付するための書面）</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　令第十四条の五第二項（令第三十三条第一項において読み替えて準用する<wbr>場合を含む。）に規定する厚生労働省令で定める書面は、様式第五号の二とする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　令第十四条の五第二項（令第三十三条第一項において読み替えて準用する<wbr>場合を含む。）に規定する厚生労働省令で定める書面は、様式第五号の二とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（送付に要する費用の納付方法）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（送付に要する費用の納付方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第五条の三　令第十四条の七（令第三十三条第一項において読み替えて準用する場合を<wbr>含む。）に規定する厚生労働省令で定める方法は、次に掲げる方法とする。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第五条の三　令第十四条の七（令第三十三条第一項において読み替えて準用する場合を<wbr>含む。）に規定する厚生労働省令で定める方法は、次に掲げる方法とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">一　郵便切手又は総務大臣が定めるこれに類する証票で納付する方法</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">一　郵便切手又は総務大臣が定めるこれに類する証票で納付する方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">二　情報通信技術を活用した行政の推進等に関する法律（平成十四年法律第百五十一号<wbr>）第六条第一項の規定により同項に規定する電子情報処理組織を使用して法第十六条の<wbr>三第一項（法第五十条において読み替えて準用する場合を含む。）の規定による交付の<wbr>求めをした場合において、当該求めにより得られた納付情報により納付する方法</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">二　情報通信技術を活用した行政の推進等に関する法律（平成十四年法律第百五十一号<wbr>）第六条第一項の規定により同項に規定する電子情報処理組織を使用して法第十六条の<wbr>三第一項（法第五十条において読み替えて準用する場合を含む。）の規定による交付の<wbr>求めをした場合において、当該求めにより得られた納付情報により納付する方法 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（手続の受継のための文書）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（手続の受継のための文書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第六条　令第十五条第一項（令第三十三条第一項において準用する場合を含む。）に規<wbr>定する手続の受継のための文書の様式は、様式第九号とする。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第六条　令第十五条第一項（令第三十三条第一項において準用する場合を含む。）に規<wbr>定する手続の受継のための文書の様式は、様式第九号とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第七条　削除</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第七条　削除 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（決定又は裁決の更正の申立書）</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（決定又は裁決の更正の申立書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第八条　令第十八条第二項（令第三十三条第一項において準用する場合を含む。）に規<wbr>定する決定又は裁決の更正の申立書の様式は、様式第十号とする。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第八条　令第十八条第二項（令第三十三条第一項において準用する場合を含む。）に規<wbr>定する決定又は裁決の更正の申立書の様式は、様式第十号とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（参加の申立書）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（参加の申立書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第九条　令第二十六条に規定する参加の申立書の様式は、様式第十一号とする。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第九条　令第二十六条に規定する参加の申立書の様式は、様式第十一号とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（審理の非公開の申立書）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（審理の非公開の申立書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第十条　令第二十八条の審理の非公開の申立ての文書の様式は、様式第十二号とする。<wbr></span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第十条　令第二十八条の審理の非公開の申立ての文書の様式は、様式第十二号とする。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（映像等の送受信による通話の方法による審理）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（映像等の送受信による通話の方法による審理）</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第十条の二　審査会は、審理を行う場合において、再審査請求人が遠隔の地に居住して<wbr>いるときその他審査会が相当と認めるときは、隔地者が映像と音声の送受信により相手<wbr>の状態を相互に認識しながら通話をすることができる方法によつて、審理を行うことが<wbr>できる。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第十条の二　審査会は、審理を行う場合において、再審査請求人が遠隔の地に居住して<wbr>いるときその他審査会が相当と認めるときは、隔地者が映像と音声の送受信により相手<wbr>の状態を相互に認識しながら通話をすることができる方法によつて、審理を行うことが<wbr>できる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する方法により審理を行う場合には、当事者又はその代理人の意見を聴<wbr>いて、当事者又はその代理人を当該審理に必要な装置の設置された場所であつて審査会<wbr>が相当と認める場所に出頭させてこれを行う。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する方法により審理を行う場合には、当事者又はその代理人の意見を聴<wbr>いて、当事者又はその代理人を当該審理に必要な装置の設置された場所であつて審査会<wbr>が相当と認める場所に出頭させてこれを行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する方法により審理を行う場合には、文書の写しを送信してこれを提<wbr>示することその他の審理の実施に必要な処置を行うため、ファクシミリを利用すること<wbr>ができる。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する方法により審理を行う場合には、文書の写しを送信してこれを提<wbr>示することその他の審理の実施に必要な処置を行うため、ファクシミリを利用すること<wbr>ができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">４　第一項に規定する方法により審理を行つたときは、その旨及び当事者又はその代理<wbr>人が出頭した場所を調書に記載しなければならない。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">４　第一項に規定する方法により審理を行つたときは、その旨及び当事者又はその代理<wbr>人が出頭した場所を調書に記載しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（調書の閲覧）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（調書の閲覧）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第四十七条第二項の規定により調書を閲覧する者は、審査会に、次に掲げ<wbr>る事項を記載した様式第十三号による文書を提出し、又はこれらの事項を陳述しなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第四十七条第二項の規定により調書を閲覧する者は、審査会に、次に掲げ<wbr>る事項を記載した様式第十三号による文書を提出し、又はこれらの事項を陳述しなけれ<wbr>ばならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　事件の表示</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　事件の表示</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">二　閲覧請求の理由</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">二　閲覧請求の理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">三　閲覧請求の年月日</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">三　閲覧請求の年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">四　閲覧請求人の氏名又は名称及び住所又は居所</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">四　閲覧請求人の氏名又は名称及び住所又は居所</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により調書を閲覧する者は、前項に規定するもののほか、場所、時間そ<wbr>の他閲覧に関し審査会の定めるところにより、閲覧しなければならない。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により調書を閲覧する者は、前項に規定するもののほか、場所、時間そ<wbr>の他閲覧に関し審査会の定めるところにより、閲覧しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　労働者災害補償保険審査官及び労働者災害補償保険審査会に係る証拠調の費用の支<wbr>払及び審査のために要した費用の弁償に関する省令（昭和二十七年労働省令第二十九号<wbr>）は、廃止する。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　労働者災害補償保険審査官及び労働者災害補償保険審査会に係る証拠調の費用の支<wbr>払及び審査のために要した費用の弁償に関する省令（昭和二十七年労働省令第二十九号<wbr>）は、廃止する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三五年六月一日労働省令第一四号）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三五年六月一日労働省令第一四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三五年七月一日労働省令第一七号）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三五年七月一日労働省令第一七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三七年四月三〇日労働省令第一一号）</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三七年四月三〇日労働省令第一一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和三十七年五月一日から施行する。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和三十七年五月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三七年九月二九日労働省令第二〇号）</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三七年九月二九日労働省令第二〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和三十七年十月一日から施行する。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和三十七年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年三月三〇日労働省令第三号）　抄</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年三月三〇日労働省令第三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年六月二五日労働省令第一六号）</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年六月二五日労働省令第一六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和三十九年七月一日から施行する。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和三十九年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年六月三〇日労働省令第一八号）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年六月三〇日労働省令第一八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和四十二年七月一日から施行する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和四十二年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年一二月二六日労働省令第三二号）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年一二月二六日労働省令第三二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和四十三年一月一日から施行する。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和四十三年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四五年四月二二日労働省令第九号）</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四五年四月二二日労働省令第九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の労働保険審査官及び労働保険審査会法施行規則第五条第三項の規定は、昭<wbr>和四十五年四月一日以後にさせることとした鑑定に係る鑑定料について適用し、同日前<wbr>にさせることとした鑑定に係る鑑定料については、なお従前の例による。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の労働保険審査官及び労働保険審査会法施行規則第五条第三項の規定は、昭<wbr>和四十五年四月一日以後にさせることとした鑑定に係る鑑定料について適用し、同日前<wbr>にさせることとした鑑定に係る鑑定料については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年五月一五日労働省令第一九号）　抄</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年五月一五日労働省令第一九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五〇年三月二五日労働省令第六号）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五〇年三月二五日労働省令第六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">この省令は、雇用保険法の施行の日（昭和五十年四月一日）から施行する。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">この省令は、雇用保険法の施行の日（昭和五十年四月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五一年五月一〇日労働省令第一七号）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五一年五月一〇日労働省令第一七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の労働保険審査官及び労働保険審査会法施行規則第五条第三項の規定は、昭<wbr>和五十一年四月一日以後にさせることとした鑑定に係る鑑定料について適用し、同日前<wbr>にさせることとした鑑定に係る鑑定料については、なお従前の例による。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の労働保険審査官及び労働保険審査会法施行規則第五条第三項の規定は、昭<wbr>和五十一年四月一日以後にさせることとした鑑定に係る鑑定料について適用し、同日前<wbr>にさせることとした鑑定に係る鑑定料については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五六年五月二八日労働省令第二二号）　抄</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五六年五月二八日労働省令第二二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、雇用に係る給付金等の整備充実を図るための関係法律の整備に関<wbr>する法律（以下「整備法」という。）の施行の日（昭和五十六年六月八日）から施行す<wbr>る。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、雇用に係る給付金等の整備充実を図るための関係法律の整備に関<wbr>する法律（以下「整備法」という。）の施行の日（昭和五十六年六月八日）から施行す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（労働保険審査官及び労働保険審査会法施行規則の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（労働保険審査官及び労働保険審査会法施行規則の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十条　第十条の規定による改正前の労働保険審査官及び労働保険審査会法施行規則第<wbr>二条第一項及び第二項並びに第五条第四項の規定は、旧炭鉱離職者法第八条第一項、第<wbr>九条第一項又は第九条の二第一項若しくは第二項の規定による炭鉱離職者求職手帳の発<wbr>給を受けた者については、なおその効力を有する。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十条　第十条の規定による改正前の労働保険審査官及び労働保険審査会法施行規則第<wbr>二条第一項及び第二項並びに第五条第四項の規定は、旧炭鉱離職者法第八条第一項、第<wbr>九条第一項又は第九条の二第一項若しくは第二項の規定による炭鉱離職者求職手帳の発<wbr>給を受けた者については、なおその効力を有する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年四月六日労働省令第一二号）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年四月六日労働省令第一二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の労働保険審査官及び労働保険審査会法施行規則第五条第三項の規定は、昭<wbr>和五十七年四月一日以後にさせることとした鑑定に係る鑑定料について適用し、同日前<wbr>にさせることとした鑑定に係る鑑定料については、なお従前の例による。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の労働保険審査官及び労働保険審査会法施行規則第五条第三項の規定は、昭<wbr>和五十七年四月一日以後にさせることとした鑑定に係る鑑定料について適用し、同日前<wbr>にさせることとした鑑定に係る鑑定料については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六〇年一二月二一日労働省令第二五号）　抄</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六〇年一二月二一日労働省令第二五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。ただし、第一条中労働保険審査官及び労働保<wbr>険審査会法施行規則第五条第一項の改正規定（「一般職の職員の給与に関する法律」を<wbr>「一般職の職員の給与等に関する法律」に改める部分に限る。）及び第二条中産業安全<wbr>専門官及び労働衛生専門官規程第二条第一項の改正規定（「一般職の職員の給与に関す<wbr>る法律」を「一般職の職員の給与等に関する法律」に改める部分に限る。）は、昭和六<wbr>十一年一月一日から施行する。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。ただし、第一条中労働保険審査官及び労働保<wbr>険審査会法施行規則第五条第一項の改正規定（「一般職の職員の給与に関する法律」を<wbr>「一般職の職員の給与等に関する法律」に改める部分に限る。）及び第二条中産業安全<wbr>専門官及び労働衛生専門官規程第二条第一項の改正規定（「一般職の職員の給与に関す<wbr>る法律」を「一般職の職員の給与等に関する法律」に改める部分に限る。）は、昭和六<wbr>十一年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年一二月一三日労働省令第三六号）　抄</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年一二月一三日労働省令第三六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、昭和六十四年一月一日から施行する。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、昭和六十四年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（労働保険審査官及び労働保険審査会法施行規則の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（労働保険審査官及び労働保険審査会法施行規則の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第二条　第二条の規定による改正前の労働保険審査官及び労働保険審査会法施行規則第<wbr>五条第三項及び第四項の規定（以下この条において「旧審査会規則の規定」という。）<wbr>は、旧港湾労働法（昭和四十年法律第百二十号）第六十五条第一項の規定による審査請<wbr>求については、なおその効力を有する。この場合において、旧審査会規則の規定中「港<wbr>湾労働法」とあるのは、「旧港湾労働法」とする。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第二条　第二条の規定による改正前の労働保険審査官及び労働保険審査会法施行規則第<wbr>五条第三項及び第四項の規定（以下この条において「旧審査会規則の規定」という。）<wbr>は、旧港湾労働法（昭和四十年法律第百二十号）第六十五条第一項の規定による審査請<wbr>求については、なおその効力を有する。この場合において、旧審査会規則の規定中「港<wbr>湾労働法」とあるのは、「旧港湾労働法」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年七月一二日労働省令第二六号）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年七月一二日労働省令第二六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年六月一〇日労働省令第二八号）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年六月一〇日労働省令第二八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成八年六月十一日から施行する。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成八年六月十一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年六月二六日労働省令第二九号）</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年六月二六日労働省令第二九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成八年七月一日から施行する。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成八年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月三一日労働省令第一七号）</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月三一日労働省令第一七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十二年四月一日から施行する。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年一〇月三一日労働省令第四一号）　抄</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年一〇月三一日労働省令第四一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施<wbr>行の日（平成十三年一月六日）から施行する。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施<wbr>行の日（平成十三年一月六日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第五条　第二条の規定による改正前の労働基準法施行規則第五十二条の規定による証票<wbr>、第三条の規定による改正前の職業安定法施行規則第三十三条第二項の規定による証明<wbr>書、第八条の規定による改正前の労働保険審査官及び労働保険審査会法施行規則第四条<wbr>の規定による証票、第二十六条の規定による改正前の職業能力開発促進法施行規則第七<wbr>十八条の規定による証票、第三十一条の規定による改正前の労働保険の保険料の徴収等<wbr>に関する法律施行規則第七十三条の規定による証票、第三十四条の規定による改正前の<wbr>労働安全衛生規則第九十五条の三の規定による証票、第五十二条の規定による改正前の<wbr>雇用保険法施行規則第百四十四条の規定による証明書、第七十条の規定による改正前の<wbr>女性労働基準規則第四条の規定による証票、第七十一条の規定による改正前の労働者派<wbr>遣事業の適正な運営の確保及び派遣労働者の就業条件の整備等に関する法律施行規則第<wbr>四十八条の規定による証明書及び第七十四条の規定による改正前の港湾労働法施行規則<wbr>第四十五条第二項の規定による証明書は、当分の間、第二条の規定による改正後の労働<wbr>基準法施行規則第五十二条の規定による証票、第三条の規定による改正後の職業安定法<wbr>施行規則第三十三条第二項の規定による証明書、第八条の規定による改正後の労働保険<wbr>審査官及び労働保険審査会法施行規則第四条の規定による証票、第二十六条の規定によ<wbr>る改正後の職業能力開発促進法施行規則第七十八条の規定による証票、第三十一条の規<wbr>定による改正後の労働保険の保険料の徴収等に関する法律施行規則第七十三条の規定に<wbr>よる証票、第三十四条の規定による改正後の労働安全衛生規則第九十五条の三の規定に<wbr>よる証票、第五十二条の規定による改正後の雇用保険法施行規則第百四十四条の規定に<wbr>よる証明書、第七十条の規定による改正後の女性労働基準規則第四条の規定による証票<wbr>、第七十一条の規定による改正後の労働者派遣事業の適正な運営の確保及び派遣労働者<wbr>の就業条件の整備等に関する法律施行規則第四十八条の規定による証明書及び第七十四<wbr>条の規定による改正後の港湾労働法施行規則第四十五条第二項の規定による証明書とみ<wbr>なす。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第五条　第二条の規定による改正前の労働基準法施行規則第五十二条の規定による証票<wbr>、第三条の規定による改正前の職業安定法施行規則第三十三条第二項の規定による証明<wbr>書、第八条の規定による改正前の労働保険審査官及び労働保険審査会法施行規則第四条<wbr>の規定による証票、第二十六条の規定による改正前の職業能力開発促進法施行規則第七<wbr>十八条の規定による証票、第三十一条の規定による改正前の労働保険の保険料の徴収等<wbr>に関する法律施行規則第七十三条の規定による証票、第三十四条の規定による改正前の<wbr>労働安全衛生規則第九十五条の三の規定による証票、第五十二条の規定による改正前の<wbr>雇用保険法施行規則第百四十四条の規定による証明書、第七十条の規定による改正前の<wbr>女性労働基準規則第四条の規定による証票、第七十一条の規定による改正前の労働者派<wbr>遣事業の適正な運営の確保及び派遣労働者の就業条件の整備等に関する法律施行規則第<wbr>四十八条の規定による証明書及び第七十四条の規定による改正前の港湾労働法施行規則<wbr>第四十五条第二項の規定による証明書は、当分の間、第二条の規定による改正後の労働<wbr>基準法施行規則第五十二条の規定による証票、第三条の規定による改正後の職業安定法<wbr>施行規則第三十三条第二項の規定による証明書、第八条の規定による改正後の労働保険<wbr>審査官及び労働保険審査会法施行規則第四条の規定による証票、第二十六条の規定によ<wbr>る改正後の職業能力開発促進法施行規則第七十八条の規定による証票、第三十一条の規<wbr>定による改正後の労働保険の保険料の徴収等に関する法律施行規則第七十三条の規定に<wbr>よる証票、第三十四条の規定による改正後の労働安全衛生規則第九十五条の三の規定に<wbr>よる証票、第五十二条の規定による改正後の雇用保険法施行規則第百四十四条の規定に<wbr>よる証明書、第七十条の規定による改正後の女性労働基準規則第四条の規定による証票<wbr>、第七十一条の規定による改正後の労働者派遣事業の適正な運営の確保及び派遣労働者<wbr>の就業条件の整備等に関する法律施行規則第四十八条の規定による証明書及び第七十四<wbr>条の規定による改正後の港湾労働法施行規則第四十五条第二項の規定による証明書とみ<wbr>なす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第六条　この省令の施行の際現に提出され又は交付されているこの省令による改正前の<wbr>それぞれの省令に定める様式による申請書等は、この省令による改正後のそれぞれの省<wbr>令に定める相当様式による申請書等とみなす。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第六条　この省令の施行の際現に提出され又は交付されているこの省令による改正前の<wbr>それぞれの省令に定める様式による申請書等は、この省令による改正後のそれぞれの省<wbr>令に定める相当様式による申請書等とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第七条　この省令の施行の際現に存するこの省令による改正前のそれぞれの省令に定め<wbr>る様式による申請書等の用紙は、当分の間、必要な改定をした上、使用することができ<wbr>る。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第七条　この省令の施行の際現に存するこの省令による改正前のそれぞれの省令に定め<wbr>る様式による申請書等の用紙は、当分の間、必要な改定をした上、使用することができ<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月二三日厚生労働省令第三一号）　抄</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月二三日厚生労働省令第三一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成十三年四月一日から施行する。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日厚生労働省令第九七号）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日厚生労働省令第九七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十八年四月一日から施行する。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一二月二八日厚生労働省令第一六八号）　抄</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一二月二八日厚生労働省令第一六八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十二年一月一日から施行する。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十二年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年二月三日厚生労働省令第一五号）</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年二月三日厚生労働省令第一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年二月二五日厚生労働省令第二五号）　抄</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年二月二五日厚生労働省令第二五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、行政不服審査法（平成二十六年法律第六十八号）の施行の日（平成二<wbr>十八年四月一日）から施行する。</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、行政不服審査法（平成二十六年法律第六十八号）の施行の日（平成二<wbr>十八年四月一日）から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（労働保険審査官及び労働保険審査会法施行規則の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（労働保険審査官及び労働保険審査会法施行規則の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある第五条の規定による改正前の労働保険審査官及び労働<wbr>保険審査会法施行規則様式第一号、様式第二号、様式第三号、様式第四号、様式第五号<wbr>、様式第九号、様式第十号、様式第十一号、様式第十二号及び様式第十三号による用紙<wbr>については、当分の間、これを取り繕って使用することができる。</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある第五条の規定による改正前の労働保険審査官及び労働<wbr>保険審査会法施行規則様式第一号、様式第二号、様式第三号、様式第四号、様式第五号<wbr>、様式第九号、様式第十号、様式第十一号、様式第十二号及び様式第十三号による用紙<wbr>については、当分の間、これを取り繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月七日厚生労働省令第一号）　抄</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月七日厚生労働省令第一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第二条　この省令による改正前のそれぞれの省令で定める様式（次項において「旧様式<wbr>」という。）により使用されている書類は、この省令による改正後のそれぞれの省令で<wbr>定める様式によるものとみなす。</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第二条　この省令による改正前のそれぞれの省令で定める様式（次項において「旧様式<wbr>」という。）により使用されている書類は、この省令による改正後のそれぞれの省令で<wbr>定める様式によるものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">２　旧様式による用紙については、合理的に必要と認められる範囲内で、当分の間、こ<wbr>れを取り繕って使用することができる。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">２　旧様式による用紙については、合理的に必要と認められる範囲内で、当分の間、こ<wbr>れを取り繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年一二月一三日厚生労働省令第八〇号）　抄</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年一二月一三日厚生労働省令第八〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、情報通信技術の活用による行政手続等に係る関係者の利便性の向<wbr>上並びに行政運営の簡素化及び効率化を図るための行政手続等における情報通信の技術<wbr>の利用に関する法律等の一部を改正する法律（令和元年法律第十六号）の施行の日（令<wbr>和元年十二月十六日）から施行する。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、情報通信技術の活用による行政手続等に係る関係者の利便性の向<wbr>上並びに行政運営の簡素化及び効率化を図るための行政手続等における情報通信の技術<wbr>の利用に関する法律等の一部を改正する法律（令和元年法律第十六号）の施行の日（令<wbr>和元年十二月十六日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">133</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第一号</span><span style="color: #000000; background-color: #efcb05; ">（第二条関係）</span></code></td>
+<td class="ln">133</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第一号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第二条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第二号（第二条関係）</span>&nbsp;</code></td>
+<td class="ln">134</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">三</span><span style="color: #000000; background-color: #efcb05; ">号</span><span style="color: #000000; background-color: #efcb05; ">（第二条関係）</span></code></td>
+<td class="ln">135</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">二</span><span style="color: #000000; background-color: #efcb05; ">号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第二条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第四号（第二条関係）</span>&nbsp;</code></td>
+<td class="ln">136</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">五</span><span style="color: #000000; background-color: #efcb05; ">号</span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">三</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+<td class="ln">137</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">三</span><span style="color: #000000; background-color: #efcb05; ">号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">二</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第五号の二（第五条の二関係）</span>&nbsp;</code></td>
+<td class="ln">138</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">六</span><span style="color: #000000; background-color: #efcb05; ">号</span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">四</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+<td class="ln">139</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">四</span><span style="color: #000000; background-color: #efcb05; ">号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">二</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第七号（第四条関係）</span>&nbsp;</code></td>
+<td class="ln">140</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">八</span><span style="color: #000000; background-color: #efcb05; ">号</span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">四</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+<td class="ln">141</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">五</span><span style="color: #000000; background-color: #efcb05; ">号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">三</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第九号（第六条関係）</span>&nbsp;</code></td>
+<td class="ln">142</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">十</span><span style="color: #000000; background-color: #efcb05; ">号</span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">八</span><span style="color: #000000; background-color: #efcb05; ">条</span><span style="color: #000000; background-color: #efcb05; ">関係）</span></code></td>
+<td class="ln">143</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">五</span><span style="color: #000000; background-color: #efcb05; ">号</span><span class="sf17b18">の二 </span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">五</span><span style="color: #000000; background-color: #efcb05; ">条</span><span class="sf17b18">の二</span><span style="color: #000000; background-color: #efcb05; ">関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第十一号（第九条関係）</span>&nbsp;</code></td>
+<td class="ln">144</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">十二</span><span style="color: #000000; background-color: #efcb05; ">号</span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">十</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+<td class="ln">145</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第</span><span class="sf17b16">六</span><span style="color: #000000; background-color: #efcb05; ">号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第</span><span class="sf17b16">四</span><span style="color: #000000; background-color: #efcb05; ">条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">様式第十三号（第十一条関係）</span>&nbsp;</code></td>
+<td class="ln">146</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">147</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第七号 （第四条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">148</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">149</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第八号 （第四条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">150</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">151</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第九号 （第六条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">152</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">153</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第十号 （第八条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">154</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">155</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第十一号 （第九条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">156</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">157</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第十二号 （第十条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">158</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">159</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">様式第十三号 （第十一条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">160</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十六年政令第二百八十号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十六年政令第二百八十号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">農村地域への産業の導入の促進等に関する法律施行令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">農村地域への産業の導入の促進等に関する法律施行令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、農村地域工業導入促進法（昭和四十六年法律第百十二号）第二条、第五条第一<wbr>項第三号及び第十条の規定に基づき、この政令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、農村地域工業導入促進法（昭和四十六年法律第百十二号）第二条、第五条第一<wbr>項第三号及び第十条の規定に基づき、この政令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（大都市及びその周辺の地域）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（大都市及びその周辺の地域）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">5</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　農村地域への産業の導入の促進等に関する法律（昭和四十六年法律第百十二号<wbr>。以下「法」という。）第二条の大都市及びその周辺の地域で政令で定めるものは、首<wbr>都圏整備法（昭和三十一年法律第八十三号）</span><span style="color: #000000; background-color: #efcb05; ">に規定する首都圏（以下「首都圏」という<wbr>。）、近畿圏整備法（昭和三十八年法律第百二十九号）第二条第一項に規定する近畿圏<wbr>（以下「近畿圏」という。）及び中部圏開発整備法（昭和四十一年法律第百二号）第二<wbr>条第一項に規定する中部圏（以下「中部圏」という。）とする。</span></code></td>
+<td class="ln">5</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　農村地域への産業の導入の促進等に関する法律（昭和四十六年法律第百十二号<wbr>。以下「法」という。）第二条の大都市及びその周辺の地域で政令で定めるものは、首<wbr>都圏整備法（昭和三十一年法律第八十三号）</span><span class="sf17b18">第二条第一項</span><span style="color: #000000; background-color: #efcb05; ">に規定する首都圏（以下「首<wbr>都圏」という。）、近畿圏整備法（昭和三十八年法律第百二十九号）第二条第一項に規<wbr>定する近畿圏（以下「近畿圏」という。）及び中部圏開発整備法（昭和四十一年法律第<wbr>百二号）第二条第一項に規定する中部圏（以下「中部圏」という。）とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（市の人口の規模）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（市の人口の規模）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第二条の政令で定める規模は、十万とする。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第二条の政令で定める規模は、十万とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（農村地域から除かれる地域の要件）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（農村地域から除かれる地域の要件）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第二条の政令で定める要件は、次のとおりとする。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第二条の政令で定める要件は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">一　首都圏にあっては、首都圏整備法第二条第三項に規定する既成市街地、同条第四項<wbr>に規定する近郊整備地帯又は同条第五項に規定する都市開発区域の全部又は一部がその<wbr>区域内にある市町村の区域であること。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">一　首都圏にあっては、首都圏整備法第二条第三項に規定する既成市街地、同条第四項<wbr>に規定する近郊整備地帯又は同条第五項に規定する都市開発区域の全部又は一部がその<wbr>区域内にある市町村の区域であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">二　近畿圏にあっては、近畿圏整備法第二条第三項に規定する既成都市区域又は同条第<wbr>四項に規定する近郊整備区域の全部又は一部がその区域内にある市町村の区域であるこ<wbr>と。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">二　近畿圏にあっては、近畿圏整備法第二条第三項に規定する既成都市区域又は同条第<wbr>四項に規定する近郊整備区域の全部又は一部がその区域内にある市町村の区域であるこ<wbr>と。</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">三　中部圏にあっては、中部圏開発整備法第二条第三項に規定する都市整備区域の全部<wbr>又は一部がその区域内にある市町村の区域であること。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">三　中部圏にあっては、中部圏開発整備法第二条第三項に規定する都市整備区域の全部<wbr>又は一部がその区域内にある市町村の区域であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">四　人口が十万以上である市の区域にあっては、次のいずれかに該当する市の区域であ<wbr>ること。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">四　人口が十万以上である市の区域にあっては、次のいずれかに該当する市の区域であ<wbr>ること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">イ　人口が二十万以上であること。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">イ　人口が二十万以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ロ　公表された最近の国勢調査の結果によるその市の区域に係る人口を当該国勢調査が<wbr>行われた年前において直近に行われた国勢調査の結果によるその市の区域に係る人口で<wbr>除して得た数値が、公表された最近の国勢調査の結果による全国の人口を当該国勢調査<wbr>が行われた年前において直近において行われた国勢調査の結果による全国の人口で除し<wbr>て得た数値を超えること。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ロ　公表された最近の国勢調査の結果によるその市の区域に係る人口を当該国勢調査が<wbr>行われた年前において直近に行われた国勢調査の結果によるその市の区域に係る人口で<wbr>除して得た数値が、公表された最近の国勢調査の結果による全国の人口を当該国勢調査<wbr>が行われた年前において直近において行われた国勢調査の結果による全国の人口で除し<wbr>て得た数値を超えること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　人口が十万以上である合併市（平成十三年一月一日以後に行われた市町村の合併（<wbr>二以上の市町村の区域の全部若しくは一部をもって市を置き、又は市町村の区域の全部<wbr>若しくは一部を他の市に編入することで市町村の数の減少を伴うものをいう。）により<wbr>設置され、又は他の市町村の区域の全部若しくは一部を編入した市をいう。）の区域が<wbr>、前項第一号から第三号までのいずれにも該当しない場合であって、かつ、同項第四号<wbr>イ又はロのいずれかに該当する場合における当該合併市の区域のうち旧市町村の区域（<wbr>平成十二年十二月三十一日における市町村の区域をいう。）であった区域についての同<wbr>項の規定の適用については、同項中「次のとおり」とあるのは「第四号に掲げるもの」<wbr>と、同号中「市の区域にあっては、次のいずれかに該当する市の区域」とあるのは「旧<wbr>市町村の区域（次項に規定する旧市町村の区域をいう。以下同じ。）であった区域にあ<wbr>っては、次のいずれかに該当する区域」と、同号イ中「人口」とあるのは「当該旧市町<wbr>村の区域に係る人口」と、同号ロ中「その市の区域」とあるのは「当該旧市町村の区域<wbr>」とする。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　人口が十万以上である合併市（平成十三年一月一日以後に行われた市町村の合併（<wbr>二以上の市町村の区域の全部若しくは一部をもって市を置き、又は市町村の区域の全部<wbr>若しくは一部を他の市に編入することで市町村の数の減少を伴うものをいう。）により<wbr>設置され、又は他の市町村の区域の全部若しくは一部を編入した市をいう。）の区域が<wbr>、前項第一号から第三号までのいずれにも該当しない場合であって、かつ、同項第四号<wbr>イ又はロのいずれかに該当する場合における当該合併市の区域のうち旧市町村の区域（<wbr>平成十二年十二月三十一日における市町村の区域をいう。）であった区域についての同<wbr>項の規定の適用については、同項中「次のとおり」とあるのは「第四号に掲げるもの」<wbr>と、同号中「市の区域にあっては、次のいずれかに該当する市の区域」とあるのは「旧<wbr>市町村の区域（次項に規定する旧市町村の区域をいう。以下同じ。）であった区域にあ<wbr>っては、次のいずれかに該当する区域」と、同号イ中「人口」とあるのは「当該旧市町<wbr>村の区域に係る人口」と、同号ロ中「その市の区域」とあるのは「当該旧市町村の区域<wbr>」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五五年三月三一日政令第四二号）　抄</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五五年三月三一日政令第四二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和五十五年四月一日から施行する。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和五十五年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五六年三月三一日政令第七三号）　抄</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五六年三月三一日政令第七三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和五十六年四月一日から施行する。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和五十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（農村地域工業導入促進法施行令の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（農村地域工業導入促進法施行令の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　前条の規定による改正後の農村地域工業導入促進法施行令第六条の規定は<wbr>、施行日以後に新設され、又は増設される設備を製造の事業の用に供する場合について<wbr>適用し、施行日前に新設され、又は増設された設備を製造の事業の用に供した場合につ<wbr>いては、なお従前の例による。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　前条の規定による改正後の農村地域工業導入促進法施行令第六条の規定は<wbr>、施行日以後に新設され、又は増設される設備を製造の事業の用に供する場合について<wbr>適用し、施行日前に新設され、又は増設された設備を製造の事業の用に供した場合につ<wbr>いては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年三月三一日政令第七二号）　抄</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年三月三一日政令第七二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和五十七年四月一日から施行する。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和五十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五九年七月二四日政令第二四四号）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五九年七月二四日政令第二四四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十九年八月一日から施行する。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十九年八月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第六条の規定は、この政令の施行の日以後に新設され、又は増設される設<wbr>備を製造の事業の用に供する場合について適用し、この政令の施行の日前に新設され、<wbr>又は増設された設備を製造の事業の用に供した場合については、なお従前の例による。<wbr></span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第六条の規定は、この政令の施行の日以後に新設され、又は増設される設<wbr>備を製造の事業の用に供する場合について適用し、この政令の施行の日前に新設され、<wbr>又は増設された設備を製造の事業の用に供した場合については、なお従前の例による。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年九月三〇日政令第三一四号）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年九月三〇日政令第三一四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和六十一年十月一日から施行する。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和六十一年十月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第六条の規定は、この政令の施行の日以後に新設され、又は増設される設<wbr>備を製造の事業の用に供する場合について適用し、この政令の施行の日前に新設され、<wbr>又は増設された設備を製造の事業の用に供した場合については、なお従前の例による。<wbr></span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第六条の規定は、この政令の施行の日以後に新設され、又は増設される設<wbr>備を製造の事業の用に供する場合について適用し、この政令の施行の日前に新設され、<wbr>又は増設された設備を製造の事業の用に供した場合については、なお従前の例による。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年三月三一日政令第一〇六号）　抄</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年三月三一日政令第一〇六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和六十二年四月一日から施行する。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和六十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年三月三一日政令第七三号）　抄</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年三月三一日政令第七三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和六十三年四月一日から施行する。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和六十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年六月一八日政令第二〇四号）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年六月一八日政令第二〇四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月三〇日政令第一四九号）　抄</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月三〇日政令第一四九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十三年四月一日から施行する。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月三一日政令第一〇〇号）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月三一日政令第一〇〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年七月一四日政令第一九三号）　抄</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年七月一四日政令第一九三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、農村地域工業等導入促進法の一部を改正する法律の施行の日（平成二<wbr>十九年七月二十四日）から施行する。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、農村地域工業等導入促進法の一部を改正する法律の施行の日（平成二<wbr>十九年七月二十四日）から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,903 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十二年国家公安委員会規則第十三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十二年国家公安委員会規則第十三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">通信傍受規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">通信傍受規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">警察法施行令（昭和二十九年政令第百五十一号）第十三条第一項の規定に基づき、通信<wbr>傍受規則を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">警察法施行令（昭和二十九年政令第百五十一号）第十三条第一項の規定に基づき、通信<wbr>傍受規則を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　通信傍受の実施の手続等（第三条―第十七条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　通信傍受の実施の手続等（第三条―第十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第三章　通信傍受の記録等（第十八条―第二十八条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第三章　通信傍受の記録等（第十八条―第二十八条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第四章　補則（第二十九条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第四章　補則（第二十九条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この規則は、警察官が犯罪捜査のための通信傍受に関する法律（平成十一年法<wbr>律第百三十七号。以下「法」という。）の規定による通信の傍受を行うに当たって守る<wbr>べき方法、手続その他通信の傍受に関し必要な事項を定めることを目的とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この規則は、警察官が犯罪捜査のための通信傍受に関する法律（平成十一年法<wbr>律第百三十七号。以下「法」という。）の規定による通信の傍受を行うに当たって守る<wbr>べき方法、手続その他通信の傍受に関し必要な事項を定めることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　法に定めるもののほか、この規則において、次の各号に掲げる用語の意義は、<wbr>当該各号に定めるところによる。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　法に定めるもののほか、この規則において、次の各号に掲げる用語の意義は、<wbr>当該各号に定めるところによる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　令状記載傍受　法第三条第一項の規定による傍受をいう。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　令状記載傍受　法第三条第一項の規定による傍受をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　スポット傍受　法第十四条第一項の規定による傍受をいう。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　スポット傍受　法第十四条第一項の規定による傍受をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">三　第十四条外国語等通信　法第十四条第二項に規定する通信をいう。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">三　第十四条外国語等通信　法第十四条第二項に規定する通信をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">四　外国語等傍受　法第十四条第二項の規定による傍受をいう。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">四　外国語等傍受　法第十四条第二項の規定による傍受をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">五　他犯罪通信　法第十五条に規定する通信をいう。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">五　他犯罪通信　法第十五条に規定する通信をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">六　他犯罪傍受　法第十五条の規定による傍受をいう。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">六　他犯罪傍受　法第十五条の規定による傍受をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">七　令状記載再生　法第二十一条第三項の規定による再生であって、傍受すべき通信に<wbr>該当する通信に係るのをいう。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">七　令状記載再生　法第二十一条第三項の規定による再生であって、傍受すべき通信に<wbr>該当する通信に係るのをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">八　スポット再生　法第二十一条第三項の規定による再生であって、傍受すべき通信に<wbr>該当するかどうか明らかでない通信に係るものをいう。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">八　スポット再生　法第二十一条第三項の規定による再生であって、傍受すべき通信に<wbr>該当するかどうか明らかでない通信に係るものをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">九　第二十一条外国語等通信　法第二十一条第四項に規定する通信をいう。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">九　第二十一条外国語等通信　法第二十一条第四項に規定する通信をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">十　外国語等再生　法第二十一条第四項の規定による再生をいう。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">十　外国語等再生　法第二十一条第四項の規定による再生をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">十一　他犯罪再生　法第二十一条第五項の規定による再生をいう。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">十一　他犯罪再生　法第二十一条第五項の規定による再生をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">十二　傍受記録作成用媒体　法第二十四条第一項後段若しくは第二十六条第二項の規定<wbr>により記録をした記録媒体又は法第二十五条第三項の規定により作成した記録媒体の複<wbr>製をいう。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">十二　傍受記録作成用媒体　法第二十四条第一項後段若しくは第二十六条第二項の規定<wbr>により記録をした記録媒体又は法第二十五条第三項の規定により作成した記録媒体の複<wbr>製をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">十三　通信記録物等　傍受の原記録以外の傍受をした通信（法第二十一条第一項又は第<wbr>二十三条第四項の規定により再生をした通信及びこれらの規定による復号により復元さ<wbr>れた通信を含む。以下この号において同じ。）の記録をした記録媒体及びその複製その<wbr>他記録の内容の全部又は一部をそのまま記録した物又は書面並びに傍受をした通信の内<wbr>容の全部又は一部を要約して記載し又は記録した物又は書面をいう。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">十三　通信記録物等　傍受の原記録以外の傍受をした通信（法第二十一条第一項又は第<wbr>二十三条第四項の規定により再生をした通信及びこれらの規定による復号により復元さ<wbr>れた通信を含む。以下この号において同じ。）の記録をした記録媒体及びその複製その<wbr>他記録の内容の全部又は一部をそのまま記録した物又は書面並びに傍受をした通信の内<wbr>容の全部又は一部を要約して記載し又は記録した物又は書面をいう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">第二章　通信傍受の実施の手続等</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">第二章　通信傍受の実施の手続等</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（令状請求の手続）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（令状請求の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第三条　傍受令状の請求は、傍受の理由及び必要その他傍受令状請求書に記載すべき事<wbr>項について十分に検討してその検討結果を順を経て警察本部長（警視総監又は道府県警<wbr>察本部長をいう。以下同じ。）に報告し、事前にその承認を受けて行わなければならな<wbr>い。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第三条　傍受令状の請求は、傍受の理由及び必要その他傍受令状請求書に記載すべき事<wbr>項について十分に検討してその検討結果を順を経て警察本部長（警視総監又は道府県警<wbr>察本部長をいう。以下同じ。）に報告し、事前にその承認を受けて行わなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求をするときは、傍受の理由及び必要があることを疎明する参考人供述調<wbr>書、捜査報告書その他の資料並びに傍受の実施の方法及び場所その他傍受令状請求書の<wbr>記載事項を明らかにする資料を添えて行わなければならない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求をするときは、傍受の理由及び必要があることを疎明する参考人供述調<wbr>書、捜査報告書その他の資料並びに傍受の実施の方法及び場所その他傍受令状請求書の<wbr>記載事項を明らかにする資料を添えて行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">３　法第四条第三項の請求は、当該請求の相当性その他傍受令状請求書に記載すべき事<wbr>項について十分に検討してその検討結果を順を経て警察本部長に報告し、事前にその承<wbr>認を受けて行わなければならない。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">３　法第四条第三項の請求は、当該請求の相当性その他傍受令状請求書に記載すべき事<wbr>項について十分に検討してその検討結果を順を経て警察本部長に報告し、事前にその承<wbr>認を受けて行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">４　前項の請求をするときは、当該請求が相当であることを疎明する捜査報告書その他<wbr>の資料及び次に掲げる事項（法第二十条第一項の許可の請求をする場合にあっては、第<wbr>一号に掲げる事項）を明らかにする資料を添えて行わなければならない。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">４　前項の請求をするときは、当該請求が相当であることを疎明する捜査報告書その他<wbr>の資料及び次に掲げる事項（法第二十条第一項の許可の請求をする場合にあっては、第<wbr>一号に掲げる事項）を明らかにする資料を添えて行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">一　通信管理者等に関する事項</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">一　通信管理者等に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">二　傍受の実施に用いるものとして指定する特定電子計算機を特定するに足りる事項</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">二　傍受の実施に用いるものとして指定する特定電子計算機を特定するに足りる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">５　法第五条第四項後段の申立ては、当該申立ての相当性その他傍受令状請求書に記載<wbr>すべき事項について十分に検討してその検討結果を順を経て警察本部長に報告し、事前<wbr>にその承認を受けて行わなければならない。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">５　法第五条第四項後段の申立ては、当該申立ての相当性その他傍受令状請求書に記載<wbr>すべき事項について十分に検討してその検討結果を順を経て警察本部長に報告し、事前<wbr>にその承認を受けて行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">６　前項の申立てをするときは、当該申立てが相当であることを疎明する捜査報告書そ<wbr>の他の資料及び次に掲げる事項を明らかにする資料を添えて行わなければならない。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">６　前項の申立てをするときは、当該申立てが相当であることを疎明する捜査報告書そ<wbr>の他の資料及び次に掲げる事項を明らかにする資料を添えて行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　指定期間における傍受の実施の場所</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　指定期間における傍受の実施の場所</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　指定期間以外の期間における傍受の実施の場所</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　指定期間以外の期間における傍受の実施の場所</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">７　第一項若しくは第三項の請求又は第五項の申立てをするに当たっては、当該請求又<wbr>は申立てをしようとする指定警察官（法第四条第一項の規定に基づき国家公安委員会又<wbr>は都道府県公安委員会が指定する警視以上の警察官をいう。以下同じ。）その他の当該<wbr>事件の捜査全般の状況を把握している警察官が裁判官の下に出頭し、裁判官の求めに応<wbr>じ、陳述し、又は書類その他の物を提示しなければならない。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">７　第一項若しくは第三項の請求又は第五項の申立てをするに当たっては、当該請求又<wbr>は申立てをしようとする指定警察官（法第四条第一項の規定に基づき国家公安委員会又<wbr>は都道府県公安委員会が指定する警視以上の警察官をいう。以下同じ。）その他の当該<wbr>事件の捜査全般の状況を把握している警察官が裁判官の下に出頭し、裁判官の求めに応<wbr>じ、陳述し、又は書類その他の物を提示しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（傍受ができる期間の延長請求の手続）</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（傍受ができる期間の延長請求の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第四条　傍受ができる期間の延長の請求は、延長を必要とする事由及び延長を求める期<wbr>間について十分に検討してその検討結果を順を経て警察本部長に報告し、事前にその承<wbr>認を受けて行わなければならない。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第四条　傍受ができる期間の延長の請求は、延長を必要とする事由及び延長を求める期<wbr>間について十分に検討してその検討結果を順を経て警察本部長に報告し、事前にその承<wbr>認を受けて行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求をするときは、その必要があることを疎明する捜査報告書その他の資料<wbr>を添えて行わなければならない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求をするときは、その必要があることを疎明する捜査報告書その他の資料<wbr>を添えて行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">３　前条第七項の規定は、第一項の請求をする場合について準用する。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">３　前条第七項の規定は、第一項の請求をする場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（捜査主任官等）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（捜査主任官等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第五条　傍受を行う事件の捜査については、警察本部長が捜査主任官を指名しなければ<wbr>ならない。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第五条　傍受を行う事件の捜査については、警察本部長が捜査主任官を指名しなければ<wbr>ならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　捜査主任官は、警察本部長の指揮を受け、傍受の実施、再生の実施、通信記録物等<wbr>の管理その他の通信の傍受に関する事務を統括するものとする。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　捜査主任官は、警察本部長の指揮を受け、傍受の実施、再生の実施、通信記録物等<wbr>の管理その他の通信の傍受に関する事務を統括するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　警察本部長は、傍受の実施ごとに、警部以上の警察官の中から傍受実施主任官を指<wbr>名するものとする。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　警察本部長は、傍受の実施ごとに、警部以上の警察官の中から傍受実施主任官を指<wbr>名するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　傍受実施主任官は、捜査主任官の命を受け、傍受の実施及び再生の実施並びにこれ<wbr>らに付随する事務に従事する職員を指揮監督するものとする。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　傍受実施主任官は、捜査主任官の命を受け、傍受の実施及び再生の実施並びにこれ<wbr>らに付随する事務に従事する職員を指揮監督するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">５　警察本部長は、通信記録物等の管理に関する捜査主任官の職務を補助させるため、<wbr>警部補以上の警察官の中から通信記録物等管理者を指名するものとする。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">５　警察本部長は、通信記録物等の管理に関する捜査主任官の職務を補助させるため、<wbr>警部補以上の警察官の中から通信記録物等管理者を指名するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（傍受指導官）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（傍受指導官）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第六条　警察本部長は、捜査の適正を確保するための指導に関する事務を所掌する警察<wbr>本部（警視庁及び道府県警察本部をいう。）の課（課に準ずるものを含む。）に所属す<wbr>る警部以上の警察官の中から傍受指導官を指名するものとする。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第六条　警察本部長は、捜査の適正を確保するための指導に関する事務を所掌する警察<wbr>本部（警視庁及び道府県警察本部をいう。）の課（課に準ずるものを含む。）に所属す<wbr>る警部以上の警察官の中から傍受指導官を指名するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　傍受指導官は、傍受の実施及び再生の実施並びにこれらに付随する事務に従事する<wbr>職員に対して、適正な傍受の実施及び再生の実施に必要な指導教養を行うものとする。<wbr></span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　傍受指導官は、傍受の実施及び再生の実施並びにこれらに付随する事務に従事する<wbr>職員に対して、適正な傍受の実施及び再生の実施に必要な指導教養を行うものとする。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　傍受指導官は、法第二十三条第一項の規定による傍受の実施及び同条第四項の規定<wbr>による再生の実施に当たっては、警察通信職員と相互に緊密に連絡し、及び協力して、<wbr>当該傍受の実施の場所における特定電子計算機の使用方法に関する助言その他の適正な<wbr>傍受の実施及び再生の実施に必要な助言及び指導を行うものとする。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　傍受指導官は、法第二十三条第一項の規定による傍受の実施及び同条第四項の規定<wbr>による再生の実施に当たっては、警察通信職員と相互に緊密に連絡し、及び協力して、<wbr>当該傍受の実施の場所における特定電子計算機の使用方法に関する助言その他の適正な<wbr>傍受の実施及び再生の実施に必要な助言及び指導を行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（特定電子計算機の保管等）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（特定電子計算機の保管等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第七条　特定電子計算機は、警察庁、管区警察局、東京都警察情報通信部又は北海道警<wbr>察情報通信部において保管するものとする。　</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第七条　特定電子計算機は、警察庁、管区警察局、東京都警察情報通信部又は北海道警<wbr>察情報通信部において保管するものとする。　</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">２　警察通信職員は、法第二十三条第一項の規定による傍受の実施に当たっては、当該<wbr>傍受の実施の場所において、当該傍受の実施に用いるものとして指定された特定電子計<wbr>算機の設置その他の特定電子計算機の適正な供用の開始のために必要な措置を講じなけ<wbr>ればならない。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">２　警察通信職員は、法第二十三条第一項の規定による傍受の実施に当たっては、当該<wbr>傍受の実施の場所において、当該傍受の実施に用いるものとして指定された特定電子計<wbr>算機の設置その他の特定電子計算機の適正な供用の開始のために必要な措置を講じなけ<wbr>ればならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（最小化等に関する指示）</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（最小化等に関する指示）</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第八条　傍受の実施（法第二十条第一項又は第二十三条第一項第二号の規定によるもの<wbr>を除く。以下この項及び次項において同じ。）に当たっては、警察本部長は、あらかじ<wbr>め、次に掲げる事項について、捜査主任官に対し、文書により指示しなければならない<wbr>。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第八条　傍受の実施（法第二十条第一項又は第二十三条第一項第二号の規定によるもの<wbr>を除く。以下この項及び次項において同じ。）に当たっては、警察本部長は、あらかじ<wbr>め、次に掲げる事項について、捜査主任官に対し、文書により指示しなければならない<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">一　第十三条第五項、第六項及び第八項の規定により警察本部長が指定する時間</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">一　第十三条第五項、第六項及び第八項の規定により警察本部長が指定する時間</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">二　報道の取材のための通信が行われていると認めた場合に留意すべき事項</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">二　報道の取材のための通信が行われていると認めた場合に留意すべき事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">三　前二号に掲げるもののほか、傍受の実施の適正を確保するための事項</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">三　前二号に掲げるもののほか、傍受の実施の適正を確保するための事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　捜査主任官は、傍受の実施をしている場合においては、傍受実施主任官に、前項の<wbr>文書の写しを携帯させなければならない。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　捜査主任官は、傍受の実施をしている場合においては、傍受実施主任官に、前項の<wbr>文書の写しを携帯させなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、再生の実施について準用する。この場合において、第一項第一号<wbr>中「第十三条第五項、第六項及び第八項」とあるのは「第十四条第五項、第六項及び第<wbr>八項（同条第九項の規定によりこれらの規定の例によることとされる場合を含む。）」<wbr>と、「時間」とあるのは「時間又は部分」と、同項第二号中「報道」とあるのは「再生<wbr>に係る通信が報道」と、「が行われている」とあるのは「に該当する」と読み替えるも<wbr>のとする。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、再生の実施について準用する。この場合において、第一項第一号<wbr>中「第十三条第五項、第六項及び第八項」とあるのは「第十四条第五項、第六項及び第<wbr>八項（同条第九項の規定によりこれらの規定の例によることとされる場合を含む。）」<wbr>と、「時間」とあるのは「時間又は部分」と、同項第二号中「報道」とあるのは「再生<wbr>に係る通信が報道」と、「が行われている」とあるのは「に該当する」と読み替えるも<wbr>のとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（傍受令状の記載事項の厳守）</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（傍受令状の記載事項の厳守）</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第九条　傍受の実施又は再生の実施に当たっては、傍受令状に記載されている傍受すべ<wbr>き通信、傍受の実施の対象とすべき通信手段、傍受の実施の方法及び場所、傍受ができ<wbr>る期間、傍受の実施に関する条件その他傍受令状に記載されている事項を厳格に遵守し<wbr>なければならない。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第九条　傍受の実施又は再生の実施に当たっては、傍受令状に記載されている傍受すべ<wbr>き通信、傍受の実施の対象とすべき通信手段、傍受の実施の方法及び場所、傍受ができ<wbr>る期間、傍受の実施に関する条件その他傍受令状に記載されている事項を厳格に遵守し<wbr>なければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（傍受日誌）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（傍受日誌）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第十条　傍受の実施又は再生の実施に当たっては、逐次、法第二十七条第一項各号若し<wbr>くは第二項各号又は第二十八条第一項各号若しくは第二項各号に掲げる事項その他当該<wbr>傍受の実施又は再生の実施の状況を警察本部長が定める様式の書面に記載するものとす<wbr>る。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第十条　傍受の実施又は再生の実施に当たっては、逐次、法第二十七条第一項各号若し<wbr>くは第二項各号又は第二十八条第一項各号若しくは第二項各号に掲げる事項その他当該<wbr>傍受の実施又は再生の実施の状況を警察本部長が定める様式の書面に記載するものとす<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（通信事業者等に対する配慮）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（通信事業者等に対する配慮）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十一条　傍受の実施又は再生の実施（法第二十三条第四項の規定によるものを除く。<wbr>）に当たっては、通信事業者等の規模、電気通信設備の概要その他の通信事業者等の事<wbr>情を理解し、通信事業者等に必要な限度を超えて迷惑を及ぼさないように特に注意しな<wbr>ければならない。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十一条　傍受の実施又は再生の実施（法第二十三条第四項の規定によるものを除く。<wbr>）に当たっては、通信事業者等の規模、電気通信設備の概要その他の通信事業者等の事<wbr>情を理解し、通信事業者等に必要な限度を超えて迷惑を及ぼさないように特に注意しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　電気通信設備に接続する傍受又は再生のための機器については、電気通信設備を損<wbr>傷し、又はその機能に障害を与えないものを使用するものとする。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　電気通信設備に接続する傍受又は再生のための機器については、電気通信設備を損<wbr>傷し、又はその機能に障害を与えないものを使用するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（立会い）</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（立会い）</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十二条　傍受の実施（法第二十条第一項又は第二十三条第一項の規定によるものを除<wbr>く。）に当たっては、あらかじめ、立会人に対し、次に掲げる事項について説明しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十二条　傍受の実施（法第二十条第一項又は第二十三条第一項の規定によるものを除<wbr>く。）に当たっては、あらかじめ、立会人に対し、次に掲げる事項について説明しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">一　法第十三条、法第二十五条その他の立会人に係る主要な法令の規定</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">一　法第十三条、法第二十五条その他の立会人に係る主要な法令の規定</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">二　傍受令状に記載されている傍受の実施の対象とすべき通信手段、傍受の実施の方法<wbr>及び場所、傍受ができる期間並びに傍受の実施に関する条件</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">二　傍受令状に記載されている傍受の実施の対象とすべき通信手段、傍受の実施の方法<wbr>及び場所、傍受ができる期間並びに傍受の実施に関する条件</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">三　傍受のための機器の概要及びその使用方法</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">三　傍受のための機器の概要及びその使用方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">四　第八条第一項第一号に掲げる事項</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">四　第八条第一項第一号に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">五　法第二十五条第一項の封印の具体的方法に関する事項</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">五　法第二十五条第一項の封印の具体的方法に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げるもののほか、立会人が適切な立会いをするため参考となるべき事項<wbr></span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げるもののほか、立会人が適切な立会いをするため参考となるべき事項<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">２　法第十三条第二項の規定による立会人の意見が述べられたときは、これを勘案して<wbr>、必要に応じ、傍受の実施の適正を確保するための措置を講じなければならない。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">２　法第十三条第二項の規定による立会人の意見が述べられたときは、これを勘案して<wbr>、必要に応じ、傍受の実施の適正を確保するための措置を講じなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">３　前項に規定する場合においては、立会人に意見書の提出を求めなければならない。<wbr></span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">３　前項に規定する場合においては、立会人に意見書の提出を求めなければならない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">４　立会いをしていた期間中に立会人の意見が述べられなかったときは、立会人にその<wbr>旨を記載した意見書の提出を求めなければならない。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">４　立会いをしていた期間中に立会人の意見が述べられなかったときは、立会人にその<wbr>旨を記載した意見書の提出を求めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">83</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">５　前各項の規定は、</span><span style="color: #000000; background-color: #efcb05; ">の規定による再生の実施について準用する。この場合において、<wbr>第一項第一号中「法第十三条」とあるのは「法第二十一条第一項において準用する法第<wbr>十三条」と、同項第三号中「傍受」とあるのは「再生」と、同項第四号中「第八条第一<wbr>項第一号」とあるのは「第八条第三項において読み替えて準用する同条第一項第一号」<wbr>と、同項第五号中「法第二十五条第一項」とあるのは「法第二十五条第二項」と、第二<wbr>項中「法第十三条第二項」とあるのは「法第二十一条第一項において準用する法第十三<wbr>条第二項」と読み替えるものとする。　</span></code></td>
+<td class="ln">83</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">５　前各項の規定は、</span><span class="sf17b18">法第二十一条第一項</span><span style="color: #000000; background-color: #efcb05; ">の規定による再生の実施について準用する。<wbr>この場合において、第一項第一号中「法第十三条」とあるのは「法第二十一条第一項に<wbr>おいて準用する法第十三条」と、同項第三号中「傍受」とあるのは「再生」と、同項第<wbr>四号中「第八条第一項第一号」とあるのは「第八条第三項において読み替えて準用する<wbr>同条第一項第一号」と、同項第五号中「法第二十五条第一項」とあるのは「法第二十五<wbr>条第二項」と、第二項中「法第十三条第二項」とあるのは「法第二十一条第一項におい<wbr>て準用する法第十三条第二項」と読み替えるものとする。　 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（スポット傍受）</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（スポット傍受）</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第十三条　スポット傍受は、スポット傍受の開始時からあらかじめ設定した時間が経過<wbr>すると自動的にスポット傍受が中断される機能、スポット傍受をしている旨を標示する<wbr>機能その他スポット傍受の適正を確保するための機能を有する機器を用いて行うものと<wbr>する。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第十三条　スポット傍受は、スポット傍受の開始時からあらかじめ設定した時間が経過<wbr>すると自動的にスポット傍受が中断される機能、スポット傍受をしている旨を標示する<wbr>機能その他スポット傍受の適正を確保するための機能を有する機器を用いて行うものと<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">２　スポット傍受に当たっては、犯罪の組織的背景、既に傍受をされた通信の内容その<wbr>他スポット傍受をしている通信の該当性判断に資する事項を考慮しなければならない。<wbr></span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">２　スポット傍受に当たっては、犯罪の組織的背景、既に傍受をされた通信の内容その<wbr>他スポット傍受をしている通信の該当性判断に資する事項を考慮しなければならない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">３　傍受の実施の開始時に現に通話が行われているとき又は傍受の実施の間に通話が開<wbr>始されたときは、スポット傍受を開始するものとする。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">３　傍受の実施の開始時に現に通話が行われているとき又は傍受の実施の間に通話が開<wbr>始されたときは、スポット傍受を開始するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">４　スポット傍受をしている場合において、次の各号に掲げる通信が行われていると認<wbr>めるに至ったときは、スポット傍受を終了し、それぞれ当該各号に定める傍受を開始す<wbr>るものとする。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">４　スポット傍受をしている場合において、次の各号に掲げる通信が行われていると認<wbr>めるに至ったときは、スポット傍受を終了し、それぞれ当該各号に定める傍受を開始す<wbr>るものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">一　傍受すべき通信に該当することが明らかである通信　令状記載傍受</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">一　傍受すべき通信に該当することが明らかである通信　令状記載傍受</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">二　第十四条外国語等通信　外国語等傍受</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">二　第十四条外国語等通信　外国語等傍受</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">三　他犯罪通信　他犯罪傍受</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">三　他犯罪通信　他犯罪傍受</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">５　スポット傍受を開始した場合においては、前項の規定により同項各号に定める傍受<wbr>を開始し、又は第七項の規定によりスポット傍受を終了したときを除き、スポット傍受<wbr>の開始時からあらかじめ警察本部長が指定した時間内にスポット傍受を中断しなければ<wbr>ならない。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">５　スポット傍受を開始した場合においては、前項の規定により同項各号に定める傍受<wbr>を開始し、又は第七項の規定によりスポット傍受を終了したときを除き、スポット傍受<wbr>の開始時からあらかじめ警察本部長が指定した時間内にスポット傍受を中断しなければ<wbr>ならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">６　前項の規定によりスポット傍受を中断した時点からあらかじめ警察本部長が指定し<wbr>た時間が経過した後において、当該スポット傍受を中断した時点において現に行われて<wbr>いた通話と同一の通話が行われており、傍受すべき通信に該当するかどうかを判断する<wbr>ため必要があると認めるときは、スポット傍受を開始するものとする。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">６　前項の規定によりスポット傍受を中断した時点からあらかじめ警察本部長が指定し<wbr>た時間が経過した後において、当該スポット傍受を中断した時点において現に行われて<wbr>いた通話と同一の通話が行われており、傍受すべき通信に該当するかどうかを判断する<wbr>ため必要があると認めるときは、スポット傍受を開始するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">７　スポット傍受をしている場合において、第四項各号のいずれにも該当しない通信で<wbr>あって傍受すべき通信に該当しないことが明らかであるものが行われていると認めるに<wbr>至ったときは、直ちに、スポット傍受を終了しなければならない。</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">７　スポット傍受をしている場合において、第四項各号のいずれにも該当しない通信で<wbr>あって傍受すべき通信に該当しないことが明らかであるものが行われていると認めるに<wbr>至ったときは、直ちに、スポット傍受を終了しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定によりスポット傍受を終了した時又は第十五条第二項の規定により傍受<wbr>を終了した時に現に行われていた通話が傍受の終了時からあらかじめ警察本部長が指定<wbr>した時間を超えて継続しており、当該傍受の終了時における通信と内容の異なる通信が<wbr>行われていないかどうかを確認するため必要があると認めるときは、スポット傍受を開<wbr>始するものとする。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定によりスポット傍受を終了した時又は第十五条第二項の規定により傍受<wbr>を終了した時に現に行われていた通話が傍受の終了時からあらかじめ警察本部長が指定<wbr>した時間を超えて継続しており、当該傍受の終了時における通信と内容の異なる通信が<wbr>行われていないかどうかを確認するため必要があると認めるときは、スポット傍受を開<wbr>始するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（スポット再生）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（スポット再生）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第十四条　スポット再生は、スポット再生の開始時からあらかじめ設定した時間が経過<wbr>し、又はスポット再生を開始した部分からあらかじめ設定した部分までの範囲を表示す<wbr>ると自動的にスポット再生が中断される機能、スポット再生をしている旨を標示する機<wbr>能その他スポット再生の適正を確保するための機能を有する機器を用いて行うものとす<wbr>る。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第十四条　スポット再生は、スポット再生の開始時からあらかじめ設定した時間が経過<wbr>し、又はスポット再生を開始した部分からあらかじめ設定した部分までの範囲を表示す<wbr>ると自動的にスポット再生が中断される機能、スポット再生をしている旨を標示する機<wbr>能その他スポット再生の適正を確保するための機能を有する機器を用いて行うものとす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２　スポット再生に当たっては、犯罪の組織的背景、既に再生をされた通信の内容その<wbr>他スポット再生をしている通信の該当性判断に資する事項を考慮しなければならない。<wbr></span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２　スポット再生に当たっては、犯罪の組織的背景、既に再生をされた通信の内容その<wbr>他スポット再生をしている通信の該当性判断に資する事項を考慮しなければならない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">３　再生の実施をするときは、通話ごとに、スポット再生を開始するものとする。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">３　再生の実施をするときは、通話ごとに、スポット再生を開始するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">４　スポット再生をしている場合において、当該スポット再生に係る通信が次の各号に<wbr>掲げる通信のいずれかに該当すると認めるに至ったときは、スポット再生を終了し、そ<wbr>れぞれ当該各号に定める再生を開始するものとする。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">４　スポット再生をしている場合において、当該スポット再生に係る通信が次の各号に<wbr>掲げる通信のいずれかに該当すると認めるに至ったときは、スポット再生を終了し、そ<wbr>れぞれ当該各号に定める再生を開始するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">一　傍受すべき通信に該当することが明らかである通信　令状記載再生</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">一　傍受すべき通信に該当することが明らかである通信　令状記載再生</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">二　第二十一条外国語等通信　外国語等再生</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">二　第二十一条外国語等通信　外国語等再生</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">三　他犯罪通信　他犯罪再生</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">三　他犯罪通信　他犯罪再生</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">５　スポット再生を開始した場合においては、前項の規定により同項各号に定める再生<wbr>を開始し、又は第七項の規定によりスポット再生を終了したときを除き、スポット再生<wbr>の開始時からあらかじめ警察本部長が指定した時間内又はスポット再生を開始した部分<wbr>からあらかじめ警察本部長が指定した部分までの範囲内においてスポット再生を中断し<wbr>なければならない。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">５　スポット再生を開始した場合においては、前項の規定により同項各号に定める再生<wbr>を開始し、又は第七項の規定によりスポット再生を終了したときを除き、スポット再生<wbr>の開始時からあらかじめ警察本部長が指定した時間内又はスポット再生を開始した部分<wbr>からあらかじめ警察本部長が指定した部分までの範囲内においてスポット再生を中断し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">６　前項の規定によりスポット再生を中断した時点からあらかじめ警察本部長が指定し<wbr>た時間が経過した後又は同項の規定によりスポット再生を中断した部分からあらかじめ<wbr>警察本部長が指定した部分までの範囲を通信の内容を知ることができない状態で表示し<wbr>た後において、当該スポット再生を中断した時点又は部分における当該スポット再生に<wbr>係る通信と同一の通話の機会に行われた通信について法第二十条第一項の規定により一<wbr>時的保存をされた暗号化信号であって法第二十一条第一項の規定による復号をされてい<wbr>ないものがあり、傍受すべき通信に該当するかどうかを判断するため必要があると認め<wbr>るときは、スポット再生を開始するものとする。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">６　前項の規定によりスポット再生を中断した時点からあらかじめ警察本部長が指定し<wbr>た時間が経過した後又は同項の規定によりスポット再生を中断した部分からあらかじめ<wbr>警察本部長が指定した部分までの範囲を通信の内容を知ることができない状態で表示し<wbr>た後において、当該スポット再生を中断した時点又は部分における当該スポット再生に<wbr>係る通信と同一の通話の機会に行われた通信について法第二十条第一項の規定により一<wbr>時的保存をされた暗号化信号であって法第二十一条第一項の規定による復号をされてい<wbr>ないものがあり、傍受すべき通信に該当するかどうかを判断するため必要があると認め<wbr>るときは、スポット再生を開始するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">７　スポット再生をしている場合において、当該スポット再生に係る通信が第四項各号<wbr>のいずれにも該当しない通信であって傍受すべき通信に該当しないことが明らかである<wbr>ものに該当すると認めるに至ったときは、直ちに、スポット再生を終了しなければなら<wbr>ない。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">７　スポット再生をしている場合において、当該スポット再生に係る通信が第四項各号<wbr>のいずれにも該当しない通信であって傍受すべき通信に該当しないことが明らかである<wbr>ものに該当すると認めるに至ったときは、直ちに、スポット再生を終了しなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定によりスポット再生を終了した時又は次条第三項において読み替えて準<wbr>用する同条第二項の規定により再生を終了した時における当該再生に係る通信と同一の<wbr>通話の機会に行われた通信について、再生の終了時からあらかじめ警察本部長が指定し<wbr>た時間が経過した後又は再生を終了した部分からあらかじめ警察本部長が指定した部分<wbr>までの範囲を通信の内容を知ることができない状態で表示した後も、法第二十条第一項<wbr>の規定により一時的保存をされた暗号化信号であって法第二十一条第一項の規定による<wbr>復号をされていないものがあり、当該再生の終了時における通信と内容の異なる通信が<wbr>行われていなかったかどうかを確認するため必要があると認めるときは、スポット再生<wbr>を開始するものとする。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定によりスポット再生を終了した時又は次条第三項において読み替えて準<wbr>用する同条第二項の規定により再生を終了した時における当該再生に係る通信と同一の<wbr>通話の機会に行われた通信について、再生の終了時からあらかじめ警察本部長が指定し<wbr>た時間が経過した後又は再生を終了した部分からあらかじめ警察本部長が指定した部分<wbr>までの範囲を通信の内容を知ることができない状態で表示した後も、法第二十条第一項<wbr>の規定により一時的保存をされた暗号化信号であって法第二十一条第一項の規定による<wbr>復号をされていないものがあり、当該再生の終了時における通信と内容の異なる通信が<wbr>行われていなかったかどうかを確認するため必要があると認めるときは、スポット再生<wbr>を開始するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">９　法第二十三条第四項の規定によりその例によることとされる法第二十一条第三項の<wbr>規定による再生であって、傍受すべき通信に該当するかどうか明らかでない通信に係る<wbr>ものについては、前各項の規定の例による。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">９　法第二十三条第四項の規定によりその例によることとされる法第二十一条第三項の<wbr>規定による再生であって、傍受すべき通信に該当するかどうか明らかでない通信に係る<wbr>ものについては、前各項の規定の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（令状記載傍受等）</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（令状記載傍受等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第十五条　第十三条第四項各号のいずれかに定める傍受をしている場合において、当該<wbr>各号に掲げる通信以外の通信であって同項各号のいずれかに掲げるものが行われている<wbr>と認めるに至ったときは、当該傍受を終了し、それぞれ当該各号に定める傍受を開始す<wbr>るものとする。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第十五条　第十三条第四項各号のいずれかに定める傍受をしている場合において、当該<wbr>各号に掲げる通信以外の通信であって同項各号のいずれかに掲げるものが行われている<wbr>と認めるに至ったときは、当該傍受を終了し、それぞれ当該各号に定める傍受を開始す<wbr>るものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">２　第十三条第四項各号のいずれかに定める傍受をしている場合において、同項各号の<wbr>いずれにも該当しない通信であって傍受すべき通信に該当するかどうか明らかでないも<wbr>のが行われていると認めるに至ったときは、直ちに、当該傍受を終了してスポット傍受<wbr>を開始するものとし、同項各号のいずれにも該当しない通信であって傍受すべき通信に<wbr>該当しないことが明らかであるものが行われていると認めるに至ったときは、直ちに、<wbr>傍受を終了しなければならない。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">２　第十三条第四項各号のいずれかに定める傍受をしている場合において、同項各号の<wbr>いずれにも該当しない通信であって傍受すべき通信に該当するかどうか明らかでないも<wbr>のが行われていると認めるに至ったときは、直ちに、当該傍受を終了してスポット傍受<wbr>を開始するものとし、同項各号のいずれにも該当しない通信であって傍受すべき通信に<wbr>該当しないことが明らかであるものが行われていると認めるに至ったときは、直ちに、<wbr>傍受を終了しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、前条第四項各号（同条第九項の規定によりその例によることとさ<wbr>れる場合を含む。）のいずれかに定める再生をしている場合について準用する。この場<wbr>合において、前二項中「おいて、」とあるのは「おいて、当該再生に係る通信が」と、<wbr>「が行われている」とあるのは「に該当する」と、前項中「スポット傍受」とあるのは<wbr>「スポット再生」と、「ものとし、」とあるのは「ものとし、当該再生に係る通信が」<wbr>と読み替えるものとする。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、前条第四項各号（同条第九項の規定によりその例によることとさ<wbr>れる場合を含む。）のいずれかに定める再生をしている場合について準用する。この場<wbr>合において、前二項中「おいて、」とあるのは「おいて、当該再生に係る通信が」と、<wbr>「が行われている」とあるのは「に該当する」と、前項中「スポット傍受」とあるのは<wbr>「スポット再生」と、「ものとし、」とあるのは「ものとし、当該再生に係る通信が」<wbr>と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（外国語等通信についての該当性判断）</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（外国語等通信についての該当性判断）</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第十六条　法第十四条第二項後段又は第二十一条第四項後段（法第二十三条第四項の規<wbr>定によりその例によることとされる場合を含む。）の規定による傍受すべき通信に該当<wbr>するかどうかの判断のために行う翻訳、復号又は復元及び翻訳、復号又は復元がなされ<wbr>た通信の内容の聴取又は閲覧は、必要最小限度の範囲で行うようにしなければならない<wbr>。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第十六条　法第十四条第二項後段又は第二十一条第四項後段（法第二十三条第四項の規<wbr>定によりその例によることとされる場合を含む。）の規定による傍受すべき通信に該当<wbr>するかどうかの判断のために行う翻訳、復号又は復元及び翻訳、復号又は復元がなされ<wbr>た通信の内容の聴取又は閲覧は、必要最小限度の範囲で行うようにしなければならない<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">２　第十四条外国語等通信又は第二十一条外国語等通信であって、傍受の実施（法第二<wbr>十三条第一項の規定によるものを除く。）の場所（指定期間以外の期間における傍受の<wbr>実施の場所が定められているときは、その場所）でその内容を容易に復元することがで<wbr>きる方法を用いて行われたものについては、当該場所の状況を考慮して適当であると認<wbr>めるときは、当該場所において立会人の立会いを得て前項の復元若しくは閲覧、法第十<wbr>四条第二項後段若しくは第二十一条第四項後段の規定による傍受すべき通信に該当する<wbr>かどうかの判断又は傍受記録の作成を行わなければならない。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">２　第十四条外国語等通信又は第二十一条外国語等通信であって、傍受の実施（法第二<wbr>十三条第一項の規定によるものを除く。）の場所（指定期間以外の期間における傍受の<wbr>実施の場所が定められているときは、その場所）でその内容を容易に復元することがで<wbr>きる方法を用いて行われたものについては、当該場所の状況を考慮して適当であると認<wbr>めるときは、当該場所において立会人の立会いを得て前項の復元若しくは閲覧、法第十<wbr>四条第二項後段若しくは第二十一条第四項後段の規定による傍受すべき通信に該当する<wbr>かどうかの判断又は傍受記録の作成を行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の翻訳、復号又は復元の嘱託をする場合は、当該嘱託を受ける者が通信の秘<wbr>密を不当に害することなく、かつ、捜査の妨げとならないようにするための措置を講じ<wbr>なければならない。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の翻訳、復号又は復元の嘱託をする場合は、当該嘱託を受ける者が通信の秘<wbr>密を不当に害することなく、かつ、捜査の妨げとならないようにするための措置を講じ<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の翻訳、復号又は復元及び聴取又は閲覧については、これらを行った者の氏<wbr>名、これらが行われた年月日、傍受又は再生をされた通信のうちこれらが行われた部分<wbr>その他これらが行われた状況を明らかにするために必要な事項を書面に記録しておかな<wbr>ければならない。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の翻訳、復号又は復元及び聴取又は閲覧については、これらを行った者の氏<wbr>名、これらが行われた年月日、傍受又は再生をされた通信のうちこれらが行われた部分<wbr>その他これらが行われた状況を明らかにするために必要な事項を書面に記録しておかな<wbr>ければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（相手方の電話番号等の探知等）</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（相手方の電話番号等の探知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第十七条　法第十七条第三項又は第二十条第四項（法第二十三条第一項において準用す<wbr>る場合を含む。）の規定による要請は、当該要請に係る通信を特定するために必要な事<wbr>項を告知して行うものとする。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第十七条　法第十七条第三項又は第二十条第四項（法第二十三条第一項において準用す<wbr>る場合を含む。）の規定による要請は、当該要請に係る通信を特定するために必要な事<wbr>項を告知して行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第三章　通信傍受の記録等</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第三章　通信傍受の記録等</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（傍受の原記録用媒体への署名等）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（傍受の原記録用媒体への署名等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法第二十五条第一項又は第二項の規定により記録媒体の封印を求めようとす<wbr>るときは、あらかじめ、当該記録媒体の外面に、当該記録媒体に対する記録を終了した<wbr>年月日時分及びそれが法第二十四条第一項前段の規定により記録をした記録媒体である<wbr>旨を記載して署名押印しなければならない。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法第二十五条第一項又は第二項の規定により記録媒体の封印を求めようとす<wbr>るときは、あらかじめ、当該記録媒体の外面に、当該記録媒体に対する記録を終了した<wbr>年月日時分及びそれが法第二十四条第一項前段の規定により記録をした記録媒体である<wbr>旨を記載して署名押印しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">２　法第二十六条第一項の規定による記録を終了したときは、直ちに、当該記録をした<wbr>記録媒体の外面に、当該記録を終了した年月日時分及びそれが同項の規定により記録を<wbr>した記録媒体である旨を記載して署名押印しなければならない。</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">２　法第二十六条第一項の規定による記録を終了したときは、直ちに、当該記録をした<wbr>記録媒体の外面に、当該記録を終了した年月日時分及びそれが同項の規定により記録を<wbr>した記録媒体である旨を記載して署名押印しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">３　犯罪捜査のための通信傍受に関する規則（平成十二年最高裁判所規則第六号。以下<wbr>「最高裁判所規則」という。）第九条に規定する書面の様式は、別記様式第一号のとお<wbr>りとする。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">３　犯罪捜査のための通信傍受に関する規則（平成十二年最高裁判所規則第六号。以下<wbr>「最高裁判所規則」という。）第九条に規定する書面の様式は、別記様式第一号のとお<wbr>りとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（傍受記録用の複製の作成）</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（傍受記録用の複製の作成）</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">第十九条　法第二十五条第三項の規定による複製の作成は、傍受の実施の場所（指定期<wbr>間以外の期間における傍受の実施の場所が定めらているときは、その場所）において立<wbr>会人の立会いを得て行わなければならない。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">第十九条　法第二十五条第三項の規定による複製の作成は、傍受の実施の場所（指定期<wbr>間以外の期間における傍受の実施の場所が定めらているときは、その場所）において立<wbr>会人の立会いを得て行わなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">（傍受記録作成用媒体への署名等）</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">（傍受記録作成用媒体への署名等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第二十条　法第二十四条第一項後段若しくは第二十六条第二項の規定による記録又は法<wbr>第二十五条第三項の規定による複製の作成が終了したときは、直ちに、傍受記録作成用<wbr>媒体の外面に、当該記録又は作成が終了した年月日時分及びそれが傍受記録作成用媒体<wbr>である旨を記載して署名押印しなければならない。</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第二十条　法第二十四条第一項後段若しくは第二十六条第二項の規定による記録又は法<wbr>第二十五条第三項の規定による複製の作成が終了したときは、直ちに、傍受記録作成用<wbr>媒体の外面に、当該記録又は作成が終了した年月日時分及びそれが傍受記録作成用媒体<wbr>である旨を記載して署名押印しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">（傍受の実施の状況を記載した書面等の提出）</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">（傍受の実施の状況を記載した書面等の提出）</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　法第二十七条第一項又は第二十八条第一項に規定する書面の様式は、別記<wbr>様式第二号のとおりとする。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　法第二十七条第一項又は第二十八条第一項に規定する書面の様式は、別記<wbr>様式第二号のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　法第二十七条第二項又は第二十八条第二項に規定する書面の様式は、別記様式第三<wbr>号のとおりとする。　</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　法第二十七条第二項又は第二十八条第二項に規定する書面の様式は、別記様式第三<wbr>号のとおりとする。　</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の書面を裁判官に提出するときは、第十二条第三項又は第四項（同条第五項<wbr>においてこれらの規定を準用する場合を含む。）の意見書を添えて行わなければならな<wbr>い。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の書面を裁判官に提出するときは、第十二条第三項又は第四項（同条第五項<wbr>においてこれらの規定を準用する場合を含む。）の意見書を添えて行わなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">４　傍受の実施又は再生の実施の間に外国語等傍受又は外国語等再生（法第二十三条第<wbr>四項の規定によりその例によることとされる法第二十一条第四項の規定による再生を含<wbr>む。）をした場合において、当該傍受の実施又は再生の実施に関し第一項又は第二項の<wbr>書面を裁判官に提出した後に当該外国語等傍受又は外国語等再生をした通信が他犯罪通<wbr>信に該当すると認められるに至ったときにおける当該他犯罪通信に該当すると認められ<wbr>る通信についての法第二十七条第一項若しくは第二項又は第二十八条第一項若しくは第<wbr>二項の規定により提出しなければならない書面の様式は、別記様式第四号のとおりとす<wbr>る。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">４　傍受の実施又は再生の実施の間に外国語等傍受又は外国語等再生（法第二十三条第<wbr>四項の規定によりその例によることとされる法第二十一条第四項の規定による再生を含<wbr>む。）をした場合において、当該傍受の実施又は再生の実施に関し第一項又は第二項の<wbr>書面を裁判官に提出した後に当該外国語等傍受又は外国語等再生をした通信が他犯罪通<wbr>信に該当すると認められるに至ったときにおける当該他犯罪通信に該当すると認められ<wbr>る通信についての法第二十七条第一項若しくは第二項又は第二十八条第一項若しくは第<wbr>二項の規定により提出しなければならない書面の様式は、別記様式第四号のとおりとす<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（傍受調書）</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（傍受調書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　傍受の実施をしたときは、その状況（再生の実施をしたときは、傍受の実<wbr>施及び再生の実施の状況）を明らかにした傍受調書を作成しなければならない。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　傍受の実施をしたときは、その状況（再生の実施をしたときは、傍受の実<wbr>施及び再生の実施の状況）を明らかにした傍受調書を作成しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（傍受記録の作成）</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（傍受記録の作成）</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　傍受記録の作成は、傍受記録作成用媒体に記録されている通信のうち、法<wbr>第二十九条第三項各号又は第四項各号に掲げる通信の記録を当該傍受記録作成用媒体に<wbr>残し、それ以外の通信の記録を消去することにより、行うものとする。</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　傍受記録の作成は、傍受記録作成用媒体に記録されている通信のうち、法<wbr>第二十九条第三項各号又は第四項各号に掲げる通信の記録を当該傍受記録作成用媒体に<wbr>残し、それ以外の通信の記録を消去することにより、行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">２　傍受記録を作成した場合において、他に通信記録物等があるときは、捜査主任官は<wbr>、通信記録物等管理者にその記録の全部を消去させなければならない。ただし、当該通<wbr>信記録物等が、傍受記録に記録された通信の内容の全部又は一部を要約して記載した捜<wbr>査書類であって、傍受記録を作成する前に行った捜査の経過を示すために特に必要なも<wbr>のである場合には、この限りでない。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">２　傍受記録を作成した場合において、他に通信記録物等があるときは、捜査主任官は<wbr>、通信記録物等管理者にその記録の全部を消去させなければならない。ただし、当該通<wbr>信記録物等が、傍受記録に記録された通信の内容の全部又は一部を要約して記載した捜<wbr>査書類であって、傍受記録を作成する前に行った捜査の経過を示すために特に必要なも<wbr>のである場合には、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">３　傍受記録から記録を消去したときは、捜査主任官は、通信記録物等管理者に通信記<wbr>録物等の当該記録に係る部分の記録の全部を消去させなければならない。</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">３　傍受記録から記録を消去したときは、捜査主任官は、通信記録物等管理者に通信記<wbr>録物等の当該記録に係る部分の記録の全部を消去させなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">４　法第二十七条第一項若しくは第二項又は第二十八条第一項若しくは第二項の規定に<wbr>より書面を裁判官に提出した後において、傍受記録から記録を消去したときは、速やか<wbr>に、通信記録消去通知書（別記様式第五号）により、当該裁判官に通知しなければなら<wbr>ない。</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">４　法第二十七条第一項若しくは第二項又は第二十八条第一項若しくは第二項の規定に<wbr>より書面を裁判官に提出した後において、傍受記録から記録を消去したときは、速やか<wbr>に、通信記録消去通知書（別記様式第五号）により、当該裁判官に通知しなければなら<wbr>ない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">（通信記録物等の作成等）</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">（通信記録物等の作成等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　通信記録物等の作成は、必要最小限度の範囲にとどめなければならない。<wbr></span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　通信記録物等の作成は、必要最小限度の範囲にとどめなければならない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">２　記録媒体に対する法第二十四条第一項後段又は第二十六条第二項の規定による記録<wbr>、法第二十五条第三項の規定による複製の作成、傍受記録の作成その他通信記録物等の<wbr>作成が終了したときは、速やかに、記録媒体作成調書、複製等作成調書、傍受記録作成<wbr>調書その他通信記録物等の作成の状況を明らかにした書類を作成するとともに、その旨<wbr>を通信記録物等管理者に通知しなければならない。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">２　記録媒体に対する法第二十四条第一項後段又は第二十六条第二項の規定による記録<wbr>、法第二十五条第三項の規定による複製の作成、傍受記録の作成その他通信記録物等の<wbr>作成が終了したときは、速やかに、記録媒体作成調書、複製等作成調書、傍受記録作成<wbr>調書その他通信記録物等の作成の状況を明らかにした書類を作成するとともに、その旨<wbr>を通信記録物等管理者に通知しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">３　通信記録物等管理者は、警察本部長が定める様式の簿冊により、通信記録物等の作<wbr>成、保管及び出納の状況、その記録の消去の状況その他その適正な管理のために必要な<wbr>事項を明らかにしておかなければならない。</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">３　通信記録物等管理者は、警察本部長が定める様式の簿冊により、通信記録物等の作<wbr>成、保管及び出納の状況、その記録の消去の状況その他その適正な管理のために必要な<wbr>事項を明らかにしておかなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">４　通信記録物等が刑事手続において使用する必要がなくなったときは、捜査主任官は<wbr>、速やかに、通信記録物等管理者にその記録の全部を消去させなければならない。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">４　通信記録物等が刑事手続において使用する必要がなくなったときは、捜査主任官は<wbr>、速やかに、通信記録物等管理者にその記録の全部を消去させなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（通信の当事者に対する通知）</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（通信の当事者に対する通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　法第三十条第一項の書面の様式は、別記様式第六号のとおりとする。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　法第三十条第一項の書面の様式は、別記様式第六号のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">２　最高裁判所規則第十三条の書面の様式は、別記様式第七号のとおりとする。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">２　最高裁判所規則第十三条の書面の様式は、別記様式第七号のとおりとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（通知を発しなければならない期間の延長）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（通知を発しなければならない期間の延長）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　法第三十条第二項ただし書（同条第三項後段において準用する場合を含む<wbr>。）の規定による請求は、指定警察官がこれを行うものとする。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　法第三十条第二項ただし書（同条第三項後段において準用する場合を含む<wbr>。）の規定による請求は、指定警察官がこれを行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求は、順を経て警察本部長に報告し、事前にその承認を受けて行わなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求は、順を経て警察本部長に報告し、事前にその承認を受けて行わなけれ<wbr>ばならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の請求は、通知期間延長請求書（別記様式第八号）により行わなければなら<wbr>ない。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の請求は、通知期間延長請求書（別記様式第八号）により行わなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の請求をするときは、通知によって捜査が妨げられるおそれがあることを疎<wbr>明する捜査報告書その他の資料を添えて行わなければならない。</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の請求をするときは、通知によって捜査が妨げられるおそれがあることを疎<wbr>明する捜査報告書その他の資料を添えて行わなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（警察官が保管する傍受記録の聴取及び閲覧等）</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（警察官が保管する傍受記録の聴取及び閲覧等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　警察官が保管する傍受記録に係る法第三十一条の規定による聴取、閲覧又<wbr>は複製の作成については、当該傍受記録に係る聴取、閲覧又は複製の作成をしようとす<wbr>る者が法第三十条第一項の通知を受けた通信の当事者であることを確認しなければなら<wbr>ない。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　警察官が保管する傍受記録に係る法第三十一条の規定による聴取、閲覧又<wbr>は複製の作成については、当該傍受記録に係る聴取、閲覧又は複製の作成をしようとす<wbr>る者が法第三十条第一項の通知を受けた通信の当事者であることを確認しなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">２　前項の聴取、閲覧又は複製の作成は、必要な態勢を確立した上で、警察施設におい<wbr>て警察職員を立ち会わせ、その他所要の措置を講じて行わせるようにしなければならな<wbr>い。</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">２　前項の聴取、閲覧又は複製の作成は、必要な態勢を確立した上で、警察施設におい<wbr>て警察職員を立ち会わせ、その他所要の措置を講じて行わせるようにしなければならな<wbr>い。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">（傍受の原記録の聴取及び閲覧等の請求）</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">（傍受の原記録の聴取及び閲覧等の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　法第三十二条第三項の規定による聴取、閲覧又は複製の作成の請求は、指<wbr>定警察官がこれを行うものとする。</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　法第三十二条第三項の規定による聴取、閲覧又は複製の作成の請求は、指<wbr>定警察官がこれを行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求は、順を経て警察本部長に報告し、事前にその承認を受けて行わなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">２　前項の請求は、順を経て警察本部長に報告し、事前にその承認を受けて行わなけれ<wbr>ばならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の請求は、傍受の原記録聴取等請求書（別記様式第九号）により行わなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の請求は、傍受の原記録聴取等請求書（別記様式第九号）により行わなけれ<wbr>ばならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の請求をするときは、法第三十二条第三項に規定する聴取、閲覧又は複製の<wbr>作成の理由があることを疎明する捜査報告書その他の資料を添えて行わなければならな<wbr>い。</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の請求をするときは、法第三十二条第三項に規定する聴取、閲覧又は複製の<wbr>作成の理由があることを疎明する捜査報告書その他の資料を添えて行わなければならな<wbr>い。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第四章　補則</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第四章　補則</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（通信傍受手続簿）</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（通信傍受手続簿）</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　次の各号に掲げる措置を執った場合においては、通信傍受手続簿（別記様<wbr>式第十号）によりその手続等を明らかにしておかなければならない。</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　次の各号に掲げる措置を執った場合においては、通信傍受手続簿（別記様<wbr>式第十号）によりその手続等を明らかにしておかなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">一　傍受令状の請求</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">一　傍受令状の請求</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">二　傍受の処分の着手</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">二　傍受の処分の着手</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">三　傍受ができる期間の延長の請求</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">三　傍受ができる期間の延長の請求</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">四　法第二十五条第四項又は第二十六条第四項の規定による記録媒体の提出</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">四　法第二十五条第四項又は第二十六条第四項の規定による記録媒体の提出</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">五　法第二十七条第一項若しくは第二項又は第二十八条第一項若しくは第二項の規定に<wbr>よる書面の提出</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">五　法第二十七条第一項若しくは第二項又は第二十八条第一項若しくは第二項の規定に<wbr>よる書面の提出</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">六　傍受記録の作成</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">六　傍受記録の作成</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">七　法第三十条の規定による通知</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">七　法第三十条の規定による通知</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">八　法第三十条第二項ただし書（同条第三項後段において準用する場合を含む。）の規<wbr>定による請求</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">八　法第三十条第二項ただし書（同条第三項後段において準用する場合を含む。）の規<wbr>定による請求</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">九　法第三十一条の規定により通信の当事者に傍受記録の聴取及び閲覧等をさせること<wbr></span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">九　法第三十一条の規定により通信の当事者に傍受記録の聴取及び閲覧等をさせること<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">十　法第三十二条第三項の規定による請求</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">十　法第三十二条第三項の規定による請求 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">この規則は、法の施行の日から施行する。</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">この規則は、法の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年四月二六日国家公安委員会規則第六号）　抄</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年四月二六日国家公安委員会規則第六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">１　この規則は、刑事訴訟法等の一部を改正する法律（平成二十八年法律第五十四号）<wbr>の施行の日（平成三十一年六月一日）から施行する。</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">１　この規則は、刑事訴訟法等の一部を改正する法律（平成二十八年法律第五十四号）<wbr>の施行の日（平成三十一年六月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">180</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第１号</span><span style="color: #000000; background-color: #efcb05; ">（第１８条第３項関係）</span></code></td>
+<td class="ln">180</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第１号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第１８条第３項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第２号</span><span style="color: #000000; background-color: #efcb05; ">（第２１条第１項関係）</span></code></td>
+<td class="ln">181</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第３号</span><span style="color: #000000; background-color: #efcb05; ">（第２１条第２項関係）</span></code></td>
+<td class="ln">182</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第２号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２１条第１項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第４号</span><span style="color: #000000; background-color: #efcb05; ">（第２１条第４項関係）</span></code></td>
+<td class="ln">183</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第５号</span><span style="color: #000000; background-color: #efcb05; ">（第２３条第４項関係）</span></code></td>
+<td class="ln">184</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第３号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２１条第２項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第６号</span><span style="color: #000000; background-color: #efcb05; ">（第２５条第１項関係）</span></code></td>
+<td class="ln">185</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第７号</span><span style="color: #000000; background-color: #efcb05; ">（第２５条第２項関係）</span></code></td>
+<td class="ln">186</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第４号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２１条第４項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第８号</span><span style="color: #000000; background-color: #efcb05; ">（第２６条第３項関係）</span></code></td>
+<td class="ln">187</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第９号</span><span style="color: #000000; background-color: #efcb05; ">（第２８条第３項関係）</span></code></td>
+<td class="ln">188</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第５号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２３条第４項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第１０号</span><span style="color: #000000; background-color: #efcb05; ">（第２９条関係）</span></code></td>
+<td class="ln">189</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">190</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第６号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２５条第１項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">191</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">192</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第７号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２５条第２項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">193</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">194</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第８号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２６条第３項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">195</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">196</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第９号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２８条第３項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">197</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">198</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第１０号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２９条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">199</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

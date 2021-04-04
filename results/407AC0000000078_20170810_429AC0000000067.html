@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成七年法律第七十八号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成七年法律第七十八号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">サリン等による人身被害の防止に関する法律</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">サリン等による人身被害の防止に関する法律</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、サリン等の製造、所持等を禁止するとともに、これを発散させる<wbr>行為についての罰則及びその発散による被害が発生した場合の措置等を定め、もってサ<wbr>リン等による人の生命及び身体の被害の防止並びに公共の安全の確保を図ることを目的<wbr>とする。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、サリン等の製造、所持等を禁止するとともに、これを発散させる<wbr>行為についての罰則及びその発散による被害が発生した場合の措置等を定め、もってサ<wbr>リン等による人の生命及び身体の被害の防止並びに公共の安全の確保を図ることを目的<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「サリン等」とは、サリン（メチルホスホノフルオリド酸イ<wbr>ソプロピルをいう。以下同じ。）及び次の各号のいずれにも該当する物質で政令で定め<wbr>るものをいう。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「サリン等」とは、サリン（メチルホスホノフルオリド酸イ<wbr>ソプロピルをいう。以下同じ。）及び次の各号のいずれにも該当する物質で政令で定め<wbr>るものをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">一　サリン以上の又はサリンに準ずる強い毒性を有すること。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">一　サリン以上の又はサリンに準ずる強い毒性を有すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">二　その原材料、製法、発散させる方法、発散したときの性状その他その物質の特性を<wbr>勘案して人を殺傷する目的に供されるおそれ並びに発散した場合の人の生命及び身体に<wbr>対する危害の程度が大きいと認められること。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">二　その原材料、製法、発散させる方法、発散したときの性状その他その物質の特性を<wbr>勘案して人を殺傷する目的に供されるおそれ並びに発散した場合の人の生命及び身体に<wbr>対する危害の程度が大きいと認められること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">三　犯罪に係る社会状況その他の事情を勘案して人の生命及び身体の保護並びに公共の<wbr>安全の確保を図るためにその物質についてこの法律の規定により規制等を行う必要性が<wbr>高いと認められること。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">三　犯罪に係る社会状況その他の事情を勘案して人の生命及び身体の保護並びに公共の<wbr>安全の確保を図るためにその物質についてこの法律の規定により規制等を行う必要性が<wbr>高いと認められること。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（製造等の禁止）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（製造等の禁止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三条　何人も、次の各号のいずれかに該当する場合を除いては、サリン等を製造し、<wbr>輸入し、所持し、譲り渡し、又は譲り受けてはならない。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三条　何人も、次の各号のいずれかに該当する場合を除いては、サリン等を製造し、<wbr>輸入し、所持し、譲り渡し、又は譲り受けてはならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">一　国又は地方公共団体の職員で政令で定めるものが試験又は研究のため製造し、輸入<wbr>し、所持し、譲り渡し、又は譲り受けるとき。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">一　国又は地方公共団体の職員で政令で定めるものが試験又は研究のため製造し、輸入<wbr>し、所持し、譲り渡し、又は譲り受けるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">二　化学兵器の禁止及び特定物質の規制等に関する法律（平成七年法律第六十五号。以<wbr>下「化学兵器禁止法」という。）又は外国為替及び外国貿易法（昭和二十四年法律第二<wbr>百二十八号）の規定により化学兵器禁止法第二条第三項に規定する特定物質の製造、所<wbr>持、譲渡し若しくは譲受け又は輸入をすることができる場合に該当して、製造し、所持<wbr>し、譲り渡し、若しくは譲り受け、又は輸入するとき。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">二　化学兵器の禁止及び特定物質の規制等に関する法律（平成七年法律第六十五号。以<wbr>下「化学兵器禁止法」という。）又は外国為替及び外国貿易法（昭和二十四年法律第二<wbr>百二十八号）の規定により化学兵器禁止法第二条第三項に規定する特定物質の製造、所<wbr>持、譲渡し若しくは譲受け又は輸入をすることができる場合に該当して、製造し、所持<wbr>し、譲り渡し、若しくは譲り受け、又は輸入するとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（被害発生時の措置等）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（被害発生時の措置等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第四条　警察官、海上保安官又は消防吏員（以下「警察官等」という。）は、サリン等<wbr>又はサリン等である疑いがある物質の発散により人の生命又は身体の被害が生じており<wbr>、又は生じるおそれがあると認めるときは、警察法（昭和二十九年法律第百六十二号）<wbr>、警察官職務執行法（昭和二十三年法律第百三十六号）、道路交通法（昭和三十五年法<wbr>律第百五号）、海上保安庁法（昭和二十三年法律第二十八号）、消防法（昭和二十三年<wbr>法律第百八十六号）その他の法令の定めるところにより、直ちに、その被害に係る建物<wbr>、車両、船舶その他の場所への立入りを禁止し、又はこれらの場所にいる者を退去させ<wbr>、サリン等を含む物品その他のその被害に係る物品を回収し、又は廃棄し、その他その<wbr>被害を防止するために必要な措置をとらなければならない。この場合において、警察官<wbr>等は、相互に緊密な連携を保たなければならない。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第四条　警察官、海上保安官又は消防吏員（以下「警察官等」という。）は、サリン等<wbr>又はサリン等である疑いがある物質の発散により人の生命又は身体の被害が生じており<wbr>、又は生じるおそれがあると認めるときは、警察法（昭和二十九年法律第百六十二号）<wbr>、警察官職務執行法（昭和二十三年法律第百三十六号）、道路交通法（昭和三十五年法<wbr>律第百五号）、海上保安庁法（昭和二十三年法律第二十八号）、消防法（昭和二十三年<wbr>法律第百八十六号）その他の法令の定めるところにより、直ちに、その被害に係る建物<wbr>、車両、船舶その他の場所への立入りを禁止し、又はこれらの場所にいる者を退去させ<wbr>、サリン等を含む物品その他のその被害に係る物品を回収し、又は廃棄し、その他その<wbr>被害を防止するために必要な措置をとらなければならない。この場合において、警察官<wbr>等は、相互に緊密な連携を保たなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　警視総監若しくは道府県警察本部長又は管区海上保安本部長は前項の規定による措<wbr>置又はこの法律に規定する犯罪の捜査に関し、消防長又は消防署長は同項の規定による<wbr>措置に関し、それぞれ、関係行政機関又は関係のある公私の団体に対し、技術的知識の<wbr>提供、装備資機材の貸与その他必要な協力を求めることができる。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　警視総監若しくは道府県警察本部長又は管区海上保安本部長は前項の規定による措<wbr>置又はこの法律に規定する犯罪の捜査に関し、消防長又は消防署長は同項の規定による<wbr>措置に関し、それぞれ、関係行政機関又は関係のある公私の団体に対し、技術的知識の<wbr>提供、装備資機材の貸与その他必要な協力を求めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　国民は、サリン等若しくはサリン等である疑いがある物質若しくはこれらの物質を<wbr>含む物品を発見し又はこれらが所在する場所を知ったときは速やかに警察官等にその旨<wbr>を通報するとともに、第一項の規定による警察官等の措置の円滑な実施に協力するよう<wbr>努めなければならない。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　国民は、サリン等若しくはサリン等である疑いがある物質若しくはこれらの物質を<wbr>含む物品を発見し又はこれらが所在する場所を知ったときは速やかに警察官等にその旨<wbr>を通報するとともに、第一項の規定による警察官等の措置の円滑な実施に協力するよう<wbr>努めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第五条　サリン等を発散させて公共の危険を生じさせた者は、無期又は二年以上の懲役<wbr>に処する。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第五条　サリン等を発散させて公共の危険を生じさせた者は、無期又は二年以上の懲役<wbr>に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">２　前項の未遂罪は、罰する。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">２　前項の未遂罪は、罰する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の罪を犯す目的でその予備をした者は、五年以下の懲役に処する。ただし、<wbr>同項の罪の実行の着手前に自首した者は、その刑を減軽し、又は免除する。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の罪を犯す目的でその予備をした者は、五年以下の懲役に処する。ただし、<wbr>同項の罪の実行の着手前に自首した者は、その刑を減軽し、又は免除する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　第三条の規定に違反した者は、七年以下の懲役に処する。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　第三条の規定に違反した者は、七年以下の懲役に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　前条第一項の犯罪の用に供する目的で前項の罪を犯した者は、十年以下の懲役に処<wbr>する。ただし、同条第一項の罪の実行の着手前に自首した者は、その刑を減軽し、又は<wbr>免除する。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　前条第一項の犯罪の用に供する目的で前項の罪を犯した者は、十年以下の懲役に処<wbr>する。ただし、同条第一項の罪の実行の着手前に自首した者は、その刑を減軽し、又は<wbr>免除する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の未遂罪は、罰する。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の未遂罪は、罰する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">４　製造又は輸入に係る第一項又は第二項の罪を犯す目的でその予備をした者は、三年<wbr>以下の懲役に処する。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">４　製造又は輸入に係る第一項又は第二項の罪を犯す目的でその予備をした者は、三年<wbr>以下の懲役に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第七条　情を知って、第五条第一項の罪又は製造若しくは輸入に係る前条第一項若しく<wbr>は第二項の罪に当たる行為に要する資金、土地、建物、艦船、航空機、車両、設備、機<wbr>械、器具又は原材料を提供した者は、三年以下の懲役に処する。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第七条　情を知って、第五条第一項の罪又は製造若しくは輸入に係る前条第一項若しく<wbr>は第二項の罪に当たる行為に要する資金、土地、建物、艦船、航空機、車両、設備、機<wbr>械、器具又は原材料を提供した者は、三年以下の懲役に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第八条　第五条の罪は、刑法（明治四十年法律第四十五号）第四条の二の例に従う。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第八条　第五条の罪は、刑法（明治四十年法律第四十五号）第四条の二の例に従う。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、次の各号に掲げる規定は、それ<wbr>ぞれ当該各号に定める日から施行する。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、次の各号に掲げる規定は、それ<wbr>ぞれ当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">一　第三条第二号及び附則第四条の規定　化学兵器禁止法の施行の日</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">一　第三条第二号及び附則第四条の規定　化学兵器禁止法の施行の日</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">二　第五条から第七条までの規定　この法律の公布の日から起算して十日を経過した日<wbr></span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">二　第五条から第七条までの規定　この法律の公布の日から起算して十日を経過した日<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第二条　前条第一号に掲げる規定が施行されるまでの間における第三条の規定の適用に<wbr>ついては、同条第一号中「国又は地方公共団体の職員で政令で定めるものが」とあるの<wbr>は、「国の職員が又は国から試験若しくは研究の委託を受けた者で国家公安委員会が指<wbr>定したものが」とする。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第二条　前条第一号に掲げる規定が施行されるまでの間における第三条の規定の適用に<wbr>ついては、同条第一号中「国又は地方公共団体の職員で政令で定めるものが」とあるの<wbr>は、「国の職員が又は国から試験若しくは研究の委託を受けた者で国家公安委員会が指<wbr>定したものが」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第三条　この法律の施行の際現にサリン等を所持する者（前条の規定により読み替えて<wbr>適用する第三条第一号に規定する者を除く。次条において同じ。）又はこの法律の施行<wbr>の日以後その日から起算して十日を経過する日までの間に第三条の規定に違反してサリ<wbr>ン等を所持するに至った者は、同日までの間に、その所持するサリン等の種類、数量及<wbr>び所在する場所を当該場所を管轄する警察署長に届け出なければならない。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第三条　この法律の施行の際現にサリン等を所持する者（前条の規定により読み替えて<wbr>適用する第三条第一号に規定する者を除く。次条において同じ。）又はこの法律の施行<wbr>の日以後その日から起算して十日を経過する日までの間に第三条の規定に違反してサリ<wbr>ン等を所持するに至った者は、同日までの間に、その所持するサリン等の種類、数量及<wbr>び所在する場所を当該場所を管轄する警察署長に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出をした者は、警察署長が指示する日時において、その指示す<wbr>る方法により、その届出に係るサリン等を廃棄しなければならない。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出をした者は、警察署長が指示する日時において、その指示す<wbr>る方法により、その届出に係るサリン等を廃棄しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により廃棄するまでの間における当該廃棄のためのサリン等の所持につ<wbr>いては、第三条及び化学兵器禁止法第十六条第一項の規定は、適用しない。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により廃棄するまでの間における当該廃棄のためのサリン等の所持につ<wbr>いては、第三条及び化学兵器禁止法第十六条第一項の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">38</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第四条　この法律の施行の際現にサリン等を所持する者の当該所持するサリン等及び第<wbr>三条の規定に違反して所持されるサリン等については、</span><span style="color: #000000; background-color: #efcb05; ">附則第二条の規定は、適用しな<wbr>い。この場合における第三条の規定の適用については、同条第二号中「化学兵器の禁止<wbr>及び特定物質の規制等に関する法律（平成七年法律第六十五号。以下「化学兵器禁止法<wbr>」という。）」とあるのは、「化学兵器の禁止及び特定物質の規制等に関する法律（平<wbr>成七年法律第六十五号。以下「化学兵器禁止法」という。）（附則第二条を除く。）」<wbr>とする。</span></code></td>
+<td class="ln">38</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第四条　この法律の施行の際現にサリン等を所持する者の当該所持するサリン等及び第<wbr>三条の規定に違反して所持されるサリン等については、</span><span class="sf17b18">化学兵器禁止法</span><span style="color: #000000; background-color: #efcb05; ">附則第二条の規<wbr>定は、適用しない。この場合における第三条の規定の適用については、同条第二号中「<wbr>化学兵器の禁止及び特定物質の規制等に関する法律（平成七年法律第六十五号。以下「<wbr>化学兵器禁止法」という。）」とあるのは、「化学兵器の禁止及び特定物質の規制等に<wbr>関する法律（平成七年法律第六十五号。以下「化学兵器禁止法」という。）（附則第二<wbr>条を除く。）」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（罰則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第五条　附則第三条第二項の規定に違反した者は、一年以下の懲役又は五十万円以下の<wbr>罰金に処する。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第五条　附則第三条第二項の規定に違反した者は、一年以下の懲役又は五十万円以下の<wbr>罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">２　附則第三条第一項の規定による届出をせず、又は虚偽の届出をした者は、三十万円<wbr>以下の罰金に処する。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">２　附則第三条第一項の規定による届出をせず、又は虚偽の届出をした者は、三十万円<wbr>以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前二項の違反行為をしたときは、行為者を罰するほか、その法人又<wbr>は人に対して当該各項の罰金刑を科する。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前二項の違反行為をしたときは、行為者を罰するほか、その法人又<wbr>は人に対して当該各項の罰金刑を科する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年五月二三日法律第五九号）　抄</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年五月二三日法律第五九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十年四月一日から施行する。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年一一月一六日法律第一二一号）　抄</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年一一月一六日法律第一二一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、テロリストによる爆弾使用の防止に関する国際条約が日本国につ<wbr>いて効力を生ずる日から施行する。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、テロリストによる爆弾使用の防止に関する国際条約が日本国につ<wbr>いて効力を生ずる日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の爆発物取締罰則第十条の規定、火炎びんの使用等の処罰に関する法律<wbr>第四条の規定、細菌兵器（生物兵器）及び毒素兵器の開発、生産及び貯蔵の禁止並びに<wbr>廃棄に関する条約等の実施に関する法律第十一条の規定、化学兵器の禁止及び特定物質<wbr>の規制等に関する法律第四十二条（刑法（明治四十年法律第四十五号）第四条の二に係<wbr>る部分に限る。）の規定及びサリン等による人身被害の防止に関する法律第八条の規定<wbr>は、この法律の施行の日以後に日本国について効力を生ずる条約により日本国外におい<wbr>て犯したときであっても罰すべきものとされる罪に限り適用する。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の爆発物取締罰則第十条の規定、火炎びんの使用等の処罰に関する法律<wbr>第四条の規定、細菌兵器（生物兵器）及び毒素兵器の開発、生産及び貯蔵の禁止並びに<wbr>廃棄に関する条約等の実施に関する法律第十一条の規定、化学兵器の禁止及び特定物質<wbr>の規制等に関する法律第四十二条（刑法（明治四十年法律第四十五号）第四条の二に係<wbr>る部分に限る。）の規定及びサリン等による人身被害の防止に関する法律第八条の規定<wbr>は、この法律の施行の日以後に日本国について効力を生ずる条約により日本国外におい<wbr>て犯したときであっても罰すべきものとされる罪に限り適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年五月一一日法律第三八号）　抄</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年五月一一日法律第三八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、核によるテロリズムの行為の防止に関する国際条約が日本国につ<wbr>いて効力を生ずる日から施行する。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、核によるテロリズムの行為の防止に関する国際条約が日本国につ<wbr>いて効力を生ずる日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二一日法律第六七号）　抄</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二一日法律第六七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二十日を経過した日から施行する。ただし<wbr>、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二十日を経過した日から施行する。ただし<wbr>、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中組織的な犯罪の処罰及び犯罪収益の規制等に関する法律（以下「組織的犯<wbr>罪処罰法」という。）第十二条の改正規定、第二条及び第四条から第七条までの規定並<wbr>びに附則第四条及び第六条の規定　国際的な組織犯罪の防止に関する国際連合条約が日<wbr>本国について効力を生ずる日</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中組織的な犯罪の処罰及び犯罪収益の規制等に関する法律（以下「組織的犯<wbr>罪処罰法」という。）第十二条の改正規定、第二条及び第四条から第七条までの規定並<wbr>びに附則第四条及び第六条の規定　国際的な組織犯罪の防止に関する国際連合条約が日<wbr>本国について効力を生ずる日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第四条　新組織的犯罪処罰法第十二条（刑法第四条の二に係る部分に限る。）の規定、<wbr>第二条の規定による改正後の爆発物取締罰則第十条（爆発物取締罰則第四条から第六条<wbr>までに係る部分に限る。）の規定、第四条の規定による改正後の暴力行為等処罰に関す<wbr>る法律第一条ノ三第二項の規定、第五条の規定による改正後の児童福祉法第六十条第五<wbr>項（同条第一項に係る部分に限る。）の規定、第六条の規定による改正後の細菌兵器（<wbr>生物兵器）及び毒素兵器の開発、生産及び貯蔵の禁止並びに廃棄に関する条約等の実施<wbr>に関する法律第十一条（同法第十条に係る部分に限る。）の規定及び第七条の規定によ<wbr>る改正後のサリン等による人身被害の防止に関する法律第八条（同法第五条第三項に係<wbr>る部分に限る。）の規定は、附則第一条第一号に掲げる規定の施行の日以後に日本国に<wbr>ついて効力を生ずる条約により日本国外において犯したときであっても罰すべきものと<wbr>されている罪に限り、適用する。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第四条　新組織的犯罪処罰法第十二条（刑法第四条の二に係る部分に限る。）の規定、<wbr>第二条の規定による改正後の爆発物取締罰則第十条（爆発物取締罰則第四条から第六条<wbr>までに係る部分に限る。）の規定、第四条の規定による改正後の暴力行為等処罰に関す<wbr>る法律第一条ノ三第二項の規定、第五条の規定による改正後の児童福祉法第六十条第五<wbr>項（同条第一項に係る部分に限る。）の規定、第六条の規定による改正後の細菌兵器（<wbr>生物兵器）及び毒素兵器の開発、生産及び貯蔵の禁止並びに廃棄に関する条約等の実施<wbr>に関する法律第十一条（同法第十条に係る部分に限る。）の規定及び第七条の規定によ<wbr>る改正後のサリン等による人身被害の防止に関する法律第八条（同法第五条第三項に係<wbr>る部分に限る。）の規定は、附則第一条第一号に掲げる規定の施行の日以後に日本国に<wbr>ついて効力を生ずる条約により日本国外において犯したときであっても罰すべきものと<wbr>されている罪に限り、適用する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

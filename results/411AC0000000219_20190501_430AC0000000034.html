@@ -1,0 +1,523 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第二百十九号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第二百十九号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">独立行政法人統計センター法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">独立行政法人統計センター法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第六条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員（第七条―第九条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員（第七条―第九条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十条―第十三条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十条―第十三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十四条・第十五条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十四条・第十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十六条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人統計センターの名称、目的、業務の範囲等に関する<wbr>事項を定めることを目的とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人統計センターの名称、目的、業務の範囲等に関する<wbr>事項を定めることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、独立行政法人統計センターとする。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、独立行政法人統計センターとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（センターの目的）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（センターの目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　独立行政法人統計センター（以下「センター」という。）は、国勢調査その他<wbr>国勢の基本に関する統計調査（総務省設置法（平成十一年法律第九十一号）第四条第一<wbr>項第八十一号に規定するものをいう。以下「国勢調査等」という。）の製表、これに必<wbr>要な統計技術の研究等を一体的に行うことにより、統計の信頼性の確保及び統計技術の<wbr>向上に資することを目的とする。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　独立行政法人統計センター（以下「センター」という。）は、国勢調査その他<wbr>国勢の基本に関する統計調査（総務省設置法（平成十一年法律第九十一号）第四条第一<wbr>項第八十一号に規定するものをいう。以下「国勢調査等」という。）の製表、これに必<wbr>要な統計技術の研究等を一体的に行うことにより、統計の信頼性の確保及び統計技術の<wbr>向上に資することを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（行政執行法人）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（行政執行法人）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四条　センターは、通則法第二条第四項に規定する行政執行法人とする。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四条　センターは、通則法第二条第四項に規定する行政執行法人とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第五条　センターは、主たる事務所を東京都に置く。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第五条　センターは、主たる事務所を東京都に置く。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　政府は、必要があると認めるときは、予算で定める金額の範囲内において、セ<wbr>ンターに出資することができる。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　政府は、必要があると認めるときは、予算で定める金額の範囲内において、セ<wbr>ンターに出資することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　センターは、前項の規定による政府の出資があったときは、その出資額を資本金と<wbr>し、又はその出資額により資本金を増加するものとする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　センターは、前項の規定による政府の出資があったときは、その出資額を資本金と<wbr>し、又はその出資額により資本金を増加するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第七条　センターに、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第七条　センターに、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　センターに、役員として、理事三人以内を置くことができる。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　センターに、役員として、理事三人以内を置くことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事は、理事長の定めるところにより、理事長を補佐してセンターの業務を掌<wbr>理する。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事は、理事長の定めるところにより、理事長を補佐してセンターの業務を掌<wbr>理する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（理事長及び理事の任期等）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（理事長及び理事の任期等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第九条　通則法第二十一条の三第一項の個別法で定める期間は、四年とする。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第九条　通則法第二十一条の三第一項の個別法で定める期間は、四年とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">２　理事の任期は、二年とする。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">２　理事の任期は、二年とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第十条　センターは、第三条の目的を達成するため、次の業務を行う。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第十条　センターは、第三条の目的を達成するため、次の業務を行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　国勢調査等の製表を行うこと。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　国勢調査等の製表を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　国の行政機関又は地方公共団体の委託を受けて、統計調査を実施し、又は統計調査<wbr>の製表を行うこと。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　国の行政機関又は地方公共団体の委託を受けて、統計調査を実施し、又は統計調査<wbr>の製表を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">三　統計の作成及び利用に必要な情報の蓄積、加工その他の処理を行うこと。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">三　統計の作成及び利用に必要な情報の蓄積、加工その他の処理を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に掲げる業務に必要な技術の研究を行うこと。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に掲げる業務に必要な技術の研究を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">五　国の行政機関又は指定独立行政法人等（統計法（平成十九年法律第五十三号）第二<wbr>十五条に規定する指定独立行政法人等をいう。以下この号において同じ。）の委託を受<wbr>けて、同法第三十三条の二第一項、第三十四条第一項又は第三十六条第一項の規定に基<wbr>づき当該国の行政機関又は指定独立行政法人等が行う事務の全部を行うこと。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">五　国の行政機関又は指定独立行政法人等（統計法（平成十九年法律第五十三号）第二<wbr>十五条に規定する指定独立行政法人等をいう。以下この号において同じ。）の委託を受<wbr>けて、同法第三十三条の二第一項、第三十四条第一項又は第三十六条第一項の規定に基<wbr>づき当該国の行政機関又は指定独立行政法人等が行う事務の全部を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げる業務に附帯する業務を行うこと。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げる業務に附帯する業務を行うこと。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（緊急の必要がある場合の総務大臣の命令）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（緊急の必要がある場合の総務大臣の命令）</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第十一条　総務大臣は、天災の発生、経済事情の急激な変動その他の事情が生じた場合<wbr>において、関係行政機関の要請に応じ緊急に統計を作成することが必要であると認める<wbr>ときは、センターに対し、前条第一号から第三号までに掲げる業務（これらに附帯する<wbr>業務を含む。）に関し必要な措置をとるべきことを命ずることができる。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第十一条　総務大臣は、天災の発生、経済事情の急激な変動その他の事情が生じた場合<wbr>において、関係行政機関の要請に応じ緊急に統計を作成することが必要であると認める<wbr>ときは、センターに対し、前条第一号から第三号までに掲げる業務（これらに附帯する<wbr>業務を含む。）に関し必要な措置をとるべきことを命ずることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体との協力）</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体との協力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第十二条　センターは、国勢調査等の製表を適正かつ確実に行うため必要があると認め<wbr>るときは、当該国勢調査等に関して統計法第十六条の規定により地方公共団体が処理す<wbr>ることとされた事務（次項において「地方公共団体統計事務」という。）を処理する地<wbr>方公共団体に対し、協力を求めることができる。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第十二条　センターは、国勢調査等の製表を適正かつ確実に行うため必要があると認め<wbr>るときは、当該国勢調査等に関して統計法第十六条の規定により地方公共団体が処理す<wbr>ることとされた事務（次項において「地方公共団体統計事務」という。）を処理する地<wbr>方公共団体に対し、協力を求めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">２　センターは、地方公共団体から地方公共団体統計事務の処理に関し協力を求められ<wbr>たときは、センターの業務の遂行に著しい支障がない限り、その求めに応じるよう努め<wbr>るものとする。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">２　センターは、地方公共団体から地方公共団体統計事務の処理に関し協力を求められ<wbr>たときは、センターの業務の遂行に著しい支障がない限り、その求めに応じるよう努め<wbr>るものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第十三条　センターは、毎事業年度に係る通則法第四十四条第一項又は第二項の規定に<wbr>よる整理を行った後、同条第一項の規定による積立金があるときは、その額に相当する<wbr>金額のうち総務大臣の承認を受けた金額を、翌事業年度に係る通則法第三十五条の十第<wbr>一項の認可を受けた事業計画（同項後段の規定による変更の認可を受けたときは、その<wbr>変更後のもの）の定めるところにより、翌事業年度における第十条に規定する業務の財<wbr>源に充てることができる。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第十三条　センターは、毎事業年度に係る通則法第四十四条第一項又は第二項の規定に<wbr>よる整理を行った後、同条第一項の規定による積立金があるときは、その額に相当する<wbr>金額のうち総務大臣の承認を受けた金額を、翌事業年度に係る通則法第三十五条の十第<wbr>一項の認可を受けた事業計画（同項後段の規定による変更の認可を受けたときは、その<wbr>変更後のもの）の定めるところにより、翌事業年度における第十条に規定する業務の財<wbr>源に充てることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　総務大臣は、前項の規定による承認をしようとするときは、財務大臣に協議しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　総務大臣は、前項の規定による承認をしようとするときは、財務大臣に協議しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">３　センターは、第一項に規定する積立金の額に相当する金額から同項の規定による承<wbr>認を受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">３　センターは、第一項に規定する積立金の額に相当する金額から同項の規定による承<wbr>認を受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しなけれ<wbr>ばならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第十四条　センターに係る通則法における主務大臣及び主務省令は、それぞれ総務大臣<wbr>及び総務省令とする。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第十四条　センターに係る通則法における主務大臣及び主務省令は、それぞれ総務大臣<wbr>及び総務省令とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第十五条　削除</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第十五条　削除 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十六条　次の各号のいずれかに該当する場合には、その違反行為をしたセンターの役<wbr>員は、二十万円以下の過料に処する。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十六条　次の各号のいずれかに該当する場合には、その違反行為をしたセンターの役<wbr>員は、二十万円以下の過料に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">一　第十条に規定する業務以外の業務を行ったとき。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">一　第十条に規定する業務以外の業務を行ったとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">二　第十一条の規定による総務大臣の命令に違反したとき。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">二　第十一条の規定による総務大臣の命令に違反したとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">三　第十三条第一項の規定により総務大臣の承認を受けなければならない場合において<wbr>、その承認を受けなかったとき。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">三　第十三条第一項の規定により総務大臣の承認を受けなければならない場合において<wbr>、その承認を受けなかったとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第二条　センターの成立の際現に総務省の機関で政令で定めるものの職員である者は、<wbr>別に辞令を発せられない限り、センターの成立の日において、センターの相当の職員と<wbr>なるものとする。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第二条　センターの成立の際現に総務省の機関で政令で定めるものの職員である者は、<wbr>別に辞令を発せられない限り、センターの成立の日において、センターの相当の職員と<wbr>なるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">68</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　センターの成立の際現に前条に規定する政令で定める機関の職員である者のう<wbr>ち、センターの成立の日において引き続きセンターの職員となったもの（次条において<wbr>「引継職員」という。）であって、センターの成立の日の前日において総務大臣又はそ<wbr>の委任を受けた者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（</span><span style="color: #000000; background-color: #efcb05; ">附則<wbr>第六条第二項、第七条第四項又は第八条第四項において準用する場合を含む。以下この<wbr>条において同じ。）の規定による認定を受けているものが、センターの成立の日におい<wbr>て児童手当又は同法附則第六条第一項、第七条第一項若しくは第八条第一項の給付（以<wbr>下この条において「特例給付等」という。）の支給要件に該当するときは、その者に対<wbr>する児童手当又は特例給付等の支給に関しては、センターの成立の日において同法第七<wbr>条第一項の規定による市町村長（特別区の区長を含む。）の認定があったものとみなす<wbr>。この場合において、その認定があったものとみなされた児童手当又は特例給付等の支<wbr>給は、同法第八条第二項（同法附則第六条第二項、第七条第四項又は第八条第四項にお<wbr>いて準用する場合を含む。）の規定にかかわらず、センターの成立の日の前日の属する<wbr>月の翌月から始める。</span></code></td>
+<td class="ln">68</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　センターの成立の際現に前条に規定する政令で定める機関の職員である者のう<wbr>ち、センターの成立の日において引き続きセンターの職員となったもの（次条において<wbr>「引継職員」という。）であって、センターの成立の日の前日において総務大臣又はそ<wbr>の委任を受けた者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（</span><span class="sf17b18">同法<wbr></span><span style="color: #000000; background-color: #efcb05; ">附則第六条第二項、第七条第四項又は第八条第四項において準用する場合を含む。以下<wbr>この条において同じ。）の規定による認定を受けているものが、センターの成立の日に<wbr>おいて児童手当又は同法附則第六条第一項、第七条第一項若しくは第八条第一項の給付<wbr>（以下この条において「特例給付等」という。）の支給要件に該当するときは、その者<wbr>に対する児童手当又は特例給付等の支給に関しては、センターの成立の日において同法<wbr>第七条第一項の規定による市町村長（特別区の区長を含む。）の認定があったものとみ<wbr>なす。この場合において、その認定があったものとみなされた児童手当又は特例給付等<wbr>の支給は、同法第八条第二項（同法附則第六条第二項、第七条第四項又は第八条第四項<wbr>において準用する場合を含む。）の規定にかかわらず、センターの成立の日の前日の属<wbr>する月の翌月から始める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（センターの職員となる者の職員団体についての経過措置）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（センターの職員となる者の職員団体についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第四条　センターの成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）<wbr>第百八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員であ<wbr>るものは、センターの成立の際国営企業及び特定独立行政法人の労働関係に関する法律<wbr>（昭和二十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この<wbr>場合において、当該職員団体が法人であるときは、法人である労働組合となるものとす<wbr>る。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第四条　センターの成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）<wbr>第百八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員であ<wbr>るものは、センターの成立の際国営企業及び特定独立行政法人の労働関係に関する法律<wbr>（昭和二十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この<wbr>場合において、当該職員団体が法人であるときは、法人である労働組合となるものとす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、センターの成立の日から起<wbr>算して六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二<wbr>条及び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる<wbr>事務所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、センターの成立の日から起<wbr>算して六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二<wbr>条及び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる<wbr>事務所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、センターの成立の日から起<wbr>算して六十日を経過する日までは、労働組合法第二条ただし書（同条第一号に係る部分<wbr>に限る。）の規定は、適用しない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、センターの成立の日から起<wbr>算して六十日を経過する日までは、労働組合法第二条ただし書（同条第一号に係る部分<wbr>に限る。）の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第五条　センターの成立の際、第十条に規定する業務に関し、現に国が有する権利及び<wbr>義務のうち政令で定めるものは、センターの成立の時においてセンターが承継する。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第五条　センターの成立の際、第十条に規定する業務に関し、現に国が有する権利及び<wbr>義務のうち政令で定めるものは、センターの成立の時においてセンターが承継する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（国有財産の無償使用）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（国有財産の無償使用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第六条　総務大臣は、センターの成立の際現に総務省の部局又は機関で政令で定めるも<wbr>のに使用されている国有財産であって政令で定めるものを、政令で定めるところにより<wbr>、センターの用に供するため、センターに無償で使用させることができる。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第六条　総務大臣は、センターの成立の際現に総務省の部局又は機関で政令で定めるも<wbr>のに使用されている国有財産であって政令で定めるものを、政令で定めるところにより<wbr>、センターの用に供するため、センターに無償で使用させることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第七条　附則第二条から前条までに定めるもののほか、センターの設立に伴い必要な経<wbr>過措置その他この法律の施行に関し必要な経過措置は、政令で定める。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第七条　附則第二条から前条までに定めるもののほか、センターの設立に伴い必要な経<wbr>過措置その他この法律の施行に関し必要な経過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年五月二三日法律第五三号）　抄</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年五月二三日法律第五三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二年を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二年を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月一一日法律第六六号）　抄</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月一一日法律第六六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年六月一日法律第三四号）　抄</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年六月一日法律第三四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、第一条中統計法第四条の改正規定、同法第四十五条の改正<wbr>規定及び同法第四十九条の次に一条を加える改正規定並びに次条並びに附則第三条及び<wbr>第七条の規定は、公布の日から施行する。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、第一条中統計法第四条の改正規定、同法第四十五条の改正<wbr>規定及び同法第四十九条の次に一条を加える改正規定並びに次条並びに附則第三条及び<wbr>第七条の規定は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第六条　施行日前にした行為に対する罰則の適用については、なお従前の例による。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第六条　施行日前にした行為に対する罰則の適用については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第七条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置は、政令で定める。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第七条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

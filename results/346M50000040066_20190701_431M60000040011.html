@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十六年大蔵省令第六十六号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十六年大蔵省令第六十六号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">自動車重量税法施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">自動車重量税法施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">自動車重量税法第十三条第一項並びに自動車重量税法施行令第二条及び第五条第四項の<wbr>規定に基づき、並びに同法を実施するため、自動車重量税法施行規則を次のように定め<wbr>る。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">自動車重量税法第十三条第一項並びに自動車重量税法施行令第二条及び第五条第四項の<wbr>規定に基づき、並びに同法を実施するため、自動車重量税法施行規則を次のように定め<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（非課税軽自動車であることを明らかにするための書類）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（非課税軽自動車であることを明らかにするための書類）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　自動車重量税法施行令（昭和四十六年政令第二百七十五号。以下「令」という<wbr>。）第二条に規定する財務省令で定める書類は、道路運送車両法施行規則（昭和二十六<wbr>年運輸省令第七十四号）第六十三条の六第三項（軽自動車届出済証返納証明書の交付）<wbr>に規定する軽自動車届出済証返納証明書とする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　自動車重量税法施行令（昭和四十六年政令第二百七十五号。以下「令」という<wbr>。）第二条に規定する財務省令で定める書類は、道路運送車両法施行規則（昭和二十六<wbr>年運輸省令第七十四号）第六十三条の六第三項（軽自動車届出済証返納証明書の交付）<wbr>に規定する軽自動車届出済証返納証明書とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（車両総重量がないものとされる被牽けん引自動車）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（車両総重量がないものとされる被牽けん引自動車）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　令第五条第一項に規定する被牽けん引自動車は、次に掲げる被牽けん引自動車<wbr>とする。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　令第五条第一項に規定する被牽けん引自動車は、次に掲げる被牽けん引自動車<wbr>とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　自動車検査証の車体の形状の欄に「セミトレーラ」、「バンセミトレーラ」、「ダ<wbr>ンプセミトレーラ」又は「コンテナセミトレーラ」と記載される被牽けん引自動車</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　自動車検査証の車体の形状の欄に「セミトレーラ」、「バンセミトレーラ」、「ダ<wbr>ンプセミトレーラ」又は「コンテナセミトレーラ」と記載される被牽けん引自動車</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　自動車検査証の車体の形状の欄に「ドリー付トレーラ」と記載され、かつ、当該検<wbr>査証に記載される牽けん引自動車の車名及び型式が令第五条第一項に規定する牽けん引<wbr>自動車に係るもののみである被牽けん引自動車</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　自動車検査証の車体の形状の欄に「ドリー付トレーラ」と記載され、かつ、当該検<wbr>査証に記載される牽けん引自動車の車名及び型式が令第五条第一項に規定する牽けん引<wbr>自動車に係るもののみである被牽けん引自動車 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（電子情報処理組織による申請又は届出の場合の納付方法）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（電子情報処理組織による申請又は届出の場合の納付方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三条　自動車重量税法（昭和四十六年法律第八十九号。以下「法」という。）第十条<wbr>の二に規定する財務省令で定める方法は、同条に規定する申請又は届出を行う場合に国<wbr>土交通大臣等（法第十条に規定する国土交通大臣等をいう。）から得た納付情報により<wbr>納付する方法とする。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三条　自動車重量税法（昭和四十六年法律第八十九号。以下「法」という。）第十条<wbr>の二に規定する財務省令で定める方法は、同条に規定する申請又は届出を行う場合に国<wbr>土交通大臣等（法第十条に規定する国土交通大臣等をいう。）から得た納付情報により<wbr>納付する方法とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（税額の認定通知）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（税額の認定通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十二条第一項に規定する通知は、当該自動車に係る次に掲げる事項を記載<wbr>した書面をもつてするものとする。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十二条第一項に規定する通知は、当該自動車に係る次に掲げる事項を記載<wbr>した書面をもつてするものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">一　使用者の住所（住所がない場合には、居所又は法の施行地にある事務所、営業所そ<wbr>の他これらに準ずるものの所在地。次条において同じ。）及び氏名又は名称</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">一　使用者の住所（住所がない場合には、居所又は法の施行地にある事務所、営業所そ<wbr>の他これらに準ずるものの所在地。次条において同じ。）及び氏名又は名称</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">二　法第十二条第一項の規定により認定した自動車重量税の額</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">二　法第十二条第一項の規定により認定した自動車重量税の額</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">三　前号の税額のうち未納の金額</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">三　前号の税額のうち未納の金額</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">四　当該自動車の次に掲げる区分に応じそれぞれ次に掲げる事項</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">四　当該自動車の次に掲げる区分に応じそれぞれ次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">イ　登録を受けている自動車　自動車登録番号</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">イ　登録を受けている自動車　自動車登録番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路運送車両法（昭和二十六年法律第百八十五号）第六十条第一項後段（検査対象<wbr>軽自動車及び二輪小型自動車の車両番号の指定）の規定により車両番号が指定されてい<wbr>る軽自動車及び二輪の小型自動車　当該車両番号</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路運送車両法（昭和二十六年法律第百八十五号）第六十条第一項後段（検査対象<wbr>軽自動車及び二輪小型自動車の車両番号の指定）の規定により車両番号が指定されてい<wbr>る軽自動車及び二輪の小型自動車　当該車両番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">ハ　その他の自動車　車台番号</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">ハ　その他の自動車　車台番号</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">21</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">五　</span><span style="color: #000000; background-color: #efcb05; ">第七条第一項の区分及び当該自動車が次に掲げる自動車である場合にはそれぞれ次<wbr>に掲げる事項</span></code></td>
+<td class="ln">21</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">五　</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">第七条第一項の区分及び当該自動車が次に掲げる自動車である場合にはそれぞれ<wbr>次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">イ　法第七条第一項第一号イ、第二号イ又は第三号イに掲げる自動車　車両重量</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">イ　法第七条第一項第一号イ、第二号イ又は第三号イに掲げる自動車　車両重量</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第七条第一項第二号ロ又は第三号ロに掲げる自動車　車両総重量</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第七条第一項第二号ロ又は第三号ロに掲げる自動車　車両総重量</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">六　その他参考となるべき事項</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">六　その他参考となるべき事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（納付不足額の通知事項）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（納付不足額の通知事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第十三条第一項に規定する財務省令で定める事項は、次に掲げる事項とする<wbr>。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第十三条第一項に規定する財務省令で定める事項は、次に掲げる事項とする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">一　当該自動車の使用者の住所及び氏名又は名称</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">一　当該自動車の使用者の住所及び氏名又は名称</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">二　当該自動車に係る自動車重量税の額</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">二　当該自動車に係る自動車重量税の額</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">三　前号の税額のうち未納の金額</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">三　前号の税額のうち未納の金額</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">四　第二号の自動車重量税の納期限</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">四　第二号の自動車重量税の納期限</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">五　当該自動車についての前条第四号及び第五号に掲げる事項</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">五　当該自動車についての前条第四号及び第五号に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">六　その他参考となるべき事項</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">六　その他参考となるべき事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、昭和四十六年十二月一日から施行する。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、昭和四十六年十二月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法施行規則の一部を改正する省令（昭和四十六年運輸省令第五十五号<wbr>）の施行日前に道路運送車両法施行規則第六十三条の六（軽自動車届出済証の返納）の<wbr>規定によりその軽自動車届出済証が返納された軽自動車について法第五条第二号の規定<wbr>の適用を受けるため必要とされる令第二条に規定する大蔵省令で定める書類は、第一条<wbr>の規定にかかわらず、当該軽自動車届出済証が返納されたことを証する書類として適当<wbr>なものであることを道路運送車両法施行規則第六十三条の二第一項（軽自動車の使用の<wbr>届出書）に規定する都道府県知事が認めた書類とする。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法施行規則の一部を改正する省令（昭和四十六年運輸省令第五十五号<wbr>）の施行日前に道路運送車両法施行規則第六十三条の六（軽自動車届出済証の返納）の<wbr>規定によりその軽自動車届出済証が返納された軽自動車について法第五条第二号の規定<wbr>の適用を受けるため必要とされる令第二条に規定する大蔵省令で定める書類は、第一条<wbr>の規定にかかわらず、当該軽自動車届出済証が返納されたことを証する書類として適当<wbr>なものであることを道路運送車両法施行規則第六十三条の二第一項（軽自動車の使用の<wbr>届出書）に規定する都道府県知事が認めた書類とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">３　令附則第三項に規定する財務省令で定める書類は、次の各号に掲げる自動車の区分<wbr>に応じ当該各号に掲げる書類とする。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">３　令附則第三項に規定する財務省令で定める書類は、次の各号に掲げる自動車の区分<wbr>に応じ当該各号に掲げる書類とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">37</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　道路運送車両</span><span style="color: #000000; background-color: #efcb05; ">（新規検査の場合の自動車検査証の交付）の規定により自動車検査証<wbr>が交付された検査自動車である軽自動車</span></code></td>
+<td class="ln">37</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　道路運送車両</span><span class="sf17b18">法第六十条第一項</span><span style="color: #000000; background-color: #efcb05; ">（新規検査の場合の自動車検査証の交付）の規定に<wbr>より自動車検査証が交付された検査自動車である軽自動車</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる軽自動車以外のもの　当該自動車検査証（当該軽自動車が昭和四十九年<wbr>五月一日前に道路運送車両法第六十条第一項又は第九十七条の三第一項（軽自動車の使<wbr>用の届出）の規定による車両番号の指定を受けたことがあることを法第八条に規定する<wbr>国土交通大臣若しくはその権限の委任を受けた地方運輸局長、運輸監理部長若しくは運<wbr>輸支局長又は協会（以下「国土交通大臣等」という。）が確認することができるものに<wbr>限る。）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる軽自動車以外のもの　当該自動車検査証（当該軽自動車が昭和四十九年<wbr>五月一日前に道路運送車両法第六十条第一項又は第九十七条の三第一項（軽自動車の使<wbr>用の届出）の規定による車両番号の指定を受けたことがあることを法第八条に規定する<wbr>国土交通大臣若しくはその権限の委任を受けた地方運輸局長、運輸監理部長若しくは運<wbr>輸支局長又は協会（以下「国土交通大臣等」という。）が確認することができるものに<wbr>限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路運送車両法第六十九条第四項（自動車検査証の返納等）の規定によりその自動<wbr>車検査証が返納された検査自動車である軽自動車　同項に規定する自動車検査証返納証<wbr>明書（当該軽自動車が昭和四十九年五月一日前に同法第六十条第一項又は第九十七条の<wbr>三第一項の規定による車両番号の指定を受けたことがあることを国土交通大臣等が確認<wbr>することができるものに限る。）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路運送車両法第六十九条第四項（自動車検査証の返納等）の規定によりその自動<wbr>車検査証が返納された検査自動車である軽自動車　同項に規定する自動車検査証返納証<wbr>明書（当該軽自動車が昭和四十九年五月一日前に同法第六十条第一項又は第九十七条の<wbr>三第一項の規定による車両番号の指定を受けたことがあることを国土交通大臣等が確認<wbr>することができるものに限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">二　道路運送車両法施行規則等の一部を改正する省令（昭和四十八年運輸省令第三十三<wbr>号。以下この号において「改正省令」という。）による改正前の道路運送車両法施行規<wbr>則（以下この号において「旧規則」という。）第六十三条の二第三項又は改正省令によ<wbr>る改正後の道路運送車両法施行規則（以下この号において「新規則」という。）第六十<wbr>三条の二第三項（軽自動車届出済証の交付）の規定により軽自動車届出済証が交付され<wbr>た検査自動車である軽自動車で前号以外のもの</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">二　道路運送車両法施行規則等の一部を改正する省令（昭和四十八年運輸省令第三十三<wbr>号。以下この号において「改正省令」という。）による改正前の道路運送車両法施行規<wbr>則（以下この号において「旧規則」という。）第六十三条の二第三項又は改正省令によ<wbr>る改正後の道路運送車両法施行規則（以下この号において「新規則」という。）第六十<wbr>三条の二第三項（軽自動車届出済証の交付）の規定により軽自動車届出済証が交付され<wbr>た検査自動車である軽自動車で前号以外のもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる軽自動車以外のもの　当該軽自動車届出済証</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる軽自動車以外のもの　当該軽自動車届出済証</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">ロ　旧規則第六十三条の六第一項又は新規則第六十三条の六第一項（軽自動車届出済証<wbr>の返納）の規定により当該軽自動車届出済証が返納されたもの　旧規則第六十三条の六<wbr>第二項又は新規則第六十三条の六第二項（軽自動車届出済証返納証明書の交付）に規定<wbr>する軽自動車届出済証返納証明書（道路運送車両法施行規則の一部を改正する省令（昭<wbr>和四十六年運輸省令第五十五号）の施行日前に当該軽自動車届出済証が返納されたもの<wbr>にあつては、これに代わるべき書類として適当なものであることを国土交通大臣等が認<wbr>めた書類）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">ロ　旧規則第六十三条の六第一項又は新規則第六十三条の六第一項（軽自動車届出済証<wbr>の返納）の規定により当該軽自動車届出済証が返納されたもの　旧規則第六十三条の六<wbr>第二項又は新規則第六十三条の六第二項（軽自動車届出済証返納証明書の交付）に規定<wbr>する軽自動車届出済証返納証明書（道路運送車両法施行規則の一部を改正する省令（昭<wbr>和四十六年運輸省令第五十五号）の施行日前に当該軽自動車届出済証が返納されたもの<wbr>にあつては、これに代わるべき書類として適当なものであることを国土交通大臣等が認<wbr>めた書類） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年九月二八日大蔵省令第四三号）</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年九月二八日大蔵省令第四三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和四十八年十月一日から施行する。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和四十八年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五八年三月三一日大蔵省令第二〇号）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五八年三月三一日大蔵省令第二〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和五十八年四月一日から施行する。ただし、第三条第五号の改正規定は<wbr>、同年七月一日から施行する。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和五十八年四月一日から施行する。ただし、第三条第五号の改正規定は<wbr>、同年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年六月三〇日大蔵省令第四六号）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年六月三〇日大蔵省令第四六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成七年七月一日から施行する。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成七年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年八月二一日大蔵省令第六九号）　抄</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年八月二一日大蔵省令第六九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成十三年一月六日から施行する。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成十三年一月六日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年六月二八日財務省令第四〇号）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年六月二八日財務省令第四〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十四年七月一日から施行する。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十四年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一一月一九日財務省令第六九号）</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一一月一九日財務省令第六九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十六年十二月十二日から施行する。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十六年十二月十二日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年三月二九日財務省令第一一号）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年三月二九日財務省令第一一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成三十一年七月一日から施行する。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成三十一年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十九年農林水産省令第六十五号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十九年農林水産省令第六十五号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">農山漁村の活性化のための定住等及び地域間交流の促進に関する法律施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">農山漁村の活性化のための定住等及び地域間交流の促進に関する法律施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">農山漁村の活性化のための定住等及び地域間交流の促進に関する法律（平成十九年法律<wbr>第四十八号）第五条第二項第三号ニ及び第七号、第三項並びに第七項第四号、第六条第<wbr>二項及び第四項、第七条第一項、第二項第六号及び第四項並びに第八条第一項及び第二<wbr>項の規定に基づき、農山漁村の活性化のための定住等及び地域間交流の促進に関する法<wbr>律施行規則を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">農山漁村の活性化のための定住等及び地域間交流の促進に関する法律（平成十九年法律<wbr>第四十八号）第五条第二項第三号ニ及び第七号、第三項並びに第七項第四号、第六条第<wbr>二項及び第四項、第七条第一項、第二項第六号及び第四項並びに第八条第一項及び第二<wbr>項の規定に基づき、農山漁村の活性化のための定住等及び地域間交流の促進に関する法<wbr>律施行規則を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（活性化計画の目標を達成するために必要な事業）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（活性化計画の目標を達成するために必要な事業）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　農山漁村の活性化のための定住等及び地域間交流の促進に関する法律（以下「<wbr>法」という。）第五条第二項第二号ニの農林水産省令で定める事業は、農林漁業及び食<wbr>品産業その他の農林水産省の所掌に係る事業における資源の有効な利用を確保するため<wbr>の施設の整備に関する事業その他農林水産大臣の定める事業とする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　農山漁村の活性化のための定住等及び地域間交流の促進に関する法律（以下「<wbr>法」という。）第五条第二項第二号ニの農林水産省令で定める事業は、農林漁業及び食<wbr>品産業その他の農林水産省の所掌に係る事業における資源の有効な利用を確保するため<wbr>の施設の整備に関する事業その他農林水産大臣の定める事業とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（活性化計画の記載事項）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（活性化計画の記載事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第五条第三項第三号の農林水産省令で定める事項は、次に掲げる事項とする<wbr>。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第五条第三項第三号の農林水産省令で定める事項は、次に掲げる事項とする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　活性化計画の名称</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　活性化計画の名称</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　活性化計画の区域の面積</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　活性化計画の区域の面積</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　法第五条第二項第二号イからニまでに掲げる事業に関連して実施される事業に関す<wbr>る事項</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　法第五条第二項第二号イからニまでに掲げる事業に関連して実施される事業に関す<wbr>る事項</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">11</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四　法第五条第四項の規定により活性化計画に農林漁業団体等（同項に規定する農林漁<wbr>業団体等をいう。）が実施する市民農園（</span><span style="color: #000000; background-color: #efcb05; ">（平成二年法律第四十四号）第二条第二項に<wbr>規定する市民農園をいう。以下この号において同じ。）の整備に関する事業を記載する<wbr>場合にあっては、次に掲げる事項</span></code></td>
+<td class="ln">11</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四　法第五条第四項の規定により活性化計画に農林漁業団体等（同項に規定する農林漁<wbr>業団体等をいう。）が実施する市民農園（</span><span class="sf17b18">市民農園整備促進法</span><span style="color: #000000; background-color: #efcb05; ">（平成二年法律第四十四<wbr>号）第二条第二項に規定する市民農園をいう。以下この号において同じ。）の整備に関<wbr>する事業を記載する場合にあっては、次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">イ　市民農園の用に供する土地の所在、地番及び面積</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">イ　市民農園の用に供する土地の所在、地番及び面積</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">ロ　市民農園の用に供する農地の位置及び面積並びに市民農園整備促進法第二条第二項<wbr>第一号に掲げる農地のいずれに属するかの別</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">ロ　市民農園の用に供する農地の位置及び面積並びに市民農園整備促進法第二条第二項<wbr>第一号に掲げる農地のいずれに属するかの別</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">ハ　市民農園施設（市民農園整備促進法第二条第二項第二号に規定する市民農園施設を<wbr>いう。以下ハにおいて同じ。）の位置及び規模その他の市民農園施設の整備に関する事<wbr>項</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">ハ　市民農園施設（市民農園整備促進法第二条第二項第二号に規定する市民農園施設を<wbr>いう。以下ハにおいて同じ。）の位置及び規模その他の市民農園施設の整備に関する事<wbr>項</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ニ　市民農園の開設の時期</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ニ　市民農園の開設の時期</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">五　活性化計画の目標の達成状況についての評価に関する事項</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">五　活性化計画の目標の達成状況についての評価に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">六　その他農林水産大臣が必要と認める事項</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">六　その他農林水産大臣が必要と認める事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（農林漁業者の組織する団体又は特定非営利活動法人に準ずる者）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（農林漁業者の組織する団体又は特定非営利活動法人に準ずる者）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第五条第四項の農林水産省令で定める者は、次に掲げる者とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第五条第四項の農林水産省令で定める者は、次に掲げる者とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">一　一般社団法人又は一般財団法人</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">一　一般社団法人又は一般財団法人</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">二　都道府県又は市町村が資本金の二分の一以上を出資している株式会社であって、定<wbr>住等及び地域間交流の促進に寄与する事業を実施するもの</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">二　都道府県又は市町村が資本金の二分の一以上を出資している株式会社であって、定<wbr>住等及び地域間交流の促進に寄与する事業を実施するもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">三　営利を目的としない法人格を有しない社団であって、代表者の定めがあり、かつ、<wbr>農山漁村の活性化を図るための活動を行うことを目的とするもの</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">三　営利を目的としない法人格を有しない社団であって、代表者の定めがあり、かつ、<wbr>農山漁村の活性化を図るための活動を行うことを目的とするもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に掲げるもののほか、定住等及び地域間交流を促進する観点から必要と認め<wbr>られる事業又は事務を実施する者として、都道府県知事又は市町村長が指定したもの</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に掲げるもののほか、定住等及び地域間交流を促進する観点から必要と認め<wbr>られる事業又は事務を実施する者として、都道府県知事又は市町村長が指定したもの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（農林地所有権移転等促進事業に関して活性化計画に記載すべき事項）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（農林地所有権移転等促進事業に関して活性化計画に記載すべき事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第五条第八項第四号の農林水産省令で定める事項は、農林地所有権移転等促<wbr>進事業の実施により設定され、又は移転される農用地に係る賃借権又は使用貸借による<wbr>権利の条件その他農用地についての所有権の移転等（同項に規定する所有権の移転等を<wbr>いう。以下同じ。）に係る法律関係に関する事項（同項第二号及び第三号に掲げる事項<wbr>を除く。）とする。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第五条第八項第四号の農林水産省令で定める事項は、農林地所有権移転等促<wbr>進事業の実施により設定され、又は移転される農用地に係る賃借権又は使用貸借による<wbr>権利の条件その他農用地についての所有権の移転等（同項に規定する所有権の移転等を<wbr>いう。以下同じ。）に係る法律関係に関する事項（同項第二号及び第三号に掲げる事項<wbr>を除く。）とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（農林水産大臣に提出する活性化計画の添付書類）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（農林水産大臣に提出する活性化計画の添付書類）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第五条　都道府県又は市町村は、法第六条第一項の規定により農林水産大臣に活性化計<wbr>画を提出する場合においては、当該活性化計画に次に掲げる書類を添付しなければなら<wbr>ない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第五条　都道府県又は市町村は、法第六条第一項の規定により農林水産大臣に活性化計<wbr>画を提出する場合においては、当該活性化計画に次に掲げる書類を添付しなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　活性化計画の区域内の土地の現況を明らかにした図面</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　活性化計画の区域内の土地の現況を明らかにした図面</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　次条第一項の規定により法第六条第二項の交付金の額の限度を算出するために必要<wbr>な資料</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　次条第一項の規定により法第六条第二項の交付金の額の限度を算出するために必要<wbr>な資料 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（交付金の交付の方法等）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（交付金の交付の方法等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第六条第二項の交付金は、活性化計画を提出した都道府県又は市町村ごとに<wbr>交付するものとし、その額は、農林水産大臣の定めるところにより算出された額を限度<wbr>とする。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第六条第二項の交付金は、活性化計画を提出した都道府県又は市町村ごとに<wbr>交付するものとし、その額は、農林水産大臣の定めるところにより算出された額を限度<wbr>とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　法第五条第二項第二号イに掲げる事業（国又は都道府県が実施するものを除く。）<wbr>のうち、農業用用排水施設、農業用道路その他農用地の保全又は利用上必要な施設の新<wbr>設、管理、廃止若しくは変更、区画整理、農用地の造成、交換分合、客土又は暗きょ排<wbr>水については、土地改良法（昭和二十四年法律第百九十五号）第二条第二項に規定する<wbr>土地改良事業として行われる場合に限り、法第六条第二項の交付金の交付の対象となる<wbr>ものとする。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　法第五条第二項第二号イに掲げる事業（国又は都道府県が実施するものを除く。）<wbr>のうち、農業用用排水施設、農業用道路その他農用地の保全又は利用上必要な施設の新<wbr>設、管理、廃止若しくは変更、区画整理、農用地の造成、交換分合、客土又は暗きょ排<wbr>水については、土地改良法（昭和二十四年法律第百九十五号）第二条第二項に規定する<wbr>土地改良事業として行われる場合に限り、法第六条第二項の交付金の交付の対象となる<wbr>ものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　前条及び前二項に定めるもののほか、交付金の交付の対象となる事業又は事務、交<wbr>付金の交付の手続、交付金の経理その他の必要な事項については、農林水産大臣の定め<wbr>るところによる。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　前条及び前二項に定めるもののほか、交付金の交付の対象となる事業又は事務、交<wbr>付金の交付の手続、交付金の経理その他の必要な事項については、農林水産大臣の定め<wbr>るところによる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画についての農業委員会の決定）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画についての農業委員会の決定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第七条　農業委員会は、法第七条第一項の規定により所有権移転等促進計画について決<wbr>定をしようとするときは、農用地の権利移動が適切に行われることを旨として、当該決<wbr>定に要する期間その他活性化計画の円滑な達成を図るために必要な事項につき適切な配<wbr>慮をするものとする。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第七条　農業委員会は、法第七条第一項の規定により所有権移転等促進計画について決<wbr>定をしようとするときは、農用地の権利移動が適切に行われることを旨として、当該決<wbr>定に要する期間その他活性化計画の円滑な達成を図るために必要な事項につき適切な配<wbr>慮をするものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画に定めるべき事項）</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画に定めるべき事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第七条第二項第六号の農林水産省令で定める事項は、次に掲げる事項とする<wbr>。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第七条第二項第六号の農林水産省令で定める事項は、次に掲げる事項とする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　法第七条第二項第一号に規定する者が設定又は移転を受ける農用地に係る賃借権又<wbr>は使用貸借による権利の条件その他農用地についての所有権の移転等に係る法律関係に<wbr>関する事項（同項第四号及び第五号に掲げる事項を除く。）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　法第七条第二項第一号に規定する者が設定又は移転を受ける農用地に係る賃借権又<wbr>は使用貸借による権利の条件その他農用地についての所有権の移転等に係る法律関係に<wbr>関する事項（同項第四号及び第五号に掲げる事項を除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　法第七条第二項第一号に規定する者が所有権の移転等を受ける土地の全部又は一部<wbr>が農用地であり、かつ、当該所有権の移転等の後における土地の利用目的が農用地の用<wbr>に供するためのものである場合にあっては、次に掲げる事項</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　法第七条第二項第一号に規定する者が所有権の移転等を受ける土地の全部又は一部<wbr>が農用地であり、かつ、当該所有権の移転等の後における土地の利用目的が農用地の用<wbr>に供するためのものである場合にあっては、次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">イ　法第七条第二項第一号に規定する者の農業経営の状況</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">イ　法第七条第二項第一号に規定する者の農業経営の状況</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">ロ　その他参考となるべき事項</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">ロ　その他参考となるべき事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画の承認手続）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画の承認手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第九条　市町村（農地法（昭和二十七年法律第二百二十九号）第四条第一項に規定する<wbr>指定市町村を除く。）は、法第七条第六項の規定により所有権移転等促進計画について<wbr>承認を受けようとするときは、その申請書に当該所有権移転等促進計画及び次に掲げる<wbr>書類を添付して、これを都道府県知事に提出しなければならない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第九条　市町村（農地法（昭和二十七年法律第二百二十九号）第四条第一項に規定する<wbr>指定市町村を除く。）は、法第七条第六項の規定により所有権移転等促進計画について<wbr>承認を受けようとするときは、その申請書に当該所有権移転等促進計画及び次に掲げる<wbr>書類を添付して、これを都道府県知事に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる事項を記載した書面</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる事項を記載した書面</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">イ　土地の利用状況及び普通収穫高</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">イ　土地の利用状況及び普通収穫高</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">ロ　所有権の移転等の当事者がその土地の転用に伴い支払うべき給付の種類、内容及び<wbr>相手方</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">ロ　所有権の移転等の当事者がその土地の転用に伴い支払うべき給付の種類、内容及び<wbr>相手方</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ハ　土地の転用の時期及び転用の目的に係る施設の概要</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ハ　土地の転用の時期及び転用の目的に係る施設の概要</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ニ　土地を転用することによって生ずる付近の農用地、作物、家畜等の被害の防除施設<wbr>の概要</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ニ　土地を転用することによって生ずる付近の農用地、作物、家畜等の被害の防除施設<wbr>の概要</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">二　土地の位置を示す地図</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">二　土地の位置を示す地図</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">三　その申請に係る土地に設置しようとする建物その他の施設及びこれらの施設を利用<wbr>するために必要な道路、用排水施設その他の施設の位置を明らかにした図面</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">三　その申請に係る土地に設置しようとする建物その他の施設及びこれらの施設を利用<wbr>するために必要な道路、用排水施設その他の施設の位置を明らかにした図面</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">四　その申請に係る農用地が土地改良区の地区内にある場合にあっては、当該土地改良<wbr>区の意見書（当該土地改良区に対して意見を求めた日から三十日を経過してもなおその<wbr>意見を得られない場合にあっては、その事由を記載した書面）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">四　その申請に係る農用地が土地改良区の地区内にある場合にあっては、当該土地改良<wbr>区の意見書（当該土地改良区に対して意見を求めた日から三十日を経過してもなおその<wbr>意見を得られない場合にあっては、その事由を記載した書面）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">五　その他参考となるべき事項を記載した書類</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">五　その他参考となるべき事項を記載した書類</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事は、法第七条第六項の規定による承認をしようとするときは、農用地<wbr>の転用のための権利移動が適切に行われることを旨として、当該承認に要する期間その<wbr>他活性化計画の円滑な達成を図るために必要な事項につき適切な配慮をするものとする<wbr>。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事は、法第七条第六項の規定による承認をしようとするときは、農用地<wbr>の転用のための権利移動が適切に行われることを旨として、当該承認に要する期間その<wbr>他活性化計画の円滑な達成を図るために必要な事項につき適切な配慮をするものとする<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画の公告）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画の公告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第八条第一項の規定による公告は、次に掲げる事項を市町村の公報に掲載す<wbr>ることその他所定の手段により行うものとする。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第八条第一項の規定による公告は、次に掲げる事項を市町村の公報に掲載す<wbr>ることその他所定の手段により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　所有権移転等促進計画を定めた旨及び当該所有権移転等促進計画（第八条第二号に<wbr>掲げる事項を除く。）</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　所有権移転等促進計画を定めた旨及び当該所有権移転等促進計画（第八条第二号に<wbr>掲げる事項を除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　所有権移転等促進計画について法第七条第六項の規定により都道府県知事の承認を<wbr>受けている場合にあっては、その旨</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　所有権移転等促進計画について法第七条第六項の規定により都道府県知事の承認を<wbr>受けている場合にあっては、その旨 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画の公告の通知）</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（所有権移転等促進計画の公告の通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第八条第二項の規定による通知は、その通知書に同条第一項の規定による<wbr>公告をしようとする所有権移転等促進計画及び当該公告の予定年月日を記載した書面を<wbr>添付してするものとする。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第八条第二項の規定による通知は、その通知書に同条第一項の規定による<wbr>公告をしようとする所有権移転等促進計画及び当該公告の予定年月日を記載した書面を<wbr>添付してするものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">この省令は、法の施行の日（平成十九年八月一日）から施行する。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">この省令は、法の施行の日（平成十九年八月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一一月二八日農林水産省令第七三号）　抄</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一一月二八日農林水産省令第七三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、一般社団法人及び一般財団法人に関する法律の施行の日（平成二十年<wbr>十二月一日）から施行する。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、一般社団法人及び一般財団法人に関する法律の施行の日（平成二十年<wbr>十二月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一二月一一日農林水産省令第六四号）　抄</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一二月一一日農林水産省令第六四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、農地法等の一部を改正する法律（以下「改正法」という。）の施<wbr>行の日（平成二十一年十二月十五日）から施行する。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、農地法等の一部を改正する法律（以下「改正法」という。）の施<wbr>行の日（平成二十一年十二月十五日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年八月三〇日農林水産省令第五一号）</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年八月三〇日農林水産省令第五一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年一月二八日農林水産省令第四号）　抄</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年一月二八日農林水産省令第四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

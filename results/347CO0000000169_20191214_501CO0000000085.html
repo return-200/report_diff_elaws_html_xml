@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十七年政令第百六十九号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十七年政令第百六十九号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">沖縄弁護士に関する政令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">沖縄弁護士に関する政令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、沖縄の弁護士資格者等に対する本邦の弁護士資格等の付与に関する特別措置法<wbr>（昭和四十五年法律第三十三号）第七条の規定に基づき、この政令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、沖縄の弁護士資格者等に対する本邦の弁護士資格等の付与に関する特別措置法<wbr>（昭和四十五年法律第三十三号）第七条の規定に基づき、この政令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士が事務を行うことができる地域）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士が事務を行うことができる地域）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　琉球諸島及び大東諸島に関する日本国とアメリカ合衆国との間の協定の効力発<wbr>生の日（以下「復帰の日」という。）の前日において沖縄の法令の規定による弁護士で<wbr>ある者で、弁護士法（昭和二十四年法律第二百五号）第四条、第五条又は第六条の規定<wbr>による弁護士となる資格を有しないものは、次条第一項の規定による登載を受け、沖縄<wbr>弁護士の名称を用いて、沖縄県の区域内及び第八条の許可を受けた場合にあつては沖縄<wbr>県の区域外において、弁護士法第三条に規定する事務を行うことができる。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　琉球諸島及び大東諸島に関する日本国とアメリカ合衆国との間の協定の効力発<wbr>生の日（以下「復帰の日」という。）の前日において沖縄の法令の規定による弁護士で<wbr>ある者で、弁護士法（昭和二十四年法律第二百五号）第四条、第五条又は第六条の規定<wbr>による弁護士となる資格を有しないものは、次条第一項の規定による登載を受け、沖縄<wbr>弁護士の名称を用いて、沖縄県の区域内及び第八条の許可を受けた場合にあつては沖縄<wbr>県の区域外において、弁護士法第三条に規定する事務を行うことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士名簿への登載）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士名簿への登載）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　沖縄弁護士となるには、日本弁護士連合会に備えた沖縄弁護士名簿に登載され<wbr>なければならない。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　沖縄弁護士となるには、日本弁護士連合会に備えた沖縄弁護士名簿に登載され<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">２　沖縄弁護士となるには、那覇地方裁判所の管轄区域内にある弁護士会（以下「弁護<wbr>士会」という。）を経て、日本弁護士連合会に登載の請求をしなければならない。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">２　沖縄弁護士となるには、那覇地方裁判所の管轄区域内にある弁護士会（以下「弁護<wbr>士会」という。）を経て、日本弁護士連合会に登載の請求をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">３　弁護士会又は日本弁護士連合会は、登載の請求の進達又は登載を拒絶することがで<wbr>きない。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">３　弁護士会又は日本弁護士連合会は、登載の請求の進達又は登載を拒絶することがで<wbr>きない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">４　沖縄弁護士名簿に登載を受けた者は、その登載を受けた時に、弁護士会及び日本弁<wbr>護士連合会に入会するものとする。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">４　沖縄弁護士名簿に登載を受けた者は、その登載を受けた時に、弁護士会及び日本弁<wbr>護士連合会に入会するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（登載の取消しの請求）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（登載の取消しの請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第三条　沖縄弁護士がその業務をやめようとするときは、弁護士会を経て、日本弁護士<wbr>連合会に登載の取消しを請求しなければならない。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第三条　沖縄弁護士がその業務をやめようとするときは、弁護士会を経て、日本弁護士<wbr>連合会に登載の取消しを請求しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による請求により登載の取消しを受けた者は、その登載の取消しを受け<wbr>た時に、弁護士会及び日本弁護士連合会を退会するものとする。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による請求により登載の取消しを受けた者は、その登載の取消しを受け<wbr>た時に、弁護士会及び日本弁護士連合会を退会するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（登載の取消しの事由）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（登載の取消しの事由）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第四条　日本弁護士連合会は、次の場合においては、沖縄弁護士名簿への登載を取り消<wbr>さなければならない。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第四条　日本弁護士連合会は、次の場合においては、沖縄弁護士名簿への登載を取り消<wbr>さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">一　沖縄弁護士が第十条において準用する弁護士法第七条各号（第二号を除く。）のい<wbr>ずれかに該当するに至つたとき。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">一　沖縄弁護士が第十条において準用する弁護士法第七条各号（第二号を除く。）のい<wbr>ずれかに該当するに至つたとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">二　心身の故障により沖縄弁護士の職務を適正に行うことができない者として法務省令<wbr>で定めるもの</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">二　心身の故障により沖縄弁護士の職務を適正に行うことができない者として法務省令<wbr>で定めるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">三　沖縄弁護士が前条第一項の規定により登載の取消しを請求したとき。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">三　沖縄弁護士が前条第一項の規定により登載の取消しを請求したとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">四　沖縄弁護士について除名が確定したとき。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">四　沖縄弁護士について除名が確定したとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">五　沖縄弁護士が死亡したとき。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">五　沖縄弁護士が死亡したとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">２　弁護士法第十八条の規定は、沖縄弁護士に沖縄弁護士名簿への登載を取り消すべき<wbr>事由があると認めるときについて準用する。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">２　弁護士法第十八条の規定は、沖縄弁護士に沖縄弁護士名簿への登載を取り消すべき<wbr>事由があると認めるときについて準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（登載等の通知及び公告）</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（登載等の通知及び公告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第五条　沖縄弁護士名簿への登載をし、又は登載を取り消した場合については、弁護士<wbr>法第十九条の規定を準用する。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第五条　沖縄弁護士名簿への登載をし、又は登載を取り消した場合については、弁護士<wbr>法第十九条の規定を準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第六条　沖縄弁護士の事務所は、沖縄弁護士法律事務所と称する。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第六条　沖縄弁護士の事務所は、沖縄弁護士法律事務所と称する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">２　沖縄弁護士法律事務所は、沖縄県の区域内に設けなければならない。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">２　沖縄弁護士法律事務所は、沖縄県の区域内に設けなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">３　弁護士法第二十一条の規定は、沖縄弁護士が、沖縄弁護士法律事務所を設け、又は<wbr>移転したときについて準用する。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">３　弁護士法第二十一条の規定は、沖縄弁護士が、沖縄弁護士法律事務所を設け、又は<wbr>移転したときについて準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（会則を守る義務）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（会則を守る義務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第七条　沖縄弁護士は、弁護士会及び日本弁護士連合会が沖縄弁護士に関して定めた会<wbr>則を守らなければならない。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第七条　沖縄弁護士は、弁護士会及び日本弁護士連合会が沖縄弁護士に関して定めた会<wbr>則を守らなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（沖縄県の区域外で事務を行なう場合における裁判所の許可）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（沖縄県の区域外で事務を行なう場合における裁判所の許可）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第八条　沖縄県の区域内に置かれる裁判所又は裁判所の支部において取り扱つている事<wbr>件を受任している沖縄弁護士は、当該事件に関し沖縄県の区域外において弁護士法第三<wbr>条に規定する事務を行なう必要があるときは、当該事件を取り扱つている裁判所の許可<wbr>を受けなければならない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第八条　沖縄県の区域内に置かれる裁判所又は裁判所の支部において取り扱つている事<wbr>件を受任している沖縄弁護士は、当該事件に関し沖縄県の区域外において弁護士法第三<wbr>条に規定する事務を行なう必要があるときは、当該事件を取り扱つている裁判所の許可<wbr>を受けなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（弁護士法の適用の特則）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（弁護士法の適用の特則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第九条　弁護士法第三十一条第一項、第四十一条、第四十五条第二項、第四十八条、第<wbr>四十九条、第六十五条第二項、第六十七条、第七十条第二項及び第三項、第七十条の七<wbr>、第七十一条第二項並びに第七十一条の六の規定の適用については、沖縄弁護士は、弁<wbr>護士とみなす。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第九条　弁護士法第三十一条第一項、第四十一条、第四十五条第二項、第四十八条、第<wbr>四十九条、第六十五条第二項、第六十七条、第七十条第二項及び第三項、第七十条の七<wbr>、第七十一条第二項並びに第七十一条の六の規定の適用については、沖縄弁護士は、弁<wbr>護士とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（弁護士法の準用）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（弁護士法の準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">35</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十条　弁護士法第一条、第二条、第七条、第二十条第三項、第二十三条から第三十条<wbr>まで、第四十三条の十五及び第四十九条の二の規定並びに</span><span style="color: #000000; background-color: #efcb05; ">第八章第一節（第五十七条第<wbr>一項第三号を除く。）及び第二節の弁護士に関する規定は、沖縄弁護士について準用す<wbr>る。この場合において、同法第七条第一号中「禁錮以上の刑に処せられた者」とあるの<wbr>は「禁錮以上の刑に処せられ、又は沖縄の復帰に伴う特別措置に関する法律（昭和四十<wbr>六年法律第百二十九号）第二十五条第一項の規定によりなお効力を有することとされる<wbr>沖縄法令の規定により禁錮以上の刑に処せられた者」と、同法第二十五条第四号中「公<wbr>務員として」とあるのは「公務員として、又は沖縄の復帰に伴う特別措置に関する法律<wbr>の施行前の沖縄において琉球政府、市町村若しくは地方教育区の職員として」と、同条<wbr>第五号中「仲裁手続により」とあるのは「仲裁手続により、又は沖縄の復帰に伴う特別<wbr>措置に関する法律の施行前の沖縄における仲裁手続により」と、同法第三十条第二項及<wbr>び第四項中「営利業務従事弁護士名簿」とあるのは「営利業務従事沖縄弁護士名簿」と<wbr>、同法第四十三条の十五及び第四十九条の二中「この法律に基づいて」とあるのは「こ<wbr>の政令に基づいて」と読み替えるものとする。</span></code></td>
+<td class="ln">35</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十条　弁護士法第一条、第二条、第七条、第二十条第三項、第二十三条から第三十条<wbr>まで、第四十三条の十五及び第四十九条の二の規定並びに</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第八章第一節（第五十七<wbr>条第一項第三号を除く。）及び第二節の弁護士に関する規定は、沖縄弁護士について準<wbr>用する。この場合において、同法第七条第一号中「禁錮以上の刑に処せられた者」とあ<wbr>るのは「禁錮以上の刑に処せられ、又は沖縄の復帰に伴う特別措置に関する法律（昭和<wbr>四十六年法律第百二十九号）第二十五条第一項の規定によりなお効力を有することとさ<wbr>れる沖縄法令の規定により禁錮以上の刑に処せられた者」と、同法第二十五条第四号中<wbr>「公務員として」とあるのは「公務員として、又は沖縄の復帰に伴う特別措置に関する<wbr>法律の施行前の沖縄において琉球政府、市町村若しくは地方教育区の職員として」と、<wbr>同条第五号中「仲裁手続により」とあるのは「仲裁手続により、又は沖縄の復帰に伴う<wbr>特別措置に関する法律の施行前の沖縄における仲裁手続により」と、同法第三十条第二<wbr>項及び第四項中「営利業務従事弁護士名簿」とあるのは「営利業務従事沖縄弁護士名簿<wbr>」と、同法第四十三条の十五及び第四十九条の二中「この法律に基づいて」とあるのは<wbr>「この政令に基づいて」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、琉球諸島及び大東諸島に関する日本国とアメリカ合衆国との間の協定<wbr>の効力発生の日（昭和四十七年五月十五日）から施行する。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、琉球諸島及び大東諸島に関する日本国とアメリカ合衆国との間の協定<wbr>の効力発生の日（昭和四十七年五月十五日）から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士名簿への登載前における法律事務の取扱いに関する暫定措置）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士名簿への登載前における法律事務の取扱いに関する暫定措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">２　沖縄弁護士となる資格を有する者は、沖縄弁護士名簿に登載される前においても、<wbr>復帰の日から起算して二十日間に限り、沖縄県の区域内及び次項において準用する第八<wbr>条の許可を受けた場合にあつては沖縄県の区域外において、弁護士法第三条に規定する<wbr>事務を行なうことができる。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">２　沖縄弁護士となる資格を有する者は、沖縄弁護士名簿に登載される前においても、<wbr>復帰の日から起算して二十日間に限り、沖縄県の区域内及び次項において準用する第八<wbr>条の許可を受けた場合にあつては沖縄県の区域外において、弁護士法第三条に規定する<wbr>事務を行なうことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">３　第八条及び第十条（弁護士法第八章に係る部分を除く。）の規定は、前項の規定に<wbr>より同法第三条に規定する事務を行なう者について準用する。この場合において、第十<wbr>条において準用する同法第二十三条の二第一項、第二十四条及び第三十条第三項中「所<wbr>属弁護士会」とあるのは、「那覇地方裁判所の管轄区域内にある弁護士会」と読み替え<wbr>るものとする。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">３　第八条及び第十条（弁護士法第八章に係る部分を除く。）の規定は、前項の規定に<wbr>より同法第三条に規定する事務を行なう者について準用する。この場合において、第十<wbr>条において準用する同法第二十三条の二第一項、第二十四条及び第三十条第三項中「所<wbr>属弁護士会」とあるのは、「那覇地方裁判所の管轄区域内にある弁護士会」と読み替え<wbr>るものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年九月一九日政令第三〇三号）　抄</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年九月一九日政令第三〇三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、行政手続法の施行の日（平成六年十月一日）から施行する。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、行政手続法の施行の日（平成六年十月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年二月四日政令第一五号）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年二月四日政令第一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年四月一日から施行する。ただし、次条の規定は、公布<wbr>の日から施行する。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年四月一日から施行する。ただし、次条の規定は、公布<wbr>の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士の営利業務の届出に関する経過措置）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（沖縄弁護士の営利業務の届出に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第二条　この政令の施行の日（以下「施行日」という。）前に第二条の規定による改正<wbr>前の沖縄弁護士に関する政令第十条において準用する司法制度改革のための裁判所法等<wbr>の一部を改正する法律第七条の規定による改正前の弁護士法第三十条第三項の許可を受<wbr>けて営利を目的とする業務を営み、若しくはこれを営む者の使用人となり、又は営利を<wbr>目的とする法人の業務執行社員、取締役、執行役若しくは使用人となっている沖縄弁護<wbr>士は、施行日において引き続きその業務を営み、又はその地位にあろうとするときは、<wbr>施行日前に、第二条の規定による改正後の沖縄弁護士に関する政令（以下「新政令」と<wbr>いう。）第十条において準用する司法制度改革のための裁判所法等の一部を改正する法<wbr>律第七条の規定による改正後の弁護士法（以下「新弁護士法」という。）第三十条第一<wbr>項各号に掲げる区分に応じ、同項各号に規定する事項を、所属弁護士会に届け出ること<wbr>ができる。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第二条　この政令の施行の日（以下「施行日」という。）前に第二条の規定による改正<wbr>前の沖縄弁護士に関する政令第十条において準用する司法制度改革のための裁判所法等<wbr>の一部を改正する法律第七条の規定による改正前の弁護士法第三十条第三項の許可を受<wbr>けて営利を目的とする業務を営み、若しくはこれを営む者の使用人となり、又は営利を<wbr>目的とする法人の業務執行社員、取締役、執行役若しくは使用人となっている沖縄弁護<wbr>士は、施行日において引き続きその業務を営み、又はその地位にあろうとするときは、<wbr>施行日前に、第二条の規定による改正後の沖縄弁護士に関する政令（以下「新政令」と<wbr>いう。）第十条において準用する司法制度改革のための裁判所法等の一部を改正する法<wbr>律第七条の規定による改正後の弁護士法（以下「新弁護士法」という。）第三十条第一<wbr>項各号に掲げる区分に応じ、同項各号に規定する事項を、所属弁護士会に届け出ること<wbr>ができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出をした者は、その届出に係る事項に変更を生じたときは、遅<wbr>滞なく、その旨を所属弁護士会に届け出なければならない。施行日前に届出に係る業務<wbr>を廃止し、又は届出に係る地位を失ったときも、同様とする。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出をした者は、その届出に係る事項に変更を生じたときは、遅<wbr>滞なく、その旨を所属弁護士会に届け出なければならない。施行日前に届出に係る業務<wbr>を廃止し、又は届出に係る地位を失ったときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定による届出のあった事項については、施行日に新政令第十条において<wbr>準用する新弁護士法第三十条第一項の規定による届出があったものとみなす。ただし、<wbr>前項後段の規定による届出があったものについては、この限りでない。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定による届出のあった事項については、施行日に新政令第十条において<wbr>準用する新弁護士法第三十条第一項の規定による届出があったものとみなす。ただし、<wbr>前項後段の規定による届出があったものについては、この限りでない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月三一日政令第九二号）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月三一日政令第九二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年九月六日政令第八五号）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年九月六日政令第八五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、成年被後見人等の権利の制限に係る措置の適正化等を図るための関係<wbr>法律の整備に関する法律（以下「整備法」という。）の施行の日から施行する。ただし<wbr>、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、成年被後見人等の権利の制限に係る措置の適正化等を図るための関係<wbr>法律の整備に関する法律（以下「整備法」という。）の施行の日から施行する。ただし<wbr>、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　第二条中沖縄弁護士に関する政令第十条の改正規定（「第四十三条の二」を「第四<wbr>十三条の十五」に改める部分に限る。）　公布の日</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　第二条中沖縄弁護士に関する政令第十条の改正規定（「第四十三条の二」を「第四<wbr>十三条の十五」に改める部分に限る。）　公布の日</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">二　第二条の規定（前号に掲げる改正規定を除く。）及び次項の規定　整備法附則第一<wbr>条第二号に掲げる規定の施行の日</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">二　第二条の規定（前号に掲げる改正規定を除く。）及び次項の規定　整備法附則第一<wbr>条第二号に掲げる規定の施行の日</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（日本弁護士連合会の沖縄弁護士名簿への登載の取消しに関する経過措置）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（日本弁護士連合会の沖縄弁護士名簿への登載の取消しに関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　前項第二号に掲げる規定の施行の日前に、同号に掲げる規定による改正前の沖縄弁<wbr>護士に関する政令（以下「旧令」という。）第四条第一項（第一号中旧令第十条におい<wbr>て準用する弁護士法（昭和二十四年法律第二百五号）第七条第四号に係る部分に限る。<wbr>）の規定により日本弁護士連合会がした沖縄弁護士名簿への登載の取消しの効力につい<wbr>ては、なお従前の例による。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　前項第二号に掲げる規定の施行の日前に、同号に掲げる規定による改正前の沖縄弁<wbr>護士に関する政令（以下「旧令」という。）第四条第一項（第一号中旧令第十条におい<wbr>て準用する弁護士法（昭和二十四年法律第二百五号）第七条第四号に係る部分に限る。<wbr>）の規定により日本弁護士連合会がした沖縄弁護士名簿への登載の取消しの効力につい<wbr>ては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

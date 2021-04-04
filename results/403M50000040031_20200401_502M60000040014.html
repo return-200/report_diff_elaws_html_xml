@@ -1,0 +1,1635 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成三年大蔵省令第三十一号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成三年大蔵省令第三十一号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">地価税法施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">地価税法施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">地価税法（平成三年法律第六十九号）及び地価税法施行令（平成三年政令第百七十四号<wbr>）の規定に基づき、地価税法施行規則を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">地価税法（平成三年法律第六十九号）及び地価税法施行令（平成三年政令第百七十四号<wbr>）の規定に基づき、地価税法施行規則を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">5</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　この省令において「土地等」、「借地権等」、「課税時期」、「公益法人等」<wbr>、「人格のない社団等」、「建物」又は「修正申告書」とは、それぞれ地価税</span><span style="color: #000000; background-color: #efcb05; ">（平成三<wbr>年法律第六十九号。以下「法」という。）第二条に規定する土地等、借地権等、課税時<wbr>期、公益法人等、人格のない社団等、建物又は修正申告書をいう。</span></code></td>
+<td class="ln">5</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　この省令において「土地等」、「借地権等」、「課税時期」、「公益法人等」<wbr>、「人格のない社団等」、「建物」又は「修正申告書」とは、それぞれ地価税</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">（平成<wbr>三年法律第六十九号。以下「法」という。）第二条に規定する土地等、借地権等、課税<wbr>時期、公益法人等、人格のない社団等、建物又は修正申告書をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　この省令において「国内」とは、法の施行地をいう。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　この省令において「国内」とは、法の施行地をいう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（主務官庁の確認を証する書類の届出）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（主務官庁の確認を証する書類の届出）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第六条第二項第二号イの規定の適用を受けようとする公益法人等は、当該適<wbr>用を受けようとする最初の年の課税時期に係る法第二十五条第一項の規定による申告書<wbr>の提出期限までに、当該公益法人等に係る主務官庁（その権限に属する事務を行うこと<wbr>とされた都道府県の知事その他の執行機関を含む。以下この条において同じ。）の同号<wbr>イの確認をしたことを証する書類（次に掲げる事項の記載があるものに限る。）を納税<wbr>地を所轄する税務署長に届け出なければならない。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第六条第二項第二号イの規定の適用を受けようとする公益法人等は、当該適<wbr>用を受けようとする最初の年の課税時期に係る法第二十五条第一項の規定による申告書<wbr>の提出期限までに、当該公益法人等に係る主務官庁（その権限に属する事務を行うこと<wbr>とされた都道府県の知事その他の執行機関を含む。以下この条において同じ。）の同号<wbr>イの確認をしたことを証する書類（次に掲げる事項の記載があるものに限る。）を納税<wbr>地を所轄する税務署長に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">一　公益法人等の名称及び主たる事務所の所在地</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">一　公益法人等の名称及び主たる事務所の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">二　当該適用を受けようとする土地等（以下この条において「供用予定土地等」という<wbr>。）の所在地及び面積</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">二　当該適用を受けようとする土地等（以下この条において「供用予定土地等」という<wbr>。）の所在地及び面積</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">三　供用予定土地等を法第六条第二項第一号に規定する業務目的の用（以下この条にお<wbr>いて「業務目的の用」という。）に供する予定の年月日、当該業務目的の用に供するた<wbr>めに必要な土地等の面積その他当該供用予定土地等を当該業務目的の用に供する計画の<wbr>概要</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">三　供用予定土地等を法第六条第二項第一号に規定する業務目的の用（以下この条にお<wbr>いて「業務目的の用」という。）に供する予定の年月日、当該業務目的の用に供するた<wbr>めに必要な土地等の面積その他当該供用予定土地等を当該業務目的の用に供する計画の<wbr>概要</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">四　当該主務官庁の当該確認をした年月日</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">四　当該主務官庁の当該確認をした年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">五　その他参考となるべき事項</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">五　その他参考となるべき事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　法第六条第二項第二号ロの規定の適用を受けようとする公益法人等は、同号ロに規<wbr>定する事由が生じた日の属する年の翌年の課税時期に係る法第二十五条第一項の規定に<wbr>よる申告書の提出期限までに、当該公益法人等に係る主務官庁の同号ロの確認をしたこ<wbr>とを証する書類（次に掲げる事項の記載があるものに限る。）を納税地を所轄する税務<wbr>署長に届け出なければならない。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　法第六条第二項第二号ロの規定の適用を受けようとする公益法人等は、同号ロに規<wbr>定する事由が生じた日の属する年の翌年の課税時期に係る法第二十五条第一項の規定に<wbr>よる申告書の提出期限までに、当該公益法人等に係る主務官庁の同号ロの確認をしたこ<wbr>とを証する書類（次に掲げる事項の記載があるものに限る。）を納税地を所轄する税務<wbr>署長に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　公益法人等の名称及び主たる事務所の所在地</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　公益法人等の名称及び主たる事務所の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　供用予定土地等の所在地及び面積</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　供用予定土地等の所在地及び面積</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">三　供用予定土地等を業務目的の用に供することができないこととなった事情の詳細及<wbr>び当該事由が生じた年月日</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">三　供用予定土地等を業務目的の用に供することができないこととなった事情の詳細及<wbr>び当該事由が生じた年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">四　当該主務官庁の当該確認をした年月日</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">四　当該主務官庁の当該確認をした年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">五　その他参考となるべき事項</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">五　その他参考となるべき事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（非課税とされる土地等の範囲等）</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（非課税とされる土地等の範囲等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第三条　法別表第一第一号に規定する財務省令で定めるものは、山林、原野、池沼その<wbr>他の土地（宅地及び雑種地（水辺地、岩石地、砂丘その他その状況がこれらに類するも<wbr>の以外のものに限る。）を除く。）とする。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第三条　法別表第一第一号に規定する財務省令で定めるものは、山林、原野、池沼その<wbr>他の土地（宅地及び雑種地（水辺地、岩石地、砂丘その他その状況がこれらに類するも<wbr>の以外のものに限る。）を除く。）とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">２　法別表第一第一号イに規定する財務省令で定める特別地域は、自然公園法（昭和三<wbr>十二年法律第百六十一号）第七十三条第一項（保護及び利用）の規定に基づく条例の規<wbr>定により指定された特別地域で同法第二十条第一項（特別地域）の規定により指定され<wbr>た特別地域と同等の規制を受けるものとして環境大臣が財務大臣と協議して指定したも<wbr>のとする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">２　法別表第一第一号イに規定する財務省令で定める特別地域は、自然公園法（昭和三<wbr>十二年法律第百六十一号）第七十三条第一項（保護及び利用）の規定に基づく条例の規<wbr>定により指定された特別地域で同法第二十条第一項（特別地域）の規定により指定され<wbr>た特別地域と同等の規制を受けるものとして環境大臣が財務大臣と協議して指定したも<wbr>のとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">３　法別表第一第一号ロに規定する財務省令で定める特別地区は、自然環境保全法（昭<wbr>和四十七年法律第八十五号）第四十六条第一項（保全）の規定に基づく条例の規定によ<wbr>り指定された特別地区で同法第二十五条第一項（特別地区）の規定により指定された特<wbr>別地区と同等の規制を受けるものとして環境大臣が財務大臣と協議して指定したものと<wbr>する。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">３　法別表第一第一号ロに規定する財務省令で定める特別地区は、自然環境保全法（昭<wbr>和四十七年法律第八十五号）第四十六条第一項（保全）の規定に基づく条例の規定によ<wbr>り指定された特別地区で同法第二十五条第一項（特別地区）の規定により指定された特<wbr>別地区と同等の規制を受けるものとして環境大臣が財務大臣と協議して指定したものと<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">４　地価税法施行令（平成三年政令第百七十四号。以下「令」という。）第六条第三項<wbr>第一号ロに規定する財務省令で定める施設は、次に掲げる施設とする。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">４　地価税法施行令（平成三年政令第百七十四号。以下「令」という。）第六条第三項<wbr>第一号ロに規定する財務省令で定める施設は、次に掲げる施設とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">一　劇場、映画館その他の興行場</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">一　劇場、映画館その他の興行場</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">二　野球場、ゴルフ場、スケート場、舞踏場その他の競技場及び遊技場</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">二　野球場、ゴルフ場、スケート場、舞踏場その他の競技場及び遊技場</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">三　遊園地（メリーゴーランド、遊戯用電車その他の遊戯設備を設け、主として当該設<wbr>備により客に遊戯をさせる施設をいう。）</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">三　遊園地（メリーゴーランド、遊戯用電車その他の遊戯設備を設け、主として当該設<wbr>備により客に遊戯をさせる施設をいう。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">四　風俗営業等の規制及び業務の適正化等に関する法律（昭和二十三年法律第百二十二<wbr>号）第二条第一項（用語の意義）に規定する風俗営業、同条第五項に規定する性風俗関<wbr>連特殊営業又は同条第十三項に規定する接客業務受託営業の用に供している建物等（建<wbr>物その他の工作物をいう。次項において同じ。）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">四　風俗営業等の規制及び業務の適正化等に関する法律（昭和二十三年法律第百二十二<wbr>号）第二条第一項（用語の意義）に規定する風俗営業、同条第五項に規定する性風俗関<wbr>連特殊営業又は同条第十三項に規定する接客業務受託営業の用に供している建物等（建<wbr>物その他の工作物をいう。次項において同じ。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">５　令第六条第三項第二号に規定する財務省令で定める建物等は、専ら工場、店舗その<wbr>他の業務の用に供する施設として使用されている建物等（当該建物等の位置、規模、形<wbr>態、意匠及び色彩が文化財保護法（昭和二十五年法律第二百十四号）第百四十四条第一<wbr>項（重要伝統的建造物群保存地区の選定）の規定により選定された重要伝統的建造物群<wbr>保存地区の歴史的風致の維持に著しく資するものとして文部科学大臣が財務大臣と協議<wbr>して指定した建物等を除く。）とする。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">５　令第六条第三項第二号に規定する財務省令で定める建物等は、専ら工場、店舗その<wbr>他の業務の用に供する施設として使用されている建物等（当該建物等の位置、規模、形<wbr>態、意匠及び色彩が文化財保護法（昭和二十五年法律第二百十四号）第百四十四条第一<wbr>項（重要伝統的建造物群保存地区の選定）の規定により選定された重要伝統的建造物群<wbr>保存地区の歴史的風致の維持に著しく資するものとして文部科学大臣が財務大臣と協議<wbr>して指定した建物等を除く。）とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">６　法別表第一第九号イに規定する財務省令で定める要件は、学校教育法（昭和二十二<wbr>年法律第二十六号）第百三十四条第一項（各種学校）に規定する各種学校の生徒で同時<wbr>に授業を受けるものの数のうちに次に掲げる全ての要件を満たす課程を履修する生徒の<wbr>数の占める割合が常時百分の五十以上であることとする。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">６　法別表第一第九号イに規定する財務省令で定める要件は、学校教育法（昭和二十二<wbr>年法律第二十六号）第百三十四条第一項（各種学校）に規定する各種学校の生徒で同時<wbr>に授業を受けるものの数のうちに次に掲げる全ての要件を満たす課程を履修する生徒の<wbr>数の占める割合が常時百分の五十以上であることとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">一　修業期間が一年以上であること。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">一　修業期間が一年以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">二　一年の授業時間数（普通科、専攻科その他これらに類する区別された課程がある場<wbr>合には、それぞれの課程の授業時間数）が六百八十時間以上であること。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">二　一年の授業時間数（普通科、専攻科その他これらに類する区別された課程がある場<wbr>合には、それぞれの課程の授業時間数）が六百八十時間以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">三　授業が年二回を超えない一定の時期に開始され、かつ、その終期が明確に定められ<wbr>ていること。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">三　授業が年二回を超えない一定の時期に開始され、かつ、その終期が明確に定められ<wbr>ていること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">四　生徒について学年又は学期ごとにその成績の評価が行われ、その結果が成績考査に<wbr>関する表簿その他の書類に登載されていること。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">四　生徒について学年又は学期ごとにその成績の評価が行われ、その結果が成績考査に<wbr>関する表簿その他の書類に登載されていること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">五　生徒について所定の技術を修得したかどうかの成績の評価が行われ、その評価に基<wbr>づいて卒業証書又は修了証書が授与されていること。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">五　生徒について所定の技術を修得したかどうかの成績の評価が行われ、その評価に基<wbr>づいて卒業証書又は修了証書が授与されていること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">六　施設（教員の数を含む。）が同時に授業を受ける生徒の数に比し十分であると認め<wbr>られること。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">六　施設（教員の数を含む。）が同時に授業を受ける生徒の数に比し十分であると認め<wbr>られること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">７　法別表第一第九号ロに規定する財務省令で定める養成所は、次に掲げるものとする<wbr>。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">７　法別表第一第九号ロに規定する財務省令で定める養成所は、次に掲げるものとする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　あん摩マツサージ指圧師、はり師、きゆう師等に関する法律（昭和二十二年法律第<wbr>二百十七号）第二条第一項（免許資格）に規定する養成施設</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　あん摩マツサージ指圧師、はり師、きゆう師等に関する法律（昭和二十二年法律第<wbr>二百十七号）第二条第一項（免許資格）に規定する養成施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　栄養士法（昭和二十二年法律第二百四十五号）第二条第一項（栄養士の免許）に規<wbr>定する養成施設</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　栄養士法（昭和二十二年法律第二百四十五号）第二条第一項（栄養士の免許）に規<wbr>定する養成施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">三　保健師助産師看護師法（昭和二十三年法律第二百三号）第二十条第二号（助産師国<wbr>家試験の受験資格）に規定する助産師養成所、同法第二十一条第三号（看護師国家試験<wbr>の受験資格）に規定する看護師養成所又は同法第二十二条第二号（准看護師試験の受験<wbr>資格）に規定する准看護師養成所</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">三　保健師助産師看護師法（昭和二十三年法律第二百三号）第二十条第二号（助産師国<wbr>家試験の受験資格）に規定する助産師養成所、同法第二十一条第三号（看護師国家試験<wbr>の受験資格）に規定する看護師養成所又は同法第二十二条第二号（准看護師試験の受験<wbr>資格）に規定する准看護師養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">四　歯科衛生士法（昭和二十三年法律第二百四号）第十二条第二号（受験資格）に規定<wbr>する歯科衛生士養成所</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">四　歯科衛生士法（昭和二十三年法律第二百四号）第十二条第二号（受験資格）に規定<wbr>する歯科衛生士養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">五　診療放射線技師法（昭和二十六年法律第二百二十六号）第二十条第一号（受験資格<wbr>）に規定する診療放射線技師養成所</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">五　診療放射線技師法（昭和二十六年法律第二百二十六号）第二十条第一号（受験資格<wbr>）に規定する診療放射線技師養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">六　歯科技工士法（昭和三十年法律第百六十八号）第十四条第二号（受験資格）に規定<wbr>する歯科技工士養成所</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">六　歯科技工士法（昭和三十年法律第百六十八号）第十四条第二号（受験資格）に規定<wbr>する歯科技工士養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">七　臨床検査技師等に関する法律（昭和三十三年法律第七十六号）第十五条第一号（受<wbr>験資格）に規定する臨床検査技師養成所</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">七　臨床検査技師等に関する法律（昭和三十三年法律第七十六号）第十五条第一号（受<wbr>験資格）に規定する臨床検査技師養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">八　理学療法士及び作業療法士法（昭和四十年法律第百三十七号）第十一条第二号（理<wbr>学療法士国家試験の受験資格）に規定する理学療法士養成施設又は同法第十二条第二号<wbr>（作業療法士国家試験の受験資格）に規定する作業療法士養成施設</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">八　理学療法士及び作業療法士法（昭和四十年法律第百三十七号）第十一条第二号（理<wbr>学療法士国家試験の受験資格）に規定する理学療法士養成施設又は同法第十二条第二号<wbr>（作業療法士国家試験の受験資格）に規定する作業療法士養成施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">九　柔道整復師法（昭和四十五年法律第十九号）第十二条（受験資格）に規定する柔道<wbr>整復師養成施設</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">九　柔道整復師法（昭和四十五年法律第十九号）第十二条（受験資格）に規定する柔道<wbr>整復師養成施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">十　視能訓練士法（昭和四十六年法律第六十四号）第十四条第一号（受験資格）に規定<wbr>する視能訓練士養成所</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">十　視能訓練士法（昭和四十六年法律第六十四号）第十四条第一号（受験資格）に規定<wbr>する視能訓練士養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">十一　臨床工学技士法（昭和六十二年法律第六十号）第十四条第一号（受験資格）に規<wbr>定する臨床工学技士養成所</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">十一　臨床工学技士法（昭和六十二年法律第六十号）第十四条第一号（受験資格）に規<wbr>定する臨床工学技士養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">十二　義肢装具士法（昭和六十二年法律第六十一号）第十四条第一号（受験資格）に規<wbr>定する義肢装具士養成所</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">十二　義肢装具士法（昭和六十二年法律第六十一号）第十四条第一号（受験資格）に規<wbr>定する義肢装具士養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">十三　救急救命士法（平成三年法律第三十六号）第三十四条第一号（受験資格）に規定<wbr>する救急救命士養成所</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">十三　救急救命士法（平成三年法律第三十六号）第三十四条第一号（受験資格）に規定<wbr>する救急救命士養成所</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">十四　社会福祉士及び介護福祉士法（昭和六十二年法律第三十号）第七条第二号（受験<wbr>資格）に規定する養成施設又は同法第三十九条第一号から第三号まで（介護福祉士の資<wbr>格）の規定に規定する養成施設</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">十四　社会福祉士及び介護福祉士法（昭和六十二年法律第三十号）第七条第二号（受験<wbr>資格）に規定する養成施設又は同法第三十九条第一号から第三号まで（介護福祉士の資<wbr>格）の規定に規定する養成施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">十五　児童福祉法（昭和二十二年法律第百六十四号）第十八条の六第一号（指定保育士<wbr>養成施設）に規定する施設</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">十五　児童福祉法（昭和二十二年法律第百六十四号）第十八条の六第一号（指定保育士<wbr>養成施設）に規定する施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">８　法別表第一第九号ロに規定する財務省令で定める要件は、職業能力開発促進法（昭<wbr>和四十四年法律第六十四号）第二十四条第三項（都道府県知事による職業訓練の認定）<wbr>に規定する認定職業訓練のための施設の生徒で同時に授業を受けるものの数のうちに次<wbr>に掲げる全ての要件を満たす課程を履修する生徒の数の占める割合が常時百分の五十以<wbr>上であることとする。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">８　法別表第一第九号ロに規定する財務省令で定める要件は、職業能力開発促進法（昭<wbr>和四十四年法律第六十四号）第二十四条第三項（都道府県知事による職業訓練の認定）<wbr>に規定する認定職業訓練のための施設の生徒で同時に授業を受けるものの数のうちに次<wbr>に掲げる全ての要件を満たす課程を履修する生徒の数の占める割合が常時百分の五十以<wbr>上であることとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">一　第六項各号に掲げる要件</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">一　第六項各号に掲げる要件</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">二　当該施設を設置する者（その者と令第二十二条に規定する特殊の関係のある者を含<wbr>む。）が雇用する者以外の者が当該施設の生徒として当該施設の課程を履修することを<wbr>制限するものでないこと。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">二　当該施設を設置する者（その者と令第二十二条に規定する特殊の関係のある者を含<wbr>む。）が雇用する者以外の者が当該施設の生徒として当該施設の課程を履修することを<wbr>制限するものでないこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">９　法別表第一第十号に規定する財務省令で定める土地等は、次の各号に掲げる事業の<wbr>区分に応じ当該各号に定める土地等とする。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">９　法別表第一第十号に規定する財務省令で定める土地等は、次の各号に掲げる事業の<wbr>区分に応じ当該各号に定める土地等とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第一第十号に規定する鉄道事業　次に掲げる土地等</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第一第十号に規定する鉄道事業　次に掲げる土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">イ　鉄道事業法（昭和六十一年法律第九十二号）第七条第一項（事業基本計画等の変更<wbr>）に規定する鉄道事業者の鉄道事業法施行規則（昭和六十二年運輸省令第六号）第九条<wbr>（鉄道施設）に規定する鉄道施設（以下この号において「鉄道施設」という。）、列車<wbr>の運転のために直接必要な鉄道事業会計規則（昭和六十二年運輸省令第七号）別表第一<wbr>（勘定科目の表）に定める現業従事員詰所若しくは鉄道施設若しくは車両の保守及び修<wbr>繕のために直接必要な同表に定める倉庫、修理工場、現業従事員詰所その他の施設又は<wbr>当該鉄道事業に直接必要な発電所の用に供されている土地等</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">イ　鉄道事業法（昭和六十一年法律第九十二号）第七条第一項（事業基本計画等の変更<wbr>）に規定する鉄道事業者の鉄道事業法施行規則（昭和六十二年運輸省令第六号）第九条<wbr>（鉄道施設）に規定する鉄道施設（以下この号において「鉄道施設」という。）、列車<wbr>の運転のために直接必要な鉄道事業会計規則（昭和六十二年運輸省令第七号）別表第一<wbr>（勘定科目の表）に定める現業従事員詰所若しくは鉄道施設若しくは車両の保守及び修<wbr>繕のために直接必要な同表に定める倉庫、修理工場、現業従事員詰所その他の施設又は<wbr>当該鉄道事業に直接必要な発電所の用に供されている土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">ロ　鉄道事業法第三条第一項（許可）の規定による鉄道事業の許可に係る同法第四条第<wbr>一項第六号（許可申請）に規定する事業基本計画（同法第七条第一項の認可に係るもの<wbr>を含む。）及び同法第四条第一項の申請書に添付した鉄道事業法施行規則第二条第二項<wbr>第六号（事業の許可申請）の線路予測図に記載された鉄道施設の用に供するための土地<wbr>等</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">ロ　鉄道事業法第三条第一項（許可）の規定による鉄道事業の許可に係る同法第四条第<wbr>一項第六号（許可申請）に規定する事業基本計画（同法第七条第一項の認可に係るもの<wbr>を含む。）及び同法第四条第一項の申請書に添付した鉄道事業法施行規則第二条第二項<wbr>第六号（事業の許可申請）の線路予測図に記載された鉄道施設の用に供するための土地<wbr>等</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第一第十号に規定する運輸事業　軌道法（大正十年法律第七十六号）第四条<wbr>（道路占用の許可等）に規定する軌道経営者の同法第一条第一項（この法律の対象）に<wbr>規定する軌道その他の当該運輸事業に直接必要な前号イに規定する施設に準ずる施設の<wbr>用に供されている土地等</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第一第十号に規定する運輸事業　軌道法（大正十年法律第七十六号）第四条<wbr>（道路占用の許可等）に規定する軌道経営者の同法第一条第一項（この法律の対象）に<wbr>規定する軌道その他の当該運輸事業に直接必要な前号イに規定する施設に準ずる施設の<wbr>用に供されている土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">１０　法別表第一第十一号イに規定する財務省令で定める施設又は設備は、次の各号に<wbr>掲げる事業の区分に応じ当該各号に定めるものとする。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">１０　法別表第一第十一号イに規定する財務省令で定める施設又は設備は、次の各号に<wbr>掲げる事業の区分に応じ当該各号に定めるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第一第十一号イに規定する旅客自動車運送事業　次に掲げる施設又は設備</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第一第十一号イに規定する旅客自動車運送事業　次に掲げる施設又は設備</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">イ　道路運送法（昭和二十六年法律第百八十三号）第五条第一項第三号（許可申請）又<wbr>は第四十三条第二項第二号（特定旅客自動車運送事業）に掲げる事業計画に記載した営<wbr>業所、自動車車庫、専用自動車道及び停留所</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">イ　道路運送法（昭和二十六年法律第百八十三号）第五条第一項第三号（許可申請）又<wbr>は第四十三条第二項第二号（特定旅客自動車運送事業）に掲げる事業計画に記載した営<wbr>業所、自動車車庫、専用自動車道及び停留所</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路運送法第五条第二項（同法第四十三条第四項において準用する場合を含む。）<wbr>の規定により同法第五条第二項の申請書に添付した同項の書類に記載した事業用自動車<wbr>の乗務員の休憩、仮眠又は睡眠のための施設</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路運送法第五条第二項（同法第四十三条第四項において準用する場合を含む。）<wbr>の規定により同法第五条第二項の申請書に添付した同項の書類に記載した事業用自動車<wbr>の乗務員の休憩、仮眠又は睡眠のための施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">ハ　専ら当該旅客自動車運送事業に直接必要な事業用自動車のために使用する洗車場、<wbr>整備場、給油所及び待避所</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">ハ　専ら当該旅客自動車運送事業に直接必要な事業用自動車のために使用する洗車場、<wbr>整備場、給油所及び待避所</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第一第十一号イに規定する一般貨物自動車運送事業　次に掲げる施設又は設<wbr>備</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第一第十一号イに規定する一般貨物自動車運送事業　次に掲げる施設又は設<wbr>備</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">イ　貨物自動車運送事業法（平成元年法律第八十三号）第四条第一項第二号（許可の申<wbr>請）に掲げる事業計画（同法附則第二条第四項又は附則第三条第二項（経過措置）の規<wbr>定により当該事業計画とみなされるものを含む。）に記載した営業所、自動車車庫、乗<wbr>務員の休憩又は睡眠のための施設及び同法第二条第六項（定義）に規定する特別積合せ<wbr>貨物運送のための荷扱所</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">イ　貨物自動車運送事業法（平成元年法律第八十三号）第四条第一項第二号（許可の申<wbr>請）に掲げる事業計画（同法附則第二条第四項又は附則第三条第二項（経過措置）の規<wbr>定により当該事業計画とみなされるものを含む。）に記載した営業所、自動車車庫、乗<wbr>務員の休憩又は睡眠のための施設及び同法第二条第六項（定義）に規定する特別積合せ<wbr>貨物運送のための荷扱所</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">ロ　専ら貨物自動車運送事業法第四条第一項第二号に規定する事業用自動車（当該一般<wbr>貨物自動車運送事業を営む者が次号に掲げる貨物軽自動車運送事業又は第四号に掲げる<wbr>第二種貨物利用運送事業を営む者であるときは、これらの規定に規定する事業用自動車<wbr>を含む。）のために使用する洗車場、整備場及び給油所（次号及び第四号において「洗<wbr>車場等」という。）</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">ロ　専ら貨物自動車運送事業法第四条第一項第二号に規定する事業用自動車（当該一般<wbr>貨物自動車運送事業を営む者が次号に掲げる貨物軽自動車運送事業又は第四号に掲げる<wbr>第二種貨物利用運送事業を営む者であるときは、これらの規定に規定する事業用自動車<wbr>を含む。）のために使用する洗車場、整備場及び給油所（次号及び第四号において「洗<wbr>車場等」という。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">三　法別表第一第十一号イに規定する貨物軽自動車運送事業　次に掲げる施設又は設備<wbr></span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">三　法別表第一第十一号イに規定する貨物軽自動車運送事業　次に掲げる施設又は設備<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">イ　貨物自動車運送事業法施行規則（平成二年運輸省令第二十一号）第三十三条第一項<wbr>（事業の届出）に規定する貨物軽自動車運送事業経営届出書（同規則附則第八条第一項<wbr>（旧法に基づく処分、手続等の効力）の規定により当該貨物軽自動車運送事業経営届出<wbr>書とみなされるものを含む。）に記載した営業所、自動車車庫及び乗務員の休憩又は睡<wbr>眠のための施設</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">イ　貨物自動車運送事業法施行規則（平成二年運輸省令第二十一号）第三十三条第一項<wbr>（事業の届出）に規定する貨物軽自動車運送事業経営届出書（同規則附則第八条第一項<wbr>（旧法に基づく処分、手続等の効力）の規定により当該貨物軽自動車運送事業経営届出<wbr>書とみなされるものを含む。）に記載した営業所、自動車車庫及び乗務員の休憩又は睡<wbr>眠のための施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">ロ　専ら貨物自動車運送事業法施行規則第三十三条第一項第三号ニに規定する事業用自<wbr>動車のために使用する洗車場等</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">ロ　専ら貨物自動車運送事業法施行規則第三十三条第一項第三号ニに規定する事業用自<wbr>動車のために使用する洗車場等</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">四　法別表第一第十一号イに規定する第二種貨物利用運送事業　次に掲げる施設又は設<wbr>備</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">四　法別表第一第十一号イに規定する第二種貨物利用運送事業　次に掲げる施設又は設<wbr>備</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">イ　貨物利用運送事業法（平成元年法律第八十二号）第二十一条第一項第二号（許可の<wbr>申請）に掲げる事業計画又は同項第四号に掲げる集配事業計画（鉄道事業法等の一部を<wbr>改正する法律（平成十四年法律第七十七号）附則第四条第二項（経過措置）の規定によ<wbr>り当該事業計画又は当該集配事業計画とみなされるもの及び同法附則第四条第三項及び<wbr>附則第六条第三項の届出書を含む。）に記載した当該第二種貨物利用運送事業を営む者<wbr>の営業所、保管施設、自動車車庫及び乗務員の休憩又は睡眠のための施設</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">イ　貨物利用運送事業法（平成元年法律第八十二号）第二十一条第一項第二号（許可の<wbr>申請）に掲げる事業計画又は同項第四号に掲げる集配事業計画（鉄道事業法等の一部を<wbr>改正する法律（平成十四年法律第七十七号）附則第四条第二項（経過措置）の規定によ<wbr>り当該事業計画又は当該集配事業計画とみなされるもの及び同法附則第四条第三項及び<wbr>附則第六条第三項の届出書を含む。）に記載した当該第二種貨物利用運送事業を営む者<wbr>の営業所、保管施設、自動車車庫及び乗務員の休憩又は睡眠のための施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">ロ　専ら貨物利用運送事業法施行規則（平成二年運輸省令第二十号）第十八条第二項第<wbr>四号イ（事業計画及び集配事業計画）に規定する事業用自動車のために使用する洗車場<wbr>等</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">ロ　専ら貨物利用運送事業法施行規則（平成二年運輸省令第二十号）第十八条第二項第<wbr>四号イ（事業計画及び集配事業計画）に規定する事業用自動車のために使用する洗車場<wbr>等</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">１１　法別表第一第十二号に規定する財務省令で定める空港は、航空法（昭和二十七年<wbr>法律第二百三十一号）第四十条（空港の告示等）の規定により告示された同法第二条第<wbr>四項（定義）に規定する空港のうち建築物の屋上に設置されたものとする。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">１１　法別表第一第十二号に規定する財務省令で定める空港は、航空法（昭和二十七年<wbr>法律第二百三十一号）第四十条（空港の告示等）の規定により告示された同法第二条第<wbr>四項（定義）に規定する空港のうち建築物の屋上に設置されたものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">１２　法別表第一第十四号に規定する財務省令で定める施設又は設備は、電気通信事業<wbr>法（昭和五十九年法律第八十六号）第九条第一号（電気通信事業の登録）に規定する電<wbr>気通信回線設備並びに当該電気通信回線設備の保守及び修繕のために直接必要な倉庫、<wbr>自動車車庫、専ら当該保守及び修繕に従事する職員の事務所その他の施設（次項及び第<wbr>十四項において「保守修繕施設」という。）とする。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">１２　法別表第一第十四号に規定する財務省令で定める施設又は設備は、電気通信事業<wbr>法（昭和五十九年法律第八十六号）第九条第一号（電気通信事業の登録）に規定する電<wbr>気通信回線設備並びに当該電気通信回線設備の保守及び修繕のために直接必要な倉庫、<wbr>自動車車庫、専ら当該保守及び修繕に従事する職員の事務所その他の施設（次項及び第<wbr>十四項において「保守修繕施設」という。）とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">１３　法別表第一第十五号に規定する財務省令で定める施設は、同号に規定する水道施<wbr>設及び工業用水道施設並びにこれらの施設の保守修繕施設とする。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">１３　法別表第一第十五号に規定する財務省令で定める施設は、同号に規定する水道施<wbr>設及び工業用水道施設並びにこれらの施設の保守修繕施設とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">１４　法別表第一第十六号に規定する財務省令で定める土地等は、次の各号に掲げる事<wbr>業の区分に応じ当該各号に定める土地等とする。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">１４　法別表第一第十六号に規定する財務省令で定める土地等は、次の各号に掲げる事<wbr>業の区分に応じ当該各号に定める土地等とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第一第十六号に規定する一般送配電事業、送電事業及び発電事業　次に掲げ<wbr>る土地等</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第一第十六号に規定する一般送配電事業、送電事業及び発電事業　次に掲げ<wbr>る土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">イ　電気事業法（昭和三十九年法律第百七十号）第二条第一項第十八号（定義）に規定<wbr>する電気工作物（以下この号において「電気工作物」という。）の用に供されている土<wbr>地等及び電気工作物の保守修繕施設の用に供されている土地等</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">イ　電気事業法（昭和三十九年法律第百七十号）第二条第一項第十八号（定義）に規定<wbr>する電気工作物（以下この号において「電気工作物」という。）の用に供されている土<wbr>地等及び電気工作物の保守修繕施設の用に供されている土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">ロ　電気事業法第二十九条第一項（供給計画）の規定により経済産業大臣に届け出た同<wbr>項の供給計画（同条第三項の規定による届出をしたときは、当該届出に係る変更後の当<wbr>該供給計画）に記載された電気工作物の用に供するための土地等</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">ロ　電気事業法第二十九条第一項（供給計画）の規定により経済産業大臣に届け出た同<wbr>項の供給計画（同条第三項の規定による届出をしたときは、当該届出に係る変更後の当<wbr>該供給計画）に記載された電気工作物の用に供するための土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第一第十六号に規定するガス小売事業、一般ガス導管事業及びガス製造事業<wbr>　次に掲げる土地等</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第一第十六号に規定するガス小売事業、一般ガス導管事業及びガス製造事業<wbr>　次に掲げる土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">イ　ガス事業法（昭和二十九年法律第五十一号）第二条第十三項（定義）に規定するガ<wbr>ス工作物（以下この号において「ガス工作物」という。）の用に供されている土地等及<wbr>びガス工作物の保守修繕施設の用に供されている土地等</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">イ　ガス事業法（昭和二十九年法律第五十一号）第二条第十三項（定義）に規定するガ<wbr>ス工作物（以下この号において「ガス工作物」という。）の用に供されている土地等及<wbr>びガス工作物の保守修繕施設の用に供されている土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">ロ　ガス事業法第十九条第一項（供給計画）若しくは第五十六条第一項（供給計画）の<wbr>規定により経済産業大臣に届け出たこれらの規定の供給計画（同法第十九条第二項又は<wbr>第五十六条第二項の規定による届出をしたときは、これらの届出に係る変更後のこれら<wbr>の供給計画）又は同法第九十三条第一項（製造計画）の規定により経済産業大臣に届け<wbr>出た同項の製造計画（同条第二項の規定による届出をしたときは、当該届出に係る変更<wbr>後の当該製造計画）に記載されたガス工作物の用に供するための土地等</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">ロ　ガス事業法第十九条第一項（供給計画）若しくは第五十六条第一項（供給計画）の<wbr>規定により経済産業大臣に届け出たこれらの規定の供給計画（同法第十九条第二項又は<wbr>第五十六条第二項の規定による届出をしたときは、これらの届出に係る変更後のこれら<wbr>の供給計画）又は同法第九十三条第一項（製造計画）の規定により経済産業大臣に届け<wbr>出た同項の製造計画（同条第二項の規定による届出をしたときは、当該届出に係る変更<wbr>後の当該製造計画）に記載されたガス工作物の用に供するための土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">三　法別表第一第十六号に規定する熱供給事業　熱供給事業法（昭和四十七年法律第八<wbr>十八号）第二条第四項（定義）に規定する熱供給施設の用に供されている土地等及び当<wbr>該熱供給施設の保守修繕施設の用に供されている土地等</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">三　法別表第一第十六号に規定する熱供給事業　熱供給事業法（昭和四十七年法律第八<wbr>十八号）第二条第四項（定義）に規定する熱供給施設の用に供されている土地等及び当<wbr>該熱供給施設の保守修繕施設の用に供されている土地等</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">１５　法別表第一第二十一号に規定する財務省令で定める施設は、次に掲げるものとす<wbr>る。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">１５　法別表第一第二十一号に規定する財務省令で定める施設は、次に掲げるものとす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">一　主要食糧の需給及び価格の安定に関する法律（平成六年法律第百十三号）第二十九<wbr>条（米穀の政府買入れ及び政府売渡し）、第三十条第一項（米穀等の輸入を目的とする<wbr>買入れ及び当該米穀の売渡し）、第三十一条第一項（輸入に係る米穀等の特別な方式に<wbr>よる買入れ及び売渡し）、第四十二条第一項（麦等の輸入を目的とする買入れ及び当該<wbr>麦の売渡し）、第四十三条第一項（輸入に係る麦等の特別な方式による買入れ及び売渡<wbr>し）又は第四十六条第一項（米穀以外の主要食糧の買入れ及び売渡し）の規定に基づき<wbr>政府が買い入れた米穀又は麦を保管する倉庫その他の施設で当該米穀又は麦を安全かつ<wbr>適切に保管することができるものとして地方農政局長（北海道にあっては北海道農政事<wbr>務所長とし、沖縄県にあっては沖縄総合事務局長とする。）が指定したもの</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">一　主要食糧の需給及び価格の安定に関する法律（平成六年法律第百十三号）第二十九<wbr>条（米穀の政府買入れ及び政府売渡し）、第三十条第一項（米穀等の輸入を目的とする<wbr>買入れ及び当該米穀の売渡し）、第三十一条第一項（輸入に係る米穀等の特別な方式に<wbr>よる買入れ及び売渡し）、第四十二条第一項（麦等の輸入を目的とする買入れ及び当該<wbr>麦の売渡し）、第四十三条第一項（輸入に係る麦等の特別な方式による買入れ及び売渡<wbr>し）又は第四十六条第一項（米穀以外の主要食糧の買入れ及び売渡し）の規定に基づき<wbr>政府が買い入れた米穀又は麦を保管する倉庫その他の施設で当該米穀又は麦を安全かつ<wbr>適切に保管することができるものとして地方農政局長（北海道にあっては北海道農政事<wbr>務所長とし、沖縄県にあっては沖縄総合事務局長とする。）が指定したもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">二　石油公団が石油公団法（昭和四十二年法律第九十九号）第十九条第一項第八号（業<wbr>務の範囲）の規定に基づき備蓄する石油を、石油公団との契約に基づき貯蔵する危険物<wbr>の規制に関する政令（昭和三十四年政令第三百六号）第二条第二号（貯蔵所の区分）に<wbr>規定する屋外タンク貯蔵所（その附属設備を含む。）</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">二　石油公団が石油公団法（昭和四十二年法律第九十九号）第十九条第一項第八号（業<wbr>務の範囲）の規定に基づき備蓄する石油を、石油公団との契約に基づき貯蔵する危険物<wbr>の規制に関する政令（昭和三十四年政令第三百六号）第二条第二号（貯蔵所の区分）に<wbr>規定する屋外タンク貯蔵所（その附属設備を含む。） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（国際機関の範囲）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（国際機関の範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第四条　令第十三条に規定する財務省令で定める国際機関は、条約その他の国際約束に<wbr>基づき設立された機関のうち日本国が構成員となっているものその他国を構成員とする<wbr>ものとする。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第四条　令第十三条に規定する財務省令で定める国際機関は、条約その他の国際約束に<wbr>基づき設立された機関のうち日本国が構成員となっているものその他国を構成員とする<wbr>ものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　令第十三条第四号に規定する財務省令で定める施設は、専ら外国の政治、経済、文<wbr>化その他の事情の紹介等の業務の用に供する施設その他財務大臣が指定する施設とする<wbr>。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　令第十三条第四号に規定する財務省令で定める施設は、専ら外国の政治、経済、文<wbr>化その他の事情の紹介等の業務の用に供する施設その他財務大臣が指定する施設とする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">３　財務大臣は、前項の指定をしたときは、これを告示する。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">３　財務大臣は、前項の指定をしたときは、これを告示する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（集団投資信託等の受託者の地価税の申告書に添付する明細書の記載事項）</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（集団投資信託等の受託者の地価税の申告書に添付する明細書の記載事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　令第十三条の二第七項に規定する財務省令で定める事項は、次に掲げる事<wbr>項とする。</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　令第十三条の二第七項に規定する財務省令で定める事項は、次に掲げる事<wbr>項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">一　その年の課税時期において有する土地等の地目、面積、所在地及び法第十六条に規<wbr>定する課税価格に算入すべき価額の明細</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">一　その年の課税時期において有する土地等の地目、面積、所在地及び法第十六条に規<wbr>定する課税価格に算入すべき価額の明細</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">二　各信託に係る令第十三条の二第五項に規定する信託財産責任負担債務の額及びその<wbr>計算の明細</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">二　各信託に係る令第十三条の二第五項に規定する信託財産責任負担債務の額及びその<wbr>計算の明細 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（課税価格の計算の特例の対象とされる土地等の範囲等）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（課税価格の計算の特例の対象とされる土地等の範囲等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第五条　法別表第二第一号に規定する財務省令で定める面積は、同号に規定する製造業<wbr>等に係る工場又は事業場の敷地の面積に、次の各号に掲げる場合の区分に応じ当該各号<wbr>に定める割合を乗じた面積に相当する面積とする。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第五条　法別表第二第一号に規定する財務省令で定める面積は、同号に規定する製造業<wbr>等に係る工場又は事業場の敷地の面積に、次の各号に掲げる場合の区分に応じ当該各号<wbr>に定める割合を乗じた面積に相当する面積とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">一　次号に掲げる場合以外の場合　百分の二十五</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">一　次号に掲げる場合以外の場合　百分の二十五</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">二　工場立地法（昭和三十四年法律第二十四号）第四条の二第一項（工場立地に関する<wbr>準則等の公表）の規定により法別表第二第一号に規定する市町村準則が定められている<wbr>場合　当該市町村準則に定められた同号に規定する環境施設の用に供されている土地等<wbr>の面積の同号に規定する製造業等に係る工場又は事業場の敷地面積に対する割合</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">二　工場立地法（昭和三十四年法律第二十四号）第四条の二第一項（工場立地に関する<wbr>準則等の公表）の規定により法別表第二第一号に規定する市町村準則が定められている<wbr>場合　当該市町村準則に定められた同号に規定する環境施設の用に供されている土地等<wbr>の面積の同号に規定する製造業等に係る工場又は事業場の敷地面積に対する割合</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">２　令第十七条第二項第一号に規定する財務省令で定める区域は、次の各号に掲げる施<wbr>設又は設備の区分に応じ当該施設又は設備の外壁その他の工作物から当該各号に定める<wbr>距離だけ離れた点の軌跡で囲まれた区域とする。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">２　令第十七条第二項第一号に規定する財務省令で定める区域は、次の各号に掲げる施<wbr>設又は設備の区分に応じ当該施設又は設備の外壁その他の工作物から当該各号に定める<wbr>距離だけ離れた点の軌跡で囲まれた区域とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">一　消防法（昭和二十三年法律第百八十六号）第十条第四項（危険物の貯蔵及び取扱い<wbr>の制限等）に規定する製造所　当該製造所の次に掲げる区分に応じ当該製造所の位置に<wbr>係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">一　消防法（昭和二十三年法律第百八十六号）第十条第四項（危険物の貯蔵及び取扱い<wbr>の制限等）に規定する製造所　当該製造所の次に掲げる区分に応じ当該製造所の位置に<wbr>係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">イ　ロ及びハに掲げる製造所以外の当該製造所　危険物の規制に関する政令第九条第一<wbr>項第一号ハ（製造所の基準）に定める距離又は同号ただし書に規定する距離</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">イ　ロ及びハに掲げる製造所以外の当該製造所　危険物の規制に関する政令第九条第一<wbr>項第一号ハ（製造所の基準）に定める距離又は同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則（昭和三十四年総理府令第五十五号）第十三条の六第一<wbr>項（高引火点危険物の製造所の特例）の製造所　同条第三項第一号ハに定める距離又は<wbr>同号ただし書に規定する距離</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則（昭和三十四年総理府令第五十五号）第十三条の六第一<wbr>項（高引火点危険物の製造所の特例）の製造所　同条第三項第一号ハに定める距離又は<wbr>同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第十三条の十（ヒドロキシルアミン等の製造所の特例）<wbr>の製造所　同条第一号に定める距離</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第十三条の十（ヒドロキシルアミン等の製造所の特例）<wbr>の製造所　同条第一号に定める距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">106</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二　危険物の規制に関する政令第二条第一号（貯蔵所の区分）に規定する屋内貯蔵所（<wbr>同令第十条第三項（屋内貯蔵所の基準）の屋内貯蔵所並びに</span><span style="color: #000000; background-color: #efcb05; ">第十六条の二の三第一項（<wbr>特定屋内貯蔵所の特例）及び第十六条の二の六第一項（高引火点危険物の特定屋内貯蔵<wbr>所の特例）の屋内貯蔵所を除く。）　当該屋内貯蔵所の次に掲げる区分に応じ当該屋内<wbr>貯蔵所の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">106</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二　危険物の規制に関する政令第二条第一号（貯蔵所の区分）に規定する屋内貯蔵所（<wbr>同令第十条第三項（屋内貯蔵所の基準）の屋内貯蔵所並びに</span><span class="sf17b18">危険物の規制に関する規則<wbr></span><span style="color: #000000; background-color: #efcb05; ">第十六条の二の三第一項（特定屋内貯蔵所の特例）及び第十六条の二の六第一項（高引<wbr>火点危険物の特定屋内貯蔵所の特例）の屋内貯蔵所を除く。）　当該屋内貯蔵所の次に<wbr>掲げる区分に応じ当該屋内貯蔵所の位置に係る基準として定められた次に定める距離の<wbr>うち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">イ　ロからニまでに掲げる屋内貯蔵所以外の当該屋内貯蔵所　危険物の規制に関する政<wbr>令第十条第一項第一号又は第二項の規定によりその例によるものとされる同令第九条第<wbr>一項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">イ　ロからニまでに掲げる屋内貯蔵所以外の当該屋内貯蔵所　危険物の規制に関する政<wbr>令第十条第一項第一号又は第二項の規定によりその例によるものとされる同令第九条第<wbr>一項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則第十六条の二の四第一項（高引火点危険物の平家建の屋<wbr>内貯蔵所の特例）の屋内貯蔵所　同条第二項第一号の規定によりその例によるものとさ<wbr>れる同規則第十三条の六第三項第一号ハに定める距離又は同号ただし書に規定する距離<wbr></span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則第十六条の二の四第一項（高引火点危険物の平家建の屋<wbr>内貯蔵所の特例）の屋内貯蔵所　同条第二項第一号の規定によりその例によるものとさ<wbr>れる同規則第十三条の六第三項第一号ハに定める距離又は同号ただし書に規定する距離<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第十六条の二の五第一項（高引火点危険物の平家建以外<wbr>の屋内貯蔵所の特例）の屋内貯蔵所　同条第二項第一号の規定により適用される同規則<wbr>第十六条の二の四第二項第一号の規定によりその例によるものとされる同規則第十三条<wbr>の六第三項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第十六条の二の五第一項（高引火点危険物の平家建以外<wbr>の屋内貯蔵所の特例）の屋内貯蔵所　同条第二項第一号の規定により適用される同規則<wbr>第十六条の二の四第二項第一号の規定によりその例によるものとされる同規則第十三条<wbr>の六第三項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">ニ　危険物の規制に関する規則第十六条の四第一項（指定過酸化物の屋内貯蔵所の特例<wbr>）の屋内貯蔵所　同条第二項の表の第六欄に定める距離又は同項ただし書に規定する距<wbr>離</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">ニ　危険物の規制に関する規則第十六条の四第一項（指定過酸化物の屋内貯蔵所の特例<wbr>）の屋内貯蔵所　同条第二項の表の第六欄に定める距離又は同項ただし書に規定する距<wbr>離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">111</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三　</span><span style="color: #000000; background-color: #efcb05; ">第二条第二号に規定する屋外タンク貯蔵所（危険物の規制に関する規則第二十二条<wbr>の二の六第一号及び第三号（特例を定めることができる屋外タンク貯蔵所）に掲げる屋<wbr>外タンク貯蔵所を除く。）　当該屋外タンク貯蔵所の次に掲げる区分に応じ当該屋外タ<wbr>ンク貯蔵所の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">111</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三　</span><span class="sf17b18">危険物の規制に関する政令</span><span style="color: #000000; background-color: #efcb05; ">第二条第二号に規定する屋外タンク貯蔵所（危険物の規<wbr>制に関する規則第二十二条の二の六第一号及び第三号（特例を定めることができる屋外<wbr>タンク貯蔵所）に掲げる屋外タンク貯蔵所を除く。）　当該屋外タンク貯蔵所の次に掲<wbr>げる区分に応じ当該屋外タンク貯蔵所の位置に係る基準として定められた次に定める距<wbr>離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">イ　ロ及びハに掲げる屋外タンク貯蔵所以外の当該屋外タンク貯蔵所　危険物の規制に<wbr>関する政令第十一条第一項第一号（屋外タンク貯蔵所の基準）の規定によりその例によ<wbr>るものとされる同令第九条第一項第一号ハに掲げる距離又は同号ただし書に規定する距<wbr>離</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">イ　ロ及びハに掲げる屋外タンク貯蔵所以外の当該屋外タンク貯蔵所　危険物の規制に<wbr>関する政令第十一条第一項第一号（屋外タンク貯蔵所の基準）の規定によりその例によ<wbr>るものとされる同令第九条第一項第一号ハに掲げる距離又は同号ただし書に規定する距<wbr>離</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する政令第十一条第一項第一号の二の屋外タンク貯蔵所　同号の<wbr>表の下欄に定める距離又は同号ただし書に規定する距離</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する政令第十一条第一項第一号の二の屋外タンク貯蔵所　同号の<wbr>表の下欄に定める距離又は同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第二十二条の二第一項（高引火点危険物の屋外タンク貯<wbr>蔵所の特例）の屋外タンク貯蔵所　同条第三項第一号の規定によりその例によるものと<wbr>される同規則第十三条の六第三項第一号ハに定める距離又は同号ただし書に規定する距<wbr>離</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第二十二条の二第一項（高引火点危険物の屋外タンク貯<wbr>蔵所の特例）の屋外タンク貯蔵所　同条第三項第一号の規定によりその例によるものと<wbr>される同規則第十三条の六第三項第一号ハに定める距離又は同号ただし書に規定する距<wbr>離</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">四　危険物の規制に関する政令第二条第七号に規定する屋外貯蔵所　当該屋外貯蔵所の<wbr>次に掲げる区分に応じ当該屋外貯蔵所の位置に係る基準として定められた次に定める距<wbr>離のうち最も短い距離</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">四　危険物の規制に関する政令第二条第七号に規定する屋外貯蔵所　当該屋外貯蔵所の<wbr>次に掲げる区分に応じ当該屋外貯蔵所の位置に係る基準として定められた次に定める距<wbr>離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる屋外貯蔵所以外の当該屋外貯蔵所　危険物の規制に関する政令第十六条<wbr>第一項第一号（屋外貯蔵所の基準）の規定によりその例によるものとされる同令第九条<wbr>第一項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる屋外貯蔵所以外の当該屋外貯蔵所　危険物の規制に関する政令第十六条<wbr>第一項第一号（屋外貯蔵所の基準）の規定によりその例によるものとされる同令第九条<wbr>第一項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則第二十四条の十二第一項（高引火点危険物の屋外貯蔵所<wbr>の特例）の屋外貯蔵所　同条第二項第一号の規定によりその例によるものとされる同規<wbr>則第十三条の六第三項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則第二十四条の十二第一項（高引火点危険物の屋外貯蔵所<wbr>の特例）の屋外貯蔵所　同条第二項第一号の規定によりその例によるものとされる同規<wbr>則第十三条の六第三項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">五　危険物の規制に関する政令第十七条第一項（給油取扱所の基準）に規定する給油取<wbr>扱所（不特定多数の者に軽油のみ、メタノール等（メタノール又はこれを含有するもの<wbr>をいう。以下この号において同じ。）のみ又は軽油及びメタノール等のみを給油するも<wbr>のに限る。）に係る同項第十二号の固定給油設備　当該固定給油設備の位置に係る基準<wbr>として定められた同号に規定する距離のうち最も短い距離</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">五　危険物の規制に関する政令第十七条第一項（給油取扱所の基準）に規定する給油取<wbr>扱所（不特定多数の者に軽油のみ、メタノール等（メタノール又はこれを含有するもの<wbr>をいう。以下この号において同じ。）のみ又は軽油及びメタノール等のみを給油するも<wbr>のに限る。）に係る同項第十二号の固定給油設備　当該固定給油設備の位置に係る基準<wbr>として定められた同号に規定する距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">六　危険物の規制に関する規則第二十五条の五第二項第二号（給油取扱所の附随設備）<wbr>に規定する自動車等の点検・整備を行う設備（電気自動車に係る充電設備に限る。）　<wbr>当該設備の位置に係る基準として定められた同号に規定する距離のうち最も短い距離</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">六　危険物の規制に関する規則第二十五条の五第二項第二号（給油取扱所の附随設備）<wbr>に規定する自動車等の点検・整備を行う設備（電気自動車に係る充電設備に限る。）　<wbr>当該設備の位置に係る基準として定められた同号に規定する距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">七　危険物の規制に関する政令第三条第四号（取扱所の区分）に規定する一般取扱所（<wbr>同令第十九条第二項各号（一般取扱所の基準）に掲げる一般取扱所を除く。）　当該一<wbr>般取扱所の次に掲げる区分に応じ当該一般取扱所の位置に係る基準として定められた次<wbr>に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">七　危険物の規制に関する政令第三条第四号（取扱所の区分）に規定する一般取扱所（<wbr>同令第十九条第二項各号（一般取扱所の基準）に掲げる一般取扱所を除く。）　当該一<wbr>般取扱所の次に掲げる区分に応じ当該一般取扱所の位置に係る基準として定められた次<wbr>に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">イ　ロ及びハに掲げる一般取扱所以外の当該一般取扱所　危険物の規制に関する政令第<wbr>十九条第一項の規定により準用する同令第九条第一項第一号ハに定める距離又は同号た<wbr>だし書に規定する距離</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">イ　ロ及びハに掲げる一般取扱所以外の当該一般取扱所　危険物の規制に関する政令第<wbr>十九条第一項の規定により準用する同令第九条第一項第一号ハに定める距離又は同号た<wbr>だし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則第二十八条の六十一第一項（高引火点危険物の一般取扱<wbr>所の特例）の一般取扱所　同条第三項の規定により適用される同規則第十三条の六第三<wbr>項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">ロ　危険物の規制に関する規則第二十八条の六十一第一項（高引火点危険物の一般取扱<wbr>所の特例）の一般取扱所　同条第三項の規定により適用される同規則第十三条の六第三<wbr>項第一号ハに定める距離又は同号ただし書に規定する距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第二十八条の六十六（ヒドロキシルアミン等の一般取扱<wbr>所の特例）の一般取扱所　同条の規定により準用する同規則第十三条の十第一号に定め<wbr>る距離</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">ハ　危険物の規制に関する規則第二十八条の六十六（ヒドロキシルアミン等の一般取扱<wbr>所の特例）の一般取扱所　同条の規定により準用する同規則第十三条の十第一号に定め<wbr>る距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">八　鉱山保安法施行規則（平成十六年経済産業省令第九十六号）別表第二第八号の上欄<wbr>に掲げる石油貯蔵タンク　当該石油貯蔵タンクの位置に係る基準として定められた鉱業<wbr>上使用する工作物等の技術基準を定める省令（平成十六年経済産業省令第九十七号。以<wbr>下第十二号までにおいて「技術基準省令」という。）第二十三条第三号の規定により経<wbr>済産業大臣が定める距離のうち最も短い距離</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">八　鉱山保安法施行規則（平成十六年経済産業省令第九十六号）別表第二第八号の上欄<wbr>に掲げる石油貯蔵タンク　当該石油貯蔵タンクの位置に係る基準として定められた鉱業<wbr>上使用する工作物等の技術基準を定める省令（平成十六年経済産業省令第九十七号。以<wbr>下第十二号までにおいて「技術基準省令」という。）第二十三条第三号の規定により経<wbr>済産業大臣が定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">九　鉱山保安法施行規則別表第二第九号の上欄に掲げる高圧ガスを製造する施設に係る<wbr>高圧ガス設備を設置する室及び充填容器を収納する室　当該高圧ガス設備を設置する室<wbr>又は当該充填容器を収納する室の位置に係る基準として定められた技術基準省令第二十<wbr>五条第四項第一号の規定により経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">九　鉱山保安法施行規則別表第二第九号の上欄に掲げる高圧ガスを製造する施設に係る<wbr>高圧ガス設備を設置する室及び充填容器を収納する室　当該高圧ガス設備を設置する室<wbr>又は当該充填容器を収納する室の位置に係る基準として定められた技術基準省令第二十<wbr>五条第四項第一号の規定により経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">十　鉱山保安法施行規則別表第二第十号の上欄に掲げる高圧ガス貯蔵所　当該高圧ガス<wbr>貯蔵所の位置に係る基準として定められた技術基準省令第二十六条第一号の規定により<wbr>経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">十　鉱山保安法施行規則別表第二第十号の上欄に掲げる高圧ガス貯蔵所　当該高圧ガス<wbr>貯蔵所の位置に係る基準として定められた技術基準省令第二十六条第一号の規定により<wbr>経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">十一　鉱山保安法施行規則別表第二第十一号の上欄に掲げる高圧ガス処理プラント　当<wbr>該高圧ガス処理プラントの位置に係る基準として定められた技術基準省令第二十七条第<wbr>五号の規定により経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">十一　鉱山保安法施行規則別表第二第十一号の上欄に掲げる高圧ガス処理プラント　当<wbr>該高圧ガス処理プラントの位置に係る基準として定められた技術基準省令第二十七条第<wbr>五号の規定により経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">十二　鉱山保安法施行規則別表第二第十二号の上欄に掲げるスタビライザープラント及<wbr>び同表第十三号の上欄に掲げるガソリンプラント　当該スタビライザープラント又は当<wbr>該ガソリンプラントの位置に係る基準として定められた技術基準省令第二十八条第四号<wbr>の規定により経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">十二　鉱山保安法施行規則別表第二第十二号の上欄に掲げるスタビライザープラント及<wbr>び同表第十三号の上欄に掲げるガソリンプラント　当該スタビライザープラント又は当<wbr>該ガソリンプラントの位置に係る基準として定められた技術基準省令第二十八条第四号<wbr>の規定により経済産業大臣が定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">十三　火薬類取締法施行規則（昭和二十五年通商産業省令第八十八号）第四条第一項第<wbr>四号（製造施設の基準）に規定する危険工室等　当該危険工室等の位置に係る基準とし<wbr>て定められた同規則第一条（用語の定義）に規定する第一種保安物件（次号において「<wbr>第一種保安物件」という。）に対する同項第四号に規定する保安距離（同号の経済産業<wbr>大臣が定める保安距離を除く。）又は同規則第四条第二項の規定により経済産業大臣が<wbr>定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">十三　火薬類取締法施行規則（昭和二十五年通商産業省令第八十八号）第四条第一項第<wbr>四号（製造施設の基準）に規定する危険工室等　当該危険工室等の位置に係る基準とし<wbr>て定められた同規則第一条（用語の定義）に規定する第一種保安物件（次号において「<wbr>第一種保安物件」という。）に対する同項第四号に規定する保安距離（同号の経済産業<wbr>大臣が定める保安距離を除く。）又は同規則第四条第二項の規定により経済産業大臣が<wbr>定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">十四　火薬類取締法（昭和二十五年法律第百四十九号）第十一条第一項（貯蔵）の火薬<wbr>庫　当該火薬庫の位置に係る基準として定められた第一種保安物件に対する火薬類取締<wbr>法施行規則第二十三条第一項若しくは第二項（保安距離）に規定する保安距離、同条第<wbr>四項に規定する保安距離又は同規則第三十二条（危険のおそれのない場合の特則）の規<wbr>定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">十四　火薬類取締法（昭和二十五年法律第百四十九号）第十一条第一項（貯蔵）の火薬<wbr>庫　当該火薬庫の位置に係る基準として定められた第一種保安物件に対する火薬類取締<wbr>法施行規則第二十三条第一項若しくは第二項（保安距離）に規定する保安距離、同条第<wbr>四項に規定する保安距離又は同規則第三十二条（危険のおそれのない場合の特則）の規<wbr>定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">十五　一般高圧ガス保安規則（昭和四十一年通商産業省令第五十三号）第六条第一項（<wbr>定置式製造設備に係る技術上の基準）の製造施設に係る同項第二号の貯蔵設備及び処理<wbr>設備　同号に規定する第一種設備距離又は同規則第九十九条（危険のおそれのない場合<wbr>等の特則）の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">十五　一般高圧ガス保安規則（昭和四十一年通商産業省令第五十三号）第六条第一項（<wbr>定置式製造設備に係る技術上の基準）の製造施設に係る同項第二号の貯蔵設備及び処理<wbr>設備　同号に規定する第一種設備距離又は同規則第九十九条（危険のおそれのない場合<wbr>等の特則）の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">132</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">十六　</span><span style="color: #000000; background-color: #efcb05; ">（圧縮天然ガススタンドに係る技術上の基準）の製造施設に係る同項の圧縮天然<wbr>ガススタンド　当該圧縮天然ガススタンドの次に掲げる区分に応じ当該圧縮天然ガスス<wbr>タンドの位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">132</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">十六　</span><span class="sf17b18">一般高圧ガス保安規則第七条第一項</span><span style="color: #000000; background-color: #efcb05; ">（圧縮天然ガススタンドに係る技術上の基準<wbr>）の製造施設に係る同項の圧縮天然ガススタンド　当該圧縮天然ガススタンドの次に掲<wbr>げる区分に応じ当該圧縮天然ガススタンドの位置に係る基準として定められた次に定め<wbr>る距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる圧縮天然ガススタンド以外の当該圧縮天然ガススタンド　一般高圧ガス<wbr>保安規則第七条第一項第一号の規定に基づき適用される同規則第六条第一項第二号に規<wbr>定する第一種設備距離又は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる圧縮天然ガススタンド以外の当該圧縮天然ガススタンド　一般高圧ガス<wbr>保安規則第七条第一項第一号の規定に基づき適用される同規則第六条第一項第二号に規<wbr>定する第一種設備距離又は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">ロ　一般高圧ガス保安規則第七条第一項ただし書の製造施設の外部から圧縮天然ガスの<wbr>供給を受ける圧縮天然ガススタンドで同条第二項各号に掲げる基準に適合しているもの<wbr>　同項第二号に規定する距離、同号ただし書の規定により経済産業大臣が定めた距離又<wbr>は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">ロ　一般高圧ガス保安規則第七条第一項ただし書の製造施設の外部から圧縮天然ガスの<wbr>供給を受ける圧縮天然ガススタンドで同条第二項各号に掲げる基準に適合しているもの<wbr>　同項第二号に規定する距離、同号ただし書の規定により経済産業大臣が定めた距離又<wbr>は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">135</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">十七　</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の製造施設に係る同項第四十二号ロに規定する容器置場　当該容器<wbr>置場の次に掲げる区分に応じ当該容器置場の位置に係る基準として定められた次に定め<wbr>る距離のうち最も短い距離</span></code></td>
+<td class="ln">135</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">十七　</span><span class="sf17b18">一般高圧ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の製造施設に係る同項第四十二号ロに規定す<wbr>る容器置場　当該容器置場の次に掲げる区分に応じ当該容器置場の位置に係る基準とし<wbr>て定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　一般高圧ガス保安規則第六条第一項第四<wbr>十二号ロに規定する第一種置場距離又は同規則第九十九条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　一般高圧ガス保安規則第六条第一項第四<wbr>十二号ロに規定する第一種置場距離又は同規則第九十九条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">ロ　一般高圧ガス保安規則第六条第一項第四十二号ロの表の上欄に掲げる容器置場　同<wbr>表の中欄に掲げる距離又は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">ロ　一般高圧ガス保安規則第六条第一項第四十二号ロの表の上欄に掲げる容器置場　同<wbr>表の中欄に掲げる距離又は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">十八　一般高圧ガス保安規則第十二条第一項第一号（第二種製造者に係る技術上の基準<wbr>）の製造施設に係る同規則第六条第一項第三号に規定する可燃性ガスの製造設備　当該<wbr>製造設備の位置に係る基準として定められた同規則第十二条第一項第一号の規定により<wbr>適用される同規則第六条第一項第三号に規定する距離のうち最も短い距離</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">十八　一般高圧ガス保安規則第十二条第一項第一号（第二種製造者に係る技術上の基準<wbr>）の製造施設に係る同規則第六条第一項第三号に規定する可燃性ガスの製造設備　当該<wbr>製造設備の位置に係る基準として定められた同規則第十二条第一項第一号の規定により<wbr>適用される同規則第六条第一項第三号に規定する距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">十九　一般高圧ガス保安規則第二十二条（貯槽により貯蔵する場合の技術上の基準）の<wbr>貯槽により貯蔵する第一種貯蔵所　当該第一種貯蔵所の位置に係る基準として定められ<wbr>た同条の規定により適用される同規則第六条第一項第二号に規定する第一種設備距離又<wbr>は同規則第九十九条の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">十九　一般高圧ガス保安規則第二十二条（貯槽により貯蔵する場合の技術上の基準）の<wbr>貯槽により貯蔵する第一種貯蔵所　当該第一種貯蔵所の位置に係る基準として定められ<wbr>た同条の規定により適用される同規則第六条第一項第二号に規定する第一種設備距離又<wbr>は同規則第九十九条の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">140</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十　</span><span style="color: #000000; background-color: #efcb05; ">第二十三条（容器により貯蔵する場合の技術上の基準）の容器により貯蔵する第<wbr>一種貯蔵所　当該第一種貯蔵所の次に掲げる区分に応じ当該第一種貯蔵所の位置に係る<wbr>基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">140</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十　</span><span class="sf17b18">一般高圧ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第二十三条（容器により貯蔵する場合の技術上の基準）の<wbr>容器により貯蔵する第一種貯蔵所　当該第一種貯蔵所の次に掲げる区分に応じ当該第一<wbr>種貯蔵所の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">イ　一般高圧ガス保安規則第二十三条第一号の容器が配管により接続された当該第一種<wbr>貯蔵所　同号に規定する第一種設備距離又は同規則第九十九条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">イ　一般高圧ガス保安規則第二十三条第一号の容器が配管により接続された当該第一種<wbr>貯蔵所　同号に規定する第一種設備距離又は同規則第九十九条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">ロ　一般高圧ガス保安規則第二十三条第三号の容器が配管により接続されていない当該<wbr>第一種貯蔵所で同号の規定により適用される同規則第六条第一項第四十二号ロに規定す<wbr>る容器置場であるもの（ハにおいて「第一種貯蔵所である容器置場」という。）のうち<wbr>ハに掲げるもの以外のもの　同規則第二十三条第三号の規定により適用される同規則第<wbr>六条第一項第四十二号ロに規定する第一種置場距離又は同規則第九十九条の規定により<wbr>経済産業大臣が定めた距離</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">ロ　一般高圧ガス保安規則第二十三条第三号の容器が配管により接続されていない当該<wbr>第一種貯蔵所で同号の規定により適用される同規則第六条第一項第四十二号ロに規定す<wbr>る容器置場であるもの（ハにおいて「第一種貯蔵所である容器置場」という。）のうち<wbr>ハに掲げるもの以外のもの　同規則第二十三条第三号の規定により適用される同規則第<wbr>六条第一項第四十二号ロに規定する第一種置場距離又は同規則第九十九条の規定により<wbr>経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">ハ　第一種貯蔵所である容器置場で一般高圧ガス保安規則第六条第一項第四十二号ロの<wbr>表の上欄に掲げるもの　同規則第二十三条第三号の規定により適用される同表の中欄に<wbr>掲げる距離又は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">ハ　第一種貯蔵所である容器置場で一般高圧ガス保安規則第六条第一項第四十二号ロの<wbr>表の上欄に掲げるもの　同規則第二十三条第三号の規定により適用される同表の中欄に<wbr>掲げる距離又は同規則第九十九条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">二十一　一般高圧ガス保安規則第五十五条第一項第二号（特定高圧ガス消費者に係る技<wbr>術上の基準）の消費施設に係る同号に規定する貯蔵設備及び減圧設備　当該貯蔵設備及<wbr>び減圧設備の位置に係る基準として定められた同号に規定する第一種設備距離又は同規<wbr>則第九十九条の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">二十一　一般高圧ガス保安規則第五十五条第一項第二号（特定高圧ガス消費者に係る技<wbr>術上の基準）の消費施設に係る同号に規定する貯蔵設備及び減圧設備　当該貯蔵設備及<wbr>び減圧設備の位置に係る基準として定められた同号に規定する第一種設備距離又は同規<wbr>則第九十九条の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">145</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十二　</span><span style="color: #000000; background-color: #efcb05; ">（昭和四十一年通商産業省令第五十二号）第六条第一項（第一種製造設備に係<wbr>る技術上の基準）の第一種製造設備である製造施設（同規則第十二条第一号（第二種製<wbr>造者に係る技術上の基準）の規定の適用を受ける同号の第一種製造設備である製造施設<wbr>を含む。次号において同じ。）に係る同項の貯蔵設備及び処理設備　当該貯蔵設備及び<wbr>処理設備の次に掲げる区分に応じ当該貯蔵設備及び処理設備の位置に係る基準として定<wbr>められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">145</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十二　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">（昭和四十一年通商産業省令第五十二号）第六条第一項<wbr>（第一種製造設備に係る技術上の基準）の第一種製造設備である製造施設（同規則第十<wbr>二条第一号（第二種製造者に係る技術上の基準）の規定の適用を受ける同号の第一種製<wbr>造設備である製造施設を含む。次号において同じ。）に係る同項の貯蔵設備及び処理設<wbr>備　当該貯蔵設備及び処理設備の次に掲げる区分に応じ当該貯蔵設備及び処理設備の位<wbr>置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる貯蔵設備及び処理設備以外の当該貯蔵設備及び処理設備　液化石油ガス<wbr>保安規則第六条第一項第二号に規定する第一種設備距離又は同規則第九十七条（危険の<wbr>おそれのない場合等の特則）の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる貯蔵設備及び処理設備以外の当該貯蔵設備及び処理設備　液化石油ガス<wbr>保安規則第六条第一項第二号に規定する第一種設備距離又は同規則第九十七条（危険の<wbr>おそれのない場合等の特則）の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第六条第一項第二号の表の上欄に掲げる貯蔵設備及び処理設<wbr>備　同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣が定めた<wbr>距離</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第六条第一項第二号の表の上欄に掲げる貯蔵設備及び処理設<wbr>備　同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣が定めた<wbr>距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">148</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十三　</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の第一種製造設備である製造施設に係る同項第三十五号ロに規定<wbr>する容器置場　当該容器置場の次に掲げる区分に応じ当該容器置場の位置に係る基準と<wbr>して定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">148</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十三　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の第一種製造設備である製造施設に係る同<wbr>項第三十五号ロに規定する容器置場　当該容器置場の次に掲げる区分に応じ当該容器置<wbr>場の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　液化石油ガス保安規則第六条第一項第三<wbr>十五号ロに規定する第一種置場距離又は同規則第九十七条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　液化石油ガス保安規則第六条第一項第三<wbr>十五号ロに規定する第一種置場距離又は同規則第九十七条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第六条第一項第三十五号ロの表の上欄に掲げる容器置場　同<wbr>表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第六条第一項第三十五号ロの表の上欄に掲げる容器置場　同<wbr>表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">151</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十四　</span><span style="color: #000000; background-color: #efcb05; ">第七条第一項（第二種製造設備に係る技術上の基準）の第二種製造設備である<wbr>製造施設（同規則第十二条第二号の規定の適用を受ける同号の第二種製造設備である製<wbr>造施設を含む。次号において同じ。）に係る同規則第六条第一項第二号の貯蔵設備及び<wbr>処理設備　当該貯蔵設備及び処理設備の次に掲げる区分に応じ当該貯蔵設備及び処理設<wbr>備の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">151</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十四　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第七条第一項（第二種製造設備に係る技術上の基準）の<wbr>第二種製造設備である製造施設（同規則第十二条第二号の規定の適用を受ける同号の第<wbr>二種製造設備である製造施設を含む。次号において同じ。）に係る同規則第六条第一項<wbr>第二号の貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の次に掲げる区分に応じ当<wbr>該貯蔵設備及び処理設備の位置に係る基準として定められた次に定める距離のうち最も<wbr>短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる貯蔵設備及び処理設備以外の当該貯蔵設備及び処理設備　液化石油ガス<wbr>保安規則第七条第一項の規定により適用される同規則第六条第一項第二号に規定する第<wbr>一種設備距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる貯蔵設備及び処理設備以外の当該貯蔵設備及び処理設備　液化石油ガス<wbr>保安規則第七条第一項の規定により適用される同規則第六条第一項第二号に規定する第<wbr>一種設備距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備及び処理設備で液化石油ガス保安規則第六条第一項第二号の表の上欄<wbr>に掲げるもの　同規則第七条第一項の規定により適用される同表の中欄に掲げる距離又<wbr>は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備及び処理設備で液化石油ガス保安規則第六条第一項第二号の表の上欄<wbr>に掲げるもの　同規則第七条第一項の規定により適用される同表の中欄に掲げる距離又<wbr>は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">154</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十五　</span><span style="color: #000000; background-color: #efcb05; ">第七条第一項の第二種製造設備である製造施設に係る同規則</span><span style="color: #000000; background-color: #efcb05; ">ロに規定する容器<wbr>置場　当該容器置場の次に掲げる区分に応じ当該容器置場の位置に係る基準として定め<wbr>られた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">154</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十五　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第七条第一項の第二種製造設備である製造施設に係る同<wbr>規則</span><span class="sf17b18">第六条第一項第三十五号</span><span style="color: #000000; background-color: #efcb05; ">ロに規定する容器置場　当該容器置場の次に掲げる区分に<wbr>応じ当該容器置場の位置に係る基準として定められた次に定める距離のうち最も短い距<wbr>離</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　液化石油ガス保安規則第七条第一項の規<wbr>定により適用される同規則第六条第一項第三十五号ロに規定する第一種置場距離又は同<wbr>規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　液化石油ガス保安規則第七条第一項の規<wbr>定により適用される同規則第六条第一項第三十五号ロに規定する第一種置場距離又は同<wbr>規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場で液化石油ガス保安規則第六条第一項第三十五号ロの表の上欄に掲げ<wbr>るもの　同規則第七条第一項の規定により適用される同表の中欄に掲げる距離又は同規<wbr>則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場で液化石油ガス保安規則第六条第一項第三十五号ロの表の上欄に掲げ<wbr>るもの　同規則第七条第一項の規定により適用される同表の中欄に掲げる距離又は同規<wbr>則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">157</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十六　</span><span style="color: #000000; background-color: #efcb05; ">第八条第一項（液化石油ガススタンドに係る技術上の基準）の液化石油ガスス<wbr>タンドである製造施設（同規則第十二条第三号の規定の適用を受ける同号の液化石油ガ<wbr>ススタンドである製造施設を含む。次号において同じ。）に係る同規則第六条第一項第<wbr>二号の貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の次に掲げる区分に応じ当該<wbr>貯蔵設備及び処理設備の位置に係る基準として定められた次に定める距離のうち最も短<wbr>い距離</span></code></td>
+<td class="ln">157</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十六　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第八条第一項（液化石油ガススタンドに係る技術上の基<wbr>準）の液化石油ガススタンドである製造施設（同規則第十二条第三号の規定の適用を受<wbr>ける同号の液化石油ガススタンドである製造施設を含む。次号において同じ。）に係る<wbr>同規則第六条第一項第二号の貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の次に<wbr>掲げる区分に応じ当該貯蔵設備及び処理設備の位置に係る基準として定められた次に定<wbr>める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる貯蔵設備及び処理設備以外の当該貯蔵設備及び処理設備　液化石油ガス<wbr>保安規則第八条第一項第一号の規定により適用される同規則第六条第一項第二号に規定<wbr>する第一種設備距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる貯蔵設備及び処理設備以外の当該貯蔵設備及び処理設備　液化石油ガス<wbr>保安規則第八条第一項第一号の規定により適用される同規則第六条第一項第二号に規定<wbr>する第一種設備距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備及び処理設備で液化石油ガス保安規則第六条第一項第二号の表の上欄<wbr>に掲げるもの　同規則第八条第一項第一号の規定により適用される同表の中欄に掲げる<wbr>距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備及び処理設備で液化石油ガス保安規則第六条第一項第二号の表の上欄<wbr>に掲げるもの　同規則第八条第一項第一号の規定により適用される同表の中欄に掲げる<wbr>距離又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">160</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十七　</span><span style="color: #000000; background-color: #efcb05; ">第八条第一項の液化石油ガススタンドである製造施設に係る同規則</span><span style="color: #000000; background-color: #efcb05; ">ロに規定す<wbr>る容器置場　当該容器置場の次に掲げる区分に応じ当該容器置場の位置に係る基準とし<wbr>て定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">160</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十七　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第八条第一項の液化石油ガススタンドである製造施設に<wbr>係る同規則</span><span class="sf17b18">第六条第一項第三十五号</span><span style="color: #000000; background-color: #efcb05; ">ロに規定する容器置場　当該容器置場の次に掲げる<wbr>区分に応じ当該容器置場の位置に係る基準として定められた次に定める距離のうち最も<wbr>短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　液化石油ガス保安規則第八条第一項第一<wbr>号の規定により適用される同規則第六条第一項第三十五号ロに規定する第一種置場距離<wbr>又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる容器置場以外の当該容器置場　液化石油ガス保安規則第八条第一項第一<wbr>号の規定により適用される同規則第六条第一項第三十五号ロに規定する第一種置場距離<wbr>又は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場で液化石油ガス保安規則第六条第一項第三十五号ロの表の上欄に掲げ<wbr>るもの　同規則第八条第一項第一号の規定により適用される同表の中欄に掲げる距離又<wbr>は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場で液化石油ガス保安規則第六条第一項第三十五号ロの表の上欄に掲げ<wbr>るもの　同規則第八条第一項第一号の規定により適用される同表の中欄に掲げる距離又<wbr>は同規則第九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">163</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十八　</span><span style="color: #000000; background-color: #efcb05; ">第八条第一項の液化石油ガススタンドである製造施設に係る同項第二号のデイ<wbr>スペンサー　当該デイスペンサーの次に掲げる区分に応じ当該デイスペンサーの位置に<wbr>係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">163</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十八　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第八条第一項の液化石油ガススタンドである製造施設に<wbr>係る同項第二号のデイスペンサー　当該デイスペンサーの次に掲げる区分に応じ当該デ<wbr>イスペンサーの位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">イ　当該デイスペンサーで液化石油ガス保安規則第八条第一項第二号の規定によりその<wbr>例によるものとされる同規則第六条第一項第二号の規定に該当するもの（ロにおいて「<wbr>液化石油ガススタンドであるディスペンサー」という。）のうちロに掲げるもの以外の<wbr>もの　同規則第八条第一項第二号の規定によりその例によるものとされる同規則第六条<wbr>第一項第二号に規定する第一種設備距離又は同規則第九十七条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">イ　当該デイスペンサーで液化石油ガス保安規則第八条第一項第二号の規定によりその<wbr>例によるものとされる同規則第六条第一項第二号の規定に該当するもの（ロにおいて「<wbr>液化石油ガススタンドであるディスペンサー」という。）のうちロに掲げるもの以外の<wbr>もの　同規則第八条第一項第二号の規定によりその例によるものとされる同規則第六条<wbr>第一項第二号に規定する第一種設備距離又は同規則第九十七条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガススタンドであるディスペンサーで液化石油ガス保安規則第六条第一項<wbr>第二号の表の上欄に掲げるもの　同規則第八条第一項第二号の規定によりその例による<wbr>ものとされる同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣<wbr>が定めた距離</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガススタンドであるディスペンサーで液化石油ガス保安規則第六条第一項<wbr>第二号の表の上欄に掲げるもの　同規則第八条第一項第二号の規定によりその例による<wbr>ものとされる同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣<wbr>が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">166</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十九　</span><span style="color: #000000; background-color: #efcb05; ">第二十三条第一項（貯槽により貯蔵する場合の技術上の基準）の貯槽により貯<wbr>蔵する第一種貯蔵所又は同規則第二十七条第一号（第二種貯蔵所に係る技術上の基準）<wbr>の規定の適用を受ける高圧ガス保安法（昭和二十六年法律第二百四号）第十八条第二項<wbr>（貯蔵所）の第二種貯蔵所（以下この号及び次号において「第二種貯蔵所」という。）<wbr>　当該第一種貯蔵所又は第二種貯蔵所の位置に係る基準として定められた次に定める距<wbr>離のうち最も短い距離</span></code></td>
+<td class="ln">166</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二十九　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第二十三条第一項（貯槽により貯蔵する場合の技術上の<wbr>基準）の貯槽により貯蔵する第一種貯蔵所又は同規則第二十七条第一号（第二種貯蔵所<wbr>に係る技術上の基準）の規定の適用を受ける高圧ガス保安法（昭和二十六年法律第二百<wbr>四号）第十八条第二項（貯蔵所）の第二種貯蔵所（以下この号及び次号において「第二<wbr>種貯蔵所」という。）　当該第一種貯蔵所又は第二種貯蔵所の位置に係る基準として定<wbr>められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる第一種貯蔵所又は第二種貯蔵所以外の当該第一種貯蔵所又は第二種貯蔵<wbr>所　液化石油ガス保安規則第六条第一項第二号に規定する第一種設備距離又は同規則第<wbr>九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる第一種貯蔵所又は第二種貯蔵所以外の当該第一種貯蔵所又は第二種貯蔵<wbr>所　液化石油ガス保安規則第六条第一項第二号に規定する第一種設備距離又は同規則第<wbr>九十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第六条第一項第二号の表の上欄に掲げる第一種貯蔵所又は第<wbr>二種貯蔵所　同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣<wbr>が定めた距離</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第六条第一項第二号の表の上欄に掲げる第一種貯蔵所又は第<wbr>二種貯蔵所　同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣<wbr>が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">169</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三十　</span><span style="color: #000000; background-color: #efcb05; ">第二十四条第一項（容器により貯蔵する場合の技術上の基準）の容器により貯蔵<wbr>する第一種貯蔵所又は同規則第二十七条第二号の規定の適用を受ける第二種貯蔵所　当<wbr>該第一種貯蔵所又は第二種貯蔵所の位置に係る基準として定められた次に定める距離の<wbr>うち最も短い距離</span></code></td>
+<td class="ln">169</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三十　</span><span class="sf17b18">液化石油ガス保安規則</span><span style="color: #000000; background-color: #efcb05; ">第二十四条第一項（容器により貯蔵する場合の技術上の基<wbr>準）の容器により貯蔵する第一種貯蔵所又は同規則第二十七条第二号の規定の適用を受<wbr>ける第二種貯蔵所　当該第一種貯蔵所又は第二種貯蔵所の位置に係る基準として定めら<wbr>れた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる第一種貯蔵所又は第二種貯蔵所以外の当該第一種貯蔵所又は第二種貯蔵<wbr>所　液化石油ガス保安規則第二十四条第一号に規定する第一種設備距離又は同規則第九<wbr>十七条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">イ　ロに掲げる第一種貯蔵所又は第二種貯蔵所以外の当該第一種貯蔵所又は第二種貯蔵<wbr>所　液化石油ガス保安規則第二十四条第一号に規定する第一種設備距離又は同規則第九<wbr>十七条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第二十四条第一号の表の上欄に掲げる第一種貯蔵所又は第二<wbr>種貯蔵所　同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガス保安規則第二十四条第一号の表の上欄に掲げる第一種貯蔵所又は第二<wbr>種貯蔵所　同表の中欄に掲げる距離又は同規則第九十七条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">三十一　液化石油ガス保安規則第五十三条第一項第二号（特定高圧ガスの消費者に係る<wbr>技術上の基準）の消費施設に係る同号の減圧設備　当該減圧設備の位置に係る基準とし<wbr>て定められた同号に規定する第一種設備距離又は同規則第九十七条の規定により経済産<wbr>業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">三十一　液化石油ガス保安規則第五十三条第一項第二号（特定高圧ガスの消費者に係る<wbr>技術上の基準）の消費施設に係る同号の減圧設備　当該減圧設備の位置に係る基準とし<wbr>て定められた同号に規定する第一種設備距離又は同規則第九十七条の規定により経済産<wbr>業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">三十二　コンビナート等保安規則（昭和六十一年通商産業省令第八十八号）第五条第一<wbr>項（製造施設）に規定する製造施設に係る同項第二号の貯蔵設備及び処理設備　当該貯<wbr>蔵設備及び処理設備の位置に係る基準として定められた同号（同項第三号の規定により<wbr>読み替えて適用される場合を含む。）に規定する距離又は同規則第五十四条（危険のお<wbr>それのない場合等の特則）の規定により経済産業大臣が定めた距離のうち最も短い距離<wbr></span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">三十二　コンビナート等保安規則（昭和六十一年通商産業省令第八十八号）第五条第一<wbr>項（製造施設）に規定する製造施設に係る同項第二号の貯蔵設備及び処理設備　当該貯<wbr>蔵設備及び処理設備の位置に係る基準として定められた同号（同項第三号の規定により<wbr>読み替えて適用される場合を含む。）に規定する距離又は同規則第五十四条（危険のお<wbr>それのない場合等の特則）の規定により経済産業大臣が定めた距離のうち最も短い距離<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">三十三　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第四号イ<wbr>に規定する製造施設　当該製造施設の位置に係る基準として定められた同号イに規定す<wbr>る距離又は同規則第五十四条の規定により経済産業大臣が定めた距離のうち最も短い距<wbr>離</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">三十三　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第四号イ<wbr>に規定する製造施設　当該製造施設の位置に係る基準として定められた同号イに規定す<wbr>る距離又は同規則第五十四条の規定により経済産業大臣が定めた距離のうち最も短い距<wbr>離</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">三十四　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第四号ロ<wbr>の貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の位置に係る基準として定められ<wbr>た同号ロに規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離<wbr>のうち最も短い距離</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">三十四　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第四号ロ<wbr>の貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の位置に係る基準として定められ<wbr>た同号ロに規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離<wbr>のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">三十五　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第五号の<wbr>貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の位置に係る基準として定められた<wbr>同号に規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離のう<wbr>ち最も短い距離</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">三十五　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第五号の<wbr>貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の位置に係る基準として定められた<wbr>同号に規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離のう<wbr>ち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">177</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三十六　</span><span style="color: #000000; background-color: #efcb05; ">第五条第一項に規定する製造施設に係る同項第六号の貯蔵設備及び処理設備　<wbr>当該貯蔵設備及び処理設備の次に掲げる区分に応じ当該貯蔵設備及び処理設備の位置に<wbr>係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">177</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三十六　</span><span class="sf17b18">コンビナート等保安規則</span><span style="color: #000000; background-color: #efcb05; ">第五条第一項に規定する製造施設に係る同項第六号の<wbr>貯蔵設備及び処理設備　当該貯蔵設備及び処理設備の次に掲げる区分に応じ当該貯蔵設<wbr>備及び処理設備の位置に係る基準として定められた次に定める距離のうち最も短い距離<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる一般高圧ガス保安規則第六条第一項第二号の貯蔵設備及<wbr>び処理設備　コンビナート等保安規則第五条第一項第六号の規定によりその例によるも<wbr>のとされる一般高圧ガス保安規則第六条第一項第二号に規定する第一種設備距離又はコ<wbr>ンビナート等保安規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる一般高圧ガス保安規則第六条第一項第二号の貯蔵設備及<wbr>び処理設備　コンビナート等保安規則第五条第一項第六号の規定によりその例によるも<wbr>のとされる一般高圧ガス保安規則第六条第一項第二号に規定する第一種設備距離又はコ<wbr>ンビナート等保安規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第六条第一項第二号の貯蔵設備及<wbr>び処理設備のうちハに掲げるもの以外のもの　コンビナート等保安規則第五条第一項第<wbr>六号の規定によりその例によるものとされる液化石油ガス保安規則第六条第一項第二号<wbr>に規定する第一種設備距離又はコンビナート等保安規則第五十四条の規定により経済産<wbr>業大臣が定めた距離</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第六条第一項第二号の貯蔵設備及<wbr>び処理設備のうちハに掲げるもの以外のもの　コンビナート等保安規則第五条第一項第<wbr>六号の規定によりその例によるものとされる液化石油ガス保安規則第六条第一項第二号<wbr>に規定する第一種設備距離又はコンビナート等保安規則第五十四条の規定により経済産<wbr>業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">ハ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第六条第一項第二号の表の上欄に<wbr>掲げる貯蔵設備及び処理設備　コンビナート等保安規則第五条第一項第六号の規定によ<wbr>りその例によるものとされる同表の中欄に掲げる距離又は同規則第五十四条の規定によ<wbr>り経済産業大臣が定めた距離</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">ハ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第六条第一項第二号の表の上欄に<wbr>掲げる貯蔵設備及び処理設備　コンビナート等保安規則第五条第一項第六号の規定によ<wbr>りその例によるものとされる同表の中欄に掲げる距離又は同規則第五十四条の規定によ<wbr>り経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">三十七　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第八号に<wbr>規定する製造設備　当該製造設備の位置に係る基準として定められた同号に規定する距<wbr>離又は同規則第五十四条の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">三十七　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第八号に<wbr>規定する製造設備　当該製造設備の位置に係る基準として定められた同号に規定する距<wbr>離又は同規則第五十四条の規定により経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">三十八　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第六十五<wbr>号ロに規定する毒性ガスの容器置場　当該容器置場の位置に係る基準として定められた<wbr>同号ロに規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離の<wbr>うち最も短い距離</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">三十八　コンビナート等保安規則第五条第一項に規定する製造施設に係る同項第六十五<wbr>号ロに規定する毒性ガスの容器置場　当該容器置場の位置に係る基準として定められた<wbr>同号ロに規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離の<wbr>うち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">183</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三十九　</span><span style="color: #000000; background-color: #efcb05; ">第五条第一項に規定する製造施設に係る同項第六十五号ハに規定する毒性ガス<wbr>以外のガスの容器置場　当該容器置場の次に掲げる区分に応じ当該容器置場の位置に係<wbr>る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">183</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三十九　</span><span class="sf17b18">コンビナート等保安規則</span><span style="color: #000000; background-color: #efcb05; ">第五条第一項に規定する製造施設に係る同項第六十五<wbr>号ハに規定する毒性ガス以外のガスの容器置場　当該容器置場の次に掲げる区分に応じ<wbr>当該容器置場の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">イ　当該容器置場でロに掲げるもの以外のもの　コンビナート等保安規則第五条第一項<wbr>第六十五号ハに規定する第一種置場距離又は同規則第五十四条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">イ　当該容器置場でロに掲げるもの以外のもの　コンビナート等保安規則第五条第一項<wbr>第六十五号ハに規定する第一種置場距離又は同規則第五十四条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場でコンビナート等保安規則第五条第一項第六十五号ハの表の上欄に掲<wbr>げる容器置場　同表の中欄に掲げる距離又は同規則第五十四条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場でコンビナート等保安規則第五条第一項第六十五号ハの表の上欄に掲<wbr>げる容器置場　同表の中欄に掲げる距離又は同規則第五十四条の規定により経済産業大<wbr>臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">四十　コンビナート等保安規則第六条第一項（特定液化石油ガススタンド）の特定液化<wbr>石油ガススタンドである製造施設に係る同規則第五条第一項第二号の貯蔵設備及び処理<wbr>設備　当該貯蔵設備及び処理設備の位置に係る基準として定められた同規則第六条第一<wbr>項第一号の規定により適用される同規則第五条第一項第二号（同項第三号の規定により<wbr>読み替えて適用される場合を含む。）に規定する距離又は同規則第五十四条の規定によ<wbr>り経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">四十　コンビナート等保安規則第六条第一項（特定液化石油ガススタンド）の特定液化<wbr>石油ガススタンドである製造施設に係る同規則第五条第一項第二号の貯蔵設備及び処理<wbr>設備　当該貯蔵設備及び処理設備の位置に係る基準として定められた同規則第六条第一<wbr>項第一号の規定により適用される同規則第五条第一項第二号（同項第三号の規定により<wbr>読み替えて適用される場合を含む。）に規定する距離又は同規則第五十四条の規定によ<wbr>り経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">187</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十一　</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の特定液化石油ガススタンドである製造施設に係る同規則</span><span style="color: #000000; background-color: #efcb05; ">の貯蔵<wbr>設備及び処理設備　当該貯蔵設備及び処理設備の次に掲げる区分に応じ当該貯蔵設備及<wbr>び処理設備の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">187</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十一　</span><span class="sf17b18">コンビナート等保安規則</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の特定液化石油ガススタンドである製造<wbr>施設に係る同規則</span><span class="sf17b18">第五条第一項第六号</span><span style="color: #000000; background-color: #efcb05; ">の貯蔵設備及び処理設備　当該貯蔵設備及び処理<wbr>設備の次に掲げる区分に応じ当該貯蔵設備及び処理設備の位置に係る基準として定めら<wbr>れた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第八条第一項第一号の規定による<wbr>同規則第六条第一項第二号の貯蔵設備及び処理設備（ロにおいて「液化石油ガススタン<wbr>ドである貯蔵設備等」という。）のうちロに掲げるもの以外のもの　コンビナート等保<wbr>安規則第六条第一項第一号の規定により適用される同規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第八条第一項第一号の規定による<wbr>同規則第六条第一項第二号に規定する第一種設備距離又はコンビナート等保安規則第五<wbr>十四条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵設備及び処理設備でコンビナート等保安規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第八条第一項第一号の規定による<wbr>同規則第六条第一項第二号の貯蔵設備及び処理設備（ロにおいて「液化石油ガススタン<wbr>ドである貯蔵設備等」という。）のうちロに掲げるもの以外のもの　コンビナート等保<wbr>安規則第六条第一項第一号の規定により適用される同規則第五条第一項第六号の規定に<wbr>よりその例によるものとされる液化石油ガス保安規則第八条第一項第一号の規定による<wbr>同規則第六条第一項第二号に規定する第一種設備距離又はコンビナート等保安規則第五<wbr>十四条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガススタンドである貯蔵設備等で液化石油ガス保安規則第六条第一項第二<wbr>号の表の上欄に掲げるもの　コンビナート等保安規則第六条第一項第一号の規定により<wbr>適用される同規則第五条第一項第六号の規定によりその例によるものとされる液化石油<wbr>ガス保安規則第八条第一項第一号の規定による同表の中欄に掲げる距離又はコンビナー<wbr>ト等保安規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">ロ　液化石油ガススタンドである貯蔵設備等で液化石油ガス保安規則第六条第一項第二<wbr>号の表の上欄に掲げるもの　コンビナート等保安規則第六条第一項第一号の規定により<wbr>適用される同規則第五条第一項第六号の規定によりその例によるものとされる液化石油<wbr>ガス保安規則第八条第一項第一号の規定による同表の中欄に掲げる距離又はコンビナー<wbr>ト等保安規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">四十二　コンビナート等保安規則第六条第一項の特定液化石油ガススタンドである製造<wbr>施設に係る同規則第五条第一項第八号に規定する製造設備　当該製造設備の位置に係る<wbr>基準として定められた同規則第六条第一項第一号の規定により適用される同規則第五条<wbr>第一項第八号に規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた<wbr>距離のうち最も短い距離</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">四十二　コンビナート等保安規則第六条第一項の特定液化石油ガススタンドである製造<wbr>施設に係る同規則第五条第一項第八号に規定する製造設備　当該製造設備の位置に係る<wbr>基準として定められた同規則第六条第一項第一号の規定により適用される同規則第五条<wbr>第一項第八号に規定する距離又は同規則第五十四条の規定により経済産業大臣が定めた<wbr>距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">四十三　コンビナート等保安規則第六条第一項の特定液化石油ガススタンドである製造<wbr>施設に係る同規則第五条第一項第六十五号ロに規定する毒性ガスの容器置場　当該容器<wbr>置場の位置に係る基準として定められた同規則第六条第一項第一号の規定により適用さ<wbr>れる同規則第五条第一項第六十五号ロに規定する距離又は同規則第五十四条の規定によ<wbr>り経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">四十三　コンビナート等保安規則第六条第一項の特定液化石油ガススタンドである製造<wbr>施設に係る同規則第五条第一項第六十五号ロに規定する毒性ガスの容器置場　当該容器<wbr>置場の位置に係る基準として定められた同規則第六条第一項第一号の規定により適用さ<wbr>れる同規則第五条第一項第六十五号ロに規定する距離又は同規則第五十四条の規定によ<wbr>り経済産業大臣が定めた距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">192</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十四　</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の特定液化石油ガススタンドである製造施設に係る同規則</span><span style="color: #000000; background-color: #efcb05; ">ハに規<wbr>定する毒性ガス以外のガスの容器置場　当該容器置場の次に掲げる区分に応じ当該容器<wbr>置場の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">192</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十四　</span><span class="sf17b18">コンビナート等保安規則</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の特定液化石油ガススタンドである製造<wbr>施設に係る同規則</span><span class="sf17b18">第五条第一項第六十五号</span><span style="color: #000000; background-color: #efcb05; ">ハに規定する毒性ガス以外のガスの容器置場<wbr>　当該容器置場の次に掲げる区分に応じ当該容器置場の位置に係る基準として定められ<wbr>た次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">イ　当該容器置場でロに掲げるもの以外のもの　コンビナート等保安規則第六条第一項<wbr>第一号の規定により適用される同規則第五条第一項第六十五号ハに規定する第一種置場<wbr>距離又は同規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">イ　当該容器置場でロに掲げるもの以外のもの　コンビナート等保安規則第六条第一項<wbr>第一号の規定により適用される同規則第五条第一項第六十五号ハに規定する第一種置場<wbr>距離又は同規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場でコンビナート等保安規則第五条第一項第六十五号ハの表の上欄に掲<wbr>げる容器置場　同規則第六条第一項第一号の規定により適用される同表の中欄に掲げる<wbr>距離又は同規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該容器置場でコンビナート等保安規則第五条第一項第六十五号ハの表の上欄に掲<wbr>げる容器置場　同規則第六条第一項第一号の規定により適用される同表の中欄に掲げる<wbr>距離又は同規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">195</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十五　</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の特定液化石油ガススタンドである製造施設に係る同項第二号の<wbr>デイスペンサー　当該デイスペンサーの次に掲げる区分に応じ当該デイスペンサーの位<wbr>置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">195</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十五　</span><span class="sf17b18">コンビナート等保安規則</span><span style="color: #000000; background-color: #efcb05; ">第六条第一項の特定液化石油ガススタンドである製造<wbr>施設に係る同項第二号のデイスペンサー　当該デイスペンサーの次に掲げる区分に応じ<wbr>当該デイスペンサーの位置に係る基準として定められた次に定める距離のうち最も短い<wbr>距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">イ　当該デイスペンサーでコンビナート等保安規則第五条第一項第二号の規定に該当す<wbr>るもの　同規則第六条第一項第二号の規定によりその例によるものとされる同規則第五<wbr>条第一項第二号（同項第三号の規定により読み替えて適用される場合を含む。）に規定<wbr>する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">イ　当該デイスペンサーでコンビナート等保安規則第五条第一項第二号の規定に該当す<wbr>るもの　同規則第六条第一項第二号の規定によりその例によるものとされる同規則第五<wbr>条第一項第二号（同項第三号の規定により読み替えて適用される場合を含む。）に規定<wbr>する距離又は同規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該デイスペンサーでコンビナート等保安規則第六条第一項第二号の規定により適<wbr>用される同規則第五条第一項第六号の規定によりその例によるものとされる液化石油ガ<wbr>ス保安規則第八条第一項第二号の規定による同規則第六条第一項第二号の規定に該当す<wbr>るもの（ハにおいて「特定液化石油ガススタンドであるディスペンサー」という。）の<wbr>うちハに掲げるもの以外のもの　コンビナート等保安規則第六条第一項第二号の規定に<wbr>より適用される同規則第五条第一項第六号の規定によりその例によるものとされる液化<wbr>石油ガス保安規則第八条第一項第二号の規定による同規則第六条第一項第二号に規定す<wbr>る第一種設備距離又はコンビナート等保安規則第五十四条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該デイスペンサーでコンビナート等保安規則第六条第一項第二号の規定により適<wbr>用される同規則第五条第一項第六号の規定によりその例によるものとされる液化石油ガ<wbr>ス保安規則第八条第一項第二号の規定による同規則第六条第一項第二号の規定に該当す<wbr>るもの（ハにおいて「特定液化石油ガススタンドであるディスペンサー」という。）の<wbr>うちハに掲げるもの以外のもの　コンビナート等保安規則第六条第一項第二号の規定に<wbr>より適用される同規則第五条第一項第六号の規定によりその例によるものとされる液化<wbr>石油ガス保安規則第八条第一項第二号の規定による同規則第六条第一項第二号に規定す<wbr>る第一種設備距離又はコンビナート等保安規則第五十四条の規定により経済産業大臣が<wbr>定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">ハ　特定液化石油ガススタンドであるディスペンサーで液化石油ガス保安規則第六条第<wbr>一項第二号の表の上欄に掲げるもの　コンビナート等保安規則第六条第一項第二号の規<wbr>定により適用される同規則第五条第一項第六号の規定によりその例によるものとされる<wbr>液化石油ガス保安規則第八条第一項第二号の規定による同表の中欄に掲げる距離又はコ<wbr>ンビナート等保安規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">ハ　特定液化石油ガススタンドであるディスペンサーで液化石油ガス保安規則第六条第<wbr>一項第二号の表の上欄に掲げるもの　コンビナート等保安規則第六条第一項第二号の規<wbr>定により適用される同規則第五条第一項第六号の規定によりその例によるものとされる<wbr>液化石油ガス保安規則第八条第一項第二号の規定による同表の中欄に掲げる距離又はコ<wbr>ンビナート等保安規則第五十四条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該デイスペンサーでコンビナート等保安規則第五条第一項第八号の規定に該当す<wbr>るもの　同規則第六条第一項第二号の規定によりその例によるものとされる同規則第五<wbr>条第一項第八号に規定する距離又は同規則第五十四条の規定により経済産業大臣が定め<wbr>た距離</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該デイスペンサーでコンビナート等保安規則第五条第一項第八号の規定に該当す<wbr>るもの　同規則第六条第一項第二号の規定によりその例によるものとされる同規則第五<wbr>条第一項第八号に規定する距離又は同規則第五十四条の規定により経済産業大臣が定め<wbr>た距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">200</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十六　</span><span style="color: #000000; background-color: #efcb05; ">（昭和四十三年通商産業省令第十四号）第十四条又は第五十二条（貯蔵施設の<wbr>技術上の基準）の貯蔵施設　当該貯蔵施設の次に掲げる区分に応じ当該貯蔵施設の位置<wbr>に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">200</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十六　</span><span class="sf17b18">液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則</span><span style="color: #000000; background-color: #efcb05; ">（昭和四十<wbr>三年通商産業省令第十四号）第十四条又は第五十二条（貯蔵施設の技術上の基準）の貯<wbr>蔵施設　当該貯蔵施設の次に掲げる区分に応じ当該貯蔵施設の位置に係る基準として定<wbr>められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵施設でロに掲げるもの以外のもの　液化石油ガスの保安の確保及び取引の<wbr>適正化に関する法律施行規則第十四条第二号に規定する第一種施設距離又は同規則第十<wbr>七条又は第五十五条（危険のおそれのない場合の特則）の規定により経済産業大臣が定<wbr>めた距離</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵施設でロに掲げるもの以外のもの　液化石油ガスの保安の確保及び取引の<wbr>適正化に関する法律施行規則第十四条第二号に規定する第一種施設距離又は同規則第十<wbr>七条又は第五十五条（危険のおそれのない場合の特則）の規定により経済産業大臣が定<wbr>めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵施設で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則<wbr>第十四条第二号の表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第十七条<wbr>又は第五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵施設で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則<wbr>第十四条第二号の表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第十七条<wbr>又は第五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">203</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十七　</span><span style="color: #000000; background-color: #efcb05; ">第五十三条（特定供給設備の技術上の基準）の特定供給設備に係る同条第一号<wbr>の貯蔵設備及び同条第二号の貯槽　当該貯蔵設備及び貯槽の次に掲げる区分に応じ当該<wbr>貯蔵設備及び貯槽の位置に係る基準として定められた次に定める距離のうち最も短い距<wbr>離</span></code></td>
+<td class="ln">203</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十七　</span><span class="sf17b18">液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則</span><span style="color: #000000; background-color: #efcb05; ">第五十三条<wbr>（特定供給設備の技術上の基準）の特定供給設備に係る同条第一号の貯蔵設備及び同条<wbr>第二号の貯槽　当該貯蔵設備及び貯槽の次に掲げる区分に応じ当該貯蔵設備及び貯槽の<wbr>位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵設備でロに掲げるもの以外のもの　液化石油ガスの保安の確保及び取引の<wbr>適正化に関する法律施行規則第一条第二項第六号（定義）に規定する第一種保安物件（<wbr>以下この号及び次号において「第一種保安物件」という。）に対する同規則第五十三条<wbr>第一号イに規定する距離又は同規則第五十五条の規定により経済産業大臣が定めた距離<wbr></span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">イ　当該貯蔵設備でロに掲げるもの以外のもの　液化石油ガスの保安の確保及び取引の<wbr>適正化に関する法律施行規則第一条第二項第六号（定義）に規定する第一種保安物件（<wbr>以下この号及び次号において「第一種保安物件」という。）に対する同規則第五十三条<wbr>第一号イに規定する距離又は同規則第五十五条の規定により経済産業大臣が定めた距離<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則<wbr>第五十三条第一号イの表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第五<wbr>十五条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該貯蔵設備で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則<wbr>第五十三条第一号イの表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第五<wbr>十五条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">ハ　当該貯槽でニに掲げるもの以外のもの　第一種保安物件に対する液化石油ガスの保<wbr>安の確保及び取引の適正化に関する法律施行規則第五十三条第二号イに規定する距離又<wbr>は同規則第五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">ハ　当該貯槽でニに掲げるもの以外のもの　第一種保安物件に対する液化石油ガスの保<wbr>安の確保及び取引の適正化に関する法律施行規則第五十三条第二号イに規定する距離又<wbr>は同規則第五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該貯槽で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則第五<wbr>十三条第二号イの表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第五十五<wbr>条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該貯槽で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則第五<wbr>十三条第二号イの表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第五十五<wbr>条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">208</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十八　</span><span style="color: #000000; background-color: #efcb05; ">第五十四条（バルク供給に係る特定供給設備の技術上の基準）の特定供給設備<wbr>に係る同条第二号イのバルク貯槽　当該バルク貯槽の次に掲げる区分に応じ当該バルク<wbr>貯槽の位置に係る基準として定められた次に定める距離のうち最も短い距離</span></code></td>
+<td class="ln">208</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">四十八　</span><span class="sf17b18">液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則</span><span style="color: #000000; background-color: #efcb05; ">第五十四条<wbr>（バルク供給に係る特定供給設備の技術上の基準）の特定供給設備に係る同条第二号イ<wbr>のバルク貯槽　当該バルク貯槽の次に掲げる区分に応じ当該バルク貯槽の位置に係る基<wbr>準として定められた次に定める距離のうち最も短い距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">イ　当該バルク貯槽でロに掲げるもの以外のもの　第一種保安物件に対する液化石油ガ<wbr>スの保安の確保及び取引の適正化に関する法律施行規則第五十四条第二号ロ（１）に規<wbr>定する距離又は同規則第五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">イ　当該バルク貯槽でロに掲げるもの以外のもの　第一種保安物件に対する液化石油ガ<wbr>スの保安の確保及び取引の適正化に関する法律施行規則第五十四条第二号ロ（１）に規<wbr>定する距離又は同規則第五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該バルク貯槽で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規<wbr>則第五十四条第二号イの表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第<wbr>五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該バルク貯槽で液化石油ガスの保安の確保及び取引の適正化に関する法律施行規<wbr>則第五十四条第二号イの表の上欄に掲げるもの　同表の中欄に掲げる距離又は同規則第<wbr>五十五条の規定により経済産業大臣が定めた距離</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">３　令第十七条第二項第二号に規定する財務省令で定める施設は、次に掲げる施設とす<wbr>る。</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">３　令第十七条第二項第二号に規定する財務省令で定める施設は、次に掲げる施設とす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">一　危険物の規制に関する政令第十一条第一項第十五号の規定により設けられた同号の<wbr>防油堤</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">一　危険物の規制に関する政令第十一条第一項第十五号の規定により設けられた同号の<wbr>防油堤</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">二　一般高圧ガス保安規則第六条第一項第七号（同規則第二十二条の規定により適用さ<wbr>れる場合を含む。）の規定により設けられた同規則第六条第一項第七号の防液堤</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">二　一般高圧ガス保安規則第六条第一項第七号（同規則第二十二条の規定により適用さ<wbr>れる場合を含む。）の規定により設けられた同規則第六条第一項第七号の防液堤</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">三　液化石油ガス保安規則第六条第一項第十号（同規則第八条第一項第一号、第二十三<wbr>条第一項及び第二十七条第一号の規定により適用される場合を含む。）の規定により設<wbr>けられた同規則第六条第一項第十号の防液堤</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">三　液化石油ガス保安規則第六条第一項第十号（同規則第八条第一項第一号、第二十三<wbr>条第一項及び第二十七条第一号の規定により適用される場合を含む。）の規定により設<wbr>けられた同規則第六条第一項第十号の防液堤</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">四　コンビナート等保安規則第五条第一項第三十五号（同規則第六条第一項第一号の規<wbr>定により適用される場合を含む。）の規定により設けられた同規則第五条第一項第三十<wbr>五号の防液堤（同号のこれと同等以上の効果のある施設を含む。）</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">四　コンビナート等保安規則第五条第一項第三十五号（同規則第六条第一項第一号の規<wbr>定により適用される場合を含む。）の規定により設けられた同規則第五条第一項第三十<wbr>五号の防液堤（同号のこれと同等以上の効果のある施設を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">４　令第十七条第二項第三号に規定する財務省令で定める土地等は、法別表第二第二号<wbr>ヘに規定する通路の用に供されている土地等のうち、次の各号に掲げる通路の区分に応<wbr>じ当該各号に定める基準に適合するために必要な最も小さい幅員に係る土地等及び次項<wbr>に規定する土地等とする。</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">４　令第十七条第二項第三号に規定する財務省令で定める土地等は、法別表第二第二号<wbr>ヘに規定する通路の用に供されている土地等のうち、次の各号に掲げる通路の区分に応<wbr>じ当該各号に定める基準に適合するために必要な最も小さい幅員に係る土地等及び次項<wbr>に規定する土地等とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">一　石油コンビナート等特別防災区域における新設事業所等の施設地区の配置等に関す<wbr>る省令（昭和五十一年通商産業省、自治省令第一号）第六条第一項第六号（添付書類）<wbr>に規定する特定通路　同規則第十一条（特定通路の幅員）に規定する当該特定通路の基<wbr>準</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">一　石油コンビナート等特別防災区域における新設事業所等の施設地区の配置等に関す<wbr>る省令（昭和五十一年通商産業省、自治省令第一号）第六条第一項第六号（添付書類）<wbr>に規定する特定通路　同規則第十一条（特定通路の幅員）に規定する当該特定通路の基<wbr>準</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">二　石油コンビナート等特別防災区域における新設事業所等の施設地区の配置等に関す<wbr>る省令第九条第二号（製造施設地区及び貯蔵施設地区の面積の基準）の規定により設け<wbr>られた同号の通路　同号に規定する当該通路の基準</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">二　石油コンビナート等特別防災区域における新設事業所等の施設地区の配置等に関す<wbr>る省令第九条第二号（製造施設地区及び貯蔵施設地区の面積の基準）の規定により設け<wbr>られた同号の通路　同号に規定する当該通路の基準</span></code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">三　石油コンビナート等特別防災区域における新設事業所等の施設地区の配置等に関す<wbr>る省令第十二条第四号又は第五号（通路の配置の基準）の規定により設けられた同条第<wbr>四号又は第五号の通路　これらの規定に規定する当該通路の基準</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">三　石油コンビナート等特別防災区域における新設事業所等の施設地区の配置等に関す<wbr>る省令第十二条第四号又は第五号（通路の配置の基準）の規定により設けられた同条第<wbr>四号又は第五号の通路　これらの規定に規定する当該通路の基準</span></code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">５　法別表第二第二号ヘに規定する財務省令で定める空地は、石油コンビナート等特別<wbr>防災区域における新設事業所等の施設地区の配置等に関する省令第十条第三号（施設地<wbr>区の配置の基準）の規定により設けられた同号の製造施設地区の外周から内側五メート<wbr>ル以内の部分の土地等とする。</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">５　法別表第二第二号ヘに規定する財務省令で定める空地は、石油コンビナート等特別<wbr>防災区域における新設事業所等の施設地区の配置等に関する省令第十条第三号（施設地<wbr>区の配置の基準）の規定により設けられた同号の製造施設地区の外周から内側五メート<wbr>ル以内の部分の土地等とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">６　法別表第二第三号に規定する財務省令で定める土地の区域は、核原料物質、核燃料<wbr>物質及び原子炉の規制に関する法律（昭和三十二年法律第百六十六号）第十三条第一項<wbr>（事業の許可）、第二十三条第一項（設置の許可）、第四十三条の三の五第一項（設置<wbr>の許可）、第五十一条の二第一項（事業の許可）、第五十二条第一項（使用の許可）若<wbr>しくは第六十一条の三第一項（使用の許可及び届出等）の許可、同法第四十四条第一項<wbr>（事業の指定）の指定又は同法第五十七条の七第一項（核原料物質の使用に関する規制<wbr>）の届出に係る土地について定められた次に掲げる周辺監視区域とする。</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">６　法別表第二第三号に規定する財務省令で定める土地の区域は、核原料物質、核燃料<wbr>物質及び原子炉の規制に関する法律（昭和三十二年法律第百六十六号）第十三条第一項<wbr>（事業の許可）、第二十三条第一項（設置の許可）、第四十三条の三の五第一項（設置<wbr>の許可）、第五十一条の二第一項（事業の許可）、第五十二条第一項（使用の許可）若<wbr>しくは第六十一条の三第一項（使用の許可及び届出等）の許可、同法第四十四条第一項<wbr>（事業の指定）の指定又は同法第五十七条の七第一項（核原料物質の使用に関する規制<wbr>）の届出に係る土地について定められた次に掲げる周辺監視区域とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">一　核燃料物質の加工の事業に関する規則（昭和四十一年総理府令第三十七号）第一条<wbr>第二項第四号（定義）に規定する周辺監視区域（当該周辺監視区域に係る同項第二号に<wbr>規定する管理区域を含む。）</span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">一　核燃料物質の加工の事業に関する規則（昭和四十一年総理府令第三十七号）第一条<wbr>第二項第四号（定義）に規定する周辺監視区域（当該周辺監視区域に係る同項第二号に<wbr>規定する管理区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">二　試験研究の用に供する原子炉等の設置、運転等に関する規則（昭和三十二年総理府<wbr>令第八十三号）第一条の二第二項第六号（定義）に規定する周辺監視区域（当該周辺監<wbr>視区域に係る同項第四号に規定する管理区域を含む。）</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">二　試験研究の用に供する原子炉等の設置、運転等に関する規則（昭和三十二年総理府<wbr>令第八十三号）第一条の二第二項第六号（定義）に規定する周辺監視区域（当該周辺監<wbr>視区域に係る同項第四号に規定する管理区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">三　核燃料物質又は核燃料物質によって汚染された物の第一種廃棄物埋設の事業に関す<wbr>る規則（平成二十年経済産業省令第二十三号）第二条第二項第四号（定義）に規定する<wbr>周辺監視区域（当該周辺監視区域に係る同項第三号に規定する管理区域を含む。）</span></code></td>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">三　核燃料物質又は核燃料物質によって汚染された物の第一種廃棄物埋設の事業に関す<wbr>る規則（平成二十年経済産業省令第二十三号）第二条第二項第四号（定義）に規定する<wbr>周辺監視区域（当該周辺監視区域に係る同項第三号に規定する管理区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">四　核燃料物質又は核燃料物質によつて汚染された物の第二種廃棄物埋設の事業に関す<wbr>る規則（昭和六十三年総理府令第一号）第一条の二第二項第九号（定義）に規定する周<wbr>辺監視区域（当該周辺監視区域に係る同項第八号に規定する管理区域を含む。）</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">四　核燃料物質又は核燃料物質によつて汚染された物の第二種廃棄物埋設の事業に関す<wbr>る規則（昭和六十三年総理府令第一号）第一条の二第二項第九号（定義）に規定する周<wbr>辺監視区域（当該周辺監視区域に係る同項第八号に規定する管理区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">五　核燃料物質又は核燃料物質によつて汚染された物の廃棄物管理の事業に関する規則<wbr>（昭和六十三年総理府令第四十七号）第一条第二項第四号（定義）に規定する周辺監視<wbr>区域（当該周辺監視区域に係る同項第三号に規定する管理区域を含む。）</span></code></td>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">五　核燃料物質又は核燃料物質によつて汚染された物の廃棄物管理の事業に関する規則<wbr>（昭和六十三年総理府令第四十七号）第一条第二項第四号（定義）に規定する周辺監視<wbr>区域（当該周辺監視区域に係る同項第三号に規定する管理区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">六　核燃料物質の使用等に関する規則（昭和三十二年総理府令第八十四号）第一条第二<wbr>項第三号（定義）に規定する周辺監視区域（当該周辺監視区域に係る同項第二号に規定<wbr>する管理区域を含む。）</span></code></td>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">六　核燃料物質の使用等に関する規則（昭和三十二年総理府令第八十四号）第一条第二<wbr>項第三号（定義）に規定する周辺監視区域（当該周辺監視区域に係る同項第二号に規定<wbr>する管理区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">七　核原料物質の使用に関する規則（昭和四十三年総理府令第四十六号）第一条第三号<wbr>（定義）に規定する周辺監視区域（当該周辺監視区域に係る同条第二号に規定する管理<wbr>区域を含む。）</span></code></td>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">七　核原料物質の使用に関する規則（昭和四十三年総理府令第四十六号）第一条第三号<wbr>（定義）に規定する周辺監視区域（当該周辺監視区域に係る同条第二号に規定する管理<wbr>区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">八　使用済燃料の再処理の事業に関する規則（昭和四十六年総理府令第十号）第一条第<wbr>二項第四号（定義）に規定する周辺監視区域（当該周辺監視区域に係る同項第二号に規<wbr>定する管理区域を含む。）</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">八　使用済燃料の再処理の事業に関する規則（昭和四十六年総理府令第十号）第一条第<wbr>二項第四号（定義）に規定する周辺監視区域（当該周辺監視区域に係る同項第二号に規<wbr>定する管理区域を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">７　法別表第二第七号に規定する財務省令で定める施設は、同号に規定する石油又は石<wbr>油ガスを貯蔵するための危険物の規制に関する政令第二条第二号に規定する屋外タンク<wbr>貯蔵所又は液化石油ガス保安規則第二条第三号（用語の定義）に規定する貯槽（これら<wbr>の附属設備を含む。）とする。</span></code></td>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">７　法別表第二第七号に規定する財務省令で定める施設は、同号に規定する石油又は石<wbr>油ガスを貯蔵するための危険物の規制に関する政令第二条第二号に規定する屋外タンク<wbr>貯蔵所又は液化石油ガス保安規則第二条第三号（用語の定義）に規定する貯槽（これら<wbr>の附属設備を含む。）とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">８　法第十七条第一項又は第二項の規定の適用を受けようとする者は、当該土地等が法<wbr>別表第二に掲げる土地等（同表第九号に掲げる土地等を除く。）又は同項に規定する土<wbr>地等のいずれかに該当することにつき、これらの土地等（これらの土地等の部分がこれ<wbr>らの規定の適用があるものであるときは、これらの土地等の部分。以下この項において<wbr>同じ。）の次の各号に掲げる区分に応じ当該各号に定める者が証明した書類でこれらの<wbr>土地等の所在地及び面積の記載があるものを、これらの規定の適用を受けようとする年<wbr>の課税時期に係る法第二十五条第一項の規定による申告書の提出期限（その年の課税価<wbr>格が基礎控除の額以下であるときは、当該申告書の提出期限に相当する日）の翌日から<wbr>七年間、その者の納税地において法第三十三条の規定により備え付ける帳簿と併せて保<wbr>存しなければならない。</span></code></td>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">８　法第十七条第一項又は第二項の規定の適用を受けようとする者は、当該土地等が法<wbr>別表第二に掲げる土地等（同表第九号に掲げる土地等を除く。）又は同項に規定する土<wbr>地等のいずれかに該当することにつき、これらの土地等（これらの土地等の部分がこれ<wbr>らの規定の適用があるものであるときは、これらの土地等の部分。以下この項において<wbr>同じ。）の次の各号に掲げる区分に応じ当該各号に定める者が証明した書類でこれらの<wbr>土地等の所在地及び面積の記載があるものを、これらの規定の適用を受けようとする年<wbr>の課税時期に係る法第二十五条第一項の規定による申告書の提出期限（その年の課税価<wbr>格が基礎控除の額以下であるときは、当該申告書の提出期限に相当する日）の翌日から<wbr>七年間、その者の納税地において法第三十三条の規定により備え付ける帳簿と併せて保<wbr>存しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第二第一号に掲げる土地等　当該土地等の次のイ又はロに掲げる区分に応じ<wbr>それぞれイ又はロに定める者</span></code></td>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">一　法別表第二第一号に掲げる土地等　当該土地等の次のイ又はロに掲げる区分に応じ<wbr>それぞれイ又はロに定める者</span></code></td>
+</tr>
+<tr>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">イ　工場又は事業場における環境施設の用に供されている土地等でロに掲げるもの以外<wbr>のもの　工場立地法第四条第一項（工場立地に関する準則等の公表）に規定する経済産<wbr>業大臣及び製造業等を所管する大臣</span></code></td>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">イ　工場又は事業場における環境施設の用に供されている土地等でロに掲げるもの以外<wbr>のもの　工場立地法第四条第一項（工場立地に関する準則等の公表）に規定する経済産<wbr>業大臣及び製造業等を所管する大臣</span></code></td>
+</tr>
+<tr>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">ロ　工場立地法第六条第一項（届出）に規定する特定工場における環境施設の用に供さ<wbr>れている土地等　同項に規定する当該特定工場の設置の場所を管轄する市町村長</span></code></td>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">ロ　工場立地法第六条第一項（届出）に規定する特定工場における環境施設の用に供さ<wbr>れている土地等　同項に規定する当該特定工場の設置の場所を管轄する市町村長</span></code></td>
+</tr>
+<tr>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第二第二号イに掲げる者の同号イに規定する製造所、貯蔵所及び取扱所の用<wbr>に供されている土地等のうち同号に掲げるもの　消防法第十一条第一項（危険物施設の<wbr>設置の許可）の許可に係る都道府県知事又は市町村長</span></code></td>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">二　法別表第二第二号イに掲げる者の同号イに規定する製造所、貯蔵所及び取扱所の用<wbr>に供されている土地等のうち同号に掲げるもの　消防法第十一条第一項（危険物施設の<wbr>設置の許可）の許可に係る都道府県知事又は市町村長</span></code></td>
+</tr>
+<tr>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">三　法別表第二第二号ロに掲げる者の同号ロに規定する施設の用に供されている土地等<wbr>のうち同号に掲げるもの　鉱山保安法（昭和二十四年法律第七十号）第十三条第一項（<wbr>工事計画）の届出に係る産業保安監督部長</span></code></td>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">三　法別表第二第二号ロに掲げる者の同号ロに規定する施設の用に供されている土地等<wbr>のうち同号に掲げるもの　鉱山保安法（昭和二十四年法律第七十号）第十三条第一項（<wbr>工事計画）の届出に係る産業保安監督部長</span></code></td>
+</tr>
+<tr>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">四　法別表第二第二号ハに掲げる者の同号ハに規定する製造施設又は火薬庫の用に供さ<wbr>れている土地等のうち同号に掲げるもの　火薬類取締法第三条（製造の許可）、第十条<wbr>第一項（製造施設等の変更）又は第十二条第一項（火薬庫）の許可に係る経済産業大臣<wbr>又は都道府県知事</span></code></td>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">四　法別表第二第二号ハに掲げる者の同号ハに規定する製造施設又は火薬庫の用に供さ<wbr>れている土地等のうち同号に掲げるもの　火薬類取締法第三条（製造の許可）、第十条<wbr>第一項（製造施設等の変更）又は第十二条第一項（火薬庫）の許可に係る経済産業大臣<wbr>又は都道府県知事</span></code></td>
+</tr>
+<tr>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">五　法別表第二第二号ニに掲げる者の同号ニに規定する施設の用に供されている土地等<wbr>のうち同号に掲げるもの　高圧ガス保安法第五条第一項（製造の許可等）、第十四条第<wbr>一項（製造のための施設等の変更）、第十六条第一項若しくは第十九条第一項（貯蔵所<wbr>）の許可又は同法第五条第二項、第十四条第四項、第十七条の二第一項（貯蔵所）、第<wbr>十九条第四項、第二十四条の二第一項若しくは第二十四条の四第一項（消費）の届出に<wbr>係る都道府県知事</span></code></td>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">五　法別表第二第二号ニに掲げる者の同号ニに規定する施設の用に供されている土地等<wbr>のうち同号に掲げるもの　高圧ガス保安法第五条第一項（製造の許可等）、第十四条第<wbr>一項（製造のための施設等の変更）、第十六条第一項若しくは第十九条第一項（貯蔵所<wbr>）の許可又は同法第五条第二項、第十四条第四項、第十七条の二第一項（貯蔵所）、第<wbr>十九条第四項、第二十四条の二第一項若しくは第二十四条の四第一項（消費）の届出に<wbr>係る都道府県知事</span></code></td>
+</tr>
+<tr>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">六　法別表第二第二号ホに掲げる者の同号ホに規定する貯蔵施設又は特定供給設備の用<wbr>に供されている土地等のうち同号に掲げるもの　液化石油ガスの保安の確保及び取引の<wbr>適正化に関する法律（昭和四十二年法律第百四十九号）第三条第一項（事業の登録）の<wbr>登録、同法第八条（販売所等の変更の届出）の届出又は同法第三十六条第一項（貯蔵施<wbr>設等の設置の許可）若しくは第三十七条の二第一項（変更の許可）の許可に係る経済産<wbr>業大臣又は都道府県知事</span></code></td>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">六　法別表第二第二号ホに掲げる者の同号ホに規定する貯蔵施設又は特定供給設備の用<wbr>に供されている土地等のうち同号に掲げるもの　液化石油ガスの保安の確保及び取引の<wbr>適正化に関する法律（昭和四十二年法律第百四十九号）第三条第一項（事業の登録）の<wbr>登録、同法第八条（販売所等の変更の届出）の届出又は同法第三十六条第一項（貯蔵施<wbr>設等の設置の許可）若しくは第三十七条の二第一項（変更の許可）の許可に係る経済産<wbr>業大臣又は都道府県知事</span></code></td>
+</tr>
+<tr>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">七　法別表第二第二号ヘに掲げる者の同号ヘに規定する通路の用に供されている土地等<wbr>のうち同号に掲げるもの　石油コンビナート等災害防止法（昭和五十年法律第八十四号<wbr>）第五条第一項（新設の届出等）又は第七条第一項（変更の届出等）の届出に係る主務<wbr>大臣</span></code></td>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">七　法別表第二第二号ヘに掲げる者の同号ヘに規定する通路の用に供されている土地等<wbr>のうち同号に掲げるもの　石油コンビナート等災害防止法（昭和五十年法律第八十四号<wbr>）第五条第一項（新設の届出等）又は第七条第一項（変更の届出等）の届出に係る主務<wbr>大臣</span></code></td>
+</tr>
+<tr>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">八　法別表第二第三号に掲げる土地等　核原料物質、核燃料物質及び原子炉の規制に関<wbr>する法律第十三条第一項、第二十三条第一項、第四十三条の三の五第一項、第五十一条<wbr>の二第一項、第五十二条第一項若しくは第六十一条の三第一項の許可、同法第四十四条<wbr>第一項の指定又は同法第五十七条の七第一項の届出に係る原子力規制委員会</span></code></td>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">八　法別表第二第三号に掲げる土地等　核原料物質、核燃料物質及び原子炉の規制に関<wbr>する法律第十三条第一項、第二十三条第一項、第四十三条の三の五第一項、第五十一条<wbr>の二第一項、第五十二条第一項若しくは第六十一条の三第一項の許可、同法第四十四条<wbr>第一項の指定又は同法第五十七条の七第一項の届出に係る原子力規制委員会</span></code></td>
+</tr>
+<tr>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">九　法別表第二第四号に掲げる土地等　揮発油等の品質の確保等に関する法律（昭和五<wbr>十一年法律第八十八号）第三条（登録）の登録に係る経済産業大臣</span></code></td>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">九　法別表第二第四号に掲げる土地等　揮発油等の品質の確保等に関する法律（昭和五<wbr>十一年法律第八十八号）第三条（登録）の登録に係る経済産業大臣</span></code></td>
+</tr>
+<tr>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">十　法別表第二第五号に掲げる土地等　次のイ又はロに掲げる文化財の区分に応じそれ<wbr>ぞれイ又はロに定める者</span></code></td>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">十　法別表第二第五号に掲げる土地等　次のイ又はロに掲げる文化財の区分に応じそれ<wbr>ぞれイ又はロに定める者</span></code></td>
+</tr>
+<tr>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">イ　令第十七条第三項第一号に掲げる文化財　同号の登録に係る文部科学大臣</span></code></td>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">イ　令第十七条第三項第一号に掲げる文化財　同号の登録に係る文部科学大臣</span></code></td>
+</tr>
+<tr>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">ロ　令第十七条第三項第二号に掲げる文化財　同号の規定により指定された当該文化財<wbr>の存する都道府県の教育委員会（当該都道府県が文化財保護法第五十三条の八第一項（<wbr>所有者等への指導又は助言）に規定する特定地方公共団体である場合にあっては、当該<wbr>都道府県の知事）</span></code></td>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">ロ　令第十七条第三項第二号に掲げる文化財　同号の規定により指定された当該文化財<wbr>の存する都道府県の教育委員会（当該都道府県が文化財保護法第五十三条の八第一項（<wbr>所有者等への指導又は助言）に規定する特定地方公共団体である場合にあっては、当該<wbr>都道府県の知事）</span></code></td>
+</tr>
+<tr>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">十一　法別表第二第六号に掲げる土地等　次のイ又はロに掲げる施設の区分に応じそれ<wbr>ぞれイ又はロに定める者</span></code></td>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">十一　法別表第二第六号に掲げる土地等　次のイ又はロに掲げる施設の区分に応じそれ<wbr>ぞれイ又はロに定める者</span></code></td>
+</tr>
+<tr>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">イ　廃棄物の処理及び清掃に関する法律（昭和四十五年法律第百三十七号）第八条第一<wbr>項（一般廃棄物処理施設）若しくは第九条第一項（変更の許可等）の許可に係る同法第<wbr>八条第一項に規定する一般廃棄物処理施設又は同法第十五条第一項（産業廃棄物処理施<wbr>設）若しくは第十五条の二の六第一項（変更の許可等）の許可に係る同法第十五条第一<wbr>項に規定する産業廃棄物処理施設　これらの許可に係る都道府県知事（廃棄物の処理及<wbr>び清掃に関する法律施行令（昭和四十六年政令第三百号）第二十七条第一項（政令で定<wbr>める市の長による事務の処理）の規定により当該許可に係る事務を同項に規定する指定<wbr>都市の長等が行う場合にあっては、当該指定都市の長等）</span></code></td>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">イ　廃棄物の処理及び清掃に関する法律（昭和四十五年法律第百三十七号）第八条第一<wbr>項（一般廃棄物処理施設）若しくは第九条第一項（変更の許可等）の許可に係る同法第<wbr>八条第一項に規定する一般廃棄物処理施設又は同法第十五条第一項（産業廃棄物処理施<wbr>設）若しくは第十五条の二の六第一項（変更の許可等）の許可に係る同法第十五条第一<wbr>項に規定する産業廃棄物処理施設　これらの許可に係る都道府県知事（廃棄物の処理及<wbr>び清掃に関する法律施行令（昭和四十六年政令第三百号）第二十七条第一項（政令で定<wbr>める市の長による事務の処理）の規定により当該許可に係る事務を同項に規定する指定<wbr>都市の長等が行う場合にあっては、当該指定都市の長等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">ロ　廃棄物の処理及び清掃に関する法律第九条の八第一項（再生利用に係る特例）の認<wbr>定に係る同法第八条第一項に規定する一般廃棄物処理施設（同法第九条の八第六項の変<wbr>更の認定に係るものを含む。）又は同法第十五条の四の二第一項（再生利用に係る特例<wbr>）の認定に係る同法第十五条第一項に規定する産業廃棄物処理施設（同法第十五条の四<wbr>の二第三項において読み替えて準用する同法第九条の八第六項の変更の認定に係るもの<wbr>を含む。）　これらの認定に係る環境大臣</span></code></td>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">ロ　廃棄物の処理及び清掃に関する法律第九条の八第一項（再生利用に係る特例）の認<wbr>定に係る同法第八条第一項に規定する一般廃棄物処理施設（同法第九条の八第六項の変<wbr>更の認定に係るものを含む。）又は同法第十五条の四の二第一項（再生利用に係る特例<wbr>）の認定に係る同法第十五条第一項に規定する産業廃棄物処理施設（同法第十五条の四<wbr>の二第三項において読み替えて準用する同法第九条の八第六項の変更の認定に係るもの<wbr>を含む。）　これらの認定に係る環境大臣</span></code></td>
+</tr>
+<tr>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">十二　法別表第二第七号に掲げる土地等　石油の備蓄の確保等に関する法律（昭和五十<wbr>年法律第九十六号）第五条第一項（石油基準備蓄量等）又は第十条第一項（石油ガス基<wbr>準備蓄量等）の届出に係る経済産業大臣</span></code></td>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">十二　法別表第二第七号に掲げる土地等　石油の備蓄の確保等に関する法律（昭和五十<wbr>年法律第九十六号）第五条第一項（石油基準備蓄量等）又は第十条第一項（石油ガス基<wbr>準備蓄量等）の届出に係る経済産業大臣</span></code></td>
+</tr>
+<tr>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">十三　法別表第二第八号に掲げる土地等　道路運送車両法（昭和二十六年法律第百八十<wbr>五号）第九十四条の二第一項（指定自動車整備事業の指定等）の指定に係る地方運輸局<wbr>長</span></code></td>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">十三　法別表第二第八号に掲げる土地等　道路運送車両法（昭和二十六年法律第百八十<wbr>五号）第九十四条の二第一項（指定自動車整備事業の指定等）の指定に係る地方運輸局<wbr>長</span></code></td>
+</tr>
+<tr>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">十四　法第十七条第二項に規定する土地等　当該土地等に係る同項第一号に規定する協<wbr>同組合等</span></code></td>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">十四　法第十七条第二項に規定する土地等　当該土地等に係る同項第一号に規定する協<wbr>同組合等 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">（申告書等の記載事項）</span></code></td>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">（申告書等の記載事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第二十五条第一項第三号に規定する財務省令で定める事項は、同項の規定に<wbr>よる申告書を提出する者の次の各号に掲げる場合の区分に応じ当該各号に定める事項と<wbr>する。</span></code></td>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第二十五条第一項第三号に規定する財務省令で定める事項は、同項の規定に<wbr>よる申告書を提出する者の次の各号に掲げる場合の区分に応じ当該各号に定める事項と<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">一　当該申告書を提出する者が個人である場合　次に掲げる事項</span></code></td>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">一　当該申告書を提出する者が個人である場合　次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">イ　当該個人の氏名、個人番号（行政手続における特定の個人を識別するための番号の<wbr>利用等に関する法律（平成二十五年法律第二十七号）第二条第五項（定義）に規定する<wbr>個人番号をいう。以下同じ。）（個人番号を有しない者にあっては、氏名）及び納税地<wbr>並びにその納税地と住所地（国内に住所を有しない場合には、居所地。以下同じ。）と<wbr>が異なる場合には、その住所地</span></code></td>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">イ　当該個人の氏名、個人番号（行政手続における特定の個人を識別するための番号の<wbr>利用等に関する法律（平成二十五年法律第二十七号）第二条第五項（定義）に規定する<wbr>個人番号をいう。以下同じ。）（個人番号を有しない者にあっては、氏名）及び納税地<wbr>並びにその納税地と住所地（国内に住所を有しない場合には、居所地。以下同じ。）と<wbr>が異なる場合には、その住所地</span></code></td>
+</tr>
+<tr>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第二十五条第二項の規定に該当して当該申告書を提出する場合には、同項に規定<wbr>する死亡をした者の氏名及びその死亡の時における納税地並びにその納税地と住所地と<wbr>が異なる場合には、その住所地</span></code></td>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第二十五条第二項の規定に該当して当該申告書を提出する場合には、同項に規定<wbr>する死亡をした者の氏名及びその死亡の時における納税地並びにその納税地と住所地と<wbr>が異なる場合には、その住所地</span></code></td>
+</tr>
+<tr>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">ハ　法第十七条、租税特別措置法（昭和三十二年法律第二十六号）第七十一条の七から<wbr>第七十一条の十六まで（優良な住宅地の造成事業等に係る供給予定地等についての課税<wbr>価格の計算の特例等）及び塩事業法（平成八年法律第三十九号）附則第四十二条（地価<wbr>税の課税の特例）の規定の適用に関する事項</span></code></td>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">ハ　法第十七条、租税特別措置法（昭和三十二年法律第二十六号）第七十一条の七から<wbr>第七十一条の十六まで（優良な住宅地の造成事業等に係る供給予定地等についての課税<wbr>価格の計算の特例等）及び塩事業法（平成八年法律第三十九号）附則第四十二条（地価<wbr>税の課税の特例）の規定の適用に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">ニ　基礎控除に関する事項</span></code></td>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">ニ　基礎控除に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">ホ　当該申告書の提出期限までに納付すべき地価税の額</span></code></td>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">ホ　当該申告書の提出期限までに納付すべき地価税の額</span></code></td>
+</tr>
+<tr>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">ヘ　その他参考となるべき事項</span></code></td>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">ヘ　その他参考となるべき事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">二　当該申告書を提出する者が法人（人格のない社団等を含む。以下同じ。）である場<wbr>合　次に掲げる事項</span></code></td>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">二　当該申告書を提出する者が法人（人格のない社団等を含む。以下同じ。）である場<wbr>合　次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">イ　当該法人の名称、法人番号（行政手続における特定の個人を識別するための番号の<wbr>利用等に関する法律第二条第十五項に規定する法人番号をいう。以下同じ。）及び納税<wbr>地並びにその納税地と本店又は主たる事務所の所在地とが異なる場合には、その本店又<wbr>は主たる事務所の所在地</span></code></td>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">イ　当該法人の名称、法人番号（行政手続における特定の個人を識別するための番号の<wbr>利用等に関する法律第二条第十五項に規定する法人番号をいう。以下同じ。）及び納税<wbr>地並びにその納税地と本店又は主たる事務所の所在地とが異なる場合には、その本店又<wbr>は主たる事務所の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第二十五条第三項の規定に該当して当該申告書を提出する場合には、同項に規定<wbr>する合併により消滅した法人の名称及びその合併の直前における納税地並びにその納税<wbr>地と本店又は主たる事務所の所在地とが異なる場合には、その本店又は主たる事務所の<wbr>所在地</span></code></td>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第二十五条第三項の規定に該当して当該申告書を提出する場合には、同項に規定<wbr>する合併により消滅した法人の名称及びその合併の直前における納税地並びにその納税<wbr>地と本店又は主たる事務所の所在地とが異なる場合には、その本店又は主たる事務所の<wbr>所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">ハ　代表者（人格のない社団等で代表者の定めがなく、管理人の定めがあるものについ<wbr>ては、管理人。以下同じ。）の氏名</span></code></td>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">ハ　代表者（人格のない社団等で代表者の定めがなく、管理人の定めがあるものについ<wbr>ては、管理人。以下同じ。）の氏名</span></code></td>
+</tr>
+<tr>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該法人の資本金の額又は出資金の額</span></code></td>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該法人の資本金の額又は出資金の額</span></code></td>
+</tr>
+<tr>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">ホ　法第二十五条第四項の規定に該当して当該申告書を提出する場合には、清算人の氏<wbr>名及び住所（国内に住所を有しない場合には、居所。以下同じ。）並びに残余財産が確<wbr>定した年月日（同項に規定する確定した日の翌日から一月を経過した日の前日までに残<wbr>余財産の最後の分配が行われる場合には、これらの事項のほか、その分配が行われる日<wbr>）</span></code></td>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">ホ　法第二十五条第四項の規定に該当して当該申告書を提出する場合には、清算人の氏<wbr>名及び住所（国内に住所を有しない場合には、居所。以下同じ。）並びに残余財産が確<wbr>定した年月日（同項に規定する確定した日の翌日から一月を経過した日の前日までに残<wbr>余財産の最後の分配が行われる場合には、これらの事項のほか、その分配が行われる日<wbr>）</span></code></td>
+</tr>
+<tr>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">ヘ　前号ハからヘまでに掲げる事項</span></code></td>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">ヘ　前号ハからヘまでに掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">２　令第二十一条第一項に規定する財務省令で定める事項は、次に掲げる事項とする。<wbr>ただし、同条第二項ただし書の方法により同項に規定する申告書を提出する場合におけ<wbr>る当該申告書には、第二号に掲げる事項のうち同項ただし書の他の相続人の個人番号の<wbr>記載は、要しない。</span></code></td>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">２　令第二十一条第一項に規定する財務省令で定める事項は、次に掲げる事項とする。<wbr>ただし、同条第二項ただし書の方法により同項に規定する申告書を提出する場合におけ<wbr>る当該申告書には、第二号に掲げる事項のうち同項ただし書の他の相続人の個人番号の<wbr>記載は、要しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">一　法第二十五条第二項の相続の開始があった日及びその相続の開始があったことを知<wbr>った日</span></code></td>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">一　法第二十五条第二項の相続の開始があった日及びその相続の開始があったことを知<wbr>った日</span></code></td>
+</tr>
+<tr>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">二　各相続人（包括受遺者を含む。以下この項において同じ。）の氏名、住所及び個人<wbr>番号（個人番号を有しない者にあっては、氏名及び住所）、被相続人との続柄、民法（<wbr>明治二十九年法律第八十九号）第九百条から第九百二条まで（法定相続分等）の規定に<wbr>よるその相続分又は包括遺贈の割合並びに相続又は遺贈によって得た財産の価額</span></code></td>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">二　各相続人（包括受遺者を含む。以下この項において同じ。）の氏名、住所及び個人<wbr>番号（個人番号を有しない者にあっては、氏名及び住所）、被相続人との続柄、民法（<wbr>明治二十九年法律第八十九号）第九百条から第九百二条まで（法定相続分等）の規定に<wbr>よるその相続分又は包括遺贈の割合並びに相続又は遺贈によって得た財産の価額</span></code></td>
+</tr>
+<tr>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">三　相続人が限定承認をした場合には、その旨</span></code></td>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">三　相続人が限定承認をした場合には、その旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">四　相続人が二人以上ある場合には、法第二十五条第一項第二号に掲げる地価税の額を<wbr>第二号の各相続人の相続分又は包括遺贈の割合によりあん分して計算した額に相当する<wbr>地価税の額</span></code></td>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">四　相続人が二人以上ある場合には、法第二十五条第一項第二号に掲げる地価税の額を<wbr>第二号の各相続人の相続分又は包括遺贈の割合によりあん分して計算した額に相当する<wbr>地価税の額</span></code></td>
+</tr>
+<tr>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">３　令第二十一条第四項に規定する財務省令で定める事項は、次の各号に掲げる事項と<wbr>する。</span></code></td>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">３　令第二十一条第四項に規定する財務省令で定める事項は、次の各号に掲げる事項と<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">一　法第二十五条第三項に規定する合併法人の名称、法人番号及び納税地並びにその納<wbr>税地と本店又は主たる事務所の所在地とが異なる場合には、その本店又は主たる事務所<wbr>の所在地</span></code></td>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">一　法第二十五条第三項に規定する合併法人の名称、法人番号及び納税地並びにその納<wbr>税地と本店又は主たる事務所の所在地とが異なる場合には、その本店又は主たる事務所<wbr>の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">二　代表者の氏名</span></code></td>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">二　代表者の氏名</span></code></td>
+</tr>
+<tr>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">三　その合併の年月日</span></code></td>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">三　その合併の年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">４　法第二十五条第一項の規定による申告書を提出する者は、次に掲げる事項を記載し<wbr>た書類を当該申告書に添付しなければならない。</span></code></td>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">４　法第二十五条第一項の規定による申告書を提出する者は、次に掲げる事項を記載し<wbr>た書類を当該申告書に添付しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">一　その年の課税時期において有する土地等の地目、面積、所在地及び法第十六条に規<wbr>定する課税価格に算入すべき価額の明細</span></code></td>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">一　その年の課税時期において有する土地等の地目、面積、所在地及び法第十六条に規<wbr>定する課税価格に算入すべき価額の明細</span></code></td>
+</tr>
+<tr>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">二　その年の課税時期において有する土地等が法第六条から第八条まで若しくは附則第<wbr>三条第二項の規定若しくは租税特別措置法第七十一条の三から第七十一条の六まで（建<wbr>物が国の施設等として使用されている場合の土地等の非課税等）の規定により地価税が<wbr>非課税とされるもの（当該土地等の部分がこれらの規定により地価税が非課税とされる<wbr>ものであるときは、当該土地等の部分。以下この号、次項第三号及び第十条第一項第一<wbr>号において「非課税土地等」という。）又は法第十七条の規定、租税特別措置法第七十<wbr>一条の七から第七十一条の十六までの規定若しくは塩事業法附則第四十二条の規定の適<wbr>用があるもの（当該土地等の部分がこれらの規定の適用があるものであるときは、当該<wbr>土地等の部分。以下この号、次項第三号及び第十条第一項第一号において「課税価格特<wbr>例土地等」という。）であるときは、その旨及び当該非課税土地等又は課税価格特例土<wbr>地等の面積</span></code></td>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">二　その年の課税時期において有する土地等が法第六条から第八条まで若しくは附則第<wbr>三条第二項の規定若しくは租税特別措置法第七十一条の三から第七十一条の六まで（建<wbr>物が国の施設等として使用されている場合の土地等の非課税等）の規定により地価税が<wbr>非課税とされるもの（当該土地等の部分がこれらの規定により地価税が非課税とされる<wbr>ものであるときは、当該土地等の部分。以下この号、次項第三号及び第十条第一項第一<wbr>号において「非課税土地等」という。）又は法第十七条の規定、租税特別措置法第七十<wbr>一条の七から第七十一条の十六までの規定若しくは塩事業法附則第四十二条の規定の適<wbr>用があるもの（当該土地等の部分がこれらの規定の適用があるものであるときは、当該<wbr>土地等の部分。以下この号、次項第三号及び第十条第一項第一号において「課税価格特<wbr>例土地等」という。）であるときは、その旨及び当該非課税土地等又は課税価格特例土<wbr>地等の面積</span></code></td>
+</tr>
+<tr>
+<td class="ln">280</td><td class="sf3b2"><code><span class="sf3b2">三　その年の課税時期において有する土地等が借地権等である場合には、その旨並びに<wbr>当該土地を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地並<wbr>びに当該土地等が借地権等が設定されているものである場合には、その旨並びに当該借<wbr>地権等を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地</span></code></td>
+<td class="ln">280</td><td class="sf3b2"><code><span class="sf3b2">三　その年の課税時期において有する土地等が借地権等である場合には、その旨並びに<wbr>当該土地を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地並<wbr>びに当該土地等が借地権等が設定されているものである場合には、その旨並びに当該借<wbr>地権等を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">四　その他参考となるべき事項</span></code></td>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">四　その他参考となるべき事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">５　その年の課税時期に係る地価税の法第二十五条第一項の規定による申告書に前項各<wbr>号に掲げる事項を記載した同条第五項の書類を添付して納税地を所轄する税務署長に提<wbr>出した者は、その年の翌年の課税時期から当該課税時期以後四年を経過する日までの期<wbr>間内に含まれる課税時期に係る当該申告書に添付すべき同項の書類については、その年<wbr>の課税時期及び当該期間内に含まれる課税時期に係る当該申告書及び当該書類を連続し<wbr>て提出する場合に限り、前項各号に掲げる事項に代えて次に掲げる事項を記載すること<wbr>ができる。</span></code></td>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">５　その年の課税時期に係る地価税の法第二十五条第一項の規定による申告書に前項各<wbr>号に掲げる事項を記載した同条第五項の書類を添付して納税地を所轄する税務署長に提<wbr>出した者は、その年の翌年の課税時期から当該課税時期以後四年を経過する日までの期<wbr>間内に含まれる課税時期に係る当該申告書に添付すべき同項の書類については、その年<wbr>の課税時期及び当該期間内に含まれる課税時期に係る当該申告書及び当該書類を連続し<wbr>て提出する場合に限り、前項各号に掲げる事項に代えて次に掲げる事項を記載すること<wbr>ができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">一　当該課税時期において有する土地等で当該課税時期の前年の課税時期後一年内に取<wbr>得したものの地目、面積、所在地及び法第十六条に規定する課税価格に算入すべき価額<wbr>の明細</span></code></td>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">一　当該課税時期において有する土地等で当該課税時期の前年の課税時期後一年内に取<wbr>得したものの地目、面積、所在地及び法第十六条に規定する課税価格に算入すべき価額<wbr>の明細</span></code></td>
+</tr>
+<tr>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">二　当該課税時期の前年の課税時期において有していた土地等で当該課税時期の前年の<wbr>課税時期後一年内に譲渡したものの地目、面積及び所在地の明細</span></code></td>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">二　当該課税時期の前年の課税時期において有していた土地等で当該課税時期の前年の<wbr>課税時期後一年内に譲渡したものの地目、面積及び所在地の明細</span></code></td>
+</tr>
+<tr>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">三　第一号の土地等が非課税土地等又は課税価格特例土地等であるときは、その旨及び<wbr>当該非課税土地等又は課税価格特例土地等の面積</span></code></td>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">三　第一号の土地等が非課税土地等又は課税価格特例土地等であるときは、その旨及び<wbr>当該非課税土地等又は課税価格特例土地等の面積</span></code></td>
+</tr>
+<tr>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">四　第一号の土地等が借地権等である場合には、その旨並びに当該土地を有する者の氏<wbr>名又は名称及び住所又は本店若しくは主たる事務所の所在地並びに当該土地等が借地権<wbr>等が設定されているものである場合には、その旨並びに当該借地権等を有する者の氏名<wbr>又は名称及び住所又は本店若しくは主たる事務所の所在地</span></code></td>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">四　第一号の土地等が借地権等である場合には、その旨並びに当該土地を有する者の氏<wbr>名又は名称及び住所又は本店若しくは主たる事務所の所在地並びに当該土地等が借地権<wbr>等が設定されているものである場合には、その旨並びに当該借地権等を有する者の氏名<wbr>又は名称及び住所又は本店若しくは主たる事務所の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">五　土地等の価額の算定の基礎となる事項の異動その他参考となるべき事項</span></code></td>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">五　土地等の価額の算定の基礎となる事項の異動その他参考となるべき事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">（相続等により土地等を取得した場合の申告書の記載事項）</span></code></td>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">（相続等により土地等を取得した場合の申告書の記載事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第二十五条第一項の規定による申告書で法第二十六条の規定に係るものには<wbr>、同項各号に掲げる事項のほか、次に掲げる事項を記載しなければならない。</span></code></td>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第二十五条第一項の規定による申告書で法第二十六条の規定に係るものには<wbr>、同項各号に掲げる事項のほか、次に掲げる事項を記載しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">一　法第二十六条に規定する相続又は遺贈に係る被相続人又は遺贈をした者（次号にお<wbr>いて「被相続人等」という。）の死亡の年月日及び当該相続の開始があったことを知っ<wbr>た年月日並びに同条第一項各号に掲げる事実が生じたことを知った年月日</span></code></td>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">一　法第二十六条に規定する相続又は遺贈に係る被相続人又は遺贈をした者（次号にお<wbr>いて「被相続人等」という。）の死亡の年月日及び当該相続の開始があったことを知っ<wbr>た年月日並びに同条第一項各号に掲げる事実が生じたことを知った年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">二　被相続人等の氏名及びその死亡した時における住所</span></code></td>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">二　被相続人等の氏名及びその死亡した時における住所 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">（修正申告書の記載事項）</span></code></td>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">（修正申告書の記載事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">293</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第八条　前条の規定は、</span><span style="color: #000000; background-color: #efcb05; ">第二十七条第一項又は第二項の規定による修正申告書について<wbr>準用する。この場合において、前条中「同項各号に掲げる」とあるのは「国税通則法（<wbr>昭和三十七年法律第六十六号）第十九条第四項（修正申告）に規定する」と、同条第一<wbr>号中「法第二十六条に規定する」とあるのは「法第二十七条第一項又は第二項の」と、<wbr>「同条第一項各号」とあるのは「法第二十六条第一項各号」と読み替えるものとする。<wbr></span></code></td>
+<td class="ln">293</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第八条　前条の規定は、</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">第二十七条第一項又は第二項の規定による修正申告書につい<wbr>て準用する。この場合において、前条中「同項各号に掲げる」とあるのは「国税通則法<wbr>（昭和三十七年法律第六十六号）第十九条第四項（修正申告）に規定する」と、同条第<wbr>一号中「法第二十六条に規定する」とあるのは「法第二十七条第一項又は第二項の」と<wbr>、「同条第一項各号」とあるのは「法第二十六条第一項各号」と読み替えるものとする<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">（更正の請求書の記載事項）</span></code></td>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">（更正の請求書の記載事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">第九条　法第三十条の規定により行う更正の請求に係る国税通則法第二十三条第三項（<wbr>更正の請求）に規定する更正請求書には、同項に規定する事項のほか、法第二十六条第<wbr>一項各号に掲げる事実が生じたことを知った年月日を記載しなければならない。</span></code></td>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">第九条　法第三十条の規定により行う更正の請求に係る国税通則法第二十三条第三項（<wbr>更正の請求）に規定する更正請求書には、同項に規定する事項のほか、法第二十六条第<wbr>一項各号に掲げる事実が生じたことを知った年月日を記載しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">296</td><td class="sf3b2"><code><span class="sf3b2">（帳簿の記載事項及びその保存）</span></code></td>
+<td class="ln">296</td><td class="sf3b2"><code><span class="sf3b2">（帳簿の記載事項及びその保存）</span></code></td>
+</tr>
+<tr>
+<td class="ln">297</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第三十三条に規定する財務省令で定める事項は、次に掲げる事項とする。</span></code></td>
+<td class="ln">297</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第三十三条に規定する財務省令で定める事項は、次に掲げる事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">298</td><td class="sf3b2"><code><span class="sf3b2">一　その年の課税時期において有する土地等が非課税土地等又は課税価格特例土地等で<wbr>ある場合には、その旨及び当該非課税土地等又は課税価格特例土地等の面積</span></code></td>
+<td class="ln">298</td><td class="sf3b2"><code><span class="sf3b2">一　その年の課税時期において有する土地等が非課税土地等又は課税価格特例土地等で<wbr>ある場合には、その旨及び当該非課税土地等又は課税価格特例土地等の面積</span></code></td>
+</tr>
+<tr>
+<td class="ln">299</td><td class="sf3b2"><code><span class="sf3b2">二　その年の課税時期において有する土地等が借地権等である場合には、その旨並びに<wbr>当該土地を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地並<wbr>びに当該土地等が借地権等が設定されているものである場合には、その旨並びに当該借<wbr>地権等を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地</span></code></td>
+<td class="ln">299</td><td class="sf3b2"><code><span class="sf3b2">二　その年の課税時期において有する土地等が借地権等である場合には、その旨並びに<wbr>当該土地を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地並<wbr>びに当該土地等が借地権等が設定されているものである場合には、その旨並びに当該借<wbr>地権等を有する者の氏名又は名称及び住所又は本店若しくは主たる事務所の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">300</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十三条の規定の適用を受ける者は、同条の規定により備え付ける帳簿並びに<wbr>その年においてその有する土地等の異動及び評価に関して作成し又は受領した書類を、<wbr>当該帳簿及び書類の次の各号に掲げる区分に応じ当該各号に定める期間、その者の納税<wbr>地に保存しなければならない。この場合においては、当該書類はこれを整理して保存し<wbr>なければならないものとする。</span></code></td>
+<td class="ln">300</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十三条の規定の適用を受ける者は、同条の規定により備え付ける帳簿並びに<wbr>その年においてその有する土地等の異動及び評価に関して作成し又は受領した書類を、<wbr>当該帳簿及び書類の次の各号に掲げる区分に応じ当該各号に定める期間、その者の納税<wbr>地に保存しなければならない。この場合においては、当該書類はこれを整理して保存し<wbr>なければならないものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">301</td><td class="sf3b2"><code><span class="sf3b2">一　当該帳簿　その閉鎖の日の属する年の課税時期に係る法第二十五条第一項の規定に<wbr>よる申告書の提出期限（法第十七条、租税特別措置法第七十一条の七から第七十一条の<wbr>十六まで（優良な住宅地の造成事業等に係る供給予定地等についての課税価格の計算の<wbr>特例等）及び塩事業法附則第四十二条（地価税の課税の特例）の規定を適用しないで計<wbr>算した課税価格に相当する金額が基礎控除の額に相当する金額を超えることとなる者並<wbr>びに令第二十三条に規定する公益法人等にあっては、当該申告書の提出期限に相当する<wbr>日。次号において「申告書の提出期限」という。）の翌日から七年間</span></code></td>
+<td class="ln">301</td><td class="sf3b2"><code><span class="sf3b2">一　当該帳簿　その閉鎖の日の属する年の課税時期に係る法第二十五条第一項の規定に<wbr>よる申告書の提出期限（法第十七条、租税特別措置法第七十一条の七から第七十一条の<wbr>十六まで（優良な住宅地の造成事業等に係る供給予定地等についての課税価格の計算の<wbr>特例等）及び塩事業法附則第四十二条（地価税の課税の特例）の規定を適用しないで計<wbr>算した課税価格に相当する金額が基礎控除の額に相当する金額を超えることとなる者並<wbr>びに令第二十三条に規定する公益法人等にあっては、当該申告書の提出期限に相当する<wbr>日。次号において「申告書の提出期限」という。）の翌日から七年間</span></code></td>
+</tr>
+<tr>
+<td class="ln">302</td><td class="sf3b2"><code><span class="sf3b2">二　当該書類　その作成又は受領の日の属する年の課税時期に係る申告書の提出期限の<wbr>翌日から五年間</span></code></td>
+<td class="ln">302</td><td class="sf3b2"><code><span class="sf3b2">二　当該書類　その作成又は受領の日の属する年の課税時期に係る申告書の提出期限の<wbr>翌日から五年間</span></code></td>
+</tr>
+<tr>
+<td class="ln">303</td><td class="sf3b2"><code><span class="sf3b2">３　前項第一号に定める期間の起算の日から五年を経過した日以後の期間における同項<wbr>の規定による保存は、財務大臣の定める方法によることができる。</span></code></td>
+<td class="ln">303</td><td class="sf3b2"><code><span class="sf3b2">３　前項第一号に定める期間の起算の日から五年を経過した日以後の期間における同項<wbr>の規定による保存は、財務大臣の定める方法によることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">304</td><td class="sf3b2"><code><span class="sf3b2">４　財務大臣は、前項の定めをしたときは、これを告示する。</span></code></td>
+<td class="ln">304</td><td class="sf3b2"><code><span class="sf3b2">４　財務大臣は、前項の定めをしたときは、これを告示する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">305</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">305</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">306</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">306</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">307</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成四年一月一日から施行する。ただし、附則第三条の規定は、<wbr>公布の日から施行する。</span></code></td>
+<td class="ln">307</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成四年一月一日から施行する。ただし、附則第三条の規定は、<wbr>公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">308</td><td class="sf3b2"><code><span class="sf3b2">（平成四年の課税時期に係る地価税の申告書の公示に関する経過措置）</span></code></td>
+<td class="ln">308</td><td class="sf3b2"><code><span class="sf3b2">（平成四年の課税時期に係る地価税の申告書の公示に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">309</td><td class="sf3b2"><code><span class="sf3b2">第二条　平成四年の課税時期に係る法第二十五条第一項の規定による申告書に係る法第<wbr>三十四条の規定による公示については、第十一条中「一月十六日から同月三十一日まで<wbr>」とあるのは、「四月一日から同月十五日まで」とする。</span></code></td>
+<td class="ln">309</td><td class="sf3b2"><code><span class="sf3b2">第二条　平成四年の課税時期に係る法第二十五条第一項の規定による申告書に係る法第<wbr>三十四条の規定による公示については、第十一条中「一月十六日から同月三十一日まで<wbr>」とあるのは、「四月一日から同月十五日まで」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">310</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年六月二六日大蔵省令第四一号）</span></code></td>
+<td class="ln">310</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年六月二六日大蔵省令第四一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">311</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成四年七月四日から施行する。</span></code></td>
+<td class="ln">311</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成四年七月四日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">312</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年三月三一日大蔵省令第四〇号）</span></code></td>
+<td class="ln">312</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年三月三一日大蔵省令第四〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">313</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成六年四月一日から施行する。</span></code></td>
+<td class="ln">313</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成六年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">314</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の地価税法施行規則第三条第七項並びに第六条第一項及び第四項の規定は、<wbr>平成六年以後の各年の課税時期において個人又は法人が有する土地等に係る地価税につ<wbr>いて適用し、平成五年以前の各年の課税時期において個人又は法人が有する土地等につ<wbr>いては、なお従前の例による。</span></code></td>
+<td class="ln">314</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の地価税法施行規則第三条第七項並びに第六条第一項及び第四項の規定は、<wbr>平成六年以後の各年の課税時期において個人又は法人が有する土地等に係る地価税につ<wbr>いて適用し、平成五年以前の各年の課税時期において個人又は法人が有する土地等につ<wbr>いては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">315</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年三月三一日大蔵省令第三二号）</span></code></td>
+<td class="ln">315</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年三月三一日大蔵省令第三二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">316</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成七年四月一日から施行する。</span></code></td>
+<td class="ln">316</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成七年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">317</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の地価税法施行規則第三条第七項第六号並びに第五条第二項第五号、第六号<wbr>、第十五号及び第十六号並びに第六条第一項及び第四項の規定は、平成七年以後の各年<wbr>の課税時期において個人又は法人が有する土地等に係る地価税について適用し、平成六<wbr>年以前の各年の課税時期において個人又は法人が有する土地等に係る地価税については<wbr>、なお従前の例による。</span></code></td>
+<td class="ln">317</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の地価税法施行規則第三条第七項第六号並びに第五条第二項第五号、第六号<wbr>、第十五号及び第十六号並びに第六条第一項及び第四項の規定は、平成七年以後の各年<wbr>の課税時期において個人又は法人が有する土地等に係る地価税について適用し、平成六<wbr>年以前の各年の課税時期において個人又は法人が有する土地等に係る地価税については<wbr>、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">318</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年一〇月三一日大蔵省令第六九号）</span></code></td>
+<td class="ln">318</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年一〇月三一日大蔵省令第六九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">319</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成七年十一月一日から施行する。</span></code></td>
+<td class="ln">319</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成七年十一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">320</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年一一月三〇日大蔵省令第七八号）</span></code></td>
+<td class="ln">320</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年一一月三〇日大蔵省令第七八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">321</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成七年十二月一日から施行する。</span></code></td>
+<td class="ln">321</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成七年十二月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">322</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年三月三一日大蔵省令第二二号）</span></code></td>
+<td class="ln">322</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年三月三一日大蔵省令第二二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">323</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成八年四月一日から施行する。</span></code></td>
+<td class="ln">323</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">324</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年九月三〇日大蔵省令第五四号）</span></code></td>
+<td class="ln">324</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年九月三〇日大蔵省令第五四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">325</td><td class="sf3b2"><code><span class="sf3b2">この省令は、文化財保護法の一部を改正する法律（平成八年法律第六十六号）の施行の<wbr>日（平成八年十月一日）から施行する。</span></code></td>
+<td class="ln">325</td><td class="sf3b2"><code><span class="sf3b2">この省令は、文化財保護法の一部を改正する法律（平成八年法律第六十六号）の施行の<wbr>日（平成八年十月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">326</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年三月三一日大蔵省令第二八号）</span></code></td>
+<td class="ln">326</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年三月三一日大蔵省令第二八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">327</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成九年四月一日から施行する。</span></code></td>
+<td class="ln">327</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">328</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年四月一六日大蔵省令第三七号）</span></code></td>
+<td class="ln">328</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年四月一六日大蔵省令第三七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">329</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成九年四月十七日から施行する。</span></code></td>
+<td class="ln">329</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成九年四月十七日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">330</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年一二月一六日大蔵省令第八六号）</span></code></td>
+<td class="ln">330</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年一二月一六日大蔵省令第八六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">331</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成九年十二月十七日から施行する。</span></code></td>
+<td class="ln">331</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成九年十二月十七日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">332</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年三月三一日大蔵省令第四六号）</span></code></td>
+<td class="ln">332</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年三月三一日大蔵省令第四六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">333</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十年四月一日から施行する。</span></code></td>
+<td class="ln">333</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">334</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月三一日大蔵省令第三四号）</span></code></td>
+<td class="ln">334</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月三一日大蔵省令第三四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">335</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十一年四月一日から施行する。</span></code></td>
+<td class="ln">335</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">336</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月三一日大蔵省令第三〇号）</span></code></td>
+<td class="ln">336</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月三一日大蔵省令第三〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">337</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十二年四月一日から施行する。</span></code></td>
+<td class="ln">337</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">338</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年八月二一日大蔵省令第六九号）</span></code></td>
+<td class="ln">338</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年八月二一日大蔵省令第六九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">339</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成十三年一月六日から施行する。</span></code></td>
+<td class="ln">339</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成十三年一月六日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">340</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月三〇日財務省令第二九号）</span></code></td>
+<td class="ln">340</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月三〇日財務省令第二九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">341</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十三年四月一日から施行する。</span></code></td>
+<td class="ln">341</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">342</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年三月二九日財務省令第一九号）</span></code></td>
+<td class="ln">342</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年三月二九日財務省令第一九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">343</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十四年四月一日から施行する。</span></code></td>
+<td class="ln">343</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">344</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年三月三一日財務省令第三〇号）</span></code></td>
+<td class="ln">344</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年三月三一日財務省令第三〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">345</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十五年四月一日から施行する。</span></code></td>
+<td class="ln">345</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十五年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">346</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月三一日財務省令第二九号）</span></code></td>
+<td class="ln">346</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月三一日財務省令第二九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">347</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">347</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">348</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年三月三一日財務省令第三四号）</span></code></td>
+<td class="ln">348</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年三月三一日財務省令第三四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">349</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十七年四月一日から施行する。</span></code></td>
+<td class="ln">349</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">350</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日財務省令第二二号）</span></code></td>
+<td class="ln">350</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日財務省令第二二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">351</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十八年四月一日から施行する。ただし、第六条第一項第二号ニの改正<wbr>規定は、会社法（平成十七年法律第八十六号）の施行の日から施行する。</span></code></td>
+<td class="ln">351</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十八年四月一日から施行する。ただし、第六条第一項第二号ニの改正<wbr>規定は、会社法（平成十七年法律第八十六号）の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">352</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日財務省令第一五号）</span></code></td>
+<td class="ln">352</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日財務省令第一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">353</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十九年四月一日から施行する。ただし、第四条の次に一条を加える改<wbr>正規定は、信託法（平成十八年法律第百八号）の施行の日から施行する。</span></code></td>
+<td class="ln">353</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十九年四月一日から施行する。ただし、第四条の次に一条を加える改<wbr>正規定は、信託法（平成十八年法律第百八号）の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">354</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年九月二八日財務省令第五五号）</span></code></td>
+<td class="ln">354</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年九月二八日財務省令第五五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">355</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">355</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">356</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、郵政民営化法（平成十七年法律第九十七号）の施行の日から施行<wbr>する。</span></code></td>
+<td class="ln">356</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、郵政民営化法（平成十七年法律第九十七号）の施行の日から施行<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">357</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年一二月一八日財務省令第六五号）</span></code></td>
+<td class="ln">357</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年一二月一八日財務省令第六五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">358</td><td class="sf3b2"><code><span class="sf3b2">この省令は、学校教育法等の一部を改正する法律（平成十九年法律第九十六号）の施行<wbr>の日（平成十九年十二月二十六日）から施行する。</span></code></td>
+<td class="ln">358</td><td class="sf3b2"><code><span class="sf3b2">この省令は、学校教育法等の一部を改正する法律（平成十九年法律第九十六号）の施行<wbr>の日（平成十九年十二月二十六日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">359</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年四月三〇日財務省令第二七号）</span></code></td>
+<td class="ln">359</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年四月三〇日財務省令第二七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">360</td><td class="sf3b2"><code><span class="sf3b2">この省令は、一般社団法人及び一般財団法人に関する法律（平成十八年法律第四十八号<wbr>）の施行の日（平成二十年十二月一日）から施行する。</span></code></td>
+<td class="ln">360</td><td class="sf3b2"><code><span class="sf3b2">この省令は、一般社団法人及び一般財団法人に関する法律（平成十八年法律第四十八号<wbr>）の施行の日（平成二十年十二月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">361</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年六月一八日財務省令第四三号）</span></code></td>
+<td class="ln">361</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年六月一八日財務省令第四三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">362</td><td class="sf3b2"><code><span class="sf3b2">この省令は、空港整備法及び航空法の一部を改正する法律（平成二十年法律第七十五号<wbr>）の施行の日から施行する。</span></code></td>
+<td class="ln">362</td><td class="sf3b2"><code><span class="sf3b2">この省令は、空港整備法及び航空法の一部を改正する法律（平成二十年法律第七十五号<wbr>）の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">363</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年三月三一日財務省令第一五号）</span></code></td>
+<td class="ln">363</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年三月三一日財務省令第一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">364</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十二年四月一日から施行する。</span></code></td>
+<td class="ln">364</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">365</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年六月三〇日財務省令第三二号）</span></code></td>
+<td class="ln">365</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年六月三〇日財務省令第三二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">366</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">366</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">367</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年三月三一日財務省令第二七号）</span></code></td>
+<td class="ln">367</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年三月三一日財務省令第二七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">368</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十四年四月一日から施行する。</span></code></td>
+<td class="ln">368</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">369</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年三月三〇日財務省令第一九号）</span></code></td>
+<td class="ln">369</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年三月三〇日財務省令第一九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">370</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十五年四月一日から施行する。</span></code></td>
+<td class="ln">370</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十五年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">371</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年三月三一日財務省令第二四号）</span></code></td>
+<td class="ln">371</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年三月三一日財務省令第二四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">372</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十六年四月一日から施行する。</span></code></td>
+<td class="ln">372</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">373</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年七月九日財務省令第五九号）</span></code></td>
+<td class="ln">373</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年七月九日財務省令第五九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">374</td><td class="sf3b2"><code><span class="sf3b2">この省令は、行政手続における特定の個人を識別するための番号の利用等に関する法律<wbr>（平成二十五年法律第二十七号）附則第一条第四号に掲げる規定の施行の日から施行す<wbr>る。</span></code></td>
+<td class="ln">374</td><td class="sf3b2"><code><span class="sf3b2">この省令は、行政手続における特定の個人を識別するための番号の利用等に関する法律<wbr>（平成二十五年法律第二十七号）附則第一条第四号に掲げる規定の施行の日から施行す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">375</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月三一日財務省令第二五号）</span></code></td>
+<td class="ln">375</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月三一日財務省令第二五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">376</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十七年四月一日から施行する。</span></code></td>
+<td class="ln">376</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">377</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三一日財務省令第二〇号）</span></code></td>
+<td class="ln">377</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三一日財務省令第二〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">378</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十九年四月一日から施行する。</span></code></td>
+<td class="ln">378</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">379</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年三月三一日財務省令第一六号）</span></code></td>
+<td class="ln">379</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年三月三一日財務省令第一六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">380</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成三十年四月一日から施行する。</span></code></td>
+<td class="ln">380</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成三十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">381</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和二年三月三一日財務省令第一四号）</span></code></td>
+<td class="ln">381</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和二年三月三一日財務省令第一四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">382</td><td class="sf3b2"><code><span class="sf3b2">この省令は、令和二年四月一日から施行する。</span></code></td>
+<td class="ln">382</td><td class="sf3b2"><code><span class="sf3b2">この省令は、令和二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

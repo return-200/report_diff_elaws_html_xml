@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十八年政令第六号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十八年政令第六号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">漁業法第五十二条第一項の指定漁業を定める政令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">漁業法第五十二条第一項の指定漁業を定める政令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、漁業法（昭和二十四年法律第二百六十七号）第五十二条第一項及び第三項の規<wbr>定に基づき、この政令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、漁業法（昭和二十四年法律第二百六十七号）第五十二条第一項及び第三項の規<wbr>定に基づき、この政令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">１　漁業法第五十二条第一項の政令で定める漁業は、次に掲げるものとする。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">１　漁業法第五十二条第一項の政令で定める漁業は、次に掲げるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">一　沖合底びき網漁業　北緯二十五度十五秒東経百二十八度二十九分五十三秒の点から<wbr>北緯二十五度十七秒東経百五十二度五十九分四十六秒の点に至る直線以北、次に掲げる<wbr>線から成る線以東、東経百五十二度五十九分四十六秒の線以西の太平洋の海域において<wbr>総トン数十五トン以上の動力漁船により底びき網を使用して行う漁業</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">一　沖合底びき網漁業　北緯二十五度十五秒東経百二十八度二十九分五十三秒の点から<wbr>北緯二十五度十七秒東経百五十二度五十九分四十六秒の点に至る直線以北、次に掲げる<wbr>線から成る線以東、東経百五十二度五十九分四十六秒の線以西の太平洋の海域において<wbr>総トン数十五トン以上の動力漁船により底びき網を使用して行う漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">イ　北緯三十三度九分二十七秒以北の東経百二十七度五十九分五十二秒の線</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">イ　北緯三十三度九分二十七秒以北の東経百二十七度五十九分五十二秒の線</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯三十三度九分二十七秒東経百二十七度五十九分五十二秒の点から北緯三十三度<wbr>九分二十七秒東経百二十八度二十九分五十二秒の点に至る直線</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯三十三度九分二十七秒東経百二十七度五十九分五十二秒の点から北緯三十三度<wbr>九分二十七秒東経百二十八度二十九分五十二秒の点に至る直線</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">ハ　北緯三十三度九分二十七秒東経百二十八度二十九分五十二秒の点から北緯二十五度<wbr>十五秒東経百二十八度二十九分五十三秒の点に至る直線</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">ハ　北緯三十三度九分二十七秒東経百二十八度二十九分五十二秒の点から北緯二十五度<wbr>十五秒東経百二十八度二十九分五十三秒の点に至る直線</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　以西底びき網漁業　北緯十度二十秒の線以北、次に掲げる線から成る線以西の太平<wbr>洋の海域において総トン数十五トン以上の動力漁船により底びき網を使用して行う漁業<wbr></span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　以西底びき網漁業　北緯十度二十秒の線以北、次に掲げる線から成る線以西の太平<wbr>洋の海域において総トン数十五トン以上の動力漁船により底びき網を使用して行う漁業<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">イ　前号イからハまでの線</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">イ　前号イからハまでの線</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯二十五度十五秒東経百二十八度二十九分五十三秒の点から北緯二十五度十五秒<wbr>東経百二十度五十九分五十五秒の点に至る直線</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯二十五度十五秒東経百二十八度二十九分五十三秒の点から北緯二十五度十五秒<wbr>東経百二十度五十九分五十五秒の点に至る直線</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">ハ　北緯二十五度十五秒以南の東経百二十度五十九分五十五秒の線</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">ハ　北緯二十五度十五秒以南の東経百二十度五十九分五十五秒の線</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">三　遠洋底びき網漁業　北緯十度二十秒の線以北、次に掲げる線から成る線以西の太平<wbr>洋の海域以外の海域において総トン数十五トン以上の動力漁船により底びき網を使用し<wbr>て行う漁業</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">三　遠洋底びき網漁業　北緯十度二十秒の線以北、次に掲げる線から成る線以西の太平<wbr>洋の海域以外の海域において総トン数十五トン以上の動力漁船により底びき網を使用し<wbr>て行う漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">イ　北緯二十五度十七秒以北の東経百五十二度五十九分四十六秒の線</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">イ　北緯二十五度十七秒以北の東経百五十二度五十九分四十六秒の線</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯二十五度十七秒東経百五十二度五十九分四十六秒の点から北緯二十五度十五秒<wbr>東経百二十八度二十九分五十三秒の点に至る直線</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯二十五度十七秒東経百五十二度五十九分四十六秒の点から北緯二十五度十五秒<wbr>東経百二十八度二十九分五十三秒の点に至る直線</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">ハ　前号ロ及びハの線</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">ハ　前号ロ及びハの線</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">四　大中型まき網漁業　総トン数四十トン（北海道恵山岬灯台から青森県尻屋崎灯台に<wbr>至る直線の中心点を通る正東の線以南、同中心点から尻屋崎灯台に至る直線のうち同中<wbr>心点から同直線と青森県の最大高潮時海岸線との最初の交点までの部分、同交点から最<wbr>大高潮時海岸線を千葉県野島崎灯台正南の線と同海岸線との交点に至る線及び同点正南<wbr>の線から成る線以東の太平洋の海域にあつては、総トン数十五トン）以上の動力漁船に<wbr>よりまき網を使用して行う漁業</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">四　大中型まき網漁業　総トン数四十トン（北海道恵山岬灯台から青森県尻屋崎灯台に<wbr>至る直線の中心点を通る正東の線以南、同中心点から尻屋崎灯台に至る直線のうち同中<wbr>心点から同直線と青森県の最大高潮時海岸線との最初の交点までの部分、同交点から最<wbr>大高潮時海岸線を千葉県野島崎灯台正南の線と同海岸線との交点に至る線及び同点正南<wbr>の線から成る線以東の太平洋の海域にあつては、総トン数十五トン）以上の動力漁船に<wbr>よりまき網を使用して行う漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">五　大型捕鯨業　動力漁船によりもりづつを使用してひげ鯨（ミンク鯨を除く。）又は<wbr>まつこう鯨をとる漁業（第七号に掲げるものを除く。）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">五　大型捕鯨業　動力漁船によりもりづつを使用してひげ鯨（ミンク鯨を除く。）又は<wbr>まつこう鯨をとる漁業（第七号に掲げるものを除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">六　小型捕鯨業　動力漁船によりもりづつを使用してミンク鯨又は歯鯨（まつこう鯨を<wbr>除く。）をとる漁業（次号に掲げるものを除く。）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">六　小型捕鯨業　動力漁船によりもりづつを使用してミンク鯨又は歯鯨（まつこう鯨を<wbr>除く。）をとる漁業（次号に掲げるものを除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">七　母船式捕鯨業　母船式漁業（製造設備、冷蔵設備その他の処理設備を有する母船及<wbr>びこれと一体となつて漁業に従事する漁業法第五十二条第一項の独航船等により行う漁<wbr>業をいう。）であつて、もりづつを使用して鯨をとるもの</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">七　母船式捕鯨業　母船式漁業（製造設備、冷蔵設備その他の処理設備を有する母船及<wbr>びこれと一体となつて漁業に従事する漁業法第五十二条第一項の独航船等により行う漁<wbr>業をいう。）であつて、もりづつを使用して鯨をとるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">八　遠洋かつお・まぐろ漁業　総トン数百二十トン以上の動力漁船により、浮きはえ縄<wbr>を使用して又は釣りによつてかつお、まぐろ、かじき又はさめをとることを目的とする<wbr>漁業</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">八　遠洋かつお・まぐろ漁業　総トン数百二十トン以上の動力漁船により、浮きはえ縄<wbr>を使用して又は釣りによつてかつお、まぐろ、かじき又はさめをとることを目的とする<wbr>漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">九　近海かつお・まぐろ漁業　総トン数十トン（我が国の排他的経済水域、領海及び内<wbr>水並びに我が国の排他的経済水域によつて囲まれた海域から成る海域（東京都小笠原村<wbr>南鳥島に係る排他的経済水域及び領海を除く。）にあつては、総トン数二十トン）以上<wbr>百二十トン未満の動力漁船により、浮きはえ縄を使用して又は釣りによつてかつお、ま<wbr>ぐろ、かじき又はさめをとることを目的とする漁業</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">九　近海かつお・まぐろ漁業　総トン数十トン（我が国の排他的経済水域、領海及び内<wbr>水並びに我が国の排他的経済水域によつて囲まれた海域から成る海域（東京都小笠原村<wbr>南鳥島に係る排他的経済水域及び領海を除く。）にあつては、総トン数二十トン）以上<wbr>百二十トン未満の動力漁船により、浮きはえ縄を使用して又は釣りによつてかつお、ま<wbr>ぐろ、かじき又はさめをとることを目的とする漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">十　中型さけ・ます流し網漁業　総トン数三十トン以上の動力漁船により流し網を使用<wbr>してさけ又はますをとることを目的とする漁業</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">十　中型さけ・ます流し網漁業　総トン数三十トン以上の動力漁船により流し網を使用<wbr>してさけ又はますをとることを目的とする漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">十一　北太平洋さんま漁業　北緯三十四度五十四分六秒の線以北、東経百三十九度五十<wbr>三分十八秒の線以東の太平洋の海域（オホーツク海及び日本海の海域を除く。）におい<wbr>て総トン数十トン以上の動力漁船により棒受網を使用してさんまをとることを目的とす<wbr>る漁業</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">十一　北太平洋さんま漁業　北緯三十四度五十四分六秒の線以北、東経百三十九度五十<wbr>三分十八秒の線以東の太平洋の海域（オホーツク海及び日本海の海域を除く。）におい<wbr>て総トン数十トン以上の動力漁船により棒受網を使用してさんまをとることを目的とす<wbr>る漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">十二　日本海べにずわいがに漁業　次に掲げる海域以外の日本海の海域においてかごを<wbr>使用してべにずわいがにをとることを目的とする漁業</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">十二　日本海べにずわいがに漁業　次に掲げる海域以外の日本海の海域においてかごを<wbr>使用してべにずわいがにをとることを目的とする漁業</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">イ　北緯四十一度二十分九秒の線以北の我が国の排他的経済水域、領海及び内水</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">イ　北緯四十一度二十分九秒の線以北の我が国の排他的経済水域、領海及び内水</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯四十一度二十分九秒の線以南、次に掲げる線から成る線以東の日本海の海域</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ロ　北緯四十一度二十分九秒の線以南、次に掲げる線から成る線以東の日本海の海域</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（1）　北緯四十一度二十分九秒東経百三十七度五十九分四十八秒の点から北緯四十度<wbr>三十分九秒東経百三十七度五十九分四十八秒の点に至る直線</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（1）　北緯四十一度二十分九秒東経百三十七度五十九分四十八秒の点から北緯四十度<wbr>三十分九秒東経百三十七度五十九分四十八秒の点に至る直線</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（2）　北緯四十度三十分九秒東経百三十七度五十九分四十八秒の点から北緯三十七度<wbr>三十分十秒東経百三十四度五十九分五十秒の点に至る直線</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（2）　北緯四十度三十分九秒東経百三十七度五十九分四十八秒の点から北緯三十七度<wbr>三十分十秒東経百三十四度五十九分五十秒の点に至る直線</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（3）　北緯三十七度三十分十秒東経百三十四度五十九分五十秒の点から北緯三十七度<wbr>三十分十秒東経百三十三度五十九分五十秒の点に至る直線</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（3）　北緯三十七度三十分十秒東経百三十四度五十九分五十秒の点から北緯三十七度<wbr>三十分十秒東経百三十三度五十九分五十秒の点に至る直線</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（4）　北緯三十七度三十分十秒以南の東経百三十三度五十九分五十秒の線</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（4）　北緯三十七度三十分十秒以南の東経百三十三度五十九分五十秒の線</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">十三　いか釣り漁業　総トン数三十トン以上の動力漁船により釣りによつていかをとる<wbr>ことを目的とする漁業</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">十三　いか釣り漁業　総トン数三十トン以上の動力漁船により釣りによつていかをとる<wbr>ことを目的とする漁業 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定の適用については、ベーリング海、オホーツク海、日本海、黄海、東支<wbr>那海、南支那海、タイ湾及び東インド諸島諸海の海域は、太平洋の海域に含まれるもの<wbr>とする。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定の適用については、ベーリング海、オホーツク海、日本海、黄海、東支<wbr>那海、南支那海、タイ湾及び東インド諸島諸海の海域は、太平洋の海域に含まれるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和三十八年二月一日から施行する。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、昭和三十八年二月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（旧法許可又はこれに係る起業の認可を申請中の場合の経過措置）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（旧法許可又はこれに係る起業の認可を申請中の場合の経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">38</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第二条　</span><span style="color: #000000; background-color: #efcb05; ">の一部を改正する法律（昭和三十七年法律第百五十六号。以下「改正法」とい<wbr>う。）の施行前に、同法による改正前の漁業法（以下「旧法」という。）第五十二条第<wbr>一項若しくは第六十六条の二第一項の規定による許可又は旧法第六十五条第一項に基づ<wbr>く省令の規定による許可（以下「旧法許可」と総称する。）を受けることを必要とした<wbr>漁業の種類であつて、この政令の規定により、改正法による改正後の漁業法（以下「新<wbr>法」という。）第五十二条第一項の指定漁業（以下単に「指定漁業」という。）として<wbr>定められたもの（以下「切替指定漁業」という。）につき旧法許可を受けた者がこの政<wbr>令の施行の日（以下「施行日」という。）の前日までに次の各号の一に該当し、かつ、<wbr>同日までに当該申請に対する旧法許可若しくはこれに係る起業の認可又は申請の却下が<wbr>ない場合については、これを新法第五十九条各号の一に該当する場合とみなし、かつ、<wbr>当該申請が旧法第六十六条の二第二項に規定する中型まき網漁業に係るものにあつては<wbr>その申請が主務大臣に提出されたものとみなし、当該申請につき新法第五十九条の規定<wbr>を適用する。この場合において、同条中「従前の許可又は起業の認可を受けた内容」と<wbr>あるのは、「漁業法の一部を改正する法律（昭和三十七年法律第百五十六号）による改<wbr>正前の漁業法（以下「旧法」という。）第五十二条第一項、第五十四条若しくは第六十<wbr>六条の二第一項の規定又は旧法第六十五条第一項に基づく省令若しくは都道府県規則の<wbr>規定による従前の許可又は起業の認可を受けた内容」とする。</span></code></td>
+<td class="ln">38</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第二条　</span><span class="sf17b18">漁業法</span><span style="color: #000000; background-color: #efcb05; ">の一部を改正する法律（昭和三十七年法律第百五十六号。以下「改正法<wbr>」という。）の施行前に、同法による改正前の漁業法（以下「旧法」という。）第五十<wbr>二条第一項若しくは第六十六条の二第一項の規定による許可又は旧法第六十五条第一項<wbr>に基づく省令の規定による許可（以下「旧法許可」と総称する。）を受けることを必要<wbr>とした漁業の種類であつて、この政令の規定により、改正法による改正後の漁業法（以<wbr>下「新法」という。）第五十二条第一項の指定漁業（以下単に「指定漁業」という。）<wbr>として定められたもの（以下「切替指定漁業」という。）につき旧法許可を受けた者が<wbr>この政令の施行の日（以下「施行日」という。）の前日までに次の各号の一に該当し、<wbr>かつ、同日までに当該申請に対する旧法許可若しくはこれに係る起業の認可又は申請の<wbr>却下がない場合については、これを新法第五十九条各号の一に該当する場合とみなし、<wbr>かつ、当該申請が旧法第六十六条の二第二項に規定する中型まき網漁業に係るものにあ<wbr>つてはその申請が主務大臣に提出されたものとみなし、当該申請につき新法第五十九条<wbr>の規定を適用する。この場合において、同条中「従前の許可又は起業の認可を受けた内<wbr>容」とあるのは、「漁業法の一部を改正する法律（昭和三十七年法律第百五十六号）に<wbr>よる改正前の漁業法（以下「旧法」という。）第五十二条第一項、第五十四条若しくは<wbr>第六十六条の二第一項の規定又は旧法第六十五条第一項に基づく省令若しくは都道府県<wbr>規則の規定による従前の許可又は起業の認可を受けた内容」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">一　切替指定漁業（本則第一項第五号及び第十三号から第十七号までに掲げるものに該<wbr>当するものを除く。次条第一項第一号において同じ。）に係る旧法許可の有効期間の満<wbr>了により更に旧法許可を申請した場合</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">一　切替指定漁業（本則第一項第五号及び第十三号から第十七号までに掲げるものに該<wbr>当するものを除く。次条第一項第一号において同じ。）に係る旧法許可の有効期間の満<wbr>了により更に旧法許可を申請した場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">二　切替指定漁業の旧法許可を受けた船舶による漁業を廃止し、他の船舶について旧法<wbr>許可又はこれに係る起業の認可を申請した場合</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">二　切替指定漁業の旧法許可を受けた船舶による漁業を廃止し、他の船舶について旧法<wbr>許可又はこれに係る起業の認可を申請した場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">三　切替指定漁業の旧法許可を受けた船舶が滅失し、又は沈没したため、滅失又は沈没<wbr>の日から六箇月以内に他の船舶について旧法許可又はこれに係る起業の認可を申請した<wbr>場合</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">三　切替指定漁業の旧法許可を受けた船舶が滅失し、又は沈没したため、滅失又は沈没<wbr>の日から六箇月以内に他の船舶について旧法許可又はこれに係る起業の認可を申請した<wbr>場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">２　切替指定漁業につき旧法許可を受けた者からその旧法許可を受けた船舶を譲り受け<wbr>、借り受け、その返還を受け、その他相続又は合併以外の事由により当該船舶を使用す<wbr>る権利を取得して当該漁業を営もうとする者が施行日の前日までにその船舶について当<wbr>該切替指定漁業に係る旧法許可又はこれに係る起業の認可を申請し、同日までに当該申<wbr>請に対する旧法許可若しくはこれに係る起業の認可又は申請の却下がない場合について<wbr>も、前項と同様とする。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">２　切替指定漁業につき旧法許可を受けた者からその旧法許可を受けた船舶を譲り受け<wbr>、借り受け、その返還を受け、その他相続又は合併以外の事由により当該船舶を使用す<wbr>る権利を取得して当該漁業を営もうとする者が施行日の前日までにその船舶について当<wbr>該切替指定漁業に係る旧法許可又はこれに係る起業の認可を申請し、同日までに当該申<wbr>請に対する旧法許可若しくはこれに係る起業の認可又は申請の却下がない場合について<wbr>も、前項と同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の場合において、新法第五十九条の規定によつてする指定漁業の許可の有効<wbr>期間及び同条の規定によつてする起業の認可に係る指定漁業の許可の有効期間は、指定<wbr>漁業ごとに、改正法附則第四条第二項に規定する政令で定める日に満了するものとする<wbr>。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の場合において、新法第五十九条の規定によつてする指定漁業の許可の有効<wbr>期間及び同条の規定によつてする起業の認可に係る指定漁業の許可の有効期間は、指定<wbr>漁業ごとに、改正法附則第四条第二項に規定する政令で定める日に満了するものとする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">４　第一項又は第二項の場合において、当該各項の申請が旧法第六十六条の二第二項に<wbr>規定する中型まき網漁業に係るものであるときは、都道府県知事は、この政令の施行後<wbr>遅滞なく、当該申請に係る書類を一括して農林大臣に送付しなければならない。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">４　第一項又は第二項の場合において、当該各項の申請が旧法第六十六条の二第二項に<wbr>規定する中型まき網漁業に係るものであるときは、都道府県知事は、この政令の施行後<wbr>遅滞なく、当該申請に係る書類を一括して農林大臣に送付しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（指定漁業該当漁業の二以上につき一の旧法許可又は起業の認可を受けている場合等の<wbr>経過措置）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（指定漁業該当漁業の二以上につき一の旧法許可又は起業の認可を受けている場合等の<wbr>経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　この政令の施行の際現に本則第一項各号に掲げる指定漁業に該当する漁業（以<wbr>下この条において「指定漁業該当漁業」という。）の二以上について一の船舶により一<wbr>の旧法許可又は一の旧法許可に係る起業の認可を受けている者の当該旧法許可又は起業<wbr>の認可についての改正法附則第四条第一項の規定の適用については、当該旧法許可又は<wbr>起業の認可は、従前のその内容のうち当該二以上の指定漁業該当漁業のそれぞれに対応<wbr>する部分に係る内容を内容とする当該船舶についての当該指定漁業ごとの新法第五十二<wbr>条第一項の規定による許可又は新法第五十四条第一項の規定による起業の認可となつた<wbr>ものとみなす。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　この政令の施行の際現に本則第一項各号に掲げる指定漁業に該当する漁業（以<wbr>下この条において「指定漁業該当漁業」という。）の二以上について一の船舶により一<wbr>の旧法許可又は一の旧法許可に係る起業の認可を受けている者の当該旧法許可又は起業<wbr>の認可についての改正法附則第四条第一項の規定の適用については、当該旧法許可又は<wbr>起業の認可は、従前のその内容のうち当該二以上の指定漁業該当漁業のそれぞれに対応<wbr>する部分に係る内容を内容とする当該船舶についての当該指定漁業ごとの新法第五十二<wbr>条第一項の規定による許可又は新法第五十四条第一項の規定による起業の認可となつた<wbr>ものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　附則第二条第一項又は第二項の申請が指定漁業該当漁業の二以上についての一の船<wbr>舶による一の旧法許可の申請又は一の旧法許可に係る起業の認可の申請である場合にお<wbr>ける当該各項の規定の適用については、当該申請は、その内容のうち当該二以上の指定<wbr>漁業該当漁業のそれぞれに対応する部分に係る内容を内容とする当該船舶についての当<wbr>該指定漁業該当漁業ごとの旧法許可の申請又は旧法許可に係る起業の認可の申請とみな<wbr>す。この場合において、附則第二条第一項後段中「規定による従前の許可又は起業の認<wbr>可を受けた内容」とする。」とあるは、「規定による従前の許可又は起業の認可に係る<wbr>内容のうち当該指定漁業該当漁業に対応する部分に係る内容」と、「指定漁業」とある<wbr>のは、「当該指定漁業」とする。」とする。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　附則第二条第一項又は第二項の申請が指定漁業該当漁業の二以上についての一の船<wbr>舶による一の旧法許可の申請又は一の旧法許可に係る起業の認可の申請である場合にお<wbr>ける当該各項の規定の適用については、当該申請は、その内容のうち当該二以上の指定<wbr>漁業該当漁業のそれぞれに対応する部分に係る内容を内容とする当該船舶についての当<wbr>該指定漁業該当漁業ごとの旧法許可の申請又は旧法許可に係る起業の認可の申請とみな<wbr>す。この場合において、附則第二条第一項後段中「規定による従前の許可又は起業の認<wbr>可を受けた内容」とする。」とあるは、「規定による従前の許可又は起業の認可に係る<wbr>内容のうち当該指定漁業該当漁業に対応する部分に係る内容」と、「指定漁業」とある<wbr>のは、「当該指定漁業」とする。」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　前条第一項の場合において、同項各号に規定する旧法許可を受けた者が指定漁業該<wbr>当漁業の二以上について一の船舶による一の旧法許可を受けた者であるときは、当該旧<wbr>法許可を受けた者が当該一の旧法許可に係る指定漁業該当漁業につき同項の規定によつ<wbr>てする指定漁業の許可又は起業の認可の申請は、従前の旧法許可の内容のうち当該二以<wbr>上の指定漁業該当漁業のそれぞれに対応する部分に係る内容と同一の内容をもつて当該<wbr>船舶又は当該他の船舶につきそれぞれ当該指定漁業別にするものとする。同条第二項の<wbr>場合において、同項各号の申請をすることができた者が指定漁業該当漁業の二以上につ<wbr>いて一の船舶による一の旧法許可又は一の旧法許可に係る起業の認可の申請をすること<wbr>ができた者であるときにおける当該申請をすることができた者のする当該旧法許可又は<wbr>これに係る起業の認可に係る指定漁業該当漁業についての同項の規定による指定漁業の<wbr>許可又は起業の認可の申請についても、同様とする。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　前条第一項の場合において、同項各号に規定する旧法許可を受けた者が指定漁業該<wbr>当漁業の二以上について一の船舶による一の旧法許可を受けた者であるときは、当該旧<wbr>法許可を受けた者が当該一の旧法許可に係る指定漁業該当漁業につき同項の規定によつ<wbr>てする指定漁業の許可又は起業の認可の申請は、従前の旧法許可の内容のうち当該二以<wbr>上の指定漁業該当漁業のそれぞれに対応する部分に係る内容と同一の内容をもつて当該<wbr>船舶又は当該他の船舶につきそれぞれ当該指定漁業別にするものとする。同条第二項の<wbr>場合において、同項各号の申請をすることができた者が指定漁業該当漁業の二以上につ<wbr>いて一の船舶による一の旧法許可又は一の旧法許可に係る起業の認可の申請をすること<wbr>ができた者であるときにおける当該申請をすることができた者のする当該旧法許可又は<wbr>これに係る起業の認可に係る指定漁業該当漁業についての同項の規定による指定漁業の<wbr>許可又は起業の認可の申請についても、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　第二項後段の規定は、前項の規定による申請に対する指定漁業の許可又は起業の認<wbr>可につき前条第四項の規定により附則第二条第一項後段の規定を準用する場合に準用す<wbr>る。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　第二項後段の規定は、前項の規定による申請に対する指定漁業の許可又は起業の認<wbr>可につき前条第四項の規定により附則第二条第一項後段の規定を準用する場合に準用す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（大中型まき網漁業に係る経過措置）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（大中型まき網漁業に係る経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第六条　この政令の施行の際現に同一人が同一船舶につき切替大中型まき網漁業（切替<wbr>指定漁業であつて、本則第一項第六号に掲げる大中型まき網漁業に該当するものをいう<wbr>。次項において同じ。）についての二以上の旧法許可又は二以上の旧法許可に係る起業<wbr>の認可をあわせて受けている場合におけるこれらの旧法許可又は起業の認可についての<wbr>改正法附則第四条第一項の規定の適用については、これらの旧法許可又は起業の認可は<wbr>、従前のこれらの旧法許可又は起業の認可に係る内容を包括した内容を内容とする一の<wbr>新法第五十二条第一項の規定による許可又は一の新法第五十四条第一項の規定による起<wbr>業の認可となつたものとみなす。この場合において、その一の許可又は起業の認可とな<wbr>つたものとみなされるものについての改正法附則第四条第二項の規定の適用については<wbr>、同項の残存期間は、当該二以上の旧法許可のうち残存期間の最も長いものの残存期間<wbr>とする。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第六条　この政令の施行の際現に同一人が同一船舶につき切替大中型まき網漁業（切替<wbr>指定漁業であつて、本則第一項第六号に掲げる大中型まき網漁業に該当するものをいう<wbr>。次項において同じ。）についての二以上の旧法許可又は二以上の旧法許可に係る起業<wbr>の認可をあわせて受けている場合におけるこれらの旧法許可又は起業の認可についての<wbr>改正法附則第四条第一項の規定の適用については、これらの旧法許可又は起業の認可は<wbr>、従前のこれらの旧法許可又は起業の認可に係る内容を包括した内容を内容とする一の<wbr>新法第五十二条第一項の規定による許可又は一の新法第五十四条第一項の規定による起<wbr>業の認可となつたものとみなす。この場合において、その一の許可又は起業の認可とな<wbr>つたものとみなされるものについての改正法附則第四条第二項の規定の適用については<wbr>、同項の残存期間は、当該二以上の旧法許可のうち残存期間の最も長いものの残存期間<wbr>とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　附則第二条第一項若しくは第二項の申請又は附則第三条第一項若しくは第二項の規<wbr>定による申請が切替大中型まき網漁業についての旧法許可又はこれに係る起業の認可の<wbr>いずれかについて同一人から同一船舶につき二以上なされている場合における附則第二<wbr>条第一項若しくは第二項又は第三条第三項の規定の適用については、これらの二以上の<wbr>申請は、これらの申請の内容を包括した内容を内容とする一の旧法許可又は一の旧法許<wbr>可に係る起業の認可の申請とみなす。この場合において、附則第二条第一項後段（附則<wbr>第三条第四項において準用する場合を含む。）中「規定による従前の許可又は起業の認<wbr>可を受けた内容」とあるのは、「規定によるまき網漁業（大中型まき網漁業に該当する<wbr>漁業をいう。）に係る従前の二以上の許可又は二以上の起業の認可に係る内容を包括し<wbr>た内容」とする。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　附則第二条第一項若しくは第二項の申請又は附則第三条第一項若しくは第二項の規<wbr>定による申請が切替大中型まき網漁業についての旧法許可又はこれに係る起業の認可の<wbr>いずれかについて同一人から同一船舶につき二以上なされている場合における附則第二<wbr>条第一項若しくは第二項又は第三条第三項の規定の適用については、これらの二以上の<wbr>申請は、これらの申請の内容を包括した内容を内容とする一の旧法許可又は一の旧法許<wbr>可に係る起業の認可の申請とみなす。この場合において、附則第二条第一項後段（附則<wbr>第三条第四項において準用する場合を含む。）中「規定による従前の許可又は起業の認<wbr>可を受けた内容」とあるのは、「規定によるまき網漁業（大中型まき網漁業に該当する<wbr>漁業をいう。）に係る従前の二以上の許可又は二以上の起業の認可に係る内容を包括し<wbr>た内容」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">３　前項の場合において、同項の規定により二以上の申請を一の申請とみなすときは、<wbr>その一の申請は、当該二以上の申請中に附則第二条第一項の申請が含まれる場合にあつ<wbr>ては同項の申請と、当該二以上の申請中に附則第二条第一項の申請は含まれないが同条<wbr>第二項の申請が含まれる場合にあつては同項の申請と、その他の場合にあつては附則第<wbr>三条第一項の規定による申請とみなすものとする。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">３　前項の場合において、同項の規定により二以上の申請を一の申請とみなすときは、<wbr>その一の申請は、当該二以上の申請中に附則第二条第一項の申請が含まれる場合にあつ<wbr>ては同項の申請と、当該二以上の申請中に附則第二条第一項の申請は含まれないが同条<wbr>第二項の申請が含まれる場合にあつては同項の申請と、その他の場合にあつては附則第<wbr>三条第一項の規定による申請とみなすものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（遠洋かつお・まぐろ漁業に係る経過措置）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（遠洋かつお・まぐろ漁業に係る経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第七条　切替指定漁業であつて本則第一項第十号に掲げる遠洋かつお・まぐろ漁業に該<wbr>当するもののうち総トン数四十トン以上百トン未満の動力漁船によるものについての旧<wbr>法許可又はこれに係る起業の認可であつて、当該旧法許可又はこれに係る起業の認可を<wbr>受けた者が当該旧法許可又はこれに係る起業の認可を受けた船舶により他の漁業をあわ<wbr>せて営み、その兼業経営の状況に応じて当該旧法許可に係る有効期間（起業の認可にあ<wbr>つては、当該起業の認可に係る旧法許可の予定有効期間）が六箇月以内となつているも<wbr>のとして農林大臣の指定するものが、改正法附則第四条第一項及びこの政令の規定によ<wbr>り新法第五十二条第一項又は第五十四条第一項の規定によつてした遠洋かつお・まぐろ<wbr>漁業の許可又は起業の認可とみなされる場合における当該許可又は起業の認可に係る遠<wbr>洋かつお・まぐろ漁業の操業期間は、毎年、六箇月をこえない範囲内で農林大臣が定め<wbr>る期間とする。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第七条　切替指定漁業であつて本則第一項第十号に掲げる遠洋かつお・まぐろ漁業に該<wbr>当するもののうち総トン数四十トン以上百トン未満の動力漁船によるものについての旧<wbr>法許可又はこれに係る起業の認可であつて、当該旧法許可又はこれに係る起業の認可を<wbr>受けた者が当該旧法許可又はこれに係る起業の認可を受けた船舶により他の漁業をあわ<wbr>せて営み、その兼業経営の状況に応じて当該旧法許可に係る有効期間（起業の認可にあ<wbr>つては、当該起業の認可に係る旧法許可の予定有効期間）が六箇月以内となつているも<wbr>のとして農林大臣の指定するものが、改正法附則第四条第一項及びこの政令の規定によ<wbr>り新法第五十二条第一項又は第五十四条第一項の規定によつてした遠洋かつお・まぐろ<wbr>漁業の許可又は起業の認可とみなされる場合における当該許可又は起業の認可に係る遠<wbr>洋かつお・まぐろ漁業の操業期間は、毎年、六箇月をこえない範囲内で農林大臣が定め<wbr>る期間とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による旧法許可の指定及び操業期間に係る定めは、告示をもつてするも<wbr>のとし、農林大臣は、当該指定及び定めをしたときは、遅滞なくその旨を当該許可又は<wbr>起業の認可を受けたものとみなされた者に通知しなければならない。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による旧法許可の指定及び操業期間に係る定めは、告示をもつてするも<wbr>のとし、農林大臣は、当該指定及び定めをしたときは、遅滞なくその旨を当該許可又は<wbr>起業の認可を受けたものとみなされた者に通知しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年一二月七日政令第三七三号）　抄</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年一二月七日政令第三七三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四〇年一二月一六日政令第三七二号）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四〇年一二月一六日政令第三七二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、日本国と大韓民国との間の漁業に関する協定の効力発生の日から施行<wbr>する。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、日本国と大韓民国との間の漁業に関する協定の効力発生の日から施行<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">２　改正前の漁業法第五十二条第一項の指定漁業を定める政令第一項第二号に掲げる以<wbr>西底びき網漁業についてした漁業法第五十二条第一項の規定による許可又は同法第五十<wbr>四条第一項の規定による起業の認可であつてこの政令の施行の際現に効力を有するもの<wbr>は、それぞれ、改正後の同号に掲げる以西底びき網漁業についてした当該許可又は起業<wbr>の認可とみなす。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">２　改正前の漁業法第五十二条第一項の指定漁業を定める政令第一項第二号に掲げる以<wbr>西底びき網漁業についてした漁業法第五十二条第一項の規定による許可又は同法第五十<wbr>四条第一項の規定による起業の認可であつてこの政令の施行の際現に効力を有するもの<wbr>は、それぞれ、改正後の同号に掲げる以西底びき網漁業についてした当該許可又は起業<wbr>の認可とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">３　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">３　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年三月二八日政令第四九号）　抄</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年三月二八日政令第四九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和四十二年四月一日から施行する。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和四十二年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">２　改正前の漁業法第五十二条第一項の指定漁業を定める政令（以下「旧令」という。<wbr>）第一項第十一号に掲げるとう載型母船式かつお・まぐろ漁業又は同項第十二号に掲げ<wbr>る独航型母船式かつお・まぐろ漁業についてした漁業法（以下「法」という。）第五十<wbr>二条第一項の規定による許可又は法第五十四条第一項の規定による起業の認可であつて<wbr>この政令の施行の際現に効力を有するものは、それぞれ、改正後の同令（以下「新令」<wbr>という。）第一項第十一号に掲げる母船式かつお・まぐろ漁業についてした当該許可又<wbr>は起業の認可とみなす。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">２　改正前の漁業法第五十二条第一項の指定漁業を定める政令（以下「旧令」という。<wbr>）第一項第十一号に掲げるとう載型母船式かつお・まぐろ漁業又は同項第十二号に掲げ<wbr>る独航型母船式かつお・まぐろ漁業についてした漁業法（以下「法」という。）第五十<wbr>二条第一項の規定による許可又は法第五十四条第一項の規定による起業の認可であつて<wbr>この政令の施行の際現に効力を有するものは、それぞれ、改正後の同令（以下「新令」<wbr>という。）第一項第十一号に掲げる母船式かつお・まぐろ漁業についてした当該許可又<wbr>は起業の認可とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">４　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">４　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年四月二七日政令第八八号）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年四月二七日政令第八八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和四十七年五月一日から施行する。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和四十七年五月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行の際現に改正前の漁業法第五十二条第一項の指定漁業を定める政令<wbr>第一項第十号に掲げる遠洋かつお・まぐろ漁業についての漁業法（以下「法」という。<wbr>）第五十二条第一項の規定による許可又は法第五十四条第一項の規定による起業の認可<wbr>を受けている総トン数七十トン以上八十トン未満の動力漁船は、改正後の同令第一項第<wbr>十号に掲げる遠洋かつお・まぐろ漁業及び同項第十号の二に掲げる近海かつお・まぐろ<wbr>漁業に係る法及びこれに基づく命令の規定の適用については、昭和五十五年七月三十一<wbr>日までは、総トン数八十トンの動力漁船とみなす。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行の際現に改正前の漁業法第五十二条第一項の指定漁業を定める政令<wbr>第一項第十号に掲げる遠洋かつお・まぐろ漁業についての漁業法（以下「法」という。<wbr>）第五十二条第一項の規定による許可又は法第五十四条第一項の規定による起業の認可<wbr>を受けている総トン数七十トン以上八十トン未満の動力漁船は、改正後の同令第一項第<wbr>十号に掲げる遠洋かつお・まぐろ漁業及び同項第十号の二に掲げる近海かつお・まぐろ<wbr>漁業に係る法及びこれに基づく命令の規定の適用については、昭和五十五年七月三十一<wbr>日までは、総トン数八十トンの動力漁船とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">３　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">３　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年七月一日政令第二二九号）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年七月一日政令第二二九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十二年八月一日から施行する。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十二年八月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前にした行為に対する罰則の適用については、なお従前の例による<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年七月一日政令第二三〇号）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年七月一日政令第二三〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年七月一二日政令第一九三号）</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年七月一二日政令第一九三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十七年七月十八日から施行する。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十七年七月十八日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前に建造され、又は建造に着手された動力漁船（以下「現存船」と<wbr>いう。）により、うきはえなわを使用して又はつりによつてかつお、まぐろ、かじき又<wbr>はさめをとることを目的とする漁業については、改正後の第一項第十号及び第十号の二<wbr>の規定にかかわらず、なお従前の例による。ただし、この政令の施行後に特定修繕（船<wbr>舶のトン数の測度に関する法律（昭和五十五年法律第四十号）附則第三条第一項の特定<wbr>修繕をいう。以下同じ。）が行われた現存船により、うきはえなわを使用して又はつり<wbr>によつてかつお、まぐろ、かじき又はさめをとることを目的とする漁業については、こ<wbr>の政令の施行後最初に行われる特定修繕に伴う同法による改正後の船舶法（明治三十二<wbr>年法律第四十六号）及びこれに基づく命令の規定による改測又は測度を受ける日以後は<wbr>、この限りでない。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前に建造され、又は建造に着手された動力漁船（以下「現存船」と<wbr>いう。）により、うきはえなわを使用して又はつりによつてかつお、まぐろ、かじき又<wbr>はさめをとることを目的とする漁業については、改正後の第一項第十号及び第十号の二<wbr>の規定にかかわらず、なお従前の例による。ただし、この政令の施行後に特定修繕（船<wbr>舶のトン数の測度に関する法律（昭和五十五年法律第四十号）附則第三条第一項の特定<wbr>修繕をいう。以下同じ。）が行われた現存船により、うきはえなわを使用して又はつり<wbr>によつてかつお、まぐろ、かじき又はさめをとることを目的とする漁業については、こ<wbr>の政令の施行後最初に行われる特定修繕に伴う同法による改正後の船舶法（明治三十二<wbr>年法律第四十六号）及びこれに基づく命令の規定による改測又は測度を受ける日以後は<wbr>、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">３　この政令の施行前にした行為及び前項の規定により従前の例によることとされる場<wbr>合におけるこの政令の施行後にした行為に対する罰則の適用については、なお従前の例<wbr>による。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">３　この政令の施行前にした行為及び前項の規定により従前の例によることとされる場<wbr>合におけるこの政令の施行後にした行為に対する罰則の適用については、なお従前の例<wbr>による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一月一七日政令第一号）　抄</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一月一七日政令第一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十四年四月一日から施行する。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（近海かつお・まぐろ漁業等に関する経過措置）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（近海かつお・まぐろ漁業等に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第二条　この政令の施行の際現に改正後の第一項第九号に掲げる近海かつお・まぐろ漁<wbr>業、同項第十二号に掲げる日本海べにずわいがに漁業又は同項第十三号に掲げるいか釣<wbr>り漁業に該当する漁業につき漁業法第六十五条第一項の規定に基づく農林水産省令の規<wbr>定による農林水産大臣の承認を受けている者は、その承認に係る船舶につき従前の承認<wbr>を受けた内容及び制限又は条件と同一の内容及び制限又は条件をもって、同法第五十二<wbr>条第一項の規定による当該指定漁業の許可を受けているものとみなす。この場合におい<wbr>て、その受けているものとみなされる許可の有効期間は、同法第六十条の規定にかかわ<wbr>らず、平成十四年七月三十一日に満了するものとする。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第二条　この政令の施行の際現に改正後の第一項第九号に掲げる近海かつお・まぐろ漁<wbr>業、同項第十二号に掲げる日本海べにずわいがに漁業又は同項第十三号に掲げるいか釣<wbr>り漁業に該当する漁業につき漁業法第六十五条第一項の規定に基づく農林水産省令の規<wbr>定による農林水産大臣の承認を受けている者は、その承認に係る船舶につき従前の承認<wbr>を受けた内容及び制限又は条件と同一の内容及び制限又は条件をもって、同法第五十二<wbr>条第一項の規定による当該指定漁業の許可を受けているものとみなす。この場合におい<wbr>て、その受けているものとみなされる許可の有効期間は、同法第六十条の規定にかかわ<wbr>らず、平成十四年七月三十一日に満了するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により漁業法第五十二条第一項の規定による指定漁業の許可を受けてい<wbr>るものとみなされた者に対しては、当該許可に係る許可証は、交付しないものとする。<wbr></span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により漁業法第五十二条第一項の規定による指定漁業の許可を受けてい<wbr>るものとみなされた者に対しては、当該許可に係る許可証は、交付しないものとする。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">第三条　この政令の施行の際現に総トン数十トン以上二十トン未満の動力漁船により釣<wbr>りによって改正後の第一項第九号に掲げる近海かつお・まぐろ漁業に該当する漁業を営<wbr>んでいる者が引き続き行う当該漁業については、平成十四年七月三十一日までは、漁業<wbr>法第五十二条第一項の規定は、適用しない。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">第三条　この政令の施行の際現に総トン数十トン以上二十トン未満の動力漁船により釣<wbr>りによって改正後の第一項第九号に掲げる近海かつお・まぐろ漁業に該当する漁業を営<wbr>んでいる者が引き続き行う当該漁業については、平成十四年七月三十一日までは、漁業<wbr>法第五十二条第一項の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第四条　この政令の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第四条　この政令の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

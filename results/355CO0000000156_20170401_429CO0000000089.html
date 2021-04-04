@@ -1,0 +1,867 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和五十五年政令第百五十六号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和五十五年政令第百五十六号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法<wbr>（昭和五十五年法律第六十号）第五条の規定に基づき、この政令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法<wbr>（昭和五十五年法律第六十号）第五条の規定に基づき、この政令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（法第五条第一項第一号ヘに規定する政令で定める施設）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（法第五条第一項第一号ヘに規定する政令で定める施設）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法<wbr>（以下「法」という。）第五条第一項第一号ヘに規定する政令で定める施設は、農業用<wbr>用排水施設、農業用道路及び林道とする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法<wbr>（以下「法」という。）第五条第一項第一号ヘに規定する政令で定める施設は、農業用<wbr>用排水施設、農業用道路及び林道とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（法第五条第一項第二号に規定する政令で定める事業）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（法第五条第一項第二号に規定する政令で定める事業）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第五条第一項第二号に規定する政令で定める事業は、次に掲げる事業とする<wbr>。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第五条第一項第二号に規定する政令で定める事業は、次に掲げる事業とする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　簡易水道事業の用に供する水道施設の整備に関する事業</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　簡易水道事業の用に供する水道施設の整備に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　農業振興地域（農業振興地域の整備に関する法律（昭和四十四年法律第五十八号）<wbr>第六条第一項の規定により指定された地域をいう。以下同じ。）における良好な生活環<wbr>境を確保するための施設等の整備に関する事業</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　農業振興地域（農業振興地域の整備に関する法律（昭和四十四年法律第五十八号）<wbr>第六条第一項の規定により指定された地域をいう。以下同じ。）における良好な生活環<wbr>境を確保するための施設等の整備に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　農業振興地域における効率的かつ安定的な農業経営を育成するための施設等の整備<wbr>に関する事業</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　農業振興地域における効率的かつ安定的な農業経営を育成するための施設等の整備<wbr>に関する事業 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（国の負担割合の特例の対象となる事業の範囲）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（国の負担割合の特例の対象となる事業の範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第五条第一項の特定事業として政令で定める事業は、次に掲げる事業のうち<wbr>、再度災害を防止するため災害復旧事業に合併して行う事業で当該事業に要する経費の<wbr>総額が千万円未満のもの及び維持修繕に係る事業以外の事業とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第五条第一項の特定事業として政令で定める事業は、次に掲げる事業のうち<wbr>、再度災害を防止するため災害復旧事業に合併して行う事業で当該事業に要する経費の<wbr>総額が千万円未満のもの及び維持修繕に係る事業以外の事業とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">一　道路法（昭和二十七年法律第百八十号）第二条第一項に規定する道路で次に掲げる<wbr>ものに関する事業のうち道路整備事業に係る国の財政上の特別措置に関する法律施行令<wbr>（昭和三十四年政令第十七号）第一条第一項各号に掲げる事業（県道又は村道に関する<wbr>事業にあつては、同項第二号及び第五号に掲げる事業並びに同令第二条第三項に規定す<wbr>る少額改築及び同条第四項に規定する特例舗装）以外の事業</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">一　道路法（昭和二十七年法律第百八十号）第二条第一項に規定する道路で次に掲げる<wbr>ものに関する事業のうち道路整備事業に係る国の財政上の特別措置に関する法律施行令<wbr>（昭和三十四年政令第十七号）第一条第一項各号に掲げる事業（県道又は村道に関する<wbr>事業にあつては、同項第二号及び第五号に掲げる事業並びに同令第二条第三項に規定す<wbr>る少額改築及び同条第四項に規定する特例舗装）以外の事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">イ　一般国道</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">イ　一般国道</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路法第五十六条の規定による国土交通大臣の指定を受けた県道</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ロ　道路法第五十六条の規定による国土交通大臣の指定を受けた県道</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">ハ　ロに掲げるもののほか、資源の開発、産業の振興その他国の施策上特に整備を行う<wbr>必要があると認められる県道又は村道</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">ハ　ロに掲げるもののほか、資源の開発、産業の振興その他国の施策上特に整備を行う<wbr>必要があると認められる県道又は村道</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">二　下水道法（昭和三十三年法律第七十九号）第二条第二号に規定する下水道の設置又<wbr>は改築に関する事業</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">二　下水道法（昭和三十三年法律第七十九号）第二条第二号に規定する下水道の設置又<wbr>は改築に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">三　都市公園法（昭和三十一年法律第七十九号）第二条第一項に規定する都市公園の新<wbr>設又は改築に関する事業</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">三　都市公園法（昭和三十一年法律第七十九号）第二条第一項に規定する都市公園の新<wbr>設又は改築に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">四　義務教育諸学校等の施設費の国庫負担等に関する法律（昭和三十三年法律第八十一<wbr>号）第二条第一項に規定する義務教育諸学校の建物の新築、増築、改築又は改造に関す<wbr>る事業</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">四　義務教育諸学校等の施設費の国庫負担等に関する法律（昭和三十三年法律第八十一<wbr>号）第二条第一項に規定する義務教育諸学校の建物の新築、増築、改築又は改造に関す<wbr>る事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">五　学校教育法（昭和二十二年法律第二十六号）第一条に規定する幼稚園の建物の新築<wbr>、増築若しくは改築又は設備の整備に関する事業</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">五　学校教育法（昭和二十二年法律第二十六号）第一条に規定する幼稚園の建物の新築<wbr>、増築若しくは改築又は設備の整備に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">六　廃棄物の処理及び清掃に関する法律（昭和四十五年法律第百三十七号）第八条第一<wbr>項に規定する一般廃棄物処理施設の設置に関する事業</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">六　廃棄物の処理及び清掃に関する法律（昭和四十五年法律第百三十七号）第八条第一<wbr>項に規定する一般廃棄物処理施設の設置に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">七　児童福祉法（昭和二十二年法律第百六十四号）第七条第一項に規定する保育所の施<wbr>設の整備に関する事業</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">七　児童福祉法（昭和二十二年法律第百六十四号）第七条第一項に規定する保育所の施<wbr>設の整備に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">23</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">八　</span><span style="color: #000000; background-color: #efcb05; ">（昭和二十四年法律第百九十五号）第二条第二項に規定する土地改良事業（以下「<wbr>土地改良事業」という。）のうち次に掲げる事業</span></code></td>
+<td class="ln">23</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">八　</span><span class="sf17b18">土地改良法</span><span style="color: #000000; background-color: #efcb05; ">（昭和二十四年法律第百九十五号）第二条第二項に規定する土地改良事<wbr>業（以下「土地改良事業」という。）のうち次に掲げる事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">イ　土地改良法第二条第二項第一号に掲げる事業のうち、団体営農業生産基盤整備事業<wbr>（土地改良法施行令（昭和二十四年政令第二百九十五号）第七十八条第一項第七号に規<wbr>定する土地改良事業であつて農林水産大臣の定める基準に該当するものをいう。以下同<wbr>じ。）又は特定地域土地改良整備事業（同令第五十条第七項に規定する特定地域土地改<wbr>良整備計画に従つて行われる土地改良事業をいう。以下同じ。）として行われる農業用<wbr>用排水施設及び農業用道路に係る事業並びに前条第二号に掲げる事業と併せて行われる<wbr>農業用用排水施設及び農業用道路に係る事業であつて当該事業に係る土地改良事業計画<wbr>が農村基盤整備計画（同令別表第五の一の項に規定する農村基盤整備計画をいう。以下<wbr>同じ。）に即しているもの</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">イ　土地改良法第二条第二項第一号に掲げる事業のうち、団体営農業生産基盤整備事業<wbr>（土地改良法施行令（昭和二十四年政令第二百九十五号）第七十八条第一項第七号に規<wbr>定する土地改良事業であつて農林水産大臣の定める基準に該当するものをいう。以下同<wbr>じ。）又は特定地域土地改良整備事業（同令第五十条第七項に規定する特定地域土地改<wbr>良整備計画に従つて行われる土地改良事業をいう。以下同じ。）として行われる農業用<wbr>用排水施設及び農業用道路に係る事業並びに前条第二号に掲げる事業と併せて行われる<wbr>農業用用排水施設及び農業用道路に係る事業であつて当該事業に係る土地改良事業計画<wbr>が農村基盤整備計画（同令別表第五の一の項に規定する農村基盤整備計画をいう。以下<wbr>同じ。）に即しているもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">ロ　土地改良法第二条第二項第二号及び第三号に掲げる事業のうち、団体営農業生産基<wbr>盤整備事業として行われる事業（同項第二号に掲げるものに限る。）、特定地域土地改<wbr>良整備事業として行われる事業及び前条第二号に掲げる事業と併せて行われる事業であ<wbr>つて当該事業に係る土地改良事業計画が農村基盤整備計画に即しているもの</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">ロ　土地改良法第二条第二項第二号及び第三号に掲げる事業のうち、団体営農業生産基<wbr>盤整備事業として行われる事業（同項第二号に掲げるものに限る。）、特定地域土地改<wbr>良整備事業として行われる事業及び前条第二号に掲げる事業と併せて行われる事業であ<wbr>つて当該事業に係る土地改良事業計画が農村基盤整備計画に即しているもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ハ　土地改良法第二条第二項第七号に掲げる事業のうち特定地域土地改良整備事業とし<wbr>て行われる暗きよ排水に係る事業</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ハ　土地改良法第二条第二項第七号に掲げる事業のうち特定地域土地改良整備事業とし<wbr>て行われる暗きよ排水に係る事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">九　森林法（昭和二十六年法律第二百四十九号）第百九十三条に規定する林道の開設に<wbr>関する事業</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">九　森林法（昭和二十六年法律第二百四十九号）第百九十三条に規定する林道の開設に<wbr>関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">十　水道法（昭和三十二年法律第百七十七号）第三条第三項に規定する簡易水道事業の<wbr>用に供する水道施設の新設又は増設に関する事業</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">十　水道法（昭和三十二年法律第百七十七号）第三条第三項に規定する簡易水道事業の<wbr>用に供する水道施設の新設又は増設に関する事業</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">十一　前条第二号に掲げる事業（農業用用排水の水質保全等を目的として設けられる集<wbr>落から排出される汚水の処理のための施設の整備に関する事業以外の事業にあつては、<wbr>農村基盤整備計画に即して行われるものに限る。）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">十一　前条第二号に掲げる事業（農業用用排水の水質保全等を目的として設けられる集<wbr>落から排出される汚水の処理のための施設の整備に関する事業以外の事業にあつては、<wbr>農村基盤整備計画に即して行われるものに限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">十二　前条第三号に掲げる事業であつて明日香村が奈良県知事の認定を受けて定める効<wbr>率的かつ安定的な農業経営を育成するための施設等の整備に関する計画に即して行われ<wbr>るもの</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">十二　前条第三号に掲げる事業であつて明日香村が奈良県知事の認定を受けて定める効<wbr>率的かつ安定的な農業経営を育成するための施設等の整備に関する計画に即して行われ<wbr>るもの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（国が通常の負担割合を超えて負担し又は補助することとなる額の交付）</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（国が通常の負担割合を超えて負担し又は補助することとなる額の交付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第四条　特定事業（法第五条第一項に規定する特定事業をいう。以下同じ。）について<wbr>同項の規定により国が通常の負担割合を超えて当該年度の負担又は補助をすることとな<wbr>る場合には、特定事業に係る事務を所掌する各省各庁の長（財政法（昭和二十二年法律<wbr>第三十四号）第二十条第二項に規定する各省各庁の長をいう。）は、当該特定事業に係<wbr>るその超える部分の額を当該年度の翌年度に交付するものとする。ただし、特別の理由<wbr>によりやむを得ない事情があると認められる場合には、当該年度の翌々年度に交付する<wbr>ことができるものとする。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第四条　特定事業（法第五条第一項に規定する特定事業をいう。以下同じ。）について<wbr>同項の規定により国が通常の負担割合を超えて当該年度の負担又は補助をすることとな<wbr>る場合には、特定事業に係る事務を所掌する各省各庁の長（財政法（昭和二十二年法律<wbr>第三十四号）第二十条第二項に規定する各省各庁の長をいう。）は、当該特定事業に係<wbr>るその超える部分の額を当該年度の翌年度に交付するものとする。ただし、特別の理由<wbr>によりやむを得ない事情があると認められる場合には、当該年度の翌々年度に交付する<wbr>ことができるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（国の負担又は補助の割合の特例）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（国の負担又は補助の割合の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第五条第三項に規定する道路の改築の事業で政令で定めるものは、次の各号<wbr>に掲げる事業とし、同項に規定する政令で定める割合は、それぞれ当該各号に定める割<wbr>合とする。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第五条第三項に規定する道路の改築の事業で政令で定めるものは、次の各号<wbr>に掲げる事業とし、同項に規定する政令で定める割合は、それぞれ当該各号に定める割<wbr>合とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">一　一般国道（都市計画において定められた道路に該当するものを除く。）の改築（土<wbr>地区画整理法（昭和二十九年法律第百十九号）による土地区画整理事業に係るもの及び<wbr>道路整備事業に係る国の財政上の特別措置に関する法律施行令第一条第一項各号に掲げ<wbr>るものを除く。）　四分の三</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">一　一般国道（都市計画において定められた道路に該当するものを除く。）の改築（土<wbr>地区画整理法（昭和二十九年法律第百十九号）による土地区画整理事業に係るもの及び<wbr>道路整備事業に係る国の財政上の特別措置に関する法律施行令第一条第一項各号に掲げ<wbr>るものを除く。）　四分の三</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">二　県道又は村道（都市計画において定められた道路に該当するものを除く。）の改築<wbr>（土地区画整理法による土地区画整理事業に係るもの並びに道路整備事業に係る国の財<wbr>政上の特別措置に関する法律施行令第一条第一項第二号及び第五号に掲げるもの並びに<wbr>同令第二条第三項に規定する少額改築及び同条第四項に規定する特例舗装を除く。第四<wbr>号において同じ。）　三分の二</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">二　県道又は村道（都市計画において定められた道路に該当するものを除く。）の改築<wbr>（土地区画整理法による土地区画整理事業に係るもの並びに道路整備事業に係る国の財<wbr>政上の特別措置に関する法律施行令第一条第一項第二号及び第五号に掲げるもの並びに<wbr>同令第二条第三項に規定する少額改築及び同条第四項に規定する特例舗装を除く。第四<wbr>号において同じ。）　三分の二</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">三　道路（都市計画において定められたものを除く。）の改築で、土地区画整理法によ<wbr>る土地区画整理事業に係るもの　三分の二</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">三　道路（都市計画において定められたものを除く。）の改築で、土地区画整理法によ<wbr>る土地区画整理事業に係るもの　三分の二</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">四　県道又は村道の改築で、都市計画において定められた道路の改築に該当するもの　<wbr>十分の五・五</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">四　県道又は村道の改築で、都市計画において定められた道路の改築に該当するもの　<wbr>十分の五・五</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">五　都市計画において定められた道路の改築で、土地区画整理法による土地区画整理事<wbr>業に係るもの（国土交通大臣が行う一般国道の改築を除く。）　十分の五・五</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">五　都市計画において定められた道路の改築で、土地区画整理法による土地区画整理事<wbr>業に係るもの（国土交通大臣が行う一般国道の改築を除く。）　十分の五・五 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第四条第五項に規定する明日香村整備計画に基づく事業で下水道法第二条第<wbr>二号に規定する下水道の設置又は改築に該当するものに係る経費のうち次の各号に掲げ<wbr>る費用に対する国の補助の割合は、下水道法施行令（昭和三十四年政令第百四十七号）<wbr>第二十四条の二第一項第一号イ及び第三号の規定又は同項第二号及び第三号の規定にか<wbr>かわらず、それぞれ当該各号に定める割合とする。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第四条第五項に規定する明日香村整備計画に基づく事業で下水道法第二条第<wbr>二号に規定する下水道の設置又は改築に該当するものに係る経費のうち次の各号に掲げ<wbr>る費用に対する国の補助の割合は、下水道法施行令（昭和三十四年政令第百四十七号）<wbr>第二十四条の二第一項第一号イ及び第三号の規定又は同項第二号及び第三号の規定にか<wbr>かわらず、それぞれ当該各号に定める割合とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　下水道法第二条第三号に規定する公共下水道の設置又は改築に要する費用中、下水<wbr>道法施行令第二十四条の二第一項第一号イに規定する主要な管渠きよ及び終末処理場並<wbr>びにこれらの施設を補完するポンプ施設その他の主要な補完施設の設置又は改築に要す<wbr>る費用（同号イの規定により国土交通大臣が定める費用を除く。）　十分の六（終末処<wbr>理場の設置又は改築に要する費用で同号イの規定により国土交通大臣が定めるものにあ<wbr>つては、三分の二）</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　下水道法第二条第三号に規定する公共下水道の設置又は改築に要する費用中、下水<wbr>道法施行令第二十四条の二第一項第一号イに規定する主要な管渠きよ及び終末処理場並<wbr>びにこれらの施設を補完するポンプ施設その他の主要な補完施設の設置又は改築に要す<wbr>る費用（同号イの規定により国土交通大臣が定める費用を除く。）　十分の六（終末処<wbr>理場の設置又は改築に要する費用で同号イの規定により国土交通大臣が定めるものにあ<wbr>つては、三分の二）</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　下水道法第二条第四号に規定する流域下水道の設置又は改築に要する費用（下水道<wbr>法施行令第二十四条の二第一項第二号の規定により国土交通大臣が定める費用を除く。<wbr>）　三分の二（終末処理場の設置又は改築に要する費用で同令第二十四条の二第一項第<wbr>二号の規定により国土交通大臣が定めるものにあつては、四分の三）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　下水道法第二条第四号に規定する流域下水道の設置又は改築に要する費用（下水道<wbr>法施行令第二十四条の二第一項第二号の規定により国土交通大臣が定める費用を除く。<wbr>）　三分の二（終末処理場の設置又は改築に要する費用で同令第二十四条の二第一項第<wbr>二号の規定により国土交通大臣が定めるものにあつては、四分の三） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第四条第五項に規定する明日香村整備計画に基づく事業で土地改良法第二条<wbr>第二項に規定する土地改良事業に該当するもののうち次の各号に掲げるものに係る経費<wbr>に対する国の補助の割合は、土地改良法施行令第七十八条第一項第一号及び別表第一の<wbr>二の項並びに同条第一項第七号及び別表第四の三の項の規定、同条第一項第二号の六及<wbr>び第八号の二の規定又は同項第三号並びに同項第九号及び別表第五の二の項の規定にか<wbr>かわらず、それぞれ当該各号に定める割合とする。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第四条第五項に規定する明日香村整備計画に基づく事業で土地改良法第二条<wbr>第二項に規定する土地改良事業に該当するもののうち次の各号に掲げるものに係る経費<wbr>に対する国の補助の割合は、土地改良法施行令第七十八条第一項第一号及び別表第一の<wbr>二の項並びに同条第一項第七号及び別表第四の三の項の規定、同条第一項第二号の六及<wbr>び第八号の二の規定又は同項第三号並びに同項第九号及び別表第五の二の項の規定にか<wbr>かわらず、それぞれ当該各号に定める割合とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　農業用道路の新設又は変更であつて、イ又はロのいずれかに該当するもの　三分の<wbr>二</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　農業用道路の新設又は変更であつて、イ又はロのいずれかに該当するもの　三分の<wbr>二</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">イ　土地改良法施行令別表第一の二の項の（六）に規定する事業に該当し、かつ、農林<wbr>水産大臣がその幅員、当該事業の施行に係る地域において果たすその機能その他の事項<wbr>を勘案して定める基準に該当する基幹的な農業用道路に係るもの</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">イ　土地改良法施行令別表第一の二の項の（六）に規定する事業に該当し、かつ、農林<wbr>水産大臣がその幅員、当該事業の施行に係る地域において果たすその機能その他の事項<wbr>を勘案して定める基準に該当する基幹的な農業用道路に係るもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">ロ　土地改良法施行令別表第四の三の項の規定により農林水産大臣が定める基準に該当<wbr>する基幹的な農業用道路に係るもの</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">ロ　土地改良法施行令別表第四の三の項の規定により農林水産大臣が定める基準に該当<wbr>する基幹的な農業用道路に係るもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">二　特定地域土地改良整備事業として行われる土地改良事業　百分の六十</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">二　特定地域土地改良整備事業として行われる土地改良事業　百分の六十</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">三　第二条第二号に掲げる事業と併せて行われる土地改良事業であつて当該事業に係る<wbr>土地改良事業計画が農村基盤整備計画に即しているもの　百分の五十五</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">三　第二条第二号に掲げる事業と併せて行われる土地改良事業であつて当該事業に係る<wbr>土地改良事業計画が農村基盤整備計画に即しているもの　百分の五十五 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（交付金等）</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（交付金等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第五条の二に規定する政令で定める交付金は、次に掲げる交付金とする。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第五条の二に規定する政令で定める交付金は、次に掲げる交付金とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">一　義務教育諸学校等の施設費の国庫負担等に関する法律第十二条第一項に規定する交<wbr>付金</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">一　義務教育諸学校等の施設費の国庫負担等に関する法律第十二条第一項に規定する交<wbr>付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">二　次世代育成支援対策推進法（平成十五年法律第百二十号）第十一条第一項に規定す<wbr>る交付金</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">二　次世代育成支援対策推進法（平成十五年法律第百二十号）第十一条第一項に規定す<wbr>る交付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">三　第三条第十二号に掲げる事業に要する経費に充てるための交付金</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">三　第三条第十二号に掲げる事業に要する経費に充てるための交付金</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">２　法第五条の二の規定により算定する交付金の額は、特定事業に係る経費に対する通<wbr>常の国の交付金の額に、首都圏、近畿圏及び中部圏の近郊整備地帯等の整備のための国<wbr>の財政上の特別措置に関する法律（昭和四十一年法律第百十四号）第五条第一項に規定<wbr>する引上率を乗じて算定するものとする。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">２　法第五条の二の規定により算定する交付金の額は、特定事業に係る経費に対する通<wbr>常の国の交付金の額に、首都圏、近畿圏及び中部圏の近郊整備地帯等の整備のための国<wbr>の財政上の特別措置に関する法律（昭和四十一年法律第百十四号）第五条第一項に規定<wbr>する引上率を乗じて算定するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">３　第四条の規定は、特定事業について法第五条の二の規定により国が通常の交付金の<wbr>額を超えて当該年度の交付金を交付することとなる場合について準用する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">３　第四条の規定は、特定事業について法第五条の二の規定により国が通常の交付金の<wbr>額を超えて当該年度の交付金を交付することとなる場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（法附則第七条第一項第一号の政令で定める道路の改築）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（法附則第七条第一項第一号の政令で定める道路の改築）</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第二条　法附則第七条第一項第一号の政令で定める道路の改築は、都市計画において定<wbr>められた道路の改築とする。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第二条　法附則第七条第一項第一号の政令で定める道路の改築は、都市計画において定<wbr>められた道路の改築とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（昭和六十年度から平成四年度までの特例）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（昭和六十年度から平成四年度までの特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第四条第五項に規定する明日香村整備計画に基づく事業で次の各号に掲げる<wbr>ものに係る経費に対する国の負担又は補助の割合については、当該各号に定める政令の<wbr>規定は、適用しない。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第四条第五項に規定する明日香村整備計画に基づく事業で次の各号に掲げる<wbr>ものに係る経費に対する国の負担又は補助の割合については、当該各号に定める政令の<wbr>規定は、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">一　土地改良事業　土地改良法施行令の一部を改正する政令（平成元年政令第二百十六<wbr>号）附則第三条第十二項</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">一　土地改良事業　土地改良法施行令の一部を改正する政令（平成元年政令第二百十六<wbr>号）附則第三条第十二項</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">二　道路の改築（前条の道路の改築を除く。）　道路整備緊急措置法施行令附則第四項<wbr>から第六項まで</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">二　道路の改築（前条の道路の改築を除く。）　道路整備緊急措置法施行令附則第四項<wbr>から第六項まで</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">三　下水道の設置又は改築　下水道法施行令附則第五項から第七項まで</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">三　下水道の設置又は改築　下水道法施行令附則第五項から第七項まで</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　法第四条第五項に規定する明日香村整備計画に基づく事業で前条の道路の改築に係<wbr>る経費に対する国の負担又は補助の割合については、道路整備緊急措置法施行令附則第<wbr>五項中「「十分の五・五（平成三年度及び平成四年度においては、半島振興法（昭和六<wbr>十年法律第六十三号）第十条に規定する道路の改築に係るものにあつては、十分の五・<wbr>七五）」」とあるのは「「十分の六」」と、「「割合は十分の五・五（建設大臣が行う<wbr>ものにあつては、十分の六）」」とあるのは「「割合は十分の六」」と、「「率は十分<wbr>の五・五（平成三年度及び平成四年度においては、半島振興法第十条に規定する道路の<wbr>改築に係るものにあつては、十分の五・七五）」」とあるのは「「率は十分の六」」と<wbr>、同令附則第六項中「「十分の五・二五（半島振興法第十条に規定する道路の改築に係<wbr>るものにあつては、十分の五・五）」」とあるのは「「十分の六」」と、「「割合は十<wbr>分の五・二五（建設大臣が行うものにあつては、十分の五・五）」」とあるのは「「割<wbr>合は十分の六」」と、「「率は十分の五・二五（半島振興法第十条に規定する道路の改<wbr>築に係るものにあつては、十分の五・五）」」とあるのは「「率は十分の六」」とする<wbr>。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　法第四条第五項に規定する明日香村整備計画に基づく事業で前条の道路の改築に係<wbr>る経費に対する国の負担又は補助の割合については、道路整備緊急措置法施行令附則第<wbr>五項中「「十分の五・五（平成三年度及び平成四年度においては、半島振興法（昭和六<wbr>十年法律第六十三号）第十条に規定する道路の改築に係るものにあつては、十分の五・<wbr>七五）」」とあるのは「「十分の六」」と、「「割合は十分の五・五（建設大臣が行う<wbr>ものにあつては、十分の六）」」とあるのは「「割合は十分の六」」と、「「率は十分<wbr>の五・五（平成三年度及び平成四年度においては、半島振興法第十条に規定する道路の<wbr>改築に係るものにあつては、十分の五・七五）」」とあるのは「「率は十分の六」」と<wbr>、同令附則第六項中「「十分の五・二五（半島振興法第十条に規定する道路の改築に係<wbr>るものにあつては、十分の五・五）」」とあるのは「「十分の六」」と、「「割合は十<wbr>分の五・二五（建設大臣が行うものにあつては、十分の五・五）」」とあるのは「「割<wbr>合は十分の六」」と、「「率は十分の五・二五（半島振興法第十条に規定する道路の改<wbr>築に係るものにあつては、十分の五・五）」」とあるのは「「率は十分の六」」とする<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（平成元年七月七日前に工事に着手した土地改良事業に係る平成五年度以降の特例）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（平成元年七月七日前に工事に着手した土地改良事業に係る平成五年度以降の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第四条第五項に規定する明日香村整備計画に基づく土地改良事業に係る経費<wbr>に対する国の補助の割合については、土地改良法施行令の一部を改正する政令附則第三<wbr>条第十三項の規定は、適用しない。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第四条第五項に規定する明日香村整備計画に基づく土地改良事業に係る経費<wbr>に対する国の補助の割合については、土地改良法施行令の一部を改正する政令附則第三<wbr>条第十三項の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（国の無利子貸付けへの準用）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（国の無利子貸付けへの準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">70</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第五条　国が日本電信電話株式会社の株式の売払収入の活用による社会資本の整備の促<wbr>進に関する特別措置</span><span style="color: #000000; background-color: #efcb05; ">（昭和六十二年法律第八十六号）第二条第一項の規定に基づき、同<wbr>項第二号に該当する事業に要する費用に充てる資金を無利子で貸し付ける場合において<wbr>は、第四条の規定を準用する。この場合において、同条中「特定事業（法第五条第一項<wbr>に規定する特定事業をいう。以下同じ。）について同項」とあるのは「明日香村が国又<wbr>は奈良県から負担金又は補助金の交付を受けて特定事業を行つたとしたならば、当該特<wbr>定事業について法第五条第一項」と、「場合には、特定事業」とあるのは「場合におい<wbr>て、日本電信電話株式会社の株式の売払収入の活用による社会資本の整備の促進に関す<wbr>る特別措置法（昭和六十二年法律第八十六号）第二条第一項の規定に基づき、国が当該<wbr>事業について国の当該負担又は補助に相当する額の無利子の貸付金の貸付けを行うこと<wbr>となるときは、当該事業」と、「当該特定事業」とあるのは「当該事業」と、「部分の<wbr>額」とあるのは「部分の額に相当する当該貸付金の額」と、「交付する」とあるのは「<wbr>貸し付ける」と読み替えるものとする。</span></code></td>
+<td class="ln">70</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第五条　国が日本電信電話株式会社の株式の売払収入の活用による社会資本の整備の促<wbr>進に関する特別措置</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">（昭和六十二年法律第八十六号）第二条第一項の規定に基づき、<wbr>同項第二号に該当する事業に要する費用に充てる資金を無利子で貸し付ける場合におい<wbr>ては、第四条の規定を準用する。この場合において、同条中「特定事業（法第五条第一<wbr>項に規定する特定事業をいう。以下同じ。）について同項」とあるのは「明日香村が国<wbr>又は奈良県から負担金又は補助金の交付を受けて特定事業を行つたとしたならば、当該<wbr>特定事業について法第五条第一項」と、「場合には、特定事業」とあるのは「場合にお<wbr>いて、日本電信電話株式会社の株式の売払収入の活用による社会資本の整備の促進に関<wbr>する特別措置法（昭和六十二年法律第八十六号）第二条第一項の規定に基づき、国が当<wbr>該事業について国の当該負担又は補助に相当する額の無利子の貸付金の貸付けを行うこ<wbr>ととなるときは、当該事業」と、「当該特定事業」とあるのは「当該事業」と、「部分<wbr>の額」とあるのは「部分の額に相当する当該貸付金の額」と、「交付する」とあるのは<wbr>「貸し付ける」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六〇年五月一八日政令第一三五号）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六〇年五月一八日政令第一三五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令附則第二項並び<wbr>に明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令<wbr>附則第二条及び第三条の規定は、昭和六十年度の予算に係る国の負担又は補助（昭和五<wbr>十九年度以前の年度の国庫債務負担行為に基づき昭和六十年度に支出すべきものとされ<wbr>た国の負担又は補助を除く。）並びに同年度の国庫債務負担行為に基づき昭和六十一年<wbr>度以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十年度の歳出予算<wbr>に係る国の負担又は補助で昭和六十一年度以降の年度に繰り越されるものについて適用<wbr>し、昭和五十九年度以前の年度の国庫債務負担行為に基づき昭和六十年度に支出すべき<wbr>ものとされた国の負担又は補助及び昭和五十九年度以前の年度の歳出予算に係る国の負<wbr>担又は補助で昭和六十年度に繰り越されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令附則第二項並び<wbr>に明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令<wbr>附則第二条及び第三条の規定は、昭和六十年度の予算に係る国の負担又は補助（昭和五<wbr>十九年度以前の年度の国庫債務負担行為に基づき昭和六十年度に支出すべきものとされ<wbr>た国の負担又は補助を除く。）並びに同年度の国庫債務負担行為に基づき昭和六十一年<wbr>度以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十年度の歳出予算<wbr>に係る国の負担又は補助で昭和六十一年度以降の年度に繰り越されるものについて適用<wbr>し、昭和五十九年度以前の年度の国庫債務負担行為に基づき昭和六十年度に支出すべき<wbr>ものとされた国の負担又は補助及び昭和五十九年度以前の年度の歳出予算に係る国の負<wbr>担又は補助で昭和六十年度に繰り越されたものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年五月八日政令第一五六号）</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年五月八日政令第一五六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、昭<wbr>和六十一年度から昭和六十三年度までの各年度（昭和六十一年度及び昭和六十二年度の<wbr>特例に係るものにあつては、昭和六十一年度及び昭和六十二年度。以下同じ。）の予算<wbr>に係る国の負担又は補助（昭和六十年度以前の年度の国庫債務負担行為に基づき昭和六<wbr>十一年度以降の年度に支出すべきものとされた国の負担又は補助を除く。）並びに昭和<wbr>六十一年度から昭和六十三年度までの各年度の国庫債務負担行為に基づき昭和六十四年<wbr>度（昭和六十一年度及び昭和六十二年度の特例に係るものにあつては、昭和六十三年度<wbr>。以下同じ。）以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十一<wbr>年度から昭和六十三年度までの各年度の歳出予算に係る国の負担又は補助で昭和六十四<wbr>年度以降の年度に繰り越されるものについて適用し、昭和六十年度以前の年度の国庫債<wbr>務負担行為に基づき昭和六十一年度以降の年度に支出すべきものとされた国の負担又は<wbr>補助及び昭和六十年度以前の年度の歳出予算に係る国の負担又は補助で昭和六十一年度<wbr>以降の年度に繰り越されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、昭<wbr>和六十一年度から昭和六十三年度までの各年度（昭和六十一年度及び昭和六十二年度の<wbr>特例に係るものにあつては、昭和六十一年度及び昭和六十二年度。以下同じ。）の予算<wbr>に係る国の負担又は補助（昭和六十年度以前の年度の国庫債務負担行為に基づき昭和六<wbr>十一年度以降の年度に支出すべきものとされた国の負担又は補助を除く。）並びに昭和<wbr>六十一年度から昭和六十三年度までの各年度の国庫債務負担行為に基づき昭和六十四年<wbr>度（昭和六十一年度及び昭和六十二年度の特例に係るものにあつては、昭和六十三年度<wbr>。以下同じ。）以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十一<wbr>年度から昭和六十三年度までの各年度の歳出予算に係る国の負担又は補助で昭和六十四<wbr>年度以降の年度に繰り越されるものについて適用し、昭和六十年度以前の年度の国庫債<wbr>務負担行為に基づき昭和六十一年度以降の年度に支出すべきものとされた国の負担又は<wbr>補助及び昭和六十年度以前の年度の歳出予算に係る国の負担又は補助で昭和六十一年度<wbr>以降の年度に繰り越されたものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年三月三一日政令第九九号）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年三月三一日政令第九九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和六十二年四月一日から施行する。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和六十二年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、昭<wbr>和六十二年度及び昭和六十三年度（昭和六十二年度の特例に係るものにあつては、昭和<wbr>六十二年度。以下同じ。）の予算に係る国の負担又は補助（昭和六十一年度以前の年度<wbr>の国庫債務負担行為に基づき昭和六十二年度以降の年度に支出すべきものとされた国の<wbr>負担又は補助を除く。）並びに昭和六十二年度及び昭和六十三年度の国庫債務負担行為<wbr>に基づき昭和六十四年度（昭和六十二年度の特例に係るものにあつては、昭和六十三年<wbr>度。以下同じ。）以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十<wbr>二年及び昭和六十三年度の歳出予算に係る国の負担又は補助で昭和六十四年度以降の年<wbr>度に繰り越されるものについて適用し、昭和六十一年度以前の年度の国庫債務負担行為<wbr>に基づき昭和六十二年度以降の年度に支出すべきものとされた国の負担又は補助及び昭<wbr>和六十一年度以前の年度の歳出予算に係る国の負担又は補助で昭和六十二年度以降の年<wbr>度に繰り越されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、昭<wbr>和六十二年度及び昭和六十三年度（昭和六十二年度の特例に係るものにあつては、昭和<wbr>六十二年度。以下同じ。）の予算に係る国の負担又は補助（昭和六十一年度以前の年度<wbr>の国庫債務負担行為に基づき昭和六十二年度以降の年度に支出すべきものとされた国の<wbr>負担又は補助を除く。）並びに昭和六十二年度及び昭和六十三年度の国庫債務負担行為<wbr>に基づき昭和六十四年度（昭和六十二年度の特例に係るものにあつては、昭和六十三年<wbr>度。以下同じ。）以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十<wbr>二年及び昭和六十三年度の歳出予算に係る国の負担又は補助で昭和六十四年度以降の年<wbr>度に繰り越されるものについて適用し、昭和六十一年度以前の年度の国庫債務負担行為<wbr>に基づき昭和六十二年度以降の年度に支出すべきものとされた国の負担又は補助及び昭<wbr>和六十一年度以前の年度の歳出予算に係る国の負担又は補助で昭和六十二年度以降の年<wbr>度に繰り越されたものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年九月一一日政令第三〇三号）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年九月一一日政令第三〇三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年四月一〇日政令第一一〇号）</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年四月一〇日政令第一一〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、平<wbr>成元年度及び平成二年度の予算に係る国の負担又は補助（昭和六十三年度以前の年度の<wbr>国庫債務負担行為に基づき平成元年度以降の年度に支出すべきものとされた国の負担又<wbr>は補助を除く。）、平成元年度及び平成二年度の国庫債務負担行為に基づき平成三年度<wbr>以降の年度に支出すべきものとされる国の負担又は補助並びに平成元年度及び平成二年<wbr>度の歳出予算に係る国の負担又は補助で平成三年度以降の年度に繰り越されるものにつ<wbr>いて適用し、昭和六十三年度以前の年度の国庫債務負担行為に基づき平成元年度以降の<wbr>年度に支出すべきものとされた国の負担又は補助及び昭和六十三年度以前の年度の歳出<wbr>予算に係る国の負担又は補助で平成元年度以降の年度に繰り越されたものについては、<wbr>なお従前の例による。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、平<wbr>成元年度及び平成二年度の予算に係る国の負担又は補助（昭和六十三年度以前の年度の<wbr>国庫債務負担行為に基づき平成元年度以降の年度に支出すべきものとされた国の負担又<wbr>は補助を除く。）、平成元年度及び平成二年度の国庫債務負担行為に基づき平成三年度<wbr>以降の年度に支出すべきものとされる国の負担又は補助並びに平成元年度及び平成二年<wbr>度の歳出予算に係る国の負担又は補助で平成三年度以降の年度に繰り越されるものにつ<wbr>いて適用し、昭和六十三年度以前の年度の国庫債務負担行為に基づき平成元年度以降の<wbr>年度に支出すべきものとされた国の負担又は補助及び昭和六十三年度以前の年度の歳出<wbr>予算に係る国の負担又は補助で平成元年度以降の年度に繰り越されたものについては、<wbr>なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年七月七日政令第二一六号）　抄</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年七月七日政令第二一六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第三条　</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第三条　</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２　次に掲げる規定は、施行日以後にその工事に着手した土地改良事業（法第百二十六<wbr>条の規定により国が補助するものに限る。以下この項において同じ。）について適用し<wbr>、施行日前にその工事に着手した土地改良事業については、なお従前の例による。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２　次に掲げる規定は、施行日以後にその工事に着手した土地改良事業（法第百二十六<wbr>条の規定により国が補助するものに限る。以下この項において同じ。）について適用し<wbr>、施行日前にその工事に着手した土地改良事業については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">一・二　略</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">一・二　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">三　附則第八条の規定による改正後の明日香村における歴史的風土の保存及び生活環境<wbr>の整備等に関する特別措置法施行令（昭和五十五年政令第百五十六号）附則第三条第一<wbr>項</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">三　附則第八条の規定による改正後の明日香村における歴史的風土の保存及び生活環境<wbr>の整備等に関する特別措置法施行令（昭和五十五年政令第百五十六号）附則第三条第一<wbr>項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年三月三〇日政令第一〇〇号）</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年三月三〇日政令第一〇〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成三年四月一日から施行する。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成三年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、平<wbr>成三年度及び平成四年度の予算に係る国の負担又は補助（平成二年度以前の年度の国庫<wbr>債務負担行為に基づき平成三年度以降の年度に支出すべきものとされた国の負担又は補<wbr>助を除く。）、平成三年度及び平成四年度の国庫債務負担行為に基づき平成五年度以降<wbr>の年度に支出すべきものとされる国の負担又は補助並びに平成三年度及び平成四年度の<wbr>歳出予算に係る国の負担又は補助で平成五年度以降の年度に繰り越されるものについて<wbr>適用し、平成二年度以前の年度の国庫債務負担行為に基づき平成三年度以降の年度に支<wbr>出すべきものとされた国の負担又は補助及び平成二年度以前の年度の歳出予算に係る国<wbr>の負担又は補助で平成三年度以降の年度に繰り越されたものについては、なお従前の例<wbr>による。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、平<wbr>成三年度及び平成四年度の予算に係る国の負担又は補助（平成二年度以前の年度の国庫<wbr>債務負担行為に基づき平成三年度以降の年度に支出すべきものとされた国の負担又は補<wbr>助を除く。）、平成三年度及び平成四年度の国庫債務負担行為に基づき平成五年度以降<wbr>の年度に支出すべきものとされる国の負担又は補助並びに平成三年度及び平成四年度の<wbr>歳出予算に係る国の負担又は補助で平成五年度以降の年度に繰り越されるものについて<wbr>適用し、平成二年度以前の年度の国庫債務負担行為に基づき平成三年度以降の年度に支<wbr>出すべきものとされた国の負担又は補助及び平成二年度以前の年度の歳出予算に係る国<wbr>の負担又は補助で平成三年度以降の年度に繰り越されたものについては、なお従前の例<wbr>による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年一〇月一四日政令第三二二号）　抄</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年一〇月一四日政令第三二二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成三年十一月一日から施行する。ただし、第一条の規定（土地<wbr>改良法施行令第五十条の二の四の改正規定を除く。）及び第二条中農用地整備公団法施<wbr>行令附則第十一条第一項の改正規定並びに附則第三条、第四条及び第六条から第八条ま<wbr>での規定は、平成四年四月一日から施行する。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成三年十一月一日から施行する。ただし、第一条の規定（土地<wbr>改良法施行令第五十条の二の四の改正規定を除く。）及び第二条中農用地整備公団法施<wbr>行令附則第十一条第一項の改正規定並びに附則第三条、第四条及び第六条から第八条ま<wbr>での規定は、平成四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年四月一〇日政令第一四五号）</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年四月一〇日政令第一四五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年七月一五日政令第二四七号）　抄</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年七月一五日政令第二四七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年三月三一日政令第九三号）　抄</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年三月三一日政令第九三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成五年四月一日から施行する。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成五年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年三月三一日政令第九七号）　抄</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年三月三一日政令第九七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成五年四月一日から施行する。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成五年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、平<wbr>成五年度以降の年度の予算に係る国の負担又は補助（平成四年度以前の年度の国庫債務<wbr>負担行為に基づき平成五年度以降の年度に支出すべきものとされた国の負担又は補助を<wbr>除く。）について適用し、平成四年度以前の年度の国庫債務負担行為に基づき平成五年<wbr>度以降の年度に支出すべきものとされた国の負担又は補助及び平成四年度以前の年度の<wbr>歳出予算に係る国の負担又は補助で平成五年度以降の年度に繰り越されたものについて<wbr>は、なお従前の例による。</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の古都における歴史的風土の保存に関する特別措置法施行令及び明日香村に<wbr>おける歴史的風土の保存及び生活環境の整備等に関する特別措置法施行令の規定は、平<wbr>成五年度以降の年度の予算に係る国の負担又は補助（平成四年度以前の年度の国庫債務<wbr>負担行為に基づき平成五年度以降の年度に支出すべきものとされた国の負担又は補助を<wbr>除く。）について適用し、平成四年度以前の年度の国庫債務負担行為に基づき平成五年<wbr>度以降の年度に支出すべきものとされた国の負担又は補助及び平成四年度以前の年度の<wbr>歳出予算に係る国の負担又は補助で平成五年度以降の年度に繰り越されたものについて<wbr>は、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一〇月二〇日政令第三三八号）　抄</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一〇月二〇日政令第三三八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年七月八日政令第二二七号）　抄</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年七月八日政令第二二七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年六月一四日政令第二四一号）　抄</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成七年六月一四日政令第二四一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年一〇月八日政令第三一〇号）　抄</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年一〇月八日政令第三一〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年五月二〇日政令第一七四号）　抄</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年五月二〇日政令第一七四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月三一日政令第一九一号）</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月三一日政令第一九一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十二年四月一日から施行する。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十二年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第二条及び第三条の規定は、平成十二年度の予算に係る国の負担金又は補<wbr>助金から適用し、平成十一年度分の予算に係る国の負担金又は補助金で翌年度に繰り越<wbr>したものについては、なお従前の例による。</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第二条及び第三条の規定は、平成十二年度の予算に係る国の負担金又は補<wbr>助金から適用し、平成十一年度分の予算に係る国の負担金又は補助金で翌年度に繰り越<wbr>したものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年六月七日政令第三一二号）　抄</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年六月七日政令第三一二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施行の<wbr>日（平成十三年一月六日）から施行する。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施行の<wbr>日（平成十三年一月六日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年三月三一日政令第一六三号）</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年三月三一日政令第一六三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十五年四月一日から施行する。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十五年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月一日政令第一二二号）</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月一日政令第一二二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一〇月二六日政令第三二七号）　抄</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一〇月二六日政令第三二七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、下水道法の一部を改正する法律の施行の日（平成十七年十一月一<wbr>日）から施行する。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、下水道法の一部を改正する法律の施行の日（平成十七年十一月一<wbr>日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日政令第一五一号）　抄</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日政令第一五一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十八年四月一日から施行する。</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十八年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（首都圏、近畿圏及び中部圏の近郊整備地帯等の整備のための国の財政上の特別措置に<wbr>関する法律施行令等の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（首都圏、近畿圏及び中部圏の近郊整備地帯等の整備のための国の財政上の特別措置に<wbr>関する法律施行令等の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">２　第十九条及び第二十二条から第二十五条までの規定による改正後の次に掲げる政令<wbr>の規定は、平成十八年度以降の年度の予算に係る国の負担若しくは補助（平成十七年度<wbr>以前の年度における事務又は事業の実施により平成十八年度以降の年度に支出される国<wbr>の負担又は補助及び平成十七年度以前の年度の国庫債務負担行為に基づき平成十八年度<wbr>以降の年度に支出すべきものとされた国の負担又は補助を除く。）又は交付金の交付に<wbr>ついて適用し、平成十七年度以前の年度における事務又は事業の実施により平成十八年<wbr>度以降の年度に支出される国の負担又は補助、平成十七年度以前の年度の国庫債務負担<wbr>行為に基づき平成十八年度以降の年度に支出すべきものとされた国の負担又は補助及び<wbr>平成十七年度以前の年度の歳出予算に係る国の負担又は補助で平成十八年度以降の年度<wbr>に繰り越されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">２　第十九条及び第二十二条から第二十五条までの規定による改正後の次に掲げる政令<wbr>の規定は、平成十八年度以降の年度の予算に係る国の負担若しくは補助（平成十七年度<wbr>以前の年度における事務又は事業の実施により平成十八年度以降の年度に支出される国<wbr>の負担又は補助及び平成十七年度以前の年度の国庫債務負担行為に基づき平成十八年度<wbr>以降の年度に支出すべきものとされた国の負担又は補助を除く。）又は交付金の交付に<wbr>ついて適用し、平成十七年度以前の年度における事務又は事業の実施により平成十八年<wbr>度以降の年度に支出される国の負担又は補助、平成十七年度以前の年度の国庫債務負担<wbr>行為に基づき平成十八年度以降の年度に支出すべきものとされた国の負担又は補助及び<wbr>平成十七年度以前の年度の歳出予算に係る国の負担又は補助で平成十八年度以降の年度<wbr>に繰り越されたものについては、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">二　明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行<wbr>令</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">二　明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行<wbr>令 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年九月二六日政令第三二〇号）</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年九月二六日政令第三二〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">この政令は、障害者自立支援法の一部の施行の日（平成十八年十月一日）から施行する<wbr>。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">この政令は、障害者自立支援法の一部の施行の日（平成十八年十月一日）から施行する<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年四月一日政令第一四三号）　抄</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年四月一日政令第一四三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年五月一三日政令第一七六号）　抄</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年五月一三日政令第一七六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年三月三一日政令第八三号）　抄</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年三月三一日政令第八三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十一年四月一日から施行する。</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年四月三〇日政令第一三〇号）　抄</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年四月三〇日政令第一三〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">（国の負担又は補助に関する経過措置）</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">（国の負担又は補助に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">第二条　第一条、第五条、第六条、第八条、第九条、第十二条及び第十四条から第十六<wbr>条までの規定による改正後の次に掲げる政令の規定は、平成二十一年度以降の年度の予<wbr>算に係る国の負担又は補助（平成二十年度以前の年度の国庫債務負担行為に基づき平成<wbr>二十一年度以降の年度に支出すべきものとされた国の負担又は補助を除く。）について<wbr>適用し、平成二十年度以前の年度の予算に係る国の負担又は補助で平成二十一年以降の<wbr>年度に繰り越されたもの及び平成二十年度以前の年度の国庫債務負担行為に基づき平成<wbr>二十一年度以降の年度に支出すべきものとされた国の負担又は補助については、なお従<wbr>前の例による。</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">第二条　第一条、第五条、第六条、第八条、第九条、第十二条及び第十四条から第十六<wbr>条までの規定による改正後の次に掲げる政令の規定は、平成二十一年度以降の年度の予<wbr>算に係る国の負担又は補助（平成二十年度以前の年度の国庫債務負担行為に基づき平成<wbr>二十一年度以降の年度に支出すべきものとされた国の負担又は補助を除く。）について<wbr>適用し、平成二十年度以前の年度の予算に係る国の負担又は補助で平成二十一年以降の<wbr>年度に繰り越されたもの及び平成二十年度以前の年度の国庫債務負担行為に基づき平成<wbr>二十一年度以降の年度に支出すべきものとされた国の負担又は補助については、なお従<wbr>前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">一～六　略</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">一～六　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">七　明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行<wbr>令第三条</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">七　明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法施行<wbr>令第三条 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年四月一日政令第九八号）　抄</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年四月一日政令第九八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一二月二六日政令第四二四号）　抄</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一二月二六日政令第四二四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十四年四月一日から施行する。</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年四月六日政令第一二八号）　抄</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年四月六日政令第一二八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年四月一〇日政令第二〇六号）　抄</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年四月一〇日政令第二〇六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三一日政令第八九号）</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三一日政令第八九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十九年四月一日から施行する。</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

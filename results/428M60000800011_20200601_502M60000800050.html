@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十八年国土交通省令第十一号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十八年国土交通省令第十一号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">船員に関する青少年の雇用の促進等に関する法律施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">船員に関する青少年の雇用の促進等に関する法律施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">青少年の雇用の促進等に関する法律（昭和四十五年法律第九十八号）第三十条の規定に<wbr>より読み替えて適用する同法第十一条、第十三条第一項、第二十八条第一項及び第二十<wbr>九条の規定に基づき、この省令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">青少年の雇用の促進等に関する法律（昭和四十五年法律第九十八号）第三十条の規定に<wbr>より読み替えて適用する同法第十一条、第十三条第一項、第二十八条第一項及び第二十<wbr>九条の規定に基づき、この省令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（法第十一条の国土交通省令で定める施設）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（法第十一条の国土交通省令で定める施設）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　青少年の雇用の促進等に関する法律（昭和四十五年法律第九十八号。以下「法<wbr>」という。）第三十三条の規定により読み替えて適用する法第十一条の国土交通省令で<wbr>定める施設は、専修学校（学校教育法（昭和二十二年法律第二十六号）第百二十四条に<wbr>規定する専修学校をいう。以下同じ。）とする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　青少年の雇用の促進等に関する法律（昭和四十五年法律第九十八号。以下「法<wbr>」という。）第三十三条の規定により読み替えて適用する法第十一条の国土交通省令で<wbr>定める施設は、専修学校（学校教育法（昭和二十二年法律第二十六号）第百二十四条に<wbr>規定する専修学校をいう。以下同じ。）とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（法第十一条の国土交通省令で定める者）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（法第十一条の国土交通省令で定める者）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第三十三条の規定により読み替えて適用する法第十一条の国土交通省令で定<wbr>める者は、次のとおりとする。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第三十三条の規定により読み替えて適用する法第十一条の国土交通省令で定<wbr>める者は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　公共職業能力開発施設（職業能力開発促進法（昭和四十四年法律第六十四号）第十<wbr>五条の七第一項各号（第四号を除く。）に掲げる施設をいう。以下同じ。）又は職業能<wbr>力開発総合大学校（同法第二十七条第一項に規定する職業能力開発総合大学校をいう。<wbr>以下同じ。）の行う職業訓練を受ける者であって修了することが見込まれるもの</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　公共職業能力開発施設（職業能力開発促進法（昭和四十四年法律第六十四号）第十<wbr>五条の七第一項各号（第四号を除く。）に掲げる施設をいう。以下同じ。）又は職業能<wbr>力開発総合大学校（同法第二十七条第一項に規定する職業能力開発総合大学校をいう。<wbr>以下同じ。）の行う職業訓練を受ける者であって修了することが見込まれるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　国立研究開発法人水産研究・教育機構又は独立行政法人海技教育機構の行う船員の<wbr>教育訓練を受ける者であって修了することが見込まれるもの</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　国立研究開発法人水産研究・教育機構又は独立行政法人海技教育機構の行う船員の<wbr>教育訓練を受ける者であって修了することが見込まれるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　次に掲げる者であって、学校教育法第一条に規定する学校（小学校（義務教育学校<wbr>の前期課程及び特別支援学校の小学部を含む。）及び幼稚園（特別支援学校の幼稚部を<wbr>含む。）を除く。以下「学校」という。）若しくは専修学校の学生又は生徒であって卒<wbr>業することが見込まれる者及び前二号に掲げる者に準ずるもの</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　次に掲げる者であって、学校教育法第一条に規定する学校（小学校（義務教育学校<wbr>の前期課程及び特別支援学校の小学部を含む。）及び幼稚園（特別支援学校の幼稚部を<wbr>含む。）を除く。以下「学校」という。）若しくは専修学校の学生又は生徒であって卒<wbr>業することが見込まれる者及び前二号に掲げる者に準ずるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">イ　学校又は専修学校を卒業した者</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">イ　学校又は専修学校を卒業した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共職業能力開発施設又は職業能力開発総合大学校の行う職業訓練を修了した者</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共職業能力開発施設又は職業能力開発総合大学校の行う職業訓練を修了した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">ハ　独立行政法人水産大学校若しくは国立研究開発法人水産研究・教育機構又は独立行<wbr>政法人海技教育機構の行う船員の教育訓練を修了した者</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">ハ　独立行政法人水産大学校若しくは国立研究開発法人水産研究・教育機構又は独立行<wbr>政法人海技教育機構の行う船員の教育訓練を修了した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">ニ　学校教育法第百三十四条第一項に規定する各種学校（以下このニ及び第六条第二項<wbr>第二号ニにおいて「各種学校」という。）に在学する者であって卒業することが見込ま<wbr>れるもの又は各種学校を卒業した者</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">ニ　学校教育法第百三十四条第一項に規定する各種学校（以下このニ及び第六条第二項<wbr>第二号ニにおいて「各種学校」という。）に在学する者であって卒業することが見込ま<wbr>れるもの又は各種学校を卒業した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ホ　学校若しくは専修学校に相当する外国の教育施設（以下このホ及び第六条第二項第<wbr>二号ニにおいて「外国の教育施設」という。）に在学する者であって卒業することが見<wbr>込まれるもの又は外国の教育施設を卒業した者</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">ホ　学校若しくは専修学校に相当する外国の教育施設（以下このホ及び第六条第二項第<wbr>二号ニにおいて「外国の教育施設」という。）に在学する者であって卒業することが見<wbr>込まれるもの又は外国の教育施設を卒業した者 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（求人の申込みを受理しないことができる場合）</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（求人の申込みを受理しないことができる場合）</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第三十三条の規定により読み替えて適用する法第十一条の国土交通省令で定<wbr>める場合は、次のとおりとする。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第三十三条の規定により読み替えて適用する法第十一条の国土交通省令で定<wbr>める場合は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">18</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　求人者が青少年の雇用の促進等に関する法律</span><span style="color: #000000; background-color: #efcb05; ">の規定により読み替えて適用する同</span><span style="color: #000000; background-color: #efcb05; ">の<wbr>労働に関する</span><span style="color: #000000; background-color: #efcb05; ">律の規定を定める政令（平成二十八年政令第四号。以下この条において「<wbr>令」という。）第一号から第三号までに掲げる法律の規定に違反する行為（以下この号<wbr>において「違反行為」という。）をした場合であって、法第三十三条の規定により読み<wbr>替えて適用する法第二十八条の規定による報告の求め（以下この条において「報告の求<wbr>め」という。）により、次のいずれかに該当することが確認された場合</span></code></td>
+<td class="ln">18</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　求人者が青少年の雇用の促進等に関する法律</span><span class="sf17b18">第三十三条</span><span style="color: #000000; background-color: #efcb05; ">の規定により読み替えて適<wbr>用する同</span><span class="sf17b18">法第十一条</span><span style="color: #000000; background-color: #efcb05; ">の労働に関する</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">律の規定を定める政令（平成二十八年政令第四号<wbr>。以下この条において「令」という。）第一号から第三号までに掲げる法律の規定に違<wbr>反する行為（以下この号において「違反行為」という。）をした場合であって、法第三<wbr>十三条の規定により読み替えて適用する法第二十八条の規定による報告の求め（以下こ<wbr>の条において「報告の求め」という。）により、次のいずれかに該当することが確認さ<wbr>れた場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人（法第三十三条の規定により読み替えて適用する法第十一条<wbr>に規定する学校卒業見込者等求人をいう。以下同じ。）の申込みの時において、当該違<wbr>反行為の是正が行われていないこと又は是正が行われた日から起算して六月を経過して<wbr>いないこと（当該違反行為をした日を起算日とする過去一年以内において当該違反行為<wbr>と同一の法律の条項に違反する行為（ロにおいて「同一違反行為」という。）をしたこ<wbr>とがある場合その他当該違反行為が学校卒業見込者等（法第三十三条の規定により読み<wbr>替えて適用する法第十一条に規定する学校卒業見込者等をいう。以下同じ。）の職場へ<wbr>の定着に重大な影響を及ぼすおそれがある場合に限る。）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人（法第三十三条の規定により読み替えて適用する法第十一条<wbr>に規定する学校卒業見込者等求人をいう。以下同じ。）の申込みの時において、当該違<wbr>反行為の是正が行われていないこと又は是正が行われた日から起算して六月を経過して<wbr>いないこと（当該違反行為をした日を起算日とする過去一年以内において当該違反行為<wbr>と同一の法律の条項に違反する行為（ロにおいて「同一違反行為」という。）をしたこ<wbr>とがある場合その他当該違反行為が学校卒業見込者等（法第三十三条の規定により読み<wbr>替えて適用する法第十一条に規定する学校卒業見込者等をいう。以下同じ。）の職場へ<wbr>の定着に重大な影響を及ぼすおそれがある場合に限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為に係る事件について刑事訴訟法（昭和二十三年法律第百三十一号）第<wbr>二百三条第一項（同法第二百十一条及び第二百十六条において準用する場合を含む。）<wbr>及び第二百四十六条に規定する検察官に対する送致又は同法第二百四十二条に規定する<wbr>検察官に対する送付（以下このロにおいて「送致又は送付」という。）が行われ、その<wbr>旨の公表が行われた場合であって、次のいずれかに該当すること</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為に係る事件について刑事訴訟法（昭和二十三年法律第百三十一号）第<wbr>二百三条第一項（同法第二百十一条及び第二百十六条において準用する場合を含む。）<wbr>及び第二百四十六条に規定する検察官に対する送致又は同法第二百四十二条に規定する<wbr>検察官に対する送付（以下このロにおいて「送致又は送付」という。）が行われ、その<wbr>旨の公表が行われた場合であって、次のいずれかに該当すること</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（１）　当該送致又は送付の日前に当該違反行為の是正が行われた場合（当該違反行為<wbr>をした日を起算日とする過去一年以内において同一違反行為をしたことがある場合であ<wbr>って、当該違反行為の是正が行われた日から当該送致又は送付の日までの期間（以下こ<wbr>のロにおいて「経過期間」という。）が六月を超えるときに限る。）であって、学校卒<wbr>業見込者等求人の申込みの時において、当該送致又は送付の日から起算して六月を経過<wbr>していないこと</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（１）　当該送致又は送付の日前に当該違反行為の是正が行われた場合（当該違反行為<wbr>をした日を起算日とする過去一年以内において同一違反行為をしたことがある場合であ<wbr>って、当該違反行為の是正が行われた日から当該送致又は送付の日までの期間（以下こ<wbr>のロにおいて「経過期間」という。）が六月を超えるときに限る。）であって、学校卒<wbr>業見込者等求人の申込みの時において、当該送致又は送付の日から起算して六月を経過<wbr>していないこと</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（２）　当該送致又は送付の日前に当該違反行為の是正が行われた場合（当該違反行為<wbr>をした日を起算日とする過去一年以内において同一違反行為をしたことがある場合であ<wbr>って、経過期間が六月を超えないときに限る。）であって、学校卒業見込者等求人の申<wbr>込みの時において、当該送致又は送付の日から起算して一年から経過期間を減じた期間<wbr>を経過していないこと</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（２）　当該送致又は送付の日前に当該違反行為の是正が行われた場合（当該違反行為<wbr>をした日を起算日とする過去一年以内において同一違反行為をしたことがある場合であ<wbr>って、経過期間が六月を超えないときに限る。）であって、学校卒業見込者等求人の申<wbr>込みの時において、当該送致又は送付の日から起算して一年から経過期間を減じた期間<wbr>を経過していないこと</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（３）　当該送致又は送付の日前に当該違反行為の是正が行われた場合（当該違反行為<wbr>をした日を起算日とする過去一年以内において同一違反行為をしたことがある場合を除<wbr>く。）又は当該送致又は送付の日前に当該違反行為の是正が行われていない場合であっ<wbr>て、学校卒業見込者等求人の申込みの時において、当該送致又は送付の日から起算して<wbr>一年を経過していないこと、当該違反行為の是正が行われていないこと又は是正が行わ<wbr>れた日から起算して六月を経過していないこと</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（３）　当該送致又は送付の日前に当該違反行為の是正が行われた場合（当該違反行為<wbr>をした日を起算日とする過去一年以内において同一違反行為をしたことがある場合を除<wbr>く。）又は当該送致又は送付の日前に当該違反行為の是正が行われていない場合であっ<wbr>て、学校卒業見込者等求人の申込みの時において、当該送致又は送付の日から起算して<wbr>一年を経過していないこと、当該違反行為の是正が行われていないこと又は是正が行わ<wbr>れた日から起算して六月を経過していないこと</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">二　求人者が令第四号に掲げる法律の規定に違反する行為（以下この号において「違反<wbr>行為」という。）をし、労働施策の総合的な推進並びに労働者の雇用の安定及び職業生<wbr>活の充実等に関する法律（昭和四十一年法律第百三十二号）第三十八条第二項の規定に<wbr>より読み替えて適用する同法第三十三条第二項の規定による公表がされた場合であって<wbr>、報告の求めにより、次のいずれかに該当することが確認された場合</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">二　求人者が令第四号に掲げる法律の規定に違反する行為（以下この号において「違反<wbr>行為」という。）をし、労働施策の総合的な推進並びに労働者の雇用の安定及び職業生<wbr>活の充実等に関する法律（昭和四十一年法律第百三十二号）第三十八条第二項の規定に<wbr>より読み替えて適用する同法第三十三条第二項の規定による公表がされた場合であって<wbr>、報告の求めにより、次のいずれかに該当することが確認された場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人の申込みの時において、当該違反行為の是正が行われていな<wbr>いこと又は是正が行われた日から起算して六月を経過していないこと</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人の申込みの時において、当該違反行為の是正が行われていな<wbr>いこと又は是正が行われた日から起算して六月を経過していないこと</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為の是正が行われた日から起算して六月を経過する前に当該違反行為と<wbr>同一の法律の条項に違反する行為（以下このロにおいて「同一違反行為」という。）を<wbr>行った場合であって、学校卒業見込者等求人の申込みの時において、当該同一違反行為<wbr>の是正が行われていないこと又は是正が行われた日から起算して六月を経過していない<wbr>ことその他当該同一違反行為が学校卒業見込者等の職場への定着に重大な影響を及ぼす<wbr>おそれがあること</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為の是正が行われた日から起算して六月を経過する前に当該違反行為と<wbr>同一の法律の条項に違反する行為（以下このロにおいて「同一違反行為」という。）を<wbr>行った場合であって、学校卒業見込者等求人の申込みの時において、当該同一違反行為<wbr>の是正が行われていないこと又は是正が行われた日から起算して六月を経過していない<wbr>ことその他当該同一違反行為が学校卒業見込者等の職場への定着に重大な影響を及ぼす<wbr>おそれがあること</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">三　求人者が令第五号に掲げる法律の規定に違反する行為（以下この号において「違反<wbr>行為」という。）をし、雇用の分野における男女の均等な機会及び待遇の確保等に関す<wbr>る法律（昭和四十七年法律第百十三号）第三十一条第一項の規定により読み替えて適用<wbr>する同法第三十条の規定による公表がされた場合であって、報告の求めにより、次のい<wbr>ずれかに該当することが確認された場合</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">三　求人者が令第五号に掲げる法律の規定に違反する行為（以下この号において「違反<wbr>行為」という。）をし、雇用の分野における男女の均等な機会及び待遇の確保等に関す<wbr>る法律（昭和四十七年法律第百十三号）第三十一条第一項の規定により読み替えて適用<wbr>する同法第三十条の規定による公表がされた場合であって、報告の求めにより、次のい<wbr>ずれかに該当することが確認された場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人の申込みの時において、当該違反行為の是正が行われていな<wbr>いこと又は是正が行われた日から起算して六月を経過していないこと</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人の申込みの時において、当該違反行為の是正が行われていな<wbr>いこと又は是正が行われた日から起算して六月を経過していないこと</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為の是正が行われた日から起算して六月を経過する前に当該違反行為と<wbr>同一の法律の条項に違反する行為（以下このロにおいて「同一違反行為」という。）を<wbr>行った場合であって、学校卒業見込者等求人の申込みの時において、当該同一違反行為<wbr>の是正が行われていないこと又は是正が行われた日から起算して六月を経過していない<wbr>ことその他当該同一違反行為が学校卒業見込者等の職場への定着に重大な影響を及ぼす<wbr>おそれがあること</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為の是正が行われた日から起算して六月を経過する前に当該違反行為と<wbr>同一の法律の条項に違反する行為（以下このロにおいて「同一違反行為」という。）を<wbr>行った場合であって、学校卒業見込者等求人の申込みの時において、当該同一違反行為<wbr>の是正が行われていないこと又は是正が行われた日から起算して六月を経過していない<wbr>ことその他当該同一違反行為が学校卒業見込者等の職場への定着に重大な影響を及ぼす<wbr>おそれがあること</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">四　求人者が令第六号に掲げる法律の規定に違反する行為（以下この号において「違反<wbr>行為」という。）をし、育児休業、介護休業等育児又は家族介護を行う労働者の福祉に<wbr>関する法律（平成三年法律第七十六号。以下「育児・介護休業法」という。）第六十条<wbr>第二項の規定により読み替えて適用する同法第五十六条の二の規定による公表がされた<wbr>場合であって、報告の求めにより、次のいずれかに該当することが確認された場合</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">四　求人者が令第六号に掲げる法律の規定に違反する行為（以下この号において「違反<wbr>行為」という。）をし、育児休業、介護休業等育児又は家族介護を行う労働者の福祉に<wbr>関する法律（平成三年法律第七十六号。以下「育児・介護休業法」という。）第六十条<wbr>第二項の規定により読み替えて適用する同法第五十六条の二の規定による公表がされた<wbr>場合であって、報告の求めにより、次のいずれかに該当することが確認された場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人の申込みの時において、当該違反行為の是正が行われていな<wbr>いこと又は是正が行われた日から起算して六月を経過していないこと</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">イ　学校卒業見込者等求人の申込みの時において、当該違反行為の是正が行われていな<wbr>いこと又は是正が行われた日から起算して六月を経過していないこと</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為の是正が行われた日から起算して六月を経過する前に当該違反行為と<wbr>同一の法律の条項に違反する行為（以下このロにおいて「同一違反行為」という。）を<wbr>行った場合であって、学校卒業見込者等求人の申込みの時において、当該同一違反行為<wbr>の是正が行われていないこと又は是正が行われた日から起算して六月を経過していない<wbr>ことその他当該同一違反行為が学校卒業見込者等の職場への定着に重大な影響を及ぼす<wbr>おそれがあること</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該違反行為の是正が行われた日から起算して六月を経過する前に当該違反行為と<wbr>同一の法律の条項に違反する行為（以下このロにおいて「同一違反行為」という。）を<wbr>行った場合であって、学校卒業見込者等求人の申込みの時において、当該同一違反行為<wbr>の是正が行われていないこと又は是正が行われた日から起算して六月を経過していない<wbr>ことその他当該同一違反行為が学校卒業見込者等の職場への定着に重大な影響を及ぼす<wbr>おそれがあること &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（求人の不受理の手続）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（求人の不受理の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第四条　地方運輸局（運輸監理部を含む。第七条第二項第一号において同じ。）が、法<wbr>第三十三条の規定により読み替えて適用する法第十一条の規定により求人の申込みを受<wbr>理しないときは、求人者に対し、その理由を説明しなければならない。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第四条　地方運輸局（運輸監理部を含む。第七条第二項第一号において同じ。）が、法<wbr>第三十三条の規定により読み替えて適用する法第十一条の規定により求人の申込みを受<wbr>理しないときは、求人者に対し、その理由を説明しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（青少年雇用情報）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（青少年雇用情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第三十三条の規定により読み替えて適用する法第十三条第一項の国土交通省<wbr>令で定める事項は、次に掲げるものとする。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第三十三条の規定により読み替えて適用する法第十三条第一項の国土交通省<wbr>令で定める事項は、次に掲げるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">一　青少年の募集及び採用の状況に関する事項として次に掲げる事項</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">一　青少年の募集及び採用の状況に関する事項として次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　直近の三事業年度に採用した者（新たに学校若しくは専修学校を卒業した者、新た<wbr>に公共職業能力開発施設若しくは職業能力開発総合大学校の行う職業訓練を修了した者<wbr>若しくは新たに国立研究開発法人水産研究・教育機構若しくは独立行政法人海技教育機<wbr>構の行う船員の教育訓練を修了した者又はこれらに準ずる者（以下「新規学卒者等」と<wbr>いう。）に限る。）の数及び当該採用した者のうち直近の三事業年度に離職した者の数<wbr></span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　直近の三事業年度に採用した者（新たに学校若しくは専修学校を卒業した者、新た<wbr>に公共職業能力開発施設若しくは職業能力開発総合大学校の行う職業訓練を修了した者<wbr>若しくは新たに国立研究開発法人水産研究・教育機構若しくは独立行政法人海技教育機<wbr>構の行う船員の教育訓練を修了した者又はこれらに準ずる者（以下「新規学卒者等」と<wbr>いう。）に限る。）の数及び当該採用した者のうち直近の三事業年度に離職した者の数<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　男女別の直近の三事業年度に採用した新規学卒者等の数</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　男女別の直近の三事業年度に採用した新規学卒者等の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ハ　その雇用する船員の平均継続勤務年数</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ハ　その雇用する船員の平均継続勤務年数</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">二　職業能力の開発及び向上に関する取組の実施状況に関する事項として次に掲げる事<wbr>項</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">二　職業能力の開発及び向上に関する取組の実施状況に関する事項として次に掲げる事<wbr>項</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する船員に対する研修の有無及びその内容</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する船員に対する研修の有無及びその内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する船員が自発的な職業能力の開発及び向上を図ることを容易にするため<wbr>に必要な援助の有無並びにその内容</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する船員が自発的な職業能力の開発及び向上を図ることを容易にするため<wbr>に必要な援助の有無並びにその内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ハ　新たに雇い入れた新規学卒者等からの職業能力の開発及び向上その他の職業生活に<wbr>関する相談に応じ、並びに必要な助言その他の援助を行う者を当該新規学卒者等に割り<wbr>当てる制度の有無</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ハ　新たに雇い入れた新規学卒者等からの職業能力の開発及び向上その他の職業生活に<wbr>関する相談に応じ、並びに必要な助言その他の援助を行う者を当該新規学卒者等に割り<wbr>当てる制度の有無</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">ニ　その雇用する船員に対する職業に必要な知識及び技能に関する検定に係る制度の有<wbr>無並びにその内容</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">ニ　その雇用する船員に対する職業に必要な知識及び技能に関する検定に係る制度の有<wbr>無並びにその内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">三　職場への定着の促進に関する取組の実施状況に関する事項として次に掲げる事項</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">三　職場への定着の促進に関する取組の実施状況に関する事項として次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する船員一人当たりの直近の事業年度における平均した一月当たりの所定<wbr>外労働時間（所定労働時間を超えて労働した時間をいう。）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する船員一人当たりの直近の事業年度における平均した一月当たりの所定<wbr>外労働時間（所定労働時間を超えて労働した時間をいう。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する船員一人当たりの一年間の有給休暇（船員法（昭和二十二年法律第百<wbr>号）第七十四条の規定による有給休暇をいう。）の日数</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する船員一人当たりの一年間の有給休暇（船員法（昭和二十二年法律第百<wbr>号）第七十四条の規定による有給休暇をいう。）の日数</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ハ　育児休業（育児・介護休業法第二条第一号に規定する育児休業をいう。以下このハ<wbr>において同じ。）の取得の状況として、次に掲げる全ての事項</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ハ　育児休業（育児・介護休業法第二条第一号に規定する育児休業をいう。以下このハ<wbr>において同じ。）の取得の状況として、次に掲げる全ての事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（１）　その雇用する男性船員であって、直近の事業年度において配偶者が出産したも<wbr>のの数及び当該事業年度において育児休業をしたものの数</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（１）　その雇用する男性船員であって、直近の事業年度において配偶者が出産したも<wbr>のの数及び当該事業年度において育児休業をしたものの数</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（２）　その雇用する女性船員であって、直近の事業年度において出産したものの数及<wbr>び当該事業年度において育児休業をしたものの数</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（２）　その雇用する女性船員であって、直近の事業年度において出産したものの数及<wbr>び当該事業年度において育児休業をしたものの数</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">ニ　管理的地位にある者に占める女性船員の割合</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">ニ　管理的地位にある者に占める女性船員の割合</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　前項各号（第三号ニを除く。）に掲げる事項は、船員の募集を行う者が法第三十三<wbr>条の規定により読み替えて適用する法第十三条第一項に規定する学校卒業見込者等募集<wbr>（以下この項において「学校卒業見込者等募集」という。）であって通常の船員の募集<wbr>を行う場合は通常の船員に係る事項とし、通常の船員以外の募集を行う場合は通常の船<wbr>員以外の船員に係る事項とする。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　前項各号（第三号ニを除く。）に掲げる事項は、船員の募集を行う者が法第三十三<wbr>条の規定により読み替えて適用する法第十三条第一項に規定する学校卒業見込者等募集<wbr>（以下この項において「学校卒業見込者等募集」という。）であって通常の船員の募集<wbr>を行う場合は通常の船員に係る事項とし、通常の船員以外の募集を行う場合は通常の船<wbr>員以外の船員に係る事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定は、法第三十三条の規定により読み替えて適用する法第十四条の規定に<wbr>より求人者が学校卒業見込者等求人の申込みを行う場合について準用する。この場合に<wbr>おいて、同項中「船員の募集を行う場合」とあるのは、「求人の申込みを行う場合」と<wbr>する。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定は、法第三十三条の規定により読み替えて適用する法第十四条の規定に<wbr>より求人者が学校卒業見込者等求人の申込みを行う場合について準用する。この場合に<wbr>おいて、同項中「船員の募集を行う場合」とあるのは、「求人の申込みを行う場合」と<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（青少年雇用情報の提供の方法等）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（青少年雇用情報の提供の方法等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第三十三条の規定により読み替えて適用する法第十三条第一項の規定による<wbr>青少年雇用情報の提供は、電子メールの送信その他のインターネットを利用する方法又<wbr>は書面を交付する方法その他の適切な方法により行うものとする。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第三十三条の規定により読み替えて適用する法第十三条第一項の規定による<wbr>青少年雇用情報の提供は、電子メールの送信その他のインターネットを利用する方法又<wbr>は書面を交付する方法その他の適切な方法により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十三条の規定により適用する法第十三条第二項の規定により青少年雇用情報<wbr>の提供を求める場合には、学校卒業見込者等は、次に掲げる事項について、電子メール<wbr>を送信する方法又は書面を交付する方法その他の適切な方法により、船員の募集を行う<wbr>者に明示しなければならない。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十三条の規定により適用する法第十三条第二項の規定により青少年雇用情報<wbr>の提供を求める場合には、学校卒業見込者等は、次に掲げる事項について、電子メール<wbr>を送信する方法又は書面を交付する方法その他の適切な方法により、船員の募集を行う<wbr>者に明示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">一　当該学校卒業見込者等の氏名及び住所又は電子メールアドレス</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">一　当該学校卒業見込者等の氏名及び住所又は電子メールアドレス</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">二　次に掲げる当該学校卒業見込者等の区分に応じ、それぞれ次に定める事項</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">二　次に掲げる当該学校卒業見込者等の区分に応じ、それぞれ次に定める事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">イ　学校若しくは専修学校（以下このイにおいて「学校等」という。）の学生若しくは<wbr>生徒又は学校等を卒業した者　学校等の名称及び在学年又は卒業した年月</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">イ　学校若しくは専修学校（以下このイにおいて「学校等」という。）の学生若しくは<wbr>生徒又は学校等を卒業した者　学校等の名称及び在学年又は卒業した年月</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共職業能力開発施設若しくは職業能力開発総合大学校（以下このロにおいて「施<wbr>設等」という。）の行う職業訓練を受ける者又は当該職業訓練を修了した者　施設等及<wbr>び職業訓練の名称並びに修了することが見込まれる年月又は修了した年月</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共職業能力開発施設若しくは職業能力開発総合大学校（以下このロにおいて「施<wbr>設等」という。）の行う職業訓練を受ける者又は当該職業訓練を修了した者　施設等及<wbr>び職業訓練の名称並びに修了することが見込まれる年月又は修了した年月</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">ハ　独立行政法人水産大学校、国立研究開発法人水産研究・教育機構若しくは独立行政<wbr>法人海技教育機構（以下このハにおいて「機構等」という。）の行う船員の教育訓練を<wbr>受ける者又は当該教育訓練を修了した者　機構等及び教育訓練の名称並びに修了するこ<wbr>とが見込まれる年月又は修了した年月</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">ハ　独立行政法人水産大学校、国立研究開発法人水産研究・教育機構若しくは独立行政<wbr>法人海技教育機構（以下このハにおいて「機構等」という。）の行う船員の教育訓練を<wbr>受ける者又は当該教育訓練を修了した者　機構等及び教育訓練の名称並びに修了するこ<wbr>とが見込まれる年月又は修了した年月</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">ニ　第二条第三号ニ又はホに掲げる者　各種学校又は外国の教育施設の名称及び在学年<wbr>又は卒業した年月</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">ニ　第二条第三号ニ又はホに掲げる者　各種学校又は外国の教育施設の名称及び在学年<wbr>又は卒業した年月</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">三　青少年雇用情報の提供を希望する旨</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">三　青少年雇用情報の提供を希望する旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">３　法第三十三条の規定により適用する法第十三条第二項の規定による青少年雇用情報<wbr>の提供は、前条第一項第一号イからハまでに掲げる事項、同項第二号イからニまでに掲<wbr>げる事項及び同項第三号イからニまでに掲げる事項のうちそれぞれ一以上について、電<wbr>子メールを送信する方法又は書面を交付する方法その他の適切な方法により行うものと<wbr>する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">３　法第三十三条の規定により適用する法第十三条第二項の規定による青少年雇用情報<wbr>の提供は、前条第一項第一号イからハまでに掲げる事項、同項第二号イからニまでに掲<wbr>げる事項及び同項第三号イからニまでに掲げる事項のうちそれぞれ一以上について、電<wbr>子メールを送信する方法又は書面を交付する方法その他の適切な方法により行うものと<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第三十三条の規定により読み替えて適用する法第十四条第一項の規定による<wbr>青少年雇用情報の提供は、電子メールを送信する方法又は書面を交付する方法その他の<wbr>適切な方法により行うものとする。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第三十三条の規定により読み替えて適用する法第十四条第一項の規定による<wbr>青少年雇用情報の提供は、電子メールを送信する方法又は書面を交付する方法その他の<wbr>適切な方法により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十三条の規定により読み替えて適用する法第十四条第二項の規定により青少<wbr>年雇用情報の提供を求める場合には、次の各号に掲げる者は、当該各号に定める事項に<wbr>ついて、電子メールを送信する方法又は書面を交付する方法その他の適切な方法により<wbr>、求人者に明示しなければならない。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">２　法第三十三条の規定により読み替えて適用する法第十四条第二項の規定により青少<wbr>年雇用情報の提供を求める場合には、次の各号に掲げる者は、当該各号に定める事項に<wbr>ついて、電子メールを送信する方法又は書面を交付する方法その他の適切な方法により<wbr>、求人者に明示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">一　当該求人者が学校卒業見込者等求人の申込みをした地方運輸局又は無料船員職業紹<wbr>介事業者（船員職業安定法（昭和二十三年法律第百三十号）第六条第四項に規定する無<wbr>料船員職業紹介事業者をいう。）　前条第二項第三号に掲げる事項</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">一　当該求人者が学校卒業見込者等求人の申込みをした地方運輸局又は無料船員職業紹<wbr>介事業者（船員職業安定法（昭和二十三年法律第百三十号）第六条第四項に規定する無<wbr>料船員職業紹介事業者をいう。）　前条第二項第三号に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げる者から職業の紹介を受け、又は受けようとする学校卒業見込者等　前<wbr>条第二項各号に掲げる事項</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げる者から職業の紹介を受け、又は受けようとする学校卒業見込者等　前<wbr>条第二項各号に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">３　前条第三項の規定は、法第三十三条の規定により読み替えて適用する法第十四条第<wbr>二項の規定による青少年雇用情報の提供について準用する。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">３　前条第三項の規定は、法第三十三条の規定により読み替えて適用する法第十四条第<wbr>二項の規定による青少年雇用情報の提供について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第三十三条の規定により読み替えて適用する法第二十八条に規定する国土交<wbr>通大臣の権限は、地方運輸局長（運輸監理部長を含む。）に委任する。ただし、国土交<wbr>通大臣が自らその権限を行うことを妨げない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第三十三条の規定により読み替えて適用する法第二十八条に規定する国土交<wbr>通大臣の権限は、地方運輸局長（運輸監理部長を含む。）に委任する。ただし、国土交<wbr>通大臣が自らその権限を行うことを妨げない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成二十八年三月一日から施行する。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成二十八年三月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　第三条の規定は、この省令の施行の日（以下「施行日」という。）以後に青少年の<wbr>雇用の促進等に関する法律第十一条の労働に関する法律の規定を定める政令（平成二十<wbr>八年政令第四号）に掲げる法律の規定に違反する行為（以下この項において「違反行為<wbr>」という。）をした場合（求人者が第三条第一号イに該当する場合（当該違反行為をし<wbr>た日を起算日とする過去一年以内において当該違反行為と同一の法律の条項に違反する<wbr>行為をしたことがある場合に限る。）にあっては、当該同一の法律の条項に違反する行<wbr>為を施行日以後にした場合）について適用する。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　第三条の規定は、この省令の施行の日（以下「施行日」という。）以後に青少年の<wbr>雇用の促進等に関する法律第十一条の労働に関する法律の規定を定める政令（平成二十<wbr>八年政令第四号）に掲げる法律の規定に違反する行為（以下この項において「違反行為<wbr>」という。）をした場合（求人者が第三条第一号イに該当する場合（当該違反行為をし<wbr>た日を起算日とする過去一年以内において当該違反行為と同一の法律の条項に違反する<wbr>行為をしたことがある場合に限る。）にあっては、当該同一の法律の条項に違反する行<wbr>為を施行日以後にした場合）について適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年二月二九日国土交通省令第一二号）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年二月二九日国土交通省令第一二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月三一日国土交通省令第二五号）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月三一日国土交通省令第二五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年七月一八日国土交通省令第二五号）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年七月一八日国土交通省令第二五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">この省令は、令和二年三月三十日から施行する。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">この省令は、令和二年三月三十日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和二年五月二五日国土交通省令第五〇号）</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和二年五月二五日国土交通省令第五〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、女性の職業生活における活躍の推進に関する法律等の一部を改正する<wbr>法律の施行の日（令和二年六月一日）から施行する。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、女性の職業生活における活躍の推進に関する法律等の一部を改正する<wbr>法律の施行の日（令和二年六月一日）から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の船員に関する雇用の分野における男女の均等な機会及<wbr>び待遇の確保等に関する法律施行規則第四条の二の規定の適用については、施行の日か<wbr>ら令和八年三月三十一日までの間は、同条中「法第三十一条第一項の規定により読み替<wbr>えて適用される法第十三条の二に規定する業務」とあるのは、「法第三十一条第一項の<wbr>規定により読み替えて適用される法附則第二項の規定により読み替えて適用される法第<wbr>十三条の二に規定する業務」とする。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の船員に関する雇用の分野における男女の均等な機会及<wbr>び待遇の確保等に関する法律施行規則第四条の二の規定の適用については、施行の日か<wbr>ら令和八年三月三十一日までの間は、同条中「法第三十一条第一項の規定により読み替<wbr>えて適用される法第十三条の二に規定する業務」とあるのは、「法第三十一条第一項の<wbr>規定により読み替えて適用される法附則第二項の規定により読み替えて適用される法第<wbr>十三条の二に規定する業務」とする。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

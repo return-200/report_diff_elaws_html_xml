@@ -1,0 +1,843 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十四年法律第五十七号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十四年法律第五十七号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">急傾斜地の崩壊による災害の防止に関する法律</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">急傾斜地の崩壊による災害の防止に関する法律</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第五条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　急傾斜地崩壊危険区域に関する管理等（第六条―第二十条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　急傾斜地崩壊危険区域に関する管理等（第六条―第二十条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　急傾斜地崩壊危険区域に関する費用（第二十一条―第二十三条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　急傾斜地崩壊危険区域に関する費用（第二十一条―第二十三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第二十四条―第二十六条の二）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第二十四条―第二十六条の二）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第二十七条―第三十条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第二十七条―第三十条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、急傾斜地の崩壊による災害から国民の生命を保護するため、急傾<wbr>斜地の崩壊を防止するために必要な措置を講じ、もつて民生の安定と国土の保全とに資<wbr>することを目的とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、急傾斜地の崩壊による災害から国民の生命を保護するため、急傾<wbr>斜地の崩壊を防止するために必要な措置を講じ、もつて民生の安定と国土の保全とに資<wbr>することを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「急傾斜地」とは、傾斜度が三十度以上である土地をいう。<wbr></span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「急傾斜地」とは、傾斜度が三十度以上である土地をいう。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">２　この法律において「急傾斜地崩壊防止施設」とは、次条第一項の規定により指定さ<wbr>れる急傾斜地崩壊危険区域内にある擁壁、排水施設その他の急傾斜地の崩壊を防止する<wbr>ための施設をいう。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">２　この法律において「急傾斜地崩壊防止施設」とは、次条第一項の規定により指定さ<wbr>れる急傾斜地崩壊危険区域内にある擁壁、排水施設その他の急傾斜地の崩壊を防止する<wbr>ための施設をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">３　この法律において「急傾斜地崩壊防止工事」とは、急傾斜地崩壊防止施設の設置又<wbr>は改造その他次条第一項の規定により指定される急傾斜地崩壊危険区域内における急傾<wbr>斜地の崩壊を防止するための工事をいう。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">３　この法律において「急傾斜地崩壊防止工事」とは、急傾斜地崩壊防止施設の設置又<wbr>は改造その他次条第一項の規定により指定される急傾斜地崩壊危険区域内における急傾<wbr>斜地の崩壊を防止するための工事をいう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（急傾斜地崩壊危険区域の指定）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（急傾斜地崩壊危険区域の指定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条　都道府県知事は、この法律の目的を達成するために必要があると認めるときは<wbr>、関係市町村長（特別区の長を含む。以下同じ。）の意見をきいて、崩壊するおそれの<wbr>ある急傾斜地で、その崩壊により相当数の居住者その他の者に危害が生ずるおそれのあ<wbr>るもの及びこれに隣接する土地のうち、当該急傾斜地の崩壊が助長され、又は誘発され<wbr>るおそれがないようにするため、第七条第一項各号に掲げる行為が行なわれることを制<wbr>限する必要がある土地の区域を急傾斜地崩壊危険区域として指定することができる。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条　都道府県知事は、この法律の目的を達成するために必要があると認めるときは<wbr>、関係市町村長（特別区の長を含む。以下同じ。）の意見をきいて、崩壊するおそれの<wbr>ある急傾斜地で、その崩壊により相当数の居住者その他の者に危害が生ずるおそれのあ<wbr>るもの及びこれに隣接する土地のうち、当該急傾斜地の崩壊が助長され、又は誘発され<wbr>るおそれがないようにするため、第七条第一項各号に掲げる行為が行なわれることを制<wbr>限する必要がある土地の区域を急傾斜地崩壊危険区域として指定することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">２　前項の指定は、この法律の目的を達成するために必要な最小限度のものでなければ<wbr>ならない。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">２　前項の指定は、この法律の目的を達成するために必要な最小限度のものでなければ<wbr>ならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">３　都道府県知事は、第一項の指定をするときは、国土交通省令で定めるところにより<wbr>、当該急傾斜地崩壊危険区域を公示するとともに、その旨を関係市町村長に通知しなけ<wbr>ればならない。これを廃止するときも、同様とする。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">３　都道府県知事は、第一項の指定をするときは、国土交通省令で定めるところにより<wbr>、当該急傾斜地崩壊危険区域を公示するとともに、その旨を関係市町村長に通知しなけ<wbr>ればならない。これを廃止するときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">４　急傾斜地崩壊危険区域の指定又は廃止は、前項の公示によつてその効力を生ずる。<wbr></span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">４　急傾斜地崩壊危険区域の指定又は廃止は、前項の公示によつてその効力を生ずる。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（調査）</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（調査）</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第四条　前条第一項の指定は、必要に応じ、当該指定に係る土地に関し、地形、地質、<wbr>降水等の状況に関する現地調査をして行なうものとする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第四条　前条第一項の指定は、必要に応じ、当該指定に係る土地に関し、地形、地質、<wbr>降水等の状況に関する現地調査をして行なうものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（調査のための立入り）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（調査のための立入り）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第五条　都道府県知事又はその命じた者若しくは委任した者は、前条の調査のためにや<wbr>むを得ない必要があるときは、他人の占有する土地に立ち入り、又は特別の用途のない<wbr>他人の土地を材料置場若しくは作業場として一時使用することができる。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第五条　都道府県知事又はその命じた者若しくは委任した者は、前条の調査のためにや<wbr>むを得ない必要があるときは、他人の占有する土地に立ち入り、又は特別の用途のない<wbr>他人の土地を材料置場若しくは作業場として一時使用することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により他人の占有する土地に立ち入ろうとする者は、あらかじめ、その<wbr>旨を当該土地の占有者に通知しなければならない。ただし、あらかじめ通知することが<wbr>困難であるときは、この限りでない。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により他人の占有する土地に立ち入ろうとする者は、あらかじめ、その<wbr>旨を当該土地の占有者に通知しなければならない。ただし、あらかじめ通知することが<wbr>困難であるときは、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により宅地又はかき、さく等で囲まれた他人の占有する土地に立ち入<wbr>ろうとする場合においては、その立ち入ろうとする者は、立入りの際、あらかじめ、そ<wbr>の旨を当該土地の占有者に告げなければならない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により宅地又はかき、さく等で囲まれた他人の占有する土地に立ち入<wbr>ろうとする場合においては、その立ち入ろうとする者は、立入りの際、あらかじめ、そ<wbr>の旨を当該土地の占有者に告げなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">４　日出前及び日没後においては、土地の占有者の承諾があつた場合を除き、前項に規<wbr>定する土地に立ち入つてはならない。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">４　日出前及び日没後においては、土地の占有者の承諾があつた場合を除き、前項に規<wbr>定する土地に立ち入つてはならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">５　第一項の規定により他人の占有する土地に立ち入ろうとする者は、その身分を示す<wbr>証明書を携帯し、関係人の請求があつたときは、これを提示しなければならない。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">５　第一項の規定により他人の占有する土地に立ち入ろうとする者は、その身分を示す<wbr>証明書を携帯し、関係人の請求があつたときは、これを提示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">６　第一項の規定により特別の用途のない他人の土地を材料置場又は作業場として一時<wbr>使用しようとする者は、あらかじめ、当該土地の占有者及び所有者に通知して、その意<wbr>見をきかなければならない。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">６　第一項の規定により特別の用途のない他人の土地を材料置場又は作業場として一時<wbr>使用しようとする者は、あらかじめ、当該土地の占有者及び所有者に通知して、その意<wbr>見をきかなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">７　土地の占有者又は所有者は、正当な理由がない限り、第一項の規定による立入り又<wbr>は一時使用を拒み、又は妨げてはならない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">７　土地の占有者又は所有者は、正当な理由がない限り、第一項の規定による立入り又<wbr>は一時使用を拒み、又は妨げてはならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">８　都道府県は、第一項の規定による立入り又は一時使用により損失を受けた者がある<wbr>場合においては、その者に対して、通常生ずべき損失を補償しなければならない。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">８　都道府県は、第一項の規定による立入り又は一時使用により損失を受けた者がある<wbr>場合においては、その者に対して、通常生ずべき損失を補償しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">９　前項の規定による損失の補償については、都道府県と損失を受けた者とが協議しな<wbr>ければならない。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">９　前項の規定による損失の補償については、都道府県と損失を受けた者とが協議しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">10　前項の規定による協議が成立しない場合においては、都道府県は、自己の見積つ<wbr>た金額を損失を受けた者に支払わなければならない。この場合において、当該金額につ<wbr>いて不服のある者は、政令で定めるところにより、補償金の支払を受けた日から三十日<wbr>以内に、収用委員会に土地収用法（昭和二十六年法律第二百十九号）第九十四条の規定<wbr>による裁決を申請することができる。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">10　前項の規定による協議が成立しない場合においては、都道府県は、自己の見積つ<wbr>た金額を損失を受けた者に支払わなければならない。この場合において、当該金額につ<wbr>いて不服のある者は、政令で定めるところにより、補償金の支払を受けた日から三十日<wbr>以内に、収用委員会に土地収用法（昭和二十六年法律第二百十九号）第九十四条の規定<wbr>による裁決を申請することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第二章　急傾斜地崩壊危険区域に関する管理等</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第二章　急傾斜地崩壊危険区域に関する管理等</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（標識の設置）</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（標識の設置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第六条　都道府県は、急傾斜地崩壊危険区域の指定があつたときは、国土交通省令で定<wbr>めるところにより、当該急傾斜地崩壊危険区域内にこれを表示する標識を設置しなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第六条　都道府県は、急傾斜地崩壊危険区域の指定があつたときは、国土交通省令で定<wbr>めるところにより、当該急傾斜地崩壊危険区域内にこれを表示する標識を設置しなけれ<wbr>ばならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（行為の制限）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（行為の制限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第七条　急傾斜地崩壊危険区域内においては、次の各号に掲げる行為は、都道府県知事<wbr>の許可を受けなければ、してはならない。ただし、非常災害のために必要な応急措置と<wbr>して行なう行為、当該急傾斜地崩壊危険区域の指定の際すでに着手している行為及び政<wbr>令で定めるその他の行為については、この限りでない。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第七条　急傾斜地崩壊危険区域内においては、次の各号に掲げる行為は、都道府県知事<wbr>の許可を受けなければ、してはならない。ただし、非常災害のために必要な応急措置と<wbr>して行なう行為、当該急傾斜地崩壊危険区域の指定の際すでに着手している行為及び政<wbr>令で定めるその他の行為については、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">一　水を放流し、又は停滞させる行為その他水のしん透を助長する行為</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">一　水を放流し、又は停滞させる行為その他水のしん透を助長する行為</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">二　ため池、用水路その他の急傾斜地崩壊防止施設以外の施設又は工作物の設置又は改<wbr>造</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">二　ため池、用水路その他の急傾斜地崩壊防止施設以外の施設又は工作物の設置又は改<wbr>造</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">三　のり切、切土、掘さく又は盛土</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">三　のり切、切土、掘さく又は盛土</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">四　立木竹の伐採</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">四　立木竹の伐採</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">五　木竹の滑下又は地引による搬出</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">五　木竹の滑下又は地引による搬出</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">六　土石の採取又は集積</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">六　土石の採取又は集積</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">七　前各号に掲げるもののほか、急傾斜地の崩壊を助長し、又は誘発するおそれのある<wbr>行為で政令で定めるもの</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">七　前各号に掲げるもののほか、急傾斜地の崩壊を助長し、又は誘発するおそれのある<wbr>行為で政令で定めるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事は、前項の許可に、急傾斜地の崩壊を防止するために必要な条件を附<wbr>することができる。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事は、前項の許可に、急傾斜地の崩壊を防止するために必要な条件を附<wbr>することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　急傾斜地崩壊危険区域の指定の際当該急傾斜地崩壊危険区域内においてすでに第一<wbr>項各号に掲げる行為（非常災害のために必要な応急措置として行なう行為及び同項ただ<wbr>し書に規定する政令で定めるその他の行為を除く。）に着手している者は、その指定の<wbr>日から起算して十四日以内に、国土交通省令で定めるところにより、その旨を都道府県<wbr>知事に届け出なければならない。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　急傾斜地崩壊危険区域の指定の際当該急傾斜地崩壊危険区域内においてすでに第一<wbr>項各号に掲げる行為（非常災害のために必要な応急措置として行なう行為及び同項ただ<wbr>し書に規定する政令で定めるその他の行為を除く。）に着手している者は、その指定の<wbr>日から起算して十四日以内に、国土交通省令で定めるところにより、その旨を都道府県<wbr>知事に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　国又は地方公共団体が第一項の許可を受けなければならない行為（以下「制限行為<wbr>」という。）をしようとするときは、あらかじめ、都道府県知事に協議することをもつ<wbr>て足りる。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　国又は地方公共団体が第一項の許可を受けなければならない行為（以下「制限行為<wbr>」という。）をしようとするときは、あらかじめ、都道府県知事に協議することをもつ<wbr>て足りる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（監督処分）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（監督処分）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第八条　都道府県知事は、次の各号の一に該当する者に対して、前条第一項の許可を取<wbr>り消し、若しくは同項の許可に附した条件を変更し、又は制限行為の中止その他制限行<wbr>為に伴う急傾斜地の崩壊を防止するために必要な措置をとることを命ずることができる<wbr>。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第八条　都道府県知事は、次の各号の一に該当する者に対して、前条第一項の許可を取<wbr>り消し、若しくは同項の許可に附した条件を変更し、又は制限行為の中止その他制限行<wbr>為に伴う急傾斜地の崩壊を防止するために必要な措置をとることを命ずることができる<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">一　前条第一項の規定に違反した者</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">一　前条第一項の規定に違反した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">二　前条第一項の許可に附した条件に違反した者</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">二　前条第一項の許可に附した条件に違反した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">三　偽りその他不正な手段により前条第一項の許可を受けた者</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">三　偽りその他不正な手段により前条第一項の許可を受けた者</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事は、前項の規定により必要な措置をとることを命じようとする場合に<wbr>おいて、過失がなくてその措置をとることを命ずべき者を確知することができず、かつ<wbr>、これを放置することが著しく公益に反すると認められるときは、その者の負担におい<wbr>て、その措置をみずから行ない、又はその命じた者若しくは委任した者に行なわせるこ<wbr>とができる。この場合においては、相当の期限を定めて、その措置をとるべき旨及びそ<wbr>の期限までにその措置をとらないときは、都道府県知事又はその命じた者若しくは委任<wbr>した者がその措置を行なうべき旨を、あらかじめ、公告しなければならない。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県知事は、前項の規定により必要な措置をとることを命じようとする場合に<wbr>おいて、過失がなくてその措置をとることを命ずべき者を確知することができず、かつ<wbr>、これを放置することが著しく公益に反すると認められるときは、その者の負担におい<wbr>て、その措置をみずから行ない、又はその命じた者若しくは委任した者に行なわせるこ<wbr>とができる。この場合においては、相当の期限を定めて、その措置をとるべき旨及びそ<wbr>の期限までにその措置をとらないときは、都道府県知事又はその命じた者若しくは委任<wbr>した者がその措置を行なうべき旨を、あらかじめ、公告しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">（土地の保全等）</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">（土地の保全等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第九条　急傾斜地崩壊危険区域内の土地の所有者、管理者又は占有者は、その土地の維<wbr>持管理については、当該急傾斜地崩壊危険区域内における急傾斜地の崩壊が生じないよ<wbr>うに努めなければならない。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第九条　急傾斜地崩壊危険区域内の土地の所有者、管理者又は占有者は、その土地の維<wbr>持管理については、当該急傾斜地崩壊危険区域内における急傾斜地の崩壊が生じないよ<wbr>うに努めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">２　急傾斜地崩壊危険区域内における急傾斜地の崩壊により被害を受けるおそれのある<wbr>者は、当該急傾斜地の崩壊による被害を除却し、又は軽減するために必要な措置を講ず<wbr>るように努めなければならない。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">２　急傾斜地崩壊危険区域内における急傾斜地の崩壊により被害を受けるおそれのある<wbr>者は、当該急傾斜地の崩壊による被害を除却し、又は軽減するために必要な措置を講ず<wbr>るように努めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">３　都道府県知事は、急傾斜地崩壊危険区域内における急傾斜地の崩壊による災害を防<wbr>止するために必要があると認める場合においては、当該急傾斜地崩壊危険区域内の土地<wbr>の所有者、管理者又は占有者、その土地内において制限行為を行つた者、当該急傾斜地<wbr>の崩壊により被害を受けるおそれのある者等に対し、急傾斜地崩壊防止工事の施行その<wbr>他の必要な措置をとることを勧告することができる。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">３　都道府県知事は、急傾斜地崩壊危険区域内における急傾斜地の崩壊による災害を防<wbr>止するために必要があると認める場合においては、当該急傾斜地崩壊危険区域内の土地<wbr>の所有者、管理者又は占有者、その土地内において制限行為を行つた者、当該急傾斜地<wbr>の崩壊により被害を受けるおそれのある者等に対し、急傾斜地崩壊防止工事の施行その<wbr>他の必要な措置をとることを勧告することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（改善命令）</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（改善命令）</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十条　都道府県知事は、急傾斜地崩壊危険区域内の土地において制限行為（当該急傾<wbr>斜地崩壊危険区域の指定前に行なわれた行為又はその指定の際すでに着手している行為<wbr>であつて、その行為が当該指定後に行なわれたとしたならば制限行為に該当する行為と<wbr>なるべきものを含む。以下同じ。）が行なわれ、かつ、当該制限行為に伴う急傾斜地の<wbr>崩壊を防止するために必要な急傾斜地崩壊防止工事がなされていないか又はきわめて不<wbr>完全であることのために、これを放置するときは、当該制限行為に伴う急傾斜地の崩壊<wbr>のおそれが著しいと認められる場合においては、その著しいおそれを除去するために必<wbr>要であり、かつ、土地の利用状況、当該制限行為が行なわれるに至つた事情等からみて<wbr>相当であると認められる限度において、当該制限行為の行なわれた土地の所有者、管理<wbr>者又は占有者に対し、相当の猶予期限をつけて、急傾斜地崩壊防止工事の施行を命ずる<wbr>ことができる。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十条　都道府県知事は、急傾斜地崩壊危険区域内の土地において制限行為（当該急傾<wbr>斜地崩壊危険区域の指定前に行なわれた行為又はその指定の際すでに着手している行為<wbr>であつて、その行為が当該指定後に行なわれたとしたならば制限行為に該当する行為と<wbr>なるべきものを含む。以下同じ。）が行なわれ、かつ、当該制限行為に伴う急傾斜地の<wbr>崩壊を防止するために必要な急傾斜地崩壊防止工事がなされていないか又はきわめて不<wbr>完全であることのために、これを放置するときは、当該制限行為に伴う急傾斜地の崩壊<wbr>のおそれが著しいと認められる場合においては、その著しいおそれを除去するために必<wbr>要であり、かつ、土地の利用状況、当該制限行為が行なわれるに至つた事情等からみて<wbr>相当であると認められる限度において、当該制限行為の行なわれた土地の所有者、管理<wbr>者又は占有者に対し、相当の猶予期限をつけて、急傾斜地崩壊防止工事の施行を命ずる<wbr>ことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、制限行為の行なわれた土地の所有者、管理者又は占<wbr>有者以外の者の行為によつて同項に規定する急傾斜地の崩壊の著しいおそれが生じたこ<wbr>とが明らかであり、その行為をした者に同項の工事の全部又は一部を行なわせることが<wbr>相当であると認められ、かつ、これを行なわせることについて当該制限行為が行なわれ<wbr>た土地の所有者、管理者又は占有者に異議がないときは、都道府県知事は、その行為を<wbr>した者に対して、同項の工事の全部又は一部の施行を命ずることができる。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、制限行為の行なわれた土地の所有者、管理者又は占<wbr>有者以外の者の行為によつて同項に規定する急傾斜地の崩壊の著しいおそれが生じたこ<wbr>とが明らかであり、その行為をした者に同項の工事の全部又は一部を行なわせることが<wbr>相当であると認められ、かつ、これを行なわせることについて当該制限行為が行なわれ<wbr>た土地の所有者、管理者又は占有者に異議がないときは、都道府県知事は、その行為を<wbr>した者に対して、同項の工事の全部又は一部の施行を命ずることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、第八条第一項各号に掲げる者に対しては、適用しない。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、第八条第一項各号に掲げる者に対しては、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">４　第八条第二項の規定は、第一項又は第二項の場合について準用する。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">４　第八条第二項の規定は、第一項又は第二項の場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（立入検査）</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（立入検査）</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第十一条　都道府県知事又はその命じた者若しくは委任した者は、第七条第一項、第八<wbr>条第一項又は前条第一項若しくは第二項の規定による権限を行なうために必要がある場<wbr>合においては、当該土地に立ち入り、当該土地又は当該土地における急傾斜地崩壊防止<wbr>工事若しくは制限行為の状況を検査することができる。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第十一条　都道府県知事又はその命じた者若しくは委任した者は、第七条第一項、第八<wbr>条第一項又は前条第一項若しくは第二項の規定による権限を行なうために必要がある場<wbr>合においては、当該土地に立ち入り、当該土地又は当該土地における急傾斜地崩壊防止<wbr>工事若しくは制限行為の状況を検査することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">２　第五条第五項の規定は、前項の場合について準用する。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">２　第五条第五項の規定は、前項の場合について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による立入検査の権限は、犯罪捜査のために認められたものと解して<wbr>はならない。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による立入検査の権限は、犯罪捜査のために認められたものと解して<wbr>はならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（都道府県の施行する急傾斜地崩壊防止工事）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（都道府県の施行する急傾斜地崩壊防止工事）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十二条　都道府県は、急傾斜地崩壊防止工事のうち、制限行為に伴う急傾斜地の崩壊<wbr>を防止するために必要な工事以外の工事で、当該急傾斜地の所有者、管理者若しくは占<wbr>有者又は当該急傾斜地の崩壊により被害を受けるおそれのある者が施行することが困難<wbr>又は不適当と認められるものを施行するものとする。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十二条　都道府県は、急傾斜地崩壊防止工事のうち、制限行為に伴う急傾斜地の崩壊<wbr>を防止するために必要な工事以外の工事で、当該急傾斜地の所有者、管理者若しくは占<wbr>有者又は当該急傾斜地の崩壊により被害を受けるおそれのある者が施行することが困難<wbr>又は不適当と認められるものを施行するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、砂防法（明治三十年法律第二十九号）第二条の規定により指定され<wbr>た土地、森林法（昭和二十六年法律第二百四十九号）第二十五条第一項若しくは第二十<wbr>五条の二第一項若しくは第二項の規定により指定された保安林（同法第二十五条の二第<wbr>一項後段又は第二項後段において準用する同法第二十五条第二項の規定により指定され<wbr>た保安林を除く。）若しくは同法第四十一条の規定により指定された保安施設地区又は<wbr>地すべり等防止法（昭和三十三年法律第三十号）第三条第一項の規定により指定された<wbr>地すべり防止区域若しくは同法第四条第一項の規定により指定されたぼた山崩壊防止区<wbr>域については、適用しない。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、砂防法（明治三十年法律第二十九号）第二条の規定により指定され<wbr>た土地、森林法（昭和二十六年法律第二百四十九号）第二十五条第一項若しくは第二十<wbr>五条の二第一項若しくは第二項の規定により指定された保安林（同法第二十五条の二第<wbr>一項後段又は第二項後段において準用する同法第二十五条第二項の規定により指定され<wbr>た保安林を除く。）若しくは同法第四十一条の規定により指定された保安施設地区又は<wbr>地すべり等防止法（昭和三十三年法律第三十号）第三条第一項の規定により指定された<wbr>地すべり防止区域若しくは同法第四条第一項の規定により指定されたぼた山崩壊防止区<wbr>域については、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">72</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　都道府県は、漁港漁場整備法（昭和二十五年法律第百三十七号）第二条に規定する<wbr>漁港の区域（水域を除く。）内、港湾</span><span style="color: #000000; background-color: #efcb05; ">（昭和二十五年法律第二百十八号）</span><span style="color: #000000; background-color: #efcb05; ">に規定する港<wbr>湾隣接地域内又は海岸法（昭和三十一年法律第百一号）第三条第一項に規定する海岸保<wbr>全区域内において第一項の規定による急傾斜地崩壊防止工事（以下「都道府県営工事」<wbr>という。）を施行しようとするときは、あらかじめ、漁港管理者、港湾管理者又は海岸<wbr>管理者に協議しなければならない。ただし、港湾法第三十七条第一項及び第三項又は海<wbr>岸法第十条第二項の規定により港湾管理者又は海岸管理者に協議しなければならない場<wbr>合においては、この限りでない。</span></code></td>
+<td class="ln">72</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　都道府県は、漁港漁場整備法（昭和二十五年法律第百三十七号）第二条に規定する<wbr>漁港の区域（水域を除く。）内、港湾</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">（昭和二十五年法律第二百十八号）</span><span class="sf17b18">第三十七条<wbr>第一項</span><span style="color: #000000; background-color: #efcb05; ">に規定する港湾隣接地域内又は海岸法（昭和三十一年法律第百一号）第三条第一<wbr>項に規定する海岸保全区域内において第一項の規定による急傾斜地崩壊防止工事（以下<wbr>「都道府県営工事」という。）を施行しようとするときは、あらかじめ、漁港管理者、<wbr>港湾管理者又は海岸管理者に協議しなければならない。ただし、港湾法第三十七条第一<wbr>項及び第三項又は海岸法第十条第二項の規定により港湾管理者又は海岸管理者に協議し<wbr>なければならない場合においては、この限りでない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（都道府県以外の者の施行する工事）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（都道府県以外の者の施行する工事）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第十三条　国又は地方公共団体以外の者が急傾斜地崩壊防止工事を施行しようとすると<wbr>きは、国土交通省令で定めるところにより、あらかじめ、その旨を都道府県知事に届け<wbr>出なければならない。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第十三条　国又は地方公共団体以外の者が急傾斜地崩壊防止工事を施行しようとすると<wbr>きは、国土交通省令で定めるところにより、あらかじめ、その旨を都道府県知事に届け<wbr>出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　国又は地方公共団体は、急傾斜地崩壊防止工事を施行しようとするときは、あらか<wbr>じめ、その旨を都道府県知事に通知しなければならない。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　国又は地方公共団体は、急傾斜地崩壊防止工事を施行しようとするときは、あらか<wbr>じめ、その旨を都道府県知事に通知しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（急傾斜地崩壊防止工事の施行の基準）</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（急傾斜地崩壊防止工事の施行の基準）</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">第十四条　急傾斜地崩壊防止工事は、急傾斜地崩壊危険区域内における急傾斜地の崩壊<wbr>の原因、機構及び規模に応じて、有効かつ適切なものとしなければならない。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">第十四条　急傾斜地崩壊防止工事は、急傾斜地崩壊危険区域内における急傾斜地の崩壊<wbr>の原因、機構及び規模に応じて、有効かつ適切なものとしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">２　急傾斜地崩壊防止工事は、政令で定める技術的基準に従い、施行しなければならな<wbr>い。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">２　急傾斜地崩壊防止工事は、政令で定める技術的基準に従い、施行しなければならな<wbr>い。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（適用の除外）</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（適用の除外）</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第十五条　前二条の規定は、急傾斜地崩壊防止工事が砂防法による砂防工事、森林法に<wbr>よる保安施設事業に係る工事又は地すべり等防止法による地すべり防止工事若しくはぼ<wbr>た山崩壊防止工事である場合における当該急傾斜地崩壊防止工事については、適用しな<wbr>い。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第十五条　前二条の規定は、急傾斜地崩壊防止工事が砂防法による砂防工事、森林法に<wbr>よる保安施設事業に係る工事又は地すべり等防止法による地すべり防止工事若しくはぼ<wbr>た山崩壊防止工事である場合における当該急傾斜地崩壊防止工事については、適用しな<wbr>い。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（附帯工事の施行）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（附帯工事の施行）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十六条　都道府県は、都道府県営工事により必要を生じた急傾斜地崩壊防止工事以外<wbr>の工事（以下「他の工事」という。）又は都道府県営工事を施行するために必要を生じ<wbr>た他の工事を当該都道府県営工事とあわせて施行することができる。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十六条　都道府県は、都道府県営工事により必要を生じた急傾斜地崩壊防止工事以外<wbr>の工事（以下「他の工事」という。）又は都道府県営工事を施行するために必要を生じ<wbr>た他の工事を当該都道府県営工事とあわせて施行することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、他の工事が河川工事（河川法（昭和三十九年法律第百六十七<wbr>号）が適用され、又は準用される河川の河川工事をいう。以下同じ。）又は道路（道路<wbr>法（昭和二十七年法律第百八十号）による道路をいう。以下同じ。）に関する工事であ<wbr>るときは、当該他の工事の施行については、同項の規定は、適用しない。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、他の工事が河川工事（河川法（昭和三十九年法律第百六十七<wbr>号）が適用され、又は準用される河川の河川工事をいう。以下同じ。）又は道路（道路<wbr>法（昭和二十七年法律第百八十号）による道路をいう。以下同じ。）に関する工事であ<wbr>るときは、当該他の工事の施行については、同項の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（土地の立入り等）</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（土地の立入り等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第十七条　都道府県知事又はその命じた者若しくは委任した者は、都道府県営工事のた<wbr>めにやむを得ない必要があるときは、他人の占有する土地に立ち入り、又は特別の用途<wbr>のない他人の土地を材料置場若しくは作業場として一時使用することができる。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第十七条　都道府県知事又はその命じた者若しくは委任した者は、都道府県営工事のた<wbr>めにやむを得ない必要があるときは、他人の占有する土地に立ち入り、又は特別の用途<wbr>のない他人の土地を材料置場若しくは作業場として一時使用することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">２　第五条第二項から第十項までの規定は、前項の場合について準用する。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">２　第五条第二項から第十項までの規定は、前項の場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（急傾斜地崩壊防止工事に伴う損失の補償）</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（急傾斜地崩壊防止工事に伴う損失の補償）</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第十八条　土地収用法第九十三条第一項の規定による場合を除き、都道府県営工事を施<wbr>行したことにより、当該都道府県営工事を施行した土地に面する土地について、通路、<wbr>みぞ、かき、さくその他の施設若しくは工作物を新築し、増築し、修繕し、若しくは移<wbr>転し、又は盛土若しくは切土をするやむを得ない必要があると認められる場合において<wbr>は、都道府県は、これらの工事をすることを必要とする者（以下この条において「損失<wbr>を受けた者」という。）の請求により、これに要する費用の全部又は一部を補償しなけ<wbr>ればならない。この場合において、都道府県又は損失を受けた者は、補償金の全部又は<wbr>一部に代えて、都道府県が当該工事を施行することを要求することができる。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第十八条　土地収用法第九十三条第一項の規定による場合を除き、都道府県営工事を施<wbr>行したことにより、当該都道府県営工事を施行した土地に面する土地について、通路、<wbr>みぞ、かき、さくその他の施設若しくは工作物を新築し、増築し、修繕し、若しくは移<wbr>転し、又は盛土若しくは切土をするやむを得ない必要があると認められる場合において<wbr>は、都道府県は、これらの工事をすることを必要とする者（以下この条において「損失<wbr>を受けた者」という。）の請求により、これに要する費用の全部又は一部を補償しなけ<wbr>ればならない。この場合において、都道府県又は損失を受けた者は、補償金の全部又は<wbr>一部に代えて、都道府県が当該工事を施行することを要求することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による損失の補償は、都道府県営工事の完了の日から一年を経過した後<wbr>においては、請求することができない。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による損失の補償は、都道府県営工事の完了の日から一年を経過した後<wbr>においては、請求することができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による損失の補償については、都道府県と損失を受けた者とが協議し<wbr>なければならない。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による損失の補償については、都道府県と損失を受けた者とが協議し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">４　前項の規定による協議が成立しない場合においては、都道府県又は損失を受けた者<wbr>は、政令で定めるところにより、収用委員会に土地収用法第九十四条の規定による裁決<wbr>を申請することができる。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">４　前項の規定による協議が成立しない場合においては、都道府県又は損失を受けた者<wbr>は、政令で定めるところにより、収用委員会に土地収用法第九十四条の規定による裁決<wbr>を申請することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第十九条　削除</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第十九条　削除 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（国土交通大臣の指示）</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（国土交通大臣の指示）</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">第二十条　国土交通大臣は、急傾斜地の崩壊による災害が発生し、又は発生するおそれ<wbr>があると認められる場合において、災害の発生を防止し、又は災害を軽減するため緊急<wbr>の必要があると認められるときは、都道府県に対し、第三条第一項及び第三項、第七条<wbr>第一項、第二項及び第四項、第八条第一項、同条第二項（第十条第四項において準用す<wbr>る場合を含む。）、第九条第三項、第十条第一項及び第二項、第十一条第一項並びに第<wbr>十二条第一項に規定する事務に関し、必要な指示をすることができる。</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">第二十条　国土交通大臣は、急傾斜地の崩壊による災害が発生し、又は発生するおそれ<wbr>があると認められる場合において、災害の発生を防止し、又は災害を軽減するため緊急<wbr>の必要があると認められるときは、都道府県に対し、第三条第一項及び第三項、第七条<wbr>第一項、第二項及び第四項、第八条第一項、同条第二項（第十条第四項において準用す<wbr>る場合を含む。）、第九条第三項、第十条第一項及び第二項、第十一条第一項並びに第<wbr>十二条第一項に規定する事務に関し、必要な指示をすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第三章　急傾斜地崩壊危険区域に関する費用</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第三章　急傾斜地崩壊危険区域に関する費用</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（都道府県営工事に要する費用の補助）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（都道府県営工事に要する費用の補助）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　国は、都道府県に対し、予算の範囲内において、政令で定めるところによ<wbr>り、都道府県営工事に要する費用の二分の一以内を補助することができる。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　国は、都道府県に対し、予算の範囲内において、政令で定めるところによ<wbr>り、都道府県営工事に要する費用の二分の一以内を補助することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（附帯工事に要する費用）</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（附帯工事に要する費用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　都道府県営工事により必要を生じた他の工事又は都道府県営工事を施行す<wbr>るために必要を生じた他の工事に要する費用は、第七条第一項の許可に附した条件に特<wbr>別の定めがある場合及び同条第四項の協議による場合を除き、その必要を生じた限度に<wbr>おいて、都道府県がその全部又は一部を負担するものとする。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　都道府県営工事により必要を生じた他の工事又は都道府県営工事を施行す<wbr>るために必要を生じた他の工事に要する費用は、第七条第一項の許可に附した条件に特<wbr>別の定めがある場合及び同条第四項の協議による場合を除き、その必要を生じた限度に<wbr>おいて、都道府県がその全部又は一部を負担するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、他の工事が河川工事又は道路に関する工事であるときは、当<wbr>該他の工事に要する費用については、同項の規定は、適用しない。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、他の工事が河川工事又は道路に関する工事であるときは、当<wbr>該他の工事に要する費用については、同項の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（受益者負担金）</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（受益者負担金）</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　都道府県は、都道府県営工事により著しく利益を受ける者がある場合にお<wbr>いては、その利益を受ける限度において、その者に、当該都道府県営工事に要する費用<wbr>の一部を負担させることができる。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　都道府県は、都道府県営工事により著しく利益を受ける者がある場合にお<wbr>いては、その利益を受ける限度において、その者に、当該都道府県営工事に要する費用<wbr>の一部を負担させることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、負担金の徴収を受ける者の範囲及びその徴収方法については<wbr>、都道府県の条例で定める。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、負担金の徴収を受ける者の範囲及びその徴収方法については<wbr>、都道府県の条例で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（独立行政法人住宅金融支援機構等の資金の貸付けについての配慮）</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（独立行政法人住宅金融支援機構等の資金の貸付けについての配慮）</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　独立行政法人住宅金融支援機構及び沖縄振興開発金融公庫は、法令及びそ<wbr>の事業計画の範囲内において、第九条第三項又は第十条第一項若しくは第二項の規定に<wbr>よる勧告又は命令に基づく急傾斜地崩壊防止工事の施行が円滑に行われるよう、必要な<wbr>資金の貸付けについて配慮するものとする。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　独立行政法人住宅金融支援機構及び沖縄振興開発金融公庫は、法令及びそ<wbr>の事業計画の範囲内において、第九条第三項又は第十条第一項若しくは第二項の規定に<wbr>よる勧告又は命令に基づく急傾斜地崩壊防止工事の施行が円滑に行われるよう、必要な<wbr>資金の貸付けについて配慮するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（国有地の無償貸付け等）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（国有地の無償貸付け等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　普通財産である国有地は、都道府県営工事により設置する急傾斜地崩壊防<wbr>止施設の用に供する場合においては、国有財産法（昭和二十三年法律第七十三号）第二<wbr>十二条又は第二十八条の規定にかかわらず、当該都道府県に無償で貸し付け、又は譲与<wbr>することができる。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　普通財産である国有地は、都道府県営工事により設置する急傾斜地崩壊防<wbr>止施設の用に供する場合においては、国有財産法（昭和二十三年法律第七十三号）第二<wbr>十二条又は第二十八条の規定にかかわらず、当該都道府県に無償で貸し付け、又は譲与<wbr>することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（報告の徴取）</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（報告の徴取）</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　都道府県知事は、急傾斜地崩壊危険区域内の土地の所有者、管理者若しく<wbr>は占有者又は当該土地において急傾斜地崩壊防止工事若しくは制限行為を行ない、若し<wbr>くは行なつた者に対し、この法律の施行に関して必要な報告を求めることができる。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　都道府県知事は、急傾斜地崩壊危険区域内の土地の所有者、管理者若しく<wbr>は占有者又は当該土地において急傾斜地崩壊防止工事若しくは制限行為を行ない、若し<wbr>くは行なつた者に対し、この法律の施行に関して必要な報告を求めることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">第二十六条の二　この法律に規定する国土交通大臣の権限は、国土交通省令で定めると<wbr>ころにより、その一部を地方整備局長又は北海道開発局長に委任することができる。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">第二十六条の二　この法律に規定する国土交通大臣の権限は、国土交通省令で定めると<wbr>ころにより、その一部を地方整備局長又は北海道開発局長に委任することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　第八条第一項の規定による都道府県知事の命令に違反した者は、一年以下<wbr>の懲役又は十万円以下の罰金に処する。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　第八条第一項の規定による都道府県知事の命令に違反した者は、一年以下<wbr>の懲役又は十万円以下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　次の各号の一に該当する者は、六月以下の懲役又は五万円以下の罰金に処<wbr>する。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　次の各号の一に該当する者は、六月以下の懲役又は五万円以下の罰金に処<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">一　第五条第七項（第十七条第二項において準用する場合を含む。）の規定に違反した<wbr>者</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">一　第五条第七項（第十七条第二項において準用する場合を含む。）の規定に違反した<wbr>者</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">二　第七条第一項の規定に違反した者</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">二　第七条第一項の規定に違反した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">三　第十条第一項又は第二項の規定による都道府県知事の命令に違反した者</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">三　第十条第一項又は第二項の規定による都道府県知事の命令に違反した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">四　第十一条第一項の規定による立入検査を拒み、妨げ、又は忌避した者</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">四　第十一条第一項の規定による立入検査を拒み、妨げ、又は忌避した者 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　次の各号の一に該当する者は、一万円以下の罰金に処する。</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　次の各号の一に該当する者は、一万円以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">一　第六条の規定により設置した標識を移動し、汚損し、又は破損した者</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">一　第六条の規定により設置した標識を移動し、汚損し、又は破損した者</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">二　第七条第三項の規定による届出をせず、又は虚偽の届出をした者</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">二　第七条第三項の規定による届出をせず、又は虚偽の届出をした者</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">三　第二十六条の規定による報告をせず、又は虚偽の報告をした者</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">三　第二十六条の規定による報告をせず、又は虚偽の報告をした者 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">第三十条　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その<wbr>法人又は人の業務に関し、前三条の違反行為をしたときは、行為者を罰するほか、その<wbr>法人又は人に対しても各本条の罰金刑を科する。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">第三十条　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その<wbr>法人又は人の業務に関し、前三条の違反行為をしたときは、行為者を罰するほか、その<wbr>法人又は人に対しても各本条の罰金刑を科する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から起算して三月をこえない範囲内において政令で定める日<wbr>から施行する。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から起算して三月をこえない範囲内において政令で定める日<wbr>から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（国の無利子貸付け等）</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（国の無利子貸付け等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">２　国は、当分の間、都道府県に対し、第二十一条の規定により国がその費用について<wbr>補助することができる都道府県営工事で日本電信電話株式会社の株式の売払収入の活用<wbr>による社会資本の整備の促進に関する特別措置法（昭和六十二年法律第八十六号）第二<wbr>条第一項第二号に該当するものに要する費用に充てる資金について、予算の範囲内にお<wbr>いて、第二十一条の規定（この規定による国の補助の割合について、この規定と異なる<wbr>定めをした法令の規定がある場合には、当該異なる定めをした法令の規定を含む。以下<wbr>同じ。）により国が補助することができる金額に相当する金額を無利子で貸し付けるこ<wbr>とができる。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">２　国は、当分の間、都道府県に対し、第二十一条の規定により国がその費用について<wbr>補助することができる都道府県営工事で日本電信電話株式会社の株式の売払収入の活用<wbr>による社会資本の整備の促進に関する特別措置法（昭和六十二年法律第八十六号）第二<wbr>条第一項第二号に該当するものに要する費用に充てる資金について、予算の範囲内にお<wbr>いて、第二十一条の規定（この規定による国の補助の割合について、この規定と異なる<wbr>定めをした法令の規定がある場合には、当該異なる定めをした法令の規定を含む。以下<wbr>同じ。）により国が補助することができる金額に相当する金額を無利子で貸し付けるこ<wbr>とができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">３　前項の国の貸付金の償還期間は、五年（二年以内の据置期間を含む。）以内で政令<wbr>で定める期間とする。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">３　前項の国の貸付金の償還期間は、五年（二年以内の据置期間を含む。）以内で政令<wbr>で定める期間とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">４　前項に定めるもののほか、附則第二項の規定による貸付金の償還方法、償還期限の<wbr>繰上げその他償還に関し必要な事項は、政令で定める。</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">４　前項に定めるもののほか、附則第二項の規定による貸付金の償還方法、償還期限の<wbr>繰上げその他償還に関し必要な事項は、政令で定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">５　国は、附則第二項の規定により、都道府県に対し貸付けを行つた場合には、当該貸<wbr>付けの対象である都道府県営工事について、第二十一条の規定による当該貸付金に相当<wbr>する金額の補助を行うものとし、当該補助については、当該貸付金の償還時において、<wbr>当該貸付金の償還金に相当する金額を交付することにより行うものとする。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">５　国は、附則第二項の規定により、都道府県に対し貸付けを行つた場合には、当該貸<wbr>付けの対象である都道府県営工事について、第二十一条の規定による当該貸付金に相当<wbr>する金額の補助を行うものとし、当該補助については、当該貸付金の償還時において、<wbr>当該貸付金の償還金に相当する金額を交付することにより行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">６　都道府県が、附則第二項の規定による貸付けを受けた無利子貸付金について、附則<wbr>第三項及び第四項の規定に基づき定められる償還期限を繰り上げて償還を行つた場合（<wbr>政令で定める場合を除く。）における前項の規定の適用については、当該償還は、当該<wbr>償還期限の到来時に行われたものとみなす。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">６　都道府県が、附則第二項の規定による貸付けを受けた無利子貸付金について、附則<wbr>第三項及び第四項の規定に基づき定められる償還期限を繰り上げて償還を行つた場合（<wbr>政令で定める場合を除く。）における前項の規定の適用については、当該償還は、当該<wbr>償還期限の到来時に行われたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年五月一三日法律第三一号）　抄</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年五月一三日法律第三一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年九月四日法律第八七号）</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年九月四日法律第八七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行し、第六条及び第八条から第十二条までの規定による改<wbr>正後の国有林野事業特別会計法、道路整備特別会計法、治水特別会計法、港湾整備特別<wbr>会計法、都市開発資金融通特別会計法及び空港整備特別会計法の規定は、昭和六十二年<wbr>度の予算から適用する。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行し、第六条及び第八条から第十二条までの規定による改<wbr>正後の国有林野事業特別会計法、道路整備特別会計法、治水特別会計法、港湾整備特別<wbr>会計法、都市開発資金融通特別会計法及び空港整備特別会計法の規定は、昭和六十二年<wbr>度の予算から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一一月一二日法律第八九号）　抄</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一一月一二日法律第八九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政手続法（平成五年法律第八十八号）の施行の日から施行する<wbr>。</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政手続法（平成五年法律第八十八号）の施行の日から施行する<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（諮問等がされた不利益処分に関する経過措置）</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（諮問等がされた不利益処分に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行前に法令に基づき審議会その他の合議制の機関に対し行政手続<wbr>法第十三条に規定する聴聞又は弁明の機会の付与の手続その他の意見陳述のための手続<wbr>に相当する手続を執るべきことの諮問その他の求めがされた場合においては、当該諮問<wbr>その他の求めに係る不利益処分の手続に関しては、この法律による改正後の関係法律の<wbr>規定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行前に法令に基づき審議会その他の合議制の機関に対し行政手続<wbr>法第十三条に規定する聴聞又は弁明の機会の付与の手続その他の意見陳述のための手続<wbr>に相当する手続を執るべきことの諮問その他の求めがされた場合においては、当該諮問<wbr>その他の求めに係る不利益処分の手続に関しては、この法律による改正後の関係法律の<wbr>規定にかかわらず、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第十三条　この法律の施行前にした行為に対する罰則の適用については、なお従前の例<wbr>による。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第十三条　この法律の施行前にした行為に対する罰則の適用については、なお従前の例<wbr>による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（聴聞に関する規定の整理に伴う経過措置）</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（聴聞に関する規定の整理に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第十四条　この法律の施行前に法律の規定により行われた聴聞、聴問若しくは聴聞会（<wbr>不利益処分に係るものを除く。）又はこれらのための手続は、この法律による改正後の<wbr>関係法律の相当規定により行われたものとみなす。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第十四条　この法律の施行前に法律の規定により行われた聴聞、聴問若しくは聴聞会（<wbr>不利益処分に係るものを除く。）又はこれらのための手続は、この法律による改正後の<wbr>関係法律の相当規定により行われたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">第十五条　附則第二条から前条までに定めるもののほか、この法律の施行に関して必要<wbr>な経過措置は、政令で定める。</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">第十五条　附則第二条から前条までに定めるもののほか、この法律の施行に関して必要<wbr>な経過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中地方自治法第二百五十条の次に五条、節名並びに二款及び款名を加える改<wbr>正規定（同法第二百五十条の九第一項に係る部分（両議院の同意を得ることに係る部分<wbr>に限る。）に限る。）、第四十条中自然公園法附則第九項及び第十項の改正規定（同法<wbr>附則第十項に係る部分に限る。）、第二百四十四条の規定（農業改良助長法第十四条の<wbr>三の改正規定に係る部分を除く。）並びに第四百七十二条の規定（市町村の合併の特例<wbr>に関する法律第六条、第八条及び第十七条の改正規定に係る部分を除く。）並びに附則<wbr>第七条、第十条、第十二条、第五十九条ただし書、第六十条第四項及び第五項、第七十<wbr>三条、第七十七条、第百五十七条第四項から第六項まで、第百六十条、第百六十三条、<wbr>第百六十四条並びに第二百二条の規定　公布の日</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中地方自治法第二百五十条の次に五条、節名並びに二款及び款名を加える改<wbr>正規定（同法第二百五十条の九第一項に係る部分（両議院の同意を得ることに係る部分<wbr>に限る。）に限る。）、第四十条中自然公園法附則第九項及び第十項の改正規定（同法<wbr>附則第十項に係る部分に限る。）、第二百四十四条の規定（農業改良助長法第十四条の<wbr>三の改正規定に係る部分を除く。）並びに第四百七十二条の規定（市町村の合併の特例<wbr>に関する法律第六条、第八条及び第十七条の改正規定に係る部分を除く。）並びに附則<wbr>第七条、第十条、第十二条、第五十九条ただし書、第六十条第四項及び第五項、第七十<wbr>三条、第七十七条、第百五十七条第四項から第六項まで、第百六十条、第百六十三条、<wbr>第百六十四条並びに第二百二条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（国等の事務）</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（国等の事務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第百五十九条　この法律による改正前のそれぞれの法律に規定するもののほか、この法<wbr>律の施行前において、地方公共団体の機関が法律又はこれに基づく政令により管理し又<wbr>は執行する国、他の地方公共団体その他公共団体の事務（附則第百六十一条において「<wbr>国等の事務」という。）は、この法律の施行後は、地方公共団体が法律又はこれに基づ<wbr>く政令により当該地方公共団体の事務として処理するものとする。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第百五十九条　この法律による改正前のそれぞれの法律に規定するもののほか、この法<wbr>律の施行前において、地方公共団体の機関が法律又はこれに基づく政令により管理し又<wbr>は執行する国、他の地方公共団体その他公共団体の事務（附則第百六十一条において「<wbr>国等の事務」という。）は、この法律の施行後は、地方公共団体が法律又はこれに基づ<wbr>く政令により当該地方公共団体の事務として処理するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第百六十条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下こ<wbr>の条及び附則第百六十三条において同じ。）の施行前に改正前のそれぞれの法律の規定<wbr>によりされた許可等の処分その他の行為（以下この条において「処分等の行為」という<wbr>。）又はこの法律の施行の際現に改正前のそれぞれの法律の規定によりされている許可<wbr>等の申請その他の行為（以下この条において「申請等の行為」という。）で、この法律<wbr>の施行の日においてこれらの行為に係る行政事務を行うべき者が異なることとなるもの<wbr>は、附則第二条から前条までの規定又は改正後のそれぞれの法律（これに基づく命令を<wbr>含む。）の経過措置に関する規定に定めるものを除き、この法律の施行の日以後におけ<wbr>る改正後のそれぞれの法律の適用については、改正後のそれぞれの法律の相当規定によ<wbr>りされた処分等の行為又は申請等の行為とみなす。</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第百六十条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下こ<wbr>の条及び附則第百六十三条において同じ。）の施行前に改正前のそれぞれの法律の規定<wbr>によりされた許可等の処分その他の行為（以下この条において「処分等の行為」という<wbr>。）又はこの法律の施行の際現に改正前のそれぞれの法律の規定によりされている許可<wbr>等の申請その他の行為（以下この条において「申請等の行為」という。）で、この法律<wbr>の施行の日においてこれらの行為に係る行政事務を行うべき者が異なることとなるもの<wbr>は、附則第二条から前条までの規定又は改正後のそれぞれの法律（これに基づく命令を<wbr>含む。）の経過措置に関する規定に定めるものを除き、この法律の施行の日以後におけ<wbr>る改正後のそれぞれの法律の適用については、改正後のそれぞれの法律の相当規定によ<wbr>りされた処分等の行為又は申請等の行為とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前に改正前のそれぞれの法律の規定により国又は地方公共団体の機<wbr>関に対し報告、届出、提出その他の手続をしなければならない事項で、この法律の施行<wbr>の日前にその手続がされていないものについては、この法律及びこれに基づく政令に別<wbr>段の定めがあるもののほか、これを、改正後のそれぞれの法律の相当規定により国又は<wbr>地方公共団体の相当の機関に対して報告、届出、提出その他の手続をしなければならな<wbr>い事項についてその手続がされていないものとみなして、この法律による改正後のそれ<wbr>ぞれの法律の規定を適用する。</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前に改正前のそれぞれの法律の規定により国又は地方公共団体の機<wbr>関に対し報告、届出、提出その他の手続をしなければならない事項で、この法律の施行<wbr>の日前にその手続がされていないものについては、この法律及びこれに基づく政令に別<wbr>段の定めがあるもののほか、これを、改正後のそれぞれの法律の相当規定により国又は<wbr>地方公共団体の相当の機関に対して報告、届出、提出その他の手続をしなければならな<wbr>い事項についてその手続がされていないものとみなして、この法律による改正後のそれ<wbr>ぞれの法律の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">（不服申立てに関する経過措置）</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">（不服申立てに関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">第百六十一条　施行日前にされた国等の事務に係る処分であって、当該処分をした行政<wbr>庁（以下この条において「処分庁」という。）に施行日前に行政不服審査法に規定する<wbr>上級行政庁（以下この条において「上級行政庁」という。）があったものについての同<wbr>法による不服申立てについては、施行日以後においても、当該処分庁に引き続き上級行<wbr>政庁があるものとみなして、行政不服審査法の規定を適用する。この場合において、当<wbr>該処分庁の上級行政庁とみなされる行政庁は、施行日前に当該処分庁の上級行政庁であ<wbr>った行政庁とする。</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">第百六十一条　施行日前にされた国等の事務に係る処分であって、当該処分をした行政<wbr>庁（以下この条において「処分庁」という。）に施行日前に行政不服審査法に規定する<wbr>上級行政庁（以下この条において「上級行政庁」という。）があったものについての同<wbr>法による不服申立てについては、施行日以後においても、当該処分庁に引き続き上級行<wbr>政庁があるものとみなして、行政不服審査法の規定を適用する。この場合において、当<wbr>該処分庁の上級行政庁とみなされる行政庁は、施行日前に当該処分庁の上級行政庁であ<wbr>った行政庁とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、上級行政庁とみなされる行政庁が地方公共団体の機関である<wbr>ときは、当該機関が行政不服審査法の規定により処理することとされる事務は、新地方<wbr>自治法第二条第九項第一号に規定する第一号法定受託事務とする。</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、上級行政庁とみなされる行政庁が地方公共団体の機関である<wbr>ときは、当該機関が行政不服審査法の規定により処理することとされる事務は、新地方<wbr>自治法第二条第九項第一号に規定する第一号法定受託事務とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">第百六十三条　この法律の施行前にした行為に対する罰則の適用については、なお従前<wbr>の例による。</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">第百六十三条　この法律の施行前にした行為に対する罰則の適用については、なお従前<wbr>の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第百六十四条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置<wbr>（罰則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第百六十四条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置<wbr>（罰則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月八日法律第五七号）　抄</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月八日法律第五七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年四月一日から施行する。</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年六月二九日法律第九二号）　抄</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年六月二九日法律第九二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十四年四月一日から施行する。</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年二月八日法律第一号）　抄</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年二月八日法律第一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年七月六日法律第八二号）　抄</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年七月六日法律第八二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

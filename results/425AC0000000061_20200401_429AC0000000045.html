@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十五年法律第六十一号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十五年法律第六十一号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">大規模な災害の被災地における借地借家に関する特別措置法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">大規模な災害の被災地における借地借家に関する特別措置法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（趣旨）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（趣旨）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、大規模な災害の被災地において、当該災害により借地上の建物が<wbr>滅失した場合における借地権者の保護等を図るための借地借家に関する特別措置を定め<wbr>るものとする。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、大規模な災害の被災地において、当該災害により借地上の建物が<wbr>滅失した場合における借地権者の保護等を図るための借地借家に関する特別措置を定め<wbr>るものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（特定大規模災害及びこれに対して適用すべき措置等の指定）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（特定大規模災害及びこれに対して適用すべき措置等の指定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　大規模な火災、震災その他の災害であって、その被災地において借地権者（借<wbr>地借家法（平成三年法律第九十号）第二条第二号に規定する借地権者をいう。以下同じ<wbr>。）の保護その他の借地借家に関する配慮をすることが特に必要と認められるものが発<wbr>生した場合には、当該災害を特定大規模災害として政令で指定するものとする。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　大規模な火災、震災その他の災害であって、その被災地において借地権者（借<wbr>地借家法（平成三年法律第九十号）第二条第二号に規定する借地権者をいう。以下同じ<wbr>。）の保護その他の借地借家に関する配慮をすることが特に必要と認められるものが発<wbr>生した場合には、当該災害を特定大規模災害として政令で指定するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">２　前項の政令においては、次条から第五条まで、第七条及び第八条に規定する措置の<wbr>うち当該特定大規模災害に対し適用すべき措置並びにこれを適用する地区を指定しなけ<wbr>ればならない。当該指定の後、新たに次条から第五条まで、第七条及び第八条に規定す<wbr>る措置を適用する必要が生じたときは、適用すべき措置及びこれを適用する地区を政令<wbr>で追加して指定するものとする。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">２　前項の政令においては、次条から第五条まで、第七条及び第八条に規定する措置の<wbr>うち当該特定大規模災害に対し適用すべき措置並びにこれを適用する地区を指定しなけ<wbr>ればならない。当該指定の後、新たに次条から第五条まで、第七条及び第八条に規定す<wbr>る措置を適用する必要が生じたときは、適用すべき措置及びこれを適用する地区を政令<wbr>で追加して指定するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（借地契約の解約等の特例）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（借地契約の解約等の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　特定大規模災害により借地権（借地借家法第二条第一号に規定する借地権をい<wbr>う。以下同じ。）の目的である土地の上の建物が滅失した場合（同法第八条第一項の場<wbr>合を除く。）においては、前条第一項の政令の施行の日から起算して一年を経過する日<wbr>までの間は、借地権者は、地上権の放棄又は土地の賃貸借の解約の申入れをすることが<wbr>できる。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　特定大規模災害により借地権（借地借家法第二条第一号に規定する借地権をい<wbr>う。以下同じ。）の目的である土地の上の建物が滅失した場合（同法第八条第一項の場<wbr>合を除く。）においては、前条第一項の政令の施行の日から起算して一年を経過する日<wbr>までの間は、借地権者は、地上権の放棄又は土地の賃貸借の解約の申入れをすることが<wbr>できる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合においては、借地権は、地上権の放棄又は土地の賃貸借の解約の申入れ<wbr>があった日から三月を経過することによって消滅する。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合においては、借地権は、地上権の放棄又は土地の賃貸借の解約の申入れ<wbr>があった日から三月を経過することによって消滅する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（借地権の対抗力の特例）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（借地権の対抗力の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第四条　借地借家法第十条第一項の場合において、建物の滅失があっても、その滅失が<wbr>特定大規模災害によるものであるときは、第二条第一項の政令の施行の日から起算して<wbr>六月を経過する日までの間は、借地権は、なお同法第十条第一項の効力を有する。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第四条　借地借家法第十条第一項の場合において、建物の滅失があっても、その滅失が<wbr>特定大規模災害によるものであるときは、第二条第一項の政令の施行の日から起算して<wbr>六月を経過する日までの間は、借地権は、なお同法第十条第一項の効力を有する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、借地権者が、その建物を特定するために必要な事項<wbr>及び建物を新たに築造する旨を土地の上の見やすい場所に掲示するときも、借地権は、<wbr>なお借地借家法第十条第一項の効力を有する。ただし、第二条第一項の政令の施行の日<wbr>から起算して三年を経過した後にあっては、その前に建物を新たに築造し、かつ、その<wbr>建物につき登記した場合に限る。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、借地権者が、その建物を特定するために必要な事項<wbr>及び建物を新たに築造する旨を土地の上の見やすい場所に掲示するときも、借地権は、<wbr>なお借地借家法第十条第一項の効力を有する。ただし、第二条第一項の政令の施行の日<wbr>から起算して三年を経過した後にあっては、その前に建物を新たに築造し、かつ、その<wbr>建物につき登記した場合に限る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（土地の賃借権の譲渡又は転貸の許可の特例）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（土地の賃借権の譲渡又は転貸の許可の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第五条　特定大規模災害により借地権の目的である土地の上の建物が滅失した場合にお<wbr>いて、借地権者がその土地の賃借権を第三者に譲渡し、又はその土地を第三者に転貸し<wbr>ようとする場合であって、その第三者が賃借権を取得し、又は転借をしても借地権設定<wbr>者（借地借家法第二条第三号に規定する借地権設定者をいう。以下この項及び第四項に<wbr>おいて同じ。）に不利となるおそれがないにもかかわらず、借地権設定者がその賃借権<wbr>の譲渡又は転貸を承諾しないときは、裁判所は、借地権者の申立てにより、借地権設定<wbr>者の承諾に代わる許可を与えることができる。この場合において、当事者間の利益の衡<wbr>平を図るため必要があるときは、賃借権の譲渡若しくは転貸を条件とする借地条件の変<wbr>更を命じ、又はその許可を財産上の給付に係らしめることができる。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第五条　特定大規模災害により借地権の目的である土地の上の建物が滅失した場合にお<wbr>いて、借地権者がその土地の賃借権を第三者に譲渡し、又はその土地を第三者に転貸し<wbr>ようとする場合であって、その第三者が賃借権を取得し、又は転借をしても借地権設定<wbr>者（借地借家法第二条第三号に規定する借地権設定者をいう。以下この項及び第四項に<wbr>おいて同じ。）に不利となるおそれがないにもかかわらず、借地権設定者がその賃借権<wbr>の譲渡又は転貸を承諾しないときは、裁判所は、借地権者の申立てにより、借地権設定<wbr>者の承諾に代わる許可を与えることができる。この場合において、当事者間の利益の衡<wbr>平を図るため必要があるときは、賃借権の譲渡若しくは転貸を条件とする借地条件の変<wbr>更を命じ、又はその許可を財産上の給付に係らしめることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">16</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　借地借家法第十九条第二項から第六項までの規定は前項の申立てがあった場合につ<wbr>いて、</span><span style="color: #000000; background-color: #efcb05; ">第四章の規定は同項に規定する事件及びこの項において準用する同条第三項に規<wbr>定する事件の裁判手続について、それぞれ準用する。この場合において、同法第十九条<wbr>第三項中「建物の譲渡及び賃借権」とあるのは「賃借権」と、同法第五十九条中「建物<wbr>の譲渡」とあるのは「賃借権の譲渡又は転貸」と読み替えるものとする。</span></code></td>
+<td class="ln">16</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　借地借家法第十九条第二項から第六項までの規定は前項の申立てがあった場合につ<wbr>いて、</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第四章の規定は同項に規定する事件及びこの項において準用する同条第三項<wbr>に規定する事件の裁判手続について、それぞれ準用する。この場合において、同法第十<wbr>九条第三項中「建物の譲渡及び賃借権」とあるのは「賃借権」と、同法第五十九条中「<wbr>建物の譲渡」とあるのは「賃借権の譲渡又は転貸」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の申立ては、第二条第一項の政令の施行の日から起算して一年以内に限り、<wbr>することができる。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の申立ては、第二条第一項の政令の施行の日から起算して一年以内に限り、<wbr>することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定は、転借地権（借地借家法第二条第四号に規定する転借地権をいう。<wbr>）が設定されている場合における転借地権者（同条第五号に規定する転借地権者をいう<wbr>。次条において同じ。）と借地権設定者との間について準用する。ただし、借地権設定<wbr>者が第二項において準用する同法第十九条第三項の申立てをするには、借地権者の承諾<wbr>を得なければならない。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定は、転借地権（借地借家法第二条第四号に規定する転借地権をいう。<wbr>）が設定されている場合における転借地権者（同条第五号に規定する転借地権者をいう<wbr>。次条において同じ。）と借地権設定者との間について準用する。ただし、借地権設定<wbr>者が第二項において準用する同法第十九条第三項の申立てをするには、借地権者の承諾<wbr>を得なければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（強行規定）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（強行規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第六条　前三条の規定に反する特約で借地権者又は転借地権者に不利なものは、無効と<wbr>する。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第六条　前三条の規定に反する特約で借地権者又は転借地権者に不利なものは、無効と<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（被災地短期借地権）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（被災地短期借地権）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第七条　第二条第一項の政令の施行の日から起算して二年を経過する日までの間に、同<wbr>条第二項の規定により指定された地区に所在する土地について借地権を設定する場合に<wbr>おいては、借地借家法第九条の規定にかかわらず、存続期間を五年以下とし、かつ、契<wbr>約の更新（更新の請求及び土地の使用の継続によるものを含む。）及び建物の築造によ<wbr>る存続期間の延長がないこととする旨を定めることができる。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第七条　第二条第一項の政令の施行の日から起算して二年を経過する日までの間に、同<wbr>条第二項の規定により指定された地区に所在する土地について借地権を設定する場合に<wbr>おいては、借地借家法第九条の規定にかかわらず、存続期間を五年以下とし、かつ、契<wbr>約の更新（更新の請求及び土地の使用の継続によるものを含む。）及び建物の築造によ<wbr>る存続期間の延長がないこととする旨を定めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、同項の定めがある借地権を設定するときは、借地借<wbr>家法第十三条、第十七条及び第二十五条の規定は、適用しない。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、同項の定めがある借地権を設定するときは、借地借<wbr>家法第十三条、第十七条及び第二十五条の規定は、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の定めがある借地権の設定を目的とする契約は、公正証書による等書面によ<wbr>ってしなければならない。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の定めがある借地権の設定を目的とする契約は、公正証書による等書面によ<wbr>ってしなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（従前の賃借人に対する通知）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（従前の賃借人に対する通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第八条　特定大規模災害により賃借権の目的である建物（以下この条において「旧建物<wbr>」という。）が滅失した場合において、旧建物の滅失の当時における旧建物の賃貸人（<wbr>以下この条において「従前の賃貸人」という。）が旧建物の敷地であった土地の上に当<wbr>該滅失の直前の用途と同一の用途に供される建物を新たに築造し、又は築造しようとす<wbr>る場合であって、第二条第一項の政令の施行の日から起算して三年を経過する日までの<wbr>間にその建物について賃貸借契約の締結の勧誘をしようとするときは、従前の賃貸人は<wbr>、当該滅失の当時旧建物を自ら使用していた賃借人（転借人を含み、一時使用のための<wbr>賃借をしていた者を除く。）のうち知れている者に対し、遅滞なくその旨を通知しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第八条　特定大規模災害により賃借権の目的である建物（以下この条において「旧建物<wbr>」という。）が滅失した場合において、旧建物の滅失の当時における旧建物の賃貸人（<wbr>以下この条において「従前の賃貸人」という。）が旧建物の敷地であった土地の上に当<wbr>該滅失の直前の用途と同一の用途に供される建物を新たに築造し、又は築造しようとす<wbr>る場合であって、第二条第一項の政令の施行の日から起算して三年を経過する日までの<wbr>間にその建物について賃貸借契約の締結の勧誘をしようとするときは、従前の賃貸人は<wbr>、当該滅失の当時旧建物を自ら使用していた賃借人（転借人を含み、一時使用のための<wbr>賃借をしていた者を除く。）のうち知れている者に対し、遅滞なくその旨を通知しなけ<wbr>ればならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（罹災都市借地借家臨時処理法等の廃止）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（罹災都市借地借家臨時処理法等の廃止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第二条　次に掲げる法律は、廃止する。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第二条　次に掲げる法律は、廃止する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">一　罹災都市借地借家臨時処理法（昭和二十一年法律第十三号）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">一　罹災都市借地借家臨時処理法（昭和二十一年法律第十三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">二　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十二年法律第百六十号）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">二　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十二年法律第百六十号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">三　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十三年法律第二百二十七号）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">三　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十三年法律第二百二十七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">四　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十四年法律第五十一号）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">四　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十四年法律第五十一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">五　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十五年法律第百四十六号）</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">五　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十五年法律第百四十六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">六　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十五年法律第二百二十四号）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">六　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十五年法律第二百二十四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">七　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十七年法律第一号）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">七　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十七年法律第一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">八　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十七年法律第百三十九号）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">八　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和二十七年法律第百三十九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">九　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和三十年法律第百八十一号）</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">九　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和三十年法律第百八十一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">十　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和三十年法律第百九十二号）</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">十　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地区<wbr>を定める法律（昭和三十年法律第百九十二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">十一　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地<wbr>区を定める法律（昭和三十一年法律第七十号）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">十一　罹災都市借地借家臨時処理法第二十五条の二の災害及び同条の規定を適用する地<wbr>区を定める法律（昭和三十一年法律第七十号） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（旧罹災都市借地借家臨時処理法の効力に関する経過措置）</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（旧罹災都市借地借家臨時処理法の効力に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第三条　接収不動産に関する借地借家臨時処理法（昭和三十一年法律第百三十八号）第<wbr>二十条の規定の適用については、前条の規定による廃止前の罹災都市借地借家臨時処理<wbr>法（次条において「旧罹災都市借地借家臨時処理法」という。）第十九条から第二十二<wbr>条までの規定は、この法律の施行後も、なおその効力を有する。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第三条　接収不動産に関する借地借家臨時処理法（昭和三十一年法律第百三十八号）第<wbr>二十条の規定の適用については、前条の規定による廃止前の罹災都市借地借家臨時処理<wbr>法（次条において「旧罹災都市借地借家臨時処理法」という。）第十九条から第二十二<wbr>条までの規定は、この法律の施行後も、なおその効力を有する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（罹災都市借地借家臨時処理法の廃止に伴う経過措置）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（罹災都市借地借家臨時処理法の廃止に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　この法律の施行前にした申出に係る旧罹災都市借地借家臨時処理法第二条（旧<wbr>罹災都市借地借家臨時処理法第九条、第二十五条の二及び第三十二条第一項において準<wbr>用する場合を含む。）及び第十四条（旧罹災都市借地借家臨時処理法第二十五条の二に<wbr>おいて準用する場合を含む。）の規定による賃借権の設定並びに当該設定があった賃借<wbr>権に関する法律関係については、なお従前の例による。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　この法律の施行前にした申出に係る旧罹災都市借地借家臨時処理法第二条（旧<wbr>罹災都市借地借家臨時処理法第九条、第二十五条の二及び第三十二条第一項において準<wbr>用する場合を含む。）及び第十四条（旧罹災都市借地借家臨時処理法第二十五条の二に<wbr>おいて準用する場合を含む。）の規定による賃借権の設定並びに当該設定があった賃借<wbr>権に関する法律関係については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前にした申出に係る旧罹災都市借地借家臨時処理法第三条（旧罹災<wbr>都市借地借家臨時処理法第九条、第二十五条の二及び第三十二条第一項において準用す<wbr>る場合を含む。）の規定による借地権の譲渡及び当該譲渡があった借地権に関する法律<wbr>関係については、なお従前の例による。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前にした申出に係る旧罹災都市借地借家臨時処理法第三条（旧罹災<wbr>都市借地借家臨時処理法第九条、第二十五条の二及び第三十二条第一項において準用す<wbr>る場合を含む。）の規定による借地権の譲渡及び当該譲渡があった借地権に関する法律<wbr>関係については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　この法律の施行前に旧罹災都市借地借家臨時処理法第十条（旧罹災都市借地借家臨<wbr>時処理法第二十五条の二において準用する場合を含む。）の規定により第三者に対抗す<wbr>ることができることとされた借地権の第三者に対する効力については、なお従前の例に<wbr>よる。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">３　この法律の施行前に旧罹災都市借地借家臨時処理法第十条（旧罹災都市借地借家臨<wbr>時処理法第二十五条の二において準用する場合を含む。）の規定により第三者に対抗す<wbr>ることができることとされた借地権の第三者に対する効力については、なお従前の例に<wbr>よる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　この法律の施行前に旧罹災都市借地借家臨時処理法第二十五条の二において準用す<wbr>る旧罹災都市借地借家臨時処理法第十一条の規定により延長された借地権の存続期間に<wbr>ついては、なお従前の例による。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">４　この法律の施行前に旧罹災都市借地借家臨時処理法第二十五条の二において準用す<wbr>る旧罹災都市借地借家臨時処理法第十一条の規定により延長された借地権の存続期間に<wbr>ついては、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">５　この法律の施行前に旧罹災都市借地借家臨時処理法第二十五条の二において準用す<wbr>る旧罹災都市借地借家臨時処理法第十二条及び旧罹災都市借地借家臨時処理法第二十五<wbr>条の二において準用する旧罹災都市借地借家臨時処理法第十三条において準用する旧罹<wbr>災都市借地借家臨時処理法第十二条の規定によりされた催告については、なお従前の例<wbr>による。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">５　この法律の施行前に旧罹災都市借地借家臨時処理法第二十五条の二において準用す<wbr>る旧罹災都市借地借家臨時処理法第十二条及び旧罹災都市借地借家臨時処理法第二十五<wbr>条の二において準用する旧罹災都市借地借家臨時処理法第十三条において準用する旧罹<wbr>災都市借地借家臨時処理法第十二条の規定によりされた催告については、なお従前の例<wbr>による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">６　この法律の施行前にした申立てに係る旧罹災都市借地借家臨時処理法第十七条（旧<wbr>罹災都市借地借家臨時処理法第二十五条の二において準用する場合を含む。）に規定す<wbr>る事件については、なお従前の例による。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">６　この法律の施行前にした申立てに係る旧罹災都市借地借家臨時処理法第十七条（旧<wbr>罹災都市借地借家臨時処理法第二十五条の二において準用する場合を含む。）に規定す<wbr>る事件については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第五条　前二条に規定するもののほか、この法律の施行に関し必要な経過措置は、政令<wbr>で定める。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第五条　前二条に規定するもののほか、この法律の施行に関し必要な経過措置は、政令<wbr>で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二日法律第四五号）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二日法律第四五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この法律は、民法改正法の施行の日から施行する。ただし、第百三条の二、第百三条の<wbr>三、第二百六十七条の二、第二百六十七条の三及び第三百六十二条の規定は、公布の日<wbr>から施行する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この法律は、民法改正法の施行の日から施行する。ただし、第百三条の二、第百三条の<wbr>三、第二百六十七条の二、第二百六十七条の三及び第三百六十二条の規定は、公布の日<wbr>から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

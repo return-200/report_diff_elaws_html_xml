@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十四年厚生労働省令第百三十二号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十四年厚生労働省令第百三十二号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">障害者虐待の防止、障害者の養護者に対する支援等に関する法律施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">障害者虐待の防止、障害者の養護者に対する支援等に関する法律施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（法第二条第四項に規定する厚生労働省令で定める事業）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（法第二条第四項に規定する厚生労働省令で定める事業）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　障害者虐待の防止、障害者の養護者に対する支援等に関する法律（平成二十三<wbr>年法律第七十九号。以下「法」という。）第二条第四項に規定する厚生労働省令で定め<wbr>る事業は、児童福祉法（昭和二十二年法律第百六十四号）第六条の二の二第一項に規定<wbr>する障害児通所支援事業又は同条第七項に規定する障害児相談支援事業とする。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　障害者虐待の防止、障害者の養護者に対する支援等に関する法律（平成二十三<wbr>年法律第七十九号。以下「法」という。）第二条第四項に規定する厚生労働省令で定め<wbr>る事業は、児童福祉法（昭和二十二年法律第百六十四号）第六条の二の二第一項に規定<wbr>する障害児通所支援事業又は同条第七項に規定する障害児相談支援事業とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（市町村からの報告）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（市町村からの報告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　市町村は、法第十六条第一項の規定による通報又は同条第二項の規定による届<wbr>出を受け、当該通報又は届出に係る事実の確認を行った結果、法第二条第七項に規定す<wbr>る障害者福祉施設従事者等による障害者虐待（以下「障害者福祉施設従事者等による虐<wbr>待」という。）の事実が認められた場合、又は更に都道府県と共同して事実の確認を行<wbr>う必要が生じた場合には、次に掲げる事項を当該障害者福祉施設従事者等による虐待に<wbr>係る法第二条第四項に規定する障害者福祉施設又は同項に規定する障害福祉サービス事<wbr>業等の事業所（以下「障害者福祉施設等」という。）の所在地の都道府県に報告しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　市町村は、法第十六条第一項の規定による通報又は同条第二項の規定による届<wbr>出を受け、当該通報又は届出に係る事実の確認を行った結果、法第二条第七項に規定す<wbr>る障害者福祉施設従事者等による障害者虐待（以下「障害者福祉施設従事者等による虐<wbr>待」という。）の事実が認められた場合、又は更に都道府県と共同して事実の確認を行<wbr>う必要が生じた場合には、次に掲げる事項を当該障害者福祉施設従事者等による虐待に<wbr>係る法第二条第四項に規定する障害者福祉施設又は同項に規定する障害福祉サービス事<wbr>業等の事業所（以下「障害者福祉施設等」という。）の所在地の都道府県に報告しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">一　障害者福祉施設等の名称、所在地及び種別</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">一　障害者福祉施設等の名称、所在地及び種別</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">二　障害者福祉施設従事者等による虐待を受けた又は受けたと思われる障害者の氏名、<wbr>性別、年齢、障害の種類、障害支援区分（障害者の日常生活及び社会生活を総合的に支<wbr>援するための法律（平成十七年法律第百二十三号）第四条第四項に規定する障害支援区<wbr>分をいう。以下同じ。）その他の心身の状況</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">二　障害者福祉施設従事者等による虐待を受けた又は受けたと思われる障害者の氏名、<wbr>性別、年齢、障害の種類、障害支援区分（障害者の日常生活及び社会生活を総合的に支<wbr>援するための法律（平成十七年法律第百二十三号）第四条第四項に規定する障害支援区<wbr>分をいう。以下同じ。）その他の心身の状況</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">三　障害者福祉施設従事者等による虐待の種別、内容及び発生要因</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">三　障害者福祉施設従事者等による虐待の種別、内容及び発生要因</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">四　障害者福祉施設従事者等による虐待を行った障害者福祉施設従事者等（法第二条第<wbr>四項に規定する障害者福祉施設従事者等をいう。以下同じ。）の氏名、生年月日及び職<wbr>種</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">四　障害者福祉施設従事者等による虐待を行った障害者福祉施設従事者等（法第二条第<wbr>四項に規定する障害者福祉施設従事者等をいう。以下同じ。）の氏名、生年月日及び職<wbr>種</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">五　市町村が行った対応</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">五　市町村が行った対応</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">六　障害者福祉施設従事者等による虐待が行われた障害者福祉施設等において改善措置<wbr>が採られている場合にはその内容</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">六　障害者福祉施設従事者等による虐待が行われた障害者福祉施設等において改善措置<wbr>が採られている場合にはその内容 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（都道府県知事による公表事項）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（都道府県知事による公表事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第二十条の厚生労働省令で定める事項は、次のとおりとする。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第二十条の厚生労働省令で定める事項は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　障害者福祉施設従事者等による虐待があった障害者福祉施設等の種別</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　障害者福祉施設従事者等による虐待があった障害者福祉施設等の種別</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　障害者福祉施設従事者等による虐待を行った障害者福祉施設従事者等の職種</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　障害者福祉施設従事者等による虐待を行った障害者福祉施設従事者等の職種 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（市町村からの通知）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（市町村からの通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四条　市町村は、法第二十二条第一項の規定による通報又は同条第二項の規定による<wbr>届出を受け、当該通報又は届出に係る事実の確認を行った結果、法第二条第八項に規定<wbr>する使用者による障害者虐待（以下「使用者による虐待」という。）の事実が認められ<wbr>た場合、又は更に都道府県と共同して事実の確認を行う必要が生じた場合には、次に掲<wbr>げる事項を当該使用者による虐待に係る事業所の所在地の都道府県に通知しなければな<wbr>らない。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四条　市町村は、法第二十二条第一項の規定による通報又は同条第二項の規定による<wbr>届出を受け、当該通報又は届出に係る事実の確認を行った結果、法第二条第八項に規定<wbr>する使用者による障害者虐待（以下「使用者による虐待」という。）の事実が認められ<wbr>た場合、又は更に都道府県と共同して事実の確認を行う必要が生じた場合には、次に掲<wbr>げる事項を当該使用者による虐待に係る事業所の所在地の都道府県に通知しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">一　事業所の名称、所在地、業種及び規模</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">一　事業所の名称、所在地、業種及び規模</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">二　使用者による虐待を受けた又は受けたと思われる障害者（以下「被虐待者」という<wbr>。）の氏名、性別、年齢、障害の種類、障害支援区分その他の心身の状況及び雇用形態<wbr></span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">二　使用者による虐待を受けた又は受けたと思われる障害者（以下「被虐待者」という<wbr>。）の氏名、性別、年齢、障害の種類、障害支援区分その他の心身の状況及び雇用形態<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">三　使用者による虐待の種別、内容及び発生要因</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">三　使用者による虐待の種別、内容及び発生要因</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">四　使用者による虐待を行った使用者（法第二条第五項に規定する使用者をいう。以下<wbr>同じ。）の氏名、生年月日及び被虐待者との関係</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">四　使用者による虐待を行った使用者（法第二条第五項に規定する使用者をいう。以下<wbr>同じ。）の氏名、生年月日及び被虐待者との関係</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">五　市町村が行った対応</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">五　市町村が行った対応</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">六　使用者による虐待が行われた事業所において改善措置が採られている場合にはその<wbr>内容</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">六　使用者による虐待が行われた事業所において改善措置が採られている場合にはその<wbr>内容 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（都道府県からの報告）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（都道府県からの報告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　都道府県は、法第二十二条第一項の規定による通報、同条第二項の規定による<wbr>届出又は法第二十三条の規定による通知を受け、当該通報、届出又は通知に係る事実の<wbr>確認を行った結果、使用者による虐待の事実が認められた場合、又は更に都道府県労働<wbr>局と共同して事実の確認を行う必要が生じた場合には、次に掲げる事項を当該使用者に<wbr>よる虐待に係る事業所の所在地を管轄する都道府県労働局に報告しなければならない。<wbr></span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　都道府県は、法第二十二条第一項の規定による通報、同条第二項の規定による<wbr>届出又は法第二十三条の規定による通知を受け、当該通報、届出又は通知に係る事実の<wbr>確認を行った結果、使用者による虐待の事実が認められた場合、又は更に都道府県労働<wbr>局と共同して事実の確認を行う必要が生じた場合には、次に掲げる事項を当該使用者に<wbr>よる虐待に係る事業所の所在地を管轄する都道府県労働局に報告しなければならない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">一　事業所の名称、所在地、業種及び規模</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">一　事業所の名称、所在地、業種及び規模</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">二　被虐待者の氏名、性別、年齢、障害の種類、障害支援区分その他の心身の状況及び<wbr>雇用形態</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">二　被虐待者の氏名、性別、年齢、障害の種類、障害支援区分その他の心身の状況及び<wbr>雇用形態</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">三　使用者による虐待の種別、内容及び発生要因</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">三　使用者による虐待の種別、内容及び発生要因</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">四　使用者による虐待を行った使用者の氏名、生年月日及び被虐待者との関係</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">四　使用者による虐待を行った使用者の氏名、生年月日及び被虐待者との関係</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">五　都道府県及び市町村が行った対応</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">五　都道府県及び市町村が行った対応</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">六　使用者による虐待が行われた事業所において改善措置が採られている場合にはその<wbr>内容</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">六　使用者による虐待が行われた事業所において改善措置が採られている場合にはその<wbr>内容 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（船員に関する特例）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（船員に関する特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第六条　船員法（昭和二十二年法律第百号）の適用を受ける船員である障害者について<wbr>行われる使用者による虐待に係る前条の規定の適用については、「都道府県労働局と」<wbr>とあるのは「地方運輸局その他の関係行政機関と」と、「当該使用者による虐待に係る<wbr>事業所の所在地を管轄する都道府県労働局」とあるのは「地方運輸局その他の関係行政<wbr>機関」とする。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第六条　船員法（昭和二十二年法律第百号）の適用を受ける船員である障害者について<wbr>行われる使用者による虐待に係る前条の規定の適用については、「都道府県労働局と」<wbr>とあるのは「地方運輸局その他の関係行政機関と」と、「当該使用者による虐待に係る<wbr>事業所の所在地を管轄する都道府県労働局」とあるのは「地方運輸局その他の関係行政<wbr>機関」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（厚生労働大臣による公表事項）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（厚生労働大臣による公表事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第二十八条の厚生労働省令で定める事項は、次のとおりとする。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第二十八条の厚生労働省令で定める事項は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">一　使用者による虐待があった事業所の業種及び規模</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">一　使用者による虐待があった事業所の業種及び規模</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">二　使用者による虐待を行った使用者と被虐侍者との関係</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">二　使用者による虐待を行った使用者と被虐侍者との関係 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（法第三十条に規定する厚生労働省令で定める施設）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（法第三十条に規定する厚生労働省令で定める施設）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第三十条に規定する厚生労働省令で定める施設は、次の各号のいずれかに該<wbr>当するものとする。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第三十条に規定する厚生労働省令で定める施設は、次の各号のいずれかに該<wbr>当するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">41</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　一日に保育する乳幼児（</span><span style="color: #000000; background-color: #efcb05; ">第四条第一項第一号に規定する乳児又は同項第二号に規定<wbr>する幼児をいう。以下同じ。）の数（次に掲げるものを除く。）が五人以下である施設<wbr>であって、その旨が約款その他の書類により明らかであるもの</span></code></td>
+<td class="ln">41</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　一日に保育する乳幼児（</span><span class="sf17b18">児童福祉法</span><span style="color: #000000; background-color: #efcb05; ">第四条第一項第一号に規定する乳児又は同項第<wbr>二号に規定する幼児をいう。以下同じ。）の数（次に掲げるものを除く。）が五人以下<wbr>である施設であって、その旨が約款その他の書類により明らかであるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">イ　事業主がその雇用する労働者の監護する乳幼児を保育するために自ら設置する施設<wbr>又は事業主から委託を受けて当該事業主が雇用する労働者の監護する乳幼児の保育を実<wbr>施する施設にあっては、当該労働者の監護する乳幼児の数</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">イ　事業主がその雇用する労働者の監護する乳幼児を保育するために自ら設置する施設<wbr>又は事業主から委託を受けて当該事業主が雇用する労働者の監護する乳幼児の保育を実<wbr>施する施設にあっては、当該労働者の監護する乳幼児の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">ロ　事業主団体がその構成員である事業主の雇用する労働者の監護する乳幼児を保育す<wbr>るために自ら設置する施設又は事業主団体から委託を受けてその構成員である事業主の<wbr>雇用する労働者の監護する乳幼児の保育を実施する施設にあっては、当該労働者の監護<wbr>する乳幼児の数</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">ロ　事業主団体がその構成員である事業主の雇用する労働者の監護する乳幼児を保育す<wbr>るために自ら設置する施設又は事業主団体から委託を受けてその構成員である事業主の<wbr>雇用する労働者の監護する乳幼児の保育を実施する施設にあっては、当該労働者の監護<wbr>する乳幼児の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ハ　児童福祉法施行規則（昭和二十三年厚生省令第十一号）第一条の三十二の二第一項<wbr>に規定する組合が当該組合の構成員の監護する乳幼児を保育するために自ら設置する施<wbr>設又は同項に規定する組合から委託を受けて当該組合の構成員の監護する乳幼児の保育<wbr>を実施する施設にあっては、当該構成員の監護する乳幼児の数</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ハ　児童福祉法施行規則（昭和二十三年厚生省令第十一号）第一条の三十二の二第一項<wbr>に規定する組合が当該組合の構成員の監護する乳幼児を保育するために自ら設置する施<wbr>設又は同項に規定する組合から委託を受けて当該組合の構成員の監護する乳幼児の保育<wbr>を実施する施設にあっては、当該構成員の監護する乳幼児の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">ニ　店舗その他の事業所において商品の販売又は役務の提供を行う事業者が商品の販売<wbr>又は役務の提供を行う間に限り、その顧客の監護する乳幼児を保育するために自ら設置<wbr>する施設又は当該事業者からの委託を受けて当該顧客の監護する乳幼児を保育する施設<wbr>にあっては、当該顧客の監護する乳幼児の数</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">ニ　店舗その他の事業所において商品の販売又は役務の提供を行う事業者が商品の販売<wbr>又は役務の提供を行う間に限り、その顧客の監護する乳幼児を保育するために自ら設置<wbr>する施設又は当該事業者からの委託を受けて当該顧客の監護する乳幼児を保育する施設<wbr>にあっては、当該顧客の監護する乳幼児の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">ホ　設置者の四親等内の親族である乳幼児の数</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">ホ　設置者の四親等内の親族である乳幼児の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ヘ　児童福祉法第六条の三第七項に規定する一時預かり事業を行う施設にあっては、当<wbr>該事業の対象となる乳幼児の数</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ヘ　児童福祉法第六条の三第七項に規定する一時預かり事業を行う施設にあっては、当<wbr>該事業の対象となる乳幼児の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ト　病児保育事業を行う施設にあっては、当該事業の対象となる乳幼児の数</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ト　病児保育事業を行う施設にあっては、当該事業の対象となる乳幼児の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">二　半年を限度として臨時に設置される施設</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">二　半年を限度として臨時に設置される施設</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">三　学校教育法（昭和二十二年法律第二十六号）に規定する幼稚園を設置する者が当該<wbr>幼稚園と併せて設置している施設</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">三　学校教育法（昭和二十二年法律第二十六号）に規定する幼稚園を設置する者が当該<wbr>幼稚園と併せて設置している施設 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十四年十月一日から施行する。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十四年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年一月一八日厚生労働省令第四号）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年一月一八日厚生労働省令第四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十五年四月一日から施行する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十五年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年一一月二二日厚生労働省令第一二四号）　抄</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年一一月二二日厚生労働省令第一二四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十六年四月一日から施行する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年一一月一三日厚生労働省令第一二二号）　抄</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年一一月一三日厚生労働省令第一二二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十七年一月一日から施行する。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十七年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月三一日厚生労働省令第七三号）　抄</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月三一日厚生労働省令第七三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、子ども・子育て支援法の施行の日（平成二十七年四月一日）から施行<wbr>する。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、子ども・子育て支援法の施行の日（平成二十七年四月一日）から施行<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年三月二二日厚生労働省令第二八号）　抄</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年三月二二日厚生労働省令第二八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成三十年四月一日から施行する。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成三十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

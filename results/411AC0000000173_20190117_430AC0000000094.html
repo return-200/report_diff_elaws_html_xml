@@ -1,0 +1,727 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第百七十三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第百七十三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国立研究開発法人物質・材料研究機構法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国立研究開発法人物質・材料研究機構法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第六条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員（第七条―第十四条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員（第七条―第十四条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十五条―第十六条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十五条―第十六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十七条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十八条・第十九条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十八条・第十九条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、国立研究開発法人物質・材料研究機構の名称、目的、業務の範囲<wbr>等に関する事項を定めることを目的とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、国立研究開発法人物質・材料研究機構の名称、目的、業務の範囲<wbr>等に関する事項を定めることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「物質・材料科学技術」とは、物質に関する科学技術であっ<wbr>て材料の創製に資することとなるもの及び材料としての物質に関する科学技術をいう。<wbr></span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「物質・材料科学技術」とは、物質に関する科学技術であっ<wbr>て材料の創製に資することとなるもの及び材料としての物質に関する科学技術をいう。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">２　この法律において「基盤的研究開発」とは、研究及び開発（以下「研究開発」とい<wbr>う。）であって次の各号のいずれかに該当するものをいう。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">２　この法律において「基盤的研究開発」とは、研究及び開発（以下「研究開発」とい<wbr>う。）であって次の各号のいずれかに該当するものをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">一　物質・材料科学技術に関する共通的な研究開発</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">一　物質・材料科学技術に関する共通的な研究開発</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">二　物質・材料科学技術に関する研究開発であって、国の試験研究機関又は研究開発を<wbr>行う独立行政法人に重複して設置することが多額の経費を要するため適当でないと認め<wbr>られる施設及び設備を必要とするもの</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">二　物質・材料科学技術に関する研究開発であって、国の試験研究機関又は研究開発を<wbr>行う独立行政法人に重複して設置することが多額の経費を要するため適当でないと認め<wbr>られる施設及び設備を必要とするもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">三　物質・材料科学技術に関する研究開発であって、多数部門の協力を要する総合的な<wbr>もの</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">三　物質・材料科学技術に関する研究開発であって、多数部門の協力を要する総合的な<wbr>もの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第三条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、国立研究開発法人物質・材料研究機構とする。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第三条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、国立研究開発法人物質・材料研究機構とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（機構の目的）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（機構の目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第四条　国立研究開発法人物質・材料研究機構（以下「機構」という。）は、物質・材<wbr>料科学技術に関する基礎研究及び基盤的研究開発等の業務を総合的に行うことにより、<wbr>物質・材料科学技術の水準の向上を図ることを目的とする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第四条　国立研究開発法人物質・材料研究機構（以下「機構」という。）は、物質・材<wbr>料科学技術に関する基礎研究及び基盤的研究開発等の業務を総合的に行うことにより、<wbr>物質・材料科学技術の水準の向上を図ることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（国立研究開発法人）</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（国立研究開発法人）</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　機構は、通則法第二条第三項に規定する国立研究開発法人とする。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　機構は、通則法第二条第三項に規定する国立研究開発法人とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構は、主たる事務所を茨城県に置く。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構は、主たる事務所を茨城県に置く。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構の資本金は、附則第五条第二項の規定により政府から出資があったものと<wbr>された金額とする。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構の資本金は、附則第五条第二項の規定により政府から出資があったものと<wbr>された金額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">２　政府は、必要があると認めるときは、予算で定める金額の範囲内において、機構に<wbr>追加して出資することができる。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">２　政府は、必要があると認めるときは、予算で定める金額の範囲内において、機構に<wbr>追加して出資することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項又は附則第六条第一項の規定による政府の出資があったときは、その<wbr>出資額により資本金を増加するものとする。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項又は附則第六条第一項の規定による政府の出資があったときは、その<wbr>出資額により資本金を増加するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第七条　機構に、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第七条　機構に、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">２　機構に、役員として、理事三人以内を置くことができる。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">２　機構に、役員として、理事三人以内を置くことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事は、理事長の定めるところにより、理事長を補佐して機構の業務を掌理す<wbr>る。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事は、理事長の定めるところにより、理事長を補佐して機構の業務を掌理す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（理事の任期）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（理事の任期）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第九条　理事の任期は、当該理事について理事長が定める期間（その末日が通則法第二<wbr>十一条の二第一項の規定による理事長の任期の末日以前であるものに限る。）とする。<wbr></span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第九条　理事の任期は、当該理事について理事長が定める期間（その末日が通則法第二<wbr>十一条の二第一項の規定による理事長の任期の末日以前であるものに限る。）とする。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（役員の欠格条項の特例）</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（役員の欠格条項の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第十条　通則法第二十二条の規定にかかわらず、教育公務員で政令で定めるもの（次条<wbr>各号のいずれかに該当する者を除く。）は、非常勤の理事又は監事となることができる<wbr>。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第十条　通則法第二十二条の規定にかかわらず、教育公務員で政令で定めるもの（次条<wbr>各号のいずれかに該当する者を除く。）は、非常勤の理事又は監事となることができる<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第十一条　通則法第二十二条に定めるもののほか、次の各号のいずれかに該当する者は<wbr>、役員となることができない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第十一条　通則法第二十二条に定めるもののほか、次の各号のいずれかに該当する者は<wbr>、役員となることができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　物品の製造若しくは販売若しくは工事の請負を業とする者であって機構と取引上密<wbr>接な利害関係を有するもの又はこれらの者が法人であるときはその役員（いかなる名称<wbr>によるかを問わず、これと同等以上の職権又は支配力を有する者を含む。）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　物品の製造若しくは販売若しくは工事の請負を業とする者であって機構と取引上密<wbr>接な利害関係を有するもの又はこれらの者が法人であるときはその役員（いかなる名称<wbr>によるかを問わず、これと同等以上の職権又は支配力を有する者を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げる事業者の団体の役員（いかなる名称によるかを問わず、これと同等以<wbr>上の職権又は支配力を有する者を含む。）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げる事業者の団体の役員（いかなる名称によるかを問わず、これと同等以<wbr>上の職権又は支配力を有する者を含む。） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十二条　機構の理事長の解任に関する通則法第二十三条第一項の規定の適用について<wbr>は、同項中「前条」とあるのは、「前条及び国立研究開発法人物質・材料研究機構法（<wbr>平成十一年法律第百七十三号）第十一条」とする。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十二条　機構の理事長の解任に関する通則法第二十三条第一項の規定の適用について<wbr>は、同項中「前条」とあるのは、「前条及び国立研究開発法人物質・材料研究機構法（<wbr>平成十一年法律第百七十三号）第十一条」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　機構の理事及び監事の解任に関する通則法第二十三条第一項の規定の適用について<wbr>は、同項中「前条」とあるのは、「前条並びに国立研究開発法人物質・材料研究機構法<wbr>（平成十一年法律第百七十三号）第十条及び第十一条」とする。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　機構の理事及び監事の解任に関する通則法第二十三条第一項の規定の適用について<wbr>は、同項中「前条」とあるのは、「前条並びに国立研究開発法人物質・材料研究機構法<wbr>（平成十一年法律第百七十三号）第十条及び第十一条」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の秘密保持義務）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の秘密保持義務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第十三条　機構の役員及び職員は、職務上知ることのできた秘密を漏らしてはならない<wbr>。その職を退いた後も、同様とする。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第十三条　機構の役員及び職員は、職務上知ることのできた秘密を漏らしてはならない<wbr>。その職を退いた後も、同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の地位）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の地位）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第十四条　機構の役員及び職員は、刑法（明治四十年法律第四十五号）その他の罰則の<wbr>適用については、法令により公務に従事する職員とみなす。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第十四条　機構の役員及び職員は、刑法（明治四十年法律第四十五号）その他の罰則の<wbr>適用については、法令により公務に従事する職員とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第十五条　機構は、第四条の目的を達成するため、次の業務を行う。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第十五条　機構は、第四条の目的を達成するため、次の業務を行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">一　物質・材料科学技術に関する基礎研究及び基盤的研究開発を行うこと。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">一　物質・材料科学技術に関する基礎研究及び基盤的研究開発を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げる業務に係る成果を普及し、及びその活用を促進すること。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げる業務に係る成果を普及し、及びその活用を促進すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">三　機構の施設及び設備を科学技術に関する研究開発を行う者の共用に供すること。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">三　機構の施設及び設備を科学技術に関する研究開発を行う者の共用に供すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">四　物質・材料科学技術に関する研究者及び技術者を養成し、及びその資質の向上を図<wbr>ること。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">四　物質・材料科学技術に関する研究者及び技術者を養成し、及びその資質の向上を図<wbr>ること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">五　科学技術・イノベーション創出の活性化に関する法律（平成二十年法律第六十三号<wbr>）第三十四条の六第一項の規定による出資並びに人的及び技術的援助のうち政令で定め<wbr>るものを行うこと。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">五　科学技術・イノベーション創出の活性化に関する法律（平成二十年法律第六十三号<wbr>）第三十四条の六第一項の規定による出資並びに人的及び技術的援助のうち政令で定め<wbr>るものを行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">六　前各号の業務に附帯する業務を行うこと。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">六　前各号の業務に附帯する業務を行うこと。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（株式等の取得及び保有）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（株式等の取得及び保有）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十五条の二　機構は、科学技術・イノベーション創出の活性化に関する法律第三十四<wbr>条の五第一項及び第二項の規定による株式又は新株予約権の取得及び保有を行うことが<wbr>できる。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十五条の二　機構は、科学技術・イノベーション創出の活性化に関する法律第三十四<wbr>条の五第一項及び第二項の規定による株式又は新株予約権の取得及び保有を行うことが<wbr>できる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">第十六条　機構は、通則法第三十五条の四第二項第一号に規定する中長期目標の期間（<wbr>以下この項において「中長期目標の期間」という。）の最後の事業年度に係る通則法第<wbr>四十四条第一項又は第二項の規定による整理を行った後、同条第一項の規定による積立<wbr>金があるときは、その額に相当する金額のうち文部科学大臣の承認を受けた金額を、当<wbr>該中長期目標の期間の次の中長期目標の期間に係る通則法第三十五条の五第一項の認可<wbr>を受けた中長期計画（同項後段の規定による変更の認可を受けたときは、その変更後の<wbr>もの）の定めるところにより、当該次の中長期目標の期間における第十五条に規定する<wbr>業務の財源に充てることができる。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">第十六条　機構は、通則法第三十五条の四第二項第一号に規定する中長期目標の期間（<wbr>以下この項において「中長期目標の期間」という。）の最後の事業年度に係る通則法第<wbr>四十四条第一項又は第二項の規定による整理を行った後、同条第一項の規定による積立<wbr>金があるときは、その額に相当する金額のうち文部科学大臣の承認を受けた金額を、当<wbr>該中長期目標の期間の次の中長期目標の期間に係る通則法第三十五条の五第一項の認可<wbr>を受けた中長期計画（同項後段の規定による変更の認可を受けたときは、その変更後の<wbr>もの）の定めるところにより、当該次の中長期目標の期間における第十五条に規定する<wbr>業務の財源に充てることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">２　文部科学大臣は、前項の規定による承認をしようとするときは、財務大臣に協議し<wbr>なければならない。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">２　文部科学大臣は、前項の規定による承認をしようとするときは、財務大臣に協議し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、第一項に規定する積立金の額に相当する金額から同項の規定による承認を<wbr>受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しなければな<wbr>らない。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、第一項に規定する積立金の額に相当する金額から同項の規定による承認を<wbr>受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十七条　機構に係る通則法における主務大臣及び主務省令は、それぞれ文部科学大臣<wbr>及び文部科学省令とする。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十七条　機構に係る通則法における主務大臣及び主務省令は、それぞれ文部科学大臣<wbr>及び文部科学省令とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十八条　第十三条の規定に違反して秘密を漏らした者は、一年以下の懲役又は五十万<wbr>円以下の罰金に処する。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十八条　第十三条の規定に違反して秘密を漏らした者は、一年以下の懲役又は五十万<wbr>円以下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十九条　次の各号のいずれかに該当する場合には、その違反行為をした機構の役員は<wbr>、二十万円以下の過料に処する。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十九条　次の各号のいずれかに該当する場合には、その違反行為をした機構の役員は<wbr>、二十万円以下の過料に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">一　第十五条に規定する業務以外の業務を行ったとき。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">一　第十五条に規定する業務以外の業務を行ったとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">二　第十六条第一項の規定により文部科学大臣の承認を受けなければならない場合にお<wbr>いて、その承認を受けなかったとき。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">二　第十六条第一項の規定により文部科学大臣の承認を受けなければならない場合にお<wbr>いて、その承認を受けなかったとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第二条　機構の成立の際現に文部科学省の機関で政令で定めるものの職員である者は、<wbr>別に辞令を発せられない限り、機構の成立の日において、機構の相当の職員となるもの<wbr>とする。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第二条　機構の成立の際現に文部科学省の機関で政令で定めるものの職員である者は、<wbr>別に辞令を発せられない限り、機構の成立の日において、機構の相当の職員となるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">81</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　機構の成立の際現に前条に規定する政令で定める機関の職員である者のうち、<wbr>機構の成立の日において引き続き機構の職員となったもの（次条において「引継職員」<wbr>という。）であって、機構の成立の日の前日において文部科学大臣又はその委任を受け<wbr>た者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（</span><span style="color: #000000; background-color: #efcb05; ">附則第六条第二項<wbr>、第七条第四項又は第八条第四項において準用する場合を含む。以下この条において同<wbr>じ。）の規定による認定を受けているものが、機構の成立の日において児童手当又は同<wbr>法附則第六条第一項、第七条第一項若しくは第八条第一項の給付（以下この条において<wbr>「特例給付等」という。）の支給要件に該当するときは、その者に対する児童手当又は<wbr>特例給付等の支給に関しては、機構の成立の日において同法第七条第一項の規定による<wbr>市町村長（特別区の区長を含む。）の認定があったものとみなす。この場合において、<wbr>その認定があったものとみなされた児童手当又は特例給付等の支給は、同法第八条第二<wbr>項（同法附則第六条第二項、第七条第四項又は第八条第四項において準用する場合を含<wbr>む。）の規定にかかわらず、機構の成立の日の前日の属する月の翌月から始める。</span></code></td>
+<td class="ln">81</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　機構の成立の際現に前条に規定する政令で定める機関の職員である者のうち、<wbr>機構の成立の日において引き続き機構の職員となったもの（次条において「引継職員」<wbr>という。）であって、機構の成立の日の前日において文部科学大臣又はその委任を受け<wbr>た者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">附則第六条第<wbr>二項、第七条第四項又は第八条第四項において準用する場合を含む。以下この条におい<wbr>て同じ。）の規定による認定を受けているものが、機構の成立の日において児童手当又<wbr>は同法附則第六条第一項、第七条第一項若しくは第八条第一項の給付（以下この条にお<wbr>いて「特例給付等」という。）の支給要件に該当するときは、その者に対する児童手当<wbr>又は特例給付等の支給に関しては、機構の成立の日において同法第七条第一項の規定に<wbr>よる市町村長（特別区の区長を含む。）の認定があったものとみなす。この場合におい<wbr>て、その認定があったものとみなされた児童手当又は特例給付等の支給は、同法第八条<wbr>第二項（同法附則第六条第二項、第七条第四項又は第八条第四項において準用する場合<wbr>を含む。）の規定にかかわらず、機構の成立の日の前日の属する月の翌月から始める。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（機構の職員となる者の職員団体についての経過措置）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（機構の職員となる者の職員団体についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第四条　機構の成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）第百<wbr>八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員であるも<wbr>のは、機構の成立の際国営企業及び特定独立行政法人の労働関係に関する法律（昭和二<wbr>十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この場合にお<wbr>いて、当該職員団体が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第四条　機構の成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）第百<wbr>八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員であるも<wbr>のは、機構の成立の際国営企業及び特定独立行政法人の労働関係に関する法律（昭和二<wbr>十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この場合にお<wbr>いて、当該職員団体が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、機構の成立の日から起算し<wbr>て六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二条及<wbr>び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる事務<wbr>所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、機構の成立の日から起算し<wbr>て六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二条及<wbr>び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる事務<wbr>所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、機構の成立の日から起算し<wbr>て六十日を経過する日までは、労働組合法第二条ただし書（第一号に係る部分に限る。<wbr>）の規定は、適用しない。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、機構の成立の日から起算し<wbr>て六十日を経過する日までは、労働組合法第二条ただし書（第一号に係る部分に限る。<wbr>）の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継等）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構の成立の際、第十四条に規定する業務に関し、現に国が有する権利及び義<wbr>務のうち政令で定めるものは、機構の成立の時において機構が承継する。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構の成立の際、第十四条に規定する業務に関し、現に国が有する権利及び義<wbr>務のうち政令で定めるものは、機構の成立の時において機構が承継する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により機構が国の有する権利及び義務を承継したときは、その承継の際<wbr>、承継される権利に係る土地、建物その他の財産で政令で定めるものの価額の合計額に<wbr>相当する金額は、政府から機構に対し出資されたものとする。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により機構が国の有する権利及び義務を承継したときは、その承継の際<wbr>、承継される権利に係る土地、建物その他の財産で政令で定めるものの価額の合計額に<wbr>相当する金額は、政府から機構に対し出資されたものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により政府から出資があったものとされる同項の財産の価額は、機構の<wbr>成立の日現在における時価を基準として評価委員が評価した価額とする。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により政府から出資があったものとされる同項の財産の価額は、機構の<wbr>成立の日現在における時価を基準として評価委員が評価した価額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">４　前項の評価委員その他評価に関し必要な事項は、政令で定める。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">４　前項の評価委員その他評価に関し必要な事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第六条　前条に規定するもののほか、政府は、機構の成立の時において現に建設中の建<wbr>物等（建物及びその建物に附属する工作物をいう。次項において同じ。）で政令で定め<wbr>るものを機構に追加して出資するものとする。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第六条　前条に規定するもののほか、政府は、機構の成立の時において現に建設中の建<wbr>物等（建物及びその建物に附属する工作物をいう。次項において同じ。）で政令で定め<wbr>るものを機構に追加して出資するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により政府が出資の目的とする建物等の価額は、出資の日現在における<wbr>時価を基準として評価委員が評価した価額とする。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により政府が出資の目的とする建物等の価額は、出資の日現在における<wbr>時価を基準として評価委員が評価した価額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">３　前項の評価委員その他評価に関し必要な事項は、政令で定める。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">３　前項の評価委員その他評価に関し必要な事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（理事長の任期の特例）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（理事長の任期の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第七条　通則法第十四条第二項の規定により機構の成立の時に理事長に任命されたもの<wbr>とされる理事長の任期については、第十条第一項中「任命の日」とあるのは、「機構の<wbr>成立の日」とする。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第七条　通則法第十四条第二項の規定により機構の成立の時に理事長に任命されたもの<wbr>とされる理事長の任期については、第十条第一項中「任命の日」とあるのは、「機構の<wbr>成立の日」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第八条　附則第二条から前条までに定めるもののほか、機構の設立に伴い必要な経過措<wbr>置その他この法律の施行に関し必要な経過措置は、政令で定める。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第八条　附則第二条から前条までに定めるもののほか、機構の設立に伴い必要な経過措<wbr>置その他この法律の施行に関し必要な経過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日法律第二四号）　抄</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日法律第二四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十八年四月一日から施行する。ただし、附則第十条第三項及<wbr>び第四項並びに第十四条の規定は、公布の日から施行する。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十八年四月一日から施行する。ただし、附則第十条第三項及<wbr>び第四項並びに第十四条の規定は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第二条　</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第二条　</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の際現に独立行政法人国立特殊教育総合研究所、独立行政法人大学<wbr>入試センター、独立行政法人国立オリンピック記念青少年総合センター、独立行政法人<wbr>国立女性教育会館、独立行政法人国立国語研究所、独立行政法人国立科学博物館、独立<wbr>行政法人物質・材料研究機構、独立行政法人防災科学技術研究所、独立行政法人放射線<wbr>医学総合研究所、独立行政法人国立美術館、独立行政法人国立博物館及び独立行政法人<wbr>文化財研究所の職員である者は、別に辞令を発せられない限り、施行日において、引き<wbr>続きそれぞれの独立行政法人（独立行政法人国立オリンピック記念青少年総合センター<wbr>にあっては、独立行政法人国立青少年教育振興機構）の職員となるものとする。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の際現に独立行政法人国立特殊教育総合研究所、独立行政法人大学<wbr>入試センター、独立行政法人国立オリンピック記念青少年総合センター、独立行政法人<wbr>国立女性教育会館、独立行政法人国立国語研究所、独立行政法人国立科学博物館、独立<wbr>行政法人物質・材料研究機構、独立行政法人防災科学技術研究所、独立行政法人放射線<wbr>医学総合研究所、独立行政法人国立美術館、独立行政法人国立博物館及び独立行政法人<wbr>文化財研究所の職員である者は、別に辞令を発せられない限り、施行日において、引き<wbr>続きそれぞれの独立行政法人（独立行政法人国立オリンピック記念青少年総合センター<wbr>にあっては、独立行政法人国立青少年教育振興機構）の職員となるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第三条　</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第三条　</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項の規定により独立行政法人国立特殊教育総合研究所、独立行政法人大学<wbr>入試センター、独立行政法人国立青少年教育振興機構、独立行政法人国立女性教育会館<wbr>、独立行政法人国立国語研究所、独立行政法人国立科学博物館、独立行政法人物質・材<wbr>料研究機構、独立行政法人防災科学技術研究所、独立行政法人放射線医学総合研究所、<wbr>独立行政法人国立美術館、独立行政法人国立博物館及び独立行政法人文化財研究所（以<wbr>下「施行日後の研究所等」という。）の職員となった者に対する国家公務員法第八十二<wbr>条第二項の規定の適用については、当該施行日後の研究所等の職員を同項に規定する特<wbr>別職国家公務員等と、前条第二項の規定により国家公務員としての身分を失ったことを<wbr>任命権者の要請に応じ同法第八十二条第二項に規定する特別職国家公務員等となるため<wbr>退職したこととみなす。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項の規定により独立行政法人国立特殊教育総合研究所、独立行政法人大学<wbr>入試センター、独立行政法人国立青少年教育振興機構、独立行政法人国立女性教育会館<wbr>、独立行政法人国立国語研究所、独立行政法人国立科学博物館、独立行政法人物質・材<wbr>料研究機構、独立行政法人防災科学技術研究所、独立行政法人放射線医学総合研究所、<wbr>独立行政法人国立美術館、独立行政法人国立博物館及び独立行政法人文化財研究所（以<wbr>下「施行日後の研究所等」という。）の職員となった者に対する国家公務員法第八十二<wbr>条第二項の規定の適用については、当該施行日後の研究所等の職員を同項に規定する特<wbr>別職国家公務員等と、前条第二項の規定により国家公務員としての身分を失ったことを<wbr>任命権者の要請に応じ同法第八十二条第二項に規定する特別職国家公務員等となるため<wbr>退職したこととみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第四条　</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第四条　</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">４　附則第二条第二項の規定により施行日後の研究所等の職員となる者に対しては、退<wbr>職手当法に基づく退職手当は、支給しない。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">４　附則第二条第二項の規定により施行日後の研究所等の職員となる者に対しては、退<wbr>職手当法に基づく退職手当は、支給しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">５　施行日後の研究所等は、前項の規定の適用を受けた当該施行日後の研究所等の職員<wbr>の退職に際し、退職手当を支給しようとするときは、その者の退職手当法第二条第一項<wbr>に規定する職員（同条第二項の規定により職員とみなされる者を含む。）としての引き<wbr>続いた在職期間を当該施行日後の研究所等の職員としての在職期間とみなして取り扱う<wbr>べきものとする。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">５　施行日後の研究所等は、前項の規定の適用を受けた当該施行日後の研究所等の職員<wbr>の退職に際し、退職手当を支給しようとするときは、その者の退職手当法第二条第一項<wbr>に規定する職員（同条第二項の規定により職員とみなされる者を含む。）としての引き<wbr>続いた在職期間を当該施行日後の研究所等の職員としての在職期間とみなして取り扱う<wbr>べきものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">６　施行日の前日に独立行政法人国立特殊教育総合研究所、独立行政法人大学入試セン<wbr>ター、独立行政法人国立オリンピック記念青少年総合センター、独立行政法人国立女性<wbr>教育会館、独立行政法人国立国語研究所、独立行政法人国立科学博物館、独立行政法人<wbr>物質・材料研究機構、独立行政法人防災科学技術研究所、独立行政法人放射線医学総合<wbr>研究所、独立行政法人国立美術館、独立行政法人国立博物館及び独立行政法人文化財研<wbr>究所（以下「施行日前の研究所等」という。）の職員として在職する者が、附則第二条<wbr>第二項の規定により引き続いて施行日後の研究所等の職員となり、かつ、引き続き当該<wbr>施行日後の研究所等（独立行政法人国立特別支援教育総合研究所、国立研究開発法人物<wbr>質・材料研究機構、国立研究開発法人防災科学技術研究所、国立研究開発法人放射線医<wbr>学総合研究所法の一部を改正する法律（平成二十七年法律第五十一号）による改正前の<wbr>国立研究開発法人放射線医学総合研究所法（平成十一年法律第百七十六号）第二条の国<wbr>立研究開発法人放射線医学総合研究所及び国立研究開発法人量子科学技術研究開発機構<wbr>並びに独立行政法人国立文化財機構を含む。以下この項において同じ。）の職員として<wbr>在職した後引き続いて退職手当法第二条第一項に規定する職員となった場合におけるそ<wbr>の者の退職手当法に基づいて支給する退職手当の算定の基礎となる勤続期間の計算につ<wbr>いては、その者の当該施行日後の研究所等の職員としての在職期間を同項に規定する職<wbr>員としての引き続いた在職期間とみなす。ただし、その者が当該施行日後の研究所等を<wbr>退職したことにより退職手当（これに相当する給付を含む。）の支給を受けているとき<wbr>は、この限りでない。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">６　施行日の前日に独立行政法人国立特殊教育総合研究所、独立行政法人大学入試セン<wbr>ター、独立行政法人国立オリンピック記念青少年総合センター、独立行政法人国立女性<wbr>教育会館、独立行政法人国立国語研究所、独立行政法人国立科学博物館、独立行政法人<wbr>物質・材料研究機構、独立行政法人防災科学技術研究所、独立行政法人放射線医学総合<wbr>研究所、独立行政法人国立美術館、独立行政法人国立博物館及び独立行政法人文化財研<wbr>究所（以下「施行日前の研究所等」という。）の職員として在職する者が、附則第二条<wbr>第二項の規定により引き続いて施行日後の研究所等の職員となり、かつ、引き続き当該<wbr>施行日後の研究所等（独立行政法人国立特別支援教育総合研究所、国立研究開発法人物<wbr>質・材料研究機構、国立研究開発法人防災科学技術研究所、国立研究開発法人放射線医<wbr>学総合研究所法の一部を改正する法律（平成二十七年法律第五十一号）による改正前の<wbr>国立研究開発法人放射線医学総合研究所法（平成十一年法律第百七十六号）第二条の国<wbr>立研究開発法人放射線医学総合研究所及び国立研究開発法人量子科学技術研究開発機構<wbr>並びに独立行政法人国立文化財機構を含む。以下この項において同じ。）の職員として<wbr>在職した後引き続いて退職手当法第二条第一項に規定する職員となった場合におけるそ<wbr>の者の退職手当法に基づいて支給する退職手当の算定の基礎となる勤続期間の計算につ<wbr>いては、その者の当該施行日後の研究所等の職員としての在職期間を同項に規定する職<wbr>員としての引き続いた在職期間とみなす。ただし、その者が当該施行日後の研究所等を<wbr>退職したことにより退職手当（これに相当する給付を含む。）の支給を受けているとき<wbr>は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">７　施行日後の研究所等は、施行日の前日に施行日前の研究所等の職員として在職し、<wbr>附則第二条第二項の規定により引き続いて施行日後の研究所等の職員となった者のうち<wbr>施行日から雇用保険法（昭和四十九年法律第百十六号）による失業等給付の受給資格を<wbr>取得するまでの間に当該施行日後の研究所等を退職したものであって、その退職した日<wbr>まで当該施行日前の研究所等の職員として在職したものとしたならば退職手当法第十条<wbr>の規定による退職手当の支給を受けることができるものに対しては、同条の規定の例に<wbr>より算定した退職手当の額に相当する額を退職手当として支給するものとする。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">７　施行日後の研究所等は、施行日の前日に施行日前の研究所等の職員として在職し、<wbr>附則第二条第二項の規定により引き続いて施行日後の研究所等の職員となった者のうち<wbr>施行日から雇用保険法（昭和四十九年法律第百十六号）による失業等給付の受給資格を<wbr>取得するまでの間に当該施行日後の研究所等を退職したものであって、その退職した日<wbr>まで当該施行日前の研究所等の職員として在職したものとしたならば退職手当法第十条<wbr>の規定による退職手当の支給を受けることができるものに対しては、同条の規定の例に<wbr>より算定した退職手当の額に相当する額を退職手当として支給するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（退職手当法の適用に関する経過措置）</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（退職手当法の適用に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第五条　施行日前に施行日前の研究所等を退職した者の退職手当について国家公務員退<wbr>職手当法等の一部を改正する法律（平成二十年法律第九十五号）附則第二条の規定によ<wbr>りなお従前の例によることとされる場合における同法第一条の規定による改正前の退職<wbr>手当法（以下この条において「旧退職手当法」という。）第十二条の二及び第十二条の<wbr>三の規定の適用については、独立行政法人国立特殊教育総合研究所を退職した者にあっ<wbr>ては独立行政法人国立特別支援教育総合研究所の、独立行政法人大学入試センターを退<wbr>職した者にあっては独立行政法人大学入試センターの、独立行政法人国立オリンピック<wbr>記念青少年総合センターを退職した者にあっては独立行政法人国立青少年教育振興機構<wbr>の、独立行政法人国立女性教育会館を退職した者にあっては独立行政法人国立女性教育<wbr>会館の、独立行政法人国立国語研究所を退職した者にあっては大学共同利用機関法人人<wbr>間文化研究機構の、独立行政法人国立科学博物館を退職した者にあっては独立行政法人<wbr>国立科学博物館の、独立行政法人物質・材料研究機構を退職した者にあっては国立研究<wbr>開発法人物質・材料研究機構の、独立行政法人防災科学技術研究所を退職した者にあっ<wbr>ては国立研究開発法人防災科学技術研究所の、独立行政法人放射線医学総合研究所を退<wbr>職した者にあっては国立研究開発法人量子科学技術研究開発機構の、独立行政法人国立<wbr>美術館を退職した者にあっては独立行政法人国立美術館の、独立行政法人国立博物館及<wbr>び独立行政法人文化財研究所を退職した者にあっては独立行政法人国立文化財機構の長<wbr>は、旧退職手当法第十二条の二第一項に規定する各省各庁の長等とみなす。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第五条　施行日前に施行日前の研究所等を退職した者の退職手当について国家公務員退<wbr>職手当法等の一部を改正する法律（平成二十年法律第九十五号）附則第二条の規定によ<wbr>りなお従前の例によることとされる場合における同法第一条の規定による改正前の退職<wbr>手当法（以下この条において「旧退職手当法」という。）第十二条の二及び第十二条の<wbr>三の規定の適用については、独立行政法人国立特殊教育総合研究所を退職した者にあっ<wbr>ては独立行政法人国立特別支援教育総合研究所の、独立行政法人大学入試センターを退<wbr>職した者にあっては独立行政法人大学入試センターの、独立行政法人国立オリンピック<wbr>記念青少年総合センターを退職した者にあっては独立行政法人国立青少年教育振興機構<wbr>の、独立行政法人国立女性教育会館を退職した者にあっては独立行政法人国立女性教育<wbr>会館の、独立行政法人国立国語研究所を退職した者にあっては大学共同利用機関法人人<wbr>間文化研究機構の、独立行政法人国立科学博物館を退職した者にあっては独立行政法人<wbr>国立科学博物館の、独立行政法人物質・材料研究機構を退職した者にあっては国立研究<wbr>開発法人物質・材料研究機構の、独立行政法人防災科学技術研究所を退職した者にあっ<wbr>ては国立研究開発法人防災科学技術研究所の、独立行政法人放射線医学総合研究所を退<wbr>職した者にあっては国立研究開発法人量子科学技術研究開発機構の、独立行政法人国立<wbr>美術館を退職した者にあっては独立行政法人国立美術館の、独立行政法人国立博物館及<wbr>び独立行政法人文化財研究所を退職した者にあっては独立行政法人国立文化財機構の長<wbr>は、旧退職手当法第十二条の二第一項に規定する各省各庁の長等とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">（労働組合についての経過措置）</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">（労働組合についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際現に施行日前の研究所等に存する特定独立行政法人等の労<wbr>働関係に関する法律（昭和二十三年法律第二百五十七号。次条において「特労法」とい<wbr>う。）第四条第二項に規定する労働組合であって、その構成員の過半数が附則第二条第<wbr>二項の規定により施行日後の研究所等の職員となる者であるもの（以下この項において<wbr>「旧労働組合」という。）は、この法律の施行の際労働組合法（昭和二十四年法律第百<wbr>七十四号）の適用を受ける労働組合となるものとする。この場合において、旧労働組合<wbr>が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際現に施行日前の研究所等に存する特定独立行政法人等の労<wbr>働関係に関する法律（昭和二十三年法律第二百五十七号。次条において「特労法」とい<wbr>う。）第四条第二項に規定する労働組合であって、その構成員の過半数が附則第二条第<wbr>二項の規定により施行日後の研究所等の職員となる者であるもの（以下この項において<wbr>「旧労働組合」という。）は、この法律の施行の際労働組合法（昭和二十四年法律第百<wbr>七十四号）の適用を受ける労働組合となるものとする。この場合において、旧労働組合<wbr>が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、施行日から起算して六十日<wbr>を経過する日までに、労働組合法第二条及び第五条第二項の規定に適合する旨の労働委<wbr>員会の証明を受け、かつ、その主たる事務所の所在地において登記しなければ、その日<wbr>の経過により解散するものとする。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、施行日から起算して六十日<wbr>を経過する日までに、労働組合法第二条及び第五条第二項の規定に適合する旨の労働委<wbr>員会の証明を受け、かつ、その主たる事務所の所在地において登記しなければ、その日<wbr>の経過により解散するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合法の適用を受ける労働組合となったものについては、<wbr>施行日から起算して六十日を経過する日までは、同法第二条ただし書（第一号に係る部<wbr>分に限る。）の規定は、適用しない。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合法の適用を受ける労働組合となったものについては、<wbr>施行日から起算して六十日を経過する日までは、同法第二条ただし書（第一号に係る部<wbr>分に限る。）の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">（不当労働行為の申立て等についての経過措置）</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">（不当労働行為の申立て等についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">第七条　施行日前に特労法第十八条の規定に基づき施行日前の研究所等がした解雇に係<wbr>る中央労働委員会に対する申立て及び中央労働委員会による命令の期間については、な<wbr>お従前の例による。</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">第七条　施行日前に特労法第十八条の規定に基づき施行日前の研究所等がした解雇に係<wbr>る中央労働委員会に対する申立て及び中央労働委員会による命令の期間については、な<wbr>お従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の際現に中央労働委員会に係属している施行日前の研究所等とその<wbr>職員に係る特労法の適用を受ける労働組合とを当事者とするあっせん、調停又は仲裁に<wbr>係る事件に関する特労法第三章（第十二条及び第十六条の規定を除く。）及び第六章に<wbr>規定する事項については、なお従前の例による。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の際現に中央労働委員会に係属している施行日前の研究所等とその<wbr>職員に係る特労法の適用を受ける労働組合とを当事者とするあっせん、調停又は仲裁に<wbr>係る事件に関する特労法第三章（第十二条及び第十六条の規定を除く。）及び第六章に<wbr>規定する事項については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">第十三条　施行日前にした行為及び附則第九条第九項の規定によりなお従前の例による<wbr>こととされる場合における施行日以後にした行為に対する罰則の適用については、なお<wbr>従前の例による。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">第十三条　施行日前にした行為及び附則第九条第九項の規定によりなお従前の例による<wbr>こととされる場合における施行日以後にした行為に対する罰則の適用については、なお<wbr>従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">第十四条　附則第二条から第十一条まで及び前条に定めるもののほか、この法律の施行<wbr>に関し必要な経過措置は、政令で定める。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">第十四条　附則第二条から第十一条まで及び前条に定めるもののほか、この法律の施行<wbr>に関し必要な経過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年六月二一日法律第八〇号）　抄</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年六月二一日法律第八〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日法律第七号）　抄</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日法律第七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一二月二六日法律第九五号）　抄</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一二月二六日法律第九五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年三月三一日法律第一八号）　抄</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年三月三一日法律第一八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十一年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十一年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">二　第一条の規定、第二条（第一号に係る部分に限る。）の規定、次条第一項から第三<wbr>項まで及び第五項から第九項までの規定（独立行政法人国立国語研究所（以下「国立国<wbr>語研究所」という。）に係る部分に限る。）、同条第十項の規定、同条第十二項の規定<wbr>（国立国語研究所に係る部分に限る。）、附則第三条第一項の規定、附則第六条第一項<wbr>及び第二項の規定（国立国語研究所に係る部分に限る。）、附則第十条の規定、附則第<wbr>十一条の規定（国立国語研究所に係る部分に限る。）、附則第十五条の規定、附則第十<wbr>六条の規定（国家公務員共済組合法（昭和三十三年法律第百二十八号）別表第三の改正<wbr>規定中独立行政法人国立国語研究所の項を削る部分に限る。）、附則第十九条の規定、<wbr>附則第二十条の規定（雇用保険法等の一部を改正する法律（平成十九年法律第三十号）<wbr>第四条のうち船員保険法（昭和十四年法律第七十三号）別表第一の改正規定中独立行政<wbr>法人国立国語研究所の項を削る部分に限る。）並びに附則第二十二条の規定　平成二十<wbr>一年十月一日</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">二　第一条の規定、第二条（第一号に係る部分に限る。）の規定、次条第一項から第三<wbr>項まで及び第五項から第九項までの規定（独立行政法人国立国語研究所（以下「国立国<wbr>語研究所」という。）に係る部分に限る。）、同条第十項の規定、同条第十二項の規定<wbr>（国立国語研究所に係る部分に限る。）、附則第三条第一項の規定、附則第六条第一項<wbr>及び第二項の規定（国立国語研究所に係る部分に限る。）、附則第十条の規定、附則第<wbr>十一条の規定（国立国語研究所に係る部分に限る。）、附則第十五条の規定、附則第十<wbr>六条の規定（国家公務員共済組合法（昭和三十三年法律第百二十八号）別表第三の改正<wbr>規定中独立行政法人国立国語研究所の項を削る部分に限る。）、附則第十九条の規定、<wbr>附則第二十条の規定（雇用保険法等の一部を改正する法律（平成十九年法律第三十号）<wbr>第四条のうち船員保険法（昭和十四年法律第七十三号）別表第一の改正規定中独立行政<wbr>法人国立国語研究所の項を削る部分に限る。）並びに附則第二十二条の規定　平成二十<wbr>一年十月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">（課税の特例）</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">（課税の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　新通則法第一条第一項に規定する個別法及び新通則法第四条第二項の規定<wbr>によりその名称中に国立研究開発法人という文字を使用するものとされた新通則法第二<wbr>条第一項に規定する独立行政法人が当該名称の変更に伴い受ける名義人の名称の変更の<wbr>登記又は登録については、登録免許税を課さない。</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　新通則法第一条第一項に規定する個別法及び新通則法第四条第二項の規定<wbr>によりその名称中に国立研究開発法人という文字を使用するものとされた新通則法第二<wbr>条第一項に規定する独立行政法人が当該名称の変更に伴い受ける名義人の名称の変更の<wbr>登記又は登録については、登録免許税を課さない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年七月八日法律第五一号）　抄</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年七月八日法律第五一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

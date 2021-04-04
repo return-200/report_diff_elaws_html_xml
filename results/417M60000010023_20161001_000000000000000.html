@@ -1,0 +1,1019 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十七年法務省令第二十三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十七年法務省令第二十三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">工場抵当登記規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">工場抵当登記規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">不動産登記法（平成十六年法律第百二十三号）及び不動産登記法の施行に伴う関係法律<wbr>の整備等に関する法律（平成十六年法律第百二十四号）の施行に伴い、並びに工場抵当<wbr>法（明治三十八年法律第五十四号）第三条第二項、第四条第二項、第二十一条第二項及<wbr>び第三項並びに第二十二条並びに不動産登記令（平成十六年政令第三百七十九号）第二<wbr>十四条の規定に基づき、並びに同法の規定を実施するため、工場抵当登記取扱手続（明<wbr>治三十八年司法省令第十八号）の全部を改正する省令を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">不動産登記法（平成十六年法律第百二十三号）及び不動産登記法の施行に伴う関係法律<wbr>の整備等に関する法律（平成十六年法律第百二十四号）の施行に伴い、並びに工場抵当<wbr>法（明治三十八年法律第五十四号）第三条第二項、第四条第二項、第二十一条第二項及<wbr>び第三項並びに第二十二条並びに不動産登記令（平成十六年政令第三百七十九号）第二<wbr>十四条の規定に基づき、並びに同法の規定を実施するため、工場抵当登記取扱手続（明<wbr>治三十八年司法省令第十八号）の全部を改正する省令を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　工場に属する土地又は建物についてする抵当権の登記（第一条―第四条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　工場に属する土地又は建物についてする抵当権の登記（第一条―第四条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　工場財団の登記</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　工場財団の登記</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第一節　総則（第五条・第六条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第一節　総則（第五条・第六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二節　工場財団目録（第七条―第十七条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二節　工場財団目録（第七条―第十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三節　工場財団の登記手続</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三節　工場財団の登記手続</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一款　通則（第十八条―第二十条）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一款　通則（第十八条―第二十条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第二款　所有権の保存の登記（第二十一条―第二十五条）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第二款　所有権の保存の登記（第二十一条―第二十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第三款　抵当権に関する登記（第二十六条）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第三款　抵当権に関する登記（第二十六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四款　表題部の変更の登記等（第二十七条―第三十五条）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四款　表題部の変更の登記等（第二十七条―第三十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第四節　補則（第三十六条―第三十八条）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第四節　補則（第三十六条―第三十八条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第三章　雑則（第三十九条―第四十二条）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第三章　雑則（第三十九条―第四十二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一章　工場に属する土地又は建物についてする抵当権の登記</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一章　工場に属する土地又は建物についてする抵当権の登記</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（工場に属する土地又は建物についてする抵当権の設定の登記の申請情報）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（工場に属する土地又は建物についてする抵当権の設定の登記の申請情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第一条　工場抵当法（以下「法」という。）第四条第二項の法務省令で定める事項は、<wbr>不動産登記令（平成十六年政令第三百七十九号）第三条各号（第十号及び第十一号ヘを<wbr>除く。）に掲げる事項とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第一条　工場抵当法（以下「法」という。）第四条第二項の法務省令で定める事項は、<wbr>不動産登記令（平成十六年政令第三百七十九号）第三条各号（第十号及び第十一号ヘを<wbr>除く。）に掲げる事項とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（法第三条第二項の目録を作成した旨の記録）</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（法第三条第二項の目録を作成した旨の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第二条　登記官は、法第三条第三項に規定する申請に基づく抵当権の設定の登記をする<wbr>ときは、当該抵当権の登記の末尾に、同条第二項の目録を作成した旨を記録しなければ<wbr>ならない。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第二条　登記官は、法第三条第三項に規定する申請に基づく抵当権の設定の登記をする<wbr>ときは、当該抵当権の登記の末尾に、同条第二項の目録を作成した旨を記録しなければ<wbr>ならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（法第三条第二項の目録及びこれに記録すべき情報への工場財団目録に関する規定の準<wbr>用）</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（法第三条第二項の目録及びこれに記録すべき情報への工場財団目録に関する規定の準<wbr>用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第三条　第八条及び第十七条の規定は法第三条第二項の目録について、第八条及び第二<wbr>十五条の規定は法第三条第三項に規定する目録に記録すべき情報について、それぞれ準<wbr>用する。この場合において、第二十五条第一項中「別記第二号様式」とあるのは、「別<wbr>記第一号様式」とする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第三条　第八条及び第十七条の規定は法第三条第二項の目録について、第八条及び第二<wbr>十五条の規定は法第三条第三項に規定する目録に記録すべき情報について、それぞれ準<wbr>用する。この場合において、第二十五条第一項中「別記第二号様式」とあるのは、「別<wbr>記第一号様式」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（保存期間）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（保存期間）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第三条第二項の目録は、抵当権の登記を抹消した日から二十年間保存しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第三条第二項の目録は、抵当権の登記を抹消した日から二十年間保存しなけ<wbr>ればならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第二章　工場財団の登記</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第二章　工場財団の登記</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第一節　総則</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第一節　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の登記記録）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の登記記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第五条　登記官は、工場財団について初めて登記をし、又は管轄転属によって移送を受<wbr>けたときは、工場財団の登記記録の表題部に、これらの順序に従って登記番号を記録し<wbr>なければならない。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第五条　登記官は、工場財団について初めて登記をし、又は管轄転属によって移送を受<wbr>けたときは、工場財団の登記記録の表題部に、これらの順序に従って登記番号を記録し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記記録の権利部は、甲区及び乙区に区分し、甲区には所有権に関する<wbr>登記の登記事項を記録するものとし、乙区には抵当権に関する登記の登記事項を記録す<wbr>るものとする。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記記録の権利部は、甲区及び乙区に区分し、甲区には所有権に関する<wbr>登記の登記事項を記録するものとし、乙区には抵当権に関する登記の登記事項を記録す<wbr>るものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記規則の適用関係）</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記規則の適用関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第六条　工場財団の登記に係る不動産登記規則（平成十七年法務省令第十八号）の規定<wbr>の適用については、同令の規定（同令第一条第九号を除く。）中「不動産所在事項」と<wbr>あり、及び同令第百八十一条第二項第四号中「法第三十四条第一項各号及び第四十四条<wbr>第一項各号（第六号及び第九号を除く。）に掲げる事項」とあるのは、「工場の名称及<wbr>び位置、主たる営業所並びに営業の種類」とする。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第六条　工場財団の登記に係る不動産登記規則（平成十七年法務省令第十八号）の規定<wbr>の適用については、同令の規定（同令第一条第九号を除く。）中「不動産所在事項」と<wbr>あり、及び同令第百八十一条第二項第四号中「法第三十四条第一項各号及び第四十四条<wbr>第一項各号（第六号及び第九号を除く。）に掲げる事項」とあるのは、「工場の名称及<wbr>び位置、主たる営業所並びに営業の種類」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第二節　工場財団目録</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第二節　工場財団目録</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（土地等の記録）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（土地等の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第七条　工場財団目録に土地を記録するときは、当該土地の所在する市、区、郡、町、<wbr>村及び字並びに当該土地の地番を記録するものとする。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第七条　工場財団目録に土地を記録するときは、当該土地の所在する市、区、郡、町、<wbr>村及び字並びに当該土地の地番を記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に建物を記録するときは、当該建物の所在する市、区、郡、町、村、<wbr>字及び土地の地番（区分建物である建物にあっては、当該建物が属する一棟の建物の所<wbr>在する市、区、郡、町、村、字及び土地の地番）並びに家屋番号を記録するものとする<wbr>。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に建物を記録するときは、当該建物の所在する市、区、郡、町、村、<wbr>字及び土地の地番（区分建物である建物にあっては、当該建物が属する一棟の建物の所<wbr>在する市、区、郡、町、村、字及び土地の地番）並びに家屋番号を記録するものとする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　工場財団目録に建物以外の工作物を記録するときは、次に掲げる事項を記録するも<wbr>のとする。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　工場財団目録に建物以外の工作物を記録するときは、次に掲げる事項を記録するも<wbr>のとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　工作物の所在する市、区、郡、町、村、字及び土地の地番</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　工作物の所在する市、区、郡、町、村、字及び土地の地番</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　種類</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　種類</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">三　構造</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">三　構造</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">四　面積又は延長</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">四　面積又は延長 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（機械等の記録）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（機械等の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第八条　工場財団目録に機械、器具、電柱、電線、配置諸管、軌条その他の附属物を記<wbr>録するときは、次に掲げる事項を記録するものとする。ただし、工場財団目録に軽微な<wbr>附属物を記録するときは、概括して記録することができる。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第八条　工場財団目録に機械、器具、電柱、電線、配置諸管、軌条その他の附属物を記<wbr>録するときは、次に掲げる事項を記録するものとする。ただし、工場財団目録に軽微な<wbr>附属物を記録するときは、概括して記録することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　種類</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">一　種類</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">二　構造</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">二　構造</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">三　個数又は延長</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">三　個数又は延長</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">四　製造者の氏名又は名称、製造の年月、記号、番号その他同種類の他の物と識別する<wbr>ことができる情報があるときは、その情報</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">四　製造者の氏名又は名称、製造の年月、記号、番号その他同種類の他の物と識別する<wbr>ことができる情報があるときは、その情報 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（船舶等の記録）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（船舶等の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第九条　工場財団目録に船舶（船舶登記令（平成十七年政令第十一号）の規定により登<wbr>記した船舶をいう。以下同じ。）を記録するときは、同令第十一条第一号から第五号ま<wbr>でに掲げる事項を記録するものとする。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第九条　工場財団目録に船舶（船舶登記令（平成十七年政令第十一号）の規定により登<wbr>記した船舶をいう。以下同じ。）を記録するときは、同令第十一条第一号から第五号ま<wbr>でに掲げる事項を記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に小型船舶の登録等に関する法律（平成十三年法律第百二号）の規定<wbr>により登録した小型船舶を記録するときは、同法第六条第二項に規定する船舶番号及び<wbr>同項第一号から第四号までに掲げる事項を記録するものとする。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に小型船舶の登録等に関する法律（平成十三年法律第百二号）の規定<wbr>により登録した小型船舶を記録するときは、同法第六条第二項に規定する船舶番号及び<wbr>同項第一号から第四号までに掲げる事項を記録するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（地上権の記録）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（地上権の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第十条　工場財団目録に地上権を記録するときは、第七条第一項に規定する事項のほか<wbr>、その地上権の登記の順位番号を記録するものとする。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第十条　工場財団目録に地上権を記録するときは、第七条第一項に規定する事項のほか<wbr>、その地上権の登記の順位番号を記録するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">（賃借権の記録）</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">（賃借権の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第十一条　工場財団目録に不動産又は船舶の賃借権を記録するときは、第七条第一項若<wbr>しくは第二項又は第九条第一項に規定する事項のほか、その賃借権の登記の順位番号を<wbr>記録するものとする。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第十一条　工場財団目録に不動産又は船舶の賃借権を記録するときは、第七条第一項若<wbr>しくは第二項又は第九条第一項に規定する事項のほか、その賃借権の登記の順位番号を<wbr>記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に不動産及び船舶以外の物に関する賃借権を記録するときは、第七条<wbr>第三項、第八条、第九条第二項又は第十三条に規定する事項のほか、次に掲げる事項を<wbr>記録するものとする。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に不動産及び船舶以外の物に関する賃借権を記録するときは、第七条<wbr>第三項、第八条、第九条第二項又は第十三条に規定する事項のほか、次に掲げる事項を<wbr>記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　賃料</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　賃料</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　存続期間又は賃料の支払時期の定めがあるときは、その定め</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　存続期間又は賃料の支払時期の定めがあるときは、その定め</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">三　設定の年月日</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">三　設定の年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">四　賃貸人の氏名又は名称及び住所</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">四　賃貸人の氏名又は名称及び住所 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（工業所有権の記録）</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（工業所有権の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十二条　工場財団目録に工業所有権を記録するときは、次に掲げる事項を記録するも<wbr>のとする。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十二条　工場財団目録に工業所有権を記録するときは、次に掲げる事項を記録するも<wbr>のとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">一　権利の種類</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">一　権利の種類</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">二　権利の名称</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">二　権利の名称</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">三　特許番号又は登録番号</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">三　特許番号又は登録番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">四　登録の年月日</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">四　登録の年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に工業所有権についての専用実施権、通常実施権、専用使用権又は通<wbr>常使用権を記録するときは、次に掲げる事項を記録するものとする。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録に工業所有権についての専用実施権、通常実施権、専用使用権又は通<wbr>常使用権を記録するときは、次に掲げる事項を記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">一　権利の範囲</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">一　権利の範囲</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">二　本権の種類及び名称</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">二　本権の種類及び名称</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">三　本権の特許番号又は登録番号</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">三　本権の特許番号又は登録番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">四　登録の年月日</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">四　登録の年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">五　本権の権利者の氏名又は名称及び住所</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">五　本権の権利者の氏名又は名称及び住所 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（自動車の記録）</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（自動車の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十三条　工場財団目録に道路運送車両法（昭和二十六年法律第百八十五号）第二条第<wbr>二項の規定による自動車（軽自動車、小型特殊自動車及び二輪の小型自動車を除く。）<wbr>を記録するときは、次に掲げる事項を記録するものとする。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十三条　工場財団目録に道路運送車両法（昭和二十六年法律第百八十五号）第二条第<wbr>二項の規定による自動車（軽自動車、小型特殊自動車及び二輪の小型自動車を除く。）<wbr>を記録するときは、次に掲げる事項を記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">一　車名及び型式</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">一　車名及び型式</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">二　車台番号</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">二　車台番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">三　原動機の型式</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">三　原動機の型式</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">四　自動車登録番号</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">四　自動車登録番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">五　使用の本拠の位置</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">五　使用の本拠の位置 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（ダム使用権の記録）</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">（ダム使用権の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第十四条　工場財団目録にダム使用権を記録するときは、ダム使用権登録令（昭和四十<wbr>二年政令第二号）第二十五条第一項第一号から第四号までに掲げる事項を記録するもの<wbr>とする。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第十四条　工場財団目録にダム使用権を記録するときは、ダム使用権登録令（昭和四十<wbr>二年政令第二号）第二十五条第一項第一号から第四号までに掲げる事項を記録するもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録の作成単位）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録の作成単位）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十五条　工場財団目録は、二以上の工場について工場財団を設定するときは、工場ご<wbr>とに作成するものとする。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十五条　工場財団目録は、二以上の工場について工場財団を設定するときは、工場ご<wbr>とに作成するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（工場の所有者の氏名等の記録）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（工場の所有者の氏名等の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第十六条　前条の場合において、当該二以上の工場の所有者が異なるときは、当該各工<wbr>場の工場財団目録には、第七条から第十四条までに掲げる事項のほか、当該工場財団目<wbr>録に記録された工場の所有者の氏名又は名称を記録するものとする。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第十六条　前条の場合において、当該二以上の工場の所有者が異なるときは、当該各工<wbr>場の工場財団目録には、第七条から第十四条までに掲げる事項のほか、当該工場財団目<wbr>録に記録された工場の所有者の氏名又は名称を記録するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録の管理）</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録の管理）</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">第十七条　登記官は、工場財団目録を作成したときは、工場財団目録に申請の受付の年<wbr>月日及び受付番号並びに登記番号を記録しなければならない。ただし、法第三十九条の<wbr>規定により提供された工場財団目録に記録するための情報により作成した工場財団目録<wbr>には、登記番号を記録することを要しない。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">第十七条　登記官は、工場財団目録を作成したときは、工場財団目録に申請の受付の年<wbr>月日及び受付番号並びに登記番号を記録しなければならない。ただし、法第三十九条の<wbr>規定により提供された工場財団目録に記録するための情報により作成した工場財団目録<wbr>には、登記番号を記録することを要しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第三節　工場財団の登記手続</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第三節　工場財団の登記手続</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第一款　通則</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第一款　通則</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の登記の申請情報）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の登記の申請情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法第二十一条第三項の法務省令で定める事項は、この省令に特別の定めがあ<wbr>る場合を除き、不動産登記令第三条各号（第七号、第八号及び第十一号ヘを除く。）に<wbr>掲げる事項とする。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法第二十一条第三項の法務省令で定める事項は、この省令に特別の定めがあ<wbr>る場合を除き、不動産登記令第三条各号（第七号、第八号及び第十一号ヘを除く。）に<wbr>掲げる事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記の申請に係る不動産登記令の規定の適用については、同令の規定中<wbr>「第三条第七号及び第八号に掲げる事項」とあるのは、「工場の名称及び位置、主たる<wbr>営業所並びに営業の種類」とする。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記の申請に係る不動産登記令の規定の適用については、同令の規定中<wbr>「第三条第七号及び第八号に掲げる事項」とあるのは、「工場の名称及び位置、主たる<wbr>営業所並びに営業の種類」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（管轄登記所の指定があった場合の添付情報）</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（管轄登記所の指定があった場合の添付情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第十九条　法第十七条第二項（同条第三項において準用する場合を含む。）の規定によ<wbr>り管轄登記所の指定がされた場合において、登記の申請をするときは、管轄登記所の指<wbr>定があったことを証する情報をその申請情報と併せて登記所に提供しなければならない<wbr>。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第十九条　法第十七条第二項（同条第三項において準用する場合を含む。）の規定によ<wbr>り管轄登記所の指定がされた場合において、登記の申請をするときは、管轄登記所の指<wbr>定があったことを証する情報をその申請情報と併せて登記所に提供しなければならない<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（登記の更正）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（登記の更正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十条　工場財団の登記における不動産登記法第六十七条の規定の適用については、<wbr>同条第一項中「権利に関する登記」とあるのは、「登記」とする。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十条　工場財団の登記における不動産登記法第六十七条の規定の適用については、<wbr>同条第一項中「権利に関する登記」とあるのは、「登記」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第二款　所有権の保存の登記</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第二款　所有権の保存の登記</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（所有権の保存の登記の添付情報）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（所有権の保存の登記の添付情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　法第二十二条の法務省令で定める情報は、不動産登記令第七条第一項第一<wbr>号から第三号まで、第五号イ及びハ並びに第六号（同令別表の二十八の項添付情報欄ニ<wbr>に係る部分に限る。）に掲げる情報並びに次条に規定する工場図面とする。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　法第二十二条の法務省令で定める情報は、不動産登記令第七条第一項第一<wbr>号から第三号まで、第五号イ及びハ並びに第六号（同令別表の二十八の項添付情報欄ニ<wbr>に係る部分に限る。）に掲げる情報並びに次条に規定する工場図面とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（工場図面）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（工場図面）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　工場図面には、次に掲げる事項を記録するものとする。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　工場図面には、次に掲げる事項を記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">一　工場に属する土地及び工作物については、それらの方位、形状及び長さ並びに重要<wbr>な附属物の配置</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">一　工場に属する土地及び工作物については、それらの方位、形状及び長さ並びに重要<wbr>な附属物の配置</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">二　地上権の目的である土地並びに賃借権の目的である土地及び工作物については、そ<wbr>れらの方位、形状及び長さ</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">二　地上権の目的である土地並びに賃借権の目的である土地及び工作物については、そ<wbr>れらの方位、形状及び長さ</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２　工場図面は、工場ごとに作成するものとする。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２　工場図面は、工場ごとに作成するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">３　工場の一部について工場財団を設定するときは、工場図面は、工場財団に属する部<wbr>分とこれに属さない部分とを明確に区分して作成しなければならない。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">３　工場の一部について工場財団を設定するときは、工場図面は、工場財団に属する部<wbr>分とこれに属さない部分とを明確に区分して作成しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">４　不動産登記規則第七十三条及び第七十四条第二項の規定は、工場図面について準用<wbr>する。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">４　不動産登記規則第七十三条及び第七十四条第二項の規定は、工場図面について準用<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（工場図面の管理）</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（工場図面の管理）</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　登記官は、所有権の保存の登記をしたときは、工場図面に、申請の受付の<wbr>年月日及び受付番号並びに登記番号を記録しなければならない。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　登記官は、所有権の保存の登記をしたときは、工場図面に、申請の受付の<wbr>年月日及び受付番号並びに登記番号を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">（所有者を異にする工場についての所有権の保存の登記）</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">（所有者を異にする工場についての所有権の保存の登記）</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　所有者を異にする二以上の工場について工場財団の所有権の保存の登記を<wbr>申請する場合には、法第二十一条第一項第一号から第三号までに掲げる事項及び第十八<wbr>条第一項に規定する事項のほか、当該所有者の氏名又は名称を申請情報の内容とする。<wbr></span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　所有者を異にする二以上の工場について工場財団の所有権の保存の登記を<wbr>申請する場合には、法第二十一条第一項第一号から第三号までに掲げる事項及び第十八<wbr>条第一項に規定する事項のほか、当該所有者の氏名又は名称を申請情報の内容とする。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項に規定する申請に基づく登記をするときは、工場財団の登記記録の<wbr>表題部に当該所有者の氏名又は名称を記録しなければならない。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項に規定する申請に基づく登記をするときは、工場財団の登記記録の<wbr>表題部に当該所有者の氏名又は名称を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録に記録すべき情報を記載した書面）</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録に記録すべき情報を記載した書面）</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　工場財団の所有権の保存の登記の申請を書面申請によりするときは、申請<wbr>人は、別記第二号様式による用紙に工場財団目録に記録すべき情報を記載した書面を提<wbr>出しなければならない。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　工場財団の所有権の保存の登記の申請を書面申請によりするときは、申請<wbr>人は、別記第二号様式による用紙に工場財団目録に記録すべき情報を記載した書面を提<wbr>出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">２　前項の書面には、申請人又はその代表者若しくは代理人（委任による代理人を除く<wbr>。次項において同じ。）が記名押印しなければならない。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">２　前項の書面には、申請人又はその代表者若しくは代理人（委任による代理人を除く<wbr>。次項において同じ。）が記名押印しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の書面が二枚以上であるときは、申請人又はその代表者若しくは代理人は、<wbr>各用紙に当該用紙が何枚目であるかを記載し、各用紙のつづり目に契印をしなければな<wbr>らない。ただし、当該申請人又はその代表者若しくは代理人が二人以上あるときは、そ<wbr>の一人がすれば足りる。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の書面が二枚以上であるときは、申請人又はその代表者若しくは代理人は、<wbr>各用紙に当該用紙が何枚目であるかを記載し、各用紙のつづり目に契印をしなければな<wbr>らない。ただし、当該申請人又はその代表者若しくは代理人が二人以上あるときは、そ<wbr>の一人がすれば足りる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">４　第十五条の規定は、第一項の場合について準用する。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">４　第十五条の規定は、第一項の場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第三款　抵当権に関する登記</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第三款　抵当権に関する登記</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（抵当権に関する登記の申請情報）</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（抵当権に関する登記の申請情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　工場財団について抵当権に関する登記の申請をする場合には、不動産登記<wbr>令第三条第十三号に掲げる事項（次の各号に掲げる部分に限る。）に代えて、それぞれ<wbr>当該各号に定める事項を申請情報の内容とする。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　工場財団について抵当権に関する登記の申請をする場合には、不動産登記<wbr>令第三条第十三号に掲げる事項（次の各号に掲げる部分に限る。）に代えて、それぞれ<wbr>当該各号に定める事項を申請情報の内容とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">一　不動産登記令別表の五十五の項申請情報欄ハ　一又は二以上の工場財団に関する権<wbr>利を目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以<wbr>上の工場財団に関する権利を目的とする抵当権の設定の登記を申請する場合は、前の登<wbr>記に係る登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目<wbr>録がある場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">一　不動産登記令別表の五十五の項申請情報欄ハ　一又は二以上の工場財団に関する権<wbr>利を目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以<wbr>上の工場財団に関する権利を目的とする抵当権の設定の登記を申請する場合は、前の登<wbr>記に係る登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目<wbr>録がある場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">二　不動産登記令別表の五十六の項申請情報欄ニ　一の工場財団に関する権利を目的と<wbr>する根抵当権の設定の登記又は二以上の工場財団に関する権利を目的とする根抵当権の<wbr>設定の登記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の<wbr>債権の担保として他の一又は二以上の工場財団に関する権利を目的とする根抵当権の設<wbr>定の登記及び同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並び<wbr>に申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の<wbr>記号及び目録番号</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">二　不動産登記令別表の五十六の項申請情報欄ニ　一の工場財団に関する権利を目的と<wbr>する根抵当権の設定の登記又は二以上の工場財団に関する権利を目的とする根抵当権の<wbr>設定の登記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の<wbr>債権の担保として他の一又は二以上の工場財団に関する権利を目的とする根抵当権の設<wbr>定の登記及び同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並び<wbr>に申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の<wbr>記号及び目録番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">三　不動産登記令別表の五十八の項申請情報欄ハ　一又は二以上の工場財団に関する権<wbr>利を目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以<wbr>上の工場財団に関する権利を目的とする抵当権の処分の登記を申請する場合は、前の登<wbr>記に係る登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目<wbr>録がある場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">三　不動産登記令別表の五十八の項申請情報欄ハ　一又は二以上の工場財団に関する権<wbr>利を目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以<wbr>上の工場財団に関する権利を目的とする抵当権の処分の登記を申請する場合は、前の登<wbr>記に係る登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目<wbr>録がある場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">四　不動産登記令別表の五十八の項申請情報欄ヘ　一の工場財団に関する権利を目的と<wbr>する根抵当権の設定の登記又は二以上の工場財団に関する権利を目的とする根抵当権の<wbr>設定の登記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の<wbr>債権の担保として他の一又は二以上の工場財団に関する権利を目的とする根抵当権の処<wbr>分の登記及び同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並び<wbr>に申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の<wbr>記号及び目録番号</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">四　不動産登記令別表の五十八の項申請情報欄ヘ　一の工場財団に関する権利を目的と<wbr>する根抵当権の設定の登記又は二以上の工場財団に関する権利を目的とする根抵当権の<wbr>設定の登記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の<wbr>債権の担保として他の一又は二以上の工場財団に関する権利を目的とする根抵当権の処<wbr>分の登記及び同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並び<wbr>に申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の<wbr>記号及び目録番号 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第四款　表題部の変更の登記等</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第四款　表題部の変更の登記等</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（表題部の変更の登記の申請情報等）</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（表題部の変更の登記の申請情報等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　法第二十一条第一項各号に掲げる登記事項に関する変更の登記又は更正の<wbr>登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法第二十<wbr>一条第一項第一号から第三号までに掲げる事項及び第十八条第一項に規定する事項のほ<wbr>か、変更後又は更正後の登記事項とする。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　法第二十一条第一項各号に掲げる登記事項に関する変更の登記又は更正の<wbr>登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法第二十<wbr>一条第一項第一号から第三号までに掲げる事項及び第十八条第一項に規定する事項のほ<wbr>か、変更後又は更正後の登記事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">２　第三十一条の規定は、法第三十八条第一項の登記をする場合において、工場財団を<wbr>組成する工場が申請を受けた登記所の管轄区域内にないこととなったときについて準用<wbr>する。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">２　第三十一条の規定は、法第三十八条第一項の登記をする場合において、工場財団を<wbr>組成する工場が申請を受けた登記所の管轄区域内にないこととなったときについて準用<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">３　第二十五条の規定は、法第三十九条の登記の申請について準用する。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">３　第二十五条の規定は、法第三十九条の登記の申請について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の分割の場合における抵当権の登記の抹消等）</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の分割の場合における抵当権の登記の抹消等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　登記官は、甲工場財団を分割してその一部を乙工場財団とする分割の登記<wbr>をする場合において、法第四十二条ノ六第一項の記録をするときは、乙工場財団につい<wbr>て新たな登記記録を作成しなければならない。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　登記官は、甲工場財団を分割してその一部を乙工場財団とする分割の登記<wbr>をする場合において、法第四十二条ノ六第一項の記録をするときは、乙工場財団につい<wbr>て新たな登記記録を作成しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、法第四十二条ノ二第二項の規定により抵当権が消滅するとき<wbr>は、職権で、乙工場財団の登記記録の表題部に、分割により抵当権が消滅した旨及びそ<wbr>の年月日を記録しなければならない。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、法第四十二条ノ二第二項の規定により抵当権が消滅するとき<wbr>は、職権で、乙工場財団の登記記録の表題部に、分割により抵当権が消滅した旨及びそ<wbr>の年月日を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">３　登記官は、第一項の場合において、甲工場財団についての抵当権の登記の全部が抹<wbr>消されているときは、乙工場財団の登記記録の表題部に、その旨及びその年月日を記録<wbr>しなければならない。</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">３　登記官は、第一項の場合において、甲工場財団についての抵当権の登記の全部が抹<wbr>消されているときは、乙工場財団の登記記録の表題部に、その旨及びその年月日を記録<wbr>しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の分割の場合の工場財団目録の記録方法等）</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の分割の場合の工場財団目録の記録方法等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　登記官は、法第四十二条ノ六第二項の規定により工場財団目録の分離をす<wbr>るときは、乙工場財団の工場財団目録に、甲工場財団の分割により分離した旨、申請の<wbr>受付の年月日及び受付番号、乙工場財団の登記番号並びに分離前の登記番号を抹消する<wbr>記号を記録しなければならない。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　登記官は、法第四十二条ノ六第二項の規定により工場財団目録の分離をす<wbr>るときは、乙工場財団の工場財団目録に、甲工場財団の分割により分離した旨、申請の<wbr>受付の年月日及び受付番号、乙工場財団の登記番号並びに分離前の登記番号を抹消する<wbr>記号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、乙工場財団に属する工場の工場図面に、登記番号及び<wbr>分離前の登記番号を抹消する記号を記録しなければならない。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、乙工場財団に属する工場の工場図面に、登記番号及び<wbr>分離前の登記番号を抹消する記号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の場合には、甲工場財団の工場財団目録に、乙工場財団の工場財団目録を分<wbr>離した旨を記録しなければならない。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の場合には、甲工場財団の工場財団目録に、乙工場財団の工場財団目録を分<wbr>離した旨を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">４　法第四十二条ノ六第四項の登記官を明らかにする措置は、登記記録に登記官の識別<wbr>番号を記録する措置とする。</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">４　法第四十二条ノ六第四項の登記官を明らかにする措置は、登記記録に登記官の識別<wbr>番号を記録する措置とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（工場の所有者が異なる工場財団の分割の場合における登記記録の記録方法）</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（工場の所有者が異なる工場財団の分割の場合における登記記録の記録方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">第三十条　登記官は、法第四十二条ノ六第四項の規定により所有権に関する事項を転写<wbr>する場合において、甲工場財団を組成する二以上の工場の所有者が異なるときは、乙工<wbr>場財団の登記記録に、甲工場財団の登記記録のうち乙工場財団を組成する工場の所有者<wbr>に関する事項を転写し、分割の登記に係る申請の受付の年月日及び受付番号を記録しな<wbr>ければならない。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">第三十条　登記官は、法第四十二条ノ六第四項の規定により所有権に関する事項を転写<wbr>する場合において、甲工場財団を組成する二以上の工場の所有者が異なるときは、乙工<wbr>場財団の登記記録に、甲工場財団の登記記録のうち乙工場財団を組成する工場の所有者<wbr>に関する事項を転写し、分割の登記に係る申請の受付の年月日及び受付番号を記録しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、甲工場財団の登記記録に、その旨を当該所有権の登記<wbr>についてする付記登記によって記録し、かつ、甲工場財団を組成する工場の所有者以外<wbr>の所有者に関する事項を抹消する記号を記録しなければならない。</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、甲工場財団の登記記録に、その旨を当該所有権の登記<wbr>についてする付記登記によって記録し、かつ、甲工場財団を組成する工場の所有者以外<wbr>の所有者に関する事項を抹消する記号を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の分割の場合における登記記録等の移送）</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の分割の場合における登記記録等の移送）</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　甲工場財団を分割してその一部を乙工場財団とする分割の登記をする場合<wbr>において、乙工場財団を組成する工場が申請を受けた登記所の管轄区域内にないことと<wbr>なったときは、登記官は、分割の登記をした後、遅滞なく、乙工場財団を管轄する登記<wbr>所に乙工場財団に関する登記記録及び工場財団登記簿の附属書類（電磁的記録に記録さ<wbr>れている工場財団登記簿の附属書類を含む。次条第二項において同じ。）又はその謄本<wbr>並びに工場財団目録を移送するものとする。</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　甲工場財団を分割してその一部を乙工場財団とする分割の登記をする場合<wbr>において、乙工場財団を組成する工場が申請を受けた登記所の管轄区域内にないことと<wbr>なったときは、登記官は、分割の登記をした後、遅滞なく、乙工場財団を管轄する登記<wbr>所に乙工場財団に関する登記記録及び工場財団登記簿の附属書類（電磁的記録に記録さ<wbr>れている工場財団登記簿の附属書類を含む。次条第二項において同じ。）又はその謄本<wbr>並びに工場財団目録を移送するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（合併をしようとする工場財団が二以上の登記所の管轄区域内にある場合）</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">（合併をしようとする工場財団が二以上の登記所の管轄区域内にある場合）</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　合併をしようとする工場財団が二以上の登記所の管轄区域内にある場合に<wbr>おいて、合併の登記の申請があったときは、当該申請を受けた登記所の登記官は、当該<wbr>工場財団を管轄する他の登記所にその旨を通知しなければならない。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　合併をしようとする工場財団が二以上の登記所の管轄区域内にある場合に<wbr>おいて、合併の登記の申請があったときは、当該申請を受けた登記所の登記官は、当該<wbr>工場財団を管轄する他の登記所にその旨を通知しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">２　前項の通知を受けた登記所の登記官は、遅滞なく、合併をする工場財団に関する登<wbr>記記録及び工場財団登記簿の附属書類又はその謄本並びに工場財団目録を管轄登記所に<wbr>移送するものとする。ただし、当該工場財団に関する登記であって所有権の登記以外の<wbr>ものがあるときは、この限りではない。</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">２　前項の通知を受けた登記所の登記官は、遅滞なく、合併をする工場財団に関する登<wbr>記記録及び工場財団登記簿の附属書類又はその謄本並びに工場財団目録を管轄登記所に<wbr>移送するものとする。ただし、当該工場財団に関する登記であって所有権の登記以外の<wbr>ものがあるときは、この限りではない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書に規定する場合には、同項の登記官は、速やかに、その旨を第一項の<wbr>通知をした登記所に通知するものとする。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書に規定する場合には、同項の登記官は、速やかに、その旨を第一項の<wbr>通知をした登記所に通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の合併の場合における登記記録の記録方法等）</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の合併の場合における登記記録の記録方法等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　登記官は、法第四十二条ノ七第一項の場合において乙工場財団についての<wbr>抵当権の登記の全部が抹消されているときは、甲工場財団の登記記録の表題部に、その<wbr>旨及びその年月日を記録しなければならない。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　登記官は、法第四十二条ノ七第一項の場合において乙工場財団についての<wbr>抵当権の登記の全部が抹消されているときは、甲工場財団の登記記録の表題部に、その<wbr>旨及びその年月日を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">２　不動産登記規則第百七条第一項の規定は、法第四十二条ノ七第一項の場合における<wbr>甲工場財団の登記記録の記録方法について準用する。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">２　不動産登記規則第百七条第一項の規定は、法第四十二条ノ七第一項の場合における<wbr>甲工場財団の登記記録の記録方法について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">３　登記官は、法第四十二条ノ七第二項の規定により甲工場財団の工場財団目録及び乙<wbr>工場財団の工場財団目録を合併後の工場財団の工場財団目録とするときは、各工場財団<wbr>目録に、合併により合併後の工場財団目録とした旨、申請の受付の年月日及び受付番号<wbr>、合併後の登記番号並びに合併前の登記番号を抹消する記号を記録しなければならない<wbr>。</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">３　登記官は、法第四十二条ノ七第二項の規定により甲工場財団の工場財団目録及び乙<wbr>工場財団の工場財団目録を合併後の工場財団の工場財団目録とするときは、各工場財団<wbr>目録に、合併により合併後の工場財団目録とした旨、申請の受付の年月日及び受付番号<wbr>、合併後の登記番号並びに合併前の登記番号を抹消する記号を記録しなければならない<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">４　登記官は、前項の場合には、乙工場財団に属した工場の工場図面に、登記番号及び<wbr>合併前の登記番号を抹消する記号を記録しなければならない。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">４　登記官は、前項の場合には、乙工場財団に属した工場の工場図面に、登記番号及び<wbr>合併前の登記番号を抹消する記号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">５　法第四十二条ノ七第四項の登記官を明らかにする措置は、登記記録に登記官の識別<wbr>番号を記録する措置とする。</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">５　法第四十二条ノ七第四項の登記官を明らかにする措置は、登記記録に登記官の識別<wbr>番号を記録する措置とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">（変更後の工場図面の提供）</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">（変更後の工場図面の提供）</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　工場財団目録の記録の変更の登記を申請する場合において、工場図面に変<wbr>更があるときは、変更後の工場図面をその申請情報と併せて登記所に提供しなければな<wbr>らない。</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　工場財団目録の記録の変更の登記を申請する場合において、工場図面に変<wbr>更があるときは、変更後の工場図面をその申請情報と併せて登記所に提供しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の申請（工場図面を添付情報とするものに限る。）に基づき登記を<wbr>したときは、当該工場図面に、申請の受付の年月日及び受付番号を記録しなければなら<wbr>ない。</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の申請（工場図面を添付情報とするものに限る。）に基づき登記を<wbr>したときは、当該工場図面に、申請の受付の年月日及び受付番号を記録しなければなら<wbr>ない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の消滅の登記）</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（工場財団の消滅の登記）</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　登記官は、法第四十八条第一項の規定により工場財団が消滅した旨を記録<wbr>するときは、当該工場財団の登記記録の表題部の登記事項を抹消する記号を記録し、当<wbr>該登記記録を閉鎖しなければならない。</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　登記官は、法第四十八条第一項の規定により工場財団が消滅した旨を記録<wbr>するときは、当該工場財団の登記記録の表題部の登記事項を抹消する記号を記録し、当<wbr>該登記記録を閉鎖しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第四節　補則</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第四節　補則</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（保存期間）</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（保存期間）</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　工場財団目録及び工場図面は、工場財団の登記記録を閉鎖した日から二十<wbr>年間保存しなければならない。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　工場財団目録及び工場図面は、工場財団の登記記録を閉鎖した日から二十<wbr>年間保存しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">（工場図面の管理）</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">（工場図面の管理）</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　登記所には、工場図面つづり込み帳を備えるものとする。</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　登記所には、工場図面つづり込み帳を備えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">２　工場図面つづり込み帳には、書面申請において提出された工場図面をつづり込むも<wbr>のとする。</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">２　工場図面つづり込み帳には、書面申請において提出された工場図面をつづり込むも<wbr>のとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（登記識別情報の通知等）</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（登記識別情報の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　不動産登記法第二十一条本文の規定により登記識別情報を通知するとき又<wbr>は不動産登記規則第百八十一条第一項の規定により登記が完了した旨を通知するときは<wbr>、登記番号も通知するものとする。</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　不動産登記法第二十一条本文の規定により登記識別情報を通知するとき又<wbr>は不動産登記規則第百八十一条第一項の規定により登記が完了した旨を通知するときは<wbr>、登記番号も通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第三章　雑則</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第三章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の交付の請求情報等）</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の交付の請求情報等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　工場に属する土地又は建物の登記記録について登記事項証明書の交付の請<wbr>求をする場合において、法第三条第二項の目録に記録された事項について証明を求める<wbr>ときは、不動産登記規則第百九十三条第一項各号に掲げる事項のほか、当該証明を求め<wbr>る旨も請求情報の内容としなければならない。</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　工場に属する土地又は建物の登記記録について登記事項証明書の交付の請<wbr>求をする場合において、法第三条第二項の目録に記録された事項について証明を求める<wbr>ときは、不動産登記規則第百九十三条第一項各号に掲げる事項のほか、当該証明を求め<wbr>る旨も請求情報の内容としなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記記録について登記事項証明書の交付の請求をする場合において、工<wbr>場財団目録に記録された事項について証明を求めるときは、不動産登記規則第百九十三<wbr>条第一項各号に掲げる事項のほか、当該証明を求める旨も請求情報の内容としなければ<wbr>ならない。</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記記録について登記事項証明書の交付の請求をする場合において、工<wbr>場財団目録に記録された事項について証明を求めるときは、不動産登記規則第百九十三<wbr>条第一項各号に掲げる事項のほか、当該証明を求める旨も請求情報の内容としなければ<wbr>ならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の作成及び交付）</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の作成及び交付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第四十条　工場に属する土地又は建物の登記記録について作成する登記事項証明書のう<wbr>ち法第三条第二項の目録に係る部分は、別記第一号様式によるものとする。</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第四十条　工場に属する土地又は建物の登記記録について作成する登記事項証明書のう<wbr>ち法第三条第二項の目録に係る部分は、別記第一号様式によるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記記録について作成する登記事項証明書は、次の各号の区分に応じ、<wbr>当該各号に定める様式によるものとする。ただし、登記記録に記録した事項の一部につ<wbr>いての登記事項証明書については適宜の様式によるものとする。</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団の登記記録について作成する登記事項証明書は、次の各号の区分に応じ、<wbr>当該各号に定める様式によるものとする。ただし、登記記録に記録した事項の一部につ<wbr>いての登記事項証明書については適宜の様式によるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">一　工場財団の登記記録　別記第三号様式</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">一　工場財団の登記記録　別記第三号様式</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">二　工場財団目録　別記第二号様式</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">二　工場財団目録　別記第二号様式</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">３　工場に属する土地又は建物の登記記録について登記事項証明書を作成する場合にお<wbr>いて、法第三条第二項の目録に記録された事項について証明を求める旨が請求情報の内<wbr>容とされていないときは、法第三条第二項の目録に記録された事項の記載を省略するも<wbr>のとする。</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">３　工場に属する土地又は建物の登記記録について登記事項証明書を作成する場合にお<wbr>いて、法第三条第二項の目録に記録された事項について証明を求める旨が請求情報の内<wbr>容とされていないときは、法第三条第二項の目録に記録された事項の記載を省略するも<wbr>のとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">４　工場財団の登記記録について登記事項証明書を作成する場合において、工場財団目<wbr>録に記録された事項について証明を求める旨が請求情報の内容とされていないときは、<wbr>工場財団目録に記録された事項の記載を省略するものとする。</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">４　工場財団の登記記録について登記事項証明書を作成する場合において、工場財団目<wbr>録に記録された事項について証明を求める旨が請求情報の内容とされていないときは、<wbr>工場財団目録に記録された事項の記載を省略するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">（工場図面の写しの交付）</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">（工場図面の写しの交付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　工場財団の登記に関する不動産登記法第百二十一条及び不動産登記令第二<wbr>十一条第一項の規定の適用については、同項中「土地所在図」とあるのは、「工場図面<wbr>」とする。</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　工場財団の登記に関する不動産登記法第百二十一条及び不動産登記令第二<wbr>十一条第一項の規定の適用については、同項中「土地所在図」とあるのは、「工場図面<wbr>」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">（登記の嘱託）</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">（登記の嘱託）</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　この省令中「申請」、「申請人」及び「申請情報」には、それぞれ嘱託、<wbr>嘱託者及び嘱託情報を含むものとする。</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　この省令中「申請」、「申請人」及び「申請情報」には、それぞれ嘱託、<wbr>嘱託者及び嘱託情報を含むものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法の施行の日（平成十七年三月七日）から施行する。<wbr></span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法の施行の日（平成十七年三月七日）から施行する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の工場抵当登記規則（以下「新令」という。）の規定は、この附則に特<wbr>別の定めがある場合を除き、この省令の施行前に生じた事項にも適用する。ただし、改<wbr>正前の工場抵当登記取扱手続（以下「旧令」という。）の規定により生じた効力を妨げ<wbr>ない。</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の工場抵当登記規則（以下「新令」という。）の規定は、この附則に特<wbr>別の定めがある場合を除き、この省令の施行前に生じた事項にも適用する。ただし、改<wbr>正前の工場抵当登記取扱手続（以下「旧令」という。）の規定により生じた効力を妨げ<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行前にした旧令の規定による処分、手続その他の行為は、この附則に<wbr>特別の定めがある場合を除き、新令の相当規定によってしたものとみなす。</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行前にした旧令の規定による処分、手続その他の行為は、この附則に<wbr>特別の定めがある場合を除き、新令の相当規定によってしたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（未指定事務に係る旧登記簿）</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（未指定事務に係る旧登記簿）</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第三条　新令第五条及び第四十条の規定は、不動産登記法附則第三条第一項の規定によ<wbr>る指定（同条第三項の規定により指定を受けたものとみなされるものを含む。以下「第<wbr>三条指定」という。）を受けた事務について、その第三条指定の日から適用する。</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第三条　新令第五条及び第四十条の規定は、不動産登記法附則第三条第一項の規定によ<wbr>る指定（同条第三項の規定により指定を受けたものとみなされるものを含む。以下「第<wbr>三条指定」という。）を受けた事務について、その第三条指定の日から適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">188</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　第三条指定がされるまでの間は、第三条指定を受けていない事務（</span><span style="color: #000000; background-color: #efcb05; ">附則第三条第一<wbr>項ただし書に規定する登記簿に関する事務を含む。）に係る旧登記簿（</span><span style="color: #000000; background-color: #efcb05; ">の施行に伴う関<wbr>係法律の整備等に関する法律（以下「整備法」という。）第七条第二項の規定によりな<wbr>おその効力を有することとされる整備法第六条の規定による改正前の法第十九条に規定<wbr>する工場財団登記簿をいい、不動産登記法附則第</span><span style="color: #000000; background-color: #efcb05; ">四項の規定によりなおその効力を有す<wbr>ることとされる改正前の不動産登記法（明治三十二年法律第二十四号）第二十四条ノ二<wbr>第一項に規定する閉鎖登記簿（工場財団登記簿に係る部分に限る。）を含む。以下同じ<wbr>。）については、旧令第二条から第三条ノ六まで、第十六条（旧令第二十六条において<wbr>準用する場合を含む。）、第十九条ノ七及び第二十八条の規定は、なおその効力を有す<wbr>る。この場合において、旧令第三条中「不動産登記法施行細則第五十二条」とあるのは<wbr>「不動産登記規則（平成十七年法務省令第十八号）附則第四条第二項ノ規定ニ依リ仍其<wbr>ノ効力ヲ有スルモノトサレタル不動産登記法施行細則（明治三十二年司法省令第十一号<wbr>。以下「旧細則」ト称ス）第五十二条」と、旧令第三条ノ六第二項中「不動産登記法施<wbr>行細則第七条第二項及第三項」とあるのは「不動産登記規則附則第四条第二項ノ規定ニ<wbr>依リ仍其ノ効力ヲ有スルモノトサレタル旧細則第七条第二項及第三項」とする。</span></code></td>
+<td class="ln">188</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　第三条指定がされるまでの間は、第三条指定を受けていない事務（</span><span class="sf17b18">不動産登記規則<wbr></span><span style="color: #000000; background-color: #efcb05; ">附則第三条第一項ただし書に規定する登記簿に関する事務を含む。）に係る旧登記簿（<wbr></span><span class="sf17b18">不動産登記法</span><span style="color: #000000; background-color: #efcb05; ">の施行に伴う関係法律の整備等に関する法律（以下「整備法」という。）<wbr>第七条第二項の規定によりなおその効力を有することとされる整備法第六条の規定によ<wbr>る改正前の法第十九条に規定する工場財団登記簿をいい、不動産登記法附則第</span><span class="sf17b18">三条第</span><span style="color: #000000; background-color: #efcb05; ">四<wbr>項の規定によりなおその効力を有することとされる改正前の不動産登記法（明治三十二<wbr>年法律第二十四号）第二十四条ノ二第一項に規定する閉鎖登記簿（工場財団登記簿に係<wbr>る部分に限る。）を含む。以下同じ。）については、旧令第二条から第三条ノ六まで、<wbr>第十六条（旧令第二十六条において準用する場合を含む。）、第十九条ノ七及び第二十<wbr>八条の規定は、なおその効力を有する。この場合において、旧令第三条中「不動産登記<wbr>法施行細則第五十二条」とあるのは「不動産登記規則（平成十七年法務省令第十八号）<wbr>附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル不動産登記法施行細<wbr>則（明治三十二年司法省令第十一号。以下「旧細則」ト称ス）第五十二条」と、旧令第<wbr>三条ノ六第二項中「不動産登記法施行細則第七条第二項及第三項」とあるのは「不動産<wbr>登記規則附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル旧細則第七<wbr>条第二項及第三項」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">３　第三条指定がされるまでの間における前項の事務についての新令の適用については<wbr>、新令本則中「登記記録」とあるのは、「登記用紙」とする。</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">３　第三条指定がされるまでの間における前項の事務についての新令の適用については<wbr>、新令本則中「登記記録」とあるのは、「登記用紙」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">４　第三条指定を受けていない事務において登記用紙に記録された事項を抹消する記号<wbr>を記録するには、当該事項を朱抹するものとする。</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">４　第三条指定を受けていない事務において登記用紙に記録された事項を抹消する記号<wbr>を記録するには、当該事項を朱抹するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">５　第三条指定を受けていない事務において登記用紙に登記官の識別番号を記録するに<wbr>は、登記用紙に登記官が登記官印を押印するものとする。</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">５　第三条指定を受けていない事務において登記用紙に登記官の識別番号を記録するに<wbr>は、登記用紙に登記官が登記官印を押印するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けている登記所からの移送）</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けている登記所からの移送）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">193</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第四条　不動産登記規則附則第七条第一項及び第三項の規定は工場の所在地が当該工場<wbr>に属する土地又は建物の登記に係る事務について第三条指定を受けている甲登記所の管<wbr>轄から当該事務について第三条指定を受けていない乙登記所の管轄に転属した場合にお<wbr>ける法第</span><span style="color: #000000; background-color: #efcb05; ">二項の目録の移送及び作成について、不動産登記規則附則第七条の規定は工場<wbr>の所在地が当該工場に係る工場財団に係る事務について第三条指定を受けている甲登記<wbr>所の管轄から当該事務について第三条指定を受けていない乙登記所の管轄に転属した場<wbr>合について、それぞれ準用する。</span></code></td>
+<td class="ln">193</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第四条　不動産登記規則附則第七条第一項及び第三項の規定は工場の所在地が当該工場<wbr>に属する土地又は建物の登記に係る事務について第三条指定を受けている甲登記所の管<wbr>轄から当該事務について第三条指定を受けていない乙登記所の管轄に転属した場合にお<wbr>ける法第</span><span class="sf17b18">三条第</span><span style="color: #000000; background-color: #efcb05; ">二項の目録の移送及び作成について、不動産登記規則附則第七条の規定<wbr>は工場の所在地が当該工場に係る工場財団に係る事務について第三条指定を受けている<wbr>甲登記所の管轄から当該事務について第三条指定を受けていない乙登記所の管轄に転属<wbr>した場合について、それぞれ準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けていない登記所からの移送）</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けていない登記所からの移送）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">195</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第五条　不動産登記規則附則第八条第一項及び第三項の規定は工場の所在地が当該工場<wbr>に属する土地又は建物の登記に係る事務について第三条指定を受けていない甲登記所の<wbr>管轄から当該事務について第三条指定を受けている乙登記所の管轄に転属した場合にお<wbr>ける法第</span><span style="color: #000000; background-color: #efcb05; ">二項の目録の移送及び作成について、不動産登記規則附則第八条の規定は工場<wbr>の所在地が当該工場に係る工場財団に係る事務について第三条指定を受けていない甲登<wbr>記所の管轄から当該事務について第三条指定を受けている乙登記所の管轄に転属した場<wbr>合について、それぞれ準用する。</span></code></td>
+<td class="ln">195</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第五条　不動産登記規則附則第八条第一項及び第三項の規定は工場の所在地が当該工場<wbr>に属する土地又は建物の登記に係る事務について第三条指定を受けていない甲登記所の<wbr>管轄から当該事務について第三条指定を受けている乙登記所の管轄に転属した場合にお<wbr>ける法第</span><span class="sf17b18">三条第</span><span style="color: #000000; background-color: #efcb05; ">二項の目録の移送及び作成について、不動産登記規則附則第八条の規定<wbr>は工場の所在地が当該工場に係る工場財団に係る事務について第三条指定を受けていな<wbr>い甲登記所の管轄から当該事務について第三条指定を受けている乙登記所の管轄に転属<wbr>した場合について、それぞれ準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録等の経過措置）</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録等の経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">第六条　工場財団目録に関する事務について第三条指定を受けていない登記所（以下「<wbr>工場財団目録未指定登記所」という。）においては、工場財団目録つづり込み帳を備え<wbr>る。</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">第六条　工場財団目録に関する事務について第三条指定を受けていない登記所（以下「<wbr>工場財団目録未指定登記所」という。）においては、工場財団目録つづり込み帳を備え<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録未指定登記所において電子申請により工場財団目録に記録すべき情報<wbr>が提供されたときは、登記官は、書面で工場財団目録を作成しなければならない。</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">２　工場財団目録未指定登記所において電子申請により工場財団目録に記録すべき情報<wbr>が提供されたときは、登記官は、書面で工場財団目録を作成しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定による工場財団目録は、第一項の工場財団目録つづり込み帳につづり込<wbr>むものとする。</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定による工場財団目録は、第一項の工場財団目録つづり込み帳につづり込<wbr>むものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">４　工場財団目録未指定登記所において書面申請により工場財団目録に記録すべき情報<wbr>を記載した書面が提出されたときは、当該書面は、法第二十一条第二項の工場財団目録<wbr>とみなす。この場合には、当該書面は、不動産登記規則第十九条の規定にかかわらず、<wbr>第一項の工場財団目録つづり込み帳につづり込むものとする。</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">４　工場財団目録未指定登記所において書面申請により工場財団目録に記録すべき情報<wbr>を記載した書面が提出されたときは、当該書面は、法第二十一条第二項の工場財団目録<wbr>とみなす。この場合には、当該書面は、不動産登記規則第十九条の規定にかかわらず、<wbr>第一項の工場財団目録つづり込み帳につづり込むものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">５　旧令第十六条の規定は、工場財団目録未指定登記所の工場財団目録について、なお<wbr>その効力を有する。</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">５　旧令第十六条の規定は、工場財団目録未指定登記所の工場財団目録について、なお<wbr>その効力を有する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">６　第一項から第四項までの規定は、法第三条第二項の目録に関する事務について準用<wbr>する。この場合において、これらの規定中「工場財団目録」とあるのは、「法第三条第<wbr>二項の目録」とする。</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">６　第一項から第四項までの規定は、法第三条第二項の目録に関する事務について準用<wbr>する。この場合において、これらの規定中「工場財団目録」とあるのは、「法第三条第<wbr>二項の目録」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">第七条　この省令の施行の際、現に登記所に備え付けてある工場財団目録は、法第二十<wbr>一条第二項の工場財団目録とみなす。</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">第七条　この省令の施行の際、現に登記所に備え付けてある工場財団目録は、法第二十<wbr>一条第二項の工場財団目録とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際、現に登記所に備え付けてある整備法第六条の規定による改正<wbr>前の工場抵当法第三条の目録は、法第三条第二項の目録とみなす。</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際、現に登記所に備え付けてある整備法第六条の規定による改正<wbr>前の工場抵当法第三条の目録は、法第三条第二項の目録とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録等の改製）</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">（工場財団目録等の改製）</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第八条　不動産登記規則附則第三条の規定は、法第三条第二項の目録及び工場財団目録<wbr>について準用する。</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第八条　不動産登記規則附則第三条の規定は、法第三条第二項の目録及び工場財団目録<wbr>について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記法附則第六条の指定前の登記手続）</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記法附則第六条の指定前の登記手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">第九条　工場財団の登記の事務について不動産登記法附則第六条の指定（以下「第六条<wbr>指定」という。）を受けていない登記所の登記手続に係る登記の申請をする場合におけ<wbr>る不動産登記規則附則第十五条第二項の適用については、同項中「不動産所在事項」と<wbr>あるのは、「工場の名称及び位置、主たる営業所及び営業の種類」とする。</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">第九条　工場財団の登記の事務について不動産登記法附則第六条の指定（以下「第六条<wbr>指定」という。）を受けていない登記所の登記手続に係る登記の申請をする場合におけ<wbr>る不動産登記規則附則第十五条第二項の適用については、同項中「不動産所在事項」と<wbr>あるのは、「工場の名称及び位置、主たる営業所及び営業の種類」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">２　旧令第二十条ノ二第四項の規定は、第六条指定がされるまでの間は、第六条指定を<wbr>受けていない登記手続について、なおその効力を有する。この場合において、同項中「<wbr>申請書ノ副本」とあるのは、「不動産登記規則附則第十五条第二項ノ規定ニ依リ提出セ<wbr>ラレタル書面」とする。</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">２　旧令第二十条ノ二第四項の規定は、第六条指定がされるまでの間は、第六条指定を<wbr>受けていない登記手続について、なおその効力を有する。この場合において、同項中「<wbr>申請書ノ副本」とあるのは、「不動産登記規則附則第十五条第二項ノ規定ニ依リ提出セ<wbr>ラレタル書面」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">３　第六条指定がされるまでの間、各登記所の登記手続についての新令の規定の適用に<wbr>ついては、新令第三十八条中「不動産登記法第二十一条本文」とあるのは「不動産登記<wbr>法附則第六条第三項の規定により読み替えて適用される同法第二十一条本文」と、「登<wbr>記識別情報を通知するとき又は不動産登記規則第百八十一条第一項の規定により登記が<wbr>完了した旨を通知する」とあるのは「登記済証を交付する」と、「登記番号も通知する<wbr>」とあるのは「これに登記番号も記載する」とする。</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">３　第六条指定がされるまでの間、各登記所の登記手続についての新令の規定の適用に<wbr>ついては、新令第三十八条中「不動産登記法第二十一条本文」とあるのは「不動産登記<wbr>法附則第六条第三項の規定により読み替えて適用される同法第二十一条本文」と、「登<wbr>記識別情報を通知するとき又は不動産登記規則第百八十一条第一項の規定により登記が<wbr>完了した旨を通知する」とあるのは「登記済証を交付する」と、「登記番号も通知する<wbr>」とあるのは「これに登記番号も記載する」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">（民法の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">（民法の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">第十条　民法の一部を改正する法律（平成十六年法律第百四十七号）の施行の日の前日<wbr>までの間における新令第二十六条第二号及び第四号の規定の適用については、「第三百<wbr>九十八条の十六」とあるのは、「第三百九十八条ノ十六」とする。</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">第十条　民法の一部を改正する法律（平成十六年法律第百四十七号）の施行の日の前日<wbr>までの間における新令第二十六条第二号及び第四号の規定の適用については、「第三百<wbr>九十八条の十六」とあるのは、「第三百九十八条ノ十六」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月二〇日法務省令第六三号）</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月二〇日法務省令第六三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の企業担保登記規則、不動産等の管轄登記所の指定に関する<wbr>省令、独立行政法人緑資源機構法による不動産登記の手続に関する省令、工場抵当登記<wbr>規則、立木登記規則、船舶登記規則、農業用動産抵当登記規則、建設機械登記規則並び<wbr>に不動産登記法及び不動産登記法の施行に伴う関係法律の整備等に関する法律の施行に<wbr>伴う法務省関係省令の整備等に関する省令の規定は、不動産登記法（平成十六年法律第<wbr>百二十三号）の施行の日（平成十七年三月七日）から適用する。</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の企業担保登記規則、不動産等の管轄登記所の指定に関する<wbr>省令、独立行政法人緑資源機構法による不動産登記の手続に関する省令、工場抵当登記<wbr>規則、立木登記規則、船舶登記規則、農業用動産抵当登記規則、建設機械登記規則並び<wbr>に不動産登記法及び不動産登記法の施行に伴う関係法律の整備等に関する法律の施行に<wbr>伴う法務省関係省令の整備等に関する省令の規定は、不動産登記法（平成十六年法律第<wbr>百二十三号）の施行の日（平成十七年三月七日）から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一一月一一日法務省令第一〇六号）　抄</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一一月一一日法務省令第一〇六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法等の一部を改正する法律の施行の日から施行する。<wbr></span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法等の一部を改正する法律の施行の日から施行する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年三月二五日法務省令第五号）　抄</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年三月二五日法務省令第五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十三年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十三年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中不動産登記規則第六十四条、第六十九条、第百八十一条第二項、第百八十<wbr>二条、第百八十二条の二及び別記第六号の改正規定、第八条の規定、第九条の規定、第<wbr>十条中船舶登記規則第四十九条の改正規定（同令第百九十五条を削る改正規定を除く。<wbr>）、第十一条中農業用動産抵当登記規則第四十条の改正規定（同令第百九十五条を削る<wbr>改正規定を除く。）、第十二条の規定並びに第十四条の規定　平成二十三年六月二十七<wbr>日</span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中不動産登記規則第六十四条、第六十九条、第百八十一条第二項、第百八十<wbr>二条、第百八十二条の二及び別記第六号の改正規定、第八条の規定、第九条の規定、第<wbr>十条中船舶登記規則第四十九条の改正規定（同令第百九十五条を削る改正規定を除く。<wbr>）、第十一条中農業用動産抵当登記規則第四十条の改正規定（同令第百九十五条を削る<wbr>改正規定を除く。）、第十二条の規定並びに第十四条の規定　平成二十三年六月二十七<wbr>日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">223</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第一号</span><span style="color: #000000; background-color: #efcb05; ">（第三条及び第四十条第一項関係）</span></code></td>
+<td class="ln">223</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第一号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第三条及び第四十条第一項関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">224</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第二号</span><span style="color: #000000; background-color: #efcb05; ">（第二十五条第一項及び第四十条第二項第二号関係）</span></code></td>
+<td class="ln">224</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">225</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第三号</span><span style="color: #000000; background-color: #efcb05; ">（第四十条第二項第一号関係）</span></code></td>
+<td class="ln">225</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第二号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第二十五条第一項及び第四十条第二項第二号関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">226</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">227</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第三号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第四十条第二項第一号関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">228</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,1059 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十五年厚生労働省令第百二十二号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十五年厚生労働省令第百二十二号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">次世代育成支援対策推進法施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">次世代育成支援対策推進法施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">次世代育成支援対策推進法（平成十五年法律第百二十号）第二十条第六項の規定に基づ<wbr>き、次世代育成支援対策推進センターに関する省令を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">次世代育成支援対策推進法（平成十五年法律第百二十号）第二十条第六項の規定に基づ<wbr>き、次世代育成支援対策推進センターに関する省令を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第一項の届出）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第一項の届出）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　次世代育成支援対策推進法（以下「法」という。）第十二条第一項の規定によ<wbr>る届出は、一般事業主行動計画策定・変更届（様式第一号）を国及び地方公共団体以外<wbr>の事業主（以下「一般事業主」という。）の住所を管轄する都道府県労働局長（以下「<wbr>所轄都道府県労働局長」という。）に提出することによって行わなければならない。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　次世代育成支援対策推進法（以下「法」という。）第十二条第一項の規定によ<wbr>る届出は、一般事業主行動計画策定・変更届（様式第一号）を国及び地方公共団体以外<wbr>の事業主（以下「一般事業主」という。）の住所を管轄する都道府県労働局長（以下「<wbr>所轄都道府県労働局長」という。）に提出することによって行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定にかかわらず、法第十二条第一項の規定による届出を女性の職業生活に<wbr>おける活躍の推進に関する法律（平成二十七年法律第六十四号）第八条第一項又は同条<wbr>第七項の規定による届出と同時に行うときは、法第十二条第一項の規定による届出の様<wbr>式は、厚生労働省雇用環境・均等局長（第五条の三第六号において「雇用環境・均等局<wbr>長」という。）の定めるところによることができる。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定にかかわらず、法第十二条第一項の規定による届出を女性の職業生活に<wbr>おける活躍の推進に関する法律（平成二十七年法律第六十四号）第八条第一項又は同条<wbr>第七項の規定による届出と同時に行うときは、法第十二条第一項の規定による届出の様<wbr>式は、厚生労働省雇用環境・均等局長（第五条の三第六号において「雇用環境・均等局<wbr>長」という。）の定めるところによることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第三項の公表の方法）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第三項の公表の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一条の二　法第十二条第三項の規定による公表は、インターネットの利用その他の適<wbr>切な方法によるものとする。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一条の二　法第十二条第三項の規定による公表は、インターネットの利用その他の適<wbr>切な方法によるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第四項の届出）</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第四項の届出）</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第二条　第一条の規定は、法第十二条第四項の届出を行う一般事業主について準用する<wbr>。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第二条　第一条の規定は、法第十二条第四項の届出を行う一般事業主について準用する<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第五項の公表の方法）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条第五項の公表の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第二条の二　第一条の二の規定は、法第十二条第五項の公表を行う一般事業主について<wbr>準用する。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第二条の二　第一条の二の規定は、法第十二条第五項の公表を行う一般事業主について<wbr>準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条の二第一項の周知の方法）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条の二第一項の周知の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条の三　法第十二条の二第一項の規定による周知は、事業所の見やすい場所へ掲示<wbr>し若しくは備え付けること、書面を労働者へ交付すること又は電子メールを利用して労<wbr>働者へ送信することその他の適切な方法によるものとする。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条の三　法第十二条の二第一項の規定による周知は、事業所の見やすい場所へ掲示<wbr>し若しくは備え付けること、書面を労働者へ交付すること又は電子メールを利用して労<wbr>働者へ送信することその他の適切な方法によるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条の二第二項の周知の方法）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（法第十二条の二第二項の周知の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第二条の四　前条の規定は、法第十二条の二第二項の周知を行う一般事業主について準<wbr>用する。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第二条の四　前条の規定は、法第十二条の二第二項の周知を行う一般事業主について準<wbr>用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（法第十三条の申請）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（法第十三条の申請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第十三条の認定を受けようとする一般事業主は、基準適合一般事業主認定申<wbr>請書（様式第二号）に、当該一般事業主が同条の基準に適合するものであることを明ら<wbr>かにする書類を添えて、所轄都道府県労働局長に提出しなければならない。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第十三条の認定を受けようとする一般事業主は、基準適合一般事業主認定申<wbr>請書（様式第二号）に、当該一般事業主が同条の基準に適合するものであることを明ら<wbr>かにする書類を添えて、所轄都道府県労働局長に提出しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（法第十三条の厚生労働省令で定める基準）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（法第十三条の厚生労働省令で定める基準）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十三条の厚生労働省令で定める基準は、次のとおりとする。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十三条の厚生労働省令で定める基準は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">一　雇用環境の整備に関し、法第七条第一項の行動計画策定指針に照らし適切な一般事<wbr>業主行動計画（法第十二条第一項に規定する一般事業主行動計画をいう。以下同じ。）<wbr>を策定したこと。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">一　雇用環境の整備に関し、法第七条第一項の行動計画策定指針に照らし適切な一般事<wbr>業主行動計画（法第十二条第一項に規定する一般事業主行動計画をいう。以下同じ。）<wbr>を策定したこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">二　策定した一般事業主行動計画の計画期間（以下「計画期間」という。）が、二年以<wbr>上五年以下であること。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">二　策定した一般事業主行動計画の計画期間（以下「計画期間」という。）が、二年以<wbr>上五年以下であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">三　策定した一般事業主行動計画を実施し、当該一般事業主行動計画に定めた目標を達<wbr>成したこと。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">三　策定した一般事業主行動計画を実施し、当該一般事業主行動計画に定めた目標を達<wbr>成したこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">四　策定した一般事業主行動計画について、適切に公表及び労働者への周知をしたこと<wbr>。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">四　策定した一般事業主行動計画について、適切に公表及び労働者への周知をしたこと<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">25</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">五　その雇用する男性労働者であって計画期間において配偶者が出産したものの数に対<wbr>するその雇用する男性労働者であって当該計画期間において育児休業等（育児休業、介<wbr>護休業等育児又は家族介護を行う労働者の福祉に関する法律（平成三年法律第七十六号<wbr>。以下「</span><span style="color: #000000; background-color: #efcb05; ">」という。）第二条第一号に規定する育児休業及び</span><span style="color: #000000; background-color: #efcb05; ">第二十三条第二項又は第二<wbr>十四条第一項の規定に基づく措置として育児休業に関する制度に準ずる措置が講じられ<wbr>た場合の当該措置によりする休業をいう。以下同じ。）をしたものの数の割合（以下こ<wbr>の号及び第五条の三第二号において「育児休業等をした男性労働者の割合」という。）<wbr>が百分の七以上であること又はその雇用する男性労働者であって計画期間において配偶<wbr>者が出産したものの数に対する、その雇用する男性労働者であって当該計画期間におい<wbr>て育児休業等をしたものの数及び小学校就学の始期に達するまでの子を養育する男性労<wbr>働者を雇用する一般事業主が講ずる育児を目的とした休暇制度（育児休業等及び子の看<wbr>護休暇を除く。以下「育児目的休暇制度」という。）を利用したものの数の合計数の割<wbr>合が百分の十五以上であり、かつ、育児休業等をしたものの数が一人以上であること。<wbr>ただし、当該計画期間において、その雇用する男性労働者のうち育児休業等をしたもの<wbr>又は小学校就学の始期に達するまでの子について育児目的休暇制度を利用したものがい<wbr>ない中小事業主（一般事業主であって、常時雇用する労働者の数が三百人以下のものを<wbr>いう。以下同じ。）にあっては、次のいずれかに該当すれば足りること。</span></code></td>
+<td class="ln">25</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">五　その雇用する男性労働者であって計画期間において配偶者が出産したものの数に対<wbr>するその雇用する男性労働者であって当該計画期間において育児休業等（育児休業、介<wbr>護休業等育児又は家族介護を行う労働者の福祉に関する法律（平成三年法律第七十六号<wbr>。以下「</span><span class="sf17b18">育児・介護休業法</span><span style="color: #000000; background-color: #efcb05; ">」という。）第二条第一号に規定する育児休業及び</span><span class="sf17b18">育児・介<wbr>護休業法</span><span style="color: #000000; background-color: #efcb05; ">第二十三条第二項又は第二十四条第一項の規定に基づく措置として育児休業に<wbr>関する制度に準ずる措置が講じられた場合の当該措置によりする休業をいう。以下同じ<wbr>。）をしたものの数の割合（以下この号及び第五条の三第二号において「育児休業等を<wbr>した男性労働者の割合」という。）が百分の七以上であること又はその雇用する男性労<wbr>働者であって計画期間において配偶者が出産したものの数に対する、その雇用する男性<wbr>労働者であって当該計画期間において育児休業等をしたものの数及び小学校就学の始期<wbr>に達するまでの子を養育する男性労働者を雇用する一般事業主が講ずる育児を目的とし<wbr>た休暇制度（育児休業等及び子の看護休暇を除く。以下「育児目的休暇制度」という。<wbr>）を利用したものの数の合計数の割合が百分の十五以上であり、かつ、育児休業等をし<wbr>たものの数が一人以上であること。ただし、当該計画期間において、その雇用する男性<wbr>労働者のうち育児休業等をしたもの又は小学校就学の始期に達するまでの子について育<wbr>児目的休暇制度を利用したものがいない中小事業主（一般事業主であって、常時雇用す<wbr>る労働者の数が三百人以下のものをいう。以下同じ。）にあっては、次のいずれかに該<wbr>当すれば足りること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">イ　当該計画期間において、その雇用する男性労働者のうち育児・介護休業法第十六条<wbr>の二第一項に規定する子の看護休暇（以下「子の看護休暇」という。）を取得したもの<wbr>がいること（一歳に満たない子のために子の看護休暇を取得した場合を除く。）。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">イ　当該計画期間において、その雇用する男性労働者のうち育児・介護休業法第十六条<wbr>の二第一項に規定する子の看護休暇（以下「子の看護休暇」という。）を取得したもの<wbr>がいること（一歳に満たない子のために子の看護休暇を取得した場合を除く。）。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該計画期間において、所定労働時間の短縮措置等（育児・介護休業法第二十三条<wbr>第一項に規定する所定労働時間の短縮措置、育児・介護休業法第二十四条第一項第三号<wbr>の規定に基づき所定労働時間の短縮措置に準ずる措置として講じられているもの及び六<wbr>歳に達する日以後の最初の三月三十一日を経過した子であって十五歳に達する日以後の<wbr>最初の三月三十一日までの間にあるものに係る所定労働時間の短縮措置に準ずる措置と<wbr>して講じられているものをいう。以下同じ。）を講じており、その雇用する男性労働者<wbr>のうち子の養育のために当該所定労働時間の短縮措置等を利用したものがいること。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ロ　当該計画期間において、所定労働時間の短縮措置等（育児・介護休業法第二十三条<wbr>第一項に規定する所定労働時間の短縮措置、育児・介護休業法第二十四条第一項第三号<wbr>の規定に基づき所定労働時間の短縮措置に準ずる措置として講じられているもの及び六<wbr>歳に達する日以後の最初の三月三十一日を経過した子であって十五歳に達する日以後の<wbr>最初の三月三十一日までの間にあるものに係る所定労働時間の短縮措置に準ずる措置と<wbr>して講じられているものをいう。以下同じ。）を講じており、その雇用する男性労働者<wbr>のうち子の養育のために当該所定労働時間の短縮措置等を利用したものがいること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">ハ　当該計画期間の開始前三年以内の日であって当該中小事業主が定める日から当該計<wbr>画期間の末日までの期間を計画期間とみなした場合における当該計画期間において、育<wbr>児休業等をした男性労働者の割合が百分の七以上であること。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">ハ　当該計画期間の開始前三年以内の日であって当該中小事業主が定める日から当該計<wbr>画期間の末日までの期間を計画期間とみなした場合における当該計画期間において、育<wbr>児休業等をした男性労働者の割合が百分の七以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該計画期間において、小学校就学の始期に達するまでの子を養育する男性労働者<wbr>がいない場合にあっては、その雇用する男性労働者であって十五歳に達する日以後の最<wbr>初の三月三十一日までの間にある子又は小学校就学の始期に達するまでの孫がいるもの<wbr>のうち、育児目的休暇制度を利用したものがいること。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ニ　当該計画期間において、小学校就学の始期に達するまでの子を養育する男性労働者<wbr>がいない場合にあっては、その雇用する男性労働者であって十五歳に達する日以後の最<wbr>初の三月三十一日までの間にある子又は小学校就学の始期に達するまでの孫がいるもの<wbr>のうち、育児目的休暇制度を利用したものがいること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">六　その雇用する女性労働者であって計画期間において出産したものの数に対するその<wbr>雇用する女性労働者であって当該計画期間において育児休業等をしたものの数の割合（<wbr>以下この号において「育児休業等をしたものの割合」という。）が百分の七十五以上で<wbr>あること。ただし、計画期間において育児休業等をしたものの割合が百分の七十五未満<wbr>である中小事業主にあっては、当該計画期間の開始前三年以内の日であって当該中小事<wbr>業主が定める日から当該計画期間の末日までの期間を計画期間とみなした場合における<wbr>育児休業等をしたものの割合が百分の七十五以上であれば足りること。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">六　その雇用する女性労働者であって計画期間において出産したものの数に対するその<wbr>雇用する女性労働者であって当該計画期間において育児休業等をしたものの数の割合（<wbr>以下この号において「育児休業等をしたものの割合」という。）が百分の七十五以上で<wbr>あること。ただし、計画期間において育児休業等をしたものの割合が百分の七十五未満<wbr>である中小事業主にあっては、当該計画期間の開始前三年以内の日であって当該中小事<wbr>業主が定める日から当該計画期間の末日までの期間を計画期間とみなした場合における<wbr>育児休業等をしたものの割合が百分の七十五以上であれば足りること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">七　その雇用する三歳から小学校就学の始期に達するまでの子を養育する労働者につい<wbr>て、育児・介護休業法第二十四条第一項第三号の規定により、育児休業に関する制度、<wbr>所定外労働の制限に関する制度、所定労働時間の短縮措置又は始業時刻変更等の措置に<wbr>準じて講ずるよう努めなければならないものとされている必要な措置を講じていること<wbr>。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">七　その雇用する三歳から小学校就学の始期に達するまでの子を養育する労働者につい<wbr>て、育児・介護休業法第二十四条第一項第三号の規定により、育児休業に関する制度、<wbr>所定外労働の制限に関する制度、所定労働時間の短縮措置又は始業時刻変更等の措置に<wbr>準じて講ずるよう努めなければならないものとされている必要な措置を講じていること<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">八　次のいずれにも該当すること。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">八　次のいずれにも該当すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">イ　次のいずれにも該当すること。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">イ　次のいずれにも該当すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（１）　その雇用する労働者（短時間労働者及び有期雇用労働者の雇用管理の改善等に<wbr>関する法律（平成五年法律第七十六号）第二条第一項に規定する短時間労働者を除く。<wbr>第五条の四第四号において同じ。）一人当たりの各月ごとの時間外労働及び休日労働の<wbr>合計時間数が、計画期間の終了日の属する事業年度（（２）において「計画期間終了事<wbr>業年度」という。）に属する各月ごとに全て四十五時間未満であること。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（１）　その雇用する労働者（短時間労働者及び有期雇用労働者の雇用管理の改善等に<wbr>関する法律（平成五年法律第七十六号）第二条第一項に規定する短時間労働者を除く。<wbr>第五条の四第四号において同じ。）一人当たりの各月ごとの時間外労働及び休日労働の<wbr>合計時間数が、計画期間の終了日の属する事業年度（（２）において「計画期間終了事<wbr>業年度」という。）に属する各月ごとに全て四十五時間未満であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（２）　計画期間終了事業年度において、その雇用する労働者であって、平均した一月<wbr>当たりの時間外労働時間が六十時間以上であるものがいないこと。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（２）　計画期間終了事業年度において、その雇用する労働者であって、平均した一月<wbr>当たりの時間外労働時間が六十時間以上であるものがいないこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">ロ　所定外労働の削減、労働基準法（昭和二十二年法律第四十九号）第三十九条の規定<wbr>による年次有給休暇（以下「年次有給休暇」という。）の取得の促進、短時間正社員（<wbr>期間の定めのない労働契約を締結している労働者であって、一週間の所定労働時間が同<wbr>一の事業所に雇用される通常の労働者の一週間の所定労働時間に比し短く、かつ、通常<wbr>の労働者と同等の待遇を受けるものをいう。第五条の三第三号ハにおいて同じ。）の活<wbr>用に関する措置、在宅勤務、情報通信技術を活用した勤務その他の働き方の見直しに資<wbr>する多様な労働条件の整備のための措置について成果に関する具体的な目標を定めて講<wbr>じていること。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">ロ　所定外労働の削減、労働基準法（昭和二十二年法律第四十九号）第三十九条の規定<wbr>による年次有給休暇（以下「年次有給休暇」という。）の取得の促進、短時間正社員（<wbr>期間の定めのない労働契約を締結している労働者であって、一週間の所定労働時間が同<wbr>一の事業所に雇用される通常の労働者の一週間の所定労働時間に比し短く、かつ、通常<wbr>の労働者と同等の待遇を受けるものをいう。第五条の三第三号ハにおいて同じ。）の活<wbr>用に関する措置、在宅勤務、情報通信技術を活用した勤務その他の働き方の見直しに資<wbr>する多様な労働条件の整備のための措置について成果に関する具体的な目標を定めて講<wbr>じていること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">九　次のいずれにも該当しないこと。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">九　次のいずれにも該当しないこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十五条の規定により認定を取り消され、その取消しの日から起算して三年を経<wbr>過しないこと。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十五条の規定により認定を取り消され、その取消しの日から起算して三年を経<wbr>過しないこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　職業安定法施行令（昭和二十八年政令第二百四十二号）第一条で定める規定の違反<wbr>に関し、法律に基づく処分、公表その他の措置が講じられたこと（職業安定法施行規則<wbr>（昭和二十二年労働省令第十二号）第四条の三第三項に規定する求人の申込みを受理し<wbr>ないことができる場合に該当する場合に限る。）。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　職業安定法施行令（昭和二十八年政令第二百四十二号）第一条で定める規定の違反<wbr>に関し、法律に基づく処分、公表その他の措置が講じられたこと（職業安定法施行規則<wbr>（昭和二十二年労働省令第十二号）第四条の三第三項に規定する求人の申込みを受理し<wbr>ないことができる場合に該当する場合に限る。）。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ハ　法又は法に基づく命令その他関係法令に違反する重大な事実があること。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ハ　法又は法に基づく命令その他関係法令に違反する重大な事実があること。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（法第十四条第一項の広告等）</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（法第十四条第一項の広告等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第十四条第一項の厚生労働省令で定めるものは、次のとおりとする。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第十四条第一項の厚生労働省令で定めるものは、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">一　商品又は役務</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">一　商品又は役務</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">二　商品、役務又は一般事業主の広告</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">二　商品、役務又は一般事業主の広告</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">三　商品又は役務の取引に用いる書類又は通信</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">三　商品又は役務の取引に用いる書類又は通信</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">四　一般事業主の営業所、事務所その他の事業場</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">四　一般事業主の営業所、事務所その他の事業場</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">五　インターネットを利用した方法により公衆の閲覧に供する情報</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">五　インターネットを利用した方法により公衆の閲覧に供する情報</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">六　労働者の募集の用に供する広告又は文書</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">六　労働者の募集の用に供する広告又は文書 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（法第十五条の二の申請）</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（法第十五条の二の申請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　法第十五条の二の認定（第五条の四第一号において「特例認定」という。<wbr>）を受けようとする法第十四条第一項に規定する認定一般事業主は、基準適合認定一般<wbr>事業主認定申請書（様式第三号）に、当該認定一般事業主が法第十五条の二の基準に適<wbr>合するものであることを明らかにする書類を添えて、所轄都道府県労働局長に提出しな<wbr>ければならない。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　法第十五条の二の認定（第五条の四第一号において「特例認定」という。<wbr>）を受けようとする法第十四条第一項に規定する認定一般事業主は、基準適合認定一般<wbr>事業主認定申請書（様式第三号）に、当該認定一般事業主が法第十五条の二の基準に適<wbr>合するものであることを明らかにする書類を添えて、所轄都道府県労働局長に提出しな<wbr>ければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（法第十五条の二の厚生労働省令で定める基準）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（法第十五条の二の厚生労働省令で定める基準）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第五条の三　法第十五条の二の厚生労働省令で定める基準は、次のとおりとする。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第五条の三　法第十五条の二の厚生労働省令で定める基準は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">一　第四条第一号から第四号まで、第六号、第七号及び第八号イに掲げる基準に適合す<wbr>ること。この場合において、同条第一号から第四号まで中「一般事業主行動計画」とあ<wbr>るのは「一般事業主行動計画（その計画期間の末日が、法第十三条の認定を受けた日以<wbr>後であるものに限る。）」と、同条第六号中「計画期間」とあるのは「計画期間（その<wbr>末日が法第十三条の認定を受けた日以後であるものに限る。）」と読み替えるものとす<wbr>る。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">一　第四条第一号から第四号まで、第六号、第七号及び第八号イに掲げる基準に適合す<wbr>ること。この場合において、同条第一号から第四号まで中「一般事業主行動計画」とあ<wbr>るのは「一般事業主行動計画（その計画期間の末日が、法第十三条の認定を受けた日以<wbr>後であるものに限る。）」と、同条第六号中「計画期間」とあるのは「計画期間（その<wbr>末日が法第十三条の認定を受けた日以後であるものに限る。）」と読み替えるものとす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">二　中小事業主（計画期間（その末日が法第十三条の認定を受けた日以後であるものに<wbr>限る。以下この条において同じ。）において、その雇用する男性労働者のうち育児休業<wbr>等をしたもの又は小学校就学の始期に達するまでの子について育児目的休暇制度を利用<wbr>したものがいない者に限る。以下この号において同じ。）を除く一般事業主にあっては<wbr>イ又はロのいずれかに該当し、中小事業主にあっては次のいずれかに該当すること。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">二　中小事業主（計画期間（その末日が法第十三条の認定を受けた日以後であるものに<wbr>限る。以下この条において同じ。）において、その雇用する男性労働者のうち育児休業<wbr>等をしたもの又は小学校就学の始期に達するまでの子について育児目的休暇制度を利用<wbr>したものがいない者に限る。以下この号において同じ。）を除く一般事業主にあっては<wbr>イ又はロのいずれかに該当し、中小事業主にあっては次のいずれかに該当すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">イ　育児休業等をした男性労働者の割合が百分の十三以上であること。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">イ　育児休業等をした男性労働者の割合が百分の十三以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する男性労働者であって計画期間において配偶者が出産したものの数に対<wbr>する、その雇用する男性労働者であって当該計画期間において育児休業等をしたものの<wbr>数及び小学校就学の始期に達するまでの子について育児目的休暇制度を利用したものの<wbr>数の合計数の割合が百分の三十以上であり、かつ、育児休業等をしたものの数が一人以<wbr>上であること。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する男性労働者であって計画期間において配偶者が出産したものの数に対<wbr>する、その雇用する男性労働者であって当該計画期間において育児休業等をしたものの<wbr>数及び小学校就学の始期に達するまでの子について育児目的休暇制度を利用したものの<wbr>数の合計数の割合が百分の三十以上であり、かつ、育児休業等をしたものの数が一人以<wbr>上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">ハ　次のいずれかに該当すること。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">ハ　次のいずれかに該当すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（１）　第四条第五号イ、ロ又はニのいずれかに該当すること。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（１）　第四条第五号イ、ロ又はニのいずれかに該当すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（２）　当該計画期間の開始前三年以内の日であって当該中小事業主が定める日から当<wbr>該計画期間の末日までの期間を計画期間とみなした場合における当該計画期間において<wbr>、育児休業等をした男性労働者の割合が百分の十三以上であること。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（２）　当該計画期間の開始前三年以内の日であって当該中小事業主が定める日から当<wbr>該計画期間の末日までの期間を計画期間とみなした場合における当該計画期間において<wbr>、育児休業等をした男性労働者の割合が百分の十三以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">三　次に掲げる全ての措置を講じ、かつ、イ又はロのいずれかについて、定量的な目標<wbr>を定めて実施し、当該目標を達成したこと。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">三　次に掲げる全ての措置を講じ、かつ、イ又はロのいずれかについて、定量的な目標<wbr>を定めて実施し、当該目標を達成したこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">イ　所定外労働の削減</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">イ　所定外労働の削減</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">ロ　年次有給休暇の取得の促進</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">ロ　年次有給休暇の取得の促進</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">ハ　短時間正社員の活用に関する措置、在宅勤務、情報通信技術を活用した勤務その他<wbr>の働き方の見直しに資する多様な労働条件の整備のための措置</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">ハ　短時間正社員の活用に関する措置、在宅勤務、情報通信技術を活用した勤務その他<wbr>の働き方の見直しに資する多様な労働条件の整備のための措置</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">四　次のいずれかに該当すること。ただし、次のいずれにも該当しない中小事業主にあ<wbr>っては、当該計画期間の開始前三年以内の日であって当該中小事業主が定める日から当<wbr>該計画期間の末日までの期間を計画期間とみなした場合において、次のいずれかに該当<wbr>すれば足りること。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">四　次のいずれかに該当すること。ただし、次のいずれにも該当しない中小事業主にあ<wbr>っては、当該計画期間の開始前三年以内の日であって当該中小事業主が定める日から当<wbr>該計画期間の末日までの期間を計画期間とみなした場合において、次のいずれかに該当<wbr>すれば足りること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する又は雇用していた女性労働者であって計画期間の開始日から計画期間<wbr>の終了日の一年前までの間において出産したもの（出産の日に在職している者に限る。<wbr>ロにおいて同じ。）の数に対する当該女性労働者であって出産後一年以上継続して在職<wbr>している又は在職していたもの（育児休業等をしている若しくはしていた者又は育児目<wbr>的休暇制度を利用している若しくはしていた者を含む。以下同じ。）の数の割合が百分<wbr>の九十以上であること。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する又は雇用していた女性労働者であって計画期間の開始日から計画期間<wbr>の終了日の一年前までの間において出産したもの（出産の日に在職している者に限る。<wbr>ロにおいて同じ。）の数に対する当該女性労働者であって出産後一年以上継続して在職<wbr>している又は在職していたもの（育児休業等をしている若しくはしていた者又は育児目<wbr>的休暇制度を利用している若しくはしていた者を含む。以下同じ。）の数の割合が百分<wbr>の九十以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する又は雇用していた女性労働者であって計画期間の開始日から計画期間<wbr>の終了日の一年前までの間において出産したものの数及びその雇用していた女性労働者<wbr>であって当該期間に出産する予定であったもののうち退職したものの数の合計数に対す<wbr>る当該期間に出産した女性労働者であって出産後一年以上継続して在職している又は在<wbr>職していたものの数の割合が百分の五十五以上であること。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する又は雇用していた女性労働者であって計画期間の開始日から計画期間<wbr>の終了日の一年前までの間において出産したものの数及びその雇用していた女性労働者<wbr>であって当該期間に出産する予定であったもののうち退職したものの数の合計数に対す<wbr>る当該期間に出産した女性労働者であって出産後一年以上継続して在職している又は在<wbr>職していたものの数の割合が百分の五十五以上であること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">五　育児休業等をし、又は育児を行う女性労働者が就業を継続し、活躍できるような能<wbr>力の向上又はキャリア形成の支援のための取組に係る計画を策定し、これを実施してい<wbr>ること。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">五　育児休業等をし、又は育児を行う女性労働者が就業を継続し、活躍できるような能<wbr>力の向上又はキャリア形成の支援のための取組に係る計画を策定し、これを実施してい<wbr>ること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">六　次のいずれにも該当しないこと。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">六　次のいずれにも該当しないこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十五条の五の規定により認定を取り消された場合（当該取消しの日前に第五条<wbr>の五の規定による辞退の申出をした場合（雇用環境・均等局長が定める基準に該当する<wbr>場合に限る。）を除く。）にあっては、その取消しの日後に、法第十三条の認定を新た<wbr>に受けていないこと。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十五条の五の規定により認定を取り消された場合（当該取消しの日前に第五条<wbr>の五の規定による辞退の申出をした場合（雇用環境・均等局長が定める基準に該当する<wbr>場合に限る。）を除く。）にあっては、その取消しの日後に、法第十三条の認定を新た<wbr>に受けていないこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">ロ　第四条第九号ロ又はハに該当すること。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">ロ　第四条第九号ロ又はハに該当すること。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（法第十五条の三第二項の公表）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（法第十五条の三第二項の公表）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第五条の四　法第十五条の三第二項の規定による公表は、厚生労働省のウェブサイトに<wbr>、次の各号に掲げる事項を公表するものとする。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第五条の四　法第十五条の三第二項の規定による公表は、厚生労働省のウェブサイトに<wbr>、次の各号に掲げる事項を公表するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">一　その雇用する男性労働者であって法第十五条の三第二項の規定により公表を行う日<wbr>の属する事業年度（第七号イにおいて「公表事業年度」という。）の前の事業年度（以<wbr>下「公表前事業年度」という。）において育児休業等をしたものの数（以下この号にお<wbr>いて「育児休業等取得者数」という。）、その雇用する男性労働者であって公表前事業<wbr>年度において配偶者が出産したものの数に対する育児休業等取得者数の割合、その雇用<wbr>する男性労働者であって公表前事業年度において配偶者が出産したものの数に対する、<wbr>育児休業等取得者数及び公表前事業年度において育児目的休暇制度を利用したものの数<wbr>の合計数の割合並びに当該育児目的休暇制度の内容。ただし、前条第二号ハ（１）の規<wbr>定の適用を受けて特例認定を受けた場合にあっては、これらに加え次に掲げる区分に応<wbr>じ、次に掲げる事項を公表するものとする。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">一　その雇用する男性労働者であって法第十五条の三第二項の規定により公表を行う日<wbr>の属する事業年度（第七号イにおいて「公表事業年度」という。）の前の事業年度（以<wbr>下「公表前事業年度」という。）において育児休業等をしたものの数（以下この号にお<wbr>いて「育児休業等取得者数」という。）、その雇用する男性労働者であって公表前事業<wbr>年度において配偶者が出産したものの数に対する育児休業等取得者数の割合、その雇用<wbr>する男性労働者であって公表前事業年度において配偶者が出産したものの数に対する、<wbr>育児休業等取得者数及び公表前事業年度において育児目的休暇制度を利用したものの数<wbr>の合計数の割合並びに当該育児目的休暇制度の内容。ただし、前条第二号ハ（１）の規<wbr>定の適用を受けて特例認定を受けた場合にあっては、これらに加え次に掲げる区分に応<wbr>じ、次に掲げる事項を公表するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">イ　前条第二号ハ（１）の規定により第四条第五号イの適用を受けて特例認定を受けた<wbr>場合　公表前事業年度において、その雇用する男性労働者のうち子の看護休暇を取得し<wbr>たもの（一歳に満たない子のために子の看護休暇を取得した者を除く。）の数</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">イ　前条第二号ハ（１）の規定により第四条第五号イの適用を受けて特例認定を受けた<wbr>場合　公表前事業年度において、その雇用する男性労働者のうち子の看護休暇を取得し<wbr>たもの（一歳に満たない子のために子の看護休暇を取得した者を除く。）の数</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">ロ　前条第二号ハ（１）の規定により第四条第五号ロの適用を受けて特例認定を受けた<wbr>場合　公表前事業年度において、その雇用する男性労働者のうち子の養育のために所定<wbr>労働時間の短縮措置等を利用したものの数</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">ロ　前条第二号ハ（１）の規定により第四条第五号ロの適用を受けて特例認定を受けた<wbr>場合　公表前事業年度において、その雇用する男性労働者のうち子の養育のために所定<wbr>労働時間の短縮措置等を利用したものの数</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">ハ　前条第二号ハ（１）の規定により第四条第五号ニの適用を受けて特例認定を受けた<wbr>場合　公表前事業年度において、その雇用する男性労働者のうち十五歳に達する日以後<wbr>の最初の三月三十一日までの間にある子又は小学校就学の始期に達するまでの孫につい<wbr>て育児目的休暇制度を利用したものの数</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">ハ　前条第二号ハ（１）の規定により第四条第五号ニの適用を受けて特例認定を受けた<wbr>場合　公表前事業年度において、その雇用する男性労働者のうち十五歳に達する日以後<wbr>の最初の三月三十一日までの間にある子又は小学校就学の始期に達するまでの孫につい<wbr>て育児目的休暇制度を利用したものの数</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">二　その雇用する女性労働者であって公表前事業年度において出産したものの数に対す<wbr>るその雇用する女性労働者であって公表前事業年度において育児休業等をしたものの数<wbr>の割合</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">二　その雇用する女性労働者であって公表前事業年度において出産したものの数に対す<wbr>るその雇用する女性労働者であって公表前事業年度において育児休業等をしたものの数<wbr>の割合</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">三　前条第一号の規定に基づき第四条第七号に掲げる基準に適合するものとして講ずる<wbr>措置の内容</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">三　前条第一号の規定に基づき第四条第七号に掲げる基準に適合するものとして講ずる<wbr>措置の内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">四　公表前事業年度におけるその雇用する労働者一人当たりの各月ごとの時間外労働及<wbr>び休日労働の合計時間数</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">四　公表前事業年度におけるその雇用する労働者一人当たりの各月ごとの時間外労働及<wbr>び休日労働の合計時間数</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">五　その雇用する労働者であって、公表前事業年度において、平均した一月当たりの時<wbr>間外労働時間が六十時間以上であるものの数</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">五　その雇用する労働者であって、公表前事業年度において、平均した一月当たりの時<wbr>間外労働時間が六十時間以上であるものの数</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">六　前条第三号に掲げる基準に適合するものとして講ずる措置の内容</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">六　前条第三号に掲げる基準に適合するものとして講ずる措置の内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">七　次のいずれかの割合</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">七　次のいずれかの割合</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する又は雇用していた女性労働者であって公表事業年度の前々事業年度（<wbr>ロにおいて「公表前々事業年度」という。）において出産したもの（出産の日に在職し<wbr>ている者に限る。ロにおいて同じ。）の数に対する当該女性労働者であって出産の日以<wbr>後も引き続き雇用され、公表前事業年度に在職している又は在職していたものの数の割<wbr>合</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">イ　その雇用する又は雇用していた女性労働者であって公表事業年度の前々事業年度（<wbr>ロにおいて「公表前々事業年度」という。）において出産したもの（出産の日に在職し<wbr>ている者に限る。ロにおいて同じ。）の数に対する当該女性労働者であって出産の日以<wbr>後も引き続き雇用され、公表前事業年度に在職している又は在職していたものの数の割<wbr>合</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する又は雇用していた女性労働者であって公表前々事業年度において出産<wbr>したものの数及びその雇用していた女性労働者であって公表前々事業年度において出産<wbr>する予定であったもののうち退職したものの数の合計数に対する公表前々事業年度にお<wbr>いて出産した女性労働者であって出産の日以後も引き続き雇用され、公表前事業年度に<wbr>在職している又は在職していたものの数の割合</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">ロ　その雇用する又は雇用していた女性労働者であって公表前々事業年度において出産<wbr>したものの数及びその雇用していた女性労働者であって公表前々事業年度において出産<wbr>する予定であったもののうち退職したものの数の合計数に対する公表前々事業年度にお<wbr>いて出産した女性労働者であって出産の日以後も引き続き雇用され、公表前事業年度に<wbr>在職している又は在職していたものの数の割合</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">八　前条第五号に掲げる基準に適合するものとして策定している計画の内容及びその実<wbr>施状況</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">八　前条第五号に掲げる基準に適合するものとして策定している計画の内容及びその実<wbr>施状況 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（所轄都道府県労働局長に対する申出）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（所轄都道府県労働局長に対する申出）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第五条の五　法第十四条第一項に規定する認定一般事業主又は法第十五条の三第一項に<wbr>規定する特例認定一般事業主は、所轄都道府県労働局長に対し、それぞれ法第十三条又<wbr>は法第十五条の二の認定について辞退の申出をすることができる。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第五条の五　法第十四条第一項に規定する認定一般事業主又は法第十五条の三第一項に<wbr>規定する特例認定一般事業主は、所轄都道府県労働局長に対し、それぞれ法第十三条又<wbr>は法第十五条の二の認定について辞退の申出をすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第二項の承認中小事業主団体）</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第二項の承認中小事業主団体）</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第十六条第二項の厚生労働省令で定める承認中小事業主団体は、次のとおり<wbr>とする。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第十六条第二項の厚生労働省令で定める承認中小事業主団体は、次のとおり<wbr>とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">一　事業協同組合及び事業協同組合小組合並びに協同組合連合会</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">一　事業協同組合及び事業協同組合小組合並びに協同組合連合会</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">二　水産加工業協同組合及び水産加工業協同組合連合会</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">二　水産加工業協同組合及び水産加工業協同組合連合会</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">三　商工組合及び商工組合連合会</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">三　商工組合及び商工組合連合会</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">四　商店街振興組合及び商店街振興組合連合会</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">四　商店街振興組合及び商店街振興組合連合会</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">五　農業協同組合及び農業協同組合中央会</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">五　農業協同組合及び農業協同組合中央会</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">六　生活衛生同業組合であって、その構成員の三分の二以上が中小事業主であるもの</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">六　生活衛生同業組合であって、その構成員の三分の二以上が中小事業主であるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">七　酒造組合及び酒造組合連合会であって、その直接又は間接の構成員たる酒類製造業<wbr>者の三分の二以上が中小事業主であるもの</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">七　酒造組合及び酒造組合連合会であって、その直接又は間接の構成員たる酒類製造業<wbr>者の三分の二以上が中小事業主であるもの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第二項の一般社団法人の要件）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第二項の一般社団法人の要件）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第十六条第二項の厚生労働省令で定める要件は、その直接又は間接の構成員<wbr>の三分の二以上が中小事業主である一般社団法人であることとする。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第十六条第二項の厚生労働省令で定める要件は、その直接又は間接の構成員<wbr>の三分の二以上が中小事業主である一般社団法人であることとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（承認中小事業主団体の申請）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（承認中小事業主団体の申請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第十六条第二項の規定により承認を受けようとする同項の事業協同組合等は<wbr>、その旨及び同項の基準に係る事項を記載した申請書を所轄都道府県労働局長を経て、<wbr>厚生労働大臣に提出しなければならない。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第十六条第二項の規定により承認を受けようとする同項の事業協同組合等は<wbr>、その旨及び同項の基準に係る事項を記載した申請書を所轄都道府県労働局長を経て、<wbr>厚生労働大臣に提出しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第九条　法第十六条第四項並びに同条第五項において準用する職業安定法（昭和二十二<wbr>年法律第百四十一号）第三十七条第二項及び第四十一条第二項に定める厚生労働大臣の<wbr>権限のうち、次に掲げる募集に係るものは、承認中小事業主団体（法第十六条第二項に<wbr>規定する承認中小事業主団体をいう。以下同じ。）の所轄都道府県労働局長に委任する<wbr>。ただし、厚生労働大臣が自らその権限を行うことを妨げない。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第九条　法第十六条第四項並びに同条第五項において準用する職業安定法（昭和二十二<wbr>年法律第百四十一号）第三十七条第二項及び第四十一条第二項に定める厚生労働大臣の<wbr>権限のうち、次に掲げる募集に係るものは、承認中小事業主団体（法第十六条第二項に<wbr>規定する承認中小事業主団体をいう。以下同じ。）の所轄都道府県労働局長に委任する<wbr>。ただし、厚生労働大臣が自らその権限を行うことを妨げない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">一　承認中小事業主団体の主たる事務所の所在する都道府県の区域を募集地域とする募<wbr>集</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">一　承認中小事業主団体の主たる事務所の所在する都道府県の区域を募集地域とする募<wbr>集</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">二　承認中小事業主団体の主たる事務所の所在する都道府県の区域以外の地域（当該地<wbr>域における労働力の需給の状況等を勘案して厚生労働大臣が指定する地域を除く。）を<wbr>募集地域とする募集（当該業種における労働力の需給の状況等を勘案して厚生労働大臣<wbr>の指定する業種に属する事業に係るものを除く。）であって、その地域において募集し<wbr>ようとする労働者の数が百人（一の都道府県の区域内において募集しようとする労働者<wbr>の数が三十人以上であるときは、三十人）未満のもの</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">二　承認中小事業主団体の主たる事務所の所在する都道府県の区域以外の地域（当該地<wbr>域における労働力の需給の状況等を勘案して厚生労働大臣が指定する地域を除く。）を<wbr>募集地域とする募集（当該業種における労働力の需給の状況等を勘案して厚生労働大臣<wbr>の指定する業種に属する事業に係るものを除く。）であって、その地域において募集し<wbr>ようとする労働者の数が百人（一の都道府県の区域内において募集しようとする労働者<wbr>の数が三十人以上であるときは、三十人）未満のもの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第四項の届出事項）</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第四項の届出事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第十六条第四項の厚生労働省令で定める労働者の募集に関する事項は、次の<wbr>とおりとする。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第十六条第四項の厚生労働省令で定める労働者の募集に関する事項は、次の<wbr>とおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">一　募集に係る事業所の名称及び所在地</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">一　募集に係る事業所の名称及び所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">二　募集時期</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">二　募集時期</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">三　募集地域</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">三　募集地域</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">四　次世代育成支援対策を推進するための措置の適用を受ける労働者の業務又は当該措<wbr>置の実施に係る業務であって募集に係る労働者が処理するものの内容</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">四　次世代育成支援対策を推進するための措置の適用を受ける労働者の業務又は当該措<wbr>置の実施に係る業務であって募集に係る労働者が処理するものの内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">五　募集職種及び人員</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">五　募集職種及び人員</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">六　賃金、労働時間、雇用期間その他の募集に係る労働条件</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">六　賃金、労働時間、雇用期間その他の募集に係る労働条件 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第四項の届出の手続）</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（法第十六条第四項の届出の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第十六条第四項の規定による届出は、同項の承認中小事業主団体の主たる<wbr>事務所の所在する都道府県の区域を募集地域とする募集、当該区域以外の地域を募集地<wbr>域とする募集（以下この項において「自県外募集」という。）であって第九条第二号に<wbr>該当するもの及び自県外募集であって同号に該当しないものの別に行わなければならな<wbr>い。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第十六条第四項の規定による届出は、同項の承認中小事業主団体の主たる<wbr>事務所の所在する都道府県の区域を募集地域とする募集、当該区域以外の地域を募集地<wbr>域とする募集（以下この項において「自県外募集」という。）であって第九条第二号に<wbr>該当するもの及び自県外募集であって同号に該当しないものの別に行わなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">２　法第十六条第四項の規定による届出をしようとする承認中小事業主団体は、その主<wbr>たる事務所の所在地を管轄する公共職業安定所（その公共職業安定所が二以上ある場合<wbr>には、厚生労働省組織規則（平成十三年厚生労働省令第一号）第七百九十二条の規定に<wbr>より当該事務を取り扱う公共職業安定所）の長を経て、第九条の募集にあっては同条の<wbr>都道府県労働局長に、その他の募集にあっては厚生労働大臣に届け出なければならない<wbr>。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">２　法第十六条第四項の規定による届出をしようとする承認中小事業主団体は、その主<wbr>たる事務所の所在地を管轄する公共職業安定所（その公共職業安定所が二以上ある場合<wbr>には、厚生労働省組織規則（平成十三年厚生労働省令第一号）第七百九十二条の規定に<wbr>より当該事務を取り扱う公共職業安定所）の長を経て、第九条の募集にあっては同条の<wbr>都道府県労働局長に、その他の募集にあっては厚生労働大臣に届け出なければならない<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">３　前二項に定めるもののほか、届出の様式その他の手続は、厚生労働省職業安定局長<wbr>の定めるところによる。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">３　前二項に定めるもののほか、届出の様式その他の手続は、厚生労働省職業安定局長<wbr>の定めるところによる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（労働者募集報告）</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（労働者募集報告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法第十六条第四項の募集に従事する承認中小事業主団体は、厚生労働省職業<wbr>安定局長の定める様式に従い、毎年度、労働者募集報告を作成し、これを当該年度の翌<wbr>年度の四月末日まで（当該年度の終了前に労働者の募集を終了する場合にあっては、当<wbr>該終了の日の属する月の翌月末日まで）に前条第二項の届出に係る公共職業安定所の長<wbr>に提出しなければならない。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法第十六条第四項の募集に従事する承認中小事業主団体は、厚生労働省職業<wbr>安定局長の定める様式に従い、毎年度、労働者募集報告を作成し、これを当該年度の翌<wbr>年度の四月末日まで（当該年度の終了前に労働者の募集を終了する場合にあっては、当<wbr>該終了の日の属する月の翌月末日まで）に前条第二項の届出に係る公共職業安定所の長<wbr>に提出しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第十三条　職業安定法施行規則第三十一条の規定は、法第十六条第四項の規定により承<wbr>認中小事業主団体に委託して労働者の募集を行う中小事業主について準用する。</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第十三条　職業安定法施行規則第三十一条の規定は、法第十六条第四項の規定により承<wbr>認中小事業主団体に委託して労働者の募集を行う中小事業主について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（指定の申請）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（指定の申請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法第二十条第一項の規定による指定を受けようとする者は、次の事項を記載<wbr>した申請書を厚生労働大臣に提出しなければならない。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法第二十条第一項の規定による指定を受けようとする者は、次の事項を記載<wbr>した申請書を厚生労働大臣に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">一　名称及び住所</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">一　名称及び住所</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">二　代表者の氏名</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">二　代表者の氏名</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">三　法第二十条第二項に規定する業務（以下「センターの業務」という。）を行おうと<wbr>する事務所の所在地</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">三　法第二十条第二項に規定する業務（以下「センターの業務」という。）を行おうと<wbr>する事務所の所在地</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">２　前項の申請書には、次に掲げる書類を添付しなければならない。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">２　前項の申請書には、次に掲げる書類を添付しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">一　定款、寄附行為等団体又はその連合団体の目的、組織、運営等を明らかにする書類<wbr>（団体が法人であるときは、登記事項証明書を含む。）</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">一　定款、寄附行為等団体又はその連合団体の目的、組織、運営等を明らかにする書類<wbr>（団体が法人であるときは、登記事項証明書を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">二　最近の財産目録、貸借対照表及び損益計算書等資産の状況を明らかにする書類</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">二　最近の財産目録、貸借対照表及び損益計算書等資産の状況を明らかにする書類</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">三　センターの業務の実施に関する基本的な計画</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">三　センターの業務の実施に関する基本的な計画</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">四　役員及びセンターの業務を担当しようとする者の氏名及び略歴を記載した書類</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">四　役員及びセンターの業務を担当しようとする者の氏名及び略歴を記載した書類 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（指定の基準）</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（指定の基準）</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第十五条　法第二十条第一項の規定による指定は、次に掲げる基準に適合していると認<wbr>められる者について行う。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第十五条　法第二十条第一項の規定による指定は、次に掲げる基準に適合していると認<wbr>められる者について行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">一　前条第二項第三号に掲げる計画が、センターの業務の適正かつ確実な実施のために<wbr>適切なものであること。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">一　前条第二項第三号に掲げる計画が、センターの業務の適正かつ確実な実施のために<wbr>適切なものであること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">二　前条第二項第三号に掲げる計画の適正かつ確実な実施に必要な経理的及び技術的基<wbr>礎を有するものであること。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">二　前条第二項第三号に掲げる計画の適正かつ確実な実施に必要な経理的及び技術的基<wbr>礎を有するものであること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">三　センターの業務以外の業務を行っている場合には、その業務を行うことによってセ<wbr>ンターの業務の公正な実施に支障を及ぼすおそれがないものであること。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">三　センターの業務以外の業務を行っている場合には、その業務を行うことによってセ<wbr>ンターの業務の公正な実施に支障を及ぼすおそれがないものであること。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（変更の届出）</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（変更の届出）</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第十六条　次世代育成支援対策推進センターは、第十四条第一項各号に掲げる事項を変<wbr>更しようとするときは、あらかじめ、変更しようとする事項及び変更しようとする日を<wbr>記載した申請書を厚生労働大臣に提出しなければならない。</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第十六条　次世代育成支援対策推進センターは、第十四条第一項各号に掲げる事項を変<wbr>更しようとするときは、あらかじめ、変更しようとする事項及び変更しようとする日を<wbr>記載した申請書を厚生労働大臣に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">２　次世代育成支援対策推進センターは、第十四条第二項各号に掲げる書類の内容に変<wbr>更があったときは、その変更に係る書類を厚生労働大臣に提出しなければならない。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">２　次世代育成支援対策推進センターは、第十四条第二項各号に掲げる書類の内容に変<wbr>更があったときは、その変更に係る書類を厚生労働大臣に提出しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">（厚生労働大臣への報告等）</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">（厚生労働大臣への報告等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">第十七条　次世代育成支援対策推進センターは、毎事業年度開始前に（指定を受けた日<wbr>の属する事業年度にあっては、その指定を受けた後遅滞なく）、センターの業務に関し<wbr>事業計画書を作成し、厚生労働大臣に提出しなければならない。</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">第十七条　次世代育成支援対策推進センターは、毎事業年度開始前に（指定を受けた日<wbr>の属する事業年度にあっては、その指定を受けた後遅滞なく）、センターの業務に関し<wbr>事業計画書を作成し、厚生労働大臣に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">２　次世代育成支援対策推進センターは、毎事業年度終了後三月以内に、センターの業<wbr>務に関し事業報告書を作成し、厚生労働大臣に提出しなければならない。</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">２　次世代育成支援対策推進センターは、毎事業年度終了後三月以内に、センターの業<wbr>務に関し事業報告書を作成し、厚生労働大臣に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、センターの業務の適正な運営を図るため必要があると認めるとき<wbr>は、次世代育成支援対策推進センターに対し、その財産の状況又は事業の運営に関し報<wbr>告又は資料の提出を求めることができる。</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">３　厚生労働大臣は、センターの業務の適正な運営を図るため必要があると認めるとき<wbr>は、次世代育成支援対策推進センターに対し、その財産の状況又は事業の運営に関し報<wbr>告又は資料の提出を求めることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法第二十三条の規定により、法第十二条第一項、第四項及び第六項（法第十<wbr>二条の二第三項において準用する場合を含む。以下この条において同じ。）、第十三条<wbr>、第十五条、第十五条の二、第十五条の三第三項並びに第十五条の五に規定する厚生労<wbr>働大臣の権限は、所轄都道府県労働局長に委任する。ただし、法第十二条第六項、第十<wbr>五条、第十五条の三第三項及び第十五条の五に規定する権限にあっては、厚生労働大臣<wbr>が自らその権限を行うことを妨げない。</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法第二十三条の規定により、法第十二条第一項、第四項及び第六項（法第十<wbr>二条の二第三項において準用する場合を含む。以下この条において同じ。）、第十三条<wbr>、第十五条、第十五条の二、第十五条の三第三項並びに第十五条の五に規定する厚生労<wbr>働大臣の権限は、所轄都道府県労働局長に委任する。ただし、法第十二条第六項、第十<wbr>五条、第十五条の三第三項及び第十五条の五に規定する権限にあっては、厚生労働大臣<wbr>が自らその権限を行うことを妨げない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月三一日厚生労働省令第七二号）</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月三一日厚生労働省令第七二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十七年四月一日から施行する。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年三月七日厚生労働省令第二五号）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年三月七日厚生労働省令第二五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法の施行の日（平成十七年三月七日）から施行する。<wbr></span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法の施行の日（平成十七年三月七日）から施行する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一一月二八日厚生労働省令第一六三号）</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一一月二八日厚生労働省令第一六三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、一般社団法人及び一般財団法人に関する法律の施行の日（平成二<wbr>十年十二月一日）から施行する。</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、一般社団法人及び一般財団法人に関する法律の施行の日（平成二<wbr>十年十二月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年二月二七日厚生労働省令第一九号）</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年二月二七日厚生労働省令第一九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">この省令は、児童福祉法等の一部を改正する法律（平成二十年法律第八十五号）附則第<wbr>一条第二号に掲げる規定の施行の日（平成二十一年三月一日）から施行する。</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">この省令は、児童福祉法等の一部を改正する法律（平成二十年法律第八十五号）附則第<wbr>一条第二号に掲げる規定の施行の日（平成二十一年三月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年三月一六日厚生労働省令第三七号）</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年三月一六日厚生労働省令第三七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十一年四月一日から施行する。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">（次世代育成支援対策推進法施行規則の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">（次世代育成支援対策推進法施行規則の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">第四条　施行日前に次世代育成支援対策推進法第十三条の申請を行った事業主の当該申<wbr>請に係るこの省令による改正後の次世代育成支援対策推進法施行規則第四条に規定する<wbr>基準については、なお従前の例による。</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">第四条　施行日前に次世代育成支援対策推進法第十三条の申請を行った事業主の当該申<wbr>請に係るこの省令による改正後の次世代育成支援対策推進法施行規則第四条に規定する<wbr>基準については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の次世代育成支援対策推進法施行規則第四条第四号の規定は<wbr>、施行日以後に一般事業主行動計画を策定し、又は変更した事業主が行った次世代育成<wbr>支援対策推進法第十三条の当該一般事業主行動計画に係る申請について適用する。</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の次世代育成支援対策推進法施行規則第四条第四号の規定は<wbr>、施行日以後に一般事業主行動計画を策定し、又は変更した事業主が行った次世代育成<wbr>支援対策推進法第十三条の当該一般事業主行動計画に係る申請について適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">３　この省令の施行の際この省令による改正前の様式（次項において「旧様式」という<wbr>。）により使用されている書類は、この省令による改正後の様式によるものとみなす。<wbr></span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">３　この省令の施行の際この省令による改正前の様式（次項において「旧様式」という<wbr>。）により使用されている書類は、この省令による改正後の様式によるものとみなす。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">４　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">４　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一〇月三〇日厚生労働省令第一五〇号）</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一〇月三〇日厚生労働省令第一五〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十二年四月一日から施行する。</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年六月二三日厚生労働省令第七八号）</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年六月二三日厚生労働省令第七八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、育児休業、介護休業等育児又は家族介護を行う労働者の福祉に関<wbr>する法律及び雇用保険法の一部を改正する法律（平成二十一年法律第六十五号。以下「<wbr>改正法」という。）の施行の日（平成二十二年六月三十日。以下「施行日」という。）<wbr>から施行する。</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、育児休業、介護休業等育児又は家族介護を行う労働者の福祉に関<wbr>する法律及び雇用保険法の一部を改正する法律（平成二十一年法律第六十五号。以下「<wbr>改正法」という。）の施行の日（平成二十二年六月三十日。以下「施行日」という。）<wbr>から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（一般事業主行動計画の計画期間が施行日前に開始した事業主に関する経過措置）</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（一般事業主行動計画の計画期間が施行日前に開始した事業主に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第二条　施行日前に計画期間が開始した一般事業主行動計画（次世代育成支援対策推進<wbr>法（平成十五年法律第百二十号。以下「法」という。）第十二条第一項に規定する一般<wbr>事業主行動計画をいう。以下同じ。）に関して事業主（改正法附則第二条に規定する事<wbr>業主を除く。）が行う法第十三条の申請に係る同条の認定の基準については、この省令<wbr>による改正後の次世代育成支援対策推進法施行規則（以下「新次世代則」という。）第<wbr>四条の規定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第二条　施行日前に計画期間が開始した一般事業主行動計画（次世代育成支援対策推進<wbr>法（平成十五年法律第百二十号。以下「法」という。）第十二条第一項に規定する一般<wbr>事業主行動計画をいう。以下同じ。）に関して事業主（改正法附則第二条に規定する事<wbr>業主を除く。）が行う法第十三条の申請に係る同条の認定の基準については、この省令<wbr>による改正後の次世代育成支援対策推進法施行規則（以下「新次世代則」という。）第<wbr>四条の規定にかかわらず、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">（常時百人以下の労働者を雇用する事業主に関する暫定措置等）</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">（常時百人以下の労働者を雇用する事業主に関する暫定措置等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">第三条　改正法附則第二条に規定する事業主については、平成二十四年六月三十日まで<wbr>の間、新次世代則第四条の規定は適用せず、この省令による改正前の次世代育成支援対<wbr>策推進法施行規則第四条の規定は、なおその効力を有する。</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">第三条　改正法附則第二条に規定する事業主については、平成二十四年六月三十日まで<wbr>の間、新次世代則第四条の規定は適用せず、この省令による改正前の次世代育成支援対<wbr>策推進法施行規則第四条の規定は、なおその効力を有する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">２　平成二十四年七月一日前に計画期間が開始した一般事業主行動計画に関して事業主<wbr>（前項に規定する事業主に限る。）が同日以降に行う法第十三条の申請に係る同条の認<wbr>定の基準については、新次世代則第四条の規定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">２　平成二十四年七月一日前に計画期間が開始した一般事業主行動計画に関して事業主<wbr>（前項に規定する事業主に限る。）が同日以降に行う法第十三条の申請に係る同条の認<wbr>定の基準については、新次世代則第四条の規定にかかわらず、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">第四条　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧<wbr>様式」という。）により使用されている書類は、この省令による改正後の様式によるも<wbr>のとみなす。</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">第四条　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧<wbr>様式」という。）により使用されている書類は、この省令による改正後の様式によるも<wbr>のとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年三月二八日厚生労働省令第四〇号）</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年三月二八日厚生労働省令第四〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十四年四月一日から施行する。</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年一一月二八日厚生労働省令第一三〇号）</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年一一月二八日厚生労働省令第一三〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成二十七年四月一日から施行する。</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成二十七年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の日（次項において「施行日」という。）前に計画期間が終了した<wbr>一般事業主行動計画（次世代育成支援対策推進法（以下この項及び次項において「法」<wbr>という。）第十二条第一項に規定する一般事業主行動計画をいう。）に関して事業主が<wbr>行う法第十三条の申請に係る同条の認定の基準については、この省令による改正後の次<wbr>世代育成支援対策推進法施行規則（次項において「新令」という。）第四条の規定にか<wbr>かわらず、なお従前の例による。</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の日（次項において「施行日」という。）前に計画期間が終了した<wbr>一般事業主行動計画（次世代育成支援対策推進法（以下この項及び次項において「法」<wbr>という。）第十二条第一項に規定する一般事業主行動計画をいう。）に関して事業主が<wbr>行う法第十三条の申請に係る同条の認定の基準については、この省令による改正後の次<wbr>世代育成支援対策推進法施行規則（次項において「新令」という。）第四条の規定にか<wbr>かわらず、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">３　施行日前に計画期間が開始した一般事業主行動計画であって施行日後に計画期間が<wbr>終了するものに関して事業主が行う法第十三条の申請に係る同条の認定の基準について<wbr>は、新令第四条の規定にかかわらず、なお従前の例によることができる。</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">３　施行日前に計画期間が開始した一般事業主行動計画であって施行日後に計画期間が<wbr>終了するものに関して事業主が行う法第十三条の申請に係る同条の認定の基準について<wbr>は、新令第四条の規定にかかわらず、なお従前の例によることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">４　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧様式<wbr>」という。）により使用されている書類は、この省令による改正後の様式によるものと<wbr>みなす。</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">４　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧様式<wbr>」という。）により使用されている書類は、この省令による改正後の様式によるものと<wbr>みなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">５　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">５　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月三一日厚生労働省令第七三号）</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月三一日厚生労働省令第七三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、子ども・子育て支援法の施行の日（平成二十七年四月一日）から施行<wbr>する。</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、子ども・子育て支援法の施行の日（平成二十七年四月一日）から施行<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧様式<wbr>」という。）により使用されている書類は、この省令による改正後の様式によるものと<wbr>みなす。</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧様式<wbr>」という。）により使用されている書類は、この省令による改正後の様式によるものと<wbr>みなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">３　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。</span></code></td>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">３　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年一〇月二八日厚生労働省令第一六三号）</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年一〇月二八日厚生労働省令第一六三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十八年四月一日から施行する。ただし、第四条第六号、第五条の三<wbr>第二号イ及びロ並びに第五条の四第一号及び第二号の改正規定は、公布の日から施行す<wbr>る。</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十八年四月一日から施行する。ただし、第四条第六号、第五条の三<wbr>第二号イ及びロ並びに第五条の四第一号及び第二号の改正規定は、公布の日から施行す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三〇日厚生労働省令第三一号）</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三〇日厚生労働省令第三一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十九年四月一日から施行する。</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">（次世代育成支援対策推進法施行規則の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">（次世代育成支援対策推進法施行規則の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">第二条　この省令の施行の日（以下「施行日」という。）前に事業主が行った次世代育<wbr>成支援対策推進法（平成十五年法律第百二十号。以下この条において「法」という。）<wbr>第十三条又は第十五条の二の申請に係るこれらの規定の認定の基準については、それぞ<wbr>れ第一条の規定による改正後の次世代育成支援対策推進法施行規則（以下この条におい<wbr>て「新令」という。）第四条又は第五条の三の規定にかかわらず、なお従前の例による<wbr>。</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">第二条　この省令の施行の日（以下「施行日」という。）前に事業主が行った次世代育<wbr>成支援対策推進法（平成十五年法律第百二十号。以下この条において「法」という。）<wbr>第十三条又は第十五条の二の申請に係るこれらの規定の認定の基準については、それぞ<wbr>れ第一条の規定による改正後の次世代育成支援対策推進法施行規則（以下この条におい<wbr>て「新令」という。）第四条又は第五条の三の規定にかかわらず、なお従前の例による<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">２　新令第四条第九号イ及び第五条の三第六号の規定は、施行日前に行われた法第十五<wbr>条及び第十五条の五の規定による認定の取消しについては、適用しない。</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">２　新令第四条第九号イ及び第五条の三第六号の規定は、施行日前に行われた法第十五<wbr>条及び第十五条の五の規定による認定の取消しについては、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">３　新令第四条第五号に定める男性労働者の育児休業等の取得及び育児目的休暇制度の<wbr>利用に係る基準については、同号の規定にかかわらず、施行日から平成三十一年三月三<wbr>十一日までの間に行われた法第十三条又は第十五条の二の申請については、なお従前の<wbr>例によることができる。</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">３　新令第四条第五号に定める男性労働者の育児休業等の取得及び育児目的休暇制度の<wbr>利用に係る基準については、同号の規定にかかわらず、施行日から平成三十一年三月三<wbr>十一日までの間に行われた法第十三条又は第十五条の二の申請については、なお従前の<wbr>例によることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">４　法第十二条第一項に規定する一般事業主行動計画の計画期間の開始の日が施行日前<wbr>であり、かつ、施行日後に法第十三条又は第十五条の二の申請を行った事業主に係る、<wbr>新令第四条第五号の適用については、同号本文中「計画期間において」又は「当該計画<wbr>期間において」とあるのは、「平成二十九年四月一日から当該計画期間の末日までの期<wbr>間において」とすることができる。</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">４　法第十二条第一項に規定する一般事業主行動計画の計画期間の開始の日が施行日前<wbr>であり、かつ、施行日後に法第十三条又は第十五条の二の申請を行った事業主に係る、<wbr>新令第四条第五号の適用については、同号本文中「計画期間において」又は「当該計画<wbr>期間において」とあるのは、「平成二十九年四月一日から当該計画期間の末日までの期<wbr>間において」とすることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">５　施行日から平成三十年三月三十一日までの間に事業主が公表する法第十五条の三第<wbr>二項に規定する次世代育成支援対策の実施の状況については、新令第五条の四第四号及<wbr>び第五号の規定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">５　施行日から平成三十年三月三十一日までの間に事業主が公表する法第十五条の三第<wbr>二項に規定する次世代育成支援対策の実施の状況については、新令第五条の四第四号及<wbr>び第五号の規定にかかわらず、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">（様式に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">第三条　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧<wbr>様式」という。）により使用されている書類は、この省令による改正後の様式によるも<wbr>のとみなす。</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">第三条　この省令の施行の際現にあるこの省令による改正前の様式（次項において「旧<wbr>様式」という。）により使用されている書類は、この省令による改正後の様式によるも<wbr>のとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年七月一一日厚生労働省令第七一号）　抄</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年七月一一日厚生労働省令第七一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、厚生労働省組織令等の一部を改正する政令（平成二十九年政令第<wbr>百八十五号）の施行の日（平成二十九年七月十一日）から施行する。</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、厚生労働省組織令等の一部を改正する政令（平成二十九年政令第<wbr>百八十五号）の施行の日（平成二十九年七月十一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年一二月二八日厚生労働省令第一五三号）　抄</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三〇年一二月二八日厚生労働省令第一五三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成三十二年四月一日から施行する。</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成三十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">（次世代育成支援対策推進法施行規則の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">（次世代育成支援対策推進法施行規則の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">第四条　この省令の施行の日前に一般事業主行動計画（次世代育成支援対策推進法（平<wbr>成十五年法律第百二十号。以下この条において「次世代法」という。）第十二条第一項<wbr>に規定する一般事業主行動計画をいう。以下この項及び次項において同じ。）の計画期<wbr>間（次世代法第十二条第二項第一号に規定する計画期間をいう。次項において同じ。）<wbr>の終了日の属する事業年度が終了した一般事業主行動計画に関して事業主（中小事業主<wbr>を除く。第三項において同じ。）が行う次世代法第十三条又は第十五条の二の申請に係<wbr>るこれらの規定の認定の基準については、第八条の規定による改正後の次世代育成支援<wbr>対策推進法施行規則第四条の規定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">第四条　この省令の施行の日前に一般事業主行動計画（次世代育成支援対策推進法（平<wbr>成十五年法律第百二十号。以下この条において「次世代法」という。）第十二条第一項<wbr>に規定する一般事業主行動計画をいう。以下この項及び次項において同じ。）の計画期<wbr>間（次世代法第十二条第二項第一号に規定する計画期間をいう。次項において同じ。）<wbr>の終了日の属する事業年度が終了した一般事業主行動計画に関して事業主（中小事業主<wbr>を除く。第三項において同じ。）が行う次世代法第十三条又は第十五条の二の申請に係<wbr>るこれらの規定の認定の基準については、第八条の規定による改正後の次世代育成支援<wbr>対策推進法施行規則第四条の規定にかかわらず、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">２　平成三十三年四月一日前に一般事業主行動計画の計画期間の終了日の属する事業年<wbr>度が終了した一般事業主行動計画に関して中小事業主が行う次世代法第十三条又は第十<wbr>五条の二の申請に係るこれらの規定の認定の基準については、第八条の規定による改正<wbr>後の次世代育成支援対策推進法施行規則第四条の規定にかかわらず、なお従前の例によ<wbr>る。</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">２　平成三十三年四月一日前に一般事業主行動計画の計画期間の終了日の属する事業年<wbr>度が終了した一般事業主行動計画に関して中小事業主が行う次世代法第十三条又は第十<wbr>五条の二の申請に係るこれらの規定の認定の基準については、第八条の規定による改正<wbr>後の次世代育成支援対策推進法施行規則第四条の規定にかかわらず、なお従前の例によ<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">３　事業主がする次世代法第十五条の三第二項の次世代育成支援対策（次世代法第二条<wbr>に規定する次世代育成支援対策をいう。次項において同じ。）の実施の状況の公表につ<wbr>いては、この省令の施行の日前に公表を行う日の属する事業年度の前の事業年度（次項<wbr>において「公表前事業年度」という。）が終了したときは、第八条の規定による改正後<wbr>の次世代育成支援対策推進法施行規則第四条の規定にかかわらず、なお従前の例による<wbr>。</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">３　事業主がする次世代法第十五条の三第二項の次世代育成支援対策（次世代法第二条<wbr>に規定する次世代育成支援対策をいう。次項において同じ。）の実施の状況の公表につ<wbr>いては、この省令の施行の日前に公表を行う日の属する事業年度の前の事業年度（次項<wbr>において「公表前事業年度」という。）が終了したときは、第八条の規定による改正後<wbr>の次世代育成支援対策推進法施行規則第四条の規定にかかわらず、なお従前の例による<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">４　中小事業主がする次世代法第十五条の三第二項の次世代育成支援対策の実施の状況<wbr>の公表については、平成三十三年四月一日前に公表前事業年度が終了したときは、第八<wbr>条の規定による改正後の次世代育成支援対策推進法施行規則第四条の規定にかかわらず<wbr>、なお従前の例による。</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">４　中小事業主がする次世代法第十五条の三第二項の次世代育成支援対策の実施の状況<wbr>の公表については、平成三十三年四月一日前に公表前事業年度が終了したときは、第八<wbr>条の規定による改正後の次世代育成支援対策推進法施行規則第四条の規定にかかわらず<wbr>、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第五条　この省令の施行の際現にある第八条の規定による改正前の次世代育成支援対策<wbr>推進法施行規則様式第二号及び様式第三号（次項において「旧様式」という。）により<wbr>使用されている書類は、それぞれ同条の規定による改正後の次世代育成支援対策推進法<wbr>施行規則様式第二号及び様式第三号によるものとみなす。</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第五条　この省令の施行の際現にある第八条の規定による改正前の次世代育成支援対策<wbr>推進法施行規則様式第二号及び様式第三号（次項において「旧様式」という。）により<wbr>使用されている書類は、それぞれ同条の規定による改正後の次世代育成支援対策推進法<wbr>施行規則様式第二号及び様式第三号によるものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。</span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現にある旧様式による用紙については、当分の間、これを取り<wbr>繕って使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年三月二〇日厚生労働省令第二六号）　抄</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年三月二〇日厚生労働省令第二六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、雇用保険法等の一部を改正する法律（平成二十九年法律第十四号<wbr>）附則第一条第五号に掲げる規定の施行の日（平成三十二年三月三十日）から施行する<wbr>。</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、雇用保険法等の一部を改正する法律（平成二十九年法律第十四号<wbr>）附則第一条第五号に掲げる規定の施行の日（平成三十二年三月三十日）から施行する<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月七日厚生労働省令第一号）　抄</span></code></td>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月七日厚生労働省令第一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">（働き方改革を推進するための関係法律の整備に関する法律の一部の施行に伴う厚生労<wbr>働省関係省令の整備及び経過措置に関する省令の一部改正）</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">（働き方改革を推進するための関係法律の整備に関する法律の一部の施行に伴う厚生労<wbr>働省関係省令の整備及び経過措置に関する省令の一部改正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">第四条　働き方改革を推進するための関係法律の整備に関する法律の一部の施行に伴う<wbr>厚生労働省関係省令の整備及び経過措置に関する省令（平成三十年厚生労働省令第百五<wbr>十三号）の一部を次のように改正する。</span></code></td>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">第四条　働き方改革を推進するための関係法律の整備に関する法律の一部の施行に伴う<wbr>厚生労働省関係省令の整備及び経過措置に関する省令（平成三十年厚生労働省令第百五<wbr>十三号）の一部を次のように改正する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">第八条中次世代育成支援対策推進法施行規則様式第二号及び様式第三号の改正規定を次<wbr>のように改める。</span></code></td>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">第八条中次世代育成支援対策推進法施行規則様式第二号及び様式第三号の改正規定を次<wbr>のように改める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">様式第二号及び様式第三号中「短時間労働者の雇用管理の改善等に関する法律（平成５<wbr>年法律第７６号）第２条」を「短時間労働者及び有期雇用労働者の雇用管理の改善等に<wbr>関する法律（平成５年法律第７６号）第２条第１項」に改める。</span></code></td>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">様式第二号及び様式第三号中「短時間労働者の雇用管理の改善等に関する法律（平成５<wbr>年法律第７６号）第２条」を「短時間労働者及び有期雇用労働者の雇用管理の改善等に<wbr>関する法律（平成５年法律第７６号）第２条第１項」に改める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">様式第一号（第一条及び第二条関係）</span></code></td>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">様式第一号（第一条及び第二条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">234</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">様式第二号（第三条関係）</span></code></td>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">様式第二号（第三条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">235</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第三号（第五条の二関係）</span></code></td>
+<td class="ln">236</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">237</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第三号（第五条の二関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">238</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

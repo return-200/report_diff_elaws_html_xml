@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和六十二年自治省令第三十一号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和六十二年自治省令第三十一号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律第<wbr>五条第二項の規定による平均給与額等を定める省令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律第<wbr>五条第二項の規定による平均給与額等を定める省令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律（<wbr>昭和六十二年法律第七十八号）第五条第二項の規定に基づき、及び同法を実施するため<wbr>、外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律<wbr>第五条第二項の規定による平均給与額等を定める省令を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律（<wbr>昭和六十二年法律第七十八号）第五条第二項の規定に基づき、及び同法を実施するため<wbr>、外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律<wbr>第五条第二項の規定による平均給与額等を定める省令を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（平均給与額）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（平均給与額）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関す<wbr>る法律（昭和六十二年法律第七十八号。以下「法」という。）第五条第二項に規定する<wbr>平均給与額は、法第二条第一項の規定による派遣の期間（法附則第二条の規定により、<wbr>条例で定めるところにより、法第二条第一項の規定に基づく条例の施行の日に派遣職員<wbr>とされた職員にあつては、従前の地方公務員法（昭和二十五年法律第二百六十一号）第<wbr>二十七条第二項の規定に基づく条例の定めるところにより休職にされ、又は同法第三十<wbr>五条の規定に基づく条例の定めるところにより職務に専念する義務を免除されていた期<wbr>間）の初日の属する月の前月の末日から起算して過去三月間にその職員に対して支払わ<wbr>れた給与の総額を、その期間の総日数で除して得た金額とする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関す<wbr>る法律（昭和六十二年法律第七十八号。以下「法」という。）第五条第二項に規定する<wbr>平均給与額は、法第二条第一項の規定による派遣の期間（法附則第二条の規定により、<wbr>条例で定めるところにより、法第二条第一項の規定に基づく条例の施行の日に派遣職員<wbr>とされた職員にあつては、従前の地方公務員法（昭和二十五年法律第二百六十一号）第<wbr>二十七条第二項の規定に基づく条例の定めるところにより休職にされ、又は同法第三十<wbr>五条の規定に基づく条例の定めるところにより職務に専念する義務を免除されていた期<wbr>間）の初日の属する月の前月の末日から起算して過去三月間にその職員に対して支払わ<wbr>れた給与の総額を、その期間の総日数で除して得た金額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">6</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　前項に規定する給与の種類については、地方公務員災害補償法（昭和四十二年法律<wbr>第百二十一号）第</span><span style="color: #000000; background-color: #efcb05; ">五項及び地方公務員災害補償法施行規則（昭和四十二年自治省令第二<wbr>十七号）第二条に定めるところによる。この場合において、同条第二項中「負傷若しく<wbr>は死亡の原因である事故の発生の日又は診断によつて疾病の発生が確定した日（以下「<wbr>災害発生の日」という。）」とあるのは、「外国の地方公共団体の機関等に派遣される<wbr>一般職の地方公務員の処遇等に関する法律（昭和六十二年法律第七十八号）第二条第一<wbr>項の規定による派遣の期間の初日の前日（同法附則第二条の規定により、条例で定める<wbr>ところにより、同法第二条第一項の規定に基づく条例の施行の日に派遣職員とされた職<wbr>員にあつては、従前の地方公務員法（昭和二十五年法律第二百六十一号）第二十七条第<wbr>二項の規定に基づく条例の定めるところにより休職にされ、又は同法第三十五条の規定<wbr>に基づく条例の定めるところにより職務に専念する義務を免除されていた期間の初日の<wbr>前日。以下「派遣等の前日」という。）」と、「災害発生の日以前」とあるのは「派遣<wbr>等の前日以前」と、同条第三項中「災害発生の日」とあるのは「派遣等の前日」とする<wbr>。</span></code></td>
+<td class="ln">6</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　前項に規定する給与の種類については、地方公務員災害補償法（昭和四十二年法律<wbr>第百二十一号）第</span><span class="sf17b18">二条第</span><span style="color: #000000; background-color: #efcb05; ">五項及び地方公務員災害補償法施行規則（昭和四十二年自治省<wbr>令第二十七号）第二条に定めるところによる。この場合において、同条第二項中「負傷<wbr>若しくは死亡の原因である事故の発生の日又は診断によつて疾病の発生が確定した日（<wbr>以下「災害発生の日」という。）」とあるのは、「外国の地方公共団体の機関等に派遣<wbr>される一般職の地方公務員の処遇等に関する法律（昭和六十二年法律第七十八号）第二<wbr>条第一項の規定による派遣の期間の初日の前日（同法附則第二条の規定により、条例で<wbr>定めるところにより、同法第二条第一項の規定に基づく条例の施行の日に派遣職員とさ<wbr>れた職員にあつては、従前の地方公務員法（昭和二十五年法律第二百六十一号）第二十<wbr>七条第二項の規定に基づく条例の定めるところにより休職にされ、又は同法第三十五条<wbr>の規定に基づく条例の定めるところにより職務に専念する義務を免除されていた期間の<wbr>初日の前日。以下「派遣等の前日」という。）」と、「災害発生の日以前」とあるのは<wbr>「派遣等の前日以前」と、同条第三項中「災害発生の日」とあるのは「派遣等の前日」<wbr>とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定により平均給与額を計算することができない場合及び前二項の規定に<wbr>よつて計算した平均給与額が公正を欠くと認められる場合における平均給与額の計算に<wbr>ついては、地方公務員災害補償基金が総務大臣の承認を得て定める。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定により平均給与額を計算することができない場合及び前二項の規定に<wbr>よつて計算した平均給与額が公正を欠くと認められる場合における平均給与額の計算に<wbr>ついては、地方公務員災害補償基金が総務大臣の承認を得て定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定によつて計算した平均給与額に一円未満の端数を生じたときは、これ<wbr>を一円に切り上げた額を平均給与額とする。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定によつて計算した平均給与額に一円未満の端数を生じたときは、これ<wbr>を一円に切り上げた額を平均給与額とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　傷病補償年金、障害補償年金又は遺族補償年金（以下「年金たる補償」という<wbr>。）以外の補償の額の算定の基礎として用いる平均給与額は、前条の規定により平均給<wbr>与額として計算した額が地方公務員災害補償法施行規則第三条第七項に規定する総務大<wbr>臣の定める額に満たない場合には、当該総務大臣の定める額とする。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　傷病補償年金、障害補償年金又は遺族補償年金（以下「年金たる補償」という<wbr>。）以外の補償の額の算定の基礎として用いる平均給与額は、前条の規定により平均給<wbr>与額として計算した額が地方公務員災害補償法施行規則第三条第七項に規定する総務大<wbr>臣の定める額に満たない場合には、当該総務大臣の定める額とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三条　年金たる補償で、その年金たる補償を支給すべき事由が生じた日の属する年度<wbr>（四月一日から翌年三月三十一日までをいう。以下同じ。）の翌々年度以後の期間に係<wbr>る分として支給するものの額の算定の基礎として用いる平均給与額は、前二条の規定に<wbr>より平均給与額として計算した額に、当該年金たる補償を支給すべき月の属する年度の<wbr>前年度の四月一日における国家公務員災害補償法（昭和二十六年法律第百九十一号）に<wbr>規定する職員（以下この条において「国の職員」という。）の給与水準を当該年金たる<wbr>補償を支給すべき事由が生じた日の属する年度の四月一日における国の職員の給与水準<wbr>で除して得た率を基準として総務大臣が定める率を乗じて得た額とする。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三条　年金たる補償で、その年金たる補償を支給すべき事由が生じた日の属する年度<wbr>（四月一日から翌年三月三十一日までをいう。以下同じ。）の翌々年度以後の期間に係<wbr>る分として支給するものの額の算定の基礎として用いる平均給与額は、前二条の規定に<wbr>より平均給与額として計算した額に、当該年金たる補償を支給すべき月の属する年度の<wbr>前年度の四月一日における国家公務員災害補償法（昭和二十六年法律第百九十一号）に<wbr>規定する職員（以下この条において「国の職員」という。）の給与水準を当該年金たる<wbr>補償を支給すべき事由が生じた日の属する年度の四月一日における国の職員の給与水準<wbr>で除して得た率を基準として総務大臣が定める率を乗じて得た額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">２　第一条第四項の規定は、前項の平均給与額について準用する。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">２　第一条第四項の規定は、前項の平均給与額について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第四条　年金たる補償について、第一条及び前条の規定により平均給与額として計算し<wbr>た額が、年金たる補償を受けるべき職員の当該年金たる補償を支給すべき月の属する年<wbr>度の四月一日（以下この条において「基準日」という。）における年齢（遺族補償年金<wbr>を支給すべき場合にあつては、当該支給すべき事由に係る職員の死亡がなかつたものと<wbr>して計算した場合に得られる当該職員の基準日における年齢）に応じて地方公務員災害<wbr>補償法第二条第十一項の規定により総務大臣が最低限度額として定める額に満たないと<wbr>き又は最高限度額として定める額を超えるときは、それぞれその定める額を当該年金た<wbr>る補償に係る平均給与額とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第四条　年金たる補償について、第一条及び前条の規定により平均給与額として計算し<wbr>た額が、年金たる補償を受けるべき職員の当該年金たる補償を支給すべき月の属する年<wbr>度の四月一日（以下この条において「基準日」という。）における年齢（遺族補償年金<wbr>を支給すべき場合にあつては、当該支給すべき事由に係る職員の死亡がなかつたものと<wbr>して計算した場合に得られる当該職員の基準日における年齢）に応じて地方公務員災害<wbr>補償法第二条第十一項の規定により総務大臣が最低限度額として定める額に満たないと<wbr>き又は最高限度額として定める額を超えるときは、それぞれその定める額を当該年金た<wbr>る補償に係る平均給与額とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第五条　休業補償を支給すべき事由が生じた日が当該休業補償に係る療養の開始後一年<wbr>六月を経過した日以後の日である場合において、休業補償について第一条及び第二条の<wbr>規定により平均給与額として計算した額が、休業補償を受けるべき職員の当該休業補償<wbr>を支給すべき事由が生じた日の属する年度の四月一日における年齢に応じて地方公務員<wbr>災害補償法第二条第十三項の規定により総務大臣が最低限度額として定める額に満たな<wbr>いとき又は最高限度額として定める額を超えるときは、それぞれその定める額を当該休<wbr>業補償に係る平均給与額とする。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第五条　休業補償を支給すべき事由が生じた日が当該休業補償に係る療養の開始後一年<wbr>六月を経過した日以後の日である場合において、休業補償について第一条及び第二条の<wbr>規定により平均給与額として計算した額が、休業補償を受けるべき職員の当該休業補償<wbr>を支給すべき事由が生じた日の属する年度の四月一日における年齢に応じて地方公務員<wbr>災害補償法第二条第十三項の規定により総務大臣が最低限度額として定める額に満たな<wbr>いとき又は最高限度額として定める額を超えるときは、それぞれその定める額を当該休<wbr>業補償に係る平均給与額とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和六十三年四月一日から施行する。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和六十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二年九月二九日自治省令第二八号）</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二年九月二九日自治省令第二八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二年十月一日から施行する。ただし、附則の改正規定は、平<wbr>成三年四月一日から施行する。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二年十月一日から施行する。ただし、附則の改正規定は、平<wbr>成三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇<wbr>等に関する法律第五条第二項の規定による平均給与額等を定める省令（次条において「<wbr>新令」という。）第三条の規定は、平成三年四月一日以後の期間に係る傷病補償年金、<wbr>障害補償年金又は遺族補償年金（以下この条において「年金たる補償」という。）につ<wbr>いて適用し、同日前の期間に係る年金たる補償については、なお従前の例による。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の外国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇<wbr>等に関する法律第五条第二項の規定による平均給与額等を定める省令（次条において「<wbr>新令」という。）第三条の規定は、平成三年四月一日以後の期間に係る傷病補償年金、<wbr>障害補償年金又は遺族補償年金（以下この条において「年金たる補償」という。）につ<wbr>いて適用し、同日前の期間に係る年金たる補償については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第三条　新令第五条の規定は、この省令の施行の日（以下「施行日」という。）以後に<wbr>支給すべき事由が生じた休業補償について適用し、施行日前に支給すべき事由が生じた<wbr>休業補償については、なお従前の例による。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第三条　新令第五条の規定は、この省令の施行の日（以下「施行日」という。）以後に<wbr>支給すべき事由が生じた休業補償について適用し、施行日前に支給すべき事由が生じた<wbr>休業補償については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">２　施行日前に療養を開始した職員に休業補償を支給すべき場合における新令第五条の<wbr>規定の適用については、同条中「当該休業補償に係る療養の開始後」とあるのは、「外<wbr>国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律第五<wbr>条第二項の規定による平均給与額等を定める省令の一部を改正する省令（平成二年自治<wbr>省令第二十八号）の施行の日以後」とする。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">２　施行日前に療養を開始した職員に休業補償を支給すべき場合における新令第五条の<wbr>規定の適用については、同条中「当該休業補償に係る療養の開始後」とあるのは、「外<wbr>国の地方公共団体の機関等に派遣される一般職の地方公務員の処遇等に関する法律第五<wbr>条第二項の規定による平均給与額等を定める省令の一部を改正する省令（平成二年自治<wbr>省令第二十八号）の施行の日以後」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第四条　平成三年四月一日前における附則第二項の規定の適用については、同項中「法<wbr>第二条第九項」とあるのは「法第二条第十一項」と、「第三条」とあるのは「第四条」<wbr>とする。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第四条　平成三年四月一日前における附則第二項の規定の適用については、同項中「法<wbr>第二条第九項」とあるのは「法第二条第十一項」と、「第三条」とあるのは「第四条」<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第五条　平成三年四月一日前における附則第三項の規定の適用については、同項中「第<wbr>三条」とあるのは「第四条」とする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第五条　平成三年四月一日前における附則第三項の規定の適用については、同項中「第<wbr>三条」とあるのは「第四条」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第六条　平成三年四月一日前における附則第四項の規定の適用については、「第三条」<wbr>とあるのは「第四条」と、「第二条第九項第一号又は第二号の自治大臣が定める額」と<wbr>あるのは「第二条第十一項の定める額」と、「年金平均給与額」とあるのは「平均給与<wbr>額」とする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第六条　平成三年四月一日前における附則第四項の規定の適用については、「第三条」<wbr>とあるのは「第四条」と、「第二条第九項第一号又は第二号の自治大臣が定める額」と<wbr>あるのは「第二条第十一項の定める額」と、「年金平均給与額」とあるのは「平均給与<wbr>額」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年九月一四日自治省令第四四号）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年九月一四日自治省令第四四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">この省令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施行の日（<wbr>平成十三年一月六日）から施行する。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">この省令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施行の日（<wbr>平成十三年一月六日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年一二月二五日総務省令第一七七号）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年一二月二五日総務省令第一七七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行し、第一条の規定による改正後の地方公務員災害補償法<wbr>施行規則の規定及び第二条の規定による改正後の外国の地方公共団体の機関等に派遣さ<wbr>れる一般職の地方公務員の処遇等に関する法律第五条第二項の規定による平均給与額等<wbr>を定める省令の規定は、平成十三年四月一日から適用する。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行し、第一条の規定による改正後の地方公務員災害補償法<wbr>施行規則の規定及び第二条の規定による改正後の外国の地方公共団体の機関等に派遣さ<wbr>れる一般職の地方公務員の処遇等に関する法律第五条第二項の規定による平均給与額等<wbr>を定める省令の規定は、平成十三年四月一日から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一一月二二日総務省令第一一三号）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一一月二二日総務省令第一一三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成十四年十二月一日から施行する。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、平成十四年十二月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">２　平成十三年四月一日から施行日の前日までの間に地方公務員災害補償法第二条第四<wbr>項に規定する期間又は外国の地方公共団体の機関等に派遣される一般職の地方公務員の<wbr>処遇等に関する法律第五条第二項の規定による平均給与額等を定める省令第一条第一項<wbr>に規定する平均給与額の算定の基礎となる期間があるときの平均給与額の計算について<wbr>は、なお従前の例による。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">２　平成十三年四月一日から施行日の前日までの間に地方公務員災害補償法第二条第四<wbr>項に規定する期間又は外国の地方公共団体の機関等に派遣される一般職の地方公務員の<wbr>処遇等に関する法律第五条第二項の規定による平均給与額等を定める省令第一条第一項<wbr>に規定する平均給与額の算定の基礎となる期間があるときの平均給与額の計算について<wbr>は、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年四月三〇日総務省令第八六号）　抄</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年四月三〇日総務省令第八六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成十六年五月一日から施行する。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成十六年五月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

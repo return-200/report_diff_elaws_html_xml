@@ -1,0 +1,1543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十九年法律第三十七号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十九年法律第三十七号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国際刑事裁判所に対する協力等に関する法律</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国際刑事裁判所に対する協力等に関する法律</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　国際刑事裁判所に対する協力</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　国際刑事裁判所に対する協力</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則（第三条―第五条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則（第三条―第五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二節　証拠の提供等</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二節　証拠の提供等</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一款　証拠の提供（第六条―第十三条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一款　証拠の提供（第六条―第十三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二款　裁判上の証拠調べ及び書類の送達（第十四条―第十六条）</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二款　裁判上の証拠調べ及び書類の送達（第十四条―第十六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三款　受刑者証人等移送（第十七条・第十八条）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三款　受刑者証人等移送（第十七条・第十八条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三節　引渡犯罪人の引渡し等</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第三節　引渡犯罪人の引渡し等</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一款　引渡犯罪人の引渡し（第十九条―第三十三条）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一款　引渡犯罪人の引渡し（第十九条―第三十三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第二款　仮拘禁（第三十四条・第三十五条）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第二款　仮拘禁（第三十四条・第三十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第三款　雑則（第三十六条・第三十七条）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第三款　雑則（第三十六条・第三十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第四節　執行協力（第三十八条―第四十八条）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第四節　執行協力（第三十八条―第四十八条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第五節　雑則（第四十九条―第五十一条）</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第五節　雑則（第四十九条―第五十一条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第三章　国際刑事警察機構に対する措置（第五十二条）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第三章　国際刑事警察機構に対する措置（第五十二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四章　国際刑事裁判所の運営を害する罪（第五十三条―第六十五条）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四章　国際刑事裁判所の運営を害する罪（第五十三条―第六十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、国際刑事裁判所に関するローマ規程（以下「規程」という。）が<wbr>定める集団殺害犯罪その他の国際社会全体の関心事である最も重大な犯罪について、国<wbr>際刑事裁判所の捜査、裁判及び刑の執行等についての必要な協力に関する手続を定める<wbr>とともに、国際刑事裁判所の運営を害する行為についての罰則を定めること等により、<wbr>規程の的確な実施を確保することを目的とする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、国際刑事裁判所に関するローマ規程（以下「規程」という。）が<wbr>定める集団殺害犯罪その他の国際社会全体の関心事である最も重大な犯罪について、国<wbr>際刑事裁判所の捜査、裁判及び刑の執行等についての必要な協力に関する手続を定める<wbr>とともに、国際刑事裁判所の運営を害する行為についての罰則を定めること等により、<wbr>規程の的確な実施を確保することを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において、次の各号に掲げる用語の意義は、それぞれ当該各号に定め<wbr>るところによる。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において、次の各号に掲げる用語の意義は、それぞれ当該各号に定め<wbr>るところによる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">一　国際刑事裁判所　規程第一条に規定する国際刑事裁判所をいう。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">一　国際刑事裁判所　規程第一条に規定する国際刑事裁判所をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">二　管轄刑事事件　規程第五条１及び第七十条１の規定により国際刑事裁判所が管轄権<wbr>を有する犯罪について国際刑事裁判所がその管轄権を行使する事件をいう。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">二　管轄刑事事件　規程第五条１及び第七十条１の規定により国際刑事裁判所が管轄権<wbr>を有する犯罪について国際刑事裁判所がその管轄権を行使する事件をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">三　重大犯罪　規程第五条１の規定により国際刑事裁判所が管轄権を有する国際社会全<wbr>体の関心事である最も重大な犯罪として規程に定める犯罪をいう。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">三　重大犯罪　規程第五条１の規定により国際刑事裁判所が管轄権を有する国際社会全<wbr>体の関心事である最も重大な犯罪として規程に定める犯罪をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">四　証拠の提供　規程第九十三条１の規定による国際刑事裁判所の請求により、国際刑<wbr>事裁判所の捜査又は裁判に係る手続（以下「国際刑事裁判所の手続」という。）に必要<wbr>な証拠を国際刑事裁判所に提供することをいう。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">四　証拠の提供　規程第九十三条１の規定による国際刑事裁判所の請求により、国際刑<wbr>事裁判所の捜査又は裁判に係る手続（以下「国際刑事裁判所の手続」という。）に必要<wbr>な証拠を国際刑事裁判所に提供することをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">五　裁判上の証拠調べ　規程第九十三条１の規定による国際刑事裁判所の請求により、<wbr>規程第三十九条２に規定する上訴裁判部又は第一審裁判部が行う証拠調べについての援<wbr>助として日本国の裁判所が行う証拠調べをいう。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">五　裁判上の証拠調べ　規程第九十三条１の規定による国際刑事裁判所の請求により、<wbr>規程第三十九条２に規定する上訴裁判部又は第一審裁判部が行う証拠調べについての援<wbr>助として日本国の裁判所が行う証拠調べをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">六　書類の送達　規程第九十三条１の規定による国際刑事裁判所の請求により、規程第<wbr>三十九条２に規定する上訴裁判部、第一審裁判部又は予審裁判部が行う書類の送達につ<wbr>いての援助として日本国の裁判所が行う書類の送達をいう。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">六　書類の送達　規程第九十三条１の規定による国際刑事裁判所の請求により、規程第<wbr>三十九条２に規定する上訴裁判部、第一審裁判部又は予審裁判部が行う書類の送達につ<wbr>いての援助として日本国の裁判所が行う書類の送達をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">七　受刑者証人等移送　規程第九十三条１及び７の規定による国際刑事裁判所の請求に<wbr>より、証人その他の国際刑事裁判所の手続における関係人（国際刑事裁判所の捜査又は<wbr>裁判の対象とされる者を除く。）として出頭させることを可能とするため、国内受刑者<wbr>（日本国において懲役刑若しくは禁錮こ刑又は国際受刑者移送法（平成十四年法律第六<wbr>十六号）第二条第二号に定める共助刑の執行として拘禁されている者をいう。以下同じ<wbr>。）を移送することをいう。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">七　受刑者証人等移送　規程第九十三条１及び７の規定による国際刑事裁判所の請求に<wbr>より、証人その他の国際刑事裁判所の手続における関係人（国際刑事裁判所の捜査又は<wbr>裁判の対象とされる者を除く。）として出頭させることを可能とするため、国内受刑者<wbr>（日本国において懲役刑若しくは禁錮こ刑又は国際受刑者移送法（平成十四年法律第六<wbr>十六号）第二条第二号に定める共助刑の執行として拘禁されている者をいう。以下同じ<wbr>。）を移送することをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">八　引渡犯罪人の引渡し　規程第八十九条１又は第百十一条の規定による国際刑事裁判<wbr>所の引渡しの請求により、その引渡しの対象とされた者（以下「引渡犯罪人」という。<wbr>）の引渡しをすることをいう。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">八　引渡犯罪人の引渡し　規程第八十九条１又は第百十一条の規定による国際刑事裁判<wbr>所の引渡しの請求により、その引渡しの対象とされた者（以下「引渡犯罪人」という。<wbr>）の引渡しをすることをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">九　仮拘禁　規程第九十二条１の規定による国際刑事裁判所の仮逮捕の請求により、そ<wbr>の仮逮捕の対象とされた者（以下「仮拘禁犯罪人」という。）を仮に拘禁することをい<wbr>う。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">九　仮拘禁　規程第九十二条１の規定による国際刑事裁判所の仮逮捕の請求により、そ<wbr>の仮逮捕の対象とされた者（以下「仮拘禁犯罪人」という。）を仮に拘禁することをい<wbr>う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">十　執行協力　規程第七十五条５若しくは第百九条１の規定により罰金刑（国際刑事裁<wbr>判所が規程第七十条３又は第七十七条２（ａ）の規定により命ずる罰金をいう。以下同<wbr>じ。）、没収刑（国際刑事裁判所が規程第七十七条２（ｂ）の規定により命ずる没収を<wbr>いう。以下同じ。）若しくは被害回復命令（国際刑事裁判所が規程第七十五条２の規定<wbr>により発する命令をいう。以下同じ。）の確定裁判の執行をすること又は規程第七十五<wbr>条４若しくは第九十三条１の規定により没収刑若しくは被害回復命令のための保全をす<wbr>ることをいう。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">十　執行協力　規程第七十五条５若しくは第百九条１の規定により罰金刑（国際刑事裁<wbr>判所が規程第七十条３又は第七十七条２（ａ）の規定により命ずる罰金をいう。以下同<wbr>じ。）、没収刑（国際刑事裁判所が規程第七十七条２（ｂ）の規定により命ずる没収を<wbr>いう。以下同じ。）若しくは被害回復命令（国際刑事裁判所が規程第七十五条２の規定<wbr>により発する命令をいう。以下同じ。）の確定裁判の執行をすること又は規程第七十五<wbr>条４若しくは第九十三条１の規定により没収刑若しくは被害回復命令のための保全をす<wbr>ることをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">十一　協力　証拠の提供、裁判上の証拠調べ、書類の送達、受刑者証人等移送、引渡犯<wbr>罪人の引渡し、仮拘禁及び執行協力をいう。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">十一　協力　証拠の提供、裁判上の証拠調べ、書類の送達、受刑者証人等移送、引渡犯<wbr>罪人の引渡し、仮拘禁及び執行協力をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">十二　請求犯罪　協力（引渡犯罪人の引渡し及び仮拘禁を除く。）の請求において犯さ<wbr>れたとされている犯罪をいう。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">十二　請求犯罪　協力（引渡犯罪人の引渡し及び仮拘禁を除く。）の請求において犯さ<wbr>れたとされている犯罪をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">十三　引渡犯罪　引渡犯罪人の引渡し又は仮拘禁に係る協力の請求において当該引渡犯<wbr>罪人又は仮拘禁犯罪人が犯したとされている犯罪をいう。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">十三　引渡犯罪　引渡犯罪人の引渡し又は仮拘禁に係る協力の請求において当該引渡犯<wbr>罪人又は仮拘禁犯罪人が犯したとされている犯罪をいう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第二章　国際刑事裁判所に対する協力</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第二章　国際刑事裁判所に対する協力</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（協力の請求の受理等）</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（協力の請求の受理等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第三条　国際刑事裁判所に対する協力に関する次に掲げる事務は、外務大臣が行う。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第三条　国際刑事裁判所に対する協力に関する次に掲げる事務は、外務大臣が行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">一　国際刑事裁判所からの協力の請求の受理</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">一　国際刑事裁判所からの協力の請求の受理</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">二　国際刑事裁判所との協議及び国際刑事裁判所に対して行うべき通報</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">二　国際刑事裁判所との協議及び国際刑事裁判所に対して行うべき通報</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">三　国際刑事裁判所に対する証拠の送付及び罰金刑、没収刑又は被害回復命令の確定裁<wbr>判の執行に係る財産の引渡し並びに書類の送達についての結果の通知</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">三　国際刑事裁判所に対する証拠の送付及び罰金刑、没収刑又は被害回復命令の確定裁<wbr>判の執行に係る財産の引渡し並びに書類の送達についての結果の通知 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（外務大臣の措置）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（外務大臣の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　外務大臣は、国際刑事裁判所から協力の請求を受理したときは、請求の方式が<wbr>規程に適合しないと認める場合を除き、国際刑事裁判所が発する協力請求書又は外務大<wbr>臣の作成した協力の請求があったことを証明する書面に関係書類を添付し、意見を付し<wbr>て、これを法務大臣に送付するものとする。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　外務大臣は、国際刑事裁判所から協力の請求を受理したときは、請求の方式が<wbr>規程に適合しないと認める場合を除き、国際刑事裁判所が発する協力請求書又は外務大<wbr>臣の作成した協力の請求があったことを証明する書面に関係書類を添付し、意見を付し<wbr>て、これを法務大臣に送付するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（国際刑事裁判所との協議）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（国際刑事裁判所との協議）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第五条　外務大臣は、国際刑事裁判所に対する協力に関し、必要に応じ、国際刑事裁判<wbr>所と協議するものとする。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第五条　外務大臣は、国際刑事裁判所に対する協力に関し、必要に応じ、国際刑事裁判<wbr>所と協議するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、国際刑事裁判所に対する協力に関し、国際刑事裁判所との協議が必要<wbr>であると認めるときは、外務大臣に対し、前項の規定による協議をすることを求めるも<wbr>のとする。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、国際刑事裁判所に対する協力に関し、国際刑事裁判所との協議が必要<wbr>であると認めるときは、外務大臣に対し、前項の規定による協議をすることを求めるも<wbr>のとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第二節　証拠の提供等</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第二節　証拠の提供等</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第一款　証拠の提供</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第一款　証拠の提供</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第六条　法務大臣は、外務大臣から第四条の規定により証拠の提供に係る協力の請求に<wbr>関する書面の送付を受けた場合において、次の各号のいずれにも該当しないときは、次<wbr>項又は第三項に規定する措置をとるものとする。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第六条　法務大臣は、外務大臣から第四条の規定により証拠の提供に係る協力の請求に<wbr>関する書面の送付を受けた場合において、次の各号のいずれにも該当しないときは、次<wbr>項又は第三項に規定する措置をとるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">一　当該協力の請求が国際捜査共助等に関する法律（昭和五十五年法律第六十九号）第<wbr>一条第一号に規定する共助（以下この号及び第三十九条第一項第二号において「捜査共<wbr>助」という。）の要請と競合し、かつ、規程の定めるところによりその要請を優先させ<wbr>ることができる場合において、当該捜査共助をすることが相当であると認めるとき。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">一　当該協力の請求が国際捜査共助等に関する法律（昭和五十五年法律第六十九号）第<wbr>一条第一号に規定する共助（以下この号及び第三十九条第一項第二号において「捜査共<wbr>助」という。）の要請と競合し、かつ、規程の定めるところによりその要請を優先させ<wbr>ることができる場合において、当該捜査共助をすることが相当であると認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">二　当該協力の請求に応ずることにより、規程第九十八条１に規定する国際法に基づく<wbr>義務に反することとなるとき。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">二　当該協力の請求に応ずることにより、規程第九十八条１に規定する国際法に基づく<wbr>義務に反することとなるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">三　当該協力の請求に応ずることにより、日本国の安全が害されるおそれがあるとき。<wbr></span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">三　当該協力の請求に応ずることにより、日本国の安全が害されるおそれがあるとき。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">四　請求犯罪が規程第七十条１に規定する犯罪である場合において、当該請求犯罪に係<wbr>る行為が日本国内において行われたとした場合にその行為が日本国の法令によれば罪に<wbr>当たるものでないとき。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">四　請求犯罪が規程第七十条１に規定する犯罪である場合において、当該請求犯罪に係<wbr>る行為が日本国内において行われたとした場合にその行為が日本国の法令によれば罪に<wbr>当たるものでないとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">五　当該協力の請求に応ずることにより、請求犯罪以外の罪に係る事件で日本国の検察<wbr>官、検察事務官若しくは司法警察職員によって捜査され又は日本国の裁判所に係属して<wbr>いるものについて、その捜査又は裁判を妨げるおそれがあり、直ちに当該請求に応ずる<wbr>ことが相当でないと認めるとき。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">五　当該協力の請求に応ずることにより、請求犯罪以外の罪に係る事件で日本国の検察<wbr>官、検察事務官若しくは司法警察職員によって捜査され又は日本国の裁判所に係属して<wbr>いるものについて、その捜査又は裁判を妨げるおそれがあり、直ちに当該請求に応ずる<wbr>ことが相当でないと認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">六　その他直ちに当該協力の請求に応じないことに正当な理由があるとき。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">六　その他直ちに当該協力の請求に応じないことに正当な理由があるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法務大臣がとる措置は、次項に規定する場合を除き、次の各号の<wbr>いずれかとする。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法務大臣がとる措置は、次項に規定する場合を除き、次の各号の<wbr>いずれかとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　相当と認める地方検察庁の検事正に対し、関係書類を送付して、証拠の提供に係る<wbr>協力に必要な証拠の収集を命ずること。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　相当と認める地方検察庁の検事正に対し、関係書類を送付して、証拠の提供に係る<wbr>協力に必要な証拠の収集を命ずること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　国家公安委員会に証拠の提供に係る協力の請求に関する書面を送付すること。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　国家公安委員会に証拠の提供に係る協力の請求に関する書面を送付すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">三　海上保安庁長官その他の刑事訴訟法（昭和二十三年法律第百三十一号）第百九十条<wbr>に規定する司法警察職員として職務を行うべき者の置かれている国の機関の長に証拠の<wbr>提供に係る協力の請求に関する書面を送付すること。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">三　海上保安庁長官その他の刑事訴訟法（昭和二十三年法律第百三十一号）第百九十条<wbr>に規定する司法警察職員として職務を行うべき者の置かれている国の機関の長に証拠の<wbr>提供に係る協力の請求に関する書面を送付すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する協力の請求が裁判所、検察官又は司法警察員の保管する訴訟に関<wbr>する書類の提供に係るものであるときは、法務大臣は、その書類の保管者に協力の請求<wbr>に関する書面を送付するものとする。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する協力の請求が裁判所、検察官又は司法警察員の保管する訴訟に関<wbr>する書類の提供に係るものであるときは、法務大臣は、その書類の保管者に協力の請求<wbr>に関する書面を送付するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">４　法務大臣は、前二項に規定する措置その他の証拠の提供に係る協力に関する措置を<wbr>とるため必要があると認めるときは、関係人の所在その他必要な事項について調査を行<wbr>うことができる。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">４　法務大臣は、前二項に規定する措置その他の証拠の提供に係る協力に関する措置を<wbr>とるため必要があると認めるときは、関係人の所在その他必要な事項について調査を行<wbr>うことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（国家公安委員会の措置）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（国家公安委員会の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第七条　国家公安委員会は、前条第二項第二号の書面の送付を受けたときは、相当と認<wbr>める都道府県警察に対し、関係書類を送付して、証拠の提供に係る協力に必要な証拠の<wbr>収集を指示するものとする。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第七条　国家公安委員会は、前条第二項第二号の書面の送付を受けたときは、相当と認<wbr>める都道府県警察に対し、関係書類を送付して、証拠の提供に係る協力に必要な証拠の<wbr>収集を指示するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（協力の実施）</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（協力の実施）</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">第八条　国際捜査共助等に関する法律第七条、第八条、第十条、第十二条及び第十三条<wbr>の規定は、第六条第一項の請求による証拠の提供に係る協力について準用する。この場<wbr>合において、同法第七条第一項中「第五条第一項第一号」とあるのは「国際刑事裁判所<wbr>に対する協力等に関する法律（平成十九年法律第三十七号）第六条第二項第一号」と、<wbr>同条第二項中「前条」とあるのは「国際刑事裁判所に対する協力等に関する法律第七条<wbr>」と、同条第三項中「第五条第一項第三号」とあるのは「国際刑事裁判所に対する協力<wbr>等に関する法律第六条第二項第三号」と、同法第十三条中「この法律に特別の定めがあ<wbr>る」とあるのは「国際刑事裁判所に対する協力等に関する法律第八条において準用する<wbr>第八条、第十条及び前条に規定する」と読み替えるものとする。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">第八条　国際捜査共助等に関する法律第七条、第八条、第十条、第十二条及び第十三条<wbr>の規定は、第六条第一項の請求による証拠の提供に係る協力について準用する。この場<wbr>合において、同法第七条第一項中「第五条第一項第一号」とあるのは「国際刑事裁判所<wbr>に対する協力等に関する法律（平成十九年法律第三十七号）第六条第二項第一号」と、<wbr>同条第二項中「前条」とあるのは「国際刑事裁判所に対する協力等に関する法律第七条<wbr>」と、同条第三項中「第五条第一項第三号」とあるのは「国際刑事裁判所に対する協力<wbr>等に関する法律第六条第二項第三号」と、同法第十三条中「この法律に特別の定めがあ<wbr>る」とあるのは「国際刑事裁判所に対する協力等に関する法律第八条において準用する<wbr>第八条、第十条及び前条に規定する」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（虚偽の証明書の提出に対する罰則）</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（虚偽の証明書の提出に対する罰則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第九条　前条において準用する国際捜査共助等に関する法律第八条第三項の規定による<wbr>証明書の提出を求められた者が、虚偽の証明書を提出したときは、一年以下の懲役又は<wbr>五十万円以下の罰金に処する。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第九条　前条において準用する国際捜査共助等に関する法律第八条第三項の規定による<wbr>証明書の提出を求められた者が、虚偽の証明書を提出したときは、一年以下の懲役又は<wbr>五十万円以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、刑法（明治四十年法律第四十五号）又は第四章の罪に触れるときは<wbr>、これを適用しない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、刑法（明治四十年法律第四十五号）又は第四章の罪に触れるときは<wbr>、これを適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（処分を終えた場合等の措置）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（処分を終えた場合等の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第十条　検事正は、証拠の提供に係る協力に必要な証拠の収集を終えたときは、速やか<wbr>に、意見を付して、法務大臣に対し、収集した証拠を送付しなければならない。第六条<wbr>第二項第三号の国の機関の長が協力に必要な証拠の収集を終えたときも、同様とする。<wbr></span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第十条　検事正は、証拠の提供に係る協力に必要な証拠の収集を終えたときは、速やか<wbr>に、意見を付して、法務大臣に対し、収集した証拠を送付しなければならない。第六条<wbr>第二項第三号の国の機関の長が協力に必要な証拠の収集を終えたときも、同様とする。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県公安委員会は、都道府県警察の警視総監又は道府県警察本部長が協力に必<wbr>要な証拠の収集を終えたときは、速やかに、意見を付して、国家公安委員会に対し、収<wbr>集した証拠を送付しなければならない。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　都道府県公安委員会は、都道府県警察の警視総監又は道府県警察本部長が協力に必<wbr>要な証拠の収集を終えたときは、速やかに、意見を付して、国家公安委員会に対し、収<wbr>集した証拠を送付しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">３　国家公安委員会は、前項の証拠の送付を受けたときは、速やかに、意見を付して、<wbr>法務大臣に対し、これを送付するものとする。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">３　国家公安委員会は、前項の証拠の送付を受けたときは、速やかに、意見を付して、<wbr>法務大臣に対し、これを送付するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">４　第六条第三項の規定により証拠の提供に係る協力の請求に関する書面の送付を受け<wbr>た訴訟に関する書類の保管者は、速やかに、意見を付して、法務大臣に対し、当該書類<wbr>又はその謄本を送付しなければならない。ただし、直ちにこれを送付することに支障が<wbr>あると認めるときは、速やかに、法務大臣に対し、その旨を通知しなければならない。<wbr></span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">４　第六条第三項の規定により証拠の提供に係る協力の請求に関する書面の送付を受け<wbr>た訴訟に関する書類の保管者は、速やかに、意見を付して、法務大臣に対し、当該書類<wbr>又はその謄本を送付しなければならない。ただし、直ちにこれを送付することに支障が<wbr>あると認めるときは、速やかに、法務大臣に対し、その旨を通知しなければならない。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（証拠の提供の条件）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（証拠の提供の条件）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法務大臣は、前条第一項、第三項又は第四項の規定により送付を受けた証拠<wbr>を国際刑事裁判所に提供する場合において、必要があると認めるときは、当該証拠の使<wbr>用又は返還に関する条件を定めるものとする。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法務大臣は、前条第一項、第三項又は第四項の規定により送付を受けた証拠<wbr>を国際刑事裁判所に提供する場合において、必要があると認めるときは、当該証拠の使<wbr>用又は返還に関する条件を定めるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（協力をしない場合の通知）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（協力をしない場合の通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法務大臣は、第六条第二項第二号若しくは第三号又は第三項の規定による措<wbr>置をとった後において、同条第一項第一号から第四号までのいずれかに該当すると認め<wbr>て、証拠の提供に係る協力をしないこととするときは、遅滞なく、その旨を証拠の提供<wbr>に係る協力の請求に関する書面の送付を受けた者に通知するものとする。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法務大臣は、第六条第二項第二号若しくは第三号又は第三項の規定による措<wbr>置をとった後において、同条第一項第一号から第四号までのいずれかに該当すると認め<wbr>て、証拠の提供に係る協力をしないこととするときは、遅滞なく、その旨を証拠の提供<wbr>に係る協力の請求に関する書面の送付を受けた者に通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（外務大臣等との協議）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（外務大臣等との協議）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法務大臣は、次の各号のいずれかに該当する場合には、あらかじめ、外務大<wbr>臣と協議するものとする。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法務大臣は、次の各号のいずれかに該当する場合には、あらかじめ、外務大<wbr>臣と協議するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">一　第六条第一項第一号から第三号までのいずれかに該当することを理由として、証拠<wbr>の提供に係る協力をしないこととするとき。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">一　第六条第一項第一号から第三号までのいずれかに該当することを理由として、証拠<wbr>の提供に係る協力をしないこととするとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">二　第六条第一項第五号又は第六号のいずれかに該当することを理由として、証拠の提<wbr>供に係る協力をすることを留保するとき。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">二　第六条第一項第五号又は第六号のいずれかに該当することを理由として、証拠の提<wbr>供に係る協力をすることを留保するとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">三　第十一条の条件を定めるとき。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">三　第十一条の条件を定めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">２　国際捜査共助等に関する法律第十六条第二項の規定は、証拠の提供に係る協力の請<wbr>求に関し法務大臣が第六条第二項各号の措置をとることとする場合について準用する。<wbr></span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">２　国際捜査共助等に関する法律第十六条第二項の規定は、証拠の提供に係る協力の請<wbr>求に関し法務大臣が第六条第二項各号の措置をとることとする場合について準用する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第二款　裁判上の証拠調べ及び書類の送達</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第二款　裁判上の証拠調べ及び書類の送達</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法務大臣は、外務大臣から第四条の規定により裁判上の証拠調べ又は書類の<wbr>送達に係る協力の請求に関する書面の送付を受けた場合において、第六条第一項各号の<wbr>いずれにも該当しないときは、相当と認める地方裁判所に対し、当該協力の請求に関す<wbr>る書面を送付するものとする。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法務大臣は、外務大臣から第四条の規定により裁判上の証拠調べ又は書類の<wbr>送達に係る協力の請求に関する書面の送付を受けた場合において、第六条第一項各号の<wbr>いずれにも該当しないときは、相当と認める地方裁判所に対し、当該協力の請求に関す<wbr>る書面を送付するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（裁判所の措置等）</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（裁判所の措置等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第十五条　外国裁判所ノ嘱託ニ因ル共助法（明治三十八年法律第六十三号）第一条第二<wbr>項、第一条ノ二第一項（第一号、第五号及び第六号を除く。）、第二条及び第三条の規<wbr>定は、裁判上の証拠調べ又は書類の送達に係る協力について準用する。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第十五条　外国裁判所ノ嘱託ニ因ル共助法（明治三十八年法律第六十三号）第一条第二<wbr>項、第一条ノ二第一項（第一号、第五号及び第六号を除く。）、第二条及び第三条の規<wbr>定は、裁判上の証拠調べ又は書類の送達に係る協力について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">２　前条の地方裁判所は、裁判上の証拠調べ又は書類の送達を終えたときは、速やかに<wbr>、法務大臣に対し、当該裁判上の証拠調べにより得られた証拠を送付し、又は書類の送<wbr>達の結果を通知しなければならない。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">２　前条の地方裁判所は、裁判上の証拠調べ又は書類の送達を終えたときは、速やかに<wbr>、法務大臣に対し、当該裁判上の証拠調べにより得られた証拠を送付し、又は書類の送<wbr>達の結果を通知しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第十六条　第十二条及び第十三条第一項（第三号を除く。）の規定は、法務大臣が第十<wbr>四条の規定による裁判上の証拠調べ又は書類の送達に係る協力に係る措置をとった場合<wbr>について準用する。この場合において、第十二条中「同条第一項第一号」とあるのは、<wbr>「第六条第一項第一号」と読み替えるものとする。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第十六条　第十二条及び第十三条第一項（第三号を除く。）の規定は、法務大臣が第十<wbr>四条の規定による裁判上の証拠調べ又は書類の送達に係る協力に係る措置をとった場合<wbr>について準用する。この場合において、第十二条中「同条第一項第一号」とあるのは、<wbr>「第六条第一項第一号」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第三款　受刑者証人等移送</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第三款　受刑者証人等移送</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（受刑者証人等移送の決定等）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（受刑者証人等移送の決定等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第十七条　法務大臣は、外務大臣から第四条の規定により受刑者証人等移送に係る協力<wbr>の請求に関する書面の送付を受けた場合において、第六条第一項第四号及び次の各号の<wbr>いずれにも該当せず、かつ、当該請求に応ずることが相当であると認めるときは、三十<wbr>日を超えない範囲内で国内受刑者を移送する期間を定めて、当該受刑者証人等移送の決<wbr>定をするものとする。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第十七条　法務大臣は、外務大臣から第四条の規定により受刑者証人等移送に係る協力<wbr>の請求に関する書面の送付を受けた場合において、第六条第一項第四号及び次の各号の<wbr>いずれにも該当せず、かつ、当該請求に応ずることが相当であると認めるときは、三十<wbr>日を超えない範囲内で国内受刑者を移送する期間を定めて、当該受刑者証人等移送の決<wbr>定をするものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">一　国内受刑者の書面による同意がないとき。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">一　国内受刑者の書面による同意がないとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">二　国内受刑者が二十歳に満たないとき。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">二　国内受刑者が二十歳に満たないとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">三　国内受刑者の犯した罪に係る事件が日本国の裁判所に係属するとき。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">三　国内受刑者の犯した罪に係る事件が日本国の裁判所に係属するとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項の決定をする場合において、必要があると認めるときは、受刑者<wbr>証人等移送に関する条件を定めるものとする。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項の決定をする場合において、必要があると認めるときは、受刑者<wbr>証人等移送に関する条件を定めるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">３　法務大臣は、第一項の請求に応ずることが相当でないと認めて受刑者証人等移送を<wbr>しないこととするとき及び前項の条件を定めるときは、あらかじめ、外務大臣と協議す<wbr>るものとする。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">３　法務大臣は、第一項の請求に応ずることが相当でないと認めて受刑者証人等移送を<wbr>しないこととするとき及び前項の条件を定めるときは、あらかじめ、外務大臣と協議す<wbr>るものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">４　国際捜査共助等に関する法律第十九条第三項の規定は、第一項の決定をした場合に<wbr>ついて準用する。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">４　国際捜査共助等に関する法律第十九条第三項の規定は、第一項の決定をした場合に<wbr>ついて準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（国内受刑者の引渡しに関する措置等）</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">（国内受刑者の引渡しに関する措置等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法務大臣は、前条第四項において準用する国際捜査共助等に関する法律第十<wbr>九条第三項の規定による命令をしたときは、外務大臣に受領許可証を送付しなければな<wbr>らない。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">第十八条　法務大臣は、前条第四項において準用する国際捜査共助等に関する法律第十<wbr>九条第三項の規定による命令をしたときは、外務大臣に受領許可証を送付しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">２　外務大臣は、前項の規定による受領許可証の送付を受けたときは、直ちに、これを<wbr>国際刑事裁判所に送付しなければならない。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">２　外務大臣は、前項の規定による受領許可証の送付を受けたときは、直ちに、これを<wbr>国際刑事裁判所に送付しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する命令を受けた刑事施設の長又はその指名する刑事施設の職員は、<wbr>速やかに、国内受刑者を国際刑事裁判所の指定する場所に護送し、国際刑事裁判所の指<wbr>定する者であって受領許可証を有するものに対し、当該国内受刑者を引き渡さなければ<wbr>ならない。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する命令を受けた刑事施設の長又はその指名する刑事施設の職員は、<wbr>速やかに、国内受刑者を国際刑事裁判所の指定する場所に護送し、国際刑事裁判所の指<wbr>定する者であって受領許可証を有するものに対し、当該国内受刑者を引き渡さなければ<wbr>ならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">４　国際捜査共助等に関する法律第二十一条及び第二十二条の規定は、前項の規定によ<wbr>る国際刑事裁判所の指定する者に対する引渡しに係る国内受刑者について準用する。こ<wbr>の場合において、同法第二十一条中「受刑者証人移送」とあるのは、「国際刑事裁判所<wbr>に対する協力等に関する法律第二条第七号に規定する受刑者証人等移送」と読み替える<wbr>ものとする。</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">４　国際捜査共助等に関する法律第二十一条及び第二十二条の規定は、前項の規定によ<wbr>る国際刑事裁判所の指定する者に対する引渡しに係る国内受刑者について準用する。こ<wbr>の場合において、同法第二十一条中「受刑者証人移送」とあるのは、「国際刑事裁判所<wbr>に対する協力等に関する法律第二条第七号に規定する受刑者証人等移送」と読み替える<wbr>ものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第三節　引渡犯罪人の引渡し等</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第三節　引渡犯罪人の引渡し等</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一款　引渡犯罪人の引渡し</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一款　引渡犯罪人の引渡し</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しの要件）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しの要件）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第十九条　引渡犯罪人の引渡しは、引渡犯罪が重大犯罪である場合には、次の各号のい<wbr>ずれかに該当する場合を除き、これを行うことができる。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第十九条　引渡犯罪人の引渡しは、引渡犯罪が重大犯罪である場合には、次の各号のい<wbr>ずれかに該当する場合を除き、これを行うことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪に係る事件が日本国の裁判所に係属するとき。ただし、当該事件について<wbr>、国際刑事裁判所において、規程第十七条１の規定により事件を受理する旨の決定をし<wbr>、又は公判手続を開始しているときは、この限りでない。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪に係る事件が日本国の裁判所に係属するとき。ただし、当該事件について<wbr>、国際刑事裁判所において、規程第十七条１の規定により事件を受理する旨の決定をし<wbr>、又は公判手続を開始しているときは、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪に係る事件について日本国の裁判所において確定判決を経たとき。ただし<wbr>、当該事件について、国際刑事裁判所において、規程第十七条１の規定により事件を受<wbr>理する旨の決定をし、又は有罪の判決の言渡しをしているときは、この限りでない。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪に係る事件について日本国の裁判所において確定判決を経たとき。ただし<wbr>、当該事件について、国際刑事裁判所において、規程第十七条１の規定により事件を受<wbr>理する旨の決定をし、又は有罪の判決の言渡しをしているときは、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪について国際刑事裁判所において有罪の判決の言渡しがある場合を除き、<wbr>引渡犯罪人が引渡犯罪を行っていないことが明らかに認められるとき。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪について国際刑事裁判所において有罪の判決の言渡しがある場合を除き、<wbr>引渡犯罪人が引渡犯罪を行っていないことが明らかに認められるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">２　引渡犯罪人の引渡しは、引渡犯罪が規程第七十条１に規定する犯罪である場合には<wbr>、次の各号のいずれかに該当する場合を除き、これを行うことができる。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">２　引渡犯罪人の引渡しは、引渡犯罪が規程第七十条１に規定する犯罪である場合には<wbr>、次の各号のいずれかに該当する場合を除き、これを行うことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪に係る行為が日本国内において行われたとした場合において、当該行為が<wbr>日本国の法令により死刑又は無期若しくは長期三年以上の懲役若しくは禁錮に処すべき<wbr>罪に当たるものでないとき。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪に係る行為が日本国内において行われたとした場合において、当該行為が<wbr>日本国の法令により死刑又は無期若しくは長期三年以上の懲役若しくは禁錮に処すべき<wbr>罪に当たるものでないとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪に係る行為が日本国内において行われ、又は引渡犯罪に係る裁判が日本国<wbr>の裁判所において行われたとした場合において、日本国の法令により引渡犯罪人に刑罰<wbr>を科し、又はこれを執行することができないと認められるとき。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪に係る行為が日本国内において行われ、又は引渡犯罪に係る裁判が日本国<wbr>の裁判所において行われたとした場合において、日本国の法令により引渡犯罪人に刑罰<wbr>を科し、又はこれを執行することができないと認められるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪について国際刑事裁判所において有罪の判決の言渡しがある場合を除き、<wbr>引渡犯罪人がその引渡犯罪に係る行為を行ったことを疑うに足りる相当な理由がないと<wbr>き。</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪について国際刑事裁判所において有罪の判決の言渡しがある場合を除き、<wbr>引渡犯罪人がその引渡犯罪に係る行為を行ったことを疑うに足りる相当な理由がないと<wbr>き。</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">四　引渡犯罪に係る事件が日本国の裁判所に係属するとき、又はその事件について日本<wbr>国の裁判所において確定判決を経たとき。</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">四　引渡犯罪に係る事件が日本国の裁判所に係属するとき、又はその事件について日本<wbr>国の裁判所において確定判決を経たとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">五　引渡犯罪人の犯した引渡犯罪以外の罪に係る事件が日本国の裁判所に係属するとき<wbr>、又はその事件について引渡犯罪人が日本国の裁判所において刑に処せられ、その執行<wbr>を終わらず、若しくは執行を受けないこととなっていないとき。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">五　引渡犯罪人の犯した引渡犯罪以外の罪に係る事件が日本国の裁判所に係属するとき<wbr>、又はその事件について引渡犯罪人が日本国の裁判所において刑に処せられ、その執行<wbr>を終わらず、若しくは執行を受けないこととなっていないとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">六　引渡犯罪人が日本国民であるとき。</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">六　引渡犯罪人が日本国民であるとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十条　法務大臣は、外務大臣から第四条の規定により引渡犯罪人の引渡しに係る協<wbr>力の請求に関する書面の送付を受けたときは、次の各号のいずれかに該当する場合を除<wbr>き、東京高等検察庁検事長に対し、関係書類を送付して、引渡犯罪人を引き渡すことが<wbr>できる場合に該当するかどうかについて東京高等裁判所に審査の請求をすべき旨を命ず<wbr>るものとする。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十条　法務大臣は、外務大臣から第四条の規定により引渡犯罪人の引渡しに係る協<wbr>力の請求に関する書面の送付を受けたときは、次の各号のいずれかに該当する場合を除<wbr>き、東京高等検察庁検事長に対し、関係書類を送付して、引渡犯罪人を引き渡すことが<wbr>できる場合に該当するかどうかについて東京高等裁判所に審査の請求をすべき旨を命ず<wbr>るものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">一　明らかに前条第一項各号又は第二項各号のいずれかに該当すると認めるとき。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">一　明らかに前条第一項各号又は第二項各号のいずれかに該当すると認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">二　当該協力の請求が逃亡犯罪人引渡法（昭和二十八年法律第六十八号）第三条に規定<wbr>する逃亡犯罪人の引渡しの請求又は同法第二十三条第一項に規定する犯罪人を仮に拘禁<wbr>することの請求と競合し、かつ、規程の定めるところによりこれらの請求を優先させる<wbr>ことができる場合において、当該逃亡犯罪人の引渡し又は犯罪人を仮に拘禁することが<wbr>相当であると認めるとき。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">二　当該協力の請求が逃亡犯罪人引渡法（昭和二十八年法律第六十八号）第三条に規定<wbr>する逃亡犯罪人の引渡しの請求又は同法第二十三条第一項に規定する犯罪人を仮に拘禁<wbr>することの請求と競合し、かつ、規程の定めるところによりこれらの請求を優先させる<wbr>ことができる場合において、当該逃亡犯罪人の引渡し又は犯罪人を仮に拘禁することが<wbr>相当であると認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">三　当該協力の請求に応ずることにより、規程第九十八条に規定する国際法に基づく義<wbr>務又は国際約束に基づく義務に反することとなるとき。</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">三　当該協力の請求に応ずることにより、規程第九十八条に規定する国際法に基づく義<wbr>務又は国際約束に基づく義務に反することとなるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">四　当該協力の請求に応ずることにより、引渡犯罪以外の罪に係る事件で日本国の検察<wbr>官、検察事務官若しくは司法警察職員によって捜査されているもの又は引渡犯罪以外の<wbr>罪に係る事件（引渡犯罪人以外の者が犯したものに限る。）で日本国の裁判所に係属し<wbr>ているものについて、その捜査又は裁判を妨げるおそれがあり、直ちに当該請求に応ず<wbr>ることが相当でないと認めるとき。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">四　当該協力の請求に応ずることにより、引渡犯罪以外の罪に係る事件で日本国の検察<wbr>官、検察事務官若しくは司法警察職員によって捜査されているもの又は引渡犯罪以外の<wbr>罪に係る事件（引渡犯罪人以外の者が犯したものに限る。）で日本国の裁判所に係属し<wbr>ているものについて、その捜査又は裁判を妨げるおそれがあり、直ちに当該請求に応ず<wbr>ることが相当でないと認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">五　その他直ちに当該協力の請求に応じないことに正当な理由があるとき。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">五　その他直ちに当該協力の請求に応じないことに正当な理由があるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項の規定による命令その他引渡犯罪人の引渡しに関する措置をとる<wbr>ため必要があると認めるときは、引渡犯罪人の所在その他必要な事項について調査を行<wbr>うことができる。</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項の規定による命令その他引渡犯罪人の引渡しに関する措置をとる<wbr>ため必要があると認めるときは、引渡犯罪人の所在その他必要な事項について調査を行<wbr>うことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の拘禁）</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の拘禁）</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　東京高等検察庁検事長は、前条第一項の規定による命令を受けたときは、<wbr>引渡犯罪人が仮拘禁許可状により拘禁され、又は仮拘禁許可状による拘禁を停止されて<wbr>いる場合を除き、東京高等検察庁の検察官をして、東京高等裁判所の裁判官があらかじ<wbr>め発する拘禁許可状により、引渡犯罪人を拘禁させなければならない。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　東京高等検察庁検事長は、前条第一項の規定による命令を受けたときは、<wbr>引渡犯罪人が仮拘禁許可状により拘禁され、又は仮拘禁許可状による拘禁を停止されて<wbr>いる場合を除き、東京高等検察庁の検察官をして、東京高等裁判所の裁判官があらかじ<wbr>め発する拘禁許可状により、引渡犯罪人を拘禁させなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">２　逃亡犯罪人引渡法第五条第二項及び第三項、第六条並びに第七条の規定は、前項の<wbr>拘禁許可状による引渡犯罪人の拘禁について準用する。この場合において、同法第五条<wbr>第三項中「請求国の名称、有効期間」とあるのは、「有効期間」と読み替えるものとす<wbr>る。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">２　逃亡犯罪人引渡法第五条第二項及び第三項、第六条並びに第七条の規定は、前項の<wbr>拘禁許可状による引渡犯罪人の拘禁について準用する。この場合において、同法第五条<wbr>第三項中「請求国の名称、有効期間」とあるのは、「有効期間」と読み替えるものとす<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">（審査の請求）</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">（審査の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　東京高等検察庁の検察官は、第二十条第一項の規定による命令があったと<wbr>きは、引渡犯罪人の現在地が分からない場合を除き、速やかに、東京高等裁判所に対し<wbr>、引渡犯罪人を引き渡すことができる場合に該当するかどうかについて審査の請求をし<wbr>なければならない。</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　東京高等検察庁の検察官は、第二十条第一項の規定による命令があったと<wbr>きは、引渡犯罪人の現在地が分からない場合を除き、速やかに、東京高等裁判所に対し<wbr>、引渡犯罪人を引き渡すことができる場合に該当するかどうかについて審査の請求をし<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">２　逃亡犯罪人引渡法第八条第一項後段、第二項及び第三項の規定は、引渡犯罪人の引<wbr>渡しに係る前項の審査の請求について準用する。</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">２　逃亡犯罪人引渡法第八条第一項後段、第二項及び第三項の規定は、引渡犯罪人の引<wbr>渡しに係る前項の審査の請求について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（東京高等裁判所の審査）</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（東京高等裁判所の審査）</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　東京高等裁判所は、審査の結果に基づいて、次の各号に掲げる区分に応じ<wbr>、当該各号に定める決定をしなければならない。</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　東京高等裁判所は、審査の結果に基づいて、次の各号に掲げる区分に応じ<wbr>、当該各号に定める決定をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">一　前条第一項の審査の請求が不適法であるとき　却下する決定</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">一　前条第一項の審査の請求が不適法であるとき　却下する決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪人を引き渡すことができる場合に該当するとき　その旨の決定</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪人を引き渡すことができる場合に該当するとき　その旨の決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪人を引き渡すことができる場合に該当しないとき　その旨の決定</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪人を引き渡すことができる場合に該当しないとき　その旨の決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">２　逃亡犯罪人引渡法第九条の規定は前条第一項の審査の請求に係る東京高等裁判所の<wbr>審査について、同法第十条第二項及び第三項の規定は前項の決定について、同法第十一<wbr>条の規定は第二十条第一項の規定による命令の取消しについて、同法第十二条の規定は<wbr>引渡犯罪人の釈放について、同法第十三条の規定は当該審査に係る裁判書の謄本につい<wbr>て、それぞれ準用する。この場合において、同法第九条第三項ただし書中「次条第一項<wbr>第一号又は第二号」とあるのは「国際刑事裁判所に対する協力等に関する法律（平成十<wbr>九年法律第三十七号）第二十三条第一項第一号又は第三号」と、同法第十一条第一項中<wbr>「第三条の」とあるのは「国際刑事裁判所に対する協力等に関する法律第四条の」と、<wbr>「請求国」とあるのは「国際刑事裁判所」と、「受け、又は第三条第二号に該当するに<wbr>至つた」とあるのは「受けた」と、同条第二項中「第四条第一項の」とあるのは「国際<wbr>刑事裁判所に対する協力等に関する法律第二十条第一項の」と、「第四条第一項各号」<wbr>とあるのは「同条第一項各号」と、「第八条第三項」とあるのは「同法第二十二条第二<wbr>項において準用する第八条第三項」と、同法第十二条中「第十条第一項第一号若しくは<wbr>第二号」とあるのは「国際刑事裁判所に対する協力等に関する法律第二十三条第一項第<wbr>一号若しくは第三号」と読み替えるものとする。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">２　逃亡犯罪人引渡法第九条の規定は前条第一項の審査の請求に係る東京高等裁判所の<wbr>審査について、同法第十条第二項及び第三項の規定は前項の決定について、同法第十一<wbr>条の規定は第二十条第一項の規定による命令の取消しについて、同法第十二条の規定は<wbr>引渡犯罪人の釈放について、同法第十三条の規定は当該審査に係る裁判書の謄本につい<wbr>て、それぞれ準用する。この場合において、同法第九条第三項ただし書中「次条第一項<wbr>第一号又は第二号」とあるのは「国際刑事裁判所に対する協力等に関する法律（平成十<wbr>九年法律第三十七号）第二十三条第一項第一号又は第三号」と、同法第十一条第一項中<wbr>「第三条の」とあるのは「国際刑事裁判所に対する協力等に関する法律第四条の」と、<wbr>「請求国」とあるのは「国際刑事裁判所」と、「受け、又は第三条第二号に該当するに<wbr>至つた」とあるのは「受けた」と、同条第二項中「第四条第一項の」とあるのは「国際<wbr>刑事裁判所に対する協力等に関する法律第二十条第一項の」と、「第四条第一項各号」<wbr>とあるのは「同条第一項各号」と、「第八条第三項」とあるのは「同法第二十二条第二<wbr>項において準用する第八条第三項」と、同法第十二条中「第十条第一項第一号若しくは<wbr>第二号」とあるのは「国際刑事裁判所に対する協力等に関する法律第二十三条第一項第<wbr>一号若しくは第三号」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（審査手続の停止）</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（審査手続の停止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　東京高等裁判所は、前条第二項において準用する逃亡犯罪人引渡法第九条<wbr>の審査において、引渡犯罪人から、引渡犯罪に係る事件が外国の裁判所に係属すること<wbr>又は当該事件について外国の裁判所において確定判決を経たことを理由として、当該引<wbr>渡犯罪人の引渡しが認められない旨の申立てがされた場合には、国際刑事裁判所におい<wbr>て当該事件につき規程第十七条１の規定により事件を受理するかどうかが決定されるま<wbr>での間、決定をもって、審査の手続を停止することができる。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　東京高等裁判所は、前条第二項において準用する逃亡犯罪人引渡法第九条<wbr>の審査において、引渡犯罪人から、引渡犯罪に係る事件が外国の裁判所に係属すること<wbr>又は当該事件について外国の裁判所において確定判決を経たことを理由として、当該引<wbr>渡犯罪人の引渡しが認められない旨の申立てがされた場合には、国際刑事裁判所におい<wbr>て当該事件につき規程第十七条１の規定により事件を受理するかどうかが決定されるま<wbr>での間、決定をもって、審査の手続を停止することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">２　東京高等検察庁検事長は、前項の申立てがあったときは、速やかに、法務大臣に対<wbr>し、その旨の報告をしなければならない。</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">２　東京高等検察庁検事長は、前項の申立てがあったときは、速やかに、法務大臣に対<wbr>し、その旨の報告をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">３　法務大臣は、前項の報告を受けたときは、外務大臣に対し、第一項の申立てがあっ<wbr>た旨の通知をするものとする。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">３　法務大臣は、前項の報告を受けたときは、外務大臣に対し、第一項の申立てがあっ<wbr>た旨の通知をするものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">４　外務大臣は、前項の通知を受けたときは、国際刑事裁判所に対し、第一項の申立て<wbr>があった旨の通報をするとともに、引渡犯罪につき規程第十七条１の規定による事件を<wbr>受理するかどうかの決定に関し、国際刑事裁判所と協議するものとする。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">４　外務大臣は、前項の通知を受けたときは、国際刑事裁判所に対し、第一項の申立て<wbr>があった旨の通報をするとともに、引渡犯罪につき規程第十七条１の規定による事件を<wbr>受理するかどうかの決定に関し、国際刑事裁判所と協議するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、第一項の規定により審査の手続が停止された場合にお<wbr>いて、必要と認めるときは、引渡犯罪人の拘禁の停止をすることができる。この場合に<wbr>おいて、必要と認めるときは、当該引渡犯罪人を親族その他の者に委託し、又は当該引<wbr>渡犯罪人の住居を制限するものとする。</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、第一項の規定により審査の手続が停止された場合にお<wbr>いて、必要と認めるときは、引渡犯罪人の拘禁の停止をすることができる。この場合に<wbr>おいて、必要と認めるときは、当該引渡犯罪人を親族その他の者に委託し、又は当該引<wbr>渡犯罪人の住居を制限するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">６　東京高等検察庁の検察官は、前項の規定による拘禁の停止がされている場合におい<wbr>て、国際刑事裁判所において引渡犯罪につき規程第十七条１の規定により事件を受理す<wbr>る旨の決定があったときは、その拘禁の停止を取り消さなければならない。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">６　東京高等検察庁の検察官は、前項の規定による拘禁の停止がされている場合におい<wbr>て、国際刑事裁判所において引渡犯罪につき規程第十七条１の規定により事件を受理す<wbr>る旨の決定があったときは、その拘禁の停止を取り消さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">７　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">７　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">８　第一項の規定により審査の手続が停止された場合における前条第二項において準用<wbr>する逃亡犯罪人引渡法第九条第一項の規定の適用については、同項中「二箇月」とある<wbr>のは、「二箇月（国際刑事裁判所に対する協力等に関する法律第二十四条第一項の規定<wbr>により審査の手続が停止された期間を除く。）」とする。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">８　第一項の規定により審査の手続が停止された場合における前条第二項において準用<wbr>する逃亡犯罪人引渡法第九条第一項の規定の適用については、同項中「二箇月」とある<wbr>のは、「二箇月（国際刑事裁判所に対する協力等に関する法律第二十四条第一項の規定<wbr>により審査の手続が停止された期間を除く。）」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しに関する法務大臣の命令等）</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しに関する法務大臣の命令等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　法務大臣は、第二十三条第一項第二号の決定があった場合において、第二<wbr>十条第一項第二号から第五号までのいずれにも該当しないと認めるときは、東京高等検<wbr>察庁検事長に対し引渡犯罪人の引渡しを命ずるとともに、引渡犯罪人にその旨を通知し<wbr>なければならない。この場合において、当該引渡犯罪人が拘禁許可状により拘禁されて<wbr>いるときは、その引渡しの命令は、当該決定があった日から十日以内にしなければなら<wbr>ない。</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　法務大臣は、第二十三条第一項第二号の決定があった場合において、第二<wbr>十条第一項第二号から第五号までのいずれにも該当しないと認めるときは、東京高等検<wbr>察庁検事長に対し引渡犯罪人の引渡しを命ずるとともに、引渡犯罪人にその旨を通知し<wbr>なければならない。この場合において、当該引渡犯罪人が拘禁許可状により拘禁されて<wbr>いるときは、その引渡しの命令は、当該決定があった日から十日以内にしなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項に規定する決定があった場合において、第二十条第一項第二号又<wbr>は第三号のいずれかに該当すると認めるときは、直ちに東京高等検察庁検事長及び引渡<wbr>犯罪人にその旨を通知するとともに、東京高等検察庁検事長に対し拘禁許可状により拘<wbr>禁されている引渡犯罪人の釈放を命じなければならない。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項に規定する決定があった場合において、第二十条第一項第二号又<wbr>は第三号のいずれかに該当すると認めるときは、直ちに東京高等検察庁検事長及び引渡<wbr>犯罪人にその旨を通知するとともに、東京高等検察庁検事長に対し拘禁許可状により拘<wbr>禁されている引渡犯罪人の釈放を命じなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">３　東京高等検察庁の検察官は、前項の規定による命令があったときは、直ちに、拘禁<wbr>許可状により拘禁されている引渡犯罪人を釈放しなければならない。</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">３　東京高等検察庁の検察官は、前項の規定による命令があったときは、直ちに、拘禁<wbr>許可状により拘禁されている引渡犯罪人を釈放しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">４　法務大臣は、第一項に規定する決定があった場合において、第二十条第一項第四号<wbr>又は第五号のいずれかに該当すると認めるときは、東京高等検察庁検事長に対し、その<wbr>旨を通知するとともに、拘禁許可状により拘禁されている引渡犯罪人の拘禁の停止をす<wbr>るよう命じなければならない。</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">４　法務大臣は、第一項に規定する決定があった場合において、第二十条第一項第四号<wbr>又は第五号のいずれかに該当すると認めるときは、東京高等検察庁検事長に対し、その<wbr>旨を通知するとともに、拘禁許可状により拘禁されている引渡犯罪人の拘禁の停止をす<wbr>るよう命じなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、前項の規定による拘禁の停止の命令があったときは、<wbr>直ちに、拘禁許可状により拘禁されている引渡犯罪人の拘禁の停止をしなければならな<wbr>い。この場合においては、前条第五項後段の規定を準用する。</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、前項の規定による拘禁の停止の命令があったときは、<wbr>直ちに、拘禁許可状により拘禁されている引渡犯罪人の拘禁の停止をしなければならな<wbr>い。この場合においては、前条第五項後段の規定を準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">６　法務大臣は、第四項の規定による拘禁の停止の命令をした後において、第二十条第<wbr>一項第四号及び第五号のいずれにも該当しないこととなったときは、第一項の規定によ<wbr>る引渡しの命令をしなければならない。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">６　法務大臣は、第四項の規定による拘禁の停止の命令をした後において、第二十条第<wbr>一項第四号及び第五号のいずれにも該当しないこととなったときは、第一項の規定によ<wbr>る引渡しの命令をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">７　東京高等検察庁の検察官は、前項の引渡しの命令があったときは、第五項の規定に<wbr>よる拘禁の停止を取り消さなければならない。</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">７　東京高等検察庁の検察官は、前項の引渡しの命令があったときは、第五項の規定に<wbr>よる拘禁の停止を取り消さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">８　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">８　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しの命令の延期）</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しの命令の延期）</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　法務大臣は、前条第一項に規定する場合（引渡犯罪が重大犯罪である場合<wbr>に限る。）において、次の各号のいずれかに該当し、かつ、直ちに引渡犯罪人の引渡し<wbr>をすることが相当でないと認めるときは、同項の規定にかかわらず、その引渡しの命令<wbr>を延期することができる。</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　法務大臣は、前条第一項に規定する場合（引渡犯罪が重大犯罪である場合<wbr>に限る。）において、次の各号のいずれかに該当し、かつ、直ちに引渡犯罪人の引渡し<wbr>をすることが相当でないと認めるときは、同項の規定にかかわらず、その引渡しの命令<wbr>を延期することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪人の犯した引渡犯罪以外の罪に係る事件が日本国の裁判所に係属するとき<wbr>。</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪人の犯した引渡犯罪以外の罪に係る事件が日本国の裁判所に係属するとき<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">二　前号に規定する事件について、引渡犯罪人が日本国の裁判所において刑に処せられ<wbr>、その執行を終わらず、又は執行を受けないこととなっていないとき。</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">二　前号に規定する事件について、引渡犯罪人が日本国の裁判所において刑に処せられ<wbr>、その執行を終わらず、又は執行を受けないこととなっていないとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項の規定により引渡犯罪人の引渡しの命令を延期するときは、東京<wbr>高等検察庁検事長に対し、その旨を通知するとともに、拘禁許可状により拘禁されてい<wbr>る引渡犯罪人の拘禁の停止をするよう命じなければならない。</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、前項の規定により引渡犯罪人の引渡しの命令を延期するときは、東京<wbr>高等検察庁検事長に対し、その旨を通知するとともに、拘禁許可状により拘禁されてい<wbr>る引渡犯罪人の拘禁の停止をするよう命じなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">３　東京高等検察庁の検察官は、前項の規定による命令があったときは、直ちに、拘禁<wbr>許可状により拘禁されている引渡犯罪人の拘禁の停止をしなければならない。この場合<wbr>においては、第二十四条第五項後段の規定を準用する。</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">３　東京高等検察庁の検察官は、前項の規定による命令があったときは、直ちに、拘禁<wbr>許可状により拘禁されている引渡犯罪人の拘禁の停止をしなければならない。この場合<wbr>においては、第二十四条第五項後段の規定を準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">４　法務大臣は、第二項の規定による拘禁の停止の命令をした後において、第一項各号<wbr>のいずれにも該当しないこととなったとき、又は当該引渡犯罪人を引き渡すことが相当<wbr>でないと認める事由がなくなったときは、東京高等検察庁検事長に対し、前条第一項の<wbr>規定による引渡しの命令をしなければならない。</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">４　法務大臣は、第二項の規定による拘禁の停止の命令をした後において、第一項各号<wbr>のいずれにも該当しないこととなったとき、又は当該引渡犯罪人を引き渡すことが相当<wbr>でないと認める事由がなくなったときは、東京高等検察庁検事長に対し、前条第一項の<wbr>規定による引渡しの命令をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、前項の引渡しの命令があったときは、第三項の規定に<wbr>よる拘禁の停止を取り消さなければならない。</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、前項の引渡しの命令があったときは、第三項の規定に<wbr>よる拘禁の停止を取り消さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">６　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">６　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（拘禁が困難な場合における拘禁の停止及びその取消し）</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（拘禁が困難な場合における拘禁の停止及びその取消し）</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　東京高等検察庁の検察官は、拘禁許可状により拘禁されている引渡犯罪人<wbr>の申立てにより又は職権で、拘禁によって著しく引渡犯罪人の健康を害するおそれがあ<wbr>るときその他拘禁を継続することが困難であると認めるときは、当該引渡犯罪人の拘禁<wbr>の停止をすることができる。</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　東京高等検察庁の検察官は、拘禁許可状により拘禁されている引渡犯罪人<wbr>の申立てにより又は職権で、拘禁によって著しく引渡犯罪人の健康を害するおそれがあ<wbr>るときその他拘禁を継続することが困難であると認めるときは、当該引渡犯罪人の拘禁<wbr>の停止をすることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">２　東京高等検察庁検事長は、前項の申立てがあったとき又は東京高等検察庁の検察官<wbr>が職権で拘禁の停止をしようとするときは、法務大臣に対し、その旨の報告をしなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">２　東京高等検察庁検事長は、前項の申立てがあったとき又は東京高等検察庁の検察官<wbr>が職権で拘禁の停止をしようとするときは、法務大臣に対し、その旨の報告をしなけれ<wbr>ばならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">３　法務大臣は、前項の報告を受けたときは、外務大臣に対し、その旨の通知をするも<wbr>のとする。</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">３　法務大臣は、前項の報告を受けたときは、外務大臣に対し、その旨の通知をするも<wbr>のとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">４　外務大臣は、前項の通知を受けたときは、国際刑事裁判所に対し、引渡犯罪人の拘<wbr>禁の停止に関する意見を求めるものとする。</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">４　外務大臣は、前項の通知を受けたときは、国際刑事裁判所に対し、引渡犯罪人の拘<wbr>禁の停止に関する意見を求めるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、第一項の規定により拘禁の停止をするかどうかの判断<wbr>に当たっては、前項の意見を尊重するものとする。ただし、急速を要し、当該意見を聴<wbr>くいとまがないときは、これを待たないで当該拘禁の停止をすることができる。</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">５　東京高等検察庁の検察官は、第一項の規定により拘禁の停止をするかどうかの判断<wbr>に当たっては、前項の意見を尊重するものとする。ただし、急速を要し、当該意見を聴<wbr>くいとまがないときは、これを待たないで当該拘禁の停止をすることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">６　第二十四条第五項後段の規定は、第一項の規定により拘禁の停止をする場合につい<wbr>て準用する。</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">６　第二十四条第五項後段の規定は、第一項の規定により拘禁の停止をする場合につい<wbr>て準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">７　東京高等検察庁の検察官は、必要と認めるときは、いつでも、第一項の規定による<wbr>拘禁の停止を取り消すことができる。</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">７　東京高等検察庁の検察官は、必要と認めるときは、いつでも、第一項の規定による<wbr>拘禁の停止を取り消すことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">８　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">８　逃亡犯罪人引渡法第二十二条第三項から第六項までの規定は、前項の規定により引<wbr>渡犯罪人の拘禁の停止を取り消した場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（拘禁の停止中の失効）</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">（拘禁の停止中の失効）</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　次の各号のいずれかに該当するときは、第二十四条第五項、第二十五条第<wbr>五項、第二十六条第三項又は前条第一項の規定により停止されている拘禁は、その効力<wbr>を失う。</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　次の各号のいずれかに該当するときは、第二十四条第五項、第二十五条第<wbr>五項、第二十六条第三項又は前条第一項の規定により停止されている拘禁は、その効力<wbr>を失う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪人に対し、第二十三条第一項第一号又は第三号の決定の裁判書の謄本が送<wbr>達されたとき。</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">一　引渡犯罪人に対し、第二十三条第一項第一号又は第三号の決定の裁判書の謄本が送<wbr>達されたとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪人に対し、第二十三条第二項において準用する逃亡犯罪人引渡法第十一条<wbr>第二項の規定による通知があったとき。</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">二　引渡犯罪人に対し、第二十三条第二項において準用する逃亡犯罪人引渡法第十一条<wbr>第二項の規定による通知があったとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪人に対し、第二十五条第二項の規定により法務大臣から第二十条第一項第<wbr>二号又は第三号のいずれかに該当する旨の通知があったとき。</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">三　引渡犯罪人に対し、第二十五条第二項の規定により法務大臣から第二十条第一項第<wbr>二号又は第三号のいずれかに該当する旨の通知があったとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しの期限）</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しの期限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　第二十五条第一項の規定による命令に基づく引渡犯罪人の引渡しは、当該<wbr>命令の日（拘禁の停止がされているときは、当該拘禁の停止の取消しにより引渡犯罪人<wbr>が拘禁された日）から三十日以内にしなければならない。</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　第二十五条第一項の規定による命令に基づく引渡犯罪人の引渡しは、当該<wbr>命令の日（拘禁の停止がされているときは、当該拘禁の停止の取消しにより引渡犯罪人<wbr>が拘禁された日）から三十日以内にしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">２　第二十五条第一項の規定による命令があった後に第二十七条第一項の規定により拘<wbr>禁の停止がされた場合における前項の規定の適用については、当該拘禁の停止がされて<wbr>いた期間は、同項の期間に算入しないものとする。</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">２　第二十五条第一項の規定による命令があった後に第二十七条第一項の規定により拘<wbr>禁の停止がされた場合における前項の規定の適用については、当該拘禁の停止がされて<wbr>いた期間は、同項の期間に算入しないものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">（外務大臣との協議）</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">（外務大臣との協議）</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">第三十条　法務大臣は、次の各号のいずれかに該当する場合には、あらかじめ、外務大<wbr>臣と協議するものとする。</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">第三十条　法務大臣は、次の各号のいずれかに該当する場合には、あらかじめ、外務大<wbr>臣と協議するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">一　第二十条第一項第一号（第十九条第一項に係る部分に限る。）に該当することを理<wbr>由として、第二十条第一項の規定による命令を留保するとき。</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">一　第二十条第一項第一号（第十九条第一項に係る部分に限る。）に該当することを理<wbr>由として、第二十条第一項の規定による命令を留保するとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">二　第二十条第一項第二号又は第三号のいずれかに該当することを理由として、引渡犯<wbr>罪人の引渡しに係る協力をしないこととするとき。</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">二　第二十条第一項第二号又は第三号のいずれかに該当することを理由として、引渡犯<wbr>罪人の引渡しに係る協力をしないこととするとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">三　第二十条第一項第四号又は第五号のいずれかに該当することを理由として、同項の<wbr>規定による命令を留保し、又は第二十五条第四項の規定による措置をとるとき。</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">三　第二十条第一項第四号又は第五号のいずれかに該当することを理由として、同項の<wbr>規定による命令を留保し、又は第二十五条第四項の規定による措置をとるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">四　第二十六条第一項の規定により引渡犯罪人の引渡しの命令を延期するとき。</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">四　第二十六条第一項の規定により引渡犯罪人の引渡しの命令を延期するとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しに関する措置）</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">（引渡犯罪人の引渡しに関する措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　逃亡犯罪人引渡法第十六条第一項から第三項まで、第十七条第一項、第十<wbr>八条及び第十九条の規定は、第二十五条第一項の規定による引渡しの命令に係る引渡犯<wbr>罪人の引渡しについて準用する。この場合において、同法第十八条中「前条第五項又は<wbr>第二十二条第六項の規定による報告」とあるのは「国際刑事裁判所に対する協力等に関<wbr>する法律第二十五条第八項、第二十六条第六項又は第二十七条第八項において準用する<wbr>第二十二条第六項の規定による報告（同法第二十七条第八項において準用する場合にあ<wbr>っては、同法第二十五条第一項の規定による引渡しの命令があった後に拘禁の停止の取<wbr>消しがされた場合における報告に限る。）」と、同法第十九条中「請求国」とあるのは<wbr>「国際刑事裁判所」と読み替えるものとする。</span></code></td>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　逃亡犯罪人引渡法第十六条第一項から第三項まで、第十七条第一項、第十<wbr>八条及び第十九条の規定は、第二十五条第一項の規定による引渡しの命令に係る引渡犯<wbr>罪人の引渡しについて準用する。この場合において、同法第十八条中「前条第五項又は<wbr>第二十二条第六項の規定による報告」とあるのは「国際刑事裁判所に対する協力等に関<wbr>する法律第二十五条第八項、第二十六条第六項又は第二十七条第八項において準用する<wbr>第二十二条第六項の規定による報告（同法第二十七条第八項において準用する場合にあ<wbr>っては、同法第二十五条第一項の規定による引渡しの命令があった後に拘禁の停止の取<wbr>消しがされた場合における報告に限る。）」と、同法第十九条中「請求国」とあるのは<wbr>「国際刑事裁判所」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">２　前項において準用する逃亡犯罪人引渡法第十六条第一項の引渡状及び同条第三項の<wbr>受領許可状には、引渡犯罪人の氏名、引渡犯罪名、引渡しの場所、引渡しの期限及び発<wbr>付の年月日並びに国際刑事裁判所の言い渡した拘禁刑の執行中に逃亡した引渡犯罪人の<wbr>引渡しにあっては国際刑事裁判所が引渡先として指定する外国の名称を記載し、法務大<wbr>臣が記名押印しなければならない。</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">２　前項において準用する逃亡犯罪人引渡法第十六条第一項の引渡状及び同条第三項の<wbr>受領許可状には、引渡犯罪人の氏名、引渡犯罪名、引渡しの場所、引渡しの期限及び発<wbr>付の年月日並びに国際刑事裁判所の言い渡した拘禁刑の執行中に逃亡した引渡犯罪人の<wbr>引渡しにあっては国際刑事裁判所が引渡先として指定する外国の名称を記載し、法務大<wbr>臣が記名押印しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　前条第一項において準用する逃亡犯罪人引渡法第十七条第一項の規定によ<wbr>る指揮を受けた刑事施設の長又はその指名する刑事施設の職員は、引渡犯罪人を、引渡<wbr>状に記載された引渡しの場所に護送し、国際刑事裁判所の指定する者であって受領許可<wbr>状を有するものに引き渡さなければならない。</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　前条第一項において準用する逃亡犯罪人引渡法第十七条第一項の規定によ<wbr>る指揮を受けた刑事施設の長又はその指名する刑事施設の職員は、引渡犯罪人を、引渡<wbr>状に記載された引渡しの場所に護送し、国際刑事裁判所の指定する者であって受領許可<wbr>状を有するものに引き渡さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　前条の規定により引渡犯罪人の引渡しを日本国内において受けた者は、速<wbr>やかに、当該引渡犯罪人を国際刑事裁判所又は第三十一条第二項に規定する引渡先とし<wbr>て指定された外国に護送するものとする。</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　前条の規定により引渡犯罪人の引渡しを日本国内において受けた者は、速<wbr>やかに、当該引渡犯罪人を国際刑事裁判所又は第三十一条第二項に規定する引渡先とし<wbr>て指定された外国に護送するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">第二款　仮拘禁</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">第二款　仮拘禁</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（仮拘禁の命令）</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（仮拘禁の命令）</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　法務大臣は、外務大臣から第四条の規定により仮拘禁に係る協力の請求に<wbr>関する書面の送付を受けたときは、第二十条第一項各号（第一号については、第十九条<wbr>第一項第三号に係る部分を除く。）のいずれかに該当すると認める場合を除き、東京高<wbr>等検察庁検事長に対し、仮拘禁をすべき旨を命じなければならない。</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　法務大臣は、外務大臣から第四条の規定により仮拘禁に係る協力の請求に<wbr>関する書面の送付を受けたときは、第二十条第一項各号（第一号については、第十九条<wbr>第一項第三号に係る部分を除く。）のいずれかに該当すると認める場合を除き、東京高<wbr>等検察庁検事長に対し、仮拘禁をすべき旨を命じなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">（仮拘禁に関する措置）</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">（仮拘禁に関する措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　東京高等検察庁検事長は、前条の規定による命令を受けたときは、東京高<wbr>等検察庁の検察官をして、東京高等裁判所の裁判官があらかじめ発する仮拘禁許可状に<wbr>より、仮拘禁犯罪人を拘禁させなければならない。</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　東京高等検察庁検事長は、前条の規定による命令を受けたときは、東京高<wbr>等検察庁の検察官をして、東京高等裁判所の裁判官があらかじめ発する仮拘禁許可状に<wbr>より、仮拘禁犯罪人を拘禁させなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">204</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　逃亡犯罪人引渡法第五条第二項及び第三項、第六条並びに第七条の規定は前項の仮<wbr>拘禁許可状による仮拘禁犯罪人の拘禁について、</span><span style="color: #000000; background-color: #efcb05; ">第二十六条の規定は仮拘禁許可状によ<wbr>り拘禁されている仮拘禁犯罪人の釈放について、同法第二十七条の規定は仮拘禁許可状<wbr>が発せられている仮拘禁犯罪人について第二十条第一項の規定による命令があった場合<wbr>について、同法第二十八条の規定は前条に規定する書面の送付があった後に国際刑事裁<wbr>判所から仮拘禁犯罪人の引渡しの請求をしない旨の通知があった場合について、同法第<wbr>二十九条の規定は仮拘禁許可状により拘禁されている仮拘禁犯罪人について、それぞれ<wbr>準用する。この場合において、同法第五条第三項中「請求国の名称、有効期間」とある<wbr>のは「有効期間」と、同法第二十六条第一項中「第三条の規定による引渡しの請求に関<wbr>する」とあるのは「国際刑事裁判所に対する協力等に関する法律第二十条第一項に規定<wbr>する」と、「第四条第一項各号」とあるのは「同項各号」と、同法第二十七条第三項中<wbr>「第八条第一項」とあるのは「国際刑事裁判所に対する協力等に関する法律第二十二条<wbr>第二項において準用する第八条第一項後段」と、同法第二十九条中「拘束された日から<wbr>二箇月（引渡条約に二箇月より短い期間の定めがあるときは、その期間）」とあるのは<wbr>「拘束された日の翌日から六十日」と読み替えるものとする。</span></code></td>
+<td class="ln">204</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　逃亡犯罪人引渡法第五条第二項及び第三項、第六条並びに第七条の規定は前項の仮<wbr>拘禁許可状による仮拘禁犯罪人の拘禁について、</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第二十六条の規定は仮拘禁許可状<wbr>により拘禁されている仮拘禁犯罪人の釈放について、同法第二十七条の規定は仮拘禁許<wbr>可状が発せられている仮拘禁犯罪人について第二十条第一項の規定による命令があった<wbr>場合について、同法第二十八条の規定は前条に規定する書面の送付があった後に国際刑<wbr>事裁判所から仮拘禁犯罪人の引渡しの請求をしない旨の通知があった場合について、同<wbr>法第二十九条の規定は仮拘禁許可状により拘禁されている仮拘禁犯罪人について、それ<wbr>ぞれ準用する。この場合において、同法第五条第三項中「請求国の名称、有効期間」と<wbr>あるのは「有効期間」と、同法第二十六条第一項中「第三条の規定による引渡しの請求<wbr>に関する」とあるのは「国際刑事裁判所に対する協力等に関する法律第二十条第一項に<wbr>規定する」と、「第四条第一項各号」とあるのは「同項各号」と、同法第二十七条第三<wbr>項中「第八条第一項」とあるのは「国際刑事裁判所に対する協力等に関する法律第二十<wbr>二条第二項において準用する第八条第一項後段」と、同法第二十九条中「拘束された日<wbr>から二箇月（引渡条約に二箇月より短い期間の定めがあるときは、その期間）」とある<wbr>のは「拘束された日の翌日から六十日」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">３　東京高等検察庁の検察官は、仮拘禁許可状により拘禁されている仮拘禁犯罪人の申<wbr>立てにより又は職権で、拘禁によって著しく仮拘禁犯罪人の健康を害するおそれがある<wbr>ときその他拘禁の継続が困難であると認めるときは、当該仮拘禁犯罪人の拘禁の停止を<wbr>することができる。</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">３　東京高等検察庁の検察官は、仮拘禁許可状により拘禁されている仮拘禁犯罪人の申<wbr>立てにより又は職権で、拘禁によって著しく仮拘禁犯罪人の健康を害するおそれがある<wbr>ときその他拘禁の継続が困難であると認めるときは、当該仮拘禁犯罪人の拘禁の停止を<wbr>することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">４　第二十七条第二項から第七項まで及び逃亡犯罪人引渡法第二十二条第三項から第五<wbr>項までの規定は、前項の規定による仮拘禁犯罪人の拘禁の停止及び当該拘禁の停止を取<wbr>り消した場合について準用する。</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">４　第二十七条第二項から第七項まで及び逃亡犯罪人引渡法第二十二条第三項から第五<wbr>項までの規定は、前項の規定による仮拘禁犯罪人の拘禁の停止及び当該拘禁の停止を取<wbr>り消した場合について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">５　第三項の規定により仮拘禁許可状による拘禁の停止があった場合において、仮拘禁<wbr>犯罪人に対し第二項において準用する逃亡犯罪人引渡法第二十七条第一項の規定による<wbr>告知がされたときは、当該仮拘禁許可状による拘禁の停止は、第二十七条第一項の規定<wbr>による拘禁の停止とみなす。</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">５　第三項の規定により仮拘禁許可状による拘禁の停止があった場合において、仮拘禁<wbr>犯罪人に対し第二項において準用する逃亡犯罪人引渡法第二十七条第一項の規定による<wbr>告知がされたときは、当該仮拘禁許可状による拘禁の停止は、第二十七条第一項の規定<wbr>による拘禁の停止とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">６　第三項の規定により仮拘禁許可状による拘禁の停止があった場合において、次の各<wbr>号のいずれかに該当するときは、停止されている仮拘禁許可状による拘禁は、その効力<wbr>を失う。</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">６　第三項の規定により仮拘禁許可状による拘禁の停止があった場合において、次の各<wbr>号のいずれかに該当するときは、停止されている仮拘禁許可状による拘禁は、その効力<wbr>を失う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">一　仮拘禁犯罪人に対し、第二項において準用する逃亡犯罪人引渡法第二十六条第一項<wbr>又は第二十八条第二項の規定による通知があったとき。</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">一　仮拘禁犯罪人に対し、第二項において準用する逃亡犯罪人引渡法第二十六条第一項<wbr>又は第二十八条第二項の規定による通知があったとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">二　仮拘禁犯罪人が仮拘禁許可状により拘束された日の翌日から六十日以内に、当該仮<wbr>拘禁犯罪人に対し、第二項において準用する逃亡犯罪人引渡法第二十七条第一項の規定<wbr>による告知がないとき。</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">二　仮拘禁犯罪人が仮拘禁許可状により拘束された日の翌日から六十日以内に、当該仮<wbr>拘禁犯罪人に対し、第二項において準用する逃亡犯罪人引渡法第二十七条第一項の規定<wbr>による告知がないとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">第三款　雑則</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">第三款　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">（行政手続法等の適用除外）</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">（行政手続法等の適用除外）</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　前二款の規定に基づいて行う処分については、行政手続法（平成五年法律<wbr>第八十八号）第三章の規定は、適用しない。</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　前二款の規定に基づいて行う処分については、行政手続法（平成五年法律<wbr>第八十八号）第三章の規定は、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">２　前二款の規定に基づいて行う処分（行政事件訴訟法（昭和三十七年法律第百三十九<wbr>号）第三条第二項に規定する処分をいう。）又は裁決（同条第三項に規定する裁決をい<wbr>う。）に係る抗告訴訟（同条第一項に規定する抗告訴訟をいう。）については、同法第<wbr>十二条第四項及び第五項（これらの規定を同法第三十八条第一項において準用する場合<wbr>を含む。）の規定は、適用しない。</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">２　前二款の規定に基づいて行う処分（行政事件訴訟法（昭和三十七年法律第百三十九<wbr>号）第三条第二項に規定する処分をいう。）又は裁決（同条第三項に規定する裁決をい<wbr>う。）に係る抗告訴訟（同条第一項に規定する抗告訴訟をいう。）については、同法第<wbr>十二条第四項及び第五項（これらの規定を同法第三十八条第一項において準用する場合<wbr>を含む。）の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　逃亡犯罪人引渡法第三十二条の規定は、前二款に定める東京高等裁判所若<wbr>しくはその裁判官又は東京高等検察庁の検察官の職務の執行について準用する。</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　逃亡犯罪人引渡法第三十二条の規定は、前二款に定める東京高等裁判所若<wbr>しくはその裁判官又は東京高等検察庁の検察官の職務の執行について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">第四節　執行協力</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">第四節　執行協力</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">（執行協力の要件）</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">（執行協力の要件）</span></code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　執行協力は、請求犯罪が重大犯罪である場合には、次の各号のいずれかに<wbr>該当する場合を除き、これを行うことができる。</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　執行協力は、請求犯罪が重大犯罪である場合には、次の各号のいずれかに<wbr>該当する場合を除き、これを行うことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">一　没収刑のための保全に係る執行協力については、請求犯罪に係る事件が日本国の裁<wbr>判所に係属するとき。ただし、当該事件について、国際刑事裁判所において、規程第十<wbr>七条１の規定により事件を受理する旨の決定をし、又は公判手続を開始しているときは<wbr>、この限りでない。</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">一　没収刑のための保全に係る執行協力については、請求犯罪に係る事件が日本国の裁<wbr>判所に係属するとき。ただし、当該事件について、国際刑事裁判所において、規程第十<wbr>七条１の規定により事件を受理する旨の決定をし、又は公判手続を開始しているときは<wbr>、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">二　没収刑のための保全に係る執行協力については、請求犯罪に係る事件について日本<wbr>国の裁判所において確定判決を経たとき。ただし、当該事件について、国際刑事裁判所<wbr>において、規程第十七条１の規定により事件を受理する旨の決定をし、又は有罪の判決<wbr>の言渡しをしているときは、この限りでない。</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">二　没収刑のための保全に係る執行協力については、請求犯罪に係る事件について日本<wbr>国の裁判所において確定判決を経たとき。ただし、当該事件について、国際刑事裁判所<wbr>において、規程第十七条１の規定により事件を受理する旨の決定をし、又は有罪の判決<wbr>の言渡しをしているときは、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">三　没収刑のための保全に係る執行協力については、請求犯罪につき日本国において刑<wbr>罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る財産が<wbr>没収保全をすることができる財産に当たるものでないとき（当該請求に係る財産が、請<wbr>求犯罪に係る行為によりその被害を受けた者から得た財産である場合には、その者又は<wbr>その一般承継人に帰属することを理由として没収保全をすることができる財産に当たる<wbr>ものでないときを除く。）。</span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">三　没収刑のための保全に係る執行協力については、請求犯罪につき日本国において刑<wbr>罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る財産が<wbr>没収保全をすることができる財産に当たるものでないとき（当該請求に係る財産が、請<wbr>求犯罪に係る行為によりその被害を受けた者から得た財産である場合には、その者又は<wbr>その一般承継人に帰属することを理由として没収保全をすることができる財産に当たる<wbr>ものでないときを除く。）。</span></code></td>
+</tr>
+<tr>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">四　被害回復命令のための保全であってその内容及び性質を考慮して日本国の法令によ<wbr>れば没収の保全に相当するものに係る執行協力については、請求犯罪につき日本国にお<wbr>いて刑罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る<wbr>財産が没収保全をすることができる財産に当たるものでないとき（当該請求に係る財産<wbr>が、重大犯罪に係る行為によりその被害を受けた者から得た財産であって、被害回復命<wbr>令によりその者又はその一般承継人に返還すべきものである場合には、それらの者に帰<wbr>属することを理由として没収保全をすることができる財産に当たるものでないときを除<wbr>く。）。</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">四　被害回復命令のための保全であってその内容及び性質を考慮して日本国の法令によ<wbr>れば没収の保全に相当するものに係る執行協力については、請求犯罪につき日本国にお<wbr>いて刑罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る<wbr>財産が没収保全をすることができる財産に当たるものでないとき（当該請求に係る財産<wbr>が、重大犯罪に係る行為によりその被害を受けた者から得た財産であって、被害回復命<wbr>令によりその者又はその一般承継人に返還すべきものである場合には、それらの者に帰<wbr>属することを理由として没収保全をすることができる財産に当たるものでないときを除<wbr>く。）。</span></code></td>
+</tr>
+<tr>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">五　被害回復命令のための保全であってその内容及び性質を考慮して日本国の法令によ<wbr>れば追徴の保全に相当するものに係る執行協力については、請求犯罪につき日本国にお<wbr>いて刑罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る<wbr>財産が追徴保全をすることができる財産に当たるものでないとき。</span></code></td>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">五　被害回復命令のための保全であってその内容及び性質を考慮して日本国の法令によ<wbr>れば追徴の保全に相当するものに係る執行協力については、請求犯罪につき日本国にお<wbr>いて刑罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る<wbr>財産が追徴保全をすることができる財産に当たるものでないとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">２　執行協力は、請求犯罪が規程第七十条１に規定する犯罪である場合には、次の各号<wbr>のいずれかに該当する場合を除き、これを行うことができる。</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">２　執行協力は、請求犯罪が規程第七十条１に規定する犯罪である場合には、次の各号<wbr>のいずれかに該当する場合を除き、これを行うことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">一　請求犯罪に係る行為が日本国内において行われたとした場合において、日本国の法<wbr>令によればこれについて刑罰を科すことができないと認められるとき。</span></code></td>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">一　請求犯罪に係る行為が日本国内において行われたとした場合において、日本国の法<wbr>令によればこれについて刑罰を科すことができないと認められるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">二　請求犯罪に係る事件が日本国の裁判所に係属するとき、又はその事件について日本<wbr>国の裁判所において確定判決を経たとき。</span></code></td>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">二　請求犯罪に係る事件が日本国の裁判所に係属するとき、又はその事件について日本<wbr>国の裁判所において確定判決を経たとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">三　没収刑のための保全に係る執行協力については、請求犯罪につき日本国において刑<wbr>罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る財産が<wbr>没収保全をすることができる財産に当たるものでないとき（当該請求に係る財産が、請<wbr>求犯罪に係る行為によりその被害を受けた者から得た財産である場合には、その者又は<wbr>その一般承継人に帰属することを理由として没収保全をすることができる財産に当たる<wbr>ものでないときを除く。）。</span></code></td>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">三　没収刑のための保全に係る執行協力については、請求犯罪につき日本国において刑<wbr>罰を科すとした場合において、日本国の法令によれば当該執行協力の請求に係る財産が<wbr>没収保全をすることができる財産に当たるものでないとき（当該請求に係る財産が、請<wbr>求犯罪に係る行為によりその被害を受けた者から得た財産である場合には、その者又は<wbr>その一般承継人に帰属することを理由として没収保全をすることができる財産に当たる<wbr>ものでないときを除く。）。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">（法務大臣の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　法務大臣は、外務大臣から第四条の規定により執行協力の請求に関する書<wbr>面の送付を受けたときは、次の各号のいずれかに該当する場合を除き、相当と認める地<wbr>方検察庁の検事正に対し、関係書類を送付して、執行協力に必要な措置をとるよう命ず<wbr>るものとする。</span></code></td>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　法務大臣は、外務大臣から第四条の規定により執行協力の請求に関する書<wbr>面の送付を受けたときは、次の各号のいずれかに該当する場合を除き、相当と認める地<wbr>方検察庁の検事正に対し、関係書類を送付して、執行協力に必要な措置をとるよう命ず<wbr>るものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">一　前条第一項各号又は第二項各号のいずれかに該当すると認めるとき。</span></code></td>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">一　前条第一項各号又は第二項各号のいずれかに該当すると認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">二　執行協力の請求が組織的な犯罪の処罰及び犯罪収益の規制等に関する法律（平成十<wbr>一年法律第百三十六号。以下「組織的犯罪処罰法」という。）第五十九条第一項の規定<wbr>による共助、国際的な協力の下に規制薬物に係る不正行為を助長する行為等の防止を図<wbr>るための麻薬及び向精神薬取締法等の特例等に関する法律（平成三年法律第九十四号）<wbr>第二十一条の規定による共助又は捜査共助の要請と競合し、かつ、規程の定めるところ<wbr>によりその要請を優先させることができる場合において、当該要請に係る措置をとるこ<wbr>とが相当であると認めるとき。</span></code></td>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">二　執行協力の請求が組織的な犯罪の処罰及び犯罪収益の規制等に関する法律（平成十<wbr>一年法律第百三十六号。以下「組織的犯罪処罰法」という。）第五十九条第一項の規定<wbr>による共助、国際的な協力の下に規制薬物に係る不正行為を助長する行為等の防止を図<wbr>るための麻薬及び向精神薬取締法等の特例等に関する法律（平成三年法律第九十四号）<wbr>第二十一条の規定による共助又は捜査共助の要請と競合し、かつ、規程の定めるところ<wbr>によりその要請を優先させることができる場合において、当該要請に係る措置をとるこ<wbr>とが相当であると認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">三　執行協力の請求に応ずることにより、規程第九十八条１に規定する国際法に基づく<wbr>義務に反することとなるとき。</span></code></td>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">三　執行協力の請求に応ずることにより、規程第九十八条１に規定する国際法に基づく<wbr>義務に反することとなるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">四　執行協力の請求に応ずることにより、請求犯罪以外の罪に係る事件で日本国の検察<wbr>官、検察事務官若しくは司法警察職員によって捜査され又は日本国の裁判所に係属して<wbr>いるものについて、その捜査又は裁判を妨げるおそれがあり、直ちに当該請求に応ずる<wbr>ことが相当でないと認めるとき。</span></code></td>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">四　執行協力の請求に応ずることにより、請求犯罪以外の罪に係る事件で日本国の検察<wbr>官、検察事務官若しくは司法警察職員によって捜査され又は日本国の裁判所に係属して<wbr>いるものについて、その捜査又は裁判を妨げるおそれがあり、直ちに当該請求に応ずる<wbr>ことが相当でないと認めるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">五　その他直ちに執行協力の請求に応じないことに正当な理由があるとき。</span></code></td>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">五　その他直ちに執行協力の請求に応じないことに正当な理由があるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、次の各号のいずれかに該当する場合には、あらかじめ、外務大臣と協<wbr>議するものとする。</span></code></td>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">２　法務大臣は、次の各号のいずれかに該当する場合には、あらかじめ、外務大臣と協<wbr>議するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">一　前項第二号又は第三号のいずれかに該当することを理由として、執行協力に係る協<wbr>力をしないこととするとき。</span></code></td>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">一　前項第二号又は第三号のいずれかに該当することを理由として、執行協力に係る協<wbr>力をしないこととするとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">二　前項第一号（前条第一項第一号及び第二号に係る部分に限る。）、第四号又は第五<wbr>号のいずれかに該当することを理由として、前項の規定による命令を留保するとき。</span></code></td>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">二　前項第一号（前条第一項第一号及び第二号に係る部分に限る。）、第四号又は第五<wbr>号のいずれかに該当することを理由として、前項の規定による命令を留保するとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">３　第六条第四項の規定は、第一項の規定による命令その他執行協力に関する措置をと<wbr>る場合について準用する。</span></code></td>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">３　第六条第四項の規定は、第一項の規定による命令その他執行協力に関する措置をと<wbr>る場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">（検事正の措置及び審査の請求）</span></code></td>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">（検事正の措置及び審査の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">第四十条　前条第一項の規定による命令を受けた検事正は、その庁の検察官に執行協力<wbr>に必要な措置をとらせ、執行協力の実施に係る財産を保管しなければならない。</span></code></td>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">第四十条　前条第一項の規定による命令を受けた検事正は、その庁の検察官に執行協力<wbr>に必要な措置をとらせ、執行協力の実施に係る財産を保管しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">２　前項の検察官は、執行協力の請求が罰金刑、没収刑又は被害回復命令の確定裁判の<wbr>執行に係るものであるときは、裁判所に対し、執行協力をすることができる場合に該当<wbr>するかどうかについて審査の請求をしなければならない。この場合において、当該請求<wbr>が被害回復命令の確定裁判の執行に係るものであるときは、当該被害回復命令の内容及<wbr>び性質を考慮し、これが日本国の法令によれば没収又は追徴の確定裁判のいずれに相当<wbr>するかについて、意見を付さなければならない。</span></code></td>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">２　前項の検察官は、執行協力の請求が罰金刑、没収刑又は被害回復命令の確定裁判の<wbr>執行に係るものであるときは、裁判所に対し、執行協力をすることができる場合に該当<wbr>するかどうかについて審査の請求をしなければならない。この場合において、当該請求<wbr>が被害回復命令の確定裁判の執行に係るものであるときは、当該被害回復命令の内容及<wbr>び性質を考慮し、これが日本国の法令によれば没収又は追徴の確定裁判のいずれに相当<wbr>するかについて、意見を付さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">（裁判所の審査等）</span></code></td>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">（裁判所の審査等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　裁判所は、審査の結果に基づいて、次の各号に掲げる区分に応じ、当該各<wbr>号に定める決定をしなければならない。</span></code></td>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　裁判所は、審査の結果に基づいて、次の各号に掲げる区分に応じ、当該各<wbr>号に定める決定をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">一　前条第二項の審査の請求が不適法であるとき　却下する決定</span></code></td>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">一　前条第二項の審査の請求が不適法であるとき　却下する決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">二　執行協力の請求に係る確定裁判の全部又は一部について執行協力をすることができ<wbr>る場合に該当するとき　その旨の決定</span></code></td>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">二　執行協力の請求に係る確定裁判の全部又は一部について執行協力をすることができ<wbr>る場合に該当するとき　その旨の決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">三　執行協力の請求に係る確定裁判の全部について執行協力をすることができる場合に<wbr>該当しないとき　その旨の決定</span></code></td>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">三　執行協力の請求に係る確定裁判の全部について執行協力をすることができる場合に<wbr>該当しないとき　その旨の決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">２　裁判所は、被害回復命令の確定裁判に係る執行協力の請求について、前項第二号に<wbr>定める決定をするときは、当該被害回復命令の内容及び性質に応じ、当該確定裁判が日<wbr>本国の法令によれば没収又は追徴の確定裁判のいずれに相当するかを示さなければなら<wbr>ない。</span></code></td>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">２　裁判所は、被害回復命令の確定裁判に係る執行協力の請求について、前項第二号に<wbr>定める決定をするときは、当該被害回復命令の内容及び性質に応じ、当該確定裁判が日<wbr>本国の法令によれば没収又は追徴の確定裁判のいずれに相当するかを示さなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">３　裁判所は、没収刑の確定裁判の執行に係る執行協力の請求について、第一項第二号<wbr>に定める決定をするときは、滅失、毀き損その他の事由により当該確定裁判を執行する<wbr>ことができない場合にこれに代えて当該確定裁判を受けた者から追徴すべき日本円の金<wbr>額を同時に示さなければならない。被害回復命令の確定裁判の執行に係る執行協力の請<wbr>求について、同号に定める決定をする場合において、前項の規定により当該確定裁判が<wbr>没収の確定裁判に相当する旨を示すべきときも、同様とする。</span></code></td>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">３　裁判所は、没収刑の確定裁判の執行に係る執行協力の請求について、第一項第二号<wbr>に定める決定をするときは、滅失、毀き損その他の事由により当該確定裁判を執行する<wbr>ことができない場合にこれに代えて当該確定裁判を受けた者から追徴すべき日本円の金<wbr>額を同時に示さなければならない。被害回復命令の確定裁判の執行に係る執行協力の請<wbr>求について、同号に定める決定をする場合において、前項の規定により当該確定裁判が<wbr>没収の確定裁判に相当する旨を示すべきときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">４　裁判所は、没収刑の確定裁判の執行に係る執行協力の請求について、第一項第二号<wbr>に定める決定をする場合において、請求犯罪につき日本国において刑罰を科すとした場<wbr>合において日本国の法令によれば当該請求に係る財産が没収の裁判をすることができる<wbr>財産に当たるものでないと認めるとき（当該請求に係る財産が、請求犯罪に係る行為に<wbr>よりその被害を受けた者から得た財産である場合には、その者又はその一般承継人に帰<wbr>属することを理由として没収の裁判をすることができる財産に当たるものでないと認め<wbr>るときを除く。）は、その旨及び当該確定裁判の執行に代えて当該確定裁判を受けた者<wbr>から追徴すべき日本円の金額を同時に示さなければならない。</span></code></td>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">４　裁判所は、没収刑の確定裁判の執行に係る執行協力の請求について、第一項第二号<wbr>に定める決定をする場合において、請求犯罪につき日本国において刑罰を科すとした場<wbr>合において日本国の法令によれば当該請求に係る財産が没収の裁判をすることができる<wbr>財産に当たるものでないと認めるとき（当該請求に係る財産が、請求犯罪に係る行為に<wbr>よりその被害を受けた者から得た財産である場合には、その者又はその一般承継人に帰<wbr>属することを理由として没収の裁判をすることができる財産に当たるものでないと認め<wbr>るときを除く。）は、その旨及び当該確定裁判の執行に代えて当該確定裁判を受けた者<wbr>から追徴すべき日本円の金額を同時に示さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">５　裁判所は、被害回復命令の確定裁判に係る執行協力の請求について、第一項第二号<wbr>に定める決定をする場合（第二項の規定により当該確定裁判が没収の確定裁判に相当す<wbr>る旨を示すべきときに限る。）において、請求犯罪につき日本国において刑罰を科すと<wbr>した場合において日本国の法令によれば当該請求に係る財産が没収の裁判をすることが<wbr>できる財産に当たるものでないと認めるとき（当該請求に係る財産が、重大犯罪に係る<wbr>行為によりその被害を受けた者から得た財産であって、被害回復命令によりその者又は<wbr>その一般承継人に返還すべきものである場合には、それらの者に帰属することを理由と<wbr>して没収の裁判をすることができる財産に当たるものでないと認めるときを除く。）は<wbr>、その旨及び当該確定裁判の執行に代えて当該確定裁判を受けた者から追徴すべき日本<wbr>円の金額を同時に示さなければならない。</span></code></td>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">５　裁判所は、被害回復命令の確定裁判に係る執行協力の請求について、第一項第二号<wbr>に定める決定をする場合（第二項の規定により当該確定裁判が没収の確定裁判に相当す<wbr>る旨を示すべきときに限る。）において、請求犯罪につき日本国において刑罰を科すと<wbr>した場合において日本国の法令によれば当該請求に係る財産が没収の裁判をすることが<wbr>できる財産に当たるものでないと認めるとき（当該請求に係る財産が、重大犯罪に係る<wbr>行為によりその被害を受けた者から得た財産であって、被害回復命令によりその者又は<wbr>その一般承継人に返還すべきものである場合には、それらの者に帰属することを理由と<wbr>して没収の裁判をすることができる財産に当たるものでないと認めるときを除く。）は<wbr>、その旨及び当該確定裁判の執行に代えて当該確定裁判を受けた者から追徴すべき日本<wbr>円の金額を同時に示さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">６　裁判所は、没収刑の確定裁判の執行に係る執行協力の請求について、第一項第二号<wbr>に定める決定をする場合において、当該確定裁判に係る目的とされている財産を有し又<wbr>はその財産の上に地上権、抵当権その他の権利を有すると思料するに足りる相当な理由<wbr>のある者が、自己の責めに帰することのできない理由により、当該確定裁判に係る手続<wbr>において自己の権利を主張することができなかったと認めるときは、その旨及び当該確<wbr>定裁判の執行に代えて当該確定裁判を受けた者から追徴すべき日本円の金額を同時に示<wbr>さなければならない。被害回復命令の確定裁判の執行に係る執行協力の請求について、<wbr>同号に定める決定をする場合（第二項の規定により当該確定裁判が没収の確定裁判に相<wbr>当する旨を示すべきときに限る。）においても、同様とする。</span></code></td>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">６　裁判所は、没収刑の確定裁判の執行に係る執行協力の請求について、第一項第二号<wbr>に定める決定をする場合において、当該確定裁判に係る目的とされている財産を有し又<wbr>はその財産の上に地上権、抵当権その他の権利を有すると思料するに足りる相当な理由<wbr>のある者が、自己の責めに帰することのできない理由により、当該確定裁判に係る手続<wbr>において自己の権利を主張することができなかったと認めるときは、その旨及び当該確<wbr>定裁判の執行に代えて当該確定裁判を受けた者から追徴すべき日本円の金額を同時に示<wbr>さなければならない。被害回復命令の確定裁判の執行に係る執行協力の請求について、<wbr>同号に定める決定をする場合（第二項の規定により当該確定裁判が没収の確定裁判に相<wbr>当する旨を示すべきときに限る。）においても、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">７　前条第二項の規定による審査に関しては、没収刑の確定裁判の執行に係る執行協力<wbr>の請求について、当該請求に係る財産を有し若しくはその財産の上に地上権、抵当権そ<wbr>の他の権利を有すると思料するに足りる相当な理由のある者又はこれらの財産若しくは<wbr>権利について没収刑のための保全がされる前に強制競売の開始決定、強制執行による差<wbr>押え若しくは仮差押えの執行がされている場合における差押債権者若しくは仮差押債権<wbr>者が、当該審査請求事件の手続への参加を許されていないときは、第一項第二号に定め<wbr>る決定をすることができない。被害回復命令の確定裁判であってその内容及び性質を考<wbr>慮して日本国の法令によれば没収の確定裁判に相当すると認めるものに係る同号に定め<wbr>る決定についても、同様とする。</span></code></td>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">７　前条第二項の規定による審査に関しては、没収刑の確定裁判の執行に係る執行協力<wbr>の請求について、当該請求に係る財産を有し若しくはその財産の上に地上権、抵当権そ<wbr>の他の権利を有すると思料するに足りる相当な理由のある者又はこれらの財産若しくは<wbr>権利について没収刑のための保全がされる前に強制競売の開始決定、強制執行による差<wbr>押え若しくは仮差押えの執行がされている場合における差押債権者若しくは仮差押債権<wbr>者が、当該審査請求事件の手続への参加を許されていないときは、第一項第二号に定め<wbr>る決定をすることができない。被害回復命令の確定裁判であってその内容及び性質を考<wbr>慮して日本国の法令によれば没収の確定裁判に相当すると認めるものに係る同号に定め<wbr>る決定についても、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">８　組織的犯罪処罰法第五十九条第三項及び第六十二条第三項の規定は没収刑の確定裁<wbr>判の執行に係る執行協力の請求について第一項第二号に定める決定をする場合（被害回<wbr>復命令の確定裁判の執行に係る執行協力の請求について、同号に定める決定をする場合<wbr>において、第二項の規定により当該確定裁判が没収の確定裁判に相当する旨を示すべき<wbr>ときを含む。）について、同条第五項及び第七項から第九項までの規定は執行協力の請<wbr>求に係る前条第二項の規定による審査について、組織的犯罪処罰法第六十三条の規定は<wbr>前条第二項の審査の請求に係る決定に対する抗告について、それぞれ準用する。</span></code></td>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">８　組織的犯罪処罰法第五十九条第三項及び第六十二条第三項の規定は没収刑の確定裁<wbr>判の執行に係る執行協力の請求について第一項第二号に定める決定をする場合（被害回<wbr>復命令の確定裁判の執行に係る執行協力の請求について、同号に定める決定をする場合<wbr>において、第二項の規定により当該確定裁判が没収の確定裁判に相当する旨を示すべき<wbr>ときを含む。）について、同条第五項及び第七項から第九項までの規定は執行協力の請<wbr>求に係る前条第二項の規定による審査について、組織的犯罪処罰法第六十三条の規定は<wbr>前条第二項の審査の請求に係る決定に対する抗告について、それぞれ準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">（執行協力の実施に関する決定の効力等）</span></code></td>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">（執行協力の実施に関する決定の効力等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　次の各号に掲げる確定裁判の執行に係る執行協力の請求について、前条第<wbr>一項第二号に定める決定が確定したときは、当該確定裁判は、執行協力の実施に関して<wbr>は、それぞれ、当該各号に定める日本国の裁判所が言い渡した確定裁判とみなす。</span></code></td>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　次の各号に掲げる確定裁判の執行に係る執行協力の請求について、前条第<wbr>一項第二号に定める決定が確定したときは、当該確定裁判は、執行協力の実施に関して<wbr>は、それぞれ、当該各号に定める日本国の裁判所が言い渡した確定裁判とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">一　罰金刑の確定裁判　罰金の確定裁判</span></code></td>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">一　罰金刑の確定裁判　罰金の確定裁判</span></code></td>
+</tr>
+<tr>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">二　没収刑及び前条第二項の規定により没収の確定裁判に相当する旨が示された被害回<wbr>復命令の確定裁判（次号に掲げるものを除く。）　没収の確定裁判</span></code></td>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">二　没収刑及び前条第二項の規定により没収の確定裁判に相当する旨が示された被害回<wbr>復命令の確定裁判（次号に掲げるものを除く。）　没収の確定裁判</span></code></td>
+</tr>
+<tr>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">三　没収刑又は前条第二項の規定により没収の確定裁判に相当する旨が示された被害回<wbr>復命令であって、同条第四項から第六項までの規定により追徴すべき日本円の金額が示<wbr>されたものの確定裁判　追徴の確定裁判</span></code></td>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">三　没収刑又は前条第二項の規定により没収の確定裁判に相当する旨が示された被害回<wbr>復命令であって、同条第四項から第六項までの規定により追徴すべき日本円の金額が示<wbr>されたものの確定裁判　追徴の確定裁判</span></code></td>
+</tr>
+<tr>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">四　前条第二項の規定により追徴の確定裁判に相当する旨が示された被害回復命令の確<wbr>定裁判　追徴の確定裁判</span></code></td>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">四　前条第二項の規定により追徴の確定裁判に相当する旨が示された被害回復命令の確<wbr>定裁判　追徴の確定裁判</span></code></td>
+</tr>
+<tr>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">２　前項第二号に掲げる確定裁判についての執行協力を実施する場合において、その没<wbr>収刑又は被害回復命令の目的とされている財産について、滅失、毀損その他の事由によ<wbr>り当該確定裁判を執行することができないときは、同項の規定にかかわらず、当該確定<wbr>裁判は、これを受けた者から前条第三項の規定により示された金額を追徴する旨の日本<wbr>国の裁判所が言い渡した確定裁判とみなす。</span></code></td>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">２　前項第二号に掲げる確定裁判についての執行協力を実施する場合において、その没<wbr>収刑又は被害回復命令の目的とされている財産について、滅失、毀損その他の事由によ<wbr>り当該確定裁判を執行することができないときは、同項の規定にかかわらず、当該確定<wbr>裁判は、これを受けた者から前条第三項の規定により示された金額を追徴する旨の日本<wbr>国の裁判所が言い渡した確定裁判とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">３　検察官は、第一項第二号に掲げる確定裁判についての執行協力の実施に係る財産で<wbr>、国際刑事裁判所への送付に適さないものについては、これを売却することができる。<wbr>この場合において、その代価は、当該確定裁判についての執行協力の実施に係る財産と<wbr>みなす。</span></code></td>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">３　検察官は、第一項第二号に掲げる確定裁判についての執行協力の実施に係る財産で<wbr>、国際刑事裁判所への送付に適さないものについては、これを売却することができる。<wbr>この場合において、その代価は、当該確定裁判についての執行協力の実施に係る財産と<wbr>みなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">４　検事正は、罰金刑、没収刑又は被害回復命令の確定裁判の執行に係る執行協力の実<wbr>施を終えたときは、速やかに、その執行協力の実施に係る財産を法務大臣に引き渡さな<wbr>ければならない。</span></code></td>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">４　検事正は、罰金刑、没収刑又は被害回復命令の確定裁判の執行に係る執行協力の実<wbr>施を終えたときは、速やかに、その執行協力の実施に係る財産を法務大臣に引き渡さな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">５　組織的犯罪処罰法第六十五条の規定は、第一項に規定する執行協力の請求に係る前<wbr>条第一項第二号に定める決定の取消しについて準用する。この場合において、組織的犯<wbr>罪処罰法第六十五条第二項中「没収」とあるのは「罰金、没収」と、同条第三項中「第<wbr>六十三条」とあるのは「国際刑事裁判所に対する協力等に関する法律（平成十九年法律<wbr>第三十七号）第四十一条第八項において準用する第六十三条」と読み替えるものとする<wbr>。</span></code></td>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">５　組織的犯罪処罰法第六十五条の規定は、第一項に規定する執行協力の請求に係る前<wbr>条第一項第二号に定める決定の取消しについて準用する。この場合において、組織的犯<wbr>罪処罰法第六十五条第二項中「没収」とあるのは「罰金、没収」と、同条第三項中「第<wbr>六十三条」とあるのは「国際刑事裁判所に対する協力等に関する法律（平成十九年法律<wbr>第三十七号）第四十一条第八項において準用する第六十三条」と読み替えるものとする<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">（没収保全の請求）</span></code></td>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">（没収保全の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">第四十三条　検察官は、執行協力の請求が、没収刑のための保全に係るものであるとき<wbr>、又は被害回復命令のための保全に係るものであってその内容及び性質を考慮して日本<wbr>国の法令によれば没収の保全に相当するものであると認めるときは、裁判官に、没収保<wbr>全命令を発して当該請求に係る財産についてその処分を禁止することを請求しなければ<wbr>ならない。この場合において、検察官は、必要と認めるときは、附帯保全命令を発して<wbr>当該財産の上に存在する地上権、抵当権その他の権利の処分を禁止することを請求する<wbr>ことができる。</span></code></td>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">第四十三条　検察官は、執行協力の請求が、没収刑のための保全に係るものであるとき<wbr>、又は被害回復命令のための保全に係るものであってその内容及び性質を考慮して日本<wbr>国の法令によれば没収の保全に相当するものであると認めるときは、裁判官に、没収保<wbr>全命令を発して当該請求に係る財産についてその処分を禁止することを請求しなければ<wbr>ならない。この場合において、検察官は、必要と認めるときは、附帯保全命令を発して<wbr>当該財産の上に存在する地上権、抵当権その他の権利の処分を禁止することを請求する<wbr>ことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">２　第四十条第二項の審査の請求があった後は、前項の没収刑又は被害回復命令のため<wbr>の保全に関する処分は、その審査の請求を受けた裁判所が行う。</span></code></td>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">２　第四十条第二項の審査の請求があった後は、前項の没収刑又は被害回復命令のため<wbr>の保全に関する処分は、その審査の請求を受けた裁判所が行う。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">（没収保全命令）</span></code></td>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">（没収保全命令）</span></code></td>
+</tr>
+<tr>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">第四十四条　裁判所又は裁判官は、前条第一項前段の規定による請求を受けた場合にお<wbr>いて、第三十八条第一項各号及び第二項各号のいずれにも該当しないと認めるときは、<wbr>没収保全命令を発して、当該請求に係る財産について、この節の定めるところにより、<wbr>その処分を禁止するものとする。</span></code></td>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">第四十四条　裁判所又は裁判官は、前条第一項前段の規定による請求を受けた場合にお<wbr>いて、第三十八条第一項各号及び第二項各号のいずれにも該当しないと認めるときは、<wbr>没収保全命令を発して、当該請求に係る財産について、この節の定めるところにより、<wbr>その処分を禁止するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">２　裁判所又は裁判官は、地上権、抵当権その他の権利がその上に存在する財産につい<wbr>て没収保全命令を発した場合又は発しようとする場合において、当該権利が没収刑の執<wbr>行によって消滅すると思料するに足りる相当な理由がある場合であってその執行のため<wbr>必要があると認めるとき、又は当該権利が仮装のものであると思料するに足りる相当な<wbr>理由があると認めるときは、検察官の請求により、附帯保全命令を別に発して、当該権<wbr>利の処分を禁止することができる。</span></code></td>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">２　裁判所又は裁判官は、地上権、抵当権その他の権利がその上に存在する財産につい<wbr>て没収保全命令を発した場合又は発しようとする場合において、当該権利が没収刑の執<wbr>行によって消滅すると思料するに足りる相当な理由がある場合であってその執行のため<wbr>必要があると認めるとき、又は当該権利が仮装のものであると思料するに足りる相当な<wbr>理由があると認めるときは、検察官の請求により、附帯保全命令を別に発して、当該権<wbr>利の処分を禁止することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">271</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　</span><span style="color: #000000; background-color: #efcb05; ">第二十二条第三項、第四項及び第六項並びに第二十三条第六項の規定は、第一項の<wbr>没収保全命令又は前項の附帯保全命令について準用する。この場合において、組織的犯<wbr>罪処罰法第二十二条第三項中「被告人」とあるのは「国際刑事裁判所に対する協力等に<wbr>関する法律第二条第十号に規定する没収刑又は被害回復命令の裁判を受けるべき者」と<wbr>、「公訴事実」とあるのは「同条第十二号に規定する請求犯罪」と、同条第四項中「第<wbr>一項若しくは第二項」とあるのは「国際刑事裁判所に対する協力等に関する法律第四十<wbr>四条第一項若しくは第二項」と、組織的犯罪処罰法第二十三条第六項中「第一項又は第<wbr>四項」とあるのは「国際刑事裁判所に対する協力等に関する法律第四十三条第一項」と<wbr>読み替えるものとする。</span></code></td>
+<td class="ln">271</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　</span><span class="sf17b18">組織的犯罪処罰法</span><span style="color: #000000; background-color: #efcb05; ">第二十二条第三項、第四項及び第六項並びに第二十三条第六項の<wbr>規定は、第一項の没収保全命令又は前項の附帯保全命令について準用する。この場合に<wbr>おいて、組織的犯罪処罰法第二十二条第三項中「被告人」とあるのは「国際刑事裁判所<wbr>に対する協力等に関する法律第二条第十号に規定する没収刑又は被害回復命令の裁判を<wbr>受けるべき者」と、「公訴事実」とあるのは「同条第十二号に規定する請求犯罪」と、<wbr>同条第四項中「第一項若しくは第二項」とあるのは「国際刑事裁判所に対する協力等に<wbr>関する法律第四十四条第一項若しくは第二項」と、組織的犯罪処罰法第二十三条第六項<wbr>中「第一項又は第四項」とあるのは「国際刑事裁判所に対する協力等に関する法律第四<wbr>十三条第一項」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の没収保全命令又は第二項の附帯保全命令については、国際刑事裁判所にお<wbr>いて規程第六十一条１に規定する審理が行われる前であっても、これをすることができ<wbr>る。</span></code></td>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の没収保全命令又は第二項の附帯保全命令については、国際刑事裁判所にお<wbr>いて規程第六十一条１に規定する審理が行われる前であっても、これをすることができ<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">273</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">５　</span><span style="color: #000000; background-color: #efcb05; ">第二十三条第七項及び第六十八条の規定は、前項の場合における没収保全命令につ<wbr>いて準用する。この場合において、組織的犯罪処罰法第二十三条第七項中「公訴の提起<wbr>があった」とあるのは「国際刑事裁判所に関するローマ規程第六十一条１に規定する審<wbr>理が開始された」と、「被告人」とあるのは「当該審理の対象とされる者」と、組織的<wbr>犯罪処罰法第六十八条第一項中「没収又は追徴のための保全の共助の要請が公訴の提起<wbr>されていない」とあるのは「国際刑事裁判所に対する協力等に関する法律第二条第十号<wbr>に規定する没収刑又は被害回復命令のための保全に係る同号に規定する執行協力の請求<wbr>が国際刑事裁判所に関するローマ規程第六十一条１に規定する審理が開始されていない<wbr>」と、「要請国」とあるのは「国際刑事裁判所」と、「公訴が提起された」とあるのは<wbr>「当該審理が開始された」と、同条第二項中「要請国」とあるのは「国際刑事裁判所」<wbr>と、「公訴を提起できない」とあるのは「国際刑事裁判所に関するローマ規程第六十一<wbr>条１に規定する審理を行うことができない」と読み替えるものとする。</span></code></td>
+<td class="ln">273</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">５　</span><span class="sf17b18">組織的犯罪処罰法</span><span style="color: #000000; background-color: #efcb05; ">第二十三条第七項及び第六十八条の規定は、前項の場合における<wbr>没収保全命令について準用する。この場合において、組織的犯罪処罰法第二十三条第七<wbr>項中「公訴の提起があった」とあるのは「国際刑事裁判所に関するローマ規程第六十一<wbr>条１に規定する審理が開始された」と、「被告人」とあるのは「当該審理の対象とされ<wbr>る者」と、組織的犯罪処罰法第六十八条第一項中「没収又は追徴のための保全の共助の<wbr>要請が公訴の提起されていない」とあるのは「国際刑事裁判所に対する協力等に関する<wbr>法律第二条第十号に規定する没収刑又は被害回復命令のための保全に係る同号に規定す<wbr>る執行協力の請求が国際刑事裁判所に関するローマ規程第六十一条１に規定する審理が<wbr>開始されていない」と、「要請国」とあるのは「国際刑事裁判所」と、「公訴が提起さ<wbr>れた」とあるのは「当該審理が開始された」と、同条第二項中「要請国」とあるのは「<wbr>国際刑事裁判所」と、「公訴を提起できない」とあるのは「国際刑事裁判所に関するロ<wbr>ーマ規程第六十一条１に規定する審理を行うことができない」と読み替えるものとする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">６　前項において準用する組織的犯罪処罰法第六十八条第二項の規定による更新の裁判<wbr>は、検察官に告知された時にその効力を生ずる。</span></code></td>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">６　前項において準用する組織的犯罪処罰法第六十八条第二項の規定による更新の裁判<wbr>は、検察官に告知された時にその効力を生ずる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">（追徴保全の請求）</span></code></td>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">（追徴保全の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">第四十五条　検察官は、執行協力の請求が、被害回復命令のための保全に係るものであ<wbr>ってその内容及び性質を考慮して日本国の法令によれば追徴の保全に相当するものであ<wbr>ると認めるときは、裁判官に、追徴保全命令を発して被害回復命令の裁判を受けるべき<wbr>者に対しその財産の処分を禁止することを請求しなければならない。</span></code></td>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">第四十五条　検察官は、執行協力の請求が、被害回復命令のための保全に係るものであ<wbr>ってその内容及び性質を考慮して日本国の法令によれば追徴の保全に相当するものであ<wbr>ると認めるときは、裁判官に、追徴保全命令を発して被害回復命令の裁判を受けるべき<wbr>者に対しその財産の処分を禁止することを請求しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">２　第四十三条第二項の規定は、前項の被害回復命令のための保全に関する処分につい<wbr>て準用する。</span></code></td>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">２　第四十三条第二項の規定は、前項の被害回復命令のための保全に関する処分につい<wbr>て準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">（追徴保全命令）</span></code></td>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">（追徴保全命令）</span></code></td>
+</tr>
+<tr>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">第四十六条　裁判所又は裁判官は、前条第一項の規定による請求を受けた場合において<wbr>、第三十八条第一項各号及び第二項各号のいずれにも該当しないと認めるときは、追徴<wbr>保全命令を発して、被害回復命令の裁判を受けるべき者に対し、その財産の処分を禁止<wbr>するものとする。</span></code></td>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">第四十六条　裁判所又は裁判官は、前条第一項の規定による請求を受けた場合において<wbr>、第三十八条第一項各号及び第二項各号のいずれにも該当しないと認めるときは、追徴<wbr>保全命令を発して、被害回復命令の裁判を受けるべき者に対し、その財産の処分を禁止<wbr>するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">280</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　</span><span style="color: #000000; background-color: #efcb05; ">第二十二条第四項、第二十三条第六項及び第四十二条第二項から第四項までの規定<wbr>は、前項の追徴保全命令について準用する。この場合において、組織的犯罪処罰法第二<wbr>十二条第四項中「第一項若しくは第二項」とあるのは「国際刑事裁判所に対する協力等<wbr>に関する法律第四十六条第一項」と、組織的犯罪処罰法第二十三条第六項中「第一項又<wbr>は第四項」とあるのは「国際刑事裁判所に対する協力等に関する法律第四十五条第一項<wbr>」と、組織的犯罪処罰法第四十二条第三項及び第四項中「被告人」とあるのは「国際刑<wbr>事裁判所に対する協力等に関する法律第二条第十号に規定する被害回復命令の裁判を受<wbr>けるべき者」と、同項中「公訴事実」とあるのは「同条第十二号に規定する請求犯罪」<wbr>と読み替えるものとする。</span></code></td>
+<td class="ln">280</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　</span><span class="sf17b18">組織的犯罪処罰法</span><span style="color: #000000; background-color: #efcb05; ">第二十二条第四項、第二十三条第六項及び第四十二条第二項から<wbr>第四項までの規定は、前項の追徴保全命令について準用する。この場合において、組織<wbr>的犯罪処罰法第二十二条第四項中「第一項若しくは第二項」とあるのは「国際刑事裁判<wbr>所に対する協力等に関する法律第四十六条第一項」と、組織的犯罪処罰法第二十三条第<wbr>六項中「第一項又は第四項」とあるのは「国際刑事裁判所に対する協力等に関する法律<wbr>第四十五条第一項」と、組織的犯罪処罰法第四十二条第三項及び第四項中「被告人」と<wbr>あるのは「国際刑事裁判所に対する協力等に関する法律第二条第十号に規定する被害回<wbr>復命令の裁判を受けるべき者」と、同項中「公訴事実」とあるのは「同条第十二号に規<wbr>定する請求犯罪」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">（準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">第四十七条　この節に特別の定めがあるもののほか、裁判所若しくは裁判官のする審査<wbr>、処分若しくは令状の発付、検察官若しくは検察事務官のする処分又は裁判所の審査へ<wbr>の利害関係人の参加については組織的犯罪処罰法第三章、第四章（第二十二条、第二十<wbr>三条、第三十二条、第三十三条、第四十二条、第四十三条、第四十七条及び第四十八条<wbr>を除く。）及び第六十九条から第七十二条まで、刑事訴訟法（第一編第二章及び第五章<wbr>から第十三章まで、第二編第一章、第三編第一章及び第四章並びに第七編に限る。）、<wbr>刑事訴訟費用に関する法令並びに刑事事件における第三者所有物の没収手続に関する応<wbr>急措置法（昭和三十八年法律第百三十八号）の規定を、執行協力の請求を受理した場合<wbr>における措置については逃亡犯罪人引渡法第八条第二項並びに第十一条第一項及び第二<wbr>項の規定を、それぞれその性質に反しない限り、準用する。</span></code></td>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">第四十七条　この節に特別の定めがあるもののほか、裁判所若しくは裁判官のする審査<wbr>、処分若しくは令状の発付、検察官若しくは検察事務官のする処分又は裁判所の審査へ<wbr>の利害関係人の参加については組織的犯罪処罰法第三章、第四章（第二十二条、第二十<wbr>三条、第三十二条、第三十三条、第四十二条、第四十三条、第四十七条及び第四十八条<wbr>を除く。）及び第六十九条から第七十二条まで、刑事訴訟法（第一編第二章及び第五章<wbr>から第十三章まで、第二編第一章、第三編第一章及び第四章並びに第七編に限る。）、<wbr>刑事訴訟費用に関する法令並びに刑事事件における第三者所有物の没収手続に関する応<wbr>急措置法（昭和三十八年法律第百三十八号）の規定を、執行協力の請求を受理した場合<wbr>における措置については逃亡犯罪人引渡法第八条第二項並びに第十一条第一項及び第二<wbr>項の規定を、それぞれその性質に反しない限り、準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">第四十八条　この節に定めるもののほか、没収保全命令による処分の禁止と滞納処分と<wbr>の手続の調整について必要な事項で、滞納処分に関するものは、政令で定める。</span></code></td>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">第四十八条　この節に定めるもののほか、没収保全命令による処分の禁止と滞納処分と<wbr>の手続の調整について必要な事項で、滞納処分に関するものは、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">第五節　雑則</span></code></td>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">第五節　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">（通過護送の承認）</span></code></td>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">（通過護送の承認）</span></code></td>
+</tr>
+<tr>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">第四十九条　外務大臣は、国際刑事裁判所から通過護送（外国の官憲又は国際刑事裁判<wbr>所の指定する者（次条において「外国官憲等」という。）が規程第八十九条１の規定に<wbr>よる引渡しの対象となる者（次条において「引渡対象者」という。）を日本国内を通過<wbr>して護送することをいう。次条において同じ。）の承認の請求があったときは、請求の<wbr>方式が規程に適合しないと認める場合を除き、これを承認するものとする。</span></code></td>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">第四十九条　外務大臣は、国際刑事裁判所から通過護送（外国の官憲又は国際刑事裁判<wbr>所の指定する者（次条において「外国官憲等」という。）が規程第八十九条１の規定に<wbr>よる引渡しの対象となる者（次条において「引渡対象者」という。）を日本国内を通過<wbr>して護送することをいう。次条において同じ。）の承認の請求があったときは、請求の<wbr>方式が規程に適合しないと認める場合を除き、これを承認するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">（護送中の着陸があった場合の措置）</span></code></td>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">（護送中の着陸があった場合の措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">第五十条　警察官又は入国警備官は、外国官憲等が護送（前条の規定による承認を受け<wbr>た通過護送を除く。）中の引渡対象者が搭乗する航空機が天候その他やむを得ない理由<wbr>により日本国内に着陸した場合において、当該引渡対象者を発見したときは、外国官憲<wbr>等に引き渡すため、これを拘束することができる。</span></code></td>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">第五十条　警察官又は入国警備官は、外国官憲等が護送（前条の規定による承認を受け<wbr>た通過護送を除く。）中の引渡対象者が搭乗する航空機が天候その他やむを得ない理由<wbr>により日本国内に着陸した場合において、当該引渡対象者を発見したときは、外国官憲<wbr>等に引き渡すため、これを拘束することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">２　入国警備官は、前項の規定により引渡対象者を拘束したときは、これを直ちに警察<wbr>官に引き渡すものとする。この場合において、警察官は、当該引渡対象者を引き続き拘<wbr>束することができる。</span></code></td>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">２　入国警備官は、前項の規定により引渡対象者を拘束したときは、これを直ちに警察<wbr>官に引き渡すものとする。この場合において、警察官は、当該引渡対象者を引き続き拘<wbr>束することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定による引渡対象者の拘束は、着陸の時から九十六時間を超えて行うこ<wbr>とができない。</span></code></td>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定による引渡対象者の拘束は、着陸の時から九十六時間を超えて行うこ<wbr>とができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の規定により引渡対象者を拘束した警察官又は第二項の規定により引渡対象<wbr>者の引渡しを受けた警察官は、外務大臣に対し、その旨を通知するものとする。</span></code></td>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の規定により引渡対象者を拘束した警察官又は第二項の規定により引渡対象<wbr>者の引渡しを受けた警察官は、外務大臣に対し、その旨を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">293</td><td class="sf3b2"><code><span class="sf3b2">５　外務大臣は、前項の通知を受けたときは、国際刑事裁判所に対し、引渡対象者を拘<wbr>束した旨を通報するものとする。</span></code></td>
+<td class="ln">293</td><td class="sf3b2"><code><span class="sf3b2">５　外務大臣は、前項の通知を受けたときは、国際刑事裁判所に対し、引渡対象者を拘<wbr>束した旨を通報するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">６　外務大臣は、国際刑事裁判所から前条の通過護送の承認の請求を受理したときは、<wbr>第四項の警察官に対し、その旨を通知するものとする。</span></code></td>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">６　外務大臣は、国際刑事裁判所から前条の通過護送の承認の請求を受理したときは、<wbr>第四項の警察官に対し、その旨を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">７　第三項に規定する期間内に前条の通過護送の承認の請求が受理された場合には、警<wbr>察官は、同項の規定にかかわらず、引渡対象者の護送を行う外国官憲等に引渡対象者を<wbr>引き渡すまでの間、当該引渡対象者を引き続き拘束することができる。ただし、外務大<wbr>臣から当該通過護送の承認をしない旨の通知を受けた場合には、その拘束を続けること<wbr>ができない。</span></code></td>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">７　第三項に規定する期間内に前条の通過護送の承認の請求が受理された場合には、警<wbr>察官は、同項の規定にかかわらず、引渡対象者の護送を行う外国官憲等に引渡対象者を<wbr>引き渡すまでの間、当該引渡対象者を引き続き拘束することができる。ただし、外務大<wbr>臣から当該通過護送の承認をしない旨の通知を受けた場合には、その拘束を続けること<wbr>ができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">296</td><td class="sf3b2"><code><span class="sf3b2">８　警察官は、第三項又は前項の規定により引渡対象者の拘束を続けることができなく<wbr>なったときは、これを入国警備官に引き渡すものとする。</span></code></td>
+<td class="ln">296</td><td class="sf3b2"><code><span class="sf3b2">８　警察官は、第三項又は前項の規定により引渡対象者の拘束を続けることができなく<wbr>なったときは、これを入国警備官に引き渡すものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">297</td><td class="sf3b2"><code><span class="sf3b2">９　前各項に定めるもののほか、警察官による引渡対象者の拘束に関する手続について<wbr>必要な事項は、国家公安委員会規則で定める。</span></code></td>
+<td class="ln">297</td><td class="sf3b2"><code><span class="sf3b2">９　前各項に定めるもののほか、警察官による引渡対象者の拘束に関する手続について<wbr>必要な事項は、国家公安委員会規則で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">298</td><td class="sf3b2"><code><span class="sf3b2">（最高裁判所規則）</span></code></td>
+<td class="ln">298</td><td class="sf3b2"><code><span class="sf3b2">（最高裁判所規則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">299</td><td class="sf3b2"><code><span class="sf3b2">第五十一条　この章に定めるもののほか、証拠の提供に関する令状の発付、証人尋問及<wbr>び不服申立てに関する手続、引渡犯罪人の引渡し及び仮拘禁に関する裁判所の審査及び<wbr>令状の発付に関する手続並びに執行協力に関する手続について必要な事項は、最高裁判<wbr>所規則で定める。</span></code></td>
+<td class="ln">299</td><td class="sf3b2"><code><span class="sf3b2">第五十一条　この章に定めるもののほか、証拠の提供に関する令状の発付、証人尋問及<wbr>び不服申立てに関する手続、引渡犯罪人の引渡し及び仮拘禁に関する裁判所の審査及び<wbr>令状の発付に関する手続並びに執行協力に関する手続について必要な事項は、最高裁判<wbr>所規則で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">300</td><td class="sf3b2"><code><span class="sf3b2">第三章　国際刑事警察機構に対する措置</span></code></td>
+<td class="ln">300</td><td class="sf3b2"><code><span class="sf3b2">第三章　国際刑事警察機構に対する措置</span></code></td>
+</tr>
+<tr>
+<td class="ln">301</td><td class="sf3b2"><code><span class="sf3b2">第五十二条　国家公安委員会は、国際刑事裁判所から国際刑事警察機構を通じて管轄刑<wbr>事事件の捜査に関する措置の請求を受けたときは、第六条第一項第四号に該当する場合<wbr>を除き、次の各号のいずれかの措置をとることができる。</span></code></td>
+<td class="ln">301</td><td class="sf3b2"><code><span class="sf3b2">第五十二条　国家公安委員会は、国際刑事裁判所から国際刑事警察機構を通じて管轄刑<wbr>事事件の捜査に関する措置の請求を受けたときは、第六条第一項第四号に該当する場合<wbr>を除き、次の各号のいずれかの措置をとることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">302</td><td class="sf3b2"><code><span class="sf3b2">一　相当と認める都道府県警察に必要な調査を指示すること。</span></code></td>
+<td class="ln">302</td><td class="sf3b2"><code><span class="sf3b2">一　相当と認める都道府県警察に必要な調査を指示すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">303</td><td class="sf3b2"><code><span class="sf3b2">二　第六条第二項第三号の国の機関の長に当該措置の請求に関する書面を送付すること<wbr>。</span></code></td>
+<td class="ln">303</td><td class="sf3b2"><code><span class="sf3b2">二　第六条第二項第三号の国の機関の長に当該措置の請求に関する書面を送付すること<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">304</td><td class="sf3b2"><code><span class="sf3b2">２　国際捜査共助等に関する法律第十八条第三項から第八項までの規定は、前項に規定<wbr>する請求に係る措置について準用する。この場合において、同条第四項中「同項第二号<wbr>」とあり、及び同条第七項中「第一項第二号」とあるのは「国際刑事裁判所に対する協<wbr>力等に関する法律第五十二条第一項第二号」と、同条第六項中「第一項第一号」とある<wbr>のは「国際刑事裁判所に対する協力等に関する法律第五十二条第一項第一号」と読み替<wbr>えるものとする。</span></code></td>
+<td class="ln">304</td><td class="sf3b2"><code><span class="sf3b2">２　国際捜査共助等に関する法律第十八条第三項から第八項までの規定は、前項に規定<wbr>する請求に係る措置について準用する。この場合において、同条第四項中「同項第二号<wbr>」とあり、及び同条第七項中「第一項第二号」とあるのは「国際刑事裁判所に対する協<wbr>力等に関する法律第五十二条第一項第二号」と、同条第六項中「第一項第一号」とある<wbr>のは「国際刑事裁判所に対する協力等に関する法律第五十二条第一項第一号」と読み替<wbr>えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">305</td><td class="sf3b2"><code><span class="sf3b2">第四章　国際刑事裁判所の運営を害する罪</span></code></td>
+<td class="ln">305</td><td class="sf3b2"><code><span class="sf3b2">第四章　国際刑事裁判所の運営を害する罪</span></code></td>
+</tr>
+<tr>
+<td class="ln">306</td><td class="sf3b2"><code><span class="sf3b2">（証拠隠滅等）</span></code></td>
+<td class="ln">306</td><td class="sf3b2"><code><span class="sf3b2">（証拠隠滅等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">307</td><td class="sf3b2"><code><span class="sf3b2">第五十三条　他人の管轄刑事事件に関する証拠を隠滅し、偽造し、若しくは変造し、又<wbr>は偽造若しくは変造の証拠を使用した者は、三年以下の懲役又は三十万円以下の罰金に<wbr>処する。</span></code></td>
+<td class="ln">307</td><td class="sf3b2"><code><span class="sf3b2">第五十三条　他人の管轄刑事事件に関する証拠を隠滅し、偽造し、若しくは変造し、又<wbr>は偽造若しくは変造の証拠を使用した者は、三年以下の懲役又は三十万円以下の罰金に<wbr>処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">308</td><td class="sf3b2"><code><span class="sf3b2">２　犯人の親族が犯人の利益のために前項の罪を犯したときは、その刑を免除すること<wbr>ができる。</span></code></td>
+<td class="ln">308</td><td class="sf3b2"><code><span class="sf3b2">２　犯人の親族が犯人の利益のために前項の罪を犯したときは、その刑を免除すること<wbr>ができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">309</td><td class="sf3b2"><code><span class="sf3b2">（証人等威迫）</span></code></td>
+<td class="ln">309</td><td class="sf3b2"><code><span class="sf3b2">（証人等威迫）</span></code></td>
+</tr>
+<tr>
+<td class="ln">310</td><td class="sf3b2"><code><span class="sf3b2">第五十四条　自己若しくは他人の管轄刑事事件の捜査若しくは裁判に必要な知識を有す<wbr>ると認められる者又はその親族に対し、その事件に関して、正当な理由がないのに面会<wbr>を強請し、又は強談威迫の行為をした者は、二年以下の懲役又は三十万円以下の罰金に<wbr>処する。</span></code></td>
+<td class="ln">310</td><td class="sf3b2"><code><span class="sf3b2">第五十四条　自己若しくは他人の管轄刑事事件の捜査若しくは裁判に必要な知識を有す<wbr>ると認められる者又はその親族に対し、その事件に関して、正当な理由がないのに面会<wbr>を強請し、又は強談威迫の行為をした者は、二年以下の懲役又は三十万円以下の罰金に<wbr>処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">311</td><td class="sf3b2"><code><span class="sf3b2">（証人等買収）</span></code></td>
+<td class="ln">311</td><td class="sf3b2"><code><span class="sf3b2">（証人等買収）</span></code></td>
+</tr>
+<tr>
+<td class="ln">312</td><td class="sf3b2"><code><span class="sf3b2">第五十五条　自己又は他人の管轄刑事事件に関し、証言をしないこと、若しくは虚偽の<wbr>証言をすること、又は証拠を隠滅し、偽造し、若しくは変造すること、若しくは偽造若<wbr>しくは変造の証拠を使用することの報酬として、金銭その他の利益を供与し、又はその<wbr>申込み若しくは約束をした者は、二年以下の懲役又は三十万円以下の罰金に処する。</span></code></td>
+<td class="ln">312</td><td class="sf3b2"><code><span class="sf3b2">第五十五条　自己又は他人の管轄刑事事件に関し、証言をしないこと、若しくは虚偽の<wbr>証言をすること、又は証拠を隠滅し、偽造し、若しくは変造すること、若しくは偽造若<wbr>しくは変造の証拠を使用することの報酬として、金銭その他の利益を供与し、又はその<wbr>申込み若しくは約束をした者は、二年以下の懲役又は三十万円以下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">313</td><td class="sf3b2"><code><span class="sf3b2">（組織的な犯罪に係る証拠隠滅等）</span></code></td>
+<td class="ln">313</td><td class="sf3b2"><code><span class="sf3b2">（組織的な犯罪に係る証拠隠滅等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">314</td><td class="sf3b2"><code><span class="sf3b2">第五十六条　規程が定める罪に当たる行為が、団体（共同の目的を有する多数人の継続<wbr>的結合体であって、その目的又は意思を実現する行為の全部又は一部が組織（指揮命令<wbr>に基づき、あらかじめ定められた任務の分担に従って構成員が一体として行動する人の<wbr>結合体をいう。以下この項において同じ。）により反復して行われるものをいう。次項<wbr>において同じ。）の活動として、当該行為を実行するための組織により行われた場合に<wbr>おいて、その罪に係る管轄刑事事件について前三条（第五十三条第二項を除く。次項に<wbr>おいて同じ。）のいずれかに該当する行為をした者は、五年以下の懲役又は五十万円以<wbr>下の罰金に処する。</span></code></td>
+<td class="ln">314</td><td class="sf3b2"><code><span class="sf3b2">第五十六条　規程が定める罪に当たる行為が、団体（共同の目的を有する多数人の継続<wbr>的結合体であって、その目的又は意思を実現する行為の全部又は一部が組織（指揮命令<wbr>に基づき、あらかじめ定められた任務の分担に従って構成員が一体として行動する人の<wbr>結合体をいう。以下この項において同じ。）により反復して行われるものをいう。次項<wbr>において同じ。）の活動として、当該行為を実行するための組織により行われた場合に<wbr>おいて、その罪に係る管轄刑事事件について前三条（第五十三条第二項を除く。次項に<wbr>おいて同じ。）のいずれかに該当する行為をした者は、五年以下の懲役又は五十万円以<wbr>下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">315</td><td class="sf3b2"><code><span class="sf3b2">２　規程が定める罪が、団体に不正権益（団体の威力に基づく一定の地域又は分野にお<wbr>ける支配力であって、当該団体の構成員による犯罪その他の不正な行為により当該団体<wbr>又はその構成員が継続的に利益を得ることを容易にすべきものをいう。以下この項にお<wbr>いて同じ。）を得させ、又は団体の不正権益を維持し、若しくは拡大する目的で犯され<wbr>た場合において、その罪に係る管轄刑事事件について前三条のいずれかに該当する行為<wbr>をした者も、前項と同様とする。</span></code></td>
+<td class="ln">315</td><td class="sf3b2"><code><span class="sf3b2">２　規程が定める罪が、団体に不正権益（団体の威力に基づく一定の地域又は分野にお<wbr>ける支配力であって、当該団体の構成員による犯罪その他の不正な行為により当該団体<wbr>又はその構成員が継続的に利益を得ることを容易にすべきものをいう。以下この項にお<wbr>いて同じ。）を得させ、又は団体の不正権益を維持し、若しくは拡大する目的で犯され<wbr>た場合において、その罪に係る管轄刑事事件について前三条のいずれかに該当する行為<wbr>をした者も、前項と同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">316</td><td class="sf3b2"><code><span class="sf3b2">（偽証等）</span></code></td>
+<td class="ln">316</td><td class="sf3b2"><code><span class="sf3b2">（偽証等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">317</td><td class="sf3b2"><code><span class="sf3b2">第五十七条　規程第六十九条１に定めるところに従って宣誓した証人が虚偽の陳述をし<wbr>たときは、三月以上十年以下の懲役に処する。</span></code></td>
+<td class="ln">317</td><td class="sf3b2"><code><span class="sf3b2">第五十七条　規程第六十九条１に定めるところに従って宣誓した証人が虚偽の陳述をし<wbr>たときは、三月以上十年以下の懲役に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">318</td><td class="sf3b2"><code><span class="sf3b2">２　前項の罪を犯した者が、その証言をした管轄刑事事件について、その裁判が確定す<wbr>る前に自白したときは、その刑を減軽し、又は免除することができる。</span></code></td>
+<td class="ln">318</td><td class="sf3b2"><code><span class="sf3b2">２　前項の罪を犯した者が、その証言をした管轄刑事事件について、その裁判が確定す<wbr>る前に自白したときは、その刑を減軽し、又は免除することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">319</td><td class="sf3b2"><code><span class="sf3b2">３　国際刑事裁判所における手続に従って宣誓した鑑定人、通訳人又は翻訳人が虚偽の<wbr>鑑定、通訳又は翻訳をしたときは、前二項の例による。</span></code></td>
+<td class="ln">319</td><td class="sf3b2"><code><span class="sf3b2">３　国際刑事裁判所における手続に従って宣誓した鑑定人、通訳人又は翻訳人が虚偽の<wbr>鑑定、通訳又は翻訳をしたときは、前二項の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">320</td><td class="sf3b2"><code><span class="sf3b2">（収賄、受託収賄及び事前収賄）</span></code></td>
+<td class="ln">320</td><td class="sf3b2"><code><span class="sf3b2">（収賄、受託収賄及び事前収賄）</span></code></td>
+</tr>
+<tr>
+<td class="ln">321</td><td class="sf3b2"><code><span class="sf3b2">第五十八条　国際刑事裁判所の裁判官、検察官その他の職員（以下「国際刑事裁判所職<wbr>員」という。）が、その職務に関し、賄賂ろを収受し、又はその要求若しくは約束をし<wbr>たときは、五年以下の懲役に処する。この場合において、請託を受けたときは、七年以<wbr>下の懲役に処する。</span></code></td>
+<td class="ln">321</td><td class="sf3b2"><code><span class="sf3b2">第五十八条　国際刑事裁判所の裁判官、検察官その他の職員（以下「国際刑事裁判所職<wbr>員」という。）が、その職務に関し、賄賂ろを収受し、又はその要求若しくは約束をし<wbr>たときは、五年以下の懲役に処する。この場合において、請託を受けたときは、七年以<wbr>下の懲役に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">322</td><td class="sf3b2"><code><span class="sf3b2">２　国際刑事裁判所職員になろうとする者が、その担当すべき職務に関し、請託を受け<wbr>て、賄賂を収受し、又はその要求若しくは約束をしたときは、国際刑事裁判所職員とな<wbr>った場合において、五年以下の懲役に処する。</span></code></td>
+<td class="ln">322</td><td class="sf3b2"><code><span class="sf3b2">２　国際刑事裁判所職員になろうとする者が、その担当すべき職務に関し、請託を受け<wbr>て、賄賂を収受し、又はその要求若しくは約束をしたときは、国際刑事裁判所職員とな<wbr>った場合において、五年以下の懲役に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">323</td><td class="sf3b2"><code><span class="sf3b2">（第三者供賄）</span></code></td>
+<td class="ln">323</td><td class="sf3b2"><code><span class="sf3b2">（第三者供賄）</span></code></td>
+</tr>
+<tr>
+<td class="ln">324</td><td class="sf3b2"><code><span class="sf3b2">第五十九条　国際刑事裁判所職員が、その職務に関し、請託を受けて、第三者に賄賂を<wbr>供与させ、又はその供与の要求若しくは約束をしたときは、五年以下の懲役に処する。<wbr></span></code></td>
+<td class="ln">324</td><td class="sf3b2"><code><span class="sf3b2">第五十九条　国際刑事裁判所職員が、その職務に関し、請託を受けて、第三者に賄賂を<wbr>供与させ、又はその供与の要求若しくは約束をしたときは、五年以下の懲役に処する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">325</td><td class="sf3b2"><code><span class="sf3b2">（加重収賄及び事後収賄）</span></code></td>
+<td class="ln">325</td><td class="sf3b2"><code><span class="sf3b2">（加重収賄及び事後収賄）</span></code></td>
+</tr>
+<tr>
+<td class="ln">326</td><td class="sf3b2"><code><span class="sf3b2">第六十条　国際刑事裁判所職員が前二条の罪を犯し、よって不正な行為をし、又は相当<wbr>の行為をしなかったときは、一年以上の有期懲役に処する。</span></code></td>
+<td class="ln">326</td><td class="sf3b2"><code><span class="sf3b2">第六十条　国際刑事裁判所職員が前二条の罪を犯し、よって不正な行為をし、又は相当<wbr>の行為をしなかったときは、一年以上の有期懲役に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">327</td><td class="sf3b2"><code><span class="sf3b2">２　国際刑事裁判所職員が、その職務上不正な行為をしたこと又は相当の行為をしなか<wbr>ったことに関し、賄賂を収受し、若しくはその要求若しくは約束をし、又は第三者にこ<wbr>れを供与させ、若しくはその供与の要求若しくは約束をしたときも、前項と同様とする<wbr>。</span></code></td>
+<td class="ln">327</td><td class="sf3b2"><code><span class="sf3b2">２　国際刑事裁判所職員が、その職務上不正な行為をしたこと又は相当の行為をしなか<wbr>ったことに関し、賄賂を収受し、若しくはその要求若しくは約束をし、又は第三者にこ<wbr>れを供与させ、若しくはその供与の要求若しくは約束をしたときも、前項と同様とする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">328</td><td class="sf3b2"><code><span class="sf3b2">３　国際刑事裁判所職員であった者が、その在職中に請託を受けて職務上不正な行為を<wbr>したこと又は相当の行為をしなかったことに関し、賄賂を収受し、又はその要求若しく<wbr>は約束をしたときは、五年以下の懲役に処する。</span></code></td>
+<td class="ln">328</td><td class="sf3b2"><code><span class="sf3b2">３　国際刑事裁判所職員であった者が、その在職中に請託を受けて職務上不正な行為を<wbr>したこと又は相当の行為をしなかったことに関し、賄賂を収受し、又はその要求若しく<wbr>は約束をしたときは、五年以下の懲役に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">329</td><td class="sf3b2"><code><span class="sf3b2">（あっせん収賄）</span></code></td>
+<td class="ln">329</td><td class="sf3b2"><code><span class="sf3b2">（あっせん収賄）</span></code></td>
+</tr>
+<tr>
+<td class="ln">330</td><td class="sf3b2"><code><span class="sf3b2">第六十一条　国際刑事裁判所職員が請託を受け、他の国際刑事裁判所職員に職務上不正<wbr>な行為をさせるように、又は相当の行為をさせないようにあっせんをすること又はした<wbr>ことの報酬として、賄賂を収受し、又はその要求若しくは約束をしたときは、五年以下<wbr>の懲役に処する。</span></code></td>
+<td class="ln">330</td><td class="sf3b2"><code><span class="sf3b2">第六十一条　国際刑事裁判所職員が請託を受け、他の国際刑事裁判所職員に職務上不正<wbr>な行為をさせるように、又は相当の行為をさせないようにあっせんをすること又はした<wbr>ことの報酬として、賄賂を収受し、又はその要求若しくは約束をしたときは、五年以下<wbr>の懲役に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">331</td><td class="sf3b2"><code><span class="sf3b2">（没収及び追徴）</span></code></td>
+<td class="ln">331</td><td class="sf3b2"><code><span class="sf3b2">（没収及び追徴）</span></code></td>
+</tr>
+<tr>
+<td class="ln">332</td><td class="sf3b2"><code><span class="sf3b2">第六十二条　犯人又は情を知った第三者が収受した賄賂は、没収する。その全部又は一<wbr>部を没収することができないときは、その価額を追徴する。</span></code></td>
+<td class="ln">332</td><td class="sf3b2"><code><span class="sf3b2">第六十二条　犯人又は情を知った第三者が収受した賄賂は、没収する。その全部又は一<wbr>部を没収することができないときは、その価額を追徴する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">333</td><td class="sf3b2"><code><span class="sf3b2">（贈賄）</span></code></td>
+<td class="ln">333</td><td class="sf3b2"><code><span class="sf3b2">（贈賄）</span></code></td>
+</tr>
+<tr>
+<td class="ln">334</td><td class="sf3b2"><code><span class="sf3b2">第六十三条　第五十八条から第六十一条までに規定する賄賂を供与し、又はその申込み<wbr>若しくは約束をした者は、三年以下の懲役又は二百五十万円以下の罰金に処する。</span></code></td>
+<td class="ln">334</td><td class="sf3b2"><code><span class="sf3b2">第六十三条　第五十八条から第六十一条までに規定する賄賂を供与し、又はその申込み<wbr>若しくは約束をした者は、三年以下の懲役又は二百五十万円以下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">335</td><td class="sf3b2"><code><span class="sf3b2">（職務執行妨害及び職務強要）</span></code></td>
+<td class="ln">335</td><td class="sf3b2"><code><span class="sf3b2">（職務執行妨害及び職務強要）</span></code></td>
+</tr>
+<tr>
+<td class="ln">336</td><td class="sf3b2"><code><span class="sf3b2">第六十四条　国際刑事裁判所職員が職務を執行するに当たり、これに対して暴行又は脅<wbr>迫を加えた者は、三年以下の懲役若しくは禁錮又は五十万円以下の罰金に処する。</span></code></td>
+<td class="ln">336</td><td class="sf3b2"><code><span class="sf3b2">第六十四条　国際刑事裁判所職員が職務を執行するに当たり、これに対して暴行又は脅<wbr>迫を加えた者は、三年以下の懲役若しくは禁錮又は五十万円以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">337</td><td class="sf3b2"><code><span class="sf3b2">２　国際刑事裁判所職員に、ある処分をさせ、若しくはさせないため、又はその職を辞<wbr>させるために、暴行又は脅迫を加えた者も、前項と同様とする。</span></code></td>
+<td class="ln">337</td><td class="sf3b2"><code><span class="sf3b2">２　国際刑事裁判所職員に、ある処分をさせ、若しくはさせないため、又はその職を辞<wbr>させるために、暴行又は脅迫を加えた者も、前項と同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">338</td><td class="sf3b2"><code><span class="sf3b2">（国民の国外犯）</span></code></td>
+<td class="ln">338</td><td class="sf3b2"><code><span class="sf3b2">（国民の国外犯）</span></code></td>
+</tr>
+<tr>
+<td class="ln">339</td><td class="sf3b2"><code><span class="sf3b2">第六十五条　この章の罪は、刑法第三条の例に従う。</span></code></td>
+<td class="ln">339</td><td class="sf3b2"><code><span class="sf3b2">第六十五条　この章の罪は、刑法第三条の例に従う。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">340</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">340</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">341</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">341</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">342</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、規程が日本国について効力を生ずる日から施行する。</span></code></td>
+<td class="ln">342</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、規程が日本国について効力を生ずる日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">343</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">343</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">344</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行前に犯された請求犯罪又は引渡犯罪に係る協力の請求について<wbr>は、第二章の規定は、次の各号のいずれかに該当する場合を除き、適用しない。</span></code></td>
+<td class="ln">344</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行前に犯された請求犯罪又は引渡犯罪に係る協力の請求について<wbr>は、第二章の規定は、次の各号のいずれかに該当する場合を除き、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">345</td><td class="sf3b2"><code><span class="sf3b2">一　国際刑事裁判所が規程第十三条（ｂ）の規定により管轄権を行使するとき。</span></code></td>
+<td class="ln">345</td><td class="sf3b2"><code><span class="sf3b2">一　国際刑事裁判所が規程第十三条（ｂ）の規定により管轄権を行使するとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">346</td><td class="sf3b2"><code><span class="sf3b2">二　当該請求犯罪又は引渡犯罪が、規程の締約国である外国について規程が効力を生じ<wbr>た後に、当該外国内若しくはその国籍を有する船舶若しくは航空機内で犯され、又は当<wbr>該外国の国籍を有する者により犯されたものであるとき。</span></code></td>
+<td class="ln">346</td><td class="sf3b2"><code><span class="sf3b2">二　当該請求犯罪又は引渡犯罪が、規程の締約国である外国について規程が効力を生じ<wbr>た後に、当該外国内若しくはその国籍を有する船舶若しくは航空機内で犯され、又は当<wbr>該外国の国籍を有する者により犯されたものであるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">347</td><td class="sf3b2"><code><span class="sf3b2">三　当該請求犯罪又は引渡犯罪が、規程第十二条３の規定により当該請求犯罪若しくは<wbr>引渡犯罪について国際刑事裁判所の管轄権の行使を受諾した国の国内若しくはその国籍<wbr>を有する船舶若しくは航空機内で犯され、又は当該国の国籍を有する者により犯された<wbr>ものであるとき。</span></code></td>
+<td class="ln">347</td><td class="sf3b2"><code><span class="sf3b2">三　当該請求犯罪又は引渡犯罪が、規程第十二条３の規定により当該請求犯罪若しくは<wbr>引渡犯罪について国際刑事裁判所の管轄権の行使を受諾した国の国内若しくはその国籍<wbr>を有する船舶若しくは航空機内で犯され、又は当該国の国籍を有する者により犯された<wbr>ものであるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">348</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、国際刑事警察機構を通じた管轄刑事事件の捜査に関する措置の請求<wbr>に係る第三章の規定の適用について準用する。</span></code></td>
+<td class="ln">348</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、国際刑事警察機構を通じた管轄刑事事件の捜査に関する措置の請求<wbr>に係る第三章の規定の適用について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">349</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年六月二四日法律第七四号）　抄</span></code></td>
+<td class="ln">349</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年六月二四日法律第七四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">350</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">350</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">351</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二十日を経過した日から施行する。</span></code></td>
+<td class="ln">351</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二十日を経過した日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">352</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年六月三日法律第五四号）　抄</span></code></td>
+<td class="ln">352</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年六月三日法律第五四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">353</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">353</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">354</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">354</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">355</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+<td class="ln">355</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">356</td><td class="sf3b2"><code><span class="sf3b2">二　第一条（刑事訴訟法第九十条、第百五十一条及び第百六十一条の改正規定に限る。<wbr>）、第三条、第五条及び第八条の規定並びに附則第三条及び第五条の規定　公布の日か<wbr>ら起算して二十日を経過した日</span></code></td>
+<td class="ln">356</td><td class="sf3b2"><code><span class="sf3b2">二　第一条（刑事訴訟法第九十条、第百五十一条及び第百六十一条の改正規定に限る。<wbr>）、第三条、第五条及び第八条の規定並びに附則第三条及び第五条の規定　公布の日か<wbr>ら起算して二十日を経過した日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">357</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二一日法律第六七号）　抄</span></code></td>
+<td class="ln">357</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二一日法律第六七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">358</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">358</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">359</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二十日を経過した日から施行する。</span></code></td>
+<td class="ln">359</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二十日を経過した日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

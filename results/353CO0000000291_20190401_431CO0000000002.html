@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和五十三年政令第二百九十一号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和五十三年政令第二百九十一号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">特許協力条約に基づく国際出願等に関する法律施行令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">特許協力条約に基づく国際出願等に関する法律施行令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、特許協力条約に基づく国際出願等に関する法律（昭和五十三年法律第三十号）<wbr>第八条第四項、第十二条第三項、第十四条、第十八条第一項、第十九条第一項において<wbr>準用する特許法（昭和三十四年法律第百二十一号）第八条第一項、第十九条第二項にお<wbr>いて準用する同法第四十七条第二項並びに附則第二条第一項及び第三項の規定に基づき<wbr>、この政令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、特許協力条約に基づく国際出願等に関する法律（昭和五十三年法律第三十号）<wbr>第八条第四項、第十二条第三項、第十四条、第十八条第一項、第十九条第一項において<wbr>準用する特許法（昭和三十四年法律第百二十一号）第八条第一項、第十九条第二項にお<wbr>いて準用する同法第四十七条第二項並びに附則第二条第一項及び第三項の規定に基づき<wbr>、この政令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（国際予備審査の請求に係る手続の補完及び手続の補正）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（国際予備審査の請求に係る手続の補完及び手続の補正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　特許庁長官は、国際予備審査の請求につき、特許協力条約に基づく国際出願等<wbr>に関する法律（以下「法」という。）第十四条の経済産業省令で定める事由のうち当該<wbr>請求に係る国際出願の特定に関する事由として経済産業省令で定めるものがあるときは<wbr>、経済産業省令で定める期間内に書面により手続の補完をすべきことを命じなければな<wbr>らない。この場合において、手続の補完をすべきことを命じられた者がその期間内に手<wbr>続の補完をしたときは、当該国際予備審査の請求は、手続の補完に係る書面の到達の日<wbr>にされたものとみなす。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　特許庁長官は、国際予備審査の請求につき、特許協力条約に基づく国際出願等<wbr>に関する法律（以下「法」という。）第十四条の経済産業省令で定める事由のうち当該<wbr>請求に係る国際出願の特定に関する事由として経済産業省令で定めるものがあるときは<wbr>、経済産業省令で定める期間内に書面により手続の補完をすべきことを命じなければな<wbr>らない。この場合において、手続の補完をすべきことを命じられた者がその期間内に手<wbr>続の補完をしたときは、当該国際予備審査の請求は、手続の補完に係る書面の到達の日<wbr>にされたものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　特許庁長官は、国際予備審査の請求につき、法第十四条に規定する事由のうち前項<wbr>に規定するもの以外のものがあるときは、経済産業省令で定める期間内に書面により手<wbr>続の補正をすべきことを命じなければならない。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　特許庁長官は、国際予備審査の請求につき、法第十四条に規定する事由のうち前項<wbr>に規定するもの以外のものがあるときは、経済産業省令で定める期間内に書面により手<wbr>続の補正をすべきことを命じなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定により手続の補完又は手続の補正をすべきことを命じられた者が前二<wbr>項に規定する期間内に手続の補完又は手続の補正をしなかつたときは、その国際予備審<wbr>査の請求は、初めからなかつたものとみなす。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定により手続の補完又は手続の補正をすべきことを命じられた者が前二<wbr>項に規定する期間内に手続の補完又は手続の補正をしなかつたときは、その国際予備審<wbr>査の請求は、初めからなかつたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（手数料）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（手数料）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第十八条第一項の政令で定める金額は、一件につき千四百円とする。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第十八条第一項の政令で定める金額は、一件につき千四百円とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　法第十八条第二項本文の政令で定める金額は、次の各号に掲げる者ごとに当該各号<wbr>に定める金額とする。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　法第十八条第二項本文の政令で定める金額は、次の各号に掲げる者ごとに当該各号<wbr>に定める金額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">11</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　</span><span style="color: #000000; background-color: #efcb05; ">の表一の項第二欄に掲げる者　イ又はロに掲げる場合に応じ、それぞれイ又はロに<wbr>定める額</span></code></td>
+<td class="ln">11</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　</span><span class="sf17b18">法第十八条第二項</span><span style="color: #000000; background-color: #efcb05; ">の表一の項第二欄に掲げる者　イ又はロに掲げる場合に応じ、そ<wbr>れぞれイ又はロに定める額</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十八条第二項の表一の項第二欄イに掲げる場合　一件につき八万円</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十八条第二項の表一の項第二欄イに掲げる場合　一件につき八万円</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第十八条第二項の表一の項第二欄ロに掲げる場合　一件につき十六万六千円</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第十八条第二項の表一の項第二欄ロに掲げる場合　一件につき十六万六千円</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">二　法第十八条第二項の表二の項第二欄に掲げる者　一件につき一万円</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">二　法第十八条第二項の表二の項第二欄に掲げる者　一件につき一万円</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">15</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三　</span><span style="color: #000000; background-color: #efcb05; ">の表三の項第二欄に掲げる者　イ又はロに掲げる場合に応じ、それぞれイ又はロに<wbr>定める額</span></code></td>
+<td class="ln">15</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">三　</span><span class="sf17b18">法第十八条第二項</span><span style="color: #000000; background-color: #efcb05; ">の表三の項第二欄に掲げる者　イ又はロに掲げる場合に応じ、そ<wbr>れぞれイ又はロに定める額</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十八条第二項の表三の項第二欄イに掲げる場合　一件につき二万六千円</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">イ　法第十八条第二項の表三の項第二欄イに掲げる場合　一件につき二万六千円</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第十八条第二項の表三の項第二欄ロに掲げる場合　一件につき五万八千円</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第十八条第二項の表三の項第二欄ロに掲げる場合　一件につき五万八千円</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">３　法第十八条第二項の表一の項の第四欄に掲げる政令で定める金額は、特許協力条約<wbr>に基づく規則第十五規則に規定する国際出願手数料として経済産業省令で定める金額と<wbr>する。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">３　法第十八条第二項の表一の項の第四欄に掲げる政令で定める金額は、特許協力条約<wbr>に基づく規則第十五規則に規定する国際出願手数料として経済産業省令で定める金額と<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">４　法第十八条第二項の表二の項の第四欄に掲げる政令で定める金額は、特許協力条約<wbr>に基づく規則第十六規則に規定する調査手数料として経済産業省令で定める金額に前項<wbr>に規定する金額を合算して得た額とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">４　法第十八条第二項の表二の項の第四欄に掲げる政令で定める金額は、特許協力条約<wbr>に基づく規則第十六規則に規定する調査手数料として経済産業省令で定める金額に前項<wbr>に規定する金額を合算して得た額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">５　法第十八条第二項の表三の項の第四欄に掲げる政令で定める金額は、特許協力条約<wbr>に基づく規則第五十七規則に規定する取扱手数料として経済産業省令で定める金額とす<wbr>る。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">５　法第十八条第二項の表三の項の第四欄に掲げる政令で定める金額は、特許協力条約<wbr>に基づく規則第五十七規則に規定する取扱手数料として経済産業省令で定める金額とす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">６　法第八条第四項の政令で定める金額は、次の各号に掲げる場合に応じ当該各号に定<wbr>める金額に請求の範囲に記載されている発明の数から一を減じて得た数を乗じて得た金<wbr>額とする。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">６　法第八条第四項の政令で定める金額は、次の各号に掲げる場合に応じ当該各号に定<wbr>める金額に請求の範囲に記載されている発明の数から一を減じて得た数を乗じて得た金<wbr>額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">一　法第八条第四項第一号に掲げる場合　六万円</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">一　法第八条第四項第一号に掲げる場合　六万円</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">二　法第八条第四項第二号に掲げる場合　十二万六千円</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">二　法第八条第四項第二号に掲げる場合　十二万六千円</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">７　法第十二条第三項の政令で定める金額は、次の各号に掲げる場合に応じ当該各号に<wbr>定める金額に国際予備審査を受けようとする請求の範囲に記載されている発明の数から<wbr>一を減じて得た数を乗じて得た金額とする。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">７　法第十二条第三項の政令で定める金額は、次の各号に掲げる場合に応じ当該各号に<wbr>定める金額に国際予備審査を受けようとする請求の範囲に記載されている発明の数から<wbr>一を減じて得た数を乗じて得た金額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">一　法第十二条第三項第一号に掲げる場合　一万五千円</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">一　法第十二条第三項第一号に掲げる場合　一万五千円</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">二　法第十二条第三項第二号に掲げる場合　三万四千円</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">二　法第十二条第三項第二号に掲げる場合　三万四千円</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">８　請求の範囲に記載されている発明のうちに特許協力条約に基づく規則第十三規則に<wbr>規定する一群の発明に該当する二以上の発明がある場合における前二項の規定の適用に<wbr>ついては、経済産業省令で定めるところにより、当該二以上の発明を一の発明とみなし<wbr>て前二項に規定する発明の数を算定するものとする。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">８　請求の範囲に記載されている発明のうちに特許協力条約に基づく規則第十三規則に<wbr>規定する一群の発明に該当する二以上の発明がある場合における前二項の規定の適用に<wbr>ついては、経済産業省令で定めるところにより、当該二以上の発明を一の発明とみなし<wbr>て前二項に規定する発明の数を算定するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（資力、研究開発及び技術開発を行う能力、産業の発達に対する寄与の程度等を総合的<wbr>に考慮して定める者）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（資力、研究開発及び技術開発を行う能力、産業の発達に対する寄与の程度等を総合的<wbr>に考慮して定める者）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第十八条の二の政令で定める者は、特許法施行令（昭和三十五年政令第十六<wbr>号）第十条各号のいずれかに該当する者とする。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第十八条の二の政令で定める者は、特許法施行令（昭和三十五年政令第十六<wbr>号）第十条各号のいずれかに該当する者とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（軽減の申請）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（軽減の申請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十八条の二の規定による手数料の軽減を受けようとする者は、次に掲げる<wbr>事項を記載した申請書に、申請人が特許法施行令第十条各号のいずれかに該当する者で<wbr>あることを証する書面として経済産業省令で定めるものを添付して、特許庁長官に提出<wbr>しなければならない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第十八条の二の規定による手数料の軽減を受けようとする者は、次に掲げる<wbr>事項を記載した申請書に、申請人が特許法施行令第十条各号のいずれかに該当する者で<wbr>あることを証する書面として経済産業省令で定めるものを添付して、特許庁長官に提出<wbr>しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">一　申請人の氏名又は名称及び住所又は居所</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">一　申請人の氏名又は名称及び住所又は居所</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">二　申請に係る発明の国際出願の表示</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">二　申請に係る発明の国際出願の表示 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（手数料の軽減）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（手数料の軽減）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第五条　特許庁長官は、特許法施行令第十条第一号から第三号までのいずれかに該当す<wbr>る者から前条の申請書の提出があつたときは、第二条第二項第一号及び第三号に掲げる<wbr>手数料の金額の二分の一に相当する額を軽減するものとする。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第五条　特許庁長官は、特許法施行令第十条第一号から第三号までのいずれかに該当す<wbr>る者から前条の申請書の提出があつたときは、第二条第二項第一号及び第三号に掲げる<wbr>手数料の金額の二分の一に相当する額を軽減するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　特許庁長官は、特許法施行令第十条第四号又は第五号に該当する者から前条の申請<wbr>書の提出があつたときは、第二条第二項第一号及び第三号に掲げる手数料の金額の三分<wbr>の二に相当する額を軽減するものとする。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　特許庁長官は、特許法施行令第十条第四号又は第五号に該当する者から前条の申請<wbr>書の提出があつたときは、第二条第二項第一号及び第三号に掲げる手数料の金額の三分<wbr>の二に相当する額を軽減するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　特許庁長官は、特許法施行令第十条第六号に該当する者から前条の申請書の提出が<wbr>あつたときは、第二条第二項第一号及び第三号に掲げる手数料の金額の四分の三に相当<wbr>する額を軽減するものとする。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　特許庁長官は、特許法施行令第十条第六号に該当する者から前条の申請書の提出が<wbr>あつたときは、第二条第二項第一号及び第三号に掲げる手数料の金額の四分の三に相当<wbr>する額を軽減するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定により算定した手数料の金額に十円未満の端数があるとき（法第十八<wbr>条第三項において準用する特許法第百九十五条第六項の規定の適用があるときを除く。<wbr>）は、その端数は、切り捨てる。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定により算定した手数料の金額に十円未満の端数があるとき（法第十八<wbr>条第三項において準用する特許法第百九十五条第六項の規定の適用があるときを除く。<wbr>）は、その端数は、切り捨てる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（在外者の手続の特例）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（在外者の手続の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第六条　特許法施行令第一条（第二号及び第三号を除く。）の規定は、法の規定に基づ<wbr>く在外者の手続に準用する。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第六条　特許法施行令第一条（第二号及び第三号を除く。）の規定は、法の規定に基づ<wbr>く在外者の手続に準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（審査官の資格）</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（審査官の資格）</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第七条　特許法施行令第四条の規定は、国際調査及び国際予備審査に係る審査官の資格<wbr>に準用する。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第七条　特許法施行令第四条の規定は、国際調査及び国際予備審査に係る審査官の資格<wbr>に準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">45</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　この政令は、</span><span style="color: #000000; background-color: #efcb05; ">の施行の日から施行する。ただし、第一条、次条及び附則第三条<wbr>の規定は、法第四章及び法附則第二条の規定の施行の日から施行する。</span></code></td>
+<td class="ln">45</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　この政令は、</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">の施行の日から施行する。ただし、第一条、次条及び附則第三<wbr>条の規定は、法第四章及び法附則第二条の規定の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（国際予備審査の請求件数の暫定的制限）</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（国際予備審査の請求件数の暫定的制限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第二条　法附則第二条第一項の政令で定める期間は、毎年一月一日から十二月三十一日<wbr>までの期間（前条ただし書に規定する日の属する年にあつては、その日からその日の属<wbr>する年の十二月三十一日までの期間）とする。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第二条　法附則第二条第一項の政令で定める期間は、毎年一月一日から十二月三十一日<wbr>までの期間（前条ただし書に規定する日の属する年にあつては、その日からその日の属<wbr>する年の十二月三十一日までの期間）とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第三条　特許庁長官は、法附則第二条第二項の規定により国際予備審査の請求件数の制<wbr>限に係る件数を告示した場合において、当該制限に係る期間内における国際予備審査の<wbr>請求件数がその告示した件数に達したときは、その旨を遅滞なく告示しなければならな<wbr>い。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第三条　特許庁長官は、法附則第二条第二項の規定により国際予備審査の請求件数の制<wbr>限に係る件数を告示した場合において、当該制限に係る期間内における国際予備審査の<wbr>請求件数がその告示した件数に達したときは、その旨を遅滞なく告示しなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　出願人は、前項の規定による告示の日の翌日以後その日の属する年の十二月三十一<wbr>日までの間は、法第十条第一項の規定にかかわらず、国際予備審査の請求をすることが<wbr>できない。ただし、当該告示の日の翌日以後に国際予備審査の請求書が郵便又は民間事<wbr>業者による信書の送達に関する法律（平成十四年法律第九十九号。以下「信書便法」と<wbr>いう。）第二条第六項に規定する一般信書便事業者若しくは同条第九項に規定する特定<wbr>信書便事業者の提供する同条第二項に規定する信書便の役務であつて経済産業省令で定<wbr>めるものにより特許庁に到達した場合において、その請求書を日本郵便株式会社の営業<wbr>所（簡易郵便局法（昭和二十四年法律第二百十三号）第七条第一項に規定する簡易郵便<wbr>局を含み、郵便の業務を行うものに限る。）に差し出した日が当該告示の日以前である<wbr>ことを郵便物の受領証により証明したとき又はその郵便物若しくは信書便法第二条第三<wbr>項に規定する信書便物の通信日付印により明瞭りように表示された日が当該告示の日以<wbr>前であるときは、この限りでない。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　出願人は、前項の規定による告示の日の翌日以後その日の属する年の十二月三十一<wbr>日までの間は、法第十条第一項の規定にかかわらず、国際予備審査の請求をすることが<wbr>できない。ただし、当該告示の日の翌日以後に国際予備審査の請求書が郵便又は民間事<wbr>業者による信書の送達に関する法律（平成十四年法律第九十九号。以下「信書便法」と<wbr>いう。）第二条第六項に規定する一般信書便事業者若しくは同条第九項に規定する特定<wbr>信書便事業者の提供する同条第二項に規定する信書便の役務であつて経済産業省令で定<wbr>めるものにより特許庁に到達した場合において、その請求書を日本郵便株式会社の営業<wbr>所（簡易郵便局法（昭和二十四年法律第二百十三号）第七条第一項に規定する簡易郵便<wbr>局を含み、郵便の業務を行うものに限る。）に差し出した日が当該告示の日以前である<wbr>ことを郵便物の受領証により証明したとき又はその郵便物若しくは信書便法第二条第三<wbr>項に規定する信書便物の通信日付印により明瞭りように表示された日が当該告示の日以<wbr>前であるときは、この限りでない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五五年九月一二日政令第二三七号）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五五年九月一二日政令第二三七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十五年十月一日から施行する。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、昭和五十五年十月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前にした国際予備審査の請求については、なお従前の例による。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前にした国際予備審査の請求については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五九年五月一五日政令第一四五号）　抄</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五九年五月一五日政令第一四五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">この政令は、昭和五十九年八月一日から施行する。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">この政令は、昭和五十九年八月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六〇年八月三〇日政令第二五四号）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六〇年八月三〇日政令第二五四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">この政令は、特許法等の一部を改正する法律（昭和六十年法律第四十一号）の一部の施<wbr>行の日（昭和六十年十月一日）から施行する。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">この政令は、特許法等の一部を改正する法律（昭和六十年法律第四十一号）の一部の施<wbr>行の日（昭和六十年十月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年五月二五日政令第一七四号）</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年五月二五日政令第一七四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">この政令中第二条の規定は昭和六十二年六月一日から、第三条の規定は同年八月一日か<wbr>ら、第一条の規定は同年十二月十五日から施行する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">この政令中第二条の規定は昭和六十二年六月一日から、第三条の規定は同年八月一日か<wbr>ら、第一条の規定は同年十二月十五日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年三月二五日政令第四九号）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年三月二五日政令第四九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成三年四月一日から施行する。ただし、第一条の規定は同年十二月一日<wbr>から、第四条の規定は同年五月一日から、第二十三条の規定は同年六月一日から施行す<wbr>る。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成三年四月一日から施行する。ただし、第一条の規定は同年十二月一日<wbr>から、第四条の規定は同年五月一日から、第二十三条の規定は同年六月一日から施行す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年六月二五日政令第二一四号）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年六月二五日政令第二一四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成四年七月一日から施行する。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成四年七月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前にした国際予備審査の請求については、なお従前の例による。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　この政令の施行前にした国際予備審査の請求については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年三月二四日政令第七七号）　抄</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年三月二四日政令第七七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成六年四月一日から施行する。ただし、第一条の規定は同年十二月<wbr>一日から、第二十四条の規定は同年六月一日から施行する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成六年四月一日から施行する。ただし、第一条の規定は同年十二月<wbr>一日から、第二十四条の規定は同年六月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月二四日政令第九八号）　抄</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年三月二四日政令第九八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十二年四月一日から施行する。ただし、第十九条の規定は、同年<wbr>六月一日から施行する。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十二年四月一日から施行する。ただし、第十九条の規定は、同年<wbr>六月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年六月七日政令第三一一号）　抄</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年六月七日政令第三一一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施<wbr>行の日（平成十三年一月六日）から施行する。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施<wbr>行の日（平成十三年一月六日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月六日政令第三五六号）　抄</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月六日政令第三五六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、特許法等の一部を改正する法律の施行の日（平成十六年一月一日<wbr>）から施行する。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、特許法等の一部を改正する法律の施行の日（平成十六年一月一日<wbr>）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（特許協力条約に基づく国際出願等に関する法律施行令の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（特許協力条約に基づく国際出願等に関する法律施行令の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第二条　第七条の規定による改正後の特許協力条約に基づく国際出願等に関する法律施<wbr>行令第二条の規定は、この政令の施行後にする国際出願について適用し、この政令の施<wbr>行前にした国際出願については、なお従前の例による。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第二条　第七条の規定による改正後の特許協力条約に基づく国際出願等に関する法律施<wbr>行令第二条の規定は、この政令の施行後にする国際出願について適用し、この政令の施<wbr>行前にした国際出願については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年八月三日政令第二三五号）　抄</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年八月三日政令第二三五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十九年十月一日から施行する。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十九年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（特許協力条約に基づく国際出願等に関する法律施行令の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（特許協力条約に基づく国際出願等に関する法律施行令の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　施行日前にされた第六十七条の規定による改正前の特許協力条約に基づく<wbr>国際出願等に関する法律施行令附則第三条第二項の規定による郵便局への差出しは、第<wbr>六十七条の規定による改正後の同項の規定の適用については、郵便事業株式会社の営業<wbr>所であって郵便窓口業務の委託等に関する法律（昭和二十四年法律第二百十三号）第二<wbr>条に規定する郵便窓口業務を行うもの（同法第三条第一項若しくは第三項の規定による<wbr>委託又は同法第四条の規定による再委託を受けた者の営業所を含む。）への差出しとみ<wbr>なす。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　施行日前にされた第六十七条の規定による改正前の特許協力条約に基づく<wbr>国際出願等に関する法律施行令附則第三条第二項の規定による郵便局への差出しは、第<wbr>六十七条の規定による改正後の同項の規定の適用については、郵便事業株式会社の営業<wbr>所であって郵便窓口業務の委託等に関する法律（昭和二十四年法律第二百十三号）第二<wbr>条に規定する郵便窓口業務を行うもの（同法第三条第一項若しくは第三項の規定による<wbr>委託又は同法第四条の規定による再委託を受けた者の営業所を含む。）への差出しとみ<wbr>なす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年九月二〇日政令第二九二号）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年九月二〇日政令第二九二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一二月二日政令第三七〇号）　抄</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一二月二日政令第三七〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十三年改正法の施行の日（平成二十四年四月一日）から施<wbr>行する。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十三年改正法の施行の日（平成二十四年四月一日）から施<wbr>行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年七月二五日政令第二〇二号）　抄</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年七月二五日政令第二〇二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、郵政民営化法等の一部を改正する等の法律（以下「平成二十四年<wbr>改正法」という。）の施行の日（平成二十四年十月一日）から施行する。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、郵政民営化法等の一部を改正する等の法律（以下「平成二十四年<wbr>改正法」という。）の施行の日（平成二十四年十月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（特許協力条約に基づく国際出願等に関する法律施行令の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（特許協力条約に基づく国際出願等に関する法律施行令の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第七条　施行日前にされた第十六条の規定による改正前の特許協力条約に基づく国際出<wbr>願等に関する法律施行令附則第三条第二項の規定による郵便事業株式会社の営業所であ<wbr>って平成二十四年改正法附則第十七条の規定による改正前の郵便窓口業務の委託等に関<wbr>する法律（昭和二十四年法律第二百十三号）第二条に規定する郵便窓口業務を行うもの<wbr>（同法第三条第一項若しくは第三項の規定による委託又は同法第四条の規定による再委<wbr>託を受けた者の営業所を含む。）への差出しは、第十六条の規定による改正後の特許協<wbr>力条約に基づく国際出願等に関する法律施行令附則第三条第二項の規定の適用について<wbr>は、日本郵便株式会社の営業所（簡易郵便局法（昭和二十四年法律第二百十三号）第七<wbr>条第一項に規定する簡易郵便局を含み、郵便の業務を行うものに限る。）への差出しと<wbr>みなす。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第七条　施行日前にされた第十六条の規定による改正前の特許協力条約に基づく国際出<wbr>願等に関する法律施行令附則第三条第二項の規定による郵便事業株式会社の営業所であ<wbr>って平成二十四年改正法附則第十七条の規定による改正前の郵便窓口業務の委託等に関<wbr>する法律（昭和二十四年法律第二百十三号）第二条に規定する郵便窓口業務を行うもの<wbr>（同法第三条第一項若しくは第三項の規定による委託又は同法第四条の規定による再委<wbr>託を受けた者の営業所を含む。）への差出しは、第十六条の規定による改正後の特許協<wbr>力条約に基づく国際出願等に関する法律施行令附則第三条第二項の規定の適用について<wbr>は、日本郵便株式会社の営業所（簡易郵便局法（昭和二十四年法律第二百十三号）第七<wbr>条第一項に規定する簡易郵便局を含み、郵便の業務を行うものに限る。）への差出しと<wbr>みなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年一月二八日政令第二六号）　抄</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年一月二八日政令第二六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成二十六年改正法の施行の日（平成二十七年四月一日）から施行す<wbr>る。</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成二十六年改正法の施行の日（平成二十七年四月一日）から施行す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年一月二二日政令第一八号）　抄</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年一月二二日政令第一八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、特許法等の一部を改正する法律の施行の日（平成二十八年四月一<wbr>日）から施行する。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、特許法等の一部を改正する法律の施行の日（平成二十八年四月一<wbr>日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年一月八日政令第二号）　抄</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年一月八日政令第二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、不正競争防止法等の一部を改正する法律附則第一条第四号に掲げる規<wbr>定の施行の日（平成三十一年四月一日）から施行する。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、不正競争防止法等の一部を改正する法律附則第一条第四号に掲げる規<wbr>定の施行の日（平成三十一年四月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

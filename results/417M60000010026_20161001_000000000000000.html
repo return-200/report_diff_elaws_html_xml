@@ -1,0 +1,803 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十七年法務省令第二十六号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十七年法務省令第二十六号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">立木登記規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">立木登記規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">不動産登記法（平成十六年法律第百二十三号）及び不動産登記法の施行に伴う関係法律<wbr>の整備等に関する法律（平成十六年法律第百二十四号）の施行に伴い、並びに立木に関<wbr>する法律（明治四十二年法律第二十二号）第十五条第二項、第二十条第三項及び第二十<wbr>一条第二項並びに不動産登記令（平成十六年政令第三百七十九号）第二十四条の規定に<wbr>基づき、並びに同法の規定を実施するため、立木登記規則（明治四十三年司法省令第五<wbr>号）の全部を改正する省令を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">不動産登記法（平成十六年法律第百二十三号）及び不動産登記法の施行に伴う関係法律<wbr>の整備等に関する法律（平成十六年法律第百二十四号）の施行に伴い、並びに立木に関<wbr>する法律（明治四十二年法律第二十二号）第十五条第二項、第二十条第三項及び第二十<wbr>一条第二項並びに不動産登記令（平成十六年政令第三百七十九号）第二十四条の規定に<wbr>基づき、並びに同法の規定を実施するため、立木登記規則（明治四十三年司法省令第五<wbr>号）の全部を改正する省令を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　樹種の記録の方法等（第三条―第六条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　樹種の記録の方法等（第三条―第六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第三章　立木の登記手続</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第三章　立木の登記手続</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則（第七条・第八条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則（第七条・第八条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二節　所有権の保存の登記（第九条―第十二条）</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二節　所有権の保存の登記（第九条―第十二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三節　抵当権に関する登記（第十三条―第十七条）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三節　抵当権に関する登記（第十三条―第十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第四節　表題部の変更の登記等（第十八条―第二十七条）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第四節　表題部の変更の登記等（第十八条―第二十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第二十八条―第三十六条）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第二十八条―第三十六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（立木の登記記録）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（立木の登記記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第一条　登記官は、立木について初めて登記をし、又は管轄転属によって移送を受けた<wbr>ときは、立木の登記記録の表題部に、これらの順序に従って不動産登記法第三十五条に<wbr>規定する地番区域ごとに登記番号を記録しなければならない。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第一条　登記官は、立木について初めて登記をし、又は管轄転属によって移送を受けた<wbr>ときは、立木の登記記録の表題部に、これらの順序に従って不動産登記法第三十五条に<wbr>規定する地番区域ごとに登記番号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記記録の権利部は、甲区及び乙区に区分し、甲区には所有権に関する登記<wbr>の登記事項を記録するものとし、乙区には先取特権及び抵当権に関する登記の登記事項<wbr>を記録するものとする。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記記録の権利部は、甲区及び乙区に区分し、甲区には所有権に関する登記<wbr>の登記事項を記録するものとし、乙区には先取特権及び抵当権に関する登記の登記事項<wbr>を記録するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記規則の適用関係）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記規則の適用関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第二条　立木の登記に係る不動産登記規則（平成十七年法務省令第十八号）の規定の適<wbr>用については、同令の規定（同令第一条第九号を除く。）中「不動産所在事項」とあり<wbr>、及び同令第百八十一条第二項第四号中「法第三十四条第一項各号及び第四十四条第一<wbr>項各号（第六号及び第九号を除く。）に掲げる事項」とあるのは、「立木の所在する市<wbr>、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは<wbr>当該部分」とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第二条　立木の登記に係る不動産登記規則（平成十七年法務省令第十八号）の規定の適<wbr>用については、同令の規定（同令第一条第九号を除く。）中「不動産所在事項」とあり<wbr>、及び同令第百八十一条第二項第四号中「法第三十四条第一項各号及び第四十四条第一<wbr>項各号（第六号及び第九号を除く。）に掲げる事項」とあるのは、「立木の所在する市<wbr>、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは<wbr>当該部分」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第二章　樹種の記録の方法等</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第二章　樹種の記録の方法等</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（調査した年度の記録）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（調査した年度の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第三条　樹種、数量及び樹齢を立木登記簿に記録するときは、それらを調査した年度も<wbr>記録しなければならない。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第三条　樹種、数量及び樹齢を立木登記簿に記録するときは、それらを調査した年度も<wbr>記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（樹種の記録の方法）</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（樹種の記録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第四条　樹種を立木登記簿に記録するときは、平仮名を用いなければならない。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第四条　樹種を立木登記簿に記録するときは、平仮名を用いなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（樹木の数量の記録等の方法）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（樹木の数量の記録等の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　樹木の数量を立木登記簿に記録するときは、樹木の種類ごとに材積及び本数を<wbr>記録しなければならない。ただし、三十年生以下の樹木にあっては、本数を記録すれば<wbr>足りる。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第五条　樹木の数量を立木登記簿に記録するときは、樹木の種類ごとに材積及び本数を<wbr>記録しなければならない。ただし、三十年生以下の樹木にあっては、本数を記録すれば<wbr>足りる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　前項の材積の単位、呼称及び測定方法は、各地方の慣習に従うものとする。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　前項の材積の単位、呼称及び測定方法は、各地方の慣習に従うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（樹齢の記録の方法）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（樹齢の記録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第六条　樹齢を立木登記簿に記録するときは、樹木の種類ごとに何年生であるかを記録<wbr>しなければならない。ただし、植栽によって生立させられた樹木の集団でないものにあ<wbr>っては、樹木の種類ごとに何年生以上何年生以下であるかを記録すれば足りる。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第六条　樹齢を立木登記簿に記録するときは、樹木の種類ごとに何年生であるかを記録<wbr>しなければならない。ただし、植栽によって生立させられた樹木の集団でないものにあ<wbr>っては、樹木の種類ごとに何年生以上何年生以下であるかを記録すれば足りる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第三章　立木の登記手続</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第三章　立木の登記手続</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第一節　通則</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（申請情報）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（申請情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第七条　立木に関する法律（以下「法」という。）第十五条第二項の法務省令で定める<wbr>事項は、この省令に特別の定めがある場合を除き、次に掲げる事項とする。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第七条　立木に関する法律（以下「法」という。）第十五条第二項の法務省令で定める<wbr>事項は、この省令に特別の定めがある場合を除き、次に掲げる事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">一　不動産登記令（平成十六年政令第三百七十九号）第三条各号（第八号及び第十一号<wbr>ヘを除く。）に掲げる事項</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">一　不動産登記令（平成十六年政令第三百七十九号）第三条各号（第八号及び第十一号<wbr>ヘを除く。）に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">二　地上権の登記名義人が所有権の保存の登記を申請するときは、地上権の順位番号</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">二　地上権の登記名義人が所有権の保存の登記を申請するときは、地上権の順位番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記に係る不動産登記令の規定の適用については、同令本則中「第三条第七<wbr>号及び第八号に掲げる事項」とあるのは、「立木の所在する市、区、郡、町、村及び字<wbr>並びに土地の地番、地目及び地積並びに樹木が一筆の土地の一部に生立するときは当該<wbr>部分」とする。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記に係る不動産登記令の規定の適用については、同令本則中「第三条第七<wbr>号及び第八号に掲げる事項」とあるのは、「立木の所在する市、区、郡、町、村及び字<wbr>並びに土地の地番、地目及び地積並びに樹木が一筆の土地の一部に生立するときは当該<wbr>部分」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　第三条から前条までの規定は、法第十五条第二項の規定により同条第一項第一号に<wbr>掲げる事項を申請情報の内容とする場合について準用する。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　第三条から前条までの規定は、法第十五条第二項の規定により同条第一項第一号に<wbr>掲げる事項を申請情報の内容とする場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（登記の更正）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（登記の更正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第八条　立木の登記における不動産登記法第六十七条の規定の適用については、同条第<wbr>一項中「権利に関する登記」とあるのは、「登記」とする。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第八条　立木の登記における不動産登記法第六十七条の規定の適用については、同条第<wbr>一項中「権利に関する登記」とあるのは、「登記」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第二節　所有権の保存の登記</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第二節　所有権の保存の登記</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（所有権の保存の登記の添付情報）</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">（所有権の保存の登記の添付情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第九条　立木について所有権の保存の登記の申請をする場合には、次条に規定する立木<wbr>図面をその申請情報と併せて登記所に提供しなければならない。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">第九条　立木について所有権の保存の登記の申請をする場合には、次条に規定する立木<wbr>図面をその申請情報と併せて登記所に提供しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">２　樹木の集団の範囲を定める件（昭和七年勅令第十二号）別表において掲げられてい<wbr>ない樹種又は七種を超える種類の樹木をもって組成される樹木の集団について所有権の<wbr>保存の登記の申請をする場合には、その集団が植栽によって生立させられた樹木の集団<wbr>であることを証する主務官庁が作成した情報をその申請情報と併せて登記所に提供しな<wbr>ければならない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">２　樹木の集団の範囲を定める件（昭和七年勅令第十二号）別表において掲げられてい<wbr>ない樹種又は七種を超える種類の樹木をもって組成される樹木の集団について所有権の<wbr>保存の登記の申請をする場合には、その集団が植栽によって生立させられた樹木の集団<wbr>であることを証する主務官庁が作成した情報をその申請情報と併せて登記所に提供しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">３　法第十六条第一項第二号（土地の登記記録の表題部に自己が立木の所在する土地の<wbr>所有者として記録されている者に係る部分を除く。）、第三号及び第四号に掲げる者が<wbr>所有権の保存の登記を申請する場合には、当該各号に該当する者であることを証する情<wbr>報をその申請情報と併せて登記所に提供しなければならない。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">３　法第十六条第一項第二号（土地の登記記録の表題部に自己が立木の所在する土地の<wbr>所有者として記録されている者に係る部分を除く。）、第三号及び第四号に掲げる者が<wbr>所有権の保存の登記を申請する場合には、当該各号に該当する者であることを証する情<wbr>報をその申請情報と併せて登記所に提供しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（立木図面）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（立木図面）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十条　立木図面には、次に掲げる事項を記録するものとする。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十条　立木図面には、次に掲げる事項を記録するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">一　立木の所在する市、区、郡、町、村及び字並びに土地の地番、地目及び地積</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">一　立木の所在する市、区、郡、町、村及び字並びに土地の地番、地目及び地積</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">二　隣接する土地の地番及び地目並びに所有者の氏名又は名称</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">二　隣接する土地の地番及び地目並びに所有者の氏名又は名称</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">三　樹木が一筆の土地の一部に生立するときは、その部分の位置及び地積並びに当該部<wbr>分を表示するための名称又は番号があるときは当該名称又は番号並びに他の部分の表示<wbr></span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">三　樹木が一筆の土地の一部に生立するときは、その部分の位置及び地積並びに当該部<wbr>分を表示するための名称又は番号があるときは当該名称又は番号並びに他の部分の表示<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">四　立木の所在する土地又は土地の部分の境界に道路、河川、湖海、沼池その他境界の<wbr>目標となるものがあるときは、その名称及び位置</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">四　立木の所在する土地又は土地の部分の境界に道路、河川、湖海、沼池その他境界の<wbr>目標となるものがあるときは、その名称及び位置</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">五　隣接する土地又は土地の部分に生立する樹木の所有者がこれらの土地の所有者と異<wbr>なるときは、当該樹木の所有者の氏名又は名称</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">五　隣接する土地又は土地の部分に生立する樹木の所有者がこれらの土地の所有者と異<wbr>なるときは、当該樹木の所有者の氏名又は名称</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　不動産登記規則第七十三条及び第七十四条第二項の規定は、立木図面について準用<wbr>する。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　不動産登記規則第七十三条及び第七十四条第二項の規定は、立木図面について準用<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">（立木図面の管理）</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">（立木図面の管理）</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第十一条　登記官は、所有権の保存の登記をするときは、受付番号の順序に従って、立<wbr>木図面つづり込み帳に立木図面（不動産登記法第十八条第一号の方法により提供された<wbr>立木図面を用紙に出力したものを含む。以下同じ。）をつづり込み、これに申請の受付<wbr>の年月日及び受付番号並びに登記番号を記載し、かつ、丁数を付すものとする。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第十一条　登記官は、所有権の保存の登記をするときは、受付番号の順序に従って、立<wbr>木図面つづり込み帳に立木図面（不動産登記法第十八条第一号の方法により提供された<wbr>立木図面を用紙に出力したものを含む。以下同じ。）をつづり込み、これに申請の受付<wbr>の年月日及び受付番号並びに登記番号を記載し、かつ、丁数を付すものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（立木図面つづり込み帳の冊数等の記録）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（立木図面つづり込み帳の冊数等の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第十二条　登記官は、所有権の保存の登記をするときは、登記記録の表題部に、立木図<wbr>面つづり込み帳の冊数及び丁数を記録しなければならない。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第十二条　登記官は、所有権の保存の登記をするときは、登記記録の表題部に、立木図<wbr>面つづり込み帳の冊数及び丁数を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第三節　抵当権に関する登記</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第三節　抵当権に関する登記</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（抵当権に関する登記の申請情報）</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（抵当権に関する登記の申請情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法第二十一条第二項の法務省令で定める事項は、不動産登記令第三条各号（<wbr>第八号、第十号及び第十一号ヘを除く。）に掲げる事項とする。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法第二十一条第二項の法務省令で定める事項は、不動産登記令第三条各号（<wbr>第八号、第十号及び第十一号ヘを除く。）に掲げる事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　立木について抵当権に関する登記の申請をする場合には、不動産登記令第三条第十<wbr>三号に掲げる事項（次の各号に掲げる部分に限る。）に代えて、それぞれ当該各号に定<wbr>める事項を申請情報の内容とする。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　立木について抵当権に関する登記の申請をする場合には、不動産登記令第三条第十<wbr>三号に掲げる事項（次の各号に掲げる部分に限る。）に代えて、それぞれ当該各号に定<wbr>める事項を申請情報の内容とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　不動産登記令別表の五十五の項申請情報欄ハ　一又は二以上の立木に関する権利を<wbr>目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以上の<wbr>立木に関する権利を目的とする抵当権の設定の登記を申請する場合は、前の登記に係る<wbr>登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目録がある<wbr>場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　不動産登記令別表の五十五の項申請情報欄ハ　一又は二以上の立木に関する権利を<wbr>目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以上の<wbr>立木に関する権利を目的とする抵当権の設定の登記を申請する場合は、前の登記に係る<wbr>登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目録がある<wbr>場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　不動産登記令別表の五十六の項申請情報欄ニ　一の立木に関する権利を目的とする<wbr>根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登<wbr>記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の債権の担<wbr>保として他の一又は二以上の立木に関する権利を目的とする根抵当権の設定の登記及び<wbr>同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受け<wbr>る登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録<wbr>番号</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　不動産登記令別表の五十六の項申請情報欄ニ　一の立木に関する権利を目的とする<wbr>根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登<wbr>記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の債権の担<wbr>保として他の一又は二以上の立木に関する権利を目的とする根抵当権の設定の登記及び<wbr>同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受け<wbr>る登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録<wbr>番号</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">三　不動産登記令別表の五十八の項申請情報欄ハ　一又は二以上の立木に関する権利を<wbr>目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以上の<wbr>立木に関する権利を目的とする抵当権の処分の登記を申請する場合は、前の登記に係る<wbr>登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目録がある<wbr>場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">三　不動産登記令別表の五十八の項申請情報欄ハ　一又は二以上の立木に関する権利を<wbr>目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以上の<wbr>立木に関する権利を目的とする抵当権の処分の登記を申請する場合は、前の登記に係る<wbr>登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目録がある<wbr>場合にあっては、共同担保目録の記号及び目録番号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">四　不動産登記令別表の五十八の項申請情報欄ヘ　一の立木に関する権利を目的とする<wbr>根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登<wbr>記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の債権の担<wbr>保として他の一又は二以上の立木に関する権利を目的とする根抵当権の処分の登記及び<wbr>同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受け<wbr>る登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録<wbr>番号</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">四　不動産登記令別表の五十八の項申請情報欄ヘ　一の立木に関する権利を目的とする<wbr>根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登<wbr>記（民法第三百九十八条の十六の登記をしたものに限る。）をした後、同一の債権の担<wbr>保として他の一又は二以上の立木に関する権利を目的とする根抵当権の処分の登記及び<wbr>同条の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受け<wbr>る登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録<wbr>番号 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（施業方法書の提出）</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（施業方法書の提出）</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第十四条　抵当権の設定の登記の申請を書面申請によりするときは、申請人は、法第三<wbr>条の施業方法を記載した別記第一号様式の書面（以下「施業方法書」という。）を提出<wbr>することができる。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第十四条　抵当権の設定の登記の申請を書面申請によりするときは、申請人は、法第三<wbr>条の施業方法を記載した別記第一号様式の書面（以下「施業方法書」という。）を提出<wbr>することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">２　施業方法書には、申請人又はその代表者若しくは代理人（委任による代理人を除く<wbr>。次項において同じ。）が記名押印しなければならない。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">２　施業方法書には、申請人又はその代表者若しくは代理人（委任による代理人を除く<wbr>。次項において同じ。）が記名押印しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">３　施業方法書が二枚以上であるときは、申請人又はその代表者若しくは代理人は、各<wbr>用紙に当該用紙が何枚目であるかを記載し、各用紙のつづり目に契印をしなければなら<wbr>ない。ただし、申請人又はその代表者若しくは代理人が二人以上あるときは、その一人<wbr>がすれば足りる。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">３　施業方法書が二枚以上であるときは、申請人又はその代表者若しくは代理人は、各<wbr>用紙に当該用紙が何枚目であるかを記載し、各用紙のつづり目に契印をしなければなら<wbr>ない。ただし、申請人又はその代表者若しくは代理人が二人以上あるときは、その一人<wbr>がすれば足りる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（施業方法書の管理）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（施業方法書の管理）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十五条　登記官は、抵当権の設定の登記をしたときは、受付番号の順序に従って施業<wbr>方法書つづり込み簿に施業方法書をつづり込み、これに申請の受付の年月日及び受付番<wbr>号、登記番号並びに順位番号を記録し、かつ、これに丁数を付すものとする。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十五条　登記官は、抵当権の設定の登記をしたときは、受付番号の順序に従って施業<wbr>方法書つづり込み簿に施業方法書をつづり込み、これに申請の受付の年月日及び受付番<wbr>号、登記番号並びに順位番号を記録し、かつ、これに丁数を付すものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（施業方法書の提出があった旨の記録等）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（施業方法書の提出があった旨の記録等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十六条　登記官は、施業方法書の提出があった場合において、抵当権の設定の登記を<wbr>するときは、施業方法書の提出があった旨を記録し、かつ、当該登記の末尾に施業方法<wbr>書をつづり込んだ施業方法書つづり込み簿の冊数及び丁数も記録しなければならない。<wbr></span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十六条　登記官は、施業方法書の提出があった場合において、抵当権の設定の登記を<wbr>するときは、施業方法書の提出があった旨を記録し、かつ、当該登記の末尾に施業方法<wbr>書をつづり込んだ施業方法書つづり込み簿の冊数及び丁数も記録しなければならない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　登記官が前項の記録をしたときは、当該記録に係る施業方法書の記載は、乙区にさ<wbr>れたものとみなす。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　登記官が前項の記録をしたときは、当該記録に係る施業方法書の記載は、乙区にさ<wbr>れたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（施業方法の変更の登記又は更正の登記）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（施業方法の変更の登記又は更正の登記）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第十七条　登記官は、前条の場合において、施業方法の変更の登記又は更正の登記をし<wbr>たときは、変更前又は更正前の施業方法書の変更又は更正に係る記載を朱抹し、かつ、<wbr>これに変更後又は更正後の施業方法書をつづり込んだ施業方法書つづり込み簿の冊数及<wbr>び丁数を記載しなければならない。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第十七条　登記官は、前条の場合において、施業方法の変更の登記又は更正の登記をし<wbr>たときは、変更前又は更正前の施業方法書の変更又は更正に係る記載を朱抹し、かつ、<wbr>これに変更後又は更正後の施業方法書をつづり込んだ施業方法書つづり込み簿の冊数及<wbr>び丁数を記載しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">２　前三条の規定は、施業方法の変更の登記又は更正の登記について準用する。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">２　前三条の規定は、施業方法の変更の登記又は更正の登記について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">第四節　表題部の変更の登記等</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">第四節　表題部の変更の登記等</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（表題部の変更の登記の申請情報等）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（表題部の変更の登記の申請情報等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第十八条　不動産登記法第三十四条第一項各号又は法第十五条第一項各号に掲げる登記<wbr>事項に関する変更の登記又は更正の登記の申請をする場合に登記所に提供しなければな<wbr>らない申請情報の内容は、法第十五条第一項各号に掲げる事項及び第七条第一項第一号<wbr>に掲げる事項のほか、変更後又は更正後の登記事項とする。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第十八条　不動産登記法第三十四条第一項各号又は法第十五条第一項各号に掲げる登記<wbr>事項に関する変更の登記又は更正の登記の申請をする場合に登記所に提供しなければな<wbr>らない申請情報の内容は、法第十五条第一項各号に掲げる事項及び第七条第一項第一号<wbr>に掲げる事項のほか、変更後又は更正後の登記事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">２　法第十五条第一項第一号に掲げる事項についての変更の登記又は更正の登記の申請<wbr>をする場合には、その申請情報と併せて変更後又は更正後の立木図面を登記所に提供し<wbr>なければならない。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">２　法第十五条第一項第一号に掲げる事項についての変更の登記又は更正の登記の申請<wbr>をする場合には、その申請情報と併せて変更後又は更正後の立木図面を登記所に提供し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">３　第十一条及び第十二条の規定は、前項の登記をする場合について準用する。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">３　第十一条及び第十二条の規定は、前項の登記をする場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（樹種の変更の登記の添付情報等）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（樹種の変更の登記の添付情報等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十九条　樹種の変更又は錯誤若しくは遺漏により立木が樹木の集団の範囲を定める件<wbr>別表において掲げられていない樹種又は七種を超える種類の樹木をもって組成される樹<wbr>木の集団となった場合において変更の登記又は更正の登記の申請をするときは、変更前<wbr>又は更正前の立木が植栽によって生立させられた樹木の集団であることを証する主務官<wbr>庁が作成した情報をその申請情報と併せて登記所に提供しなければならない。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十九条　樹種の変更又は錯誤若しくは遺漏により立木が樹木の集団の範囲を定める件<wbr>別表において掲げられていない樹種又は七種を超える種類の樹木をもって組成される樹<wbr>木の集団となった場合において変更の登記又は更正の登記の申請をするときは、変更前<wbr>又は更正前の立木が植栽によって生立させられた樹木の集団であることを証する主務官<wbr>庁が作成した情報をその申請情報と併せて登記所に提供しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（分割の登記の申請情報等）</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（分割の登記の申請情報等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第二十条　立木の分割の登記の申請をする場合に登記所に提供しなければならない申請<wbr>情報の内容は、法第十五条第一項各号に掲げる事項及び第七条第一項第一号に掲げる事<wbr>項のほか、分割後の立木に係る不動産登記法第三十四条第一項各号に掲げる事項及び法<wbr>第十五条第一項各号に掲げる事項とする。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第二十条　立木の分割の登記の申請をする場合に登記所に提供しなければならない申請<wbr>情報の内容は、法第十五条第一項各号に掲げる事項及び第七条第一項第一号に掲げる事<wbr>項のほか、分割後の立木に係る不動産登記法第三十四条第一項各号に掲げる事項及び法<wbr>第十五条第一項各号に掲げる事項とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（分割の登記における表題部の記録方法）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（分割の登記における表題部の記録方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　登記官は、甲立木から乙立木を分割する分割の登記をするときは、乙立木<wbr>について新たな登記記録を作成し、当該登記記録の表題部に、登記第何号の立木から分<wbr>割した旨を記録しなければならない。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　登記官は、甲立木から乙立木を分割する分割の登記をするときは、乙立木<wbr>について新たな登記記録を作成し、当該登記記録の表題部に、登記第何号の立木から分<wbr>割した旨を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、甲立木の登記記録に、立木の表題部の登記事項、登記<wbr>第何号の立木を分割した旨及び従前の立木の表題部の登記事項の変更部分を抹消する記<wbr>号を記録しなければならない。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、甲立木の登記記録に、立木の表題部の登記事項、登記<wbr>第何号の立木を分割した旨及び従前の立木の表題部の登記事項の変更部分を抹消する記<wbr>号を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（分割の登記における権利部の記録方法等）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（分割の登記における権利部の記録方法等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　登記官は、前条の場合において、乙立木の登記記録の権利部の相当区に甲<wbr>立木の登記記録から権利に関する登記を転写し、分割の登記に係る申請の受付の年月日<wbr>及び受付番号を記録しなければならない。この場合において、抵当権又は先取特権（以<wbr>下「担保権」と総称する。）について既にその担保権についての共同担保目録が作成さ<wbr>れているときを除き共同担保目録を作成し、転写した担保権の登記の末尾にその共同担<wbr>保目録の記号及び目録番号を記録しなければならない。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　登記官は、前条の場合において、乙立木の登記記録の権利部の相当区に甲<wbr>立木の登記記録から権利に関する登記を転写し、分割の登記に係る申請の受付の年月日<wbr>及び受付番号を記録しなければならない。この場合において、抵当権又は先取特権（以<wbr>下「担保権」と総称する。）について既にその担保権についての共同担保目録が作成さ<wbr>れているときを除き共同担保目録を作成し、転写した担保権の登記の末尾にその共同担<wbr>保目録の記号及び目録番号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合において、転写する登記に係る権利が担保権であり、かつ、<wbr>既に当該担保権についての共同担保目録が作成されているときは、同項の規定により転<wbr>写された登記に係る乙立木に関する担保権を当該共同担保目録に記録しなければならな<wbr>い。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合において、転写する登記に係る権利が担保権であり、かつ、<wbr>既に当該担保権についての共同担保目録が作成されているときは、同項の規定により転<wbr>写された登記に係る乙立木に関する担保権を当該共同担保目録に記録しなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">３　登記官は、甲立木の登記記録から乙立木の登記記録に担保権に関する登記を転写し<wbr>たときは、分割後の甲立木の登記記録の当該担保権に関する登記に、既に当該担保権に<wbr>ついての共同担保目録が作成されているときを除き第一項の規定により作成した共同担<wbr>保目録の記号及び目録番号を記録しなければならない。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">３　登記官は、甲立木の登記記録から乙立木の登記記録に担保権に関する登記を転写し<wbr>たときは、分割後の甲立木の登記記録の当該担保権に関する登記に、既に当該担保権に<wbr>ついての共同担保目録が作成されているときを除き第一項の規定により作成した共同担<wbr>保目録の記号及び目録番号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">４　不動産登記法第四十条及び不動産登記規則第百四条第一項から第三項までの規定は<wbr>、立木の分割の登記について準用する。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">４　不動産登記法第四十条及び不動産登記規則第百四条第一項から第三項までの規定は<wbr>、立木の分割の登記について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（合併の登記の申請情報等）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（合併の登記の申請情報等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　立木の合併の登記の申請をする場合に登記所に提供しなければならない申<wbr>請情報の内容は、法第十五条第一項各号に掲げる事項及び第七条第一項第一号に掲げる<wbr>事項のほか、合併後の立木に係る不動産登記法第三十四条第一項各号に掲げる事項及び<wbr>法第十五条第一項各号に掲げる事項とする。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　立木の合併の登記の申請をする場合に登記所に提供しなければならない申<wbr>請情報の内容は、法第十五条第一項各号に掲げる事項及び第七条第一項第一号に掲げる<wbr>事項のほか、合併後の立木に係る不動産登記法第三十四条第一項各号に掲げる事項及び<wbr>法第十五条第一項各号に掲げる事項とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">２　所有権の登記以外の権利に関する登記がある立木については、合併の登記は、する<wbr>ことができない。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">２　所有権の登記以外の権利に関する登記がある立木については、合併の登記は、する<wbr>ことができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（合併の登記の添付情報）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（合併の登記の添付情報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　第十九条の規定は、合併により立木が七種を超える種類の樹木をもって組<wbr>成される樹木の集団となった場合において合併の登記の申請をするときについて準用す<wbr>る。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　第十九条の規定は、合併により立木が七種を超える種類の樹木をもって組<wbr>成される樹木の集団となった場合において合併の登記の申請をするときについて準用す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（合併の登記における登記記録の記録方法）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（合併の登記における登記記録の記録方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　登記官は、甲立木を乙立木に合併する合併の登記をするときは、乙立木の<wbr>登記記録の表題部に、合併後の立木の表題部の登記事項及び登記第何号の立木を合併し<wbr>た旨並びに従前の立木の表題部の登記事項の変更部分を抹消する記号を記録しなければ<wbr>ならない。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　登記官は、甲立木を乙立木に合併する合併の登記をするときは、乙立木の<wbr>登記記録の表題部に、合併後の立木の表題部の登記事項及び登記第何号の立木を合併し<wbr>た旨並びに従前の立木の表題部の登記事項の変更部分を抹消する記号を記録しなければ<wbr>ならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、甲立木の登記記録の表題部に登記第何号の立木に合併<wbr>した旨及び従前の立木の表題部の登記事項を抹消する記号を記録し、当該登記記録を閉<wbr>鎖しなければならない。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項の場合には、甲立木の登記記録の表題部に登記第何号の立木に合併<wbr>した旨及び従前の立木の表題部の登記事項を抹消する記号を記録し、当該登記記録を閉<wbr>鎖しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">３　不動産登記規則第百七条第一項及び第六項の規定は、第一項の場合について準用す<wbr>る。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">３　不動産登記規則第百七条第一項及び第六項の規定は、第一項の場合について準用す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（分割及び合併の登記における登記記録の記録方法）</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（分割及び合併の登記における登記記録の記録方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　登記官は、甲立木の一部を分割して、これを乙立木に合併する場合におい<wbr>て、分割の登記及び合併の登記をするときは、乙立木の登記記録の表題部に、合併後の<wbr>立木の表題部の登記事項及び登記第何号の立木の一部を合併した旨並びに従前の立木の<wbr>表題部の登記事項の変更部分を抹消する記号を記録しなければならない。この場合には<wbr>、前条第一項及び第二項の規定は、適用しない。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　登記官は、甲立木の一部を分割して、これを乙立木に合併する場合におい<wbr>て、分割の登記及び合併の登記をするときは、乙立木の登記記録の表題部に、合併後の<wbr>立木の表題部の登記事項及び登記第何号の立木の一部を合併した旨並びに従前の立木の<wbr>表題部の登記事項の変更部分を抹消する記号を記録しなければならない。この場合には<wbr>、前条第一項及び第二項の規定は、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項に規定する登記をするときは、甲立木の登記記録の表題部に、残余<wbr>部分の立木の表題部の登記事項、登記第何号の立木に一部を合併した旨及び従前の立木<wbr>の表題部の登記事項の変更部分を抹消する記号を記録しなければならない。この場合に<wbr>は、第二十一条の規定は、適用しない。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">２　登記官は、前項に規定する登記をするときは、甲立木の登記記録の表題部に、残余<wbr>部分の立木の表題部の登記事項、登記第何号の立木に一部を合併した旨及び従前の立木<wbr>の表題部の登記事項の変更部分を抹消する記号を記録しなければならない。この場合に<wbr>は、第二十一条の規定は、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">３　第二十二条第四項及び前条第三項の規定は、第一項の場合について準用する。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">３　第二十二条第四項及び前条第三項の規定は、第一項の場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（滅失の登記）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（滅失の登記）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　不動産登記規則第百九条及び第百十条の規定は、立木の滅失の登記につい<wbr>て準用する。この場合において、これらの規定中「土地」とあるのは「立木」と、同令<wbr>第百十条中「不動産所在事項」とあるのは「立木の所在する市、区、郡、町、村、字及<wbr>び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」と読み替える<wbr>ものとする。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　不動産登記規則第百九条及び第百十条の規定は、立木の滅失の登記につい<wbr>て準用する。この場合において、これらの規定中「土地」とあるのは「立木」と、同令<wbr>第百十条中「不動産所在事項」とあるのは「立木の所在する市、区、郡、町、村、字及<wbr>び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」と読み替える<wbr>ものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（土地の登記記録への記録方法）</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（土地の登記記録への記録方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　法第十九条第一項の規定により立木の登記記録を表示するには、立木の登<wbr>記の登記番号を記録する方法によってする。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　法第十九条第一項の規定により立木の登記記録を表示するには、立木の登<wbr>記の登記番号を記録する方法によってする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">２　法第十九条第一項及び第二項の登記官を明らかにする措置は、登記記録に登記官の<wbr>識別番号を記録する措置とする。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">２　法第十九条第一項及び第二項の登記官を明らかにする措置は、登記記録に登記官の<wbr>識別番号を記録する措置とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（土地の登記記録の転写等）</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（土地の登記記録の転写等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　不動産登記規則第百二条及び第百六十八条（第一項を除く。）の規定は、<wbr>法第十八条の場合について準用する。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　不動産登記規則第百二条及び第百六十八条（第一項を除く。）の規定は、<wbr>法第十八条の場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（立木図面つづり込み帳等）</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（立木図面つづり込み帳等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第三十条　登記所には、立木図面つづり込み帳及び施業方法書つづり込み簿を備えるも<wbr>のとする。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第三十条　登記所には、立木図面つづり込み帳及び施業方法書つづり込み簿を備えるも<wbr>のとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（保存期間）</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（保存期間）</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　次の各号に掲げる書面又は情報の保存期間は、当該各号に定めるとおりと<wbr>する。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　次の各号に掲げる書面又は情報の保存期間は、当該各号に定めるとおりと<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">一　立木図面　永久</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">一　立木図面　永久</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">二　施業方法書　立木の登記記録を閉鎖した日から三十年間</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">二　施業方法書　立木の登記記録を閉鎖した日から三十年間 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（登記識別情報の通知等）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（登記識別情報の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　不動産登記法第二十一条本文の規定により登記識別情報を通知するとき又<wbr>は不動産登記規則第百八十一条第一項の規定により登記が完了した旨を通知するときは<wbr>、登記番号も通知するものとする。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　不動産登記法第二十一条本文の規定により登記識別情報を通知するとき又<wbr>は不動産登記規則第百八十一条第一項の規定により登記が完了した旨を通知するときは<wbr>、登記番号も通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の交付の請求情報等）</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の交付の請求情報等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　立木の登記記録についての登記事項証明書若しくは登記事項要約書の交付<wbr>又は登記簿の附属書類の閲覧を請求する場合において、法第十五条第一項第一号に規定<wbr>する名称又は番号が登記されているときは、不動産登記規則第百九十三条第一項各号又<wbr>は第二項各号に掲げる事項のほか、当該名称又は番号を請求情報の内容としなければな<wbr>らない。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　立木の登記記録についての登記事項証明書若しくは登記事項要約書の交付<wbr>又は登記簿の附属書類の閲覧を請求する場合において、法第十五条第一項第一号に規定<wbr>する名称又は番号が登記されているときは、不動産登記規則第百九十三条第一項各号又<wbr>は第二項各号に掲げる事項のほか、当該名称又は番号を請求情報の内容としなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記記録について登記事項証明書の交付の請求をする場合において、施業方<wbr>法書に記載された事項について証明を求めるときは、不動産登記規則第百九十三条第一<wbr>項各号に掲げる事項のほか、当該証明を求める旨を請求情報の内容としなければならな<wbr>い。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記記録について登記事項証明書の交付の請求をする場合において、施業方<wbr>法書に記載された事項について証明を求めるときは、不動産登記規則第百九十三条第一<wbr>項各号に掲げる事項のほか、当該証明を求める旨を請求情報の内容としなければならな<wbr>い。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の作成及び交付）</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">（登記事項証明書の作成及び交付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　立木の登記記録について作成する登記事項証明書は、次の各号の区分に応<wbr>じ、当該各号に定める様式によるものとする。ただし、登記記録に記録した事項の一部<wbr>についての登記事項証明書については適宜の様式によるものとする。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　立木の登記記録について作成する登記事項証明書は、次の各号の区分に応<wbr>じ、当該各号に定める様式によるものとする。ただし、登記記録に記録した事項の一部<wbr>についての登記事項証明書については適宜の様式によるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">一　立木の登記記録　別記第二号様式</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">一　立木の登記記録　別記第二号様式</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">二　施業方法書　別記第一号様式</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">二　施業方法書　別記第一号様式</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記記録について登記事項証明書を作成する場合において、施業方法書に記<wbr>載された事項について証明を求める旨が請求情報の内容とされていないときは、施業方<wbr>法書に記載された事項の記載を省略するものとする。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">２　立木の登記記録について登記事項証明書を作成する場合において、施業方法書に記<wbr>載された事項について証明を求める旨が請求情報の内容とされていないときは、施業方<wbr>法書に記載された事項の記載を省略するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（立木図面の写しの交付）</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（立木図面の写しの交付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　立木の登記に関する不動産登記法第百二十一条及び不動産登記令第二十一<wbr>条第一項の規定の適用については、同項中「土地所在図」とあるのは、「立木図面」と<wbr>する。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　立木の登記に関する不動産登記法第百二十一条及び不動産登記令第二十一<wbr>条第一項の規定の適用については、同項中「土地所在図」とあるのは、「立木図面」と<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">（登記の嘱託）</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">（登記の嘱託）</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　この省令中「申請」、「申請人」及び「申請情報」には、それぞれ嘱託、<wbr>嘱託者及び嘱託情報を含むものとする。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　この省令中「申請」、「申請人」及び「申請情報」には、それぞれ嘱託、<wbr>嘱託者及び嘱託情報を含むものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法の施行の日（平成十七年三月七日）から施行する。<wbr></span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法の施行の日（平成十七年三月七日）から施行する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の立木登記規則（以下「新令」という。）の規定は、この附則に特別の<wbr>定めがある場合を除き、この省令の施行前に生じた事項にも適用する。ただし、改正前<wbr>の立木登記規則（以下「旧令」という。）の規定により生じた効力を妨げない。</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第二条　改正後の立木登記規則（以下「新令」という。）の規定は、この附則に特別の<wbr>定めがある場合を除き、この省令の施行前に生じた事項にも適用する。ただし、改正前<wbr>の立木登記規則（以下「旧令」という。）の規定により生じた効力を妨げない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行前にした旧令の規定による処分、手続その他の行為は、この附則に<wbr>特別の定めがある場合を除き、新令の相当規定によってしたものとみなす。</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行前にした旧令の規定による処分、手続その他の行為は、この附則に<wbr>特別の定めがある場合を除き、新令の相当規定によってしたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三条　この省令の施行前にされた立木の登記の申請に係る登記に関する手続について<wbr>は、なお従前の例による。</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三条　この省令の施行前にされた立木の登記の申請に係る登記に関する手続について<wbr>は、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">２　登記所において現に保存する旧令第十四条ノ二の実測図面の謄本に係る同条の規定<wbr>の適用については、なお従前の例による。</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">２　登記所において現に保存する旧令第十四条ノ二の実測図面の謄本に係る同条の規定<wbr>の適用については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">（未指定事務に係る旧登記簿）</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">（未指定事務に係る旧登記簿）</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">第四条　新令第一条及び第三十四条の規定は、不動産登記法附則第三条第一項の規定に<wbr>よる指定（同条第三項の規定により指定を受けたものとみなされるものを含む。以下「<wbr>第三条指定」という。）を受けた事務について、その第三条指定の日から適用する。</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">第四条　新令第一条及び第三十四条の規定は、不動産登記法附則第三条第一項の規定に<wbr>よる指定（同条第三項の規定により指定を受けたものとみなされるものを含む。以下「<wbr>第三条指定」という。）を受けた事務について、その第三条指定の日から適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">145</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　第三条指定がされるまでの間は、第三条指定を受けていない事務（</span><span style="color: #000000; background-color: #efcb05; ">附則第三条第一<wbr>項ただし書に規定する登記簿に関する事務を含む。）に係る旧登記簿（</span><span style="color: #000000; background-color: #efcb05; ">の施行に伴う関<wbr>係法律の整備等に関する法律（以下「整備法」という。）第十二条第二項の規定により<wbr>なおその効力を有することとされる整備法第十一条の規定による改正前の法第十四条に<wbr>規定する立木登記簿をいい、不動産登記法附則第三条第四項の規定によりなおその効力<wbr>を有することとされる改正前の不動産登記法（明治三十二年法律第二十四号）第二十四<wbr>条ノ二第一項に規定する閉鎖登記簿（立木登記簿に係る部分に限る。）を含む。以下同<wbr>じ。）については、旧令第二条から第六条まで、第十七条ノ二及び第二十四条ノ三の規<wbr>定は、なおその効力を有する。この場合において、旧令第三条第二項中「不動産登記法<wbr>施行細則第五十二条」とあるのは「不動産登記規則（平成十七年法務省令第十八号）附<wbr>則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル不動産登記法施行細則<wbr>（明治三十二年司法省令第十一号。以下「旧細則」ト称ス）第五十二条」と、旧令第五<wbr>条ノ四第二項中「不動産登記法施行細則第七条第二項及第三項」とあるのは「不動産登<wbr>記規則附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル旧細則第七条<wbr>第二項及第三項」とする。</span></code></td>
+<td class="ln">145</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　第三条指定がされるまでの間は、第三条指定を受けていない事務（</span><span class="sf17b18">不動産登記規則<wbr></span><span style="color: #000000; background-color: #efcb05; ">附則第三条第一項ただし書に規定する登記簿に関する事務を含む。）に係る旧登記簿（<wbr></span><span class="sf17b18">不動産登記法</span><span style="color: #000000; background-color: #efcb05; ">の施行に伴う関係法律の整備等に関する法律（以下「整備法」という。）<wbr>第十二条第二項の規定によりなおその効力を有することとされる整備法第十一条の規定<wbr>による改正前の法第十四条に規定する立木登記簿をいい、不動産登記法附則第三条第四<wbr>項の規定によりなおその効力を有することとされる改正前の不動産登記法（明治三十二<wbr>年法律第二十四号）第二十四条ノ二第一項に規定する閉鎖登記簿（立木登記簿に係る部<wbr>分に限る。）を含む。以下同じ。）については、旧令第二条から第六条まで、第十七条<wbr>ノ二及び第二十四条ノ三の規定は、なおその効力を有する。この場合において、旧令第<wbr>三条第二項中「不動産登記法施行細則第五十二条」とあるのは「不動産登記規則（平成<wbr>十七年法務省令第十八号）附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサ<wbr>レタル不動産登記法施行細則（明治三十二年司法省令第十一号。以下「旧細則」ト称ス<wbr>）第五十二条」と、旧令第五条ノ四第二項中「不動産登記法施行細則第七条第二項及第<wbr>三項」とあるのは「不動産登記規則附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スル<wbr>モノトサレタル旧細則第七条第二項及第三項」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">３　第三条指定がされるまでの間における前項の事務についての新令の適用については<wbr>、新令本則中「登記記録」とあるのは、「登記用紙」とする。</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">３　第三条指定がされるまでの間における前項の事務についての新令の適用については<wbr>、新令本則中「登記記録」とあるのは、「登記用紙」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">４　第三条指定を受けていない事務において登記用紙に記録された事項を抹消する記号<wbr>を記録するには、当該事項を朱抹するものとする。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">４　第三条指定を受けていない事務において登記用紙に記録された事項を抹消する記号<wbr>を記録するには、当該事項を朱抹するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">５　第三条指定を受けていない事務において登記用紙に登記官の識別番号を記録するに<wbr>は、登記用紙に登記官が登記官印を押印するものとする。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">５　第三条指定を受けていない事務において登記用紙に登記官の識別番号を記録するに<wbr>は、登記用紙に登記官が登記官印を押印するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けている登記所からの移送）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けている登記所からの移送）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第五条　不動産登記規則附則第七条の規定は、立木の所在地が当該立木に係る事務につ<wbr>いて第三条指定を受けている甲登記所の管轄から当該事務について第三条指定を受けて<wbr>いない乙登記所の管轄に転属した場合について準用する。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第五条　不動産登記規則附則第七条の規定は、立木の所在地が当該立木に係る事務につ<wbr>いて第三条指定を受けている甲登記所の管轄から当該事務について第三条指定を受けて<wbr>いない乙登記所の管轄に転属した場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けていない登記所からの移送）</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（第三条指定を受けていない登記所からの移送）</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第六条　不動産登記規則第八条の規定は、立木の所在地が当該立木に係る事務について<wbr>第三条指定を受けていない甲登記所の管轄から当該事務について第三条指定を受けてい<wbr>る乙登記所の管轄に転属した場合について準用する。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第六条　不動産登記規則第八条の規定は、立木の所在地が当該立木に係る事務について<wbr>第三条指定を受けていない甲登記所の管轄から当該事務について第三条指定を受けてい<wbr>る乙登記所の管轄に転属した場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記法附則第六条の指定前の登記手続）</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（不動産登記法附則第六条の指定前の登記手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第七条　立木の登記の事務について不動産登記法附則第六条の指定（以下「第六条指定<wbr>」という。）を受けていない登記所の登記手続に係る登記の申請をする場合における不<wbr>動産登記規則附則第十五条第二項の適用については、同項中「不動産所在事項」とある<wbr>のは、「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土<wbr>地の一部に生立するときは当該部分」とする。</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第七条　立木の登記の事務について不動産登記法附則第六条の指定（以下「第六条指定<wbr>」という。）を受けていない登記所の登記手続に係る登記の申請をする場合における不<wbr>動産登記規則附則第十五条第二項の適用については、同項中「不動産所在事項」とある<wbr>のは、「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土<wbr>地の一部に生立するときは当該部分」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">２　旧令第十四条ノ三第五項の規定は、第六条指定がされるまでの間は、第六条指定を<wbr>受けていない登記手続について、なおその効力を有する。この場合において、同項中「<wbr>申請書ノ副本」とあるのは、「不動産登記規則附則第十五条第二項ノ規定ニ依リ提出サ<wbr>レタル書面」とする。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">２　旧令第十四条ノ三第五項の規定は、第六条指定がされるまでの間は、第六条指定を<wbr>受けていない登記手続について、なおその効力を有する。この場合において、同項中「<wbr>申請書ノ副本」とあるのは、「不動産登記規則附則第十五条第二項ノ規定ニ依リ提出サ<wbr>レタル書面」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">３　第六条指定がされるまでの間、各登記所の登記手続についての新令の規定の適用に<wbr>ついては、新令第三十二条中「不動産登記法第二十一条本文」とあるのは「不動産登記<wbr>法附則第六条第三項の規定により読み替えて適用される同法第二十一条本文」と、「登<wbr>記識別情報を通知するとき又は不動産登記規則第百八十一条第一項の規定により登記が<wbr>完了した旨を通知する」とあるのは「登記済証を交付する」と、「登記番号も通知する<wbr>」とあるのは「これに登記番号も記載する」とする。</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">３　第六条指定がされるまでの間、各登記所の登記手続についての新令の規定の適用に<wbr>ついては、新令第三十二条中「不動産登記法第二十一条本文」とあるのは「不動産登記<wbr>法附則第六条第三項の規定により読み替えて適用される同法第二十一条本文」と、「登<wbr>記識別情報を通知するとき又は不動産登記規則第百八十一条第一項の規定により登記が<wbr>完了した旨を通知する」とあるのは「登記済証を交付する」と、「登記番号も通知する<wbr>」とあるのは「これに登記番号も記載する」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">（民法の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">（民法の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第八条　民法の一部を改正する法律（平成十六年法律第百四十七号）の施行の日の前日<wbr>までの間における新令第十三条第二項第二号及び第四号の規定の適用については、新令<wbr>中「第三百九十八条の十六」とあるのは、「第三百九十八条ノ十六」とする。</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第八条　民法の一部を改正する法律（平成十六年法律第百四十七号）の施行の日の前日<wbr>までの間における新令第十三条第二項第二号及び第四号の規定の適用については、新令<wbr>中「第三百九十八条の十六」とあるのは、「第三百九十八条ノ十六」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月二〇日法務省令第六三号）</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月二〇日法務省令第六三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の企業担保登記規則、不動産等の管轄登記所の指定に関する<wbr>省令、独立行政法人緑資源機構法による不動産登記の手続に関する省令、工場抵当登記<wbr>規則、立木登記規則、船舶登記規則、農業用動産抵当登記規則、建設機械登記規則並び<wbr>に不動産登記法及び不動産登記法の施行に伴う関係法律の整備等に関する法律の施行に<wbr>伴う法務省関係省令の整備等に関する省令の規定は、不動産登記法（平成十六年法律第<wbr>百二十三号）の施行の日（平成十七年三月七日）から適用する。</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の企業担保登記規則、不動産等の管轄登記所の指定に関する<wbr>省令、独立行政法人緑資源機構法による不動産登記の手続に関する省令、工場抵当登記<wbr>規則、立木登記規則、船舶登記規則、農業用動産抵当登記規則、建設機械登記規則並び<wbr>に不動産登記法及び不動産登記法の施行に伴う関係法律の整備等に関する法律の施行に<wbr>伴う法務省関係省令の整備等に関する省令の規定は、不動産登記法（平成十六年法律第<wbr>百二十三号）の施行の日（平成十七年三月七日）から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一一月一一日法務省令第一〇六号）　抄</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一一月一一日法務省令第一〇六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法等の一部を改正する法律の施行の日から施行する。<wbr></span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、不動産登記法等の一部を改正する法律の施行の日から施行する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年三月二五日法務省令第五号）　抄</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年三月二五日法務省令第五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十三年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十三年四月一日から施行する。ただし、次の各号に掲げる<wbr>規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中不動産登記規則第六十四条、第六十九条、第百八十一条第二項、第百八十<wbr>二条、第百八十二条の二及び別記第六号の改正規定、第八条の規定、第九条の規定、第<wbr>十条中船舶登記規則第四十九条の改正規定（同令第百九十五条を削る改正規定を除く。<wbr>）、第十一条中農業用動産抵当登記規則第四十条の改正規定（同令第百九十五条を削る<wbr>改正規定を除く。）、第十二条の規定並びに第十四条の規定　平成二十三年六月二十七<wbr>日</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中不動産登記規則第六十四条、第六十九条、第百八十一条第二項、第百八十<wbr>二条、第百八十二条の二及び別記第六号の改正規定、第八条の規定、第九条の規定、第<wbr>十条中船舶登記規則第四十九条の改正規定（同令第百九十五条を削る改正規定を除く。<wbr>）、第十一条中農業用動産抵当登記規則第四十条の改正規定（同令第百九十五条を削る<wbr>改正規定を除く。）、第十二条の規定並びに第十四条の規定　平成二十三年六月二十七<wbr>日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月二四日法務省令第一二号）</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月二四日法務省令第一二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">この省令は、地方自治法の一部を改正する法律の施行の日（平成二十八年四月一日）か<wbr>ら施行する。ただし、第一条中不動産登記規則第百七条、第百三十四条第一項及び第百<wbr>三十九条の改正規定並びに第三条の規定は、公布の日から施行する。</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">この省令は、地方自治法の一部を改正する法律の施行の日（平成二十八年四月一日）か<wbr>ら施行する。ただし、第一条中不動産登記規則第百七条、第百三十四条第一項及び第百<wbr>三十九条の改正規定並びに第三条の規定は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">171</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第一号</span><span style="color: #000000; background-color: #efcb05; ">（第十四条第一項及び第三十四条第一項第二号関係）</span></code></td>
+<td class="ln">171</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第一号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第十四条第一項及び第三十四条第一項第二号関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第二号</span><span style="color: #000000; background-color: #efcb05; ">（第三十四条第一項第一号関係）</span></code></td>
+<td class="ln">172</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">173</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記第二号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第三十四条第一項第一号関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">174</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

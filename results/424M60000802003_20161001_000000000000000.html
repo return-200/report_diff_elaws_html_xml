@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十四年内閣府・国土交通省令第三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十四年内閣府・国土交通省令第三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">都市の低炭素化の促進に関する法律に基づく軌道利便増進実施計画及び道路運送利便増<wbr>進実施計画の認定に係る都道府県公安委員会の意見の聴取に関する命令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">都市の低炭素化の促進に関する法律に基づく軌道利便増進実施計画及び道路運送利便増<wbr>進実施計画の認定に係る都道府県公安委員会の意見の聴取に関する命令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">都市の低炭素化の促進に関する法律（平成二十四年法律第八十四号）第二十六条第五項<wbr>（同条第八項において準用する場合を含む。）及び第二十九条第四項（同条第七項にお<wbr>いて準用する場合を含む。）の規定に基づき、都市の低炭素化の促進に関する法律に基<wbr>づく軌道利便増進実施計画及び道路運送利便増進実施計画の認定に係る都道府県公安委<wbr>員会の意見の聴取に関する命令を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">都市の低炭素化の促進に関する法律（平成二十四年法律第八十四号）第二十六条第五項<wbr>（同条第八項において準用する場合を含む。）及び第二十九条第四項（同条第七項にお<wbr>いて準用する場合を含む。）の規定に基づき、都市の低炭素化の促進に関する法律に基<wbr>づく軌道利便増進実施計画及び道路運送利便増進実施計画の認定に係る都道府県公安委<wbr>員会の意見の聴取に関する命令を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（都道府県公安委員会への書面の送付）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（都道府県公安委員会への書面の送付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　国土交通大臣（都市の低炭素化の促進に関する法律（以下「法」という。）第<wbr>六十一条の規定により権限が地方支分部局の長に委任された場合にあっては、当該委任<wbr>を受けた者。以下同じ。）は、法第二十六条第一項に規定する軌道利便増進実施計画の<wbr>認定の申請又は法第二十九条第一項に規定する道路運送利便増進実施計画の認定の申請<wbr>（以下「認定申請」と総称する。）があった場合には、法第二十六条第五項ただし書又<wbr>は第二十九条第四項ただし書に該当する場合を除き、遅滞なく、法第二十五条第二項第<wbr>一号に掲げる軌道利便増進事業を実施する区域又は法第二十八条第二項第一号に掲げる<wbr>道路運送利便増進事業を実施する区域を管轄する都道府県公安委員会（以下「関係公安<wbr>委員会」という。）に対し、当該認定申請に係る申請書の写しを添えて、意見を求める<wbr>旨の書面を送付するものとする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　国土交通大臣（都市の低炭素化の促進に関する法律（以下「法」という。）第<wbr>六十一条の規定により権限が地方支分部局の長に委任された場合にあっては、当該委任<wbr>を受けた者。以下同じ。）は、法第二十六条第一項に規定する軌道利便増進実施計画の<wbr>認定の申請又は法第二十九条第一項に規定する道路運送利便増進実施計画の認定の申請<wbr>（以下「認定申請」と総称する。）があった場合には、法第二十六条第五項ただし書又<wbr>は第二十九条第四項ただし書に該当する場合を除き、遅滞なく、法第二十五条第二項第<wbr>一号に掲げる軌道利便増進事業を実施する区域又は法第二十八条第二項第一号に掲げる<wbr>道路運送利便増進事業を実施する区域を管轄する都道府県公安委員会（以下「関係公安<wbr>委員会」という。）に対し、当該認定申請に係る申請書の写しを添えて、意見を求める<wbr>旨の書面を送付するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（意見の提出）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（意見の提出）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">7</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第二条　関係公安委員会は、前条に規定する書面の送付を受けたときは、当該書面の送<wbr>付を受けた日から二十日以内（法第二十八条第二項第二号に掲げる道路運送利便増進事<wbr>業の内容（以下「事業内容」という。）に、道路運送法（昭和二十六年法律第百八十三<wbr>号）第三条第一号イに掲げる一般乗合旅客自動車運送事業（以下「一般乗合旅客自動車<wbr>運送事業」という。）が含まれる場合において、当該一般乗合旅客自動車運送事業に係<wbr>る運行の態様が</span><span style="color: #000000; background-color: #efcb05; ">施行規則（昭和二十六年運輸省令第七十五号）第三条の三第二号に掲げ<wbr>る路線不定期運行のみであるときにあっては、十四日以内）に国土交通大臣に対し、意<wbr>見を提出するものとする。</span></code></td>
+<td class="ln">7</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第二条　関係公安委員会は、前条に規定する書面の送付を受けたときは、当該書面の送<wbr>付を受けた日から二十日以内（法第二十八条第二項第二号に掲げる道路運送利便増進事<wbr>業の内容（以下「事業内容」という。）に、道路運送法（昭和二十六年法律第百八十三<wbr>号）第三条第一号イに掲げる一般乗合旅客自動車運送事業（以下「一般乗合旅客自動車<wbr>運送事業」という。）が含まれる場合において、当該一般乗合旅客自動車運送事業に係<wbr>る運行の態様が</span><span class="sf17b18">道路運送法</span><span style="color: #000000; background-color: #efcb05; ">施行規則（昭和二十六年運輸省令第七十五号）第三条の三第<wbr>二号に掲げる路線不定期運行のみであるときにあっては、十四日以内）に国土交通大臣<wbr>に対し、意見を提出するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（意見を聴く必要がない場合）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（意見を聴く必要がない場合）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第二十六条第五項ただし書の国土交通省令・内閣府令で定める場合は、線路<wbr>及び停留場の使用の廃止に伴って他の軌道経営者（軌道法（大正十年法律第七十六号）<wbr>による軌道経営者をいう。）が新たに当該線路及び停留場と同一の線路及び停留場の位<wbr>置により運行しようとする場合とする。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第二十六条第五項ただし書の国土交通省令・内閣府令で定める場合は、線路<wbr>及び停留場の使用の廃止に伴って他の軌道経営者（軌道法（大正十年法律第七十六号）<wbr>による軌道経営者をいう。）が新たに当該線路及び停留場と同一の線路及び停留場の位<wbr>置により運行しようとする場合とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　法第二十九条第四項ただし書の国土交通省令・内閣府令で定める場合は、次の各号<wbr>のいずれかに該当する場合とする。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　法第二十九条第四項ただし書の国土交通省令・内閣府令で定める場合は、次の各号<wbr>のいずれかに該当する場合とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">一　事業内容に一般乗合旅客自動車運送事業が含まれない場合</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">一　事業内容に一般乗合旅客自動車運送事業が含まれない場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">二　事業内容に一般乗合旅客自動車運送事業が含まれる場合であって、当該一般乗合旅<wbr>客自動車運送事業に係る運行の態様が道路運送法施行規則第三条の三第三号に掲げる区<wbr>域運行のみである場合</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">二　事業内容に一般乗合旅客自動車運送事業が含まれる場合であって、当該一般乗合旅<wbr>客自動車運送事業に係る運行の態様が道路運送法施行規則第三条の三第三号に掲げる区<wbr>域運行のみである場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">三　法第二十九条第一項に規定する道路運送利便増進実施計画の認定の申請により設定<wbr>又は変更しようとする一般乗合旅客自動車運送事業に係る路線において道路交通法（昭<wbr>和三十五年法律第百五号）第三条に規定する普通自動車である事業用自動車のみを使用<wbr>する場合</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">三　法第二十九条第一項に規定する道路運送利便増進実施計画の認定の申請により設定<wbr>又は変更しようとする一般乗合旅客自動車運送事業に係る路線において道路交通法（昭<wbr>和三十五年法律第百五号）第三条に規定する普通自動車である事業用自動車のみを使用<wbr>する場合</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">四　法第二十九条第一項に規定する道路運送利便増進実施計画の認定の申請により設定<wbr>又は変更しようとする一般乗合旅客自動車運送事業に係る路線及び停留所の位置が当該<wbr>申請が行われた時点で運行している他の一般乗合旅客自動車運送事業に係る路線及び停<wbr>留所の位置と共通である場合、又は路線及び停留所の廃止に伴って他の一般乗合旅客自<wbr>動車運送事業者（道路運送法第九条第一項に規定する一般乗合旅客自動車運送事業者を<wbr>いう。）が新たに当該路線及び停留所と同一の路線及び停留所の位置により運行しよう<wbr>とする場合</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">四　法第二十九条第一項に規定する道路運送利便増進実施計画の認定の申請により設定<wbr>又は変更しようとする一般乗合旅客自動車運送事業に係る路線及び停留所の位置が当該<wbr>申請が行われた時点で運行している他の一般乗合旅客自動車運送事業に係る路線及び停<wbr>留所の位置と共通である場合、又は路線及び停留所の廃止に伴って他の一般乗合旅客自<wbr>動車運送事業者（道路運送法第九条第一項に規定する一般乗合旅客自動車運送事業者を<wbr>いう。）が新たに当該路線及び停留所と同一の路線及び停留所の位置により運行しよう<wbr>とする場合 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（処分の通知）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（処分の通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第四条　国土交通大臣は、第二条の規定による関係公安委員会の意見の提出があった認<wbr>定申請について、法第二十六条第三項又は第二十九条第三項の規定による認定に関する<wbr>処分を行ったときは、遅滞なく、当該処分の内容を当該関係公安委員会に通知するもの<wbr>とする。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第四条　国土交通大臣は、第二条の規定による関係公安委員会の意見の提出があった認<wbr>定申請について、法第二十六条第三項又は第二十九条第三項の規定による認定に関する<wbr>処分を行ったときは、遅滞なく、当該処分の内容を当該関係公安委員会に通知するもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（軌道利便増進実施計画等の変更の認定）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（軌道利便増進実施計画等の変更の認定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第五条　第一条から第四条までの規定は、法第二十六条第七項に規定する軌道利便増進<wbr>実施計画の変更及び法第二十九条第六項に規定する道路運送利便増進実施計画の変更に<wbr>係る認定の申請があった場合について準用する。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第五条　第一条から第四条までの規定は、法第二十六条第七項に規定する軌道利便増進<wbr>実施計画の変更及び法第二十九条第六項に規定する道路運送利便増進実施計画の変更に<wbr>係る認定の申請があった場合について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">この命令は、法の施行の日（平成二十四年十二月四日）から施行する。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">この命令は、法の施行の日（平成二十四年十二月四日）から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

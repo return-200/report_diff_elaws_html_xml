@@ -1,0 +1,567 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和二十七年法律第二百三十号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和二十七年法律第二百三十号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">農地法施行法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">農地法施行法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（農地調整法等の廃止）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（農地調整法等の廃止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　左に掲げる法令は、廃止する。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　左に掲げる法令は、廃止する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">一　農地調整法（昭和十三年法律第六十七号）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">一　農地調整法（昭和十三年法律第六十七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">二　自作農創設特別措置法（昭和二十一年法律第四十三号）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">二　自作農創設特別措置法（昭和二十一年法律第四十三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">三　自作農創設特別措置法及び農地調整法の適用を受けるべき土地の譲渡に関する政令<wbr>（昭和二十五年政令第二百八十八号）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">三　自作農創設特別措置法及び農地調整法の適用を受けるべき土地の譲渡に関する政令<wbr>（昭和二十五年政令第二百八十八号） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（措置法による買収等の経過規定）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（措置法による買収等の経過規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　左に掲げる土地、権利又は立木、工作物その他の物件で農地法（昭和二十七年<wbr>法律第二百二十九号）の施行の時までに買収又は使用の効力が生じていないものは、な<wbr>お従前の例により買収し、又は使用するものとする。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　左に掲げる土地、権利又は立木、工作物その他の物件で農地法（昭和二十七年<wbr>法律第二百二十九号）の施行の時までに買収又は使用の効力が生じていないものは、な<wbr>お従前の例により買収し、又は使用するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">一　旧自作農創設特別措置法（以下「措置法」という。）第六条第五項の規定による公<wbr>告があつた農地買収計画に係る農地</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">一　旧自作農創設特別措置法（以下「措置法」という。）第六条第五項の規定による公<wbr>告があつた農地買収計画に係る農地</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第十五条第三項で準用する同法第六条第五項の規定による公告があつた買収<wbr>計画に係る農業用施設、水の使用に関する権利、立木、土地又は建物</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第十五条第三項で準用する同法第六条第五項の規定による公告があつた買収<wbr>計画に係る農業用施設、水の使用に関する権利、立木、土地又は建物</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">三　措置法第三十一条第四項（同法第三十八条第二項で準用する場合を含む。）の規定<wbr>による公告があつた未墾地買収計画に係る土地、権利、立木又は建物その他の工作物</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">三　措置法第三十一条第四項（同法第三十八条第二項で準用する場合を含む。）の規定<wbr>による公告があつた未墾地買収計画に係る土地、権利、立木又は建物その他の工作物</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">四　措置法第三十七条第二項で準用する同法第三十一条第四項の規定による公告があつ<wbr>た買収計画に係る土地（その土地の上にある立木を含む。）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">四　措置法第三十七条第二項で準用する同法第三十一条第四項の規定による公告があつ<wbr>た買収計画に係る土地（その土地の上にある立木を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">五　措置法第四十条の四第四項の規定による公告があつた牧野買収計画に係る採草放牧<wbr>地、立木、建物その他の工作物又は権利</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">五　措置法第四十条の四第四項の規定による公告があつた牧野買収計画に係る採草放牧<wbr>地、立木、建物その他の工作物又は権利</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">２　農地法の施行前に措置法第三条、第十五条、第三十条、第三十三条第二項、第三十<wbr>六条第一項、第三十七条又は第四十条の二の規定により買収し、又は使用した土地、権<wbr>利又は立木、工作物その他の物件及び前項の規定により買収し、又は使用した土地、権<wbr>利又は立木、工作物その他の物件の買収又は使用に関する効果、対価又は報償金の支払<wbr>、損失の補償、異議の申立、訴願、訴訟、登記、土地台帳法（昭和二十二年法律第三十<wbr>号）の適用等については、なお従前の例による。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">２　農地法の施行前に措置法第三条、第十五条、第三十条、第三十三条第二項、第三十<wbr>六条第一項、第三十七条又は第四十条の二の規定により買収し、又は使用した土地、権<wbr>利又は立木、工作物その他の物件及び前項の規定により買収し、又は使用した土地、権<wbr>利又は立木、工作物その他の物件の買収又は使用に関する効果、対価又は報償金の支払<wbr>、損失の補償、異議の申立、訴願、訴訟、登記、土地台帳法（昭和二十二年法律第三十<wbr>号）の適用等については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">３　農地法の施行前に措置法第二十三条の規定により交換された農地及び農地法の施行<wbr>前に措置法第二十八条（同法第二十九条第二項及び第四十一条第四項で準用する場合を<wbr>含む。）の規定により政府が買い取つた土地、立木又は建物の登記及び土地台帳法の適<wbr>用については、なお従前の例による。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">３　農地法の施行前に措置法第二十三条の規定により交換された農地及び農地法の施行<wbr>前に措置法第二十八条（同法第二十九条第二項及び第四十一条第四項で準用する場合を<wbr>含む。）の規定により政府が買い取つた土地、立木又は建物の登記及び土地台帳法の適<wbr>用については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（措置法による売渡の経過規定）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（措置法による売渡の経過規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">18</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　農地法の施行前に措置法第二十条（同</span><span style="color: #000000; background-color: #efcb05; ">第二十八条第四項若しくは第五項、第二<wbr>十九条第二項又は第四十一条第二項で準用する場合を含む。）の規定による売渡通知書<wbr>の交付があつた土地、権利又は立木、工作物その他の物件の売渡に関する効果、損失の<wbr>補償、対価の徴収、訴訟、登記、土地台帳法の適用等については、なお従前の例による<wbr>。</span></code></td>
+<td class="ln">18</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　農地法の施行前に措置法第二十条（同</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">第二十八条第四項若しくは第五項、第<wbr>二十九条第二項又は第四十一条第二項で準用する場合を含む。）の規定による売渡通知<wbr>書の交付があつた土地、権利又は立木、工作物その他の物件の売渡に関する効果、損失<wbr>の補償、対価の徴収、訴訟、登記、土地台帳法の適用等については、なお従前の例によ<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（譲渡令による譲渡の経過規定）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（譲渡令による譲渡の経過規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　農地法の施行前に旧自作農創設特別措置法及び農地調整法の適用を受けるべき<wbr>土地の譲渡に関する政令（以下「譲渡令」という。）第二条第一項の規定による譲渡令<wbr>書の交付があつた土地物件又は権利の譲渡に関する効果及びその譲渡に伴う同令第三条<wbr>第三項の支払金の徴収、訴願、登記、土地台帳法の適用等については、なお従前の例に<wbr>よる。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　農地法の施行前に旧自作農創設特別措置法及び農地調整法の適用を受けるべき<wbr>土地の譲渡に関する政令（以下「譲渡令」という。）第二条第一項の規定による譲渡令<wbr>書の交付があつた土地物件又は権利の譲渡に関する効果及びその譲渡に伴う同令第三条<wbr>第三項の支払金の徴収、訴願、登記、土地台帳法の適用等については、なお従前の例に<wbr>よる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（国有農地、採草放牧地等の管理及び売渡）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（国有農地、採草放牧地等の管理及び売渡）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第五条　農地法の施行の際措置法第四十六条第一項の規定により農林大臣が現に管理し<wbr>ている農地及び採草放牧地（第三条、次項及び次条に規定するものを除く。）並びに第<wbr>二条第一項第一号若しくは第五号又は前条の規定により国が取得した農地及び採草放牧<wbr>地は、農地法第二章第五節及び第四章の規定の適用については、国が同法第九条の規定<wbr>により買収したものとみなす。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第五条　農地法の施行の際措置法第四十六条第一項の規定により農林大臣が現に管理し<wbr>ている農地及び採草放牧地（第三条、次項及び次条に規定するものを除く。）並びに第<wbr>二条第一項第一号若しくは第五号又は前条の規定により国が取得した農地及び採草放牧<wbr>地は、農地法第二章第五節及び第四章の規定の適用については、国が同法第九条の規定<wbr>により買収したものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　左に掲げるもので農地法の施行の際措置法第四十六条第一項の規定により農林大臣<wbr>が現に管理しているもの及び第二条第一項第二号又は第五号の規定により国が取得した<wbr>土地、立木、建物その他の工作物又は権利は、農地法第二章第五節及び第四章の規定の<wbr>適用については、国が同法第十四条の規定により買収したものとみなす。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　左に掲げるもので農地法の施行の際措置法第四十六条第一項の規定により農林大臣<wbr>が現に管理しているもの及び第二条第一項第二号又は第五号の規定により国が取得した<wbr>土地、立木、建物その他の工作物又は権利は、農地法第二章第五節及び第四章の規定の<wbr>適用については、国が同法第十四条の規定により買収したものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">一　措置法第十五条若しくは第四十条の二第六項の規定により買収し、又は同法第二十<wbr>九条第二項において準用する同法第二十八条第一項若しくは第五項の規定により買い取<wbr>つた土地、立木、建物その他の工作物、農業用施設又は水の使用に関する権利（第三条<wbr>及び次条第一項第三号に規定するものを除く。）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">一　措置法第十五条若しくは第四十条の二第六項の規定により買収し、又は同法第二十<wbr>九条第二項において準用する同法第二十八条第一項若しくは第五項の規定により買い取<wbr>つた土地、立木、建物その他の工作物、農業用施設又は水の使用に関する権利（第三条<wbr>及び次条第一項第三号に規定するものを除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第二十九条第一項の政府の所有に属する農業用施設、水の使用に関する権利<wbr>、立木、土地若しくは建物で命令で定めるもの又は同法第四十一条第一項第二号の規定<wbr>による決定があつた立木、建物その他の工作物、農業用施設若しくは水の使用に関する<wbr>権利（第三条に規定するものを除く。）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第二十九条第一項の政府の所有に属する農業用施設、水の使用に関する権利<wbr>、立木、土地若しくは建物で命令で定めるもの又は同法第四十一条第一項第二号の規定<wbr>による決定があつた立木、建物その他の工作物、農業用施設若しくは水の使用に関する<wbr>権利（第三条に規定するものを除く。） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（国有未墾地等の管理及び売渡）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（国有未墾地等の管理及び売渡）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第六条　左に掲げるもので農地法の施行の際措置法第四十六条第一項の規定により農林<wbr>大臣が現に管理しているもの、第二条第一項第三号の規定により国が取得した土地、権<wbr>利、立木又は建物その他の工作物及び第四条の規定により国が取得した土地物件（農地<wbr>及び採草放牧地を除く。）又は権利は、農地法第五十五条、第五十九条、第三章第二節<wbr>及び第四章の規定の適用については、国が同法第四十四条第一項の規定により買収した<wbr>ものとみなす。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第六条　左に掲げるもので農地法の施行の際措置法第四十六条第一項の規定により農林<wbr>大臣が現に管理しているもの、第二条第一項第三号の規定により国が取得した土地、権<wbr>利、立木又は建物その他の工作物及び第四条の規定により国が取得した土地物件（農地<wbr>及び採草放牧地を除く。）又は権利は、農地法第五十五条、第五十九条、第三章第二節<wbr>及び第四章の規定の適用については、国が同法第四十四条第一項の規定により買収した<wbr>ものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　措置法第三十条第一項、第三十三条第二項（同法第四十条の五第一項で準用する場<wbr>合を含む。）又は同法第三十六条の規定により買収した土地、権利又は立木、工作物そ<wbr>の他の物件</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　措置法第三十条第一項、第三十三条第二項（同法第四十条の五第一項で準用する場<wbr>合を含む。）又は同法第三十六条の規定により買収した土地、権利又は立木、工作物そ<wbr>の他の物件</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第四十条の二第一項の規定により買収した採草放牧地で同法第四十条の六第<wbr>一項の規定による指定があつたもの</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第四十条の二第一項の規定により買収した採草放牧地で同法第四十条の六第<wbr>一項の規定による指定があつたもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">三　措置法第四十条の二第六項の規定により買収した立木、建物その他の工作物、農業<wbr>用施設又は水の使用に関する権利で前号の採草放牧地に係るもの</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">三　措置法第四十条の二第六項の規定により買収した立木、建物その他の工作物、農業<wbr>用施設又は水の使用に関する権利で前号の採草放牧地に係るもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">四　第一号又は第二号に掲げる土地で措置法第四十一条第四項で準用する同法第二十八<wbr>条の規定により国が買い取つたもの</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">四　第一号又は第二号に掲げる土地で措置法第四十一条第四項で準用する同法第二十八<wbr>条の規定により国が買い取つたもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">五　措置法第四十一条第一項第三号の規定による決定があつた土地物件</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">五　措置法第四十一条第一項第三号の規定による決定があつた土地物件</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">２　左に掲げる土地（その土地の上にある立木を含む。以下この項で同様とする。）で<wbr>農地法の施行の際農林大臣が措置法第四十六条第一項の規定により現に管理しているも<wbr>の及び第二条第一項第四号の規定により国が買収した土地は、農地法第六十九条及び第<wbr>七十八条の規定の適用については、同法第五十九条の規定により買収したものとみなす<wbr>。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">２　左に掲げる土地（その土地の上にある立木を含む。以下この項で同様とする。）で<wbr>農地法の施行の際農林大臣が措置法第四十六条第一項の規定により現に管理しているも<wbr>の及び第二条第一項第四号の規定により国が買収した土地は、農地法第六十九条及び第<wbr>七十八条の規定の適用については、同法第五十九条の規定により買収したものとみなす<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">一　措置法第三十七条第一項の規定により買収した土地</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">一　措置法第三十七条第一項の規定により買収した土地</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第四十一条の三第一項の規定により売り渡すべきものと決定された土地</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">二　措置法第四十一条の三第一項の規定により売り渡すべきものと決定された土地 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（隣接市町村の指定地域における小作地の所有）</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（隣接市町村の指定地域における小作地の所有）</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第七条　農地法の施行の際、措置法第三条第一項第一号の規定により、その住所のある<wbr>市町村の区域に準ずるものとして、隣接する市町村の区域内で指定されている地域にお<wbr>いて現に小作地を所有している者は、その小作地のうち農地法第六条第一項第二号に規<wbr>定する面積からその住所のある市町村の区域内において所有する小作地の面積を差し引<wbr>いた面積をこえないものを、同項第一号の規定にかかわらず、なお所有することができ<wbr>る。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第七条　農地法の施行の際、措置法第三条第一項第一号の規定により、その住所のある<wbr>市町村の区域に準ずるものとして、隣接する市町村の区域内で指定されている地域にお<wbr>いて現に小作地を所有している者は、その小作地のうち農地法第六条第一項第二号に規<wbr>定する面積からその住所のある市町村の区域内において所有する小作地の面積を差し引<wbr>いた面積をこえないものを、同項第一号の規定にかかわらず、なお所有することができ<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（措置法による指定の効力）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（措置法による指定の効力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第八条　農地法の施行の際、措置法第五条第三号の規定により試験研究又は農事指導の<wbr>目的に供しているものとして現に指定を受けている小作地は、農地法の施行の日から一<wbr>年を限り、同法第七条第一項第二号の規定による指定を受けたものとみなす。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第八条　農地法の施行の際、措置法第五条第三号の規定により試験研究又は農事指導の<wbr>目的に供しているものとして現に指定を受けている小作地は、農地法の施行の日から一<wbr>年を限り、同法第七条第一項第二号の規定による指定を受けたものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">２　農地法の施行の際現に措置法第五条第四号の規定による都道府県知事の指定を受け<wbr>ている区域内にある小作地は、農地法第七条第一項第三号の規定による指定を受けたも<wbr>のとみなす。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">２　農地法の施行の際現に措置法第五条第四号の規定による都道府県知事の指定を受け<wbr>ている区域内にある小作地は、農地法第七条第一項第三号の規定による指定を受けたも<wbr>のとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">３　農地法の施行の際現に措置法第五条第五号の規定による指定を受けている小作地は<wbr>、農地法の施行の日から一年を限り、同法第七条第一項第三号の規定による指定を受け<wbr>たものとみなす。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">３　農地法の施行の際現に措置法第五条第五号の規定による指定を受けている小作地は<wbr>、農地法の施行の日から一年を限り、同法第七条第一項第三号の規定による指定を受け<wbr>たものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（調整法により定めた小作料の額の制限）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（調整法により定めた小作料の額の制限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第九条　農地法の施行の際現に農地につき旧農地調整法（以下「調整法」という。）第<wbr>九条ノ五第一項の規定により定められている小作料の額（その農地につき同法第九条ノ<wbr>三第一項但書の規定により都道府県知事の許可を受けた小作料の額があるときは、その<wbr>額）は、農地法第二十一条の規定によりその農地についての小作料の最高額の決定及び<wbr>公示があるまでは、同条第一項の規定により定められ、同条第二項の規定による公示が<wbr>あつた額とみなす。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第九条　農地法の施行の際現に農地につき旧農地調整法（以下「調整法」という。）第<wbr>九条ノ五第一項の規定により定められている小作料の額（その農地につき同法第九条ノ<wbr>三第一項但書の規定により都道府県知事の許可を受けた小作料の額があるときは、その<wbr>額）は、農地法第二十一条の規定によりその農地についての小作料の最高額の決定及び<wbr>公示があるまでは、同条第一項の規定により定められ、同条第二項の規定による公示が<wbr>あつた額とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（調整法による処分に対する訴願）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（調整法による処分に対する訴願）</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第十条　農地法の施行前に調整法によつてした市町村農業委員会の処分に対する訴願に<wbr>ついては、第一条の規定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第十条　農地法の施行前に調整法によつてした市町村農業委員会の処分に対する訴願に<wbr>ついては、第一条の規定にかかわらず、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（未墾地の一時使用）</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（未墾地の一時使用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第十一条　農地法の施行の際現に措置法第四十一条の二の規定による使用をしている者<wbr>は、農地法第六十四条の規定により売渡予約書の交付を受け、同法第六十八条の規定に<wbr>よりその土地等の使用をしている者とみなす。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第十一条　農地法の施行の際現に措置法第四十一条の二の規定による使用をしている者<wbr>は、農地法第六十四条の規定により売渡予約書の交付を受け、同法第六十八条の規定に<wbr>よりその土地等の使用をしている者とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（売渡後の未墾地の特例）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（売渡後の未墾地の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">49</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十二条　農地法の施行前に措置法第四十一条第一項第一号、第三号若しくは第四号又<wbr>は同条第四項で準用する</span><span style="color: #000000; background-color: #efcb05; ">第二十八条の規定により売り渡した土地、権利又は立木、工作<wbr>物その他の物件（採草放牧地にあつては、</span><span style="color: #000000; background-color: #efcb05; ">第四十条の六第一項の規定により指定された<wbr>ものに限る。以下この条で同様とする。）及び第三条に規定する土地、権利又は立木、<wbr>工作物その他の物件は、農地法第七十一条から第七十四条までの規定の適用については<wbr>、同法第六十一条の規定により売り渡したものとみなす。この場合において、同法第七<wbr>十一条中「第六十七条第一項第六号の時期到来後、」とあるのは「旧自作農創設特別措<wbr>置法第四十一条第二項で準用する同法第二十条第一項の売渡通知書に記載された売渡の<wbr>時期から起算して五年を経過した後、」と、同法第七十二条第一項但書、第七十三条第<wbr>一項及び第七十四条中「第六十七条第一項第六号の時期到来後三年」とあるのは「売渡<wbr>の時期から起算して八年」と読み替えるものとする。</span></code></td>
+<td class="ln">49</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十二条　農地法の施行前に措置法第四十一条第一項第一号、第三号若しくは第四号又<wbr>は同条第四項で準用する</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第二十八条の規定により売り渡した土地、権利又は立木、<wbr>工作物その他の物件（採草放牧地にあつては、</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第四十条の六第一項の規定により指<wbr>定されたものに限る。以下この条で同様とする。）及び第三条に規定する土地、権利又<wbr>は立木、工作物その他の物件は、農地法第七十一条から第七十四条までの規定の適用に<wbr>ついては、同法第六十一条の規定により売り渡したものとみなす。この場合において、<wbr>同法第七十一条中「第六十七条第一項第六号の時期到来後、」とあるのは「旧自作農創<wbr>設特別措置法第四十一条第二項で準用する同法第二十条第一項の売渡通知書に記載され<wbr>た売渡の時期から起算して五年を経過した後、」と、同法第七十二条第一項但書、第七<wbr>十三条第一項及び第七十四条中「第六十七条第一項第六号の時期到来後三年」とあるの<wbr>は「売渡の時期から起算して八年」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（措置法等による処分等の効力）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（措置法等による処分等の効力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第十三条　第二条から前条までに規定するものを除く外、農地法の施行前に措置法、調<wbr>整法、譲渡令又はこれらの法令に基く命令の規定によつてした処分、手続その他の行為<wbr>は、農地法又は同法に基く命令中にこれに相当する規定があるときは、これらの規定に<wbr>よつてしたものとみなす。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第十三条　第二条から前条までに規定するものを除く外、農地法の施行前に措置法、調<wbr>整法、譲渡令又はこれらの法令に基く命令の規定によつてした処分、手続その他の行為<wbr>は、農地法又は同法に基く命令中にこれに相当する規定があるときは、これらの規定に<wbr>よつてしたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（支払金の徴収）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（支払金の徴収）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">53</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十四条　措置法第十六条（</span><span style="color: #000000; background-color: #efcb05; ">第二十九条第二項で準用する場合を含む。）、同法第二十<wbr>八条（同法第二十九条第二項又は第四十一条第四項で準用する場合を含む。）若しくは<wbr>同法第四十一条第一項第一号若しくは第二号の規定による土地の売渡又は第三条に規定<wbr>する土地の売渡を受けた者又はその一般承継人がその売渡を受けた日から十年を経過し<wbr>ない間にその土地を譲渡したときは、その者は、政令で定める場合を除き、その譲渡の<wbr>日から起算して一箇月以内に左に掲げる算式により算出された額を国に支払わなければ<wbr>ならない。この場合において、算式中Ｐは農地法第十二条第一項（同法第十四条第二項<wbr>で準用する場合を含む。）又は同法第五十一条第一項の規定による政令で定めるところ<wbr>により算出した額、Ｐ′は措置法による売渡の対価、ｎは売渡を受けた日から譲渡の日<wbr>までの経過年数（一年に満たない端数は、一年とする。）とする。</span></code></td>
+<td class="ln">53</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十四条　措置法第十六条（</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第二十九条第二項で準用する場合を含む。）、同法第<wbr>二十八条（同法第二十九条第二項又は第四十一条第四項で準用する場合を含む。）若し<wbr>くは同法第四十一条第一項第一号若しくは第二号の規定による土地の売渡又は第三条に<wbr>規定する土地の売渡を受けた者又はその一般承継人がその売渡を受けた日から十年を経<wbr>過しない間にその土地を譲渡したときは、その者は、政令で定める場合を除き、その譲<wbr>渡の日から起算して一箇月以内に左に掲げる算式により算出された額を国に支払わなけ<wbr>ればならない。この場合において、算式中Ｐは農地法第十二条第一項（同法第十四条第<wbr>二項で準用する場合を含む。）又は同法第五十一条第一項の規定による政令で定めると<wbr>ころにより算出した額、Ｐ′は措置法による売渡の対価、ｎは売渡を受けた日から譲渡<wbr>の日までの経過年数（一年に満たない端数は、一年とする。）とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">P－｛P′＋（n／10）（P－P′）｝</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">P－｛P′＋（n／10）（P－P′）｝</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　農地法第四十二条及び第四十三条の規定は、前項の規定による国に対する支払金の<wbr>徴収について準用する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　農地法第四十二条及び第四十三条の規定は、前項の規定による国に対する支払金の<wbr>徴収について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する売渡を受けた土地について土地改良法（昭和二十四年法律第百九<wbr>十五号）による土地の所有権の交換分合が行われた場合には、次条の規定による改正後<wbr>の同法第百十条第一項（同法第百十一条で準用する場合を含む。）の規定によりその土<wbr>地に代るべきものと定められた土地又は改正前の同法第百十条第三項（同法第百十一条<wbr>で準用する場合を含む。）の規定により指定された土地をそれぞれ第一項に規定する売<wbr>渡を受けた土地とみなして同項の規定を適用する。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">３　第一項に規定する売渡を受けた土地について土地改良法（昭和二十四年法律第百九<wbr>十五号）による土地の所有権の交換分合が行われた場合には、次条の規定による改正後<wbr>の同法第百十条第一項（同法第百十一条で準用する場合を含む。）の規定によりその土<wbr>地に代るべきものと定められた土地又は改正前の同法第百十条第三項（同法第百十一条<wbr>で準用する場合を含む。）の規定により指定された土地をそれぞれ第一項に規定する売<wbr>渡を受けた土地とみなして同項の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（土地改良法の一部改正）</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（土地改良法の一部改正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第十五条　土地改良法の一部を次のように改正する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第十五条　土地改良法の一部を次のように改正する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（土地改良法の改正に伴う経過規定）</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（土地改良法の改正に伴う経過規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十六条　前条の規定による改正前の土地改良法第百十条第三項（同法第百十一条で準<wbr>用する場合を含む。）の規定により指定された土地は、改正後の同法第百十条第一項（<wbr>同法第百十一条で準用する場合を含む。）及び農地法第三条第二項第六号の規定の適用<wbr>については、同号に規定する土地とみなす。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十六条　前条の規定による改正前の土地改良法第百十条第三項（同法第百十一条で準<wbr>用する場合を含む。）の規定により指定された土地は、改正後の同法第百十条第一項（<wbr>同法第百十一条で準用する場合を含む。）及び農地法第三条第二項第六号の規定の適用<wbr>については、同号に規定する土地とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">（農業委員会法の一部改正）</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">（農業委員会法の一部改正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">第十七条　農業委員会法（昭和二十六年法律第八十八号）の一部を次のように改正する<wbr>。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">第十七条　農業委員会法（昭和二十六年法律第八十八号）の一部を次のように改正する<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（造林臨時措置法の一部改正）</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">（造林臨時措置法の一部改正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第十八条　造林臨時措置法（昭和二十五年法律第百五十号）の一部を次のように改正す<wbr>る。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">第十八条　造林臨時措置法（昭和二十五年法律第百五十号）の一部を次のように改正す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（土地調整委員会設置法の一部改正）</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（土地調整委員会設置法の一部改正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">第十九条　土地調整委員会設置法（昭和二十五年法律第二百九十二号）の一部を次のよ<wbr>うに改正する。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">第十九条　土地調整委員会設置法（昭和二十五年法律第二百九十二号）の一部を次のよ<wbr>うに改正する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略）</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（自作農創設特別措置特別会計法の一部改正）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（自作農創設特別措置特別会計法の一部改正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第二十条　自作農創設特別措置特別会計法（昭和二十一年法律第四十四号）の一部を次<wbr>のように改正する。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第二十条　自作農創設特別措置特別会計法（昭和二十一年法律第四十四号）の一部を次<wbr>のように改正する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（登録税法の一部改正）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（登録税法の一部改正）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　登録税法（明治二十九年法律第二十七号）の一部を次のように改正する。<wbr></span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　登録税法（明治二十九年法律第二十七号）の一部を次のように改正する。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略）</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（「次のよう」略） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（登録税法の改正に伴う経過規定）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（登録税法の改正に伴う経過規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　前条の規定による改正前の登録税法第十九条但書、同条第八号ノ二から第<wbr>九号ノ四まで及び第十二号の規定並びに同条に基く命令の規定は、これらの号に掲げる<wbr>登記であつて、この法律の施行前における行為を登記原因とするものについては、この<wbr>法律の施行後もなおその効力を有する。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　前条の規定による改正前の登録税法第十九条但書、同条第八号ノ二から第<wbr>九号ノ四まで及び第十二号の規定並びに同条に基く命令の規定は、これらの号に掲げる<wbr>登記であつて、この法律の施行前における行為を登記原因とするものについては、この<wbr>法律の施行後もなおその効力を有する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">２　第三条又は第四条の規定によりなお従前の例によるものとされるこれらの規定に規<wbr>定する登記については、平成二十四年十二月三十一日までに受けるものに限り、登録免<wbr>許税を課さない。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">２　第三条又は第四条の規定によりなお従前の例によるものとされるこれらの規定に規<wbr>定する登記については、平成二十四年十二月三十一日までに受けるものに限り、登録免<wbr>許税を課さない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（罰則の適用）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（罰則の適用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　この法律の施行前にした行為に対する罰則の適用については、第一条の規<wbr>定にかかわらず、なお従前の例による。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　この法律の施行前にした行為に対する罰則の適用については、第一条の規<wbr>定にかかわらず、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">この法律は、農地法の施行の日から施行する。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">この法律は、農地法の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二九年六月一五日法律第一八五号）　抄</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二九年六月一五日法律第一八五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和二十九年七月二十日から施行する。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和二十九年七月二十日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年六月一二日法律第三六号）　抄</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年六月一二日法律第三六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、登録免許税法の施行の日から施行する。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、登録免許税法の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年四月一五日法律第一四号）　抄</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年四月一五日法律第一四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年三月三一日法律第九号）　抄</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年三月三一日法律第九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和五十二年四月一日から施行する。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和五十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年三月三一日法律第八号）　抄</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年三月三一日法律第八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和五十七年四月一日から施行する。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和五十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年三月三一日法律第一四号）　抄</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年三月三一日法律第一四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十二年四月一日から施行する。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年三月三一日法律第一四号）　抄</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成四年三月三一日法律第一四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成四年四月一日から施行する。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年三月三一日法律第二二号）　抄</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成九年三月三一日法律第二二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成九年四月一日から施行する。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年三月三一日法律第一五号）　抄</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年三月三一日法律第一五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十四年四月一日から施行する。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十四年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日法律第六号）　抄</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日法律第六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第百五十七条　この法律（附則第一条各号に掲げる規定にあっては、当該規定。以下こ<wbr>の条において同じ。）の施行前にした行為及びこの附則の規定によりなお従前の例によ<wbr>ることとされる場合におけるこの法律の施行後にした行為に対する罰則の適用について<wbr>は、なお従前の例による。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第百五十七条　この法律（附則第一条各号に掲げる規定にあっては、当該規定。以下こ<wbr>の条において同じ。）の施行前にした行為及びこの附則の規定によりなお従前の例によ<wbr>ることとされる場合におけるこの法律の施行後にした行為に対する罰則の適用について<wbr>は、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第百五十八条　この附則に規定するもののほか、この法律の施行に関し必要な経過措置<wbr>は、政令で定める。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第百五十八条　この附則に規定するもののほか、この法律の施行に関し必要な経過措置<wbr>は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

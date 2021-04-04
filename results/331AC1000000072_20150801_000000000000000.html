@@ -1,0 +1,495 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十一年法律第七十二号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十一年法律第七十二号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">積雪寒冷特別地域における道路交通の確保に関する特別措置法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">積雪寒冷特別地域における道路交通の確保に関する特別措置法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（この法律の目的）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（この法律の目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、積雪寒冷の度が特にはなはだしい地域における道路の交通を確保<wbr>するため、当該地域内の道路につき、除雪、防雪及び凍雪害の防止について特別の措置<wbr>を定め、もつてこれらの地域における産業の振興と民生の安定に寄与することを目的と<wbr>する。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、積雪寒冷の度が特にはなはだしい地域における道路の交通を確保<wbr>するため、当該地域内の道路につき、除雪、防雪及び凍雪害の防止について特別の措置<wbr>を定め、もつてこれらの地域における産業の振興と民生の安定に寄与することを目的と<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律で「道路」とは、道路法（昭和二十七年法律第百八十号）による道路<wbr>をいう。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律で「道路」とは、道路法（昭和二十七年法律第百八十号）による道路<wbr>をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">２　この法律で「道路管理者」とは、道路法第十八条第一項に規定する道路管理者をい<wbr>う。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">２　この法律で「道路管理者」とは、道路法第十八条第一項に規定する道路管理者をい<wbr>う。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（路線の指定）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（路線の指定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　国土交通大臣は、第一条の目的を達成するため、同条に規定する地域内におい<wbr>て道路の交通の確保が特に必要であると認められる道路を指定しなければならない。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第三条　国土交通大臣は、第一条の目的を達成するため、同条に規定する地域内におい<wbr>て道路の交通の確保が特に必要であると認められる道路を指定しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　前項の指定は、積雪又は寒冷の度、道路の重要性その他の事情を勘案して政令で定<wbr>める基準に従つて行うものとする。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　前項の指定は、積雪又は寒冷の度、道路の重要性その他の事情を勘案して政令で定<wbr>める基準に従つて行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">３　国土交通大臣は、第一項の指定をした場合には、当該道路の路線名及び区間を官報<wbr>で公示しなければならない。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">３　国土交通大臣は、第一項の指定をした場合には、当該道路の路線名及び区間を官報<wbr>で公示しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（積雪寒冷特別地域道路交通確保五箇年計画）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（積雪寒冷特別地域道路交通確保五箇年計画）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四条　国土交通大臣は、昭和四十八年度以降の毎五箇年を各一期として、当該期間中<wbr>の前条の規定により指定された道路に関する積雪寒冷特別地域道路交通確保五箇年計画<wbr>（以下「道路交通確保五箇年計画」という。）の案を作成して、閣議の決定を求めなけ<wbr>ればならない。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第四条　国土交通大臣は、昭和四十八年度以降の毎五箇年を各一期として、当該期間中<wbr>の前条の規定により指定された道路に関する積雪寒冷特別地域道路交通確保五箇年計画<wbr>（以下「道路交通確保五箇年計画」という。）の案を作成して、閣議の決定を求めなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　国土交通大臣は、前項の規定による閣議の決定があつたときは、遅滞なく、道路交<wbr>通確保五箇年計画を関係都道府県知事に通知しなければならない。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　国土交通大臣は、前項の規定による閣議の決定があつたときは、遅滞なく、道路交<wbr>通確保五箇年計画を関係都道府県知事に通知しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、道路交通確保五箇年計画を変更しようとする場合に準用する。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、道路交通確保五箇年計画を変更しようとする場合に準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第五条　道路交通確保五箇年計画は、次に掲げる事項につき定めなければならない。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第五条　道路交通確保五箇年計画は、次に掲げる事項につき定めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">一　除雪（除雪機械の整備を含む。次条において同じ。）に関する事項</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">一　除雪（除雪機械の整備を含む。次条において同じ。）に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">二　防雪に関する事項</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">二　防雪に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">三　凍雪害の防止（流雪溝こうの整備を含む。以下同じ。）に関する事項</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">三　凍雪害の防止（流雪溝こうの整備を含む。以下同じ。）に関する事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（費用の補助）</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（費用の補助）</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第六条　国は、道路管理者（国土交通大臣である道路管理者を除く。）が道路交通確保<wbr>五箇年計画に基づいて実施する除雪、防雪又は凍雪害の防止に係る事業に要する費用に<wbr>ついては、道路法（第八十八条を除く。）及び道路の修繕に関する法律（昭和二十三年<wbr>法律第二百八十二号）の規定にかかわらず、政令で定めるところにより、除雪に係るも<wbr>のにあつてはその三分の二を、防雪又は凍雪害の防止に係るものにあつてはその十分の<wbr>六を道路管理者に対して補助するものとする。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第六条　国は、道路管理者（国土交通大臣である道路管理者を除く。）が道路交通確保<wbr>五箇年計画に基づいて実施する除雪、防雪又は凍雪害の防止に係る事業に要する費用に<wbr>ついては、道路法（第八十八条を除く。）及び道路の修繕に関する法律（昭和二十三年<wbr>法律第二百八十二号）の規定にかかわらず、政令で定めるところにより、除雪に係るも<wbr>のにあつてはその三分の二を、防雪又は凍雪害の防止に係るものにあつてはその十分の<wbr>六を道路管理者に対して補助するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（道路法の適用）</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（道路法の適用）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">23</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第七条　道路管理者が道路交通確保五箇年計画に基いて実施する除雪、防雪又は凍雪害<wbr>の防止に係る事業については、この法律に定めるものを除くほか、</span><span style="color: #000000; background-color: #efcb05; ">の規定の適用がある<wbr>ものとする。この場合において、当該除雪又は防雪に係る事業に関しては、道路法第六<wbr>十一条第一項中「道路に関する工事」とあるのは「積雪寒冷特別地域における道路交通<wbr>の確保に関する特別措置法（昭和三十一年法律第七十二号）第四条第一項に規定する道<wbr>路交通確保五箇年計画に基いて実施される除雪又は防雪に係る事業」と、「当該工事」<wbr>とあるのは「当該除雪又は防雪に係る事業」と読み替えて、同条の規定及び同条に係る<wbr>道路法のその他の規定を適用する。</span></code></td>
+<td class="ln">23</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第七条　道路管理者が道路交通確保五箇年計画に基いて実施する除雪、防雪又は凍雪害<wbr>の防止に係る事業については、この法律に定めるものを除くほか、</span><span class="sf17b18">道路法</span><span style="color: #000000; background-color: #efcb05; ">の規定の適用<wbr>があるものとする。この場合において、当該除雪又は防雪に係る事業に関しては、道路<wbr>法第六十一条第一項中「道路に関する工事」とあるのは「積雪寒冷特別地域における道<wbr>路交通の確保に関する特別措置法（昭和三十一年法律第七十二号）第四条第一項に規定<wbr>する道路交通確保五箇年計画に基いて実施される除雪又は防雪に係る事業」と、「当該<wbr>工事」とあるのは「当該除雪又は防雪に係る事業」と読み替えて、同条の規定及び同条<wbr>に係る道路法のその他の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第六条の規定は、昭和三十二年四月<wbr>一日から施行する。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第六条の規定は、昭和三十二年四月<wbr>一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">２　平成二十二年度において国土交通大臣が道路交通確保五箇年計画に基づいて実施す<wbr>る道路法第十三条第一項に規定する指定区間内の一般国道についての防雪又は凍雪害の<wbr>防止に係る事業（同法附則第二項の規定により読み替えて適用する同法第五十条第二項<wbr>に規定する特定事業に該当するものに限る。）に要する費用に関する国の負担の割合は<wbr>、同法附則第二項の規定により読み替えて適用する同法第五十条第二項の規定にかかわ<wbr>らず、三分の二とする。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">２　平成二十二年度において国土交通大臣が道路交通確保五箇年計画に基づいて実施す<wbr>る道路法第十三条第一項に規定する指定区間内の一般国道についての防雪又は凍雪害の<wbr>防止に係る事業（同法附則第二項の規定により読み替えて適用する同法第五十条第二項<wbr>に規定する特定事業に該当するものに限る。）に要する費用に関する国の負担の割合は<wbr>、同法附則第二項の規定により読み替えて適用する同法第五十条第二項の規定にかかわ<wbr>らず、三分の二とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">３　国は、当分の間、道路管理者に対し、第六条の規定により国がその費用について補<wbr>助する事業で日本電信電話株式会社の株式の売払収入の活用による社会資本の整備の促<wbr>進に関する特別措置法（昭和六十二年法律第八十六号）第二条第一項第二号に該当する<wbr>ものに要する費用に充てる資金について、予算の範囲内において、第六条の規定（この<wbr>規定による国の補助の割合について、この規定と異なる定めをした法令の規定がある場<wbr>合には、当該異なる定めをした法令の規定を含む。以下同じ。）により国が補助する金<wbr>額に相当する金額を無利子で貸し付けることができる。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">３　国は、当分の間、道路管理者に対し、第六条の規定により国がその費用について補<wbr>助する事業で日本電信電話株式会社の株式の売払収入の活用による社会資本の整備の促<wbr>進に関する特別措置法（昭和六十二年法律第八十六号）第二条第一項第二号に該当する<wbr>ものに要する費用に充てる資金について、予算の範囲内において、第六条の規定（この<wbr>規定による国の補助の割合について、この規定と異なる定めをした法令の規定がある場<wbr>合には、当該異なる定めをした法令の規定を含む。以下同じ。）により国が補助する金<wbr>額に相当する金額を無利子で貸し付けることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">４　前項の国の貸付金の償還期間は、五年（二年以内の据置期間を含む。）以内で政令<wbr>で定める期間とする。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">４　前項の国の貸付金の償還期間は、五年（二年以内の据置期間を含む。）以内で政令<wbr>で定める期間とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">５　前項に定めるもののほか、附則第三項の規定による貸付金の償還方法、償還期限の<wbr>繰上げその他償還に関し必要な事項は、政令で定める。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">５　前項に定めるもののほか、附則第三項の規定による貸付金の償還方法、償還期限の<wbr>繰上げその他償還に関し必要な事項は、政令で定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">６　国は、附則第三項の規定により、道路管理者に対し貸付けを行つた場合には、当該<wbr>貸付けの対象である事業に係る第六条の規定による国の補助については、当該貸付金の<wbr>償還時において、当該貸付金の償還金に相当する金額を交付することにより行うものと<wbr>する。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">６　国は、附則第三項の規定により、道路管理者に対し貸付けを行つた場合には、当該<wbr>貸付けの対象である事業に係る第六条の規定による国の補助については、当該貸付金の<wbr>償還時において、当該貸付金の償還金に相当する金額を交付することにより行うものと<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">７　道路管理者が、附則第三項の規定による貸付けを受けた無利子貸付金について、附<wbr>則第四項及び第五項の規定に基づき定められる償還期限を繰り上げて償還を行つた場合<wbr>（政令で定める場合を除く。）における前項の規定の適用については、当該償還は、当<wbr>該償還期限の到来時に行われたものとみなす。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">７　道路管理者が、附則第三項の規定による貸付けを受けた無利子貸付金について、附<wbr>則第四項及び第五項の規定に基づき定められる償還期限を繰り上げて償還を行つた場合<wbr>（政令で定める場合を除く。）における前項の規定の適用については、当該償還は、当<wbr>該償還期限の到来時に行われたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三三年三月三一日法律第三四号）　抄</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三三年三月三一日法律第三四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十三年四月一日から施行する。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三三年三月三一日法律第三六号）　抄</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三三年三月三一日法律第三六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和三十三年四月一日から施行する。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和三十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三六年三月三一日法律第五二号）　抄</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三六年三月三一日法律第五二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十六年四月一日から施行する。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三六年一一月一五日法律第二二五号）</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三六年一一月一五日法律第二二五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十七年四月一日から施行する。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十七年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の積雪寒冷特別地域における道路交通の確保に関する特別措置法第六条の規<wbr>定は、昭和三十七年度分の予算に係る国の補助金から適用し、昭和三十六年度分の予算<wbr>に係る国の補助金で翌年度に繰り越したものについては、なお従前の例による。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の積雪寒冷特別地域における道路交通の確保に関する特別措置法第六条の規<wbr>定は、昭和三十七年度分の予算に係る国の補助金から適用し、昭和三十六年度分の予算<wbr>に係る国の補助金で翌年度に繰り越したものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年七月一五日法律第一四八号）</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年七月一五日法律第一四八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">２　この法律による改正後の積雪寒冷特別地域における道路交通の確保に関する特別措<wbr>置法第五条の二の規定は、昭和三十八年度の予算に係る国の負担金から適用する。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">２　この法律による改正後の積雪寒冷特別地域における道路交通の確保に関する特別措<wbr>置法第五条の二の規定は、昭和三十八年度の予算に係る国の負担金から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年三月三一日法律第三四号）　抄</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年三月三一日法律第三四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十九年四月一日から施行する。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和三十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年七月九日法律第一六三号）　抄</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年七月九日法律第一六三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和四十年四月一日から施行する。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和四十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年七月六日法律第五二号）　抄</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四二年七月六日法律第五二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四五年五月一六日法律第六三号）　抄</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四五年五月一六日法律第六三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年六月二一日法律第三六号）　抄</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年六月二一日法律第三六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年五月八日法律第四六号）　抄</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年五月八日法律第四六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条、第十二条及び第三十四条の規定を除く。）による改正後の法<wbr>律の昭和六十一年度から昭和六十三年度までの各年度の特例に係る規定並びに昭和六十<wbr>一年度及び昭和六十二年度の特例に係る規定は、昭和六十一年度から昭和六十三年度ま<wbr>での各年度（昭和六十一年度及び昭和六十二年度の特例に係るものにあつては、昭和六<wbr>十一年度及び昭和六十二年度。以下この項において同じ。）の予算に係る国の負担（当<wbr>該国の負担に係る都道府県又は市町村の負担を含む。以下この項において同じ。）又は<wbr>補助（昭和六十年度以前の年度における事務又は事業の実施により昭和六十一年度以降<wbr>の年度に支出される国の負担又は補助及び昭和六十年度以前の年度の国庫債務負担行為<wbr>に基づき昭和六十一年度以降の年度に支出すべきものとされた国の負担又は補助を除く<wbr>。）並びに昭和六十一年度から昭和六十三年度までの各年度における事務又は事業の実<wbr>施により昭和六十四年度（昭和六十一年度及び昭和六十二年度の特例に係るものにあつ<wbr>ては、昭和六十三年度。以下この項において同じ。）以降の年度に支出される国の負担<wbr>又は補助、昭和六十一年度から昭和六十三年度までの各年度の国庫債務負担行為に基づ<wbr>き昭和六十四年度以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十<wbr>一年度から昭和六十三年度までの各年度の歳出予算に係る国の負担又は補助で昭和六十<wbr>四年度以降の年度に繰り越されるものについて適用し、昭和六十年度以前の年度におけ<wbr>る事務又は事業の実施により昭和六十一年度以降の年度に支出される国の負担又は補助<wbr>、昭和六十年度以前の年度の国庫債務負担行為に基づき昭和六十一年度以降の年度に支<wbr>出すべきものとされた国の負担又は補助及び昭和六十年度以前の年度の歳出予算に係る<wbr>国の負担又は補助で昭和六十一年度以降の年度に繰り越されたものについては、なお従<wbr>前の例による。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条、第十二条及び第三十四条の規定を除く。）による改正後の法<wbr>律の昭和六十一年度から昭和六十三年度までの各年度の特例に係る規定並びに昭和六十<wbr>一年度及び昭和六十二年度の特例に係る規定は、昭和六十一年度から昭和六十三年度ま<wbr>での各年度（昭和六十一年度及び昭和六十二年度の特例に係るものにあつては、昭和六<wbr>十一年度及び昭和六十二年度。以下この項において同じ。）の予算に係る国の負担（当<wbr>該国の負担に係る都道府県又は市町村の負担を含む。以下この項において同じ。）又は<wbr>補助（昭和六十年度以前の年度における事務又は事業の実施により昭和六十一年度以降<wbr>の年度に支出される国の負担又は補助及び昭和六十年度以前の年度の国庫債務負担行為<wbr>に基づき昭和六十一年度以降の年度に支出すべきものとされた国の負担又は補助を除く<wbr>。）並びに昭和六十一年度から昭和六十三年度までの各年度における事務又は事業の実<wbr>施により昭和六十四年度（昭和六十一年度及び昭和六十二年度の特例に係るものにあつ<wbr>ては、昭和六十三年度。以下この項において同じ。）以降の年度に支出される国の負担<wbr>又は補助、昭和六十一年度から昭和六十三年度までの各年度の国庫債務負担行為に基づ<wbr>き昭和六十四年度以降の年度に支出すべきものとされる国の負担又は補助及び昭和六十<wbr>一年度から昭和六十三年度までの各年度の歳出予算に係る国の負担又は補助で昭和六十<wbr>四年度以降の年度に繰り越されるものについて適用し、昭和六十年度以前の年度におけ<wbr>る事務又は事業の実施により昭和六十一年度以降の年度に支出される国の負担又は補助<wbr>、昭和六十年度以前の年度の国庫債務負担行為に基づき昭和六十一年度以降の年度に支<wbr>出すべきものとされた国の負担又は補助及び昭和六十年度以前の年度の歳出予算に係る<wbr>国の負担又は補助で昭和六十一年度以降の年度に繰り越されたものについては、なお従<wbr>前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年九月四日法律第八七号）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六二年九月四日法律第八七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行し、第六条及び第八条から第十二条までの規定による改<wbr>正後の国有林野事業特別会計法、道路整備特別会計法、治水特別会計法、港湾整備特別<wbr>会計法、都市開発資金融通特別会計法及び空港整備特別会計法の規定は、昭和六十二年<wbr>度の予算から適用する。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行し、第六条及び第八条から第十二条までの規定による改<wbr>正後の国有林野事業特別会計法、道路整備特別会計法、治水特別会計法、港湾整備特別<wbr>会計法、都市開発資金融通特別会計法及び空港整備特別会計法の規定は、昭和六十二年<wbr>度の予算から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年四月一〇日法律第二二号）　抄</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年四月一〇日法律第二二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条、第十二条及び第三十四条の規定を除く。）による改正後の法<wbr>律の平成元年度及び平成二年度の特例に係る規定並びに平成元年度の特例に係る規定は<wbr>、平成元年度及び平成二年度（平成元年度の特例に係るものにあっては、平成元年度。<wbr>以下この項において同じ。）の予算に係る国の負担（当該国の負担に係る都道府県又は<wbr>市町村の負担を含む。以下この項及び次項において同じ。）又は補助（昭和六十三年度<wbr>以前の年度における事務又は事業の実施により平成元年度以降の年度に支出される国の<wbr>負担及び昭和六十三年度以前の年度の国庫債務負担行為に基づき平成元年度以降の年度<wbr>に支出すべきものとされた国の負担又は補助を除く。）並びに平成元年度及び平成二年<wbr>度における事務又は事業の実施により平成三年度（平成元年度の特例に係るものにあっ<wbr>ては、平成二年度。以下この項において同じ。）以降の年度に支出される国の負担、平<wbr>成元年度及び平成二年度の国庫債務負担行為に基づき平成三年度以降の年度に支出すべ<wbr>きものとされる国の負担又は補助並びに平成元年度及び平成二年度の歳出予算に係る国<wbr>の負担又は補助で平成三年度以降の年度に繰り越されるものについて適用し、昭和六十<wbr>三年度以前の年度における事務又は事業の実施により平成元年度以降の年度に支出され<wbr>る国の負担、昭和六十三年度以前の年度の国庫債務負担行為に基づき平成元年度以降の<wbr>年度に支出すべきものとされた国の負担又は補助及び昭和六十三年度以前の年度の歳出<wbr>予算に係る国の負担又は補助で平成元年度以降の年度に繰り越されたものについては、<wbr>なお従前の例による。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条、第十二条及び第三十四条の規定を除く。）による改正後の法<wbr>律の平成元年度及び平成二年度の特例に係る規定並びに平成元年度の特例に係る規定は<wbr>、平成元年度及び平成二年度（平成元年度の特例に係るものにあっては、平成元年度。<wbr>以下この項において同じ。）の予算に係る国の負担（当該国の負担に係る都道府県又は<wbr>市町村の負担を含む。以下この項及び次項において同じ。）又は補助（昭和六十三年度<wbr>以前の年度における事務又は事業の実施により平成元年度以降の年度に支出される国の<wbr>負担及び昭和六十三年度以前の年度の国庫債務負担行為に基づき平成元年度以降の年度<wbr>に支出すべきものとされた国の負担又は補助を除く。）並びに平成元年度及び平成二年<wbr>度における事務又は事業の実施により平成三年度（平成元年度の特例に係るものにあっ<wbr>ては、平成二年度。以下この項において同じ。）以降の年度に支出される国の負担、平<wbr>成元年度及び平成二年度の国庫債務負担行為に基づき平成三年度以降の年度に支出すべ<wbr>きものとされる国の負担又は補助並びに平成元年度及び平成二年度の歳出予算に係る国<wbr>の負担又は補助で平成三年度以降の年度に繰り越されるものについて適用し、昭和六十<wbr>三年度以前の年度における事務又は事業の実施により平成元年度以降の年度に支出され<wbr>る国の負担、昭和六十三年度以前の年度の国庫債務負担行為に基づき平成元年度以降の<wbr>年度に支出すべきものとされた国の負担又は補助及び昭和六十三年度以前の年度の歳出<wbr>予算に係る国の負担又は補助で平成元年度以降の年度に繰り越されたものについては、<wbr>なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年三月三〇日法律第一五号）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年三月三〇日法律第一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、平成三年四月一日から施行する。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、平成三年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条及び第十九条の規定を除く。）による改正後の法律の平成三年<wbr>度及び平成四年度の特例に係る規定並びに平成三年度の特例に係る規定は、平成三年度<wbr>及び平成四年度（平成三年度の特例に係るものにあっては平成三年度とする。以下この<wbr>項において同じ。）の予算に係る国の負担（当該国の負担に係る都道府県又は市町村の<wbr>負担を含む。以下この項において同じ。）又は補助（平成二年度以前の年度における事<wbr>務又は事業の実施により平成三年度以降の年度に支出される国の負担及び平成二年度以<wbr>前の年度の国庫債務負担行為に基づき平成三年度以降の年度に支出すべきものとされた<wbr>国の負担又は補助を除く。）並びに平成三年度及び平成四年度における事務又は事業の<wbr>実施により平成五年度（平成三年度の特例に係るものにあっては平成四年度とする。以<wbr>下この項において同じ。）以降の年度に支出される国の負担、平成三年度及び平成四年<wbr>度の国庫債務負担行為に基づき平成五年度以降の年度に支出すべきものとされる国の負<wbr>担又は補助並びに平成三年度及び平成四年度の歳出予算に係る国の負担又は補助で平成<wbr>五年度以降の年度に繰り越されるものについて適用し、平成二年度以前の年度における<wbr>事務又は事業の実施により平成三年度以降の年度に支出される国の負担、平成二年度以<wbr>前の年度の国庫債務負担行為に基づき平成三年度以降の年度に支出すべきものとされた<wbr>国の負担又は補助及び平成二年度以前の年度の歳出予算に係る国の負担又は補助で平成<wbr>三年度以降の年度に繰り越されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条及び第十九条の規定を除く。）による改正後の法律の平成三年<wbr>度及び平成四年度の特例に係る規定並びに平成三年度の特例に係る規定は、平成三年度<wbr>及び平成四年度（平成三年度の特例に係るものにあっては平成三年度とする。以下この<wbr>項において同じ。）の予算に係る国の負担（当該国の負担に係る都道府県又は市町村の<wbr>負担を含む。以下この項において同じ。）又は補助（平成二年度以前の年度における事<wbr>務又は事業の実施により平成三年度以降の年度に支出される国の負担及び平成二年度以<wbr>前の年度の国庫債務負担行為に基づき平成三年度以降の年度に支出すべきものとされた<wbr>国の負担又は補助を除く。）並びに平成三年度及び平成四年度における事務又は事業の<wbr>実施により平成五年度（平成三年度の特例に係るものにあっては平成四年度とする。以<wbr>下この項において同じ。）以降の年度に支出される国の負担、平成三年度及び平成四年<wbr>度の国庫債務負担行為に基づき平成五年度以降の年度に支出すべきものとされる国の負<wbr>担又は補助並びに平成三年度及び平成四年度の歳出予算に係る国の負担又は補助で平成<wbr>五年度以降の年度に繰り越されるものについて適用し、平成二年度以前の年度における<wbr>事務又は事業の実施により平成三年度以降の年度に支出される国の負担、平成二年度以<wbr>前の年度の国庫債務負担行為に基づき平成三年度以降の年度に支出すべきものとされた<wbr>国の負担又は補助及び平成二年度以前の年度の歳出予算に係る国の負担又は補助で平成<wbr>三年度以降の年度に繰り越されたものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年三月三一日法律第八号）　抄</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年三月三一日法律第八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、平成五年四月一日から施行する。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、平成五年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条及び第二十条の規定を除く。）による改正後の法律の規定は、<wbr>平成五年度以降の年度の予算に係る国の負担（当該国の負担に係る都道府県又は市町村<wbr>の負担を含む。以下この項において同じ。）又は補助（平成四年度以前の年度における<wbr>事務又は事業の実施により平成五年度以降の年度に支出される国の負担及び平成四年度<wbr>以前の年度の国庫債務負担行為に基づき平成五年度以降の年度に支出すべきものとされ<wbr>た国の負担又は補助を除く。）について適用し、平成四年度以前の年度における事務又<wbr>は事業の実施により平成五年度以降の年度に支出される国の負担、平成四年度以前の年<wbr>度の国庫債務負担行為に基づき平成五年度以降の年度に支出すべきものとされた国の負<wbr>担又は補助及び平成四年度以前の年度の歳出予算に係る国の負担又は補助で平成五年度<wbr>以降の年度に繰り越されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">２　この法律（第十一条及び第二十条の規定を除く。）による改正後の法律の規定は、<wbr>平成五年度以降の年度の予算に係る国の負担（当該国の負担に係る都道府県又は市町村<wbr>の負担を含む。以下この項において同じ。）又は補助（平成四年度以前の年度における<wbr>事務又は事業の実施により平成五年度以降の年度に支出される国の負担及び平成四年度<wbr>以前の年度の国庫債務負担行為に基づき平成五年度以降の年度に支出すべきものとされ<wbr>た国の負担又は補助を除く。）について適用し、平成四年度以前の年度における事務又<wbr>は事業の実施により平成五年度以降の年度に支出される国の負担、平成四年度以前の年<wbr>度の国庫債務負担行為に基づき平成五年度以降の年度に支出すべきものとされた国の負<wbr>担又は補助及び平成四年度以前の年度の歳出予算に係る国の負担又は補助で平成五年度<wbr>以降の年度に繰り越されたものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第二百五十二条　政府は、医療保険制度、年金制度等の改革に伴い、社会保険の事務処<wbr>理の体制、これに従事する職員の在り方等について、被保険者等の利便性の確保、事務<wbr>処理の効率化等の視点に立って、検討し、必要があると認めるときは、その結果に基づ<wbr>いて所要の措置を講ずるものとする。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">第二百五十二条　政府は、医療保険制度、年金制度等の改革に伴い、社会保険の事務処<wbr>理の体制、これに従事する職員の在り方等について、被保険者等の利便性の確保、事務<wbr>処理の効率化等の視点に立って、検討し、必要があると認めるときは、その結果に基づ<wbr>いて所要の措置を講ずるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年二月八日法律第一号）　抄</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年二月八日法律第一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年三月三一日法律第二〇号）　抄</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年三月三一日法律第二〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十二年四月一日から施行する。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第二条　第一条から第八条まで並びに附則第六条及び第九条の規定による改正後の次の<wbr>各号に掲げる法律の規定は、当該各号に定める国の負担（当該国の負担に係る都道府県<wbr>又は市町村の負担を含む。以下この条において同じ。）について適用し、平成二十一年<wbr>度以前の年度における事務又は事業の実施により平成二十二年度以降の年度に支出され<wbr>る国の負担、平成二十一年度以前の年度の国庫債務負担行為に基づき平成二十二年度以<wbr>降の年度に支出すべきものとされた国の負担及び平成二十一年度以前の年度の歳出予算<wbr>に係る国の負担で平成二十二年度以降の年度に繰り越されたものについては、なお従前<wbr>の例による。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第二条　第一条から第八条まで並びに附則第六条及び第九条の規定による改正後の次の<wbr>各号に掲げる法律の規定は、当該各号に定める国の負担（当該国の負担に係る都道府県<wbr>又は市町村の負担を含む。以下この条において同じ。）について適用し、平成二十一年<wbr>度以前の年度における事務又は事業の実施により平成二十二年度以降の年度に支出され<wbr>る国の負担、平成二十一年度以前の年度の国庫債務負担行為に基づき平成二十二年度以<wbr>降の年度に支出すべきものとされた国の負担及び平成二十一年度以前の年度の歳出予算<wbr>に係る国の負担で平成二十二年度以降の年度に繰り越されたものについては、なお従前<wbr>の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる法律の規定　平成二十二年度の予算に係る国の負担（平成二十一年度以<wbr>前の年度における事務又は事業の実施により平成二十二年度に支出される国の負担及び<wbr>平成二十一年度以前の年度の国庫債務負担行為に基づき平成二十二年度に支出すべきも<wbr>のとされた国の負担を除く。）並びに同年度における事務又は事業の実施により平成二<wbr>十三年度以降の年度に支出される国の負担、平成二十二年度の国庫債務負担行為に基づ<wbr>き平成二十三年度以降の年度に支出すべきものとされる国の負担及び平成二十二年度の<wbr>歳出予算に係る国の負担で平成二十三年度以降の年度に繰り越されるもの</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる法律の規定　平成二十二年度の予算に係る国の負担（平成二十一年度以<wbr>前の年度における事務又は事業の実施により平成二十二年度に支出される国の負担及び<wbr>平成二十一年度以前の年度の国庫債務負担行為に基づき平成二十二年度に支出すべきも<wbr>のとされた国の負担を除く。）並びに同年度における事務又は事業の実施により平成二<wbr>十三年度以降の年度に支出される国の負担、平成二十二年度の国庫債務負担行為に基づ<wbr>き平成二十三年度以降の年度に支出すべきものとされる国の負担及び平成二十二年度の<wbr>歳出予算に係る国の負担で平成二十三年度以降の年度に繰り越されるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">イ・ロ　略</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">イ・ロ　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">ハ　積雪寒冷特別地域における道路交通の確保に関する特別措置法附則第二項</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">ハ　積雪寒冷特別地域における道路交通の確保に関する特別措置法附則第二項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条に定めるもののほか、この法律の施行に関し必要な経過措置は、政令で定<wbr>める。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条に定めるもののほか、この法律の施行に関し必要な経過措置は、政令で定<wbr>める。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

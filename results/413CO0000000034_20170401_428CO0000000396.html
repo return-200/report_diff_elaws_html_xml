@@ -1,0 +1,979 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十三年政令第三十四号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十三年政令第三十四号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">公共工事の入札及び契約の適正化の促進に関する法律施行令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">公共工事の入札及び契約の適正化の促進に関する法律施行令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、公共工事の入札及び契約の適正化の促進に関する法律（平成十二年法律第百二<wbr>十七号）第二条第一項、第四条、第五条、第七条及び第八条の規定に基づき、この政令<wbr>を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、公共工事の入札及び契約の適正化の促進に関する法律（平成十二年法律第百二<wbr>十七号）第二条第一項、第四条、第五条、第七条及び第八条の規定に基づき、この政令<wbr>を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（特殊法人等の範囲）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（特殊法人等の範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　公共工事の入札及び契約の適正化の促進に関する法律（以下「法」という。）<wbr>第二条第一項の政令で定める法人は、次のとおりとする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　公共工事の入札及び契約の適正化の促進に関する法律（以下「法」という。）<wbr>第二条第一項の政令で定める法人は、次のとおりとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">一　首都高速道路株式会社、新関西国際空港株式会社、中間貯蔵・環境安全事業株式会<wbr>社、中日本高速道路株式会社、成田国際空港株式会社、西日本高速道路株式会社、阪神<wbr>高速道路株式会社、東日本高速道路株式会社、本州四国連絡高速道路株式会社、沖縄科<wbr>学技術大学院大学学園及び日本中央競馬会</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">一　首都高速道路株式会社、新関西国際空港株式会社、中間貯蔵・環境安全事業株式会<wbr>社、中日本高速道路株式会社、成田国際空港株式会社、西日本高速道路株式会社、阪神<wbr>高速道路株式会社、東日本高速道路株式会社、本州四国連絡高速道路株式会社、沖縄科<wbr>学技術大学院大学学園及び日本中央競馬会</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">二　削除</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">二　削除</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">三　国立研究開発法人宇宙航空研究開発機構、国立研究開発法人科学技術振興機構、国<wbr>立研究開発法人情報通信研究機構、国立研究開発法人森林研究・整備機構、国立研究開<wbr>発法人日本原子力研究開発機構、独立行政法人空港周辺整備機構、独立行政法人高齢・<wbr>障害・求職者雇用支援機構、独立行政法人国際協力機構、独立行政法人国立科学博物館<wbr>、独立行政法人国立高等専門学校機構、独立行政法人国立女性教育会館、独立行政法人<wbr>国立青少年教育振興機構、独立行政法人国立美術館、独立行政法人国立文化財機構、独<wbr>立行政法人自動車事故対策機構、独立行政法人中小企業基盤整備機構、独立行政法人鉄<wbr>道建設・運輸施設整備支援機構、独立行政法人都市再生機構、独立行政法人日本学生支<wbr>援機構、独立行政法人日本芸術文化振興会、独立行政法人日本高速道路保有・債務返済<wbr>機構、独立行政法人日本スポーツ振興センター、独立行政法人水資源機構及び独立行政<wbr>法人労働者健康安全機構</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">三　国立研究開発法人宇宙航空研究開発機構、国立研究開発法人科学技術振興機構、国<wbr>立研究開発法人情報通信研究機構、国立研究開発法人森林研究・整備機構、国立研究開<wbr>発法人日本原子力研究開発機構、独立行政法人空港周辺整備機構、独立行政法人高齢・<wbr>障害・求職者雇用支援機構、独立行政法人国際協力機構、独立行政法人国立科学博物館<wbr>、独立行政法人国立高等専門学校機構、独立行政法人国立女性教育会館、独立行政法人<wbr>国立青少年教育振興機構、独立行政法人国立美術館、独立行政法人国立文化財機構、独<wbr>立行政法人自動車事故対策機構、独立行政法人中小企業基盤整備機構、独立行政法人鉄<wbr>道建設・運輸施設整備支援機構、独立行政法人都市再生機構、独立行政法人日本学生支<wbr>援機構、独立行政法人日本芸術文化振興会、独立行政法人日本高速道路保有・債務返済<wbr>機構、独立行政法人日本スポーツ振興センター、独立行政法人水資源機構及び独立行政<wbr>法人労働者健康安全機構 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">（国による発注の見通しに関する事項の公表）</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">（国による発注の見通しに関する事項の公表）</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第二条　各省各庁の長は、毎年度、四月一日（当該日において当該年度の予算が成立し<wbr>ていない場合にあっては、予算の成立の日）以後遅滞なく、当該年度に発注することが<wbr>見込まれる公共工事（国の行為を秘密にする必要があるもの及び予定価格が二百五十万<wbr>円を超えないと見込まれるものを除く。）に係る次に掲げるものの見通しに関する事項<wbr>を公表しなければならない。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第二条　各省各庁の長は、毎年度、四月一日（当該日において当該年度の予算が成立し<wbr>ていない場合にあっては、予算の成立の日）以後遅滞なく、当該年度に発注することが<wbr>見込まれる公共工事（国の行為を秘密にする必要があるもの及び予定価格が二百五十万<wbr>円を超えないと見込まれるものを除く。）に係る次に掲げるものの見通しに関する事項<wbr>を公表しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">一　公共工事の名称、場所、期間、種別及び概要</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">一　公共工事の名称、場所、期間、種別及び概要</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">二　入札及び契約の方法</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">二　入札及び契約の方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">三　入札を行う時期（随意契約を行う場合にあっては、契約を締結する時期）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">三　入札を行う時期（随意契約を行う場合にあっては、契約を締結する時期）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による公表は、次のいずれかの方法で行わなければならない。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による公表は、次のいずれかの方法で行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　官報又は時事に関する事項を掲載する日刊新聞紙に掲載する方法</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　官報又は時事に関する事項を掲載する日刊新聞紙に掲載する方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　公衆の見やすい場所に掲示し、又は公衆の閲覧に供する方法</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　公衆の見やすい場所に掲示し、又は公衆の閲覧に供する方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　前項第二号の規定による公衆の閲覧は、閲覧所を設け、又はインターネットを利用<wbr>して閲覧に供する方法によらなければならない。この場合においては、各省各庁の長は<wbr>、あらかじめ、当該閲覧に供する方法を告示しなければならない。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　前項第二号の規定による公衆の閲覧は、閲覧所を設け、又はインターネットを利用<wbr>して閲覧に供する方法によらなければならない。この場合においては、各省各庁の長は<wbr>、あらかじめ、当該閲覧に供する方法を告示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">４　第二項第二号に掲げる方法で公表した場合においては、当該年度の三月三十一日ま<wbr>で掲示し、又は閲覧に供しなければならない。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">４　第二項第二号に掲げる方法で公表した場合においては、当該年度の三月三十一日ま<wbr>で掲示し、又は閲覧に供しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">５　各省各庁の長は、少なくとも毎年度一回、十月一日を目途として、第一項の規定に<wbr>より公表した発注の見通しに関する事項を見直し、当該事項に変更がある場合には、変<wbr>更後の当該事項を公表しなければならない。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">５　各省各庁の長は、少なくとも毎年度一回、十月一日を目途として、第一項の規定に<wbr>より公表した発注の見通しに関する事項を見直し、当該事項に変更がある場合には、変<wbr>更後の当該事項を公表しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条第二項から第四項までの規定は、変更後の発注の見通しに関する事項の公<wbr>表の方法について準用する。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条第二項から第四項までの規定は、変更後の発注の見通しに関する事項の公<wbr>表の方法について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（国による入札及び契約の過程並びに契約の内容に関する事項の公表）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（国による入札及び契約の過程並びに契約の内容に関する事項の公表）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第四条　各省各庁の長は、次に掲げる事項を定め、又は作成したときは、遅滞なく、当<wbr>該事項を公表しなければならない。これを変更したときも、同様とする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第四条　各省各庁の長は、次に掲げる事項を定め、又は作成したときは、遅滞なく、当<wbr>該事項を公表しなければならない。これを変更したときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">一　予算決算及び会計令（昭和二十二年勅令第百六十五号。以下「予決令」という。）<wbr>第七十二条第一項に規定する一般競争に参加する者に必要な資格及び同条第三項に規定<wbr>する当該資格を有する者の名簿</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">一　予算決算及び会計令（昭和二十二年勅令第百六十五号。以下「予決令」という。）<wbr>第七十二条第一項に規定する一般競争に参加する者に必要な資格及び同条第三項に規定<wbr>する当該資格を有する者の名簿</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">二　予決令第九十五条第一項に規定する指名競争に参加する者に必要な資格及び同条第<wbr>二項において準用する予決令第七十二条第三項に規定する当該資格を有する者の名簿</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">二　予決令第九十五条第一項に規定する指名競争に参加する者に必要な資格及び同条第<wbr>二項において準用する予決令第七十二条第三項に規定する当該資格を有する者の名簿</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">三　予決令第九十六条第一項に規定する競争に参加する者を指名する場合の基準</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">三　予決令第九十六条第一項に規定する競争に参加する者を指名する場合の基準</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">四　予決令第八十五条（予決令第九十八条において準用する場合を含む。）に規定する<wbr>契約の相手方となるべき者の申込みに係る価格によってはその者により当該契約の内容<wbr>に適合した履行がされないこととなるおそれがあると認められる場合の基準</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">四　予決令第八十五条（予決令第九十八条において準用する場合を含む。）に規定する<wbr>契約の相手方となるべき者の申込みに係る価格によってはその者により当該契約の内容<wbr>に適合した履行がされないこととなるおそれがあると認められる場合の基準</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　各省各庁の長は、公共工事（国の行為を秘密にする必要があるもの及び予定価格が<wbr>二百五十万円を超えないものを除く。）の契約を締結したときは、当該公共工事ごとに<wbr>、遅滞なく、次に掲げる事項を公表しなければならない。ただし、第一号から第八号ま<wbr>でに掲げる事項にあっては、契約の締結前に公表することを妨げない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　各省各庁の長は、公共工事（国の行為を秘密にする必要があるもの及び予定価格が<wbr>二百五十万円を超えないものを除く。）の契約を締結したときは、当該公共工事ごとに<wbr>、遅滞なく、次に掲げる事項を公表しなければならない。ただし、第一号から第八号ま<wbr>でに掲げる事項にあっては、契約の締結前に公表することを妨げない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　予決令第七十三条の規定により一般競争に参加する者に必要な資格をさらに定め、<wbr>その資格を有する者により当該競争を行わせた場合における当該資格</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　予決令第七十三条の規定により一般競争に参加する者に必要な資格をさらに定め、<wbr>その資格を有する者により当該競争を行わせた場合における当該資格</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　一般競争入札を行った場合における当該競争に参加しようとした者の商号又は名称<wbr>並びにこれらのうち当該競争に参加させなかった者の商号又は名称及びその者を参加さ<wbr>せなかった理由</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　一般競争入札を行った場合における当該競争に参加しようとした者の商号又は名称<wbr>並びにこれらのうち当該競争に参加させなかった者の商号又は名称及びその者を参加さ<wbr>せなかった理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">三　指名競争入札を行った場合における指名した者の商号又は名称及びその者を指名し<wbr>た理由</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">三　指名競争入札を行った場合における指名した者の商号又は名称及びその者を指名し<wbr>た理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">四　入札者の商号又は名称及び入札金額（随意契約を行った場合を除く。）</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">四　入札者の商号又は名称及び入札金額（随意契約を行った場合を除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">五　落札者の商号又は名称及び落札金額（随意契約を行った場合を除く。）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">五　落札者の商号又は名称及び落札金額（随意契約を行った場合を除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">六　予決令第八十六条第一項（予決令第九十八条において準用する場合を含む。）の規<wbr>定により契約の相手方となるべき者により当該契約の内容に適合した履行がされないお<wbr>それがあるかどうかについて調査した場合における当該調査から落札者の決定までの経<wbr>緯</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">六　予決令第八十六条第一項（予決令第九十八条において準用する場合を含む。）の規<wbr>定により契約の相手方となるべき者により当該契約の内容に適合した履行がされないお<wbr>それがあるかどうかについて調査した場合における当該調査から落札者の決定までの経<wbr>緯</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">七　予決令第八十九条（予決令第九十八条において準用する場合を含む。）の規定によ<wbr>り次順位者を落札者とした場合における入札から落札者の決定までの経緯</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">七　予決令第八十九条（予決令第九十八条において準用する場合を含む。）の規定によ<wbr>り次順位者を落札者とした場合における入札から落札者の決定までの経緯</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">八　予決令第九十一条第二項（予決令第九十八条において準用する場合を含む。）の規<wbr>定により価格その他の条件が国にとって最も有利なものをもって申込みをした者を落札<wbr>者とした場合におけるその者を落札者とした理由</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">八　予決令第九十一条第二項（予決令第九十八条において準用する場合を含む。）の規<wbr>定により価格その他の条件が国にとって最も有利なものをもって申込みをした者を落札<wbr>者とした場合におけるその者を落札者とした理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">九　次に掲げる契約の内容</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">九　次に掲げる契約の内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">イ　契約の相手方の商号又は名称及び住所</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">イ　契約の相手方の商号又は名称及び住所</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共工事の名称、場所、種別及び概要</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共工事の名称、場所、種別及び概要</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ハ　工事着手の時期及び工事完成の時期</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ハ　工事着手の時期及び工事完成の時期</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ニ　契約金額</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ニ　契約金額</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">十　随意契約を行った場合における契約の相手方を選定した理由</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">十　随意契約を行った場合における契約の相手方を選定した理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　各省各庁の長は、前項の公共工事について契約金額の変更を伴う契約の変更をした<wbr>ときは、遅滞なく、変更後の契約に係る同項第九号ロからニまでに掲げる事項及び変更<wbr>の理由を公表しなければならない。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　各省各庁の長は、前項の公共工事について契約金額の変更を伴う契約の変更をした<wbr>ときは、遅滞なく、変更後の契約に係る同項第九号ロからニまでに掲げる事項及び変更<wbr>の理由を公表しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定による公表は、公衆の見やすい場所に掲示し、又は公衆の閲覧に供す<wbr>る方法で行わなければならない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定による公表は、公衆の見やすい場所に掲示し、又は公衆の閲覧に供す<wbr>る方法で行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">５　第二条第三項の規定は、前項の規定による公衆の閲覧について準用する。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">５　第二条第三項の規定は、前項の規定による公衆の閲覧について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">６　第二項又は第三項の規定により公表した事項については、少なくとも、公表した日<wbr>（第二項第一号から第八号までに掲げる事項のうち契約の締結前に公表した事項につい<wbr>ては、契約を締結した日）の翌日から起算して一年間が経過する日まで掲示し、又は閲<wbr>覧に供しなければならない。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">６　第二項又は第三項の規定により公表した事項については、少なくとも、公表した日<wbr>（第二項第一号から第八号までに掲げる事項のうち契約の締結前に公表した事項につい<wbr>ては、契約を締結した日）の翌日から起算して一年間が経過する日まで掲示し、又は閲<wbr>覧に供しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体による発注の見通しに関する事項の公表）</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体による発注の見通しに関する事項の公表）</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第五条　地方公共団体の長は、毎年度、四月一日（当該日において当該年度の予算が成<wbr>立していない場合にあっては、予算の成立の日）以後遅滞なく、当該年度に発注するこ<wbr>とが見込まれる公共工事（予定価格が二百五十万円を超えないと見込まれるもの及び公<wbr>共の安全と秩序の維持に密接に関連する公共工事であって当該地方公共団体の行為を秘<wbr>密にする必要があるものを除く。）に係る次に掲げるものの見通しに関する事項を公表<wbr>しなければならない。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">第五条　地方公共団体の長は、毎年度、四月一日（当該日において当該年度の予算が成<wbr>立していない場合にあっては、予算の成立の日）以後遅滞なく、当該年度に発注するこ<wbr>とが見込まれる公共工事（予定価格が二百五十万円を超えないと見込まれるもの及び公<wbr>共の安全と秩序の維持に密接に関連する公共工事であって当該地方公共団体の行為を秘<wbr>密にする必要があるものを除く。）に係る次に掲げるものの見通しに関する事項を公表<wbr>しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">一　公共工事の名称、場所、期間、種別及び概要</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">一　公共工事の名称、場所、期間、種別及び概要</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">二　入札及び契約の方法</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">二　入札及び契約の方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">三　入札を行う時期（随意契約を行う場合にあっては、契約を締結する時期）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">三　入札を行う時期（随意契約を行う場合にあっては、契約を締結する時期）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による公表は、次のいずれかの方法で行わなければならない。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による公表は、次のいずれかの方法で行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">一　公報又は時事に関する事項を掲載する日刊新聞紙に掲載する方法</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">一　公報又は時事に関する事項を掲載する日刊新聞紙に掲載する方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">二　公衆の見やすい場所に掲示し、又は公衆の閲覧に供する方法</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">二　公衆の見やすい場所に掲示し、又は公衆の閲覧に供する方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　前項第二号の規定による公衆の閲覧は、閲覧所を設け、又はインターネットを利用<wbr>して閲覧に供する方法によらなければならない。この場合においては、地方公共団体の<wbr>長は、あらかじめ、当該閲覧に供する方法を告示しなければならない。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　前項第二号の規定による公衆の閲覧は、閲覧所を設け、又はインターネットを利用<wbr>して閲覧に供する方法によらなければならない。この場合においては、地方公共団体の<wbr>長は、あらかじめ、当該閲覧に供する方法を告示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">４　第二項第二号に掲げる方法で公表した場合においては、当該年度の三月三十一日ま<wbr>で掲示し、又は閲覧に供しなければならない。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">４　第二項第二号に掲げる方法で公表した場合においては、当該年度の三月三十一日ま<wbr>で掲示し、又は閲覧に供しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">５　地方公共団体の長は、少なくとも毎年度一回、十月一日を目途として、第一項の規<wbr>定により公表した発注の見通しに関する事項を見直し、当該事項に変更がある場合には<wbr>、変更後の当該事項を公表しなければならない。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">５　地方公共団体の長は、少なくとも毎年度一回、十月一日を目途として、第一項の規<wbr>定により公表した発注の見通しに関する事項を見直し、当該事項に変更がある場合には<wbr>、変更後の当該事項を公表しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第六条　前条第二項から第四項までの規定は、変更後の発注の見通しに関する事項の公<wbr>表の方法について準用する。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第六条　前条第二項から第四項までの規定は、変更後の発注の見通しに関する事項の公<wbr>表の方法について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体による入札及び契約の過程並びに契約の内容に関する事項の公表）</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（地方公共団体による入札及び契約の過程並びに契約の内容に関する事項の公表）</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第七条　地方公共団体の長は、次に掲げる事項を定め、又は作成したときは、遅滞なく<wbr>、当該事項を公表しなければならない。これを変更したときも、同様とする。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第七条　地方公共団体の長は、次に掲げる事項を定め、又は作成したときは、遅滞なく<wbr>、当該事項を公表しなければならない。これを変更したときも、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">一　地方自治法施行令（昭和二十二年政令第十六号。以下「自治令」という。）第百六<wbr>十七条の五第一項に規定する一般競争入札に参加する者に必要な資格及び当該資格を有<wbr>する者の名簿</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">一　地方自治法施行令（昭和二十二年政令第十六号。以下「自治令」という。）第百六<wbr>十七条の五第一項に規定する一般競争入札に参加する者に必要な資格及び当該資格を有<wbr>する者の名簿</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">二　自治令第百六十七条の十一第二項に規定する指名競争入札に参加する者に必要な資<wbr>格及び当該資格を有する者の名簿</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">二　自治令第百六十七条の十一第二項に規定する指名競争入札に参加する者に必要な資<wbr>格及び当該資格を有する者の名簿</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">三　指名競争入札に参加する者を指名する場合の基準</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">三　指名競争入札に参加する者を指名する場合の基準</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　地方公共団体の長は、公共工事（予定価格が二百五十万円を超えないもの及び公共<wbr>の安全と秩序の維持に密接に関連する公共工事であって当該地方公共団体の行為を秘密<wbr>にする必要があるものを除く。）の契約を締結したときは、当該公共工事ごとに、遅滞<wbr>なく、次に掲げる事項を公表しなければならない。ただし、第一号から第八号までに掲<wbr>げる事項にあっては、契約の締結前に公表することを妨げない。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　地方公共団体の長は、公共工事（予定価格が二百五十万円を超えないもの及び公共<wbr>の安全と秩序の維持に密接に関連する公共工事であって当該地方公共団体の行為を秘密<wbr>にする必要があるものを除く。）の契約を締結したときは、当該公共工事ごとに、遅滞<wbr>なく、次に掲げる事項を公表しなければならない。ただし、第一号から第八号までに掲<wbr>げる事項にあっては、契約の締結前に公表することを妨げない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">一　自治令第百六十七条の五の二の規定により一般競争入札に参加する者に必要な資格<wbr>を更に定め、その資格を有する者により当該入札を行わせた場合における当該資格</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">一　自治令第百六十七条の五の二の規定により一般競争入札に参加する者に必要な資格<wbr>を更に定め、その資格を有する者により当該入札を行わせた場合における当該資格</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">二　一般競争入札を行った場合における当該入札に参加しようとした者の商号又は名称<wbr>並びにこれらの者のうち当該入札に参加させなかった者の商号又は名称及びその者を参<wbr>加させなかった理由</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">二　一般競争入札を行った場合における当該入札に参加しようとした者の商号又は名称<wbr>並びにこれらの者のうち当該入札に参加させなかった者の商号又は名称及びその者を参<wbr>加させなかった理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">三　指名競争入札を行った場合における指名した者の商号又は名称及びその者を指名し<wbr>た理由</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">三　指名競争入札を行った場合における指名した者の商号又は名称及びその者を指名し<wbr>た理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">四　入札者の商号又は名称及び入札金額（随意契約を行った場合を除く。）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">四　入札者の商号又は名称及び入札金額（随意契約を行った場合を除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">五　落札者の商号又は名称及び落札金額（随意契約を行った場合を除く。）</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">五　落札者の商号又は名称及び落札金額（随意契約を行った場合を除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">六　自治令第百六十七条の十第一項（自治令第百六十七条の十三において準用する場合<wbr>を含む。）の規定により最低の価格をもって申込みをした者を落札者とせず他の者のう<wbr>ち最低の価格をもって申込みをした者を落札者とした場合におけるその者を落札者とし<wbr>た理由</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">六　自治令第百六十七条の十第一項（自治令第百六十七条の十三において準用する場合<wbr>を含む。）の規定により最低の価格をもって申込みをした者を落札者とせず他の者のう<wbr>ち最低の価格をもって申込みをした者を落札者とした場合におけるその者を落札者とし<wbr>た理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">七　自治令第百六十七条の十第二項（自治令第百六十七条の十三において準用する場合<wbr>を含む。）の規定により最低制限価格を設け最低の価格をもって申込みをした者を落札<wbr>者とせず最低制限価格以上の価格をもって申込みをした者のうち最低の価格をもって申<wbr>込みをした者を落札者とした場合における最低制限価格未満の価格をもって申込みをし<wbr>た者の商号又は名称</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">七　自治令第百六十七条の十第二項（自治令第百六十七条の十三において準用する場合<wbr>を含む。）の規定により最低制限価格を設け最低の価格をもって申込みをした者を落札<wbr>者とせず最低制限価格以上の価格をもって申込みをした者のうち最低の価格をもって申<wbr>込みをした者を落札者とした場合における最低制限価格未満の価格をもって申込みをし<wbr>た者の商号又は名称</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">71</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">八　</span><span style="color: #000000; background-color: #efcb05; ">第百六十七条の十の二第一項若しくは第二項の規定により落札者を決定する一般競<wbr>争入札（以下「総合評価一般競争入札」という。）又は</span><span style="color: #000000; background-color: #efcb05; ">において準用する</span><span style="color: #000000; background-color: #efcb05; ">第百六十七条<wbr>の十の二第一項若しくは第二項の規定により落札者を決定する指名競争入札（以下「総<wbr>合評価指名競争入札」という。）を行った場合における次に掲げる事項</span></code></td>
+<td class="ln">71</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">八　</span><span class="sf17b18">自治令</span><span style="color: #000000; background-color: #efcb05; ">第百六十七条の十の二第一項若しくは第二項の規定により落札者を決定する<wbr>一般競争入札（以下「総合評価一般競争入札」という。）又は</span><span class="sf17b18">自治令第百六十七条の十<wbr>三</span><span style="color: #000000; background-color: #efcb05; ">において準用する</span><span class="sf17b18">自治令</span><span style="color: #000000; background-color: #efcb05; ">第百六十七条の十の二第一項若しくは第二項の規定により落<wbr>札者を決定する指名競争入札（以下「総合評価指名競争入札」という。）を行った場合<wbr>における次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">イ　当該総合評価一般競争入札又は当該総合評価指名競争入札を行った理由</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">イ　当該総合評価一般競争入札又は当該総合評価指名競争入札を行った理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">ロ　自治令第百六十七条の十の二第三項（自治令第百六十七条の十三において準用する<wbr>場合を含む。）に規定する落札者決定基準</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">ロ　自治令第百六十七条の十の二第三項（自治令第百六十七条の十三において準用する<wbr>場合を含む。）に規定する落札者決定基準</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">ハ　自治令第百六十七条の十の二第一項（自治令第百六十七条の十三において準用する<wbr>場合を含む。）の規定により価格その他の条件が当該地方公共団体にとって最も有利な<wbr>ものをもって申込みをした者を落札者とした場合におけるその者を落札者とした理由</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">ハ　自治令第百六十七条の十の二第一項（自治令第百六十七条の十三において準用する<wbr>場合を含む。）の規定により価格その他の条件が当該地方公共団体にとって最も有利な<wbr>ものをもって申込みをした者を落札者とした場合におけるその者を落札者とした理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">ニ　自治令第百六十七条の十の二第二項（自治令第百六十七条の十三において準用する<wbr>場合を含む。）の規定により落札者となるべき者を落札者とせず他の者のうち価格その<wbr>他の条件が当該地方公共団体にとって最も有利なものをもって申込みをした者を落札者<wbr>とした場合におけるその者を落札者とした理由</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">ニ　自治令第百六十七条の十の二第二項（自治令第百六十七条の十三において準用する<wbr>場合を含む。）の規定により落札者となるべき者を落札者とせず他の者のうち価格その<wbr>他の条件が当該地方公共団体にとって最も有利なものをもって申込みをした者を落札者<wbr>とした場合におけるその者を落札者とした理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">九　次に掲げる契約の内容</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">九　次に掲げる契約の内容</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">イ　契約の相手方の商号又は名称及び住所</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">イ　契約の相手方の商号又は名称及び住所</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共工事の名称、場所、種別及び概要</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">ロ　公共工事の名称、場所、種別及び概要</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">ハ　工事着手の時期及び工事完成の時期</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">ハ　工事着手の時期及び工事完成の時期</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">ニ　契約金額</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">ニ　契約金額</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">十　随意契約を行った場合における契約の相手方を選定した理由</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">十　随意契約を行った場合における契約の相手方を選定した理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">３　地方公共団体の長は、前項の公共工事について契約金額の変更を伴う契約の変更を<wbr>したときは、遅滞なく、変更後の契約に係る同項第九号ロからニまでに掲げる事項及び<wbr>変更の理由を公表しなければならない。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">３　地方公共団体の長は、前項の公共工事について契約金額の変更を伴う契約の変更を<wbr>したときは、遅滞なく、変更後の契約に係る同項第九号ロからニまでに掲げる事項及び<wbr>変更の理由を公表しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定による公表は、公衆の見やすい場所に掲示し、又は公衆の閲覧に供す<wbr>る方法で行わなければならない。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">４　前三項の規定による公表は、公衆の見やすい場所に掲示し、又は公衆の閲覧に供す<wbr>る方法で行わなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">５　第五条第三項の規定は、前項の規定による公衆の閲覧について準用する。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">５　第五条第三項の規定は、前項の規定による公衆の閲覧について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">６　第二項又は第三項の規定により公表した事項については、少なくとも、公表した日<wbr>（第二項第一号から第八号までに掲げる事項のうち契約の締結前に公表した事項につい<wbr>ては、契約を締結した日）の翌日から起算して一年間が経過する日まで掲示し、又は閲<wbr>覧に供しなければならない。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">６　第二項又は第三項の規定により公表した事項については、少なくとも、公表した日<wbr>（第二項第一号から第八号までに掲げる事項のうち契約の締結前に公表した事項につい<wbr>ては、契約を締結した日）の翌日から起算して一年間が経過する日まで掲示し、又は閲<wbr>覧に供しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、法の施行の日（平成十三年二月十六日）から施行する。ただし、<wbr>第二条から第七条までの規定は、平成十三年四月一日から施行する。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、法の施行の日（平成十三年二月十六日）から施行する。ただし、<wbr>第二条から第七条までの規定は、平成十三年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（特殊法人等の範囲に関する経過措置）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（特殊法人等の範囲に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第二条第一項の政令で定める法人は、独立行政法人環境再生保全機構が行う<wbr>独立行政法人環境再生保全機構法（平成十五年法律第四十三号）附則第七条第一項第一<wbr>号に掲げる業務が終了するまでの間、第一条各号に掲げるもののほか、独立行政法人環<wbr>境再生保全機構とする。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第二条第一項の政令で定める法人は、独立行政法人環境再生保全機構が行う<wbr>独立行政法人環境再生保全機構法（平成十五年法律第四十三号）附則第七条第一項第一<wbr>号に掲げる業務が終了するまでの間、第一条各号に掲げるもののほか、独立行政法人環<wbr>境再生保全機構とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一二月一八日政令第三八五号）　抄</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一二月一八日政令第三八五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年四月一日から施行する。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年六月二七日政令第二九三号）　抄</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年六月二七日政令第二九三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年六月二七日政令第二九五号）　抄</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年六月二七日政令第二九五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年六月二七日政令第二九六号）　抄</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年六月二七日政令第二九六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年七月二四日政令第三二八号）　抄</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年七月二四日政令第三二八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年七月二四日政令第三二九号）　抄</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年七月二四日政令第三二九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第八条から第四十三条まで<wbr>の規定及び附則第四十四条の規定（国土交通省組織令（平成十二年政令第二百五十五号<wbr>）第七十八条第四号の改正規定に係る部分に限る。）は、平成十五年十月一日から施行<wbr>する。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第八条から第四十三条まで<wbr>の規定及び附則第四十四条の規定（国土交通省組織令（平成十二年政令第二百五十五号<wbr>）第七十八条第四号の改正規定に係る部分に限る。）は、平成十五年十月一日から施行<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六四号）　抄</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、第五条から第十一条までの規定<wbr>並びに附則第七条から第十一条まで及び第十四条から第三十一条までの規定は、平成十<wbr>五年十月一日から施行する。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、第五条から第十一条までの規定<wbr>並びに附則第七条から第十一条まで及び第十四条から第三十一条までの規定は、平成十<wbr>五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六五号）　抄</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六八号）　抄</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十四条から第三十八条ま<wbr>での規定は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十四条から第三十八条ま<wbr>での規定は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六九号）　抄</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三六九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第六条から第二十五条まで<wbr>の規定は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第六条から第二十五条まで<wbr>の規定は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三七〇号）　抄</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年八月八日政令第三七〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第五条から第十五条までの<wbr>規定は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第五条から第十五条までの<wbr>規定は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月三日政令第三九二号）　抄</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月三日政令第三九二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月一二日政令第四一〇号）</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月一二日政令第四一〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。ただし、第一章の規定は、平成十五年十月一日か<wbr>ら施行する。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。ただし、第一章の規定は、平成十五年十月一日か<wbr>ら施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月一八日政令第四一三号）　抄</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月一八日政令第四一三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月二五日政令第四三八号）　抄</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月二五日政令第四三八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第九条及び第十一条から第<wbr>三十三条までの規定は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第九条及び第十一条から第<wbr>三十三条までの規定は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月二五日政令第四三九号）　抄</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年九月二五日政令第四三九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第五条から第十七条までの<wbr>規定は、平成十五年十月一日から施行する。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第五条から第十七条までの<wbr>規定は、平成十五年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月三日政令第四八三号）　抄</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月三日政令第四八三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月五日政令第四八九号）　抄</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月五日政令第四八九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十八条から第四十一条ま<wbr>で、第四十三条及び第四十四条の規定は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十八条から第四十一条ま<wbr>で、第四十三条及び第四十四条の規定は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月五日政令第四九〇号）</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月五日政令第四九〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月二五日政令第五五五号）　抄</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月二五日政令第五五五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第九条から第三十六条まで<wbr>の規定については、平成十六年三月一日から施行する。</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第九条から第三十六条まで<wbr>の規定については、平成十六年三月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月二五日政令第五五六号）　抄</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月二五日政令第五五六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十条から第三十四条まで<wbr>の規定は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十条から第三十四条まで<wbr>の規定は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一月七日政令第二号）　抄</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一月七日政令第二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十条第一項及び第三項並<wbr>びに第十三条から第二十八条までの規定は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第十条第一項及び第三項並<wbr>びに第十三条から第二十八条までの規定は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一月三〇日政令第一四号）　抄</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一月三〇日政令第一四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月一九日政令第四九号）　抄</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月一九日政令第四九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、第一章並びに第十一条から第十<wbr>三条まで及び次条の規定は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、第一章並びに第十一条から第十<wbr>三条まで及び次条の規定は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月一九日政令第五〇号）　抄</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月一九日政令第五〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第九条から第四十四条まで<wbr>の規定は、平成十六年四月一日から施行する。</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第九条から第四十四条まで<wbr>の規定は、平成十六年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年四月九日政令第一六〇号）　抄</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年四月九日政令第一六〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年七月一日から施行する。</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十六年七月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年五月二六日政令第一八一号）　抄</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年五月二六日政令第一八一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">この政令は、機構の成立の時から施行する。</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">この政令は、機構の成立の時から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一一月二五日政令第三六六号）　抄</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一一月二五日政令第三六六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十八年四月一日から施行する。</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月一日政令第一一八号）　抄</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年四月一日政令第一一八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年五月二七日政令第一九〇号）　抄</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年五月二七日政令第一九〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第五条から第十三条までの<wbr>規定は、平成十七年九月一日から施行する。</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第五条から第十三条までの<wbr>規定は、平成十七年九月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年六月一日政令第二〇三号）　抄</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年六月一日政令第二〇三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">この政令は、施行日（平成十七年十月一日）から施行する。</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">この政令は、施行日（平成十七年十月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年六月二四日政令第二二四号）　抄</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年六月二四日政令第二二四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第七条から第三十八条まで<wbr>の規定は、平成十七年十月一日から施行する。</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、公布の日から施行する。ただし、附則第七条から第三十八条まで<wbr>の規定は、平成十七年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日政令第一六一号）　抄</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日政令第一六一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十八年四月一日から施行する。</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、平成十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日政令第一一〇号）　抄</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年三月三〇日政令第一一〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十九年四月一日から施行する。</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年八月三日政令第二三五号）　抄</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年八月三日政令第二三五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十九年十月一日から施行する。</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成十九年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年三月三一日政令第一二七号）　抄</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年三月三一日政令第一二七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十年四月一日から施行する。</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年六月一〇日政令第一六六号）　抄</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年六月一〇日政令第一六六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十三年十月一日から施行する。</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十三年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一〇月三一日政令第三三四号）　抄</span></code></td>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一〇月三一日政令第三三四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">この政令は、法の施行の日（平成二十三年十一月一日）から施行する。</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">この政令は、法の施行の日（平成二十三年十一月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年三月二二日政令第五四号）　抄</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年三月二二日政令第五四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、法の施行の日（平成二十四年七月一日）から施行する。ただし、<wbr>次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、法の施行の日（平成二十四年七月一日）から施行する。ただし、<wbr>次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">二　第七条第一項の規定並びに次条及び附則第六条の規定、附則第十五条の規定（国家<wbr>公務員退職手当法施行令（昭和二十八年政令第二百十五号）第九条の二に一号を加える<wbr>改正規定及び同令第九条の四に一号を加える改正規定に限る。）、附則第十八条の規定<wbr>（国家公務員共済組合法施行令（昭和三十三年政令第二百七号）第四十三条第一項に一<wbr>号を加える改正規定及び同条第二項に一号を加える改正規定に限る。）、附則第二十七<wbr>条の規定（公共工事の入札及び契約の適正化の促進に関する法律施行令（平成十三年政<wbr>令第三十四号）第一条第一号の改正規定中「首都高速道路株式会社」の下に「、新関西<wbr>国際空港株式会社」を加える部分に限る。）、附則第二十八条の規定（行政手続等にお<wbr>ける情報通信の技術の利用に関する法律施行令（平成十五年政令第二十七号）第一条の<wbr>改正規定中「消防団員等公務災害補償等共済基金」の下に「、新関西国際空港株式会社<wbr>」を加える部分に限る。）、附則第三十条の規定（職員の退職管理に関する政令（平成<wbr>二十年政令第三百八十九号）第二条に一号を加える改正規定及び同令第三十条に一号を<wbr>加える改正規定に限る。）並びに附則第三十一条の規定（特定独立行政法人の役員の退<wbr>職管理に関する政令（平成二十年政令第三百九十号）第十六条に一号を加える改正規定<wbr>に限る。）　法附則第一条第二号に掲げる規定の施行の日（平成二十四年四月一日）</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">二　第七条第一項の規定並びに次条及び附則第六条の規定、附則第十五条の規定（国家<wbr>公務員退職手当法施行令（昭和二十八年政令第二百十五号）第九条の二に一号を加える<wbr>改正規定及び同令第九条の四に一号を加える改正規定に限る。）、附則第十八条の規定<wbr>（国家公務員共済組合法施行令（昭和三十三年政令第二百七号）第四十三条第一項に一<wbr>号を加える改正規定及び同条第二項に一号を加える改正規定に限る。）、附則第二十七<wbr>条の規定（公共工事の入札及び契約の適正化の促進に関する法律施行令（平成十三年政<wbr>令第三十四号）第一条第一号の改正規定中「首都高速道路株式会社」の下に「、新関西<wbr>国際空港株式会社」を加える部分に限る。）、附則第二十八条の規定（行政手続等にお<wbr>ける情報通信の技術の利用に関する法律施行令（平成十五年政令第二十七号）第一条の<wbr>改正規定中「消防団員等公務災害補償等共済基金」の下に「、新関西国際空港株式会社<wbr>」を加える部分に限る。）、附則第三十条の規定（職員の退職管理に関する政令（平成<wbr>二十年政令第三百八十九号）第二条に一号を加える改正規定及び同令第三十条に一号を<wbr>加える改正規定に限る。）並びに附則第三十一条の規定（特定独立行政法人の役員の退<wbr>職管理に関する政令（平成二十年政令第三百九十号）第十六条に一号を加える改正規定<wbr>に限る。）　法附則第一条第二号に掲げる規定の施行の日（平成二十四年四月一日） &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年九月一四日政令第二二七号）　抄</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二四年九月一四日政令第二二七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、法附則第一条第二号に掲げる規定の施行の日（平成二十四年九月十五<wbr>日）から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、法附則第一条第二号に掲げる規定の施行の日（平成二十四年九月十五<wbr>日）から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">二　第一条中独立行政法人石油天然ガス・金属鉱物資源機構法施行令附則の改正規定、<wbr>第二条中補助金等に係る予算の執行の適正化に関する法律施行令第一条の改正規定（「<wbr>（同法附則第十二条第三項の規定により読み替えられる場合を含む。）」を削る部分に<wbr>限る。）、第三条から第五条まで及び第七条の規定並びに次項及び附則第三項の規定　<wbr>平成二十五年四月一日</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">二　第一条中独立行政法人石油天然ガス・金属鉱物資源機構法施行令附則の改正規定、<wbr>第二条中補助金等に係る予算の執行の適正化に関する法律施行令第一条の改正規定（「<wbr>（同法附則第十二条第三項の規定により読み替えられる場合を含む。）」を削る部分に<wbr>限る。）、第三条から第五条まで及び第七条の規定並びに次項及び附則第三項の規定　<wbr>平成二十五年四月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年二月五日政令第二三号）　抄</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年二月五日政令第二三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">この政令は、廃止法の施行の日（平成二十六年四月一日）から施行する。</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">この政令は、廃止法の施行の日（平成二十六年四月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年一二月一九日政令第四〇七号）　抄</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年一二月一九日政令第四〇七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、日本環境安全事業株式会社法の一部を改正する法律の施行の日（平成<wbr>二十六年十二月二十四日）から施行する。</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、日本環境安全事業株式会社法の一部を改正する法律の施行の日（平成<wbr>二十六年十二月二十四日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月一八日政令第七四号）　抄</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年三月一八日政令第七四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成二十七年四月一日から施行する。</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成二十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月二五日政令第七八号）　抄</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月二五日政令第七八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年一二月二六日政令第三九六号）</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年一二月二六日政令第三九六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成二十九年四月一日から施行する。</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成二十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,1035 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十五年通商産業省令第三十六号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和三十五年通商産業省令第三十六号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">商標登録令施行規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">商標登録令施行規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">商標登録令（昭和三十五年政令第四十二号）第六条において準用する特許登録令（昭和<wbr>三十五年政令第三十九号）第十条の規定に基づき、および商標登録令を実施するため、<wbr>商標登録令施行規則を次のように制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">商標登録令（昭和三十五年政令第四十二号）第六条において準用する特許登録令（昭和<wbr>三十五年政令第三十九号）第十条の規定に基づき、および商標登録令を実施するため、<wbr>商標登録令施行規則を次のように制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（商標登録原簿の調製方法）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（商標登録原簿の調製方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　商標登録原簿の調製の方法は、電子計算機の操作によるものとし、文字の記号<wbr>への変換の方法その他の磁気テープへの記録の方法については、特許庁長官が定める。<wbr></span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　商標登録原簿の調製の方法は、電子計算機の操作によるものとし、文字の記号<wbr>への変換の方法その他の磁気テープへの記録の方法については、特許庁長官が定める。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（商標原簿の様式等）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（商標原簿の様式等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第一条の二　商標登録原簿（次項に規定するものを除く。）は、それに記録されている<wbr>事項を記載した書類を様式第一により作成できるものでなければならない。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第一条の二　商標登録原簿（次項に規定するものを除く。）は、それに記録されている<wbr>事項を記載した書類を様式第一により作成できるものでなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">２　商標法（昭和三十四年法律第百二十七号）第六十八条の二十第二項に規定する国際<wbr>登録に基づく商標権（以下「国際登録に基づく商標権」という。）に係る商標登録原簿<wbr>は、それに記録されている事項を記載した書類を様式第一の二により作成できるもので<wbr>なければならない。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">２　商標法（昭和三十四年法律第百二十七号）第六十八条の二十第二項に規定する国際<wbr>登録に基づく商標権（以下「国際登録に基づく商標権」という。）に係る商標登録原簿<wbr>は、それに記録されている事項を記載した書類を様式第一の二により作成できるもので<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">３　商標関係拒絶審決再審請求原簿は様式第二により、商標信託原簿は様式第三により<wbr>作成しなければならない。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">３　商標関係拒絶審決再審請求原簿は様式第二により、商標信託原簿は様式第三により<wbr>作成しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">４　商標関係拒絶審決再審請求原簿および商標信託原簿には、様式第四による目録を附<wbr>さなければならない。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">４　商標関係拒絶審決再審請求原簿および商標信託原簿には、様式第四による目録を附<wbr>さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（附属書類）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（附属書類）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第二条　商標登録令（昭和三十五年政令第四十二号）第四条第三項の附属書類は、登録<wbr>受付簿とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第二条　商標登録令（昭和三十五年政令第四十二号）第四条第三項の附属書類は、登録<wbr>受付簿とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　登録受付簿は、様式第五により作成しなければならない。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　登録受付簿は、様式第五により作成しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（商標登録原簿の記録）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（商標登録原簿の記録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第三条　商標登録原簿（国際登録に基づく商標権に係るものを除く。）は、登録番号記<wbr>録部、第一表示部、第二表示部、登録料記録部、甲区、乙区、丙区及び丁区の別に記録<wbr>しなければならない。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第三条　商標登録原簿（国際登録に基づく商標権に係るものを除く。）は、登録番号記<wbr>録部、第一表示部、第二表示部、登録料記録部、甲区、乙区、丙区及び丁区の別に記録<wbr>しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　登録番号記録部には、登録番号を記録しなければならない。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　登録番号記録部には、登録番号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　第一表示部には、商標権の表示をするほか、その存続期間の更新、変更及び消滅並<wbr>びに書き換えられた後の指定商品並びに商品及び役務の区分（商標法施行令（昭和三十<wbr>五年政令第十九号）第二条の規定による商品及び役務の区分のうち、指定商品又は指定<wbr>役務が属する商品又は役務の区分をいう。以下同じ。）並びに商品及び役務の区分の数<wbr>（以下「区分の数」という。）並びに登録異議の申立てについての確定した決定、商標<wbr>法第四十六条第一項、第五十条第一項、第五十一条第一項、第五十二条の二第一項、第<wbr>五十三条第一項、第五十三条の二、同法附則第十四条若しくは商標法等の一部を改正す<wbr>る法律（平成八年法律第六十八号。以下「平成八年改正法」という。）附則第十七条第<wbr>一項の審判の確定審決又は再審の確定した決定若しくは確定審決に関する事項を記録し<wbr>なければならない。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">３　第一表示部には、商標権の表示をするほか、その存続期間の更新、変更及び消滅並<wbr>びに書き換えられた後の指定商品並びに商品及び役務の区分（商標法施行令（昭和三十<wbr>五年政令第十九号）第二条の規定による商品及び役務の区分のうち、指定商品又は指定<wbr>役務が属する商品又は役務の区分をいう。以下同じ。）並びに商品及び役務の区分の数<wbr>（以下「区分の数」という。）並びに登録異議の申立てについての確定した決定、商標<wbr>法第四十六条第一項、第五十条第一項、第五十一条第一項、第五十二条の二第一項、第<wbr>五十三条第一項、第五十三条の二、同法附則第十四条若しくは商標法等の一部を改正す<wbr>る法律（平成八年法律第六十八号。以下「平成八年改正法」という。）附則第十七条第<wbr>一項の審判の確定審決又は再審の確定した決定若しくは確定審決に関する事項を記録し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">４　第二表示部には、防護標章登録に基づく権利の表示をするほか、その存続期間の更<wbr>新及び消滅並びに書き換えられた後の指定商品並びに商品及び役務の区分並びに区分の<wbr>数並びに登録異議の申立てについての確定した決定、商標法第六十八条第四項において<wbr>準用する同法第四十六条第一項、第五十三条の二若しくは同法附則第二十三条において<wbr>準用する同附則第十四条第一項の審判の確定審決又は再審の確定した決定若しくは確定<wbr>審決に関する事項を記録しなければならない。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">４　第二表示部には、防護標章登録に基づく権利の表示をするほか、その存続期間の更<wbr>新及び消滅並びに書き換えられた後の指定商品並びに商品及び役務の区分並びに区分の<wbr>数並びに登録異議の申立てについての確定した決定、商標法第六十八条第四項において<wbr>準用する同法第四十六条第一項、第五十三条の二若しくは同法附則第二十三条において<wbr>準用する同附則第十四条第一項の審判の確定審決又は再審の確定した決定若しくは確定<wbr>審決に関する事項を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">５　登録料記録部には、登録料及びその納付の年月日、商標権が商標法第四十条第四項<wbr>に規定する国と国以外の者との共有に係る場合であつて持分の定めがあるときの国以外<wbr>の者の持分の割合又は登録料の返還に関する事項を記録しなければならない。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">５　登録料記録部には、登録料及びその納付の年月日、商標権が商標法第四十条第四項<wbr>に規定する国と国以外の者との共有に係る場合であつて持分の定めがあるときの国以外<wbr>の者の持分の割合又は登録料の返還に関する事項を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">６　甲区には、商標権及び防護標章登録に基づく権利の設定、移転、処分の制限及び信<wbr>託による商標権及び防護標章登録に基づく権利についての変更に関する事項を記録しな<wbr>ければならない。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">６　甲区には、商標権及び防護標章登録に基づく権利の設定、移転、処分の制限及び信<wbr>託による商標権及び防護標章登録に基づく権利についての変更に関する事項を記録しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">７　乙区には、専用使用権及びこれを目的とする質権に関する事項を記録しなければな<wbr>らない。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">７　乙区には、専用使用権及びこれを目的とする質権に関する事項を記録しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">８　丙区には、通常使用権及びこれを目的とする質権に関する事項を記録しなければな<wbr>らない。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">８　丙区には、通常使用権及びこれを目的とする質権に関する事項を記録しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">９　丁区には、商標権を目的とする質権に関する事項を記録しなければならない。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">９　丁区には、商標権を目的とする質権に関する事項を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第三条の二　国際登録に基づく商標権に係る商標登録原簿は、登録番号記録部、第一表<wbr>示部、第二表示部、甲区、乙区、丙区、丁区及び国際登録事項記録部の別に記録しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第三条の二　国際登録に基づく商標権に係る商標登録原簿は、登録番号記録部、第一表<wbr>示部、第二表示部、甲区、乙区、丙区、丁区及び国際登録事項記録部の別に記録しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">２　登録番号記録部には、商標法第六十八条の二第一項に規定する国際登録（以下「国<wbr>際登録」という。）の番号を記録しなければならない。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">２　登録番号記録部には、商標法第六十八条の二第一項に規定する国際登録（以下「国<wbr>際登録」という。）の番号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">３　第一表示部には、国際登録に基づく商標権の表示をするほか、登録異議の申立てに<wbr>ついての確定した決定、商標法第四十六条第一項、第五十条第一項、第五十一条第一項<wbr>、第五十二条の二第一項、第五十三条第一項及び第五十三条の二の審判の確定審決又は<wbr>再審の確定した決定若しくは確定審決に関する事項を記録しなければならない。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">３　第一表示部には、国際登録に基づく商標権の表示をするほか、登録異議の申立てに<wbr>ついての確定した決定、商標法第四十六条第一項、第五十条第一項、第五十一条第一項<wbr>、第五十二条の二第一項、第五十三条第一項及び第五十三条の二の審判の確定審決又は<wbr>再審の確定した決定若しくは確定審決に関する事項を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">４　甲区には、国際登録に基づく商標権の設定、処分の制限及び信託による国際登録に<wbr>基づく商標権についての変更並びに防護標章登録に基づく権利の設定、移転、処分の制<wbr>限及び信託による防護標章登録に基づく権利についての変更に関する事項を記録しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">４　甲区には、国際登録に基づく商標権の設定、処分の制限及び信託による国際登録に<wbr>基づく商標権についての変更並びに防護標章登録に基づく権利の設定、移転、処分の制<wbr>限及び信託による防護標章登録に基づく権利についての変更に関する事項を記録しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">５　国際登録事項記録部には、国際登録に基づく商標権に係る商標法第六十八条の九第<wbr>一項に規定する国際登録簿（以下「国際登録簿」という。）に登録された事項を記録し<wbr>なければならない。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">５　国際登録事項記録部には、国際登録に基づく商標権に係る商標法第六十八条の九第<wbr>一項に規定する国際登録簿（以下「国際登録簿」という。）に登録された事項を記録し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">６　前条第四項及び第七項から第九項までの規定は、国際登録に基づく商標権に係る商<wbr>標登録原簿の記録に準用する。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">６　前条第四項及び第七項から第九項までの規定は、国際登録に基づく商標権に係る商<wbr>標登録原簿の記録に準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（申請書の様式）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（申請書の様式）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第四条　商標権の分割の登録を申請するときは、申請書は、様式第六により作成しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第四条　商標権の分割の登録を申請するときは、申請書は、様式第六により作成しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　商標権の分割移転の登録を申請するときは、申請書は、様式第七により作成しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　商標権の分割移転の登録を申請するときは、申請書は、様式第七により作成しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　専用使用権又は通常使用権の設定の登録を申請するときは、申請書は、様式第八に<wbr>より作成しなければならない。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　専用使用権又は通常使用権の設定の登録を申請するときは、申請書は、様式第八に<wbr>より作成しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（併合の手続）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（併合の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　前条第二項の申請と第十七条第三項において準用する特許登録令施行規則<wbr>（昭和三十五年通商産業省令第三十三号）第十条第一項の申請は、分割移転に係る商標<wbr>権の登録権利者及び登録義務者が全部の移転に係る商標権の登録権利者及び登録義務者<wbr>と同一の場合に限り、一の書面ですることができる。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第四条の二　前条第二項の申請と第十七条第三項において準用する特許登録令施行規則<wbr>（昭和三十五年通商産業省令第三十三号）第十条第一項の申請は、分割移転に係る商標<wbr>権の登録権利者及び登録義務者が全部の移転に係る商標権の登録権利者及び登録義務者<wbr>と同一の場合に限り、一の書面ですることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（証明書等の添付）</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（証明書等の添付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第四条の三　商標登録令第八条の経済産業省令で定めるものは、次に掲げる書面の一と<wbr>する。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第四条の三　商標登録令第八条の経済産業省令で定めるものは、次に掲げる書面の一と<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　商標権の移転を証明する契約書の謄本又は抄本であつて、認証のあるもの</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">一　商標権の移転を証明する契約書の謄本又は抄本であつて、認証のあるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　商標法条約に基づく規則で定めるモデル国際様式によつて作成された譲渡証明書又<wbr>は譲渡文書</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">二　商標法条約に基づく規則で定めるモデル国際様式によつて作成された譲渡証明書又<wbr>は譲渡文書 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（番号の記録等）</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（番号の記録等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第四条の四　国際登録に基づく商標権に係る商標登録原簿に国際登録事項記録部につい<wbr>て登録するときは、当該登録事項を記録した順序により、記録番号を当該登録事項を記<wbr>録する部分の前に記録しなければならない。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第四条の四　国際登録に基づく商標権に係る商標登録原簿に国際登録事項記録部につい<wbr>て登録するときは、当該登録事項を記録した順序により、記録番号を当該登録事項を記<wbr>録する部分の前に記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（商標権の設定の登録の方法）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（商標権の設定の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第五条　商標権（国際登録に基づく商標権を除く。以下この条において同じ。）の設定<wbr>の登録をするときは、登録番号記録部として登録番号を、第一表示部として商標登録出<wbr>願の年月日、商標登録出願の番号、査定又は審決があつた旨及びその年月日、指定商品<wbr>又は指定役務、商品及び役務の区分並びに区分の数を、甲区として商標権者の氏名又は<wbr>名称及び住所又は居所を記録しなければならない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第五条　商標権（国際登録に基づく商標権を除く。以下この条において同じ。）の設定<wbr>の登録をするときは、登録番号記録部として登録番号を、第一表示部として商標登録出<wbr>願の年月日、商標登録出願の番号、査定又は審決があつた旨及びその年月日、指定商品<wbr>又は指定役務、商品及び役務の区分並びに区分の数を、甲区として商標権者の氏名又は<wbr>名称及び住所又は居所を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">２　次の各号に掲げる商標権の設定の登録をするときは、前項の規定により記録すべき<wbr>事項のほか、第一表示部には、当該各号に掲げる事項を記録しなければならない。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">２　次の各号に掲げる商標権の設定の登録をするときは、前項の規定により記録すべき<wbr>事項のほか、第一表示部には、当該各号に掲げる事項を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">一　商標に係る文字、図形、記号、立体的形状又は色彩が変化するものであつて、その<wbr>変化の前後にわたるその文字、図形、記号、立体的形状若しくは色彩又はこれらの結合<wbr>からなる商標（以下「変化商標」という。）のうち、その商標が時間の経過に伴つて変<wbr>化するもの（以下「動き商標」という。）に係る商標権　当該商標権が動き商標に係る<wbr>商標権である旨</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">一　商標に係る文字、図形、記号、立体的形状又は色彩が変化するものであつて、その<wbr>変化の前後にわたるその文字、図形、記号、立体的形状若しくは色彩又はこれらの結合<wbr>からなる商標（以下「変化商標」という。）のうち、その商標が時間の経過に伴つて変<wbr>化するもの（以下「動き商標」という。）に係る商標権　当該商標権が動き商標に係る<wbr>商標権である旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">二　変化商標のうち、ホログラフィーその他の方法により変化するもの（前号に掲げる<wbr>ものを除く。以下「ホログラム商標」という。）に係る商標権　当該商標権がホログラ<wbr>ム商標に係る商標権である旨</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">二　変化商標のうち、ホログラフィーその他の方法により変化するもの（前号に掲げる<wbr>ものを除く。以下「ホログラム商標」という。）に係る商標権　当該商標権がホログラ<wbr>ム商標に係る商標権である旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">三　立体的形状（文字、図形、記号若しくは色彩又はこれらの結合との結合を含む。）<wbr>からなる商標（第一号、第二号及び第六号に掲げるものを除く。以下「立体商標」とい<wbr>う。）に係る商標権　当該商標権が立体商標に係る商標権である旨</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">三　立体的形状（文字、図形、記号若しくは色彩又はこれらの結合との結合を含む。）<wbr>からなる商標（第一号、第二号及び第六号に掲げるものを除く。以下「立体商標」とい<wbr>う。）に係る商標権　当該商標権が立体商標に係る商標権である旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">四　色彩のみからなる商標（第一号及び第二号に掲げるものを除く。）に係る商標権　<wbr>当該商標権が色彩のみからなる商標に係る商標権である旨</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">四　色彩のみからなる商標（第一号及び第二号に掲げるものを除く。）に係る商標権　<wbr>当該商標権が色彩のみからなる商標に係る商標権である旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">五　音からなる商標に係る商標権　当該商標権が音からなる商標に係る商標権である旨<wbr></span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">五　音からなる商標に係る商標権　当該商標権が音からなる商標に係る商標権である旨<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">六　商標に係る標章（文字、図形、記号若しくは立体的形状若しくはこれらの結合又は<wbr>これらと色彩との結合に限る。）を付する位置が特定される商標（第一号及び第二号に<wbr>掲げるものを除く。以下「位置商標」という。）に係る商標権　当該商標権が位置商標<wbr>に係る商標権である旨</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">六　商標に係る標章（文字、図形、記号若しくは立体的形状若しくはこれらの結合又は<wbr>これらと色彩との結合に限る。）を付する位置が特定される商標（第一号及び第二号に<wbr>掲げるものを除く。以下「位置商標」という。）に係る商標権　当該商標権が位置商標<wbr>に係る商標権である旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">３　標準文字のみによる商標に係る商標権の設定の登録をするときは、第一項の規定に<wbr>より記録すべき事項のほか、第一表示部には、当該商標権が標準文字のみによる商標に<wbr>係る商標権である旨を記録しなければならない。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">３　標準文字のみによる商標に係る商標権の設定の登録をするときは、第一項の規定に<wbr>より記録すべき事項のほか、第一表示部には、当該商標権が標準文字のみによる商標に<wbr>係る商標権である旨を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">４　団体商標に係る商標権の設定の登録をするときは、第一項の規定により記録すべき<wbr>事項のほか、第一表示部には、当該商標権が団体商標に係る商標権である旨を記録しな<wbr>ければならない。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">４　団体商標に係る商標権の設定の登録をするときは、第一項の規定により記録すべき<wbr>事項のほか、第一表示部には、当該商標権が団体商標に係る商標権である旨を記録しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">５　地域団体商標に係る商標権の設定の登録をするときは、第一項の規定により記録す<wbr>べき事項のほか、第一表示部には、当該商標権が地域団体商標に係る商標権である旨を<wbr>記録しなければならない。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">５　地域団体商標に係る商標権の設定の登録をするときは、第一項の規定により記録す<wbr>べき事項のほか、第一表示部には、当該商標権が地域団体商標に係る商標権である旨を<wbr>記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">６　商標法第六十八条の三十二第一項又は第六十八条の三十三第一項の規定による商標<wbr>登録出願に係る商標権の設定の登録をするときは、第一項の規定により記録すべき事項<wbr>のほか、第一表示部には、当該商標権が商標法第六十八条の三十二第一項又は同法第六<wbr>十八条の三十三第一項の規定による商標登録出願に係る商標権である旨並びに当該出願<wbr>に係る国際登録の番号及び同法第六十八条の九第一項に規定する国際登録の日（この項<wbr>及び次条第一項において「国際登録の日」という。）（当該国際登録が同法第六十八条<wbr>の四第一項に規定する事後指定（以下「事後指定」という。）に係るものであつたとき<wbr>は国際登録の日及び同法第六十八条の九第一項ただし書に規定する事後指定の日（次条<wbr>第一項において「事後指定の日」という。））を記録しなければならない。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">６　商標法第六十八条の三十二第一項又は第六十八条の三十三第一項の規定による商標<wbr>登録出願に係る商標権の設定の登録をするときは、第一項の規定により記録すべき事項<wbr>のほか、第一表示部には、当該商標権が商標法第六十八条の三十二第一項又は同法第六<wbr>十八条の三十三第一項の規定による商標登録出願に係る商標権である旨並びに当該出願<wbr>に係る国際登録の番号及び同法第六十八条の九第一項に規定する国際登録の日（この項<wbr>及び次条第一項において「国際登録の日」という。）（当該国際登録が同法第六十八条<wbr>の四第一項に規定する事後指定（以下「事後指定」という。）に係るものであつたとき<wbr>は国際登録の日及び同法第六十八条の九第一項ただし書に規定する事後指定の日（次条<wbr>第一項において「事後指定の日」という。））を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　国際登録に基づく商標権の設定の登録をするときは、登録番号記録部とし<wbr>て国際登録の番号を、第一表示部として国際登録の日（当該国際登録が事後指定に係る<wbr>ものである場合は国際登録の日及び事後指定の日）、査定又は審決があつた旨及びその<wbr>年月日、登録商標、商標の詳細な説明、指定商品又は指定役務並びに商品及び役務の区<wbr>分を、甲区として商標権者の氏名又は名称及び住所又は居所を記録しなければならない<wbr>。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　国際登録に基づく商標権の設定の登録をするときは、登録番号記録部とし<wbr>て国際登録の番号を、第一表示部として国際登録の日（当該国際登録が事後指定に係る<wbr>ものである場合は国際登録の日及び事後指定の日）、査定又は審決があつた旨及びその<wbr>年月日、登録商標、商標の詳細な説明、指定商品又は指定役務並びに商品及び役務の区<wbr>分を、甲区として商標権者の氏名又は名称及び住所又は居所を記録しなければならない<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項、第四項及び第五項の規定は、国際登録に基づく商標権の設定の登録を<wbr>する場合に準用する。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　前条第二項、第四項及び第五項の規定は、国際登録に基づく商標権の設定の登録を<wbr>する場合に準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（防護標章登録に基づく権利の設定の登録の方法）</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（防護標章登録に基づく権利の設定の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第六条　防護標章登録に基づく権利の設定の登録をするときは、当該防護標章登録に係<wbr>る商標権の登録に第二表示部として防護標章登録出願の年月日、防護標章登録出願の番<wbr>号、査定又は審決があつた旨及びその年月日、指定商品又は指定役務、商品及び役務の<wbr>区分、区分の数並びに当該防護標章登録の登録番号を記録しなければならない。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第六条　防護標章登録に基づく権利の設定の登録をするときは、当該防護標章登録に係<wbr>る商標権の登録に第二表示部として防護標章登録出願の年月日、防護標章登録出願の番<wbr>号、査定又は審決があつた旨及びその年月日、指定商品又は指定役務、商品及び役務の<wbr>区分、区分の数並びに当該防護標章登録の登録番号を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（出願時の特例の適用を受ける商標登録出願に係る商標権の設定方法）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（出願時の特例の適用を受ける商標登録出願に係る商標権の設定方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第六条の二　商標法第六十八条の十第一項の規定の適用を受ける同項に規定する国際商<wbr>標登録出願に係る商標権（以下この条において「特例国際商標権」という。）の設定の<wbr>登録をするときは、第五条の二の規定により記録すべき事項のほか、第一表示部には、<wbr>当該商標権が特例国際商標権である旨及び当該特例国際商標権と重複している商標権（<wbr>以下この条において「重複国内商標権」という。）に係る登録番号を記録しなければな<wbr>らない。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第六条の二　商標法第六十八条の十第一項の規定の適用を受ける同項に規定する国際商<wbr>標登録出願に係る商標権（以下この条において「特例国際商標権」という。）の設定の<wbr>登録をするときは、第五条の二の規定により記録すべき事項のほか、第一表示部には、<wbr>当該商標権が特例国際商標権である旨及び当該特例国際商標権と重複している商標権（<wbr>以下この条において「重複国内商標権」という。）に係る登録番号を記録しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、重複国内商標権の登録の第一表示部に、当該商標権が重複国<wbr>内商標権である旨及び当該重複国内商標権と重複している特例国際商標権に係る国際登<wbr>録の番号を記録しなければならない。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、重複国内商標権の登録の第一表示部に、当該商標権が重複国<wbr>内商標権である旨及び当該重複国内商標権と重複している特例国際商標権に係る国際登<wbr>録の番号を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">（商標権の存続期間の更新の登録の方法）</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">（商標権の存続期間の更新の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">第七条　商標権の存続期間の更新の登録をするときは、第一表示部に更新登録申請の年<wbr>月日、商品及び役務の区分並びに区分の数に変更があつたときは変更後の商品及び役務<wbr>の区分並びに区分の数を記録しなければならない。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">第七条　商標権の存続期間の更新の登録をするときは、第一表示部に更新登録申請の年<wbr>月日、商品及び役務の区分並びに区分の数に変更があつたときは変更後の商品及び役務<wbr>の区分並びに区分の数を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（防護標章登録に基づく権利の存続期間の更新の登録の方法）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（防護標章登録に基づく権利の存続期間の更新の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第八条　防護標章登録に基づく権利の存続期間の更新の登録をするときは、第二表示部<wbr>に更新登録出願の年月日、更新登録出願の番号、査定又は審決があつた旨及びその年月<wbr>日を、商品及び役務の区分並びに区分の数に変更があつたときは変更後の商品及び役務<wbr>の区分並びに区分の数を記録しなければならない。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第八条　防護標章登録に基づく権利の存続期間の更新の登録をするときは、第二表示部<wbr>に更新登録出願の年月日、更新登録出願の番号、査定又は審決があつた旨及びその年月<wbr>日を、商品及び役務の区分並びに区分の数に変更があつたときは変更後の商品及び役務<wbr>の区分並びに区分の数を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　商標法第六十五条の三第三項の規定による更新登録の出願による防護標章登録に基<wbr>づく権利の存続期間の更新の登録をするときは、前項の規定により記録すべき事項のほ<wbr>か、第二表示部にその旨を記録しなければならない。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">２　商標法第六十五条の三第三項の規定による更新登録の出願による防護標章登録に基<wbr>づく権利の存続期間の更新の登録をするときは、前項の規定により記録すべき事項のほ<wbr>か、第二表示部にその旨を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（商標権の分割の登録）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（商標権の分割の登録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第九条　商標法第二十四条第一項の規定による商標権の分割をするため当該商標権を甲<wbr>及び乙の商標権に分割する場合の登録をするときは、原商標権の登録の次に乙商標権の<wbr>登録をするものとし、次に掲げる事項及び分割の登録に必要な事項を記録しなければな<wbr>らない。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第九条　商標法第二十四条第一項の規定による商標権の分割をするため当該商標権を甲<wbr>及び乙の商標権に分割する場合の登録をするときは、原商標権の登録の次に乙商標権の<wbr>登録をするものとし、次に掲げる事項及び分割の登録に必要な事項を記録しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部として、原商標権に係る登録番号及びそれに続けて「の２」を示す<wbr>記号</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部として、原商標権に係る登録番号及びそれに続けて「の２」を示す<wbr>記号</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部として、原商標権の商標登録出願及び更新登録申請の年月日、商標登録<wbr>出願の番号、査定又は審決があつた旨及びその年月日、乙商標権に係る指定商品又は指<wbr>定役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日<wbr></span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部として、原商標権の商標登録出願及び更新登録申請の年月日、商標登録<wbr>出願の番号、査定又は審決があつた旨及びその年月日、乙商標権に係る指定商品又は指<wbr>定役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">三　登録料記録部として、原商標権の登録料及びその納付の年月日、原商標権が国と国<wbr>以外の者との共有に係る場合であつて持分の定めがあるときの国以外の者の持分の割合<wbr>又は登録料の返還に関する事項</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">三　登録料記録部として、原商標権の登録料及びその納付の年月日、原商標権が国と国<wbr>以外の者との共有に係る場合であつて持分の定めがあるときの国以外の者の持分の割合<wbr>又は登録料の返還に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">四　甲区、乙区、丙区及び丁区（以下「事項部」という。）の相当区として、原商標権<wbr>の登録中登録した商標権その他商標登録に関する権利に関する事項</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">四　甲区、乙区、丙区及び丁区（以下「事項部」という。）の相当区として、原商標権<wbr>の登録中登録した商標権その他商標登録に関する権利に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">五　甲区以外の相当区には、前号に規定する事項のほか、乙商標権が甲商標権とともに<wbr>当該権利の目的である旨</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">五　甲区以外の相当区には、前号に規定する事項のほか、乙商標権が甲商標権とともに<wbr>当該権利の目的である旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による登録をしたときは、原商標権の登録に次に掲げる事項及び分割の<wbr>登録に必要な事項を記録しなければならない。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による登録をしたときは、原商標権の登録に次に掲げる事項及び分割の<wbr>登録に必要な事項を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部には、登録番号に続けて「の１」を示す記号</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部には、登録番号に続けて「の１」を示す記号</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部には、原商標権の商標登録出願及び更新登録申請の年月日、商標登録出<wbr>願の番号、査定又は審決があつた旨及びその年月日、甲商標権に係る指定商品又は指定<wbr>役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部には、原商標権の商標登録出願及び更新登録申請の年月日、商標登録出<wbr>願の番号、査定又は審決があつた旨及びその年月日、甲商標権に係る指定商品又は指定<wbr>役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">三　甲区以外の相当区として、登録に係る権利の表示及び商標法第二十四条第一項の規<wbr>定による分割により甲商標権が乙商標権とともにその権利の目的である旨</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">三　甲区以外の相当区として、登録に係る権利の表示及び商標法第二十四条第一項の規<wbr>定による分割により甲商標権が乙商標権とともにその権利の目的である旨 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第十条　前条の規定により登録をする場合において、原商標権についての商標登録に関<wbr>する権利の登録名義人が乙商標権についてその権利を有しないとき、又は同条の登録の<wbr>申請前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若し<wbr>くはその者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商標<wbr>権の登録の事項部の相当区にその権利の表示をし、かつ、その旨を記録しなければなら<wbr>ない。この場合においては、同条第一項第四号及び第五号の規定にかかわらず、乙商標<wbr>権の登録にその権利に関する事項を記録することを要しない。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第十条　前条の規定により登録をする場合において、原商標権についての商標登録に関<wbr>する権利の登録名義人が乙商標権についてその権利を有しないとき、又は同条の登録の<wbr>申請前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若し<wbr>くはその者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商標<wbr>権の登録の事項部の相当区にその権利の表示をし、かつ、その旨を記録しなければなら<wbr>ない。この場合においては、同条第一項第四号及び第五号の規定にかかわらず、乙商標<wbr>権の登録にその権利に関する事項を記録することを要しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">２　前条の規定により登録をする場合において、原商標権についての商標登録に関する<wbr>権利の登録名義人が甲商標権についてその権利を有しないとき、又は同条の登録の申請<wbr>前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若しくは<wbr>その者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商標権の<wbr>登録の事項部の相当区にその権利の表示をし、かつ、商標法第二十四条第一項の規定に<wbr>よる分割によりその権利についての記録を乙商標権の登録に移した旨を記録し、その権<wbr>利の登録について抹消記号を記録しなければならない。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">２　前条の規定により登録をする場合において、原商標権についての商標登録に関する<wbr>権利の登録名義人が甲商標権についてその権利を有しないとき、又は同条の登録の申請<wbr>前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若しくは<wbr>その者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商標権の<wbr>登録の事項部の相当区にその権利の表示をし、かつ、商標法第二十四条第一項の規定に<wbr>よる分割によりその権利についての記録を乙商標権の登録に移した旨を記録し、その権<wbr>利の登録について抹消記号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、原商標権の登録の表示部に記録した事項が甲商標権又は乙商標権<wbr>のいずれか一にのみ関するものである場合に準用する。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、原商標権の登録の表示部に記録した事項が甲商標権又は乙商標権<wbr>のいずれか一にのみ関するものである場合に準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（商標権の分割移転の登録）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（商標権の分割移転の登録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十一条　商標法第二十四条の二第一項の規定による商標権の移転をするため当該商標<wbr>権を甲及び乙の商標権に分割する場合の登録をするときは、原商標権の登録の次に乙商<wbr>標権の登録をするものとし、次に掲げる事項及び移転の登録に必要な事項を記録しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十一条　商標法第二十四条の二第一項の規定による商標権の移転をするため当該商標<wbr>権を甲及び乙の商標権に分割する場合の登録をするときは、原商標権の登録の次に乙商<wbr>標権の登録をするものとし、次に掲げる事項及び移転の登録に必要な事項を記録しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部として、原商標権に係る登録番号及びそれに続けて「の２」を示す<wbr>記号</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部として、原商標権に係る登録番号及びそれに続けて「の２」を示す<wbr>記号</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部として、原商標権の商標登録出願及び更新登録申請の年月日、商標登録<wbr>出願の番号、査定又は審決があつた旨及びその年月日、乙商標権に係る指定商品又は指<wbr>定役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日<wbr></span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部として、原商標権の商標登録出願及び更新登録申請の年月日、商標登録<wbr>出願の番号、査定又は審決があつた旨及びその年月日、乙商標権に係る指定商品又は指<wbr>定役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">三　登録料記録部として、原商標権の登録料及びその納付の年月日、原商標権が国と国<wbr>以外の者との共有に係る場合であつて持分の定めがあるときの国以外の者の持分の割合<wbr>又は登録料の返還に関する事項</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">三　登録料記録部として、原商標権の登録料及びその納付の年月日、原商標権が国と国<wbr>以外の者との共有に係る場合であつて持分の定めがあるときの国以外の者の持分の割合<wbr>又は登録料の返還に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">四　事項部の相当区として、原商標権の登録中登録した商標権その他商標登録に関する<wbr>権利に関する事項</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">四　事項部の相当区として、原商標権の登録中登録した商標権その他商標登録に関する<wbr>権利に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">五　甲区以外の相当区には、前号に規定する事項のほか、乙商標権が甲商標権とともに<wbr>当該権利の目的である旨</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">五　甲区以外の相当区には、前号に規定する事項のほか、乙商標権が甲商標権とともに<wbr>当該権利の目的である旨</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による登録をしたときは、原商標権の登録に次に掲げる事項及び移転の<wbr>登録に必要な事項を記録しなければならない。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による登録をしたときは、原商標権の登録に次に掲げる事項及び移転の<wbr>登録に必要な事項を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部には、登録番号に続けて「の１」を示す記号</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">一　登録番号記録部には、登録番号に続けて「の１」を示す記号</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部には、原商標権の商標登録出願及び更新登録申請の年月日、商標登録出<wbr>願の番号、査定又は審決があつた旨及びその年月日、甲商標権に係る指定商品又は指定<wbr>役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">二　第一表示部には、原商標権の商標登録出願及び更新登録申請の年月日、商標登録出<wbr>願の番号、査定又は審決があつた旨及びその年月日、甲商標権に係る指定商品又は指定<wbr>役務、商品及び役務の区分、区分の数並びに原商標権の設定及び更新の登録の年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">三　甲区以外の相当区として、登録に係る権利の表示及び商標法第二十四条の二第一項<wbr>の規定による移転により甲商標権が乙商標権とともにその権利の目的である旨</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">三　甲区以外の相当区として、登録に係る権利の表示及び商標法第二十四条の二第一項<wbr>の規定による移転により甲商標権が乙商標権とともにその権利の目的である旨 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第十二条　前条の規定により登録をする場合において、原商標権についての商標登録に<wbr>関する権利の登録名義人が乙商標権についてその権利を有しないとき、又は同条の登録<wbr>の申請前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若<wbr>しくはその者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商<wbr>標権の登録の事項部の相当区にその権利の表示をし、かつ、その旨を記録しなければな<wbr>らない。この場合においては、同条第一項第四号及び第五号の規定にかかわらず、乙商<wbr>標権の登録にその権利に関する事項を記録することを要しない。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第十二条　前条の規定により登録をする場合において、原商標権についての商標登録に<wbr>関する権利の登録名義人が乙商標権についてその権利を有しないとき、又は同条の登録<wbr>の申請前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若<wbr>しくはその者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商<wbr>標権の登録の事項部の相当区にその権利の表示をし、かつ、その旨を記録しなければな<wbr>らない。この場合においては、同条第一項第四号及び第五号の規定にかかわらず、乙商<wbr>標権の登録にその権利に関する事項を記録することを要しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">２　前条の規定により登録をする場合において、原商標権についての商標登録に関する<wbr>権利の登録名義人が甲商標権についてその権利を有しないとき、又は同条の登録の申請<wbr>前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若しくは<wbr>その者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商標権の<wbr>登録の事項部の相当区にその権利の表示をし、かつ、商標法第二十四条の二第一項の規<wbr>定による移転によりその権利についての記録を乙商標権の登録に移した旨を記録し、そ<wbr>の権利の登録について抹消記号を記録しなければならない。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">２　前条の規定により登録をする場合において、原商標権についての商標登録に関する<wbr>権利の登録名義人が甲商標権についてその権利を有しないとき、又は同条の登録の申請<wbr>前にその権利が消滅したことを当該登録名義人が承認したことを証明する書面若しくは<wbr>その者に対抗することができる裁判の謄本若しくは抄本を提出したときは、甲商標権の<wbr>登録の事項部の相当区にその権利の表示をし、かつ、商標法第二十四条の二第一項の規<wbr>定による移転によりその権利についての記録を乙商標権の登録に移した旨を記録し、そ<wbr>の権利の登録について抹消記号を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、原商標権の登録の表示部に記録した事項が甲商標権または乙商標<wbr>権のいずれか一にのみ関するものである場合に準用する。</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の規定は、原商標権の登録の表示部に記録した事項が甲商標権または乙商標<wbr>権のいずれか一にのみ関するものである場合に準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（防護標章登録に基づく権利の消滅の登録の方法）</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（防護標章登録に基づく権利の消滅の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第十三条　第九条又は第十一条の規定により登録をする場合において、原商標権に防護<wbr>標章登録に基づく権利があるときは、その登録を抹まつ消しなければならない。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第十三条　第九条又は第十一条の規定により登録をする場合において、原商標権に防護<wbr>標章登録に基づく権利があるときは、その登録を抹まつ消しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（商標権を三以上に分割する場合の登録の方法）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（商標権を三以上に分割する場合の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第十四条　前五条の規定は、原商標権を三以上の商標権に分割する場合の登録の方法に<wbr>準用する。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第十四条　前五条の規定は、原商標権を三以上の商標権に分割する場合の登録の方法に<wbr>準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第十四条の二　削除</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第十四条の二　削除 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（団体商標に係る商標権の移転の登録）</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（団体商標に係る商標権の移転の登録）</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第十五条　商標法第二十四条の三第一項の規定による団体商標に係る商標権の移転の登<wbr>録をしたときは、第一表示部に記録した団体商標に係る商標権である旨の登録について<wbr>抹消記号を記録しなければならない。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第十五条　商標法第二十四条の三第一項の規定による団体商標に係る商標権の移転の登<wbr>録をしたときは、第一表示部に記録した団体商標に係る商標権である旨の登録について<wbr>抹消記号を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（書換登録の方法）</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（書換登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第十六条　書換登録をするときは、商標権の場合にあつては第一表示部に書換登録申請<wbr>の年月日、書換登録申請の番号、査定又は審決があつた旨及びその年月日、書き換えら<wbr>れた後の指定商品並びにその商品及び役務の区分並びに区分の数を、防護標章登録に基<wbr>づく権利の場合にあつては、第二表示部に書換登録申請の年月日、書換登録申請の番号<wbr>、査定又は審決があつた旨及びその年月日、書き換えられた後の指定商品並びにその商<wbr>品及び役務の区分並びに区分の数を記録しなければならない。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第十六条　書換登録をするときは、商標権の場合にあつては第一表示部に書換登録申請<wbr>の年月日、書換登録申請の番号、査定又は審決があつた旨及びその年月日、書き換えら<wbr>れた後の指定商品並びにその商品及び役務の区分並びに区分の数を、防護標章登録に基<wbr>づく権利の場合にあつては、第二表示部に書換登録申請の年月日、書換登録申請の番号<wbr>、査定又は審決があつた旨及びその年月日、書き換えられた後の指定商品並びにその商<wbr>品及び役務の区分並びに区分の数を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（確定審決等の登録の方法）</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（確定審決等の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第十六条の二　登録異議の申立てについての確定した決定又は商標法第四十六条第一項<wbr>（同法第六十八条第四項において準用する場合を含む。）、第五十条第一項、第五十一<wbr>条第一項、第五十二条の二第一項、第五十三条第一項、第五十三条の二（同法第六十八<wbr>条第四項において準用する場合を含む。）、附則第十四条第一項（同法附則第二十三条<wbr>において準用する場合を含む。）若しくは平成八年改正法附則第十七条第一項の審判の<wbr>確定審決又は再審の確定した決定若しくは確定審決の登録をするときは、表示部に登録<wbr>異議、審判又は再審の番号、決定又は審決が確定した旨及びその年月日並びに確定した<wbr>決定又は確定審決の概要を記録しなければならない。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第十六条の二　登録異議の申立てについての確定した決定又は商標法第四十六条第一項<wbr>（同法第六十八条第四項において準用する場合を含む。）、第五十条第一項、第五十一<wbr>条第一項、第五十二条の二第一項、第五十三条第一項、第五十三条の二（同法第六十八<wbr>条第四項において準用する場合を含む。）、附則第十四条第一項（同法附則第二十三条<wbr>において準用する場合を含む。）若しくは平成八年改正法附則第十七条第一項の審判の<wbr>確定審決又は再審の確定した決定若しくは確定審決の登録をするときは、表示部に登録<wbr>異議、審判又は再審の番号、決定又は審決が確定した旨及びその年月日並びに確定した<wbr>決定又は確定審決の概要を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">２　再審の確定審決の登録をするときは、これに反する確定審決の登録を抹消しなけれ<wbr>ばならない。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">２　再審の確定審決の登録をするときは、これに反する確定審決の登録を抹消しなけれ<wbr>ばならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（予告登録の方法）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（予告登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第十六条の三　商標登録令第一条の二第二号、第三号又は第四号に掲げる申立て又は請<wbr>求について予告登録をするときは、表示部に申立て又は審判若しくは再審の請求があつ<wbr>た年月日、登録異議、審判又は再審の番号及び申立てに係る商標登録の表示又は請求の<wbr>趣旨を記録しなければならない。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第十六条の三　商標登録令第一条の二第二号、第三号又は第四号に掲げる申立て又は請<wbr>求について予告登録をするときは、表示部に申立て又は審判若しくは再審の請求があつ<wbr>た年月日、登録異議、審判又は再審の番号及び申立てに係る商標登録の表示又は請求の<wbr>趣旨を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（未登録の通常使用権等に関する登録の方法）</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（未登録の通常使用権等に関する登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第十六条の四　嘱託により、登録してない通常使用権又はこれを目的とする質権の処分<wbr>の制限の登録をするときは、丙区として権利者の氏名又は名称及び住所又は居所並びに<wbr>嘱託により通常使用権又はこれを目的とする質権の登録をする旨を記録しなければなら<wbr>ない。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第十六条の四　嘱託により、登録してない通常使用権又はこれを目的とする質権の処分<wbr>の制限の登録をするときは、丙区として権利者の氏名又は名称及び住所又は居所並びに<wbr>嘱託により通常使用権又はこれを目的とする質権の登録をする旨を記録しなければなら<wbr>ない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（更正の通報）</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（更正の通報）</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">第十六条の五　商標登録令第九条の五の経済産業省令で定める通報は、標章の国際登録<wbr>に関するマドリッド協定及び同協定の議定書に基づく共通規則第二十八規則（2）の規<wbr>定による更正の通報とする。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">第十六条の五　商標登録令第九条の五の経済産業省令で定める通報は、標章の国際登録<wbr>に関するマドリッド協定及び同協定の議定書に基づく共通規則第二十八規則（2）の規<wbr>定による更正の通報とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（特許登録令施行規則の準用）</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（特許登録令施行規則の準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第十七条　特許登録令施行規則第一条第一項（登録の前後）の規定は、商標に関する登<wbr>録について準用する。この場合において、「又は丁区」とあるのは、「、丙区又は丁区<wbr>」と読み替えるものとする。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第十七条　特許登録令施行規則第一条第一項（登録の前後）の規定は、商標に関する登<wbr>録について準用する。この場合において、「又は丁区」とあるのは、「、丙区又は丁区<wbr>」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">２　特許登録令施行規則第一条の三第四項及び第五項、第二条第二項及び第三項、第三<wbr>条、第四条第一項及び第二項、第五条第一項、第八条並びに第九条（登録に関する帳簿<wbr>）の規定は、商標の登録に関する帳簿に準用する。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">２　特許登録令施行規則第一条の三第四項及び第五項、第二条第二項及び第三項、第三<wbr>条、第四条第一項及び第二項、第五条第一項、第八条並びに第九条（登録に関する帳簿<wbr>）の規定は、商標の登録に関する帳簿に準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">３　特許登録令施行規則第十条（第二項、第五項及び第六項を除く。）、第十条の二（<wbr>第四項を除く。）及び第十条の三から第十三条の六まで（申請の手続）の規定は、商標<wbr>に関する登録の申請の手続に準用する。この場合において、同規則様式第十二の備考第<wbr>１中「記載する。」とあるのは「記載する。国際登録に基づく商標権について質権の設<wbr>定の登録を申請する場合において、当該国際登録が事後指定に係るものであるときは、<wbr>「権利の表示」の欄に事後指定が国際登録簿に記録された日を記載する。」と、同規則<wbr>第十条の二中「これらの登録の目的が同一の場合」とあるのは「これらの登録の目的が<wbr>同一の場合又は第四条の二の規定による場合」と、「特許法施行規則（昭和三十五年通<wbr>商産業省令第十号）第十二条第一項」とあるのは「商標法施行規則（昭和三十五年通商<wbr>産業省令第十三号）第九条第一項」と、同規則第十条の四第一号ロ中「特許法条約に基<wbr>づく規則２０（１）に規定するモデル国際様式」とあるのは「商標法に関するシンガポ<wbr>ール条約に基づく規則で定めるモデル国際様式」と、同条第二号中「専用実施権」とあ<wbr>るのは「専用使用権又は通常使用権」と、同条第四号中「又は専用実施権」とあるのは<wbr>「、専用使用権又は通常使用権」と、同規則様式第十八の備考第１中「「専用実施権者<wbr>」」とあるのは「「専用使用権者」、「通常使用権者」」と読み替えるものとする。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">３　特許登録令施行規則第十条（第二項、第五項及び第六項を除く。）、第十条の二（<wbr>第四項を除く。）及び第十条の三から第十三条の六まで（申請の手続）の規定は、商標<wbr>に関する登録の申請の手続に準用する。この場合において、同規則様式第十二の備考第<wbr>１中「記載する。」とあるのは「記載する。国際登録に基づく商標権について質権の設<wbr>定の登録を申請する場合において、当該国際登録が事後指定に係るものであるときは、<wbr>「権利の表示」の欄に事後指定が国際登録簿に記録された日を記載する。」と、同規則<wbr>第十条の二中「これらの登録の目的が同一の場合」とあるのは「これらの登録の目的が<wbr>同一の場合又は第四条の二の規定による場合」と、「特許法施行規則（昭和三十五年通<wbr>商産業省令第十号）第十二条第一項」とあるのは「商標法施行規則（昭和三十五年通商<wbr>産業省令第十三号）第九条第一項」と、同規則第十条の四第一号ロ中「特許法条約に基<wbr>づく規則２０（１）に規定するモデル国際様式」とあるのは「商標法に関するシンガポ<wbr>ール条約に基づく規則で定めるモデル国際様式」と、同条第二号中「専用実施権」とあ<wbr>るのは「専用使用権又は通常使用権」と、同条第四号中「又は専用実施権」とあるのは<wbr>「、専用使用権又は通常使用権」と、同規則様式第十八の備考第１中「「専用実施権者<wbr>」」とあるのは「「専用使用権者」、「通常使用権者」」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">４　特許登録令施行規則第十四条（第三項を除く。）、第十五条（第二項を除く。）、<wbr>第十六条から第十九条まで、第二十条から第二十三条まで、第二十四条第一項、第二十<wbr>五条、第二十六条第一項、第二十七条第二項、第二十八条第二項及び第三項、第三十二<wbr>条、第三十四条第一項、第三十九条第一項、第四十条、第四十五条第一項、第四十六条<wbr>から第五十条まで、第五十一条第一項、第五十二条（第四項から第七項までを除く。）<wbr>、第五十三条、第五十四条、第五十五条第一項及び第二項、第五十六条第一項、第五十<wbr>七条、第五十八条第二項及び第三項並びに第五十九条から第六十一条まで（登録の手続<wbr>）の規定は、商標に関する登録の手続に準用する。この場合において、同規則第十六条<wbr>中「外国人」とあるのは「外国人（国際登録に基づく商標権の商標権者を除く。）」と<wbr>、同規則第二十一条中「表示部又は事項部」とあるのは「表示部、事項部又は国際登録<wbr>事項記録部」と、同規則第十四条第二項中「及び丁区」とあるのは「、丙区及び丁区」<wbr>と、同規則第三十四条第一項中「専用実施権」とあるのは「専用使用権、通常使用権」<wbr>と読み替えるものとする。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">４　特許登録令施行規則第十四条（第三項を除く。）、第十五条（第二項を除く。）、<wbr>第十六条から第十九条まで、第二十条から第二十三条まで、第二十四条第一項、第二十<wbr>五条、第二十六条第一項、第二十七条第二項、第二十八条第二項及び第三項、第三十二<wbr>条、第三十四条第一項、第三十九条第一項、第四十条、第四十五条第一項、第四十六条<wbr>から第五十条まで、第五十一条第一項、第五十二条（第四項から第七項までを除く。）<wbr>、第五十三条、第五十四条、第五十五条第一項及び第二項、第五十六条第一項、第五十<wbr>七条、第五十八条第二項及び第三項並びに第五十九条から第六十一条まで（登録の手続<wbr>）の規定は、商標に関する登録の手続に準用する。この場合において、同規則第十六条<wbr>中「外国人」とあるのは「外国人（国際登録に基づく商標権の商標権者を除く。）」と<wbr>、同規則第二十一条中「表示部又は事項部」とあるのは「表示部、事項部又は国際登録<wbr>事項記録部」と、同規則第十四条第二項中「及び丁区」とあるのは「、丙区及び丁区」<wbr>と、同規則第三十四条第一項中「専用実施権」とあるのは「専用使用権、通常使用権」<wbr>と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（モデル国際様式）</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（モデル国際様式）</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第十八条　登録の申請の手続は、この省令で定める様式のほか、商標法条約に基づく規<wbr>則で定めるモデル国際様式又は商標法に関するシンガポール条約に基づく規則で定める<wbr>モデル国際様式によりすることができる。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第十八条　登録の申請の手続は、この省令で定める様式のほか、商標法条約に基づく規<wbr>則で定めるモデル国際様式又は商標法に関するシンガポール条約に基づく規則で定める<wbr>モデル国際様式によりすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、商標法の施行の日（昭和三十五年四月一日）から施行する。</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、商標法の施行の日（昭和三十五年四月一日）から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">２　商標登録規則（大正十年農商務省令第四十二号。以下「旧規則」という。）は、廃<wbr>止する。ただし、商標法（大正十年法律第九十九号）による商標権、標章権または団体<wbr>標章権（以下「旧法による商標権等」という。）についての登録用紙については、商標<wbr>登録令第五条第一項の規定によりその登録が移記された場合における移記後の登録用紙<wbr>を除き、旧規則第一条において準用する特許登録令施行規則（大正十年農商務省令第三<wbr>十九号。以下「旧特許登録令施行規則」という。）第十八条および第十九条の規定は、<wbr>なおその効力を有する。この場合において、旧規則第一条において準用する旧特許登録<wbr>令施行規則第十八条第一項および第二項中「特許原簿」とあるのは、「特許登録原簿」<wbr>と読み替えるものとする。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">２　商標登録規則（大正十年農商務省令第四十二号。以下「旧規則」という。）は、廃<wbr>止する。ただし、商標法（大正十年法律第九十九号）による商標権、標章権または団体<wbr>標章権（以下「旧法による商標権等」という。）についての登録用紙については、商標<wbr>登録令第五条第一項の規定によりその登録が移記された場合における移記後の登録用紙<wbr>を除き、旧規則第一条において準用する特許登録令施行規則（大正十年農商務省令第三<wbr>十九号。以下「旧特許登録令施行規則」という。）第十八条および第十九条の規定は、<wbr>なおその効力を有する。この場合において、旧規則第一条において準用する旧特許登録<wbr>令施行規則第十八条第一項および第二項中「特許原簿」とあるのは、「特許登録原簿」<wbr>と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">123</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　旧法による商標権等に関する登録については、商標登録令第五条第一項の規定によ<wbr>りその登録が移記された場合を除き、第九条第二項第二号中「ならびに原商標権の設定<wbr>および更新の登録の年月日」とあるのは「、原商標権の設定および更新の登録の年月日<wbr>ならびに乙商標権の登録用紙をつづり込んだ商標登録原簿の冊数および乙商標権の登録<wbr>用紙のページ数」と、第十五条第一項において準用する特許登録令施行規則第九条第二<wbr>項中「表題部」とあるのは「信託財産欄」と、第十五条第一項において準用する特許登<wbr>録令施行規則第九条第三項中「事項区」とあるのは「信託の当事者及び条項欄」と、第<wbr></span><span style="color: #000000; background-color: #efcb05; ">三項において準用する特許登録令施行規則第十五条中「下」とあるのは「左側」と、第<wbr>十五条第三項において準用する特許登録令施行規則第二十条第一項中「前条第一項に規<wbr>定する場合を除き、回復の登録をするときは、」とあるのは「回復の登録をするときは<wbr>、」と、第十五条第三項において準用する特許登録令施行規則第二十二条および第二十<wbr>三条中「横線」とあるのは「縦線」と、第十五条第三項において準用する特許登録令施<wbr>行規則第五十四条中「下」とあるのは「左側」と、第十五条第三項において準用する特<wbr>許登録令施行規則第五十八条中「横線」とあるのは「縦線」と、「下」とあるのは「左<wbr>側」と読み替えてこれらの規定を適用し、第一条第二項、第十五条第一項において準用<wbr>する特許登録令施行規則第一条第三項および第四項ならびに第十五条第三項において準<wbr>用する特許登録令施行規則第十九条、第二十五条および第二十六条の規定は、適用しな<wbr>い。</span></code></td>
+<td class="ln">123</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　旧法による商標権等に関する登録については、商標登録令第五条第一項の規定によ<wbr>りその登録が移記された場合を除き、第九条第二項第二号中「ならびに原商標権の設定<wbr>および更新の登録の年月日」とあるのは「、原商標権の設定および更新の登録の年月日<wbr>ならびに乙商標権の登録用紙をつづり込んだ商標登録原簿の冊数および乙商標権の登録<wbr>用紙のページ数」と、第十五条第一項において準用する特許登録令施行規則第九条第二<wbr>項中「表題部」とあるのは「信託財産欄」と、第十五条第一項において準用する特許登<wbr>録令施行規則第九条第三項中「事項区」とあるのは「信託の当事者及び条項欄」と、第<wbr></span><span class="sf17b18">十五条第</span><span style="color: #000000; background-color: #efcb05; ">三項において準用する特許登録令施行規則第十五条中「下」とあるのは「左側<wbr>」と、第十五条第三項において準用する特許登録令施行規則第二十条第一項中「前条第<wbr>一項に規定する場合を除き、回復の登録をするときは、」とあるのは「回復の登録をす<wbr>るときは、」と、第十五条第三項において準用する特許登録令施行規則第二十二条およ<wbr>び第二十三条中「横線」とあるのは「縦線」と、第十五条第三項において準用する特許<wbr>登録令施行規則第五十四条中「下」とあるのは「左側」と、第十五条第三項において準<wbr>用する特許登録令施行規則第五十八条中「横線」とあるのは「縦線」と、「下」とある<wbr>のは「左側」と読み替えてこれらの規定を適用し、第一条第二項、第十五条第一項にお<wbr>いて準用する特許登録令施行規則第一条第三項および第四項ならびに第十五条第三項に<wbr>おいて準用する特許登録令施行規則第十九条、第二十五条および第二十六条の規定は、<wbr>適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">４　商標に関する審判其の他の手続の費用及び登録に関する件（大正十年勅令第四百六<wbr>十四号）による受付簿は、この省令による登録受付簿とみなす。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">４　商標に関する審判其の他の手続の費用及び登録に関する件（大正十年勅令第四百六<wbr>十四号）による受付簿は、この省令による登録受付簿とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三七年一〇月一日通商産業省令第一一三号）</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三七年一〇月一日通商産業省令第一一三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の規定は、この省令の施行前にされた行政庁の処分その他こ<wbr>の省令の施行前に生じた事項についても、適用する。ただし、この省令による改正前の<wbr>規定によつて生じた効力を妨げない。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">２　この省令による改正後の規定は、この省令の施行前にされた行政庁の処分その他こ<wbr>の省令の施行前に生じた事項についても、適用する。ただし、この省令による改正前の<wbr>規定によつて生じた効力を妨げない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">３　この省令の施行前にされた異議の申立その他の不服申立てについては、この省令の<wbr>施行後も、なお従前の例による。</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">３　この省令の施行前にされた異議の申立その他の不服申立てについては、この省令の<wbr>施行後も、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年一〇月二四日通商産業省令第一〇四号）</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三九年一〇月二四日通商産業省令第一〇四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、特許法等の一部を改正する法律（昭和三十九年法律第百四十八号）の<wbr>施行の日（昭和四十年一月一日）から施行する。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、特許法等の一部を改正する法律（昭和三十九年法律第百四十八号）の<wbr>施行の日（昭和四十年一月一日）から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　特許登録令等の一部を改正する政令（昭和三十九年政令第三百二十四号）附則第二<wbr>項の規定による商標登録原簿の改製は、同令による改正前の商標登録令による商標登録<wbr>原簿に記載されている事項（商標登録令附則第二項の規定により同令による商標登録原<wbr>簿とみなされたものについては、改製の際現に存する商標権に係る事項に限る。）を、<wbr>特許登録令等の一部を改正する政令による改正後の商標登録原簿に記録してするものと<wbr>する。</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">２　特許登録令等の一部を改正する政令（昭和三十九年政令第三百二十四号）附則第二<wbr>項の規定による商標登録原簿の改製は、同令による改正前の商標登録令による商標登録<wbr>原簿に記載されている事項（商標登録令附則第二項の規定により同令による商標登録原<wbr>簿とみなされたものについては、改製の際現に存する商標権に係る事項に限る。）を、<wbr>特許登録令等の一部を改正する政令による改正後の商標登録原簿に記録してするものと<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定による商標登録原簿の改製を完了すべき期日は、商標権ごとに、特許庁<wbr>長官が指定する。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定による商標登録原簿の改製を完了すべき期日は、商標権ごとに、特許庁<wbr>長官が指定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">４　第二項の規定により商標登録原簿（商標登録令附則第二項の規定により同令による<wbr>商標登録原簿とみなされたものを除く。）を改製したときは、改製前の商標登録原簿の<wbr>登録用紙を閉鎖し、これを閉鎖商標原簿につづり込まなければならない。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">４　第二項の規定により商標登録原簿（商標登録令附則第二項の規定により同令による<wbr>商標登録原簿とみなされたものを除く。）を改製したときは、改製前の商標登録原簿の<wbr>登録用紙を閉鎖し、これを閉鎖商標原簿につづり込まなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">５　第二項の規定により商標登録令附則第二項の規定により同令による商標登録原簿と<wbr>みなされた商標に関する審判其の他の手続の費用及び登録に関する件（大正十年勅令第<wbr>四百六十四号）による商標登録原簿を改製したときは、改製前の商標登録原簿は閉鎖商<wbr>標原簿になつたものとみなす。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">５　第二項の規定により商標登録令附則第二項の規定により同令による商標登録原簿と<wbr>みなされた商標に関する審判其の他の手続の費用及び登録に関する件（大正十年勅令第<wbr>四百六十四号）による商標登録原簿を改製したときは、改製前の商標登録原簿は閉鎖商<wbr>標原簿になつたものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">６　第四項の規定による閉鎖商標原簿および前項の規定により閉鎖商標原簿とみなされ<wbr>たものの保存期間は、改製の日から二十年とする。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">６　第四項の規定による閉鎖商標原簿および前項の規定により閉鎖商標原簿とみなされ<wbr>たものの保存期間は、改製の日から二十年とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">７　この省令施行前に作成された閉鎖商標原簿および特許登録令等の一部を改正する政<wbr>令附則第二項の規定により従前の例により作成された閉鎖商標原簿の保存期間ならびに<wbr>登録の回復についてのこれらの閉鎖商標原簿への記載および押印については、なお従前<wbr>の例による。</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">７　この省令施行前に作成された閉鎖商標原簿および特許登録令等の一部を改正する政<wbr>令附則第二項の規定により従前の例により作成された閉鎖商標原簿の保存期間ならびに<wbr>登録の回復についてのこれらの閉鎖商標原簿への記載および押印については、なお従前<wbr>の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四〇年七月一九日通商産業省令第八九号）</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四〇年七月一九日通商産業省令第八九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">この省令は、千九百年十二月十四日にブラッセルで、千九百十一年六月二日にワシント<wbr>ンで、千九百二十五年十一月六日にヘーグで、千九百三十四年六月二日にロンドンで、<wbr>及び千九百五十八年十月三十一日にリスボンで改正された工業所有権の保護に関する千<wbr>八百八十三年三月二十日のパリ条約への加入の効力発生の日から施行する。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">この省令は、千九百年十二月十四日にブラッセルで、千九百十一年六月二日にワシント<wbr>ンで、千九百二十五年十一月六日にヘーグで、千九百三十四年六月二日にロンドンで、<wbr>及び千九百五十八年十月三十一日にリスボンで改正された工業所有権の保護に関する千<wbr>八百八十三年三月二十日のパリ条約への加入の効力発生の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五〇年九月二三日通商産業省令第八六号）　抄</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五〇年九月二三日通商産業省令第八六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和五十一年一月一日から施行する。</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">この省令は、昭和五十一年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五三年三月三一日通商産業省令第一五号）</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五三年三月三一日通商産業省令第一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、昭和五十三年四月一日から施行する。</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、昭和五十三年四月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現に存続する特許権若しくは特許料が納付されている特許出願<wbr>に係る特許権についての特許登録原簿、この省令の施行の際現に存続する実用新案権若<wbr>しくは登録料が納付されている実用新案登録出願に係る実用新案権についての実用新案<wbr>登録原簿、この省令の施行の際現に存続する意匠権若しくは登録料が納付されている意<wbr>匠登録出願に係る意匠権についての意匠登録原簿又はこの省令の施行の際現に存続する<wbr>商標権若しくは登録料が納付されている商標登録出願に係る商標権についての商標登録<wbr>原簿の様式及び記録の方法については、特許権、実用新案権、意匠権又は商標権ごとに<wbr>、特許庁長官が指定する期日までは、なお従前の例による。</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">２　この省令の施行の際現に存続する特許権若しくは特許料が納付されている特許出願<wbr>に係る特許権についての特許登録原簿、この省令の施行の際現に存続する実用新案権若<wbr>しくは登録料が納付されている実用新案登録出願に係る実用新案権についての実用新案<wbr>登録原簿、この省令の施行の際現に存続する意匠権若しくは登録料が納付されている意<wbr>匠登録出願に係る意匠権についての意匠登録原簿又はこの省令の施行の際現に存続する<wbr>商標権若しくは登録料が納付されている商標登録出願に係る商標権についての商標登録<wbr>原簿の様式及び記録の方法については、特許権、実用新案権、意匠権又は商標権ごとに<wbr>、特許庁長官が指定する期日までは、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五四年一二月二一日通商産業省令第一一六号）</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五四年一二月二一日通商産業省令第一一六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年一〇月三一日通商産業省令第七一号）</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三年一〇月三一日通商産業省令第七一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、商標法の一部を改正する法律（平成三年法律第六十五号。以下「<wbr>改定法」という。）の施行の日（平成四年四月一日）から施行する。</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、商標法の一部を改正する法律（平成三年法律第六十五号。以下「<wbr>改定法」という。）の施行の日（平成四年四月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第二条　この省令の施行の際現に存続する商標権若しくは現に特許庁に係属している商<wbr>標登録出願に係る商標権についての商標登録原簿の様式及び記録の方法については、な<wbr>お従前の例による。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第二条　この省令の施行の際現に存続する商標権若しくは現に特許庁に係属している商<wbr>標登録出願に係る商標権についての商標登録原簿の様式及び記録の方法については、な<wbr>お従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（特例商標に係る商標権の設定の登録の方法）</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">（特例商標に係る商標権の設定の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第三条　改正法附則第五条第一項の規定による使用に基づく特例の適用の主張を伴う商<wbr>標登録出願に係る商標（以下「特例商標」という。）について商標権の設定の登録をす<wbr>るときは、改正後の商標登録令施行規則（以下「新規則」という。）第五条又は第七条<wbr>の規定により記録すべき事項のほか、第一表示部に当該商標権が特例商標に係る商標権<wbr>である旨を記録しなければならない。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">第三条　改正法附則第五条第一項の規定による使用に基づく特例の適用の主張を伴う商<wbr>標登録出願に係る商標（以下「特例商標」という。）について商標権の設定の登録をす<wbr>るときは、改正後の商標登録令施行規則（以下「新規則」という。）第五条又は第七条<wbr>の規定により記録すべき事項のほか、第一表示部に当該商標権が特例商標に係る商標権<wbr>である旨を記録しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">第四条　改正法附則第五条第三項の規定により読み替えて適用する改正後の商標法（以<wbr>下「新法」という。）第八条第二項の規定による同一又は類似の役務について使用をす<wbr>る同一又は類似の二以上の特例商標（以下「重複商標」という。）の一について商標権<wbr>の設定の登録をする場合において、当該重複商標の他の一についての登録商標があると<wbr>きは、前条の規定により記録すべき事項のほか、第一表示部に当該商標権が重複商標に<wbr>係る商標権である旨を記録しなければならない。</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">第四条　改正法附則第五条第三項の規定により読み替えて適用する改正後の商標法（以<wbr>下「新法」という。）第八条第二項の規定による同一又は類似の役務について使用をす<wbr>る同一又は類似の二以上の特例商標（以下「重複商標」という。）の一について商標権<wbr>の設定の登録をする場合において、当該重複商標の他の一についての登録商標があると<wbr>きは、前条の規定により記録すべき事項のほか、第一表示部に当該商標権が重複商標に<wbr>係る商標権である旨を記録しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により商標権の設定の登録をしたときは、他の特例商標についての登録<wbr>商標の第一表示部に重複商標に係る商標権である旨を記録しなければならない。ただし<wbr>、当該重複商標に係る商標権である旨を既に記録している場合には、記録することを要<wbr>しない。</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により商標権の設定の登録をしたときは、他の特例商標についての登録<wbr>商標の第一表示部に重複商標に係る商標権である旨を記録しなければならない。ただし<wbr>、当該重複商標に係る商標権である旨を既に記録している場合には、記録することを要<wbr>しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（特例商標に係る商標権の分割移転の登録の方法）</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（特例商標に係る商標権の分割移転の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第五条　特例商標に係る商標権について、新規則第九条の規定により登録をするときは<wbr>、乙商標権の第一表示部に特例商標に係る商標権である旨を記録しなければならない。<wbr></span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第五条　特例商標に係る商標権について、新規則第九条の規定により登録をするときは<wbr>、乙商標権の第一表示部に特例商標に係る商標権である旨を記録しなければならない。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第六条　重複商標に係る商標権について、新規則第九条の規定により登録をするときは<wbr>、乙商標権の第一表示部に重複商標に係る商標権である旨を記録しなければならない。<wbr>ただし、当該商標権の分割により乙商標権のみが重複商標に係る商標権となったときは<wbr>甲商標権の第一表示部に記録した重複商標に係る商標権である旨を抹消し、甲商標権の<wbr>みが重複商標に係る商標権となったときは乙商標権の第一表示部に重複商標に係る商標<wbr>権である旨を記録することを要しない。</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">第六条　重複商標に係る商標権について、新規則第九条の規定により登録をするときは<wbr>、乙商標権の第一表示部に重複商標に係る商標権である旨を記録しなければならない。<wbr>ただし、当該商標権の分割により乙商標権のみが重複商標に係る商標権となったときは<wbr>甲商標権の第一表示部に記録した重複商標に係る商標権である旨を抹消し、甲商標権の<wbr>みが重複商標に係る商標権となったときは乙商標権の第一表示部に重複商標に係る商標<wbr>権である旨を記録することを要しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第七条　前二条の規定は、原商標権を三以上の商標権に分割する場合の登録の方法に準<wbr>用する。</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">第七条　前二条の規定は、原商標権を三以上の商標権に分割する場合の登録の方法に準<wbr>用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">（重複商標に係る商標権が当該商標権の移転により商標権者が同一である場合の登録の<wbr>方法）</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">（重複商標に係る商標権が当該商標権の移転により商標権者が同一である場合の登録の<wbr>方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">第八条　重複商標に係る商標権の設定の登録があった後に、当該商標権の移転の登録に<wbr>より当該商標権全ての商標権者が同一であるときは、当該商標権全ての登録の第一表示<wbr>部に記録した重複商標に係る商標権である旨を抹消しなければならない。</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">第八条　重複商標に係る商標権の設定の登録があった後に、当該商標権の移転の登録に<wbr>より当該商標権全ての商標権者が同一であるときは、当該商標権全ての登録の第一表示<wbr>部に記録した重複商標に係る商標権である旨を抹消しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（重複商標に係る商標権の一を残して消滅した場合の登録の方法）</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（重複商標に係る商標権の一を残して消滅した場合の登録の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第八条の二　重複商標に係る商標権の設定の登録があった後に、一の商標権以外の商標<wbr>権全てについて消滅の登録をしたときは、重複商標に係る商標権のうち消滅しないもの<wbr>の登録の第一表示部に記録した重複商標に係る商標権である旨を抹消しなければならな<wbr>い。</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第八条の二　重複商標に係る商標権の設定の登録があった後に、一の商標権以外の商標<wbr>権全てについて消滅の登録をしたときは、重複商標に係る商標権のうち消滅しないもの<wbr>の登録の第一表示部に記録した重複商標に係る商標権である旨を抹消しなければならな<wbr>い。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一一月八日通商産業省令第七五号）　抄</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一一月八日通商産業省令第七五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律（平成五年法律第二十六号。以下<wbr>「改正法」という。）の施行の日（平成六年一月一日）から施行する。</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律（平成五年法律第二十六号。以下<wbr>「改正法」という。）の施行の日（平成六年一月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年一二月二五日通商産業省令第七九号）　抄</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年一二月二五日通商産業省令第七九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、商標法等の一部を改正する法律（平成八年法律第六十八号。以下<wbr>「平成八年改正法」という。）の施行の日（平成九年四月一日）から施行する。ただし<wbr>、第九条の規定は、平成九年一月一日から、第二条、第四条、第十三条、第十五条及び<wbr>附則第十一条の規定は、平成十年四月一日から施行する。</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、商標法等の一部を改正する法律（平成八年法律第六十八号。以下<wbr>「平成八年改正法」という。）の施行の日（平成九年四月一日）から施行する。ただし<wbr>、第九条の規定は、平成九年一月一日から、第二条、第四条、第十三条、第十五条及び<wbr>附則第十一条の規定は、平成十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（第三条の規定による商標登録令施行規則の改正に伴う経過措置）</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">（第三条の規定による商標登録令施行規則の改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第五条　平成八年改正法附則第九条の規定によりなおその効力を有することとされる平<wbr>成八年改正法第一条の規定による改正前の商標法第四十八条第一項の審判については、<wbr>第三条の規定による改正前の商標登録令施行規則第三条第三項の規定は、この省令の施<wbr>行後も、なおその効力を有する。</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">第五条　平成八年改正法附則第九条の規定によりなおその効力を有することとされる平<wbr>成八年改正法第一条の規定による改正前の商標法第四十八条第一項の審判については、<wbr>第三条の規定による改正前の商標登録令施行規則第三条第三項の規定は、この省令の施<wbr>行後も、なおその効力を有する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年一二月一八日通商産業省令第八七号）　抄</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年一二月一八日通商産業省令第八七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成十一年一月一日から施行する。</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成十一年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月一〇日通商産業省令第一四号）</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月一〇日通商産業省令第一四号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十一年四月一日から施行する。</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年二月七日通商産業省令第一〇号）</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年二月七日通商産業省令第一〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">この省令は、標章の国際登録に関するマドリッド協定の千九百八十九年六月二十七日に<wbr>マドリッドで採択された議定書が日本国について効力を生ずる日（平成十二年三月十四<wbr>日）から施行する。</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">この省令は、標章の国際登録に関するマドリッド協定の千九百八十九年六月二十七日に<wbr>マドリッドで採択された議定書が日本国について効力を生ずる日（平成十二年三月十四<wbr>日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年一一月二〇日通商産業省令第三五七号）</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年一一月二〇日通商産業省令第三五七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十三年一月六日から施行する。</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十三年一月六日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年一〇月二日経済産業省令第二〇三号）</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年一〇月二日経済産業省令第二〇三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一〇月二七日経済産業省令第一四一号）　抄</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一〇月二七日経済産業省令第一四一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律の施行の日（平成十六年一月一日<wbr>）から施行する。</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律の施行の日（平成十六年一月一日<wbr>）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月二日経済産業省令第二八号）　抄</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年三月二日経済産業省令第二八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律の一部の施行の日（平成十六年四<wbr>月一日）から施行する。</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律の一部の施行の日（平成十六年四<wbr>月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一〇月三日経済産業省令第九六号）</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年一〇月三日経済産業省令第九六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十七年十月三日から施行する。</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十七年十月三日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年二月一五日経済産業省令第七号）</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年二月一五日経済産業省令第七号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十八年四月一日から施行する。</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年九月二八日経済産業省令第六八号）</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年九月二八日経済産業省令第六八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">この省令は、信託法の施行の日（平成十九年九月三十日）から施行する。</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">この省令は、信託法の施行の日（平成十九年九月三十日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年九月三〇日経済産業省令第六九号）　抄</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年九月三〇日経済産業省令第六九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十一年一月一日から施行する。</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、平成二十一年一月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一月三〇日経済産業省令第五号）</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二一年一月三〇日経済産業省令第五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十一年四月一日から施行する。</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年七月一日経済産業省令第四一号）</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二二年七月一日経済産業省令第四一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">２　別の区（特許登録令施行規則第七条第一項、実用新案登録令施行規則第二条の二第<wbr>一項、意匠登録令施行規則第三条第一項並びに商標登録令施行規則第三条第一項及び第<wbr>三条の二第一項の甲区、乙区、丙区又は丁区をいう。）にした登録の双方に登録年月日<wbr>の記録がある登録相互間（登録の双方に受付の年月日及び受付番号がないものを除く。<wbr>）についての第一条の規定による改正後の特許登録令施行規則（以下「新特許登録令施<wbr>行規則」という。）第一条第一項（第二条の規定による改正後の実用新案登録令施行規<wbr>則第三条第一項において準用する場合、第三条の規定による改正後の意匠登録令施行規<wbr>則第六条第一項において準用する場合及び第四条の規定による改正後の商標登録令施行<wbr>規則第十七条第一項において準用する場合を含む。）の規定の適用については、新特許<wbr>登録令施行規則第一条第一項中「受付の年月日及び受付番号（登録の双方に受付の年月<wbr>日及び受付番号の記録がないときは登録年月日、登録の一方に受付の年月日及び受付番<wbr>号の記録がないときは受付の年月日と登録年月日）」とあるのは、「登録年月日」とす<wbr>る。</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">２　別の区（特許登録令施行規則第七条第一項、実用新案登録令施行規則第二条の二第<wbr>一項、意匠登録令施行規則第三条第一項並びに商標登録令施行規則第三条第一項及び第<wbr>三条の二第一項の甲区、乙区、丙区又は丁区をいう。）にした登録の双方に登録年月日<wbr>の記録がある登録相互間（登録の双方に受付の年月日及び受付番号がないものを除く。<wbr>）についての第一条の規定による改正後の特許登録令施行規則（以下「新特許登録令施<wbr>行規則」という。）第一条第一項（第二条の規定による改正後の実用新案登録令施行規<wbr>則第三条第一項において準用する場合、第三条の規定による改正後の意匠登録令施行規<wbr>則第六条第一項において準用する場合及び第四条の規定による改正後の商標登録令施行<wbr>規則第十七条第一項において準用する場合を含む。）の規定の適用については、新特許<wbr>登録令施行規則第一条第一項中「受付の年月日及び受付番号（登録の双方に受付の年月<wbr>日及び受付番号の記録がないときは登録年月日、登録の一方に受付の年月日及び受付番<wbr>号の記録がないときは受付の年月日と登録年月日）」とあるのは、「登録年月日」とす<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一二月二八日経済産業省令第七二号）　抄</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年一二月二八日経済産業省令第七二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律（平成二十三年法律第六十三号。<wbr>以下「改正法」という。）の施行の日（平成二十四年四月一日。以下「施行日」という<wbr>。）から施行する。</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律（平成二十三年法律第六十三号。<wbr>以下「改正法」という。）の施行の日（平成二十四年四月一日。以下「施行日」という<wbr>。）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年二月二〇日経済産業省令第六号）　抄</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年二月二〇日経済産業省令第六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律の施行の日（平成二十七年四月一<wbr>日）から施行する。</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特許法等の一部を改正する法律の施行の日（平成二十七年四月一<wbr>日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月二五日経済産業省令第三六号）</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年三月二五日経済産業省令第三六号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">この省令は、特許法等の一部を改正する法律の施行の日（平成二十八年四月一日）から<wbr>施行する。</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">この省令は、特許法等の一部を改正する法律の施行の日（平成二十八年四月一日）から<wbr>施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年二月一二日経済産業省令第一二号）　抄</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成三一年二月一二日経済産業省令第一二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、不正競争防止法等の一部を改正する法律（次項において「改正法」と<wbr>いう。）附則第一条第四号に掲げる規定の施行の日（平成三十一年四月一日）から施行<wbr>する。ただし、次項の規定は、公布の日から施行する。</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、不正競争防止法等の一部を改正する法律（次項において「改正法」と<wbr>いう。）附則第一条第四号に掲げる規定の施行の日（平成三十一年四月一日）から施行<wbr>する。ただし、次項の規定は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">様式第一（第一条の二関係）</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">様式第一（第一条の二関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">216</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">様式第一の二（第一条の二関係）</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">様式第一の二（第一条の二関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">218</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">様式第二（第一条の二）</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">様式第二（第一条の二）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">220</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">様式第三（第一条の二）</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">様式第三（第一条の二）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">222</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">様式第四（第一条の二）</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">様式第四（第一条の二）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">224</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">様式第五（第二条）</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">様式第五（第二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">226</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">様式第６（第４条関係）</span></code></td>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">様式第６（第４条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">228</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">様式第７（第４条関係）</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">様式第７（第４条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">223</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第８（第４条関係）</span></code></td>
+<td class="ln">230</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">231</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">様式第８（第４条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">232</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

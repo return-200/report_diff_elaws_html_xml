@@ -1,0 +1,607 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十八年国家公安委員会規則第一号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十八年国家公安委員会規則第一号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国家公安委員会審査請求手続規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国家公安委員会審査請求手続規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">行政不服審査法（平成二十六年法律第六十八号）の施行に伴い、及び警察法施行令（昭<wbr>和二十九年政令第百五十一号）第十三条第一項の規定に基づき、国家公安委員会等に対<wbr>する不服申立てに関する規則（平成四年国家公安委員会規則第二号）の全部を改正する<wbr>この規則を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">行政不服審査法（平成二十六年法律第六十八号）の施行に伴い、及び警察法施行令（昭<wbr>和二十九年政令第百五十一号）第十三条第一項の規定に基づき、国家公安委員会等に対<wbr>する不服申立てに関する規則（平成四年国家公安委員会規則第二号）の全部を改正する<wbr>この規則を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条・第二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　審査請求に関する一般的手続（第三条―第二十七条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二章　審査請求に関する一般的手続（第三条―第二十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第三章　行政機関の保有する情報の公開に関する法律等に関する審査請求に関する手続<wbr>（第二十八条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第三章　行政機関の保有する情報の公開に関する法律等に関する審査請求に関する手続<wbr>（第二十八条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（趣旨）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">（趣旨）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第一条　この規則は、国家公安委員会に対する審査請求に関し必要な事項を定めるもの<wbr>とする。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第一条　この規則は、国家公安委員会に対する審査請求に関し必要な事項を定めるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（用語）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（用語）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第二条　この規則で使用する用語は、行政不服審査法（以下「法」という。）で使用す<wbr>る用語の例による。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第二条　この規則で使用する用語は、行政不服審査法（以下「法」という。）で使用す<wbr>る用語の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二章　審査請求に関する一般的手続</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二章　審査請求に関する一般的手続</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（審理官）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（審理官）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　警察庁長官（以下「長官」という。）は、国家公安委員会に対して審査請求が<wbr>されたときは、審査庁（法に規定する審査庁としての国家公安委員会をいう。以下同じ<wbr>。）が行う審理に関する事務を補佐させるため、審理に関する事務を行うについて必要<wbr>な知識経験を有し、かつ、公正な判断をすることができると認められる警察庁の職員の<wbr>うちから審理官を指名するとともに、その旨を審査請求人及び処分庁等（審査庁以外の<wbr>処分庁等に限る。）に対し書面により通知するものとする。ただし、法第二十四条の規<wbr>定により当該審査請求を却下する場合は、この限りでない。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　警察庁長官（以下「長官」という。）は、国家公安委員会に対して審査請求が<wbr>されたときは、審査庁（法に規定する審査庁としての国家公安委員会をいう。以下同じ<wbr>。）が行う審理に関する事務を補佐させるため、審理に関する事務を行うについて必要<wbr>な知識経験を有し、かつ、公正な判断をすることができると認められる警察庁の職員の<wbr>うちから審理官を指名するとともに、その旨を審査請求人及び処分庁等（審査庁以外の<wbr>処分庁等に限る。）に対し書面により通知するものとする。ただし、法第二十四条の規<wbr>定により当該審査請求を却下する場合は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">２　長官は、前項の規定により二人以上の審理官を指名する場合には、そのうち一人を<wbr>、当該二人以上の審理官が行う事務を総括する者として指定するものとする。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">２　長官は、前項の規定により二人以上の審理官を指名する場合には、そのうち一人を<wbr>、当該二人以上の審理官が行う事務を総括する者として指定するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">３　長官が第一項の規定により指名する者は、次に掲げる者以外の者でなければならな<wbr>い。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">３　長官が第一項の規定により指名する者は、次に掲げる者以外の者でなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">一　審査請求に係る処分に関与した者又は審査請求に係る不作為に係る処分に関与し、<wbr>若しくは関与することとなる者</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">一　審査請求に係る処分に関与した者又は審査請求に係る不作為に係る処分に関与し、<wbr>若しくは関与することとなる者</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">二　審査請求人</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">二　審査請求人</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">三　審査請求人の配偶者、四親等内の親族又は同居の親族</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">三　審査請求人の配偶者、四親等内の親族又は同居の親族</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">四　審査請求人の代理人</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">四　審査請求人の代理人</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">五　前二号に掲げる者であった者</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">五　前二号に掲げる者であった者</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">六　審査請求人の後見人、後見監督人、保佐人、保佐監督人、補助人又は補助監督人</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">六　審査請求人の後見人、後見監督人、保佐人、保佐監督人、補助人又は補助監督人</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">七　利害関係人</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">七　利害関係人</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">４　長官は、審理官が前項各号に掲げる者のいずれかに該当することとなったときは、<wbr>当該審理官に係る第一項の規定による指名を取り消さなければならない。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">４　長官は、審理官が前項各号に掲げる者のいずれかに該当することとなったときは、<wbr>当該審理官に係る第一項の規定による指名を取り消さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">５　審理官は、審査庁が行う審理を補佐するに当たっては、警察庁の職員たる身分を示<wbr>す証明書を携帯し、審理関係人（処分庁等が審査庁である場合にあっては、審査請求人<wbr>及び参加人。以下同じ。）の請求があるときは、これを提示しなければならない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">５　審理官は、審査庁が行う審理を補佐するに当たっては、警察庁の職員たる身分を示<wbr>す証明書を携帯し、審理関係人（処分庁等が審査庁である場合にあっては、審査請求人<wbr>及び参加人。以下同じ。）の請求があるときは、これを提示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">６　審理官は、法の規定による裁決がなされるに熟したと認めるときは、速やかに審理<wbr>経過調書を作成し、これを審査庁に提出して審理の状況を報告しなければならない。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">６　審理官は、法の規定による裁決がなされるに熟したと認めるときは、速やかに審理<wbr>経過調書を作成し、これを審査庁に提出して審理の状況を報告しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（物件の提出の方法）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（物件の提出の方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第四条　法、行政不服審査法施行令（平成二十七年政令第三百九十一号。第二十三条第<wbr>三項において「令」という。）及びこの規則の規定による審査庁への書類その他の物件<wbr>の提出は、警察庁を経由して行うものとする。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第四条　法、行政不服審査法施行令（平成二十七年政令第三百九十一号。第二十三条第<wbr>三項において「令」という。）及びこの規則の規定による審査庁への書類その他の物件<wbr>の提出は、警察庁を経由して行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（総代の互選の命令の方式等）</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（総代の互選の命令の方式等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第九条第三項の規定により読み替えて適用する法第十一条第二項の規定によ<wbr>る総代の互選の命令は、書面により行うものとする。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第九条第三項の規定により読み替えて適用する法第十一条第二項の規定によ<wbr>る総代の互選の命令は、書面により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、総代が選任され、又は解任されたときは、他の審理関係人に対し、書面<wbr>によりその旨を通知するものとする。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、総代が選任され、又は解任されたときは、他の審理関係人に対し、書面<wbr>によりその旨を通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（参加の許可の通知等）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（参加の許可の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第六条　審査庁は、法第九条第三項の規定により読み替えて適用する法第十三条第一項<wbr>の許可をし、又はしないこととしたときは、当該許可の申請をした利害関係人に対し、<wbr>書面によりその旨を通知するものとする。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第六条　審査庁は、法第九条第三項の規定により読み替えて適用する法第十三条第一項<wbr>の許可をし、又はしないこととしたときは、当該許可の申請をした利害関係人に対し、<wbr>書面によりその旨を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第十三条第二項の規定による参<wbr>加の要求は、書面により行うものとする。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第十三条第二項の規定による参<wbr>加の要求は、書面により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　審査庁は、利害関係人が新たに参加人となったとき又は参加人が審査請求への参加<wbr>を取り下げたときは、他の審理関係人に対し、書面によりその旨を通知するものとする<wbr>。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　審査庁は、利害関係人が新たに参加人となったとき又は参加人が審査請求への参加<wbr>を取り下げたときは、他の審理関係人に対し、書面によりその旨を通知するものとする<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（補正の命令の方式）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（補正の命令の方式）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第二十三条の規定による補正の命令は、書面により行うものとする。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第二十三条の規定による補正の命令は、書面により行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（執行停止についての処分庁の意見の聴取の方式等）</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（執行停止についての処分庁の意見の聴取の方式等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第二十五条第三項の規定による処分庁の意見の聴取は、書面により行うもの<wbr>とする。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第二十五条第三項の規定による処分庁の意見の聴取は、書面により行うもの<wbr>とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第二十五条第二項又は第三項の規定による執行停止をしたときは、審<wbr>査請求人、参加人及び処分庁（処分庁が審査庁である場合にあっては、審査請求人及び<wbr>参加人。次条において同じ。）に対し、書面によりその旨を通知するものとする。法第<wbr>二十五条第二項の申立てが行われた場合において、同項の規定による執行停止をしない<wbr>こととしたときも、同様とする。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第二十五条第二項又は第三項の規定による執行停止をしたときは、審<wbr>査請求人、参加人及び処分庁（処分庁が審査庁である場合にあっては、審査請求人及び<wbr>参加人。次条において同じ。）に対し、書面によりその旨を通知するものとする。法第<wbr>二十五条第二項の申立てが行われた場合において、同項の規定による執行停止をしない<wbr>こととしたときも、同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（執行停止の取消しの通知）</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（執行停止の取消しの通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第九条　審査庁は、法第二十六条の規定により執行停止を取り消したときは、審査請求<wbr>人、参加人及び処分庁に対し、書面によりその旨を通知するものとする。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第九条　審査庁は、法第二十六条の規定により執行停止を取り消したときは、審査請求<wbr>人、参加人及び処分庁に対し、書面によりその旨を通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（審査請求の取下げの通知等）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（審査請求の取下げの通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十条　審査庁は、法第二十七条の規定による審査請求の取下げがあったときは、参加<wbr>人及び処分庁等（処分庁等が審査庁である場合には参加人。第二十六条第二項において<wbr>同じ。）に対し、書面によりその旨を通知するものとする。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十条　審査庁は、法第二十七条の規定による審査請求の取下げがあったときは、参加<wbr>人及び処分庁等（処分庁等が審査庁である場合には参加人。第二十六条第二項において<wbr>同じ。）に対し、書面によりその旨を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、前項に規定する審査請求の取下げがあったときは、法第三十二条第一項<wbr>若しくは第二項又は法第九条第三項の規定により読み替えて適用する法第三十三条の規<wbr>定により提出された書類その他の物件をその提出人に返還しなければならない。この場<wbr>合において、当該書類その他の物件の返還は、別記様式第一号の還付請書と引換えに行<wbr>わなければならない。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、前項に規定する審査請求の取下げがあったときは、法第三十二条第一項<wbr>若しくは第二項又は法第九条第三項の規定により読み替えて適用する法第三十三条の規<wbr>定により提出された書類その他の物件をその提出人に返還しなければならない。この場<wbr>合において、当該書類その他の物件の返還は、別記様式第一号の還付請書と引換えに行<wbr>わなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（処分庁等に対する弁明書の提出の要求の方式）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（処分庁等に対する弁明書の提出の要求の方式）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第九条第三項の規定により読み替えて適用する法第二十九条第二項の規定<wbr>による弁明書の提出の要求は、書面により行うものとする。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第九条第三項の規定により読み替えて適用する法第二十九条第二項の規定<wbr>による弁明書の提出の要求は、書面により行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（反論書等を提出すべき期間の通知）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（反論書等を提出すべき期間の通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第十二条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十条第一<wbr>項又は第二項に規定する相当の期間を定めたときは、審査請求人又は参加人に対し、書<wbr>面によりその旨を通知するものとする。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第十二条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十条第一<wbr>項又は第二項に規定する相当の期間を定めたときは、審査請求人又は参加人に対し、書<wbr>面によりその旨を通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（意見の陳述の機会供与の通知の方式等）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（意見の陳述の機会供与の通知の方式等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法第九条第三項の規定により読み替えて適用する法第三十一条第二項の規定<wbr>による口頭意見陳述の期日及び場所の指定並びに審理関係人の招集は、書面により行う<wbr>ものとする。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法第九条第三項の規定により読み替えて適用する法第三十一条第二項の規定<wbr>による口頭意見陳述の期日及び場所の指定並びに審理関係人の招集は、書面により行う<wbr>ものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十一条第一項の<wbr>規定による意見の陳述を聴取したときは、次に掲げる事項を記載した口頭意見陳述録取<wbr>書を作成するものとする。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十一条第一項の<wbr>規定による意見の陳述を聴取したときは、次に掲げる事項を記載した口頭意見陳述録取<wbr>書を作成するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">一　事案の件名</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">一　事案の件名</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">二　意見の陳述の日時及び場所</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">二　意見の陳述の日時及び場所</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">三　意見の陳述をした者の氏名及び住所</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">三　意見の陳述をした者の氏名及び住所</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">四　意見の陳述の要旨</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">四　意見の陳述の要旨 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（補佐人同伴の許可の通知）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（補佐人同伴の許可の通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十四条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十一条第<wbr>三項の許可をし、又はしないこととしたときは、申立人に対し、書面によりその旨を通<wbr>知するものとする。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十四条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十一条第<wbr>三項の許可をし、又はしないこととしたときは、申立人に対し、書面によりその旨を通<wbr>知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等を提出すべき期間の通知）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等を提出すべき期間の通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十五条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十二条第<wbr>三項に規定する相当の期間を定めたときは、審理関係人に対し、書面によりその旨を通<wbr>知するものとする。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十五条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十二条第<wbr>三項に規定する相当の期間を定めたときは、審理関係人に対し、書面によりその旨を通<wbr>知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（物件の提出の通知等）</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">（物件の提出の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">64</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十六条　審査庁は、</span><span style="color: #000000; background-color: #efcb05; ">の規定により読み替えて適用する</span><span style="color: #000000; background-color: #efcb05; ">第三十三条の申立てが行われた<wbr>場合において、同条の規定による物件の提出の要求をし、又はしないこととしたときは<wbr>、当該申立てをした者に対し、書面によりその旨を通知するものとする。ただし、当該<wbr>申立てが法第九条第三項の規定により読み替えて適用する法第三十一条第一項の規定に<wbr>よる意見の聴取又は法第九条第三項の規定により読み替えて適用する法第三十七条第一<wbr>項の規定による意見の聴取の場において行われる場合であって、その場において当該要<wbr>求をし、又はしないこととしたときは、この限りでない。</span></code></td>
+<td class="ln">64</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十六条　審査庁は、</span><span class="sf17b18">法第九条第三項</span><span style="color: #000000; background-color: #efcb05; ">の規定により読み替えて適用する</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">第三十三条の<wbr>申立てが行われた場合において、同条の規定による物件の提出の要求をし、又はしない<wbr>こととしたときは、当該申立てをした者に対し、書面によりその旨を通知するものとす<wbr>る。ただし、当該申立てが法第九条第三項の規定により読み替えて適用する法第三十一<wbr>条第一項の規定による意見の聴取又は法第九条第三項の規定により読み替えて適用する<wbr>法第三十七条第一項の規定による意見の聴取の場において行われる場合であって、その<wbr>場において当該要求をし、又はしないこととしたときは、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十三条の規定による物件の<wbr>提出の要求は、書面により行うものとする。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十三条の規定による物件の<wbr>提出の要求は、書面により行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等の管理）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等の管理）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十七条　審査庁は、法第三十二条第一項若しくは第二項又は法第九条第三項の規定に<wbr>より読み替えて適用する法第三十三条の規定による書類その他の物件の提出を受けたと<wbr>きは、次に掲げる事項を記載した別記様式第二号の提出物目録を作成しなければならな<wbr>い。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十七条　審査庁は、法第三十二条第一項若しくは第二項又は法第九条第三項の規定に<wbr>より読み替えて適用する法第三十三条の規定による書類その他の物件の提出を受けたと<wbr>きは、次に掲げる事項を記載した別記様式第二号の提出物目録を作成しなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">一　事案の件名</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">一　事案の件名</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">二　提出を受けた年月日</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">二　提出を受けた年月日</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">三　提出人の氏名及び住所</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">三　提出人の氏名及び住所</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">四　提出を受けた書類その他の物件の種目</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">四　提出を受けた書類その他の物件の種目</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、前項の提出物目録を作成したときは、その写しを当該提出物目録に係る<wbr>書類その他の物件の提出人に交付しなければならない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、前項の提出物目録を作成したときは、その写しを当該提出物目録に係る<wbr>書類その他の物件の提出人に交付しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">３　審査庁は、必要がなくなったときは、速やかに、提出を受けた書類その他の物件を<wbr>その提出人に返還しなければならない。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">３　審査庁は、必要がなくなったときは、速やかに、提出を受けた書類その他の物件を<wbr>その提出人に返還しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">４　第十条第二項後段の規定は、前項の規定による返還について準用する。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">４　第十条第二項後段の規定は、前項の規定による返還について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等の提出に係る審理関係人に対する通知）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等の提出に係る審理関係人に対する通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第十八条　審査庁は、法第三十二条第一項若しくは第二項又は法第九条第三項の規定に<wbr>より読み替えて適用する法第三十三条の規定による書類その他の物件の提出を受けたと<wbr>きは、その提出人以外の審理関係人に対し、書面によりその旨を通知するものとする。<wbr></span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第十八条　審査庁は、法第三十二条第一項若しくは第二項又は法第九条第三項の規定に<wbr>より読み替えて適用する法第三十三条の規定による書類その他の物件の提出を受けたと<wbr>きは、その提出人以外の審理関係人に対し、書面によりその旨を通知するものとする。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（参考人の陳述の通知等）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（参考人の陳述の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第十九条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十四条の<wbr>申立てが行われた場合において、同条の規定による参考人の陳述又は鑑定の要求をし、<wbr>又はしないこととしたときは、当該申立てをした者に対し、書面によりその旨を通知す<wbr>るものとする。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第十九条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十四条の<wbr>申立てが行われた場合において、同条の規定による参考人の陳述又は鑑定の要求をし、<wbr>又はしないこととしたときは、当該申立てをした者に対し、書面によりその旨を通知す<wbr>るものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十四条の規定による参考人<wbr>の陳述又は鑑定の要求は、書面により行うものとする。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十四条の規定による参考人<wbr>の陳述又は鑑定の要求は、書面により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">３　第十六条第一項ただし書の規定は第一項の規定による通知について、第十三条第二<wbr>項の規定は口頭による法第九条第三項の規定により読み替えて適用する法第三十四条の<wbr>規定による参考人の陳述について、それぞれ準用する。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">３　第十六条第一項ただし書の規定は第一項の規定による通知について、第十三条第二<wbr>項の規定は口頭による法第九条第三項の規定により読み替えて適用する法第三十四条の<wbr>規定による参考人の陳述について、それぞれ準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（検証の通知等）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（検証の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第二十条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十五条第<wbr>一項の申立てが行われた場合において、同項の規定による検証をし、又はしないことと<wbr>したときは、当該申立てをした者に対し、書面によりその旨を通知するものとする。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第二十条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十五条第<wbr>一項の申立てが行われた場合において、同項の規定による検証をし、又はしないことと<wbr>したときは、当該申立てをした者に対し、書面によりその旨を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十五条第二項の規定による<wbr>通知は、書面により行うものとする。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十五条第二項の規定による<wbr>通知は、書面により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">３　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十五条第一項の<wbr>規定による検証をしたときは、次に掲げる事項を記載した検証調書を作成するものとす<wbr>る。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">３　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十五条第一項の<wbr>規定による検証をしたときは、次に掲げる事項を記載した検証調書を作成するものとす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">一　事案の件名</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">一　事案の件名</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">二　検証の日時及び場所</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">二　検証の日時及び場所</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">三　立会人の氏名及び住所</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">三　立会人の氏名及び住所</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">四　検証の結果</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">四　検証の結果</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">４　第十六条第一項ただし書の規定は、第一項の規定による通知について準用する。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">４　第十六条第一項ただし書の規定は、第一項の規定による通知について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（質問の通知等）</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（質問の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十六条<wbr>の申立てが行われた場合において、同条の規定による質問をし、又はしないこととした<wbr>ときは、当該申立てをした者に対し、書面によりその旨を通知するものとする。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十六条<wbr>の申立てが行われた場合において、同条の規定による質問をし、又はしないこととした<wbr>ときは、当該申立てをした者に対し、書面によりその旨を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十六条の規定に<wbr>よる質問をしようとする場合において、必要があると認めるときは、質問を受けるべき<wbr>者に対し、書面によりその期日、場所その他必要な事項を通知するものとする。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十六条の規定に<wbr>よる質問をしようとする場合において、必要があると認めるときは、質問を受けるべき<wbr>者に対し、書面によりその期日、場所その他必要な事項を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">３　第十六条第一項ただし書の規定は第一項の規定による通知について、第十三条第二<wbr>項の規定は口頭による法第九条第三項の規定により読み替えて適用する法第三十六条の<wbr>規定による質問について、それぞれ準用する。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">３　第十六条第一項ただし書の規定は第一項の規定による通知について、第十三条第二<wbr>項の規定は口頭による法第九条第三項の規定により読み替えて適用する法第三十六条の<wbr>規定による質問について、それぞれ準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の通知等）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の通知等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十七条<wbr>第一項の規定により審理関係人を招集しようとするときは、審理関係人に対し、書面に<wbr>よりその期日、場所その他必要な事項を通知するものとする。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十七条<wbr>第一項の規定により審理関係人を招集しようとするときは、審理関係人に対し、書面に<wbr>よりその期日、場所その他必要な事項を通知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十七条第三項の規定による<wbr>通知は、書面により行うものとする。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十七条第三項の規定による<wbr>通知は、書面により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">３　第十三条第二項の規定は、法第九条第三項の規定により読み替えて適用する法第三<wbr>十七条第一項又は第二項の規定による意見の聴取について準用する。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">３　第十三条第二項の規定は、法第九条第三項の規定により読み替えて適用する法第三<wbr>十七条第一項又は第二項の規定による意見の聴取について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（提出書類等の閲覧等についての提出人の意見の聴取の方式等）</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（提出書類等の閲覧等についての提出人の意見の聴取の方式等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　法第九条第三項の規定により読み替えて適用する法第三十八条第二項の規<wbr>定による提出人の意見の聴取は、書面により行うものとする。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　法第九条第三項の規定により読み替えて適用する法第三十八条第二項の規<wbr>定による提出人の意見の聴取は、書面により行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十八条第三項の規定による<wbr>指定は、別記様式第三号の提出書類閲覧日時等指定書を送付して行うものとする。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">２　法第九条第三項の規定により読み替えて適用する法第三十八条第三項の規定による<wbr>指定は、別記様式第三号の提出書類閲覧日時等指定書を送付して行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">３　令第十二条第二項の審査庁が定める書類は、別記様式第四号のとおりとする。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">３　令第十二条第二項の審査庁が定める書類は、別記様式第四号のとおりとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（手続の併合又は分離の通知）</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（手続の併合又は分離の通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十九条<wbr>の規定により数個の審査請求に係る審理手続を併合し、又は併合された数個の審査請求<wbr>に係る審理手続を分離したときは、審理関係人に対し、書面によりその旨を通知するも<wbr>のとする。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　審査庁は、法第九条第三項の規定により読み替えて適用する法第三十九条<wbr>の規定により数個の審査請求に係る審理手続を併合し、又は併合された数個の審査請求<wbr>に係る審理手続を分離したときは、審理関係人に対し、書面によりその旨を通知するも<wbr>のとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（審理手続の終結の通知の方式）</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（審理手続の終結の通知の方式）</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　法第九条第三項の規定により読み替えて適用する法第四十一条第三項の規<wbr>定による審理手続を終結した旨の通知は、書面により行うものとする。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　法第九条第三項の規定により読み替えて適用する法第四十一条第三項の規<wbr>定による審理手続を終結した旨の通知は、書面により行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（裁決書の謄本の送達の方式等）</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（裁決書の謄本の送達の方式等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　法第五十一条第二項又は第四項の規定による裁決書の謄本の送付は、当該<wbr>謄本に裁決書謄本送付書を付して行うものとする。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　法第五十一条第二項又は第四項の規定による裁決書の謄本の送付は、当該<wbr>謄本に裁決書謄本送付書を付して行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第五十一条第二項ただし書の規定による公示の方法による送達をした<wbr>ときは、参加人及び処分庁等に対し、書面によりその旨を通知するものとする。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">２　審査庁は、法第五十一条第二項ただし書の規定による公示の方法による送達をした<wbr>ときは、参加人及び処分庁等に対し、書面によりその旨を通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等の返還に関する規定の準用）</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">（証拠書類等の返還に関する規定の準用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　第十条第二項後段の規定は、法第五十三条の規定による返還について準用<wbr>する。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　第十条第二項後段の規定は、法第五十三条の規定による返還について準用<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第三章　行政機関の保有する情報の公開に関する法律等に関する審査請求に関する手続<wbr></span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第三章　行政機関の保有する情報の公開に関する法律等に関する審査請求に関する手続<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（審理官に関する規定の適用除外等）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（審理官に関する規定の適用除外等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　行政機関の保有する情報の公開に関する法律（平成十一年法律第四十二号<wbr>）第十八条第一項に規定する審査請求及び行政機関の保有する個人情報の保護に関する<wbr>法律（平成十五年法律第五十八号）第四十二条第一項に規定する審査請求（次項におい<wbr>て「行政機関情報公開法等に関する審査請求」という。）については、第三条、第十条<wbr>第二項、第十一条から第二十五条まで及び第二十七条の規定は、適用しない。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　行政機関の保有する情報の公開に関する法律（平成十一年法律第四十二号<wbr>）第十八条第一項に規定する審査請求及び行政機関の保有する個人情報の保護に関する<wbr>法律（平成十五年法律第五十八号）第四十二条第一項に規定する審査請求（次項におい<wbr>て「行政機関情報公開法等に関する審査請求」という。）については、第三条、第十条<wbr>第二項、第十一条から第二十五条まで及び第二十七条の規定は、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">114</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　行政機関情報公開法等に関する審査請求についての第二章の規定の適用については<wbr>、第五条第一項中「法第九条第三項」とあるのは「行政機関の保有する情報の公開に関<wbr>する法律（平成十一年法律第四十二号。以下「行政機関情報公開法」という。）第十八<wbr>条第二項又は行政機関の保有する個人情報の保護に関する</span><span style="color: #000000; background-color: #efcb05; ">律（平成十五年法律第五十八<wbr>号。以下「行政機関個人情報保護法」という。）第四十二条第二項」と、第六条第一項<wbr>及び第二項中「法第九条第三項」とあるのは「行政機関情報公開法第十八条第二項又は<wbr>行政機関個人情報保護法第四十二条第二項」とする。</span></code></td>
+<td class="ln">114</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　行政機関情報公開法等に関する審査請求についての第二章の規定の適用については<wbr>、第五条第一項中「法第九条第三項」とあるのは「行政機関の保有する情報の公開に関<wbr>する法律（平成十一年法律第四十二号。以下「行政機関情報公開法」という。）第十八<wbr>条第二項又は行政機関の保有する個人情報の保護に関する</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">律（平成十五年法律第五十<wbr>八号。以下「行政機関個人情報保護法」という。）第四十二条第二項」と、第六条第一<wbr>項及び第二項中「法第九条第三項」とあるのは「行政機関情報公開法第十八条第二項又<wbr>は行政機関個人情報保護法第四十二条第二項」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">１　この規則は、法の施行の日（平成二十八年四月一日）から施行する。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">１　この規則は、法の施行の日（平成二十八年四月一日）から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">２　行政庁の処分又は不作為についての国家公安委員会に対する不服申立てであって、<wbr>法の施行前にされた行政庁の処分又は法の施行前にされた申請に係る行政庁の不作為に<wbr>係るものについては、なお従前の例による。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">２　行政庁の処分又は不作為についての国家公安委員会に対する不服申立てであって、<wbr>法の施行前にされた行政庁の処分又は法の施行前にされた申請に係る行政庁の不作為に<wbr>係るものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">118</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第１号</span><span style="color: #000000; background-color: #efcb05; ">（第１０条、第１７条、第２７条関係）</span></code></td>
+<td class="ln">118</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第１号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第１０条、第１７条、第２７条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第２号</span><span style="color: #000000; background-color: #efcb05; ">（第１７条関係）</span></code></td>
+<td class="ln">119</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第３号</span><span style="color: #000000; background-color: #efcb05; ">（第２３条関係）</span></code></td>
+<td class="ln">120</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第２号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第１７条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第４号</span><span style="color: #000000; background-color: #efcb05; ">（第２３条関係）</span></code></td>
+<td class="ln">121</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">122</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第３号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２３条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">123</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">124</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">別記様式第４号</span><span class="sf17b18"> </span><span style="color: #000000; background-color: #efcb05; ">（第２３条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">125</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第二百十七号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第二百十七号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">独立行政法人駐留軍等労働者労務管理機構法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">独立行政法人駐留軍等労働者労務管理機構法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第六条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員（第七条―第九条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員（第七条―第九条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十条・第十一条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十条・第十一条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十二条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十三条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人駐留軍等労働者労務管理機構の名称、目的、業務の<wbr>範囲等に関する事項を定めることを目的とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人駐留軍等労働者労務管理機構の名称、目的、業務の<wbr>範囲等に関する事項を定めることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、独立行政法人駐留軍等労働者労務管理機構とする。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、独立行政法人駐留軍等労働者労務管理機構とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（機構の目的）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（機構の目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　独立行政法人駐留軍等労働者労務管理機構（以下「機構」という。）は、駐留<wbr>軍等及び諸機関（防衛省設置法（昭和二十九年法律第百六十四号）第四条第一項第二十<wbr>五号に規定する駐留軍等及び諸機関をいう。以下この条において同じ。）のために労務<wbr>に服する者（第十条第一項において「駐留軍等労働者」という。）の雇入れ、提供、労<wbr>務管理、給与及び福利厚生に関する業務を行うことにより、駐留軍等及び諸機関に必要<wbr>な労働力の確保を図ることを目的とする。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　独立行政法人駐留軍等労働者労務管理機構（以下「機構」という。）は、駐留<wbr>軍等及び諸機関（防衛省設置法（昭和二十九年法律第百六十四号）第四条第一項第二十<wbr>五号に規定する駐留軍等及び諸機関をいう。以下この条において同じ。）のために労務<wbr>に服する者（第十条第一項において「駐留軍等労働者」という。）の雇入れ、提供、労<wbr>務管理、給与及び福利厚生に関する業務を行うことにより、駐留軍等及び諸機関に必要<wbr>な労働力の確保を図ることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（行政執行法人）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（行政執行法人）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四条　機構は、通則法第二条第四項に規定する行政執行法人とする。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第四条　機構は、通則法第二条第四項に規定する行政執行法人とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構は、主たる事務所を東京都に置く。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構は、主たる事務所を東京都に置く。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構の資本金は、附則第五条第二項の規定により政府から出資があったものと<wbr>された金額とする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構の資本金は、附則第五条第二項の規定により政府から出資があったものと<wbr>された金額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　政府は、必要があると認めるときは、予算で定める金額の範囲内において、機構に<wbr>追加して出資することができる。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　政府は、必要があると認めるときは、予算で定める金額の範囲内において、機構に<wbr>追加して出資することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項の規定による政府の出資があったときは、その出資額により資本金を<wbr>増加するものとする。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項の規定による政府の出資があったときは、その出資額により資本金を<wbr>増加するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第七条　機構に、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第七条　機構に、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">２　機構に、役員として、理事二人以内を置くことができる。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">２　機構に、役員として、理事二人以内を置くことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事は、理事長の定めるところにより、理事長を補佐して機構の業務を掌理す<wbr>る。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事は、理事長の定めるところにより、理事長を補佐して機構の業務を掌理す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（理事長及び理事の任期等）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（理事長及び理事の任期等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第九条　通則法第二十一条の三第一項の個別法で定める期間は、四年とする。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第九条　通則法第二十一条の三第一項の個別法で定める期間は、四年とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　理事の任期は、二年とする。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　理事の任期は、二年とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第十条　機構は、第三条の目的を達成するため、次の業務を行う。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第十条　機構は、第三条の目的を達成するため、次の業務を行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">一　駐留軍等労働者の雇入れ、提供及び労務管理の実施（次に掲げるものを除く。）に<wbr>関する業務を行うこと。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">一　駐留軍等労働者の雇入れ、提供及び労務管理の実施（次に掲げるものを除く。）に<wbr>関する業務を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">イ　労働契約の締結</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">イ　労働契約の締結</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">ロ　昇格その他の人事の決定</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">ロ　昇格その他の人事の決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　駐留軍等労働者の給与の支給（次に掲げるものを除く。）に関する業務を行うこと<wbr>。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　駐留軍等労働者の給与の支給（次に掲げるものを除く。）に関する業務を行うこと<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">イ　額の決定</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">イ　額の決定</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ロ　給与の支払</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ロ　給与の支払</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">三　駐留軍等労働者の福利厚生の実施（次に掲げるものを除く。）に関する業務を行う<wbr>こと。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">三　駐留軍等労働者の福利厚生の実施（次に掲げるものを除く。）に関する業務を行う<wbr>こと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">イ　法令の規定により事業主、事業者又は船舶所有者でなければ行うことができないと<wbr>される事項</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">イ　法令の規定により事業主、事業者又は船舶所有者でなければ行うことができないと<wbr>される事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ロ　宿舎に供される行政財産の管理</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ロ　宿舎に供される行政財産の管理</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ハ　表彰（永年勤続に係るものに限る。）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ハ　表彰（永年勤続に係るものに限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">四　前三号の業務に附帯する業務を行うこと。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">四　前三号の業務に附帯する業務を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、前項の業務のほか、同項の業務の遂行に支障のない範囲内で、国の委託に<wbr>基づき、同項第三号イからハまでに掲げる業務の一部を行うことができる。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、前項の業務のほか、同項の業務の遂行に支障のない範囲内で、国の委託に<wbr>基づき、同項第三号イからハまでに掲げる業務の一部を行うことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第十一条　機構は、毎事業年度に係る通則法第四十四条第一項又は第二項の規定による<wbr>整理を行った後、同条第一項の規定による積立金があるときは、その額に相当する金額<wbr>のうち防衛大臣の承認を受けた金額を、翌事業年度に係る通則法第三十五条の十第一項<wbr>の認可を受けた事業計画（同項後段の規定による変更の認可を受けたときは、その変更<wbr>後のもの）の定めるところにより、翌事業年度における前条に規定する業務の財源に充<wbr>てることができる。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第十一条　機構は、毎事業年度に係る通則法第四十四条第一項又は第二項の規定による<wbr>整理を行った後、同条第一項の規定による積立金があるときは、その額に相当する金額<wbr>のうち防衛大臣の承認を受けた金額を、翌事業年度に係る通則法第三十五条の十第一項<wbr>の認可を受けた事業計画（同項後段の規定による変更の認可を受けたときは、その変更<wbr>後のもの）の定めるところにより、翌事業年度における前条に規定する業務の財源に充<wbr>てることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　防衛大臣は、前項の規定による承認をしようとするときは、財務大臣に協議しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　防衛大臣は、前項の規定による承認をしようとするときは、財務大臣に協議しなけ<wbr>ればならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、第一項に規定する積立金の額に相当する金額から同項の規定による承認を<wbr>受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しなければな<wbr>らない。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、第一項に規定する積立金の額に相当する金額から同項の規定による承認を<wbr>受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第十二条　機構に係る通則法における主務大臣及び主務省令は、それぞれ防衛大臣及び<wbr>防衛省令とする。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第十二条　機構に係る通則法における主務大臣及び主務省令は、それぞれ防衛大臣及び<wbr>防衛省令とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十三条　次の各号のいずれかに該当する場合には、その違反行為をした機構の役員は<wbr>、二十万円以下の過料に処する。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十三条　次の各号のいずれかに該当する場合には、その違反行為をした機構の役員は<wbr>、二十万円以下の過料に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　第十条及び附則第六条に規定する業務以外の業務を行ったとき。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　第十条及び附則第六条に規定する業務以外の業務を行ったとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　第十一条第一項の規定により防衛大臣の承認を受けなければならない場合において<wbr>、その承認を受けなかったとき。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　第十一条第一項の規定により防衛大臣の承認を受けなければならない場合において<wbr>、その承認を受けなかったとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第二条　機構の成立の際現に内閣府の部局又は機関で政令で定めるものの職員である者<wbr>は、防衛施設庁長官が指名する者を除き、別に辞令を発せられない限り、機構の成立の<wbr>日において、機構の相当の職員となるものとする。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第二条　機構の成立の際現に内閣府の部局又は機関で政令で定めるものの職員である者<wbr>は、防衛施設庁長官が指名する者を除き、別に辞令を発せられない限り、機構の成立の<wbr>日において、機構の相当の職員となるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">68</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　機構の成立の際現に前条に規定する政令で定める部局又は機関の職員である者<wbr>のうち、機構の成立の日において引き続き機構の職員となったもの（次条において「引<wbr>継職員」という。）であって、機構の成立の日の前日において内閣総理大臣又はその委<wbr>任を受けた者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（</span><span style="color: #000000; background-color: #efcb05; ">附則第六<wbr>条第二項、第七条第四項又は第八条第四項において準用する場合を含む。以下この条に<wbr>おいて同じ。）の規定による認定を受けているものが、機構の成立の日において児童手<wbr>当又は同法附則第六条第一項、第七条第一項若しくは第八条第一項の給付（以下この条<wbr>において「特例給付等」という。）の支給要件に該当するときは、その者に対する児童<wbr>手当又は特例給付等の支給に関しては、機構の成立の日において同法第七条第一項の規<wbr>定による市町村長（特別区の区長を含む。）の認定があったものとみなす。この場合に<wbr>おいて、その認定があったものとみなされた児童手当又は特例給付等の支給は、同法第<wbr>八条第二項（同法附則第六条第二項、第七条第四項又は第八条第四項において準用する<wbr>場合を含む。）の規定にかかわらず、機構の成立の日の前日の属する月の翌月から始め<wbr>る。</span></code></td>
+<td class="ln">68</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　機構の成立の際現に前条に規定する政令で定める部局又は機関の職員である者<wbr>のうち、機構の成立の日において引き続き機構の職員となったもの（次条において「引<wbr>継職員」という。）であって、機構の成立の日の前日において内閣総理大臣又はその委<wbr>任を受けた者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">附則<wbr>第六条第二項、第七条第四項又は第八条第四項において準用する場合を含む。以下この<wbr>条において同じ。）の規定による認定を受けているものが、機構の成立の日において児<wbr>童手当又は同法附則第六条第一項、第七条第一項若しくは第八条第一項の給付（以下こ<wbr>の条において「特例給付等」という。）の支給要件に該当するときは、その者に対する<wbr>児童手当又は特例給付等の支給に関しては、機構の成立の日において同法第七条第一項<wbr>の規定による市町村長（特別区の区長を含む。）の認定があったものとみなす。この場<wbr>合において、その認定があったものとみなされた児童手当又は特例給付等の支給は、同<wbr>法第八条第二項（同法附則第六条第二項、第七条第四項又は第八条第四項において準用<wbr>する場合を含む。）の規定にかかわらず、機構の成立の日の前日の属する月の翌月から<wbr>始める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（機構の職員となる者の職員団体についての経過措置）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（機構の職員となる者の職員団体についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第四条　機構の成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）第百<wbr>八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員であるも<wbr>のは、機構の成立の際国営企業及び特定独立行政法人の労働関係に関する法律（昭和二<wbr>十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この場合にお<wbr>いて、当該職員団体が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第四条　機構の成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）第百<wbr>八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員であるも<wbr>のは、機構の成立の際国営企業及び特定独立行政法人の労働関係に関する法律（昭和二<wbr>十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この場合にお<wbr>いて、当該職員団体が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、機構の成立の日から起算し<wbr>て六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二条及<wbr>び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる事務<wbr>所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、機構の成立の日から起算し<wbr>て六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二条及<wbr>び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる事務<wbr>所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、機構の成立の日から起算し<wbr>て六十日を経過する日までは、労働組合法第二条ただし書（第一号に係る部分に限る。<wbr>）の規定は、適用しない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、機構の成立の日から起算し<wbr>て六十日を経過する日までは、労働組合法第二条ただし書（第一号に係る部分に限る。<wbr>）の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継等）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構の成立の際、第十条第一項に規定する業務に関し、現に国が有する権利及<wbr>び義務のうち政令で定めるものは、機構の成立の時において機構が承継する。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第五条　機構の成立の際、第十条第一項に規定する業務に関し、現に国が有する権利及<wbr>び義務のうち政令で定めるものは、機構の成立の時において機構が承継する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により機構が国の有する権利及び義務を承継したときは、その承継の際<wbr>、承継される権利に係る土地、建物その他の財産で政令で定めるものの価額の合計額に<wbr>相当する金額は、政府から機構に対し出資されたものとする。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により機構が国の有する権利及び義務を承継したときは、その承継の際<wbr>、承継される権利に係る土地、建物その他の財産で政令で定めるものの価額の合計額に<wbr>相当する金額は、政府から機構に対し出資されたものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により政府から出資があったものとされる同項の財産の価額は、機構の<wbr>成立の日現在における時価を基準として評価委員が評価した価額とする。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により政府から出資があったものとされる同項の財産の価額は、機構の<wbr>成立の日現在における時価を基準として評価委員が評価した価額とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">４　前項の評価委員その他評価に関し必要な事項は、政令で定める。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">４　前項の評価委員その他評価に関し必要な事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（業務の特例）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（業務の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構は、第十条第二項に規定する業務のほか、同条第一項の業務の遂行に支障<wbr>のない範囲内で、国の委託に基づき、駐留軍関係離職者等臨時措置法（昭和三十三年法<wbr>律第百五十八号）第十条第三項の規定による特別の措置及び同法第十五条第一項の規定<wbr>による特別給付金の支給に関する業務の一部を行うことができる。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構は、第十条第二項に規定する業務のほか、同条第一項の業務の遂行に支障<wbr>のない範囲内で、国の委託に基づき、駐留軍関係離職者等臨時措置法（昭和三十三年法<wbr>律第百五十八号）第十条第三項の規定による特別の措置及び同法第十五条第一項の規定<wbr>による特別給付金の支給に関する業務の一部を行うことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第七条　附則第二条から前条までに定めるもののほか、機構の設立に伴い必要な経過措<wbr>置その他この法律の施行に関し必要な経過措置は、政令で定める。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第七条　附則第二条から前条までに定めるもののほか、機構の設立に伴い必要な経過措<wbr>置その他この法律の施行に関し必要な経過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年一二月二二日法律第一一八号）　抄</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年一二月二二日法律第一一八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月一一日法律第六六号）　抄</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月一一日法律第六六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十八年四月一日から施行する。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十八年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十七年政令第百三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十七年政令第百三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">沖縄の復帰に伴う環境庁関係法令の適用の特別措置に関する政令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">沖縄の復帰に伴う環境庁関係法令の適用の特別措置に関する政令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、沖縄の復帰に伴う特別措置に関する法律（昭和四十六年法律第百二十九号）第<wbr>五十三条第一項、第五十四条並びに第百五十六条第一項及び第三項の規定に基づき、こ<wbr>の政令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、沖縄の復帰に伴う特別措置に関する法律（昭和四十六年法律第百二十九号）第<wbr>五十三条第一項、第五十四条並びに第百五十六条第一項及び第三項の規定に基づき、こ<wbr>の政令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（鳥獣保護及狩猟ニ関スル法律関係）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（鳥獣保護及狩猟ニ関スル法律関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　沖縄の復帰に伴う特別措置に関する法律（以下「法」という。）の施行の際鳥<wbr>獣保護及び狩猟に関する立法（千九百五十三年立法第八十号。以下第四条までにおいて<wbr>「沖縄法」という。）第一条の二の規定によりたてられている鳥獣保護事業計画は、次<wbr>項に規定する鳥獣保護事業計画の始期が到来するまでの間は、鳥獣保護及狩猟ニ関スル<wbr>法律（大正七年法律第三十二号。以下第四条までにおいて「本土法」という。）第一条<wbr>ノ二の規定によりたてられた鳥獣保護事業計画とみなす。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　沖縄の復帰に伴う特別措置に関する法律（以下「法」という。）の施行の際鳥<wbr>獣保護及び狩猟に関する立法（千九百五十三年立法第八十号。以下第四条までにおいて<wbr>「沖縄法」という。）第一条の二の規定によりたてられている鳥獣保護事業計画は、次<wbr>項に規定する鳥獣保護事業計画の始期が到来するまでの間は、鳥獣保護及狩猟ニ関スル<wbr>法律（大正七年法律第三十二号。以下第四条までにおいて「本土法」という。）第一条<wbr>ノ二の規定によりたてられた鳥獣保護事業計画とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行後、沖縄県知事が本土法第一条ノ二の規定により最初にたてる鳥獣保護事<wbr>業計画の始期は、昭和四十八年四月一日とし、同計画は、昭和四十七年十二月三十一日<wbr>までにたてなければならない。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行後、沖縄県知事が本土法第一条ノ二の規定により最初にたてる鳥獣保護事<wbr>業計画の始期は、昭和四十八年四月一日とし、同計画は、昭和四十七年十二月三十一日<wbr>までにたてなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法の施行の際沖縄法第一条の四第二項の規定に基づく規則により定められてい<wbr>る狩猟鳥獣以外の鳥獣で本土法第一条ノ四第二項の規定により定められている狩猟鳥獣<wbr>に相当するものがあるときは、当該鳥獣は、同法第一条ノ四第三項の規定に基づき沖縄<wbr>県知事によりその捕獲を禁止された狩猟鳥獣の種類とみなして、同法の規定を適用する<wbr>。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　法の施行の際沖縄法第一条の四第二項の規定に基づく規則により定められてい<wbr>る狩猟鳥獣以外の鳥獣で本土法第一条ノ四第二項の規定により定められている狩猟鳥獣<wbr>に相当するものがあるときは、当該鳥獣は、同法第一条ノ四第三項の規定に基づき沖縄<wbr>県知事によりその捕獲を禁止された狩猟鳥獣の種類とみなして、同法の規定を適用する<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">8</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　法の施行の際沖縄法第一条の四第三項の規定により定められている狩猟鳥獣の種類<wbr>、区域、期間又は猟法は、本土</span><span style="color: #000000; background-color: #efcb05; ">第一条ノ四第三項の規定に基づき沖縄県知事により定め<wbr>られた狩猟鳥獣の種類、区域、期間又は猟法とみなして、同法の規定を適用する。</span></code></td>
+<td class="ln">8</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　法の施行の際沖縄法第一条の四第三項の規定により定められている狩猟鳥獣の種類<wbr>、区域、期間又は猟法は、本土</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">第一条ノ四第三項の規定に基づき沖縄県知事により定<wbr>められた狩猟鳥獣の種類、区域、期間又は猟法とみなして、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">３　法の施行の際沖縄法第九条第一項の規定により設定されている鳥獣保護区は、その<wbr>区域をもつて本土法第八条ノ二第一項の規定に基づき沖縄県知事により設定された鳥獣<wbr>保護区とみなし、当該鳥獣保護区の区域は、同条第三項の規定に基づき沖縄県知事によ<wbr>り指定された特別保護地区とみなす。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">３　法の施行の際沖縄法第九条第一項の規定により設定されている鳥獣保護区は、その<wbr>区域をもつて本土法第八条ノ二第一項の規定に基づき沖縄県知事により設定された鳥獣<wbr>保護区とみなし、当該鳥獣保護区の区域は、同条第三項の規定に基づき沖縄県知事によ<wbr>り指定された特別保護地区とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行前に、沖縄法第九条第三項の規定による施設の設置により、又は同条第四<wbr>項の許可を受けることができないことにより損失を受けた者（その損失につき、法の施<wbr>行前に沖縄法第九条第六項の規定により補償を受けた者を除く。）は、本土法第八条ノ<wbr>二第二項の規定に基づく沖縄県知事による施設の設置により損失を受け、又は同条第五<wbr>項の規定に基づく沖縄県知事の許可を受けることができないことにより損失を受けたも<wbr>のとみなして、同条第七項から第十項までの規定を適用する。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行前に、沖縄法第九条第三項の規定による施設の設置により、又は同条第四<wbr>項の許可を受けることができないことにより損失を受けた者（その損失につき、法の施<wbr>行前に沖縄法第九条第六項の規定により補償を受けた者を除く。）は、本土法第八条ノ<wbr>二第二項の規定に基づく沖縄県知事による施設の設置により損失を受け、又は同条第五<wbr>項の規定に基づく沖縄県知事の許可を受けることができないことにより損失を受けたも<wbr>のとみなして、同条第七項から第十項までの規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">５　法の施行の際沖縄法第十条の規定により設けられている禁猟区は、その区域をもつ<wbr>て本土法第八条ノ二第一項の規定に基づき沖縄県知事により設定された鳥獣保護区とみ<wbr>なす。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">５　法の施行の際沖縄法第十条の規定により設けられている禁猟区は、その区域をもつ<wbr>て本土法第八条ノ二第一項の規定に基づき沖縄県知事により設定された鳥獣保護区とみ<wbr>なす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">６　前項の規定により鳥獣保護区とみなされた区域については、本土法第八条ノ二第二<wbr>項の規定は、次項の規定による異議の申出がなかつたときは第八項に定める期間の末日<wbr>まで、次項の規定による異議の申出があつたときは第九項前段の決定があるまでは、適<wbr>用しない。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">６　前項の規定により鳥獣保護区とみなされた区域については、本土法第八条ノ二第二<wbr>項の規定は、次項の規定による異議の申出がなかつたときは第八項に定める期間の末日<wbr>まで、次項の規定による異議の申出があつたときは第九項前段の決定があるまでは、適<wbr>用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">７　沖縄県知事は、法の施行の日から起算して三十日以内に、本土法第八条ノ二第二項<wbr>の規定の適用につき異議のある利害関係人は沖縄県知事に異議を申し出ることができる<wbr>旨の公告をしなければならない。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">７　沖縄県知事は、法の施行の日から起算して三十日以内に、本土法第八条ノ二第二項<wbr>の規定の適用につき異議のある利害関係人は沖縄県知事に異議を申し出ることができる<wbr>旨の公告をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定により異議を申し出ることができる期間は、同項の公告があつた日の翌<wbr>日から起算して六十日とする。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定により異議を申し出ることができる期間は、同項の公告があつた日の翌<wbr>日から起算して六十日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">９　沖縄県知事は、第七項の規定による異議の申出があつたときは、その申出があつた<wbr>日から起算して六十日以内に、当該異議の申出について決定をしなければならない。こ<wbr>の場合において、異議を正当と認める旨の決定をするときは、同時に当該鳥獣保護区の<wbr>設定を取り消さなければならない。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">９　沖縄県知事は、第七項の規定による異議の申出があつたときは、その申出があつた<wbr>日から起算して六十日以内に、当該異議の申出について決定をしなければならない。こ<wbr>の場合において、異議を正当と認める旨の決定をするときは、同時に当該鳥獣保護区の<wbr>設定を取り消さなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">10　本土法第一条ノ四第五項の規定は、前項前段の決定について準用する。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">10　本土法第一条ノ四第五項の規定は、前項前段の決定について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">11　法の施行の際沖縄法第十一条の規定により設けられている銃猟禁止区域又は同法<wbr>第十一条の二第一項の規定により設けられている休猟区は、それぞれその区域をもつて<wbr>本土法第十条の規定により設けられた銃猟禁止区域又は同法第九条の規定により設けら<wbr>れた休猟区とみなす。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">11　法の施行の際沖縄法第十一条の規定により設けられている銃猟禁止区域又は同法<wbr>第十一条の二第一項の規定により設けられている休猟区は、それぞれその区域をもつて<wbr>本土法第十条の規定により設けられた銃猟禁止区域又は同法第九条の規定により設けら<wbr>れた休猟区とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条に規定するもののほか、法の施行前に本土法又はこれに基づく命令の規定<wbr>に相当する沖縄法又はこれに基づく規則の規定によりされた処分又は手続は、それぞれ<wbr>本土法又はこれに基づく命令の相当規定によりされた処分又は手続とみなして、同法の<wbr>規定を適用する。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条に規定するもののほか、法の施行前に本土法又はこれに基づく命令の規定<wbr>に相当する沖縄法又はこれに基づく規則の規定によりされた処分又は手続は、それぞれ<wbr>本土法又はこれに基づく命令の相当規定によりされた処分又は手続とみなして、同法の<wbr>規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行前に沖縄法又はこれに基づく規則の規定により交付された許可証又は証明<wbr>書についても、前項と同様とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行前に沖縄法又はこれに基づく規則の規定により交付された許可証又は証明<wbr>書についても、前項と同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　法の施行の際沖縄法第二十一条の四の規定により司法警察員としての職務を行<wbr>なつている者で、法の施行後も引き続き沖縄県の吏員として狩猟に関する取締りの事務<wbr>を担当するものは、沖縄県知事が本土法第二十条ノ四の規定により司法警察員として指<wbr>名したものとみなす。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　法の施行の際沖縄法第二十一条の四の規定により司法警察員としての職務を行<wbr>なつている者で、法の施行後も引き続き沖縄県の吏員として狩猟に関する取締りの事務<wbr>を担当するものは、沖縄県知事が本土法第二十条ノ四の規定により司法警察員として指<wbr>名したものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">21</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　前項の規定により司法警察員として指名されたものとみなされた沖縄県の吏員及び<wbr>法の施行後に本土</span><span style="color: #000000; background-color: #efcb05; ">第二十条ノ四の規定により司法警察員としての職務を行なうものとし<wbr>て指名された沖縄県の吏員は、法の施行前にされた沖縄法又はこれに基づく規則の違反<wbr>の罪についても、司法警察員としての職務を行なうものとする。</span></code></td>
+<td class="ln">21</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　前項の規定により司法警察員として指名されたものとみなされた沖縄県の吏員及び<wbr>法の施行後に本土</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">第二十条ノ四の規定により司法警察員としての職務を行なうものと<wbr>して指名された沖縄県の吏員は、法の施行前にされた沖縄法又はこれに基づく規則の違<wbr>反の罪についても、司法警察員としての職務を行なうものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">３　沖縄法第二十条、第二十五条（同条第一号中、第二十条に係る部分に限る。）及び<wbr>第二十九条の規定は、法の施行前に沖縄法又はこれに基づく規則に違反して捕獲した鳥<wbr>獣又は採取した鳥類の卵の法の施行後においてされる譲渡し又は譲受けについて、なお<wbr>効力を有する。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">３　沖縄法第二十条、第二十五条（同条第一号中、第二十条に係る部分に限る。）及び<wbr>第二十九条の規定は、法の施行前に沖縄法又はこれに基づく規則に違反して捕獲した鳥<wbr>獣又は採取した鳥類の卵の法の施行後においてされる譲渡し又は譲受けについて、なお<wbr>効力を有する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（温泉法関係）</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（温泉法関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第五条　法の施行の際沖縄の区域内において温泉をゆう出させる目的で土地の掘さくの<wbr>工事に着手している者又は温泉のゆう出路の増掘若しくは温泉のゆう出量を増加させる<wbr>ための動力装置の工事に着手している者は、温泉法（昭和二十三年法律第百二十五号）<wbr>第三条第一項又は第八条第一項の許可を受けた者とみなして、同法の規定を適用する。<wbr>この場合において、同法第五条中「着手後」とあるのは、「沖縄の復帰に伴う特別措置<wbr>に関する法律の施行の日以後」とする。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第五条　法の施行の際沖縄の区域内において温泉をゆう出させる目的で土地の掘さくの<wbr>工事に着手している者又は温泉のゆう出路の増掘若しくは温泉のゆう出量を増加させる<wbr>ための動力装置の工事に着手している者は、温泉法（昭和二十三年法律第百二十五号）<wbr>第三条第一項又は第八条第一項の許可を受けた者とみなして、同法の規定を適用する。<wbr>この場合において、同法第五条中「着手後」とあるのは、「沖縄の復帰に伴う特別措置<wbr>に関する法律の施行の日以後」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定に該当する者は、法の施行の日から起算して三月以内に、総理府令の定<wbr>めるところにより、沖縄県知事にその旨を届け出なければならない。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定に該当する者は、法の施行の日から起算して三月以内に、総理府令の定<wbr>めるところにより、沖縄県知事にその旨を届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">26</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　</span><span style="color: #000000; background-color: #efcb05; ">の施行の際沖縄の区域内において温泉を公共の浴用又は飲用に供している者は、温<wbr>泉法第十二条第一項の許可を受けたものとみなして、同法の規定を適用する。ただし、<wbr>同法第十三条の規定は、法の施行の日から起算して三月を経過する日までの間は、適用<wbr>しない。</span></code></td>
+<td class="ln">26</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">３　</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">の施行の際沖縄の区域内において温泉を公共の浴用又は飲用に供している者は、<wbr>温泉法第十二条第一項の許可を受けたものとみなして、同法の規定を適用する。ただし<wbr>、同法第十三条の規定は、法の施行の日から起算して三月を経過する日までの間は、適<wbr>用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">４　前項の規定に該当する者は、法の施行の日から起算して三月以内に、総理府令の定<wbr>めるところにより、沖縄県知事にその旨を届け出なければならない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">４　前項の規定に該当する者は、法の施行の日から起算して三月以内に、総理府令の定<wbr>めるところにより、沖縄県知事にその旨を届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">５　第二項又は前項の規定による届出をせず、又は虚偽の届出をした者は、五千円以下<wbr>の罰金に処する。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">５　第二項又は前項の規定による届出をせず、又は虚偽の届出をした者は、五千円以下<wbr>の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">６　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対して同項の罰金刑を科する。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">６　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対して同項の罰金刑を科する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（自然公園法関係）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（自然公園法関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第六条　法の施行の際政府立公園法（千九百五十七年立法第五十六号。以下次条までに<wbr>おいて「沖縄法」という。）第二条の規定により指定されている政府立公園のうち、西<wbr>表政府立公園は、その区域をもつて自然公園法（昭和三十二年法律第百六十一号。以下<wbr>次条までにおいて「本土法」という。）第十条第一項の規定により指定された西表国立<wbr>公園と、沖縄海岸政府立公園又は沖縄戦跡政府立公園は、それぞれその区域をもつて本<wbr>土法第十条第二項の規定により指定された沖縄海岸国定公園又は沖縄戦跡国定公園とみ<wbr>なす。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第六条　法の施行の際政府立公園法（千九百五十七年立法第五十六号。以下次条までに<wbr>おいて「沖縄法」という。）第二条の規定により指定されている政府立公園のうち、西<wbr>表政府立公園は、その区域をもつて自然公園法（昭和三十二年法律第百六十一号。以下<wbr>次条までにおいて「本土法」という。）第十条第一項の規定により指定された西表国立<wbr>公園と、沖縄海岸政府立公園又は沖縄戦跡政府立公園は、それぞれその区域をもつて本<wbr>土法第十条第二項の規定により指定された沖縄海岸国定公園又は沖縄戦跡国定公園とみ<wbr>なす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により国立公園とみなされた西表政府立公園に関する政府立公園計画又<wbr>は政府立公園事業は、本土法第十二条第一項の規定により決定された西表国立公園に関<wbr>する公園計画又は公園事業とみなして、同法の規定を適用する。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により国立公園とみなされた西表政府立公園に関する政府立公園計画又<wbr>は政府立公園事業は、本土法第十二条第一項の規定により決定された西表国立公園に関<wbr>する公園計画又は公園事業とみなして、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により国定公園とみなされた沖縄海岸政府立公園又は沖縄戦跡政府立<wbr>公園に関する政府立公園計画のうち、保護に関する統制の計画並びに利用に関する施設<wbr>の計画で集団施設地区及び自然公園法施行令（昭和三十二年政令第二百九十八号）第五<wbr>条に規定する施設に相当するものに関するものは、本土法第十二条第二項の規定に基づ<wbr>き環境庁長官が、その他の計画は、同項の規定に基づき沖縄県知事が決定したものとみ<wbr>なして、同法の規定を適用する。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により国定公園とみなされた沖縄海岸政府立公園又は沖縄戦跡政府立<wbr>公園に関する政府立公園計画のうち、保護に関する統制の計画並びに利用に関する施設<wbr>の計画で集団施設地区及び自然公園法施行令（昭和三十二年政令第二百九十八号）第五<wbr>条に規定する施設に相当するものに関するものは、本土法第十二条第二項の規定に基づ<wbr>き環境庁長官が、その他の計画は、同項の規定に基づき沖縄県知事が決定したものとみ<wbr>なして、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の規定により国定公園とみなされた沖縄海岸政府立公園又は沖縄戦跡政府立<wbr>公園に関する政府立公園事業は、本土法第十二条第三項の規定により決定された沖縄海<wbr>岸国定公園又は沖縄戦跡国定公園に関する公園事業とみなして、同法の規定を適用する<wbr>。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">４　第一項の規定により国定公園とみなされた沖縄海岸政府立公園又は沖縄戦跡政府立<wbr>公園に関する政府立公園事業は、本土法第十二条第三項の規定により決定された沖縄海<wbr>岸国定公園又は沖縄戦跡国定公園に関する公園事業とみなして、同法の規定を適用する<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">５　第一項の規定により国立公園とみなされた西表政府立公園の特別地域は、その区域<wbr>をもつて本土法第十七条第一項の規定により指定された西表国立公園の特別地域と、第<wbr>一項の規定により国定公園とみなされた沖縄海岸政府立公園又は沖縄戦跡政府立公園の<wbr>特別地域、特別保護地区又は海中公園地区は、それぞれその区域をもつて同法第十七条<wbr>第一項、第十八条第一項又は第十八条の二第一項の規定により指定された沖縄海岸国定<wbr>公園又は沖縄戦跡国定公園の特別地域、特別保護地区又は海中公園地区とみなして、同<wbr>法の規定を適用する。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">５　第一項の規定により国立公園とみなされた西表政府立公園の特別地域は、その区域<wbr>をもつて本土法第十七条第一項の規定により指定された西表国立公園の特別地域と、第<wbr>一項の規定により国定公園とみなされた沖縄海岸政府立公園又は沖縄戦跡政府立公園の<wbr>特別地域、特別保護地区又は海中公園地区は、それぞれその区域をもつて同法第十七条<wbr>第一項、第十八条第一項又は第十八条の二第一項の規定により指定された沖縄海岸国定<wbr>公園又は沖縄戦跡国定公園の特別地域、特別保護地区又は海中公園地区とみなして、同<wbr>法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">６　法の施行の際沖縄法第十六条の二の規定により指定されている沖縄海岸政府立公園<wbr>の集団施設地区は、本土法第二十三条第一項の規定により指定された沖縄海岸国定公園<wbr>の集団施設地区とみなして、同法の規定を適用する。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">６　法の施行の際沖縄法第十六条の二の規定により指定されている沖縄海岸政府立公園<wbr>の集団施設地区は、本土法第二十三条第一項の規定により指定された沖縄海岸国定公園<wbr>の集団施設地区とみなして、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">７　環境庁長官は、法の施行後すみやかに、第一項の規定により国立公園とみなされた<wbr>西表国立公園並びに同項の規定により国定公園とみなされた沖縄海岸国定公園及び沖縄<wbr>戦跡国定公園の区域並びに当該国立公園又は国定公園に関する公園計画及び公園事業の<wbr>概要を公示しなければならない。当該国立公園又は国定公園の特別地域、特別保護地区<wbr>、海中公園地区又は集団施設地区の区域についても、同様とする。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">７　環境庁長官は、法の施行後すみやかに、第一項の規定により国立公園とみなされた<wbr>西表国立公園並びに同項の規定により国定公園とみなされた沖縄海岸国定公園及び沖縄<wbr>戦跡国定公園の区域並びに当該国立公園又は国定公園に関する公園計画及び公園事業の<wbr>概要を公示しなければならない。当該国立公園又は国定公園の特別地域、特別保護地区<wbr>、海中公園地区又は集団施設地区の区域についても、同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">８　法の施行前に本土法又はこれに基づく命令の規定に相当する沖縄法又はこれに基づ<wbr>く規則の規定によりされた処分（同法第十五条の規定によりされた原状回復命令を除く<wbr>。）又は手続は、それぞれ本土法又はこれに基づく命令の相当規定によりされた処分又<wbr>は手続とみなして、同法の規定を適用する。この場合において、同法第三十六条第一項<wbr>中「その通知を受けた日」とあるのは、「政府立公園法第十四条の規定による通知を受<wbr>けた日」とする。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">８　法の施行前に本土法又はこれに基づく命令の規定に相当する沖縄法又はこれに基づ<wbr>く規則の規定によりされた処分（同法第十五条の規定によりされた原状回復命令を除く<wbr>。）又は手続は、それぞれ本土法又はこれに基づく命令の相当規定によりされた処分又<wbr>は手続とみなして、同法の規定を適用する。この場合において、同法第三十六条第一項<wbr>中「その通知を受けた日」とあるのは、「政府立公園法第十四条の規定による通知を受<wbr>けた日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">39</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">９　法の施行前に、沖縄の区域内における海中公園地区内において非常災害のために必<wbr>要な応急措置としてした沖縄法第十一条の二第二項各号に掲げる行為及び同</span><span style="color: #000000; background-color: #efcb05; ">に基づく規<wbr>則の規定により届出を要するものとされた行為をした者（法の施行前にその届出をした<wbr>者を除く。）は、法の施行の日から起算して三十日以内に、沖縄県知事にその旨を届け<wbr>出なければならない。</span></code></td>
+<td class="ln">39</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">９　法の施行前に、沖縄の区域内における海中公園地区内において非常災害のために必<wbr>要な応急措置としてした沖縄法第十一条の二第二項各号に掲げる行為及び同</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">に基づく<wbr>規則の規定により届出を要するものとされた行為をした者（法の施行前にその届出をし<wbr>た者を除く。）は、法の施行の日から起算して三十日以内に、沖縄県知事にその旨を届<wbr>け出なければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第七条　沖縄法第十条第三項、第十一条第三項、第十一条の二第六項、第十三条第二項<wbr>及び第三項、第十四条並びに第十六条第三項から第六項までの規定並びに同条第四項の<wbr>規定に基づく規則の規定は、次の各号に掲げる処分又は行為により損失を受けた者（そ<wbr>の損失につき、法の施行前に沖縄法第十条第三項、第十一条第三項、第十一条の二第六<wbr>項、第十三条第二項若しくは第三項又は第十六条第三項の規定により補償を受けた者を<wbr>除く。）に対する補償について、法の施行の日から起算して三月を経過する日までの間<wbr>は、なお効力を有する。この場合において、同法第十条第三項、第十三条第二項及び第<wbr>三項並びに第十六条第六項中「政府」とあるのは「沖縄県」と、同法第十四条中「行政<wbr>主席」とあるのは「沖縄県知事」と、同法第十六条第三項中「その行為をした者」とあ<wbr>るのは「その行為をした者が、琉球政府の職員であるときは沖縄県、沖縄の市町村の職<wbr>員であるときは沖縄県の当該市町村、琉球政府又は沖縄の市町村の職員以外の者である<wbr>ときはその行為をした者」と、同条第四項中「市町村長」とあるのは「沖縄県の当該市<wbr>町村長」とする。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第七条　沖縄法第十条第三項、第十一条第三項、第十一条の二第六項、第十三条第二項<wbr>及び第三項、第十四条並びに第十六条第三項から第六項までの規定並びに同条第四項の<wbr>規定に基づく規則の規定は、次の各号に掲げる処分又は行為により損失を受けた者（そ<wbr>の損失につき、法の施行前に沖縄法第十条第三項、第十一条第三項、第十一条の二第六<wbr>項、第十三条第二項若しくは第三項又は第十六条第三項の規定により補償を受けた者を<wbr>除く。）に対する補償について、法の施行の日から起算して三月を経過する日までの間<wbr>は、なお効力を有する。この場合において、同法第十条第三項、第十三条第二項及び第<wbr>三項並びに第十六条第六項中「政府」とあるのは「沖縄県」と、同法第十四条中「行政<wbr>主席」とあるのは「沖縄県知事」と、同法第十六条第三項中「その行為をした者」とあ<wbr>るのは「その行為をした者が、琉球政府の職員であるときは沖縄県、沖縄の市町村の職<wbr>員であるときは沖縄県の当該市町村、琉球政府又は沖縄の市町村の職員以外の者である<wbr>ときはその行為をした者」と、同条第四項中「市町村長」とあるのは「沖縄県の当該市<wbr>町村長」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　沖縄法第十条第二項各号に規定する行為の許可申請に対してされた不許可処分、同<wbr>法第十三条第一項の規定によりされた処分又は同法第十六条第一項の規定によりされた<wbr>行為で、与勝海上政府立公園に係るもの</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　沖縄法第十条第二項各号に規定する行為の許可申請に対してされた不許可処分、同<wbr>法第十三条第一項の規定によりされた処分又は同法第十六条第一項の規定によりされた<wbr>行為で、与勝海上政府立公園に係るもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　沖縄法第十三条第一項の規定によりされた処分（本土法第二十条第二項の規定によ<wbr>りされる処分に相当する処分を除く。）で、西表政府立公園、沖縄海岸政府立公園又は<wbr>沖縄戦跡政府立公園に係るもの</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　沖縄法第十三条第一項の規定によりされた処分（本土法第二十条第二項の規定によ<wbr>りされる処分に相当する処分を除く。）で、西表政府立公園、沖縄海岸政府立公園又は<wbr>沖縄戦跡政府立公園に係るもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　沖縄法第十六条第一項の規定によりされた行為（琉球政府の職員によりされた行為<wbr>については、本土法第三十二条第一項の規定によりされる行為で同法第十五条第一項の<wbr>規定により都道府県が執行する公園事業に相当するものに関しされたもの及び立入検査<wbr>としてされたものとする。）で、西表政府立公園、沖縄海岸政府立公園又は沖縄戦跡政<wbr>府立公園に係るもの</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　沖縄法第十六条第一項の規定によりされた行為（琉球政府の職員によりされた行為<wbr>については、本土法第三十二条第一項の規定によりされる行為で同法第十五条第一項の<wbr>規定により都道府県が執行する公園事業に相当するものに関しされたもの及び立入検査<wbr>としてされたものとする。）で、西表政府立公園、沖縄海岸政府立公園又は沖縄戦跡政<wbr>府立公園に係るもの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（大気汚染防止法関係）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（大気汚染防止法関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第八条　法の施行前に大気汚染防止法（昭和四十三年法律第九十七号。以下この条にお<wbr>いて「本土法」という。）又はこれに基づく命令の規定に相当する沖縄の大気汚染防止<wbr>法（千九百七十一年立法第百三十二号。以下この条において「沖縄法」という。）又は<wbr>これに基づく規則の規定によりされた処分又は手続は、それぞれ本土法又はこれに基づ<wbr>く命令の相当規定によりされた処分又は手続とみなして、同法の規定を適用する。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第八条　法の施行前に大気汚染防止法（昭和四十三年法律第九十七号。以下この条にお<wbr>いて「本土法」という。）又はこれに基づく命令の規定に相当する沖縄の大気汚染防止<wbr>法（千九百七十一年立法第百三十二号。以下この条において「沖縄法」という。）又は<wbr>これに基づく規則の規定によりされた処分又は手続は、それぞれ本土法又はこれに基づ<wbr>く命令の相当規定によりされた処分又は手続とみなして、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行の際沖縄法第八条の規定による実施の制限を受けている者についての本土<wbr>法第九条及び第十条第一項の規定の適用については、同法第九条中「その届出を受理し<wbr>た日」とあるのは「沖縄の大気汚染防止法第四条第一項又は第六条第一項の規定による<wbr>届出が受理された日」と、同法第十条第一項中「その届出が受理された日」とあるのは<wbr>「沖縄の大気汚染防止法第四条第一項又は第六条第一項の規定による届出が受理された<wbr>日」とする。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行の際沖縄法第八条の規定による実施の制限を受けている者についての本土<wbr>法第九条及び第十条第一項の規定の適用については、同法第九条中「その届出を受理し<wbr>た日」とあるのは「沖縄の大気汚染防止法第四条第一項又は第六条第一項の規定による<wbr>届出が受理された日」と、同法第十条第一項中「その届出が受理された日」とあるのは<wbr>「沖縄の大気汚染防止法第四条第一項又は第六条第一項の規定による届出が受理された<wbr>日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">３　本土法第三条第一項の排出基準並びに同法第十八条の三の粉じん発生施設の構造並<wbr>びに使用及び管理に関する基準の沖縄県の区域への適用についての必要な経過措置につ<wbr>いては、総理府令で定める。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">３　本土法第三条第一項の排出基準並びに同法第十八条の三の粉じん発生施設の構造並<wbr>びに使用及び管理に関する基準の沖縄県の区域への適用についての必要な経過措置につ<wbr>いては、総理府令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（騒音規制法関係）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（騒音規制法関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第九条　法の施行の際沖縄の公害対策基本法（千九百七十一年立法第百三十一号。以下<wbr>第十一条までにおいて「沖縄法」という。）の規定に基づいて定められている騒音の規<wbr>制基準に係る地域又は当該地域に係る騒音の規制基準は、騒音規制法（昭和四十三年法<wbr>律第九十八号。以下次条までにおいて「本土法」という。）第三条第一項の規定により<wbr>指定された地域（以下次条までにおいて「指定地域」という。）又は本土法第四条第一<wbr>項の規定により定められた当該指定地域に係る規制基準とみなして、同法の規定を適用<wbr>する。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第九条　法の施行の際沖縄の公害対策基本法（千九百七十一年立法第百三十一号。以下<wbr>第十一条までにおいて「沖縄法」という。）の規定に基づいて定められている騒音の規<wbr>制基準に係る地域又は当該地域に係る騒音の規制基準は、騒音規制法（昭和四十三年法<wbr>律第九十八号。以下次条までにおいて「本土法」という。）第三条第一項の規定により<wbr>指定された地域（以下次条までにおいて「指定地域」という。）又は本土法第四条第一<wbr>項の規定により定められた当該指定地域に係る規制基準とみなして、同法の規定を適用<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行前に、本土法第二条第一項に規定する特定施設（同法第二十一条第一項に<wbr>規定する特定施設を除くものとし、以下次条までにおいて「特定施設」という。）に相<wbr>当する沖縄法別表第一に掲げる機械の新設、増設、変更若しくは移転（前項の規定によ<wbr>り指定地域とみなされた地域内におけるものに限る。以下次条までにおいて「新設等」<wbr>という。）又は本土法第二条第三項に規定する特定建設作業（以下次条までにおいて「<wbr>特定建設作業」という。）に相当する沖縄法別表第二に掲げる作業（前項の規定により<wbr>指定地域とみなされた地域内におけるものに限る。以下次条までにおいて同じ。）につ<wbr>いて同法第二十六条第一項の許可を受けた者は、当該新設等又は当該作業につき、それ<wbr>ぞれ本土法第六条第一項若しくは第八条第一項又は第十四条第一項の規定による届出を<wbr>したものとみなして、同法の規定（第九条の規定を除く。）を適用する。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行前に、本土法第二条第一項に規定する特定施設（同法第二十一条第一項に<wbr>規定する特定施設を除くものとし、以下次条までにおいて「特定施設」という。）に相<wbr>当する沖縄法別表第一に掲げる機械の新設、増設、変更若しくは移転（前項の規定によ<wbr>り指定地域とみなされた地域内におけるものに限る。以下次条までにおいて「新設等」<wbr>という。）又は本土法第二条第三項に規定する特定建設作業（以下次条までにおいて「<wbr>特定建設作業」という。）に相当する沖縄法別表第二に掲げる作業（前項の規定により<wbr>指定地域とみなされた地域内におけるものに限る。以下次条までにおいて同じ。）につ<wbr>いて同法第二十六条第一項の許可を受けた者は、当該新設等又は当該作業につき、それ<wbr>ぞれ本土法第六条第一項若しくは第八条第一項又は第十四条第一項の規定による届出を<wbr>したものとみなして、同法の規定（第九条の規定を除く。）を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">３　法の施行前に、特定施設に相当する沖縄法別表第三に掲げる機械の新設等（第一項<wbr>の規定により指定地域とみなされた地域内における同法附則第二項の規定による機械の<wbr>設置又は当該設置の工事を含む。）又は特定建設作業に相当する同法別表第四に掲げる<wbr>作業（第一項の規定により指定地域とみなされた地域内における同法附則第二項の規定<wbr>による作業又は当該作業に使用する機械等の設置の工事を含む。）について同法第二十<wbr>七条又は同法附則第二項の規定による届出をした者についても、前項と同様とする。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">３　法の施行前に、特定施設に相当する沖縄法別表第三に掲げる機械の新設等（第一項<wbr>の規定により指定地域とみなされた地域内における同法附則第二項の規定による機械の<wbr>設置又は当該設置の工事を含む。）又は特定建設作業に相当する同法別表第四に掲げる<wbr>作業（第一項の規定により指定地域とみなされた地域内における同法附則第二項の規定<wbr>による作業又は当該作業に使用する機械等の設置の工事を含む。）について同法第二十<wbr>七条又は同法附則第二項の規定による届出をした者についても、前項と同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行の際特定施設に相当する沖縄法別表第一に掲げる機械の新設等又は特定建<wbr>設作業に相当する同法別表第二に掲げる作業について同法第二十六条第一項の許可の申<wbr>請をしている者は、当該新設等又は当該作業につき、それぞれ本土法第六条第一項若し<wbr>くは第八条第一項又は第十四条第一項の規定による届出をしたものとみなして、同法の<wbr>規定を適用する。この場合において、同法第九条中「その届出を受理した日」とあるの<wbr>は、「沖縄の復帰に伴う特別措置に関する法律の施行の日」とする。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行の際特定施設に相当する沖縄法別表第一に掲げる機械の新設等又は特定建<wbr>設作業に相当する同法別表第二に掲げる作業について同法第二十六条第一項の許可の申<wbr>請をしている者は、当該新設等又は当該作業につき、それぞれ本土法第六条第一項若し<wbr>くは第八条第一項又は第十四条第一項の規定による届出をしたものとみなして、同法の<wbr>規定を適用する。この場合において、同法第九条中「その届出を受理した日」とあるの<wbr>は、「沖縄の復帰に伴う特別措置に関する法律の施行の日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">５　前三項に規定するもののほか、法の施行前に本土法又はこれに基づく命令の規定に<wbr>相当する沖縄法又はこれに基づく規則の規定によりされた手続は、本土法又はこれに基<wbr>づく命令の相当規定によりされた手続とみなして、同法の規定を適用する。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">５　前三項に規定するもののほか、法の施行前に本土法又はこれに基づく命令の規定に<wbr>相当する沖縄法又はこれに基づく規則の規定によりされた手続は、本土法又はこれに基<wbr>づく命令の相当規定によりされた手続とみなして、同法の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">54</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十条　法の施行の際前条第一項の規定により指定地域とみなされた地域内の工場又は<wbr>事業場において特定施設を設置している者に対して法の施行前に沖縄法第二十八条の規<wbr>定によりされた勧告で本土法第十二条第一項の規定によりされる勧告に相当するものは<wbr>、同項の規定によりされた勧告とみなして、同</span><span style="color: #000000; background-color: #efcb05; ">の規定を適用する。この場合において、<wbr>当該勧告に期限が附されていないときは、その期限は、法の施行の日から起算して六十<wbr>日とする。</span></code></td>
+<td class="ln">54</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十条　法の施行の際前条第一項の規定により指定地域とみなされた地域内の工場又は<wbr>事業場において特定施設を設置している者に対して法の施行前に沖縄法第二十八条の規<wbr>定によりされた勧告で本土法第十二条第一項の規定によりされる勧告に相当するものは<wbr>、同項の規定によりされた勧告とみなして、同</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">の規定を適用する。この場合において<wbr>、当該勧告に期限が附されていないときは、その期限は、法の施行の日から起算して六<wbr>十日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行の際前条第一項の規定により指定地域とみなされた地域内において特定建<wbr>設作業に相当する作業を施工している者に対して法の施行前に沖縄法第二十八条の規定<wbr>によりされた勧告で本土法第十五条第一項の規定によりされる勧告に相当するものにつ<wbr>いても、前項と同様とする。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">２　法の施行の際前条第一項の規定により指定地域とみなされた地域内において特定建<wbr>設作業に相当する作業を施工している者に対して法の施行前に沖縄法第二十八条の規定<wbr>によりされた勧告で本土法第十五条第一項の規定によりされる勧告に相当するものにつ<wbr>いても、前項と同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">３　法の施行前に第一項又は前項に規定する者に対して沖縄法第二十九条（第二号に係<wbr>る部分に限る。）の規定によりされた命令で本土法第十二条第二項又は第十五条第二項<wbr>の規定によりされる命令に相当するものは、これらの規定によりされた命令とみなして<wbr>、同法の規定を適用する。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">３　法の施行前に第一項又は前項に規定する者に対して沖縄法第二十九条（第二号に係<wbr>る部分に限る。）の規定によりされた命令で本土法第十二条第二項又は第十五条第二項<wbr>の規定によりされる命令に相当するものは、これらの規定によりされた命令とみなして<wbr>、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行の際前条第一項の規定により指定地域とみなされた地域内の工場又は事業<wbr>場において、沖縄法別表第一又は別表第三に掲げる機械以外の機械で特定施設に相当す<wbr>るものを設置している者（設置の工事をしている者を含む。）は、法の施行の日から起<wbr>算して三月以内に、総理府令の定めるところにより、本土法第六条第一項各号に掲げる<wbr>事項を沖縄県知事に届け出なければならない。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行の際前条第一項の規定により指定地域とみなされた地域内の工場又は事業<wbr>場において、沖縄法別表第一又は別表第三に掲げる機械以外の機械で特定施設に相当す<wbr>るものを設置している者（設置の工事をしている者を含む。）は、法の施行の日から起<wbr>算して三月以内に、総理府令の定めるところにより、本土法第六条第一項各号に掲げる<wbr>事項を沖縄県知事に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">５　前項の規定による届出をした者は、本土法第七条第一項の規定による届出をしたも<wbr>のとみなして、同法の規定（第十二条第三項の規定を除く。）を適用する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">５　前項の規定による届出をした者は、本土法第七条第一項の規定による届出をしたも<wbr>のとみなして、同法の規定（第十二条第三項の規定を除く。）を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">６　第四項の規定による届出をせず、又は虚偽の届出をした者は、三万円以下の罰金に<wbr>処する。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">６　第四項の規定による届出をせず、又は虚偽の届出をした者は、三万円以下の罰金に<wbr>処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">７　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対して同項の罰金刑を科する。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">７　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対して同項の罰金刑を科する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（水質汚濁防止法関係）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（水質汚濁防止法関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法の施行前に水質汚濁防止法（昭和四十五年法律第百三十八号。以下「本土<wbr>法」という。）第二条第二項に規定する特定施設（本土法第二十三条第二項に規定する<wbr>特定施設を除くものとし、以下第十三条第一項を除き「特定施設」という。）に相当す<wbr>る沖縄法別表第一又は別表第三に掲げる機械の新設、増設、変更若しくは移転（同法附<wbr>則第二項の規定による機械の設置又は当該設置の工事を含む。以下この項において「新<wbr>設等」という。）について同法第二十六条第一項の許可を受けた者又は同法第二十七条<wbr>若しくは附則第二項の規定による届出をした者は、当該新設等につき、それぞれ本土法<wbr>第五条から第七条までの規定による届出をしたものとみなして、同法の規定（第八条及<wbr>び第九条の規定を除く。）を適用する。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法の施行前に水質汚濁防止法（昭和四十五年法律第百三十八号。以下「本土<wbr>法」という。）第二条第二項に規定する特定施設（本土法第二十三条第二項に規定する<wbr>特定施設を除くものとし、以下第十三条第一項を除き「特定施設」という。）に相当す<wbr>る沖縄法別表第一又は別表第三に掲げる機械の新設、増設、変更若しくは移転（同法附<wbr>則第二項の規定による機械の設置又は当該設置の工事を含む。以下この項において「新<wbr>設等」という。）について同法第二十六条第一項の許可を受けた者又は同法第二十七条<wbr>若しくは附則第二項の規定による届出をした者は、当該新設等につき、それぞれ本土法<wbr>第五条から第七条までの規定による届出をしたものとみなして、同法の規定（第八条及<wbr>び第九条の規定を除く。）を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">63</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　法の施行の際特定施設に相当する沖縄法別表第一に掲げる機械の新設、増設、変更<wbr>又は移転（以下この項において「新設等」という。）について</span><span style="color: #000000; background-color: #efcb05; ">第二十六条第一項の許可<wbr>の申請をしている者は、当該新設等につき、本土法第五条又は第七条の規定による届出<wbr>をしたものとみなして、同法の規定を適用する。この場合において、同法第八条中「そ<wbr>の届出を受理した日」とあるのは「沖縄の復帰に伴う特別措置に関する法律の施行の日<wbr>」と、同法第九条第一項中「その届出が受理された日」とあるのは「沖縄の復帰に伴う<wbr>特別措置に関する法律の施行の日」とする。</span></code></td>
+<td class="ln">63</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　法の施行の際特定施設に相当する沖縄法別表第一に掲げる機械の新設、増設、変更<wbr>又は移転（以下この項において「新設等」という。）について</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第二十六条第一項の<wbr>許可の申請をしている者は、当該新設等につき、本土法第五条又は第七条の規定による<wbr>届出をしたものとみなして、同法の規定を適用する。この場合において、同法第八条中<wbr>「その届出を受理した日」とあるのは「沖縄の復帰に伴う特別措置に関する法律の施行<wbr>の日」と、同法第九条第一項中「その届出が受理された日」とあるのは「沖縄の復帰に<wbr>伴う特別措置に関する法律の施行の日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">３　前二項に規定するもののほか、法の施行前に本土法又はこれに基づく命令の規定に<wbr>相当する沖縄法又はこれに基づく規則の規定によりされた手続は、本土法又はこれに基<wbr>づく命令の相当規定によりされた手続とみなして、同法の規定を適用する。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">３　前二項に規定するもののほか、法の施行前に本土法又はこれに基づく命令の規定に<wbr>相当する沖縄法又はこれに基づく規則の規定によりされた手続は、本土法又はこれに基<wbr>づく命令の相当規定によりされた手続とみなして、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行の際沖縄の区域内において特定施設に相当する施設を設置している者で本<wbr>土法第二条第三項に規定する排出水を排出するものに対して法の施行前に沖縄法第二十<wbr>九条又は第三十条の規定によりされた命令で、本土法第十三条第一項の規定によりされ<wbr>る命令に相当するものは、同項の規定によりされた命令とみなして、同法の規定を適用<wbr>する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">４　法の施行の際沖縄の区域内において特定施設に相当する施設を設置している者で本<wbr>土法第二条第三項に規定する排出水を排出するものに対して法の施行前に沖縄法第二十<wbr>九条又は第三十条の規定によりされた命令で、本土法第十三条第一項の規定によりされ<wbr>る命令に相当するものは、同項の規定によりされた命令とみなして、同法の規定を適用<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">５　本土法第三条第一項の排水基準の沖縄県の区域への適用についての必要な経過措置<wbr>については、総理府令で定める。</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">５　本土法第三条第一項の排水基準の沖縄県の区域への適用についての必要な経過措置<wbr>については、総理府令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法の施行の際沖縄の区域内において、特定施設に相当する施設（前条第一項<wbr>の規定により本土法第五条から第七条までの規定によりされたものとみなされた届出に<wbr>係る特定施設に相当するものを除く。）を設置している者（設置の工事をしている者を<wbr>含む。）で同法第二条第三項に規定する排出水を排出するものは、法の施行の日から起<wbr>算して三月以内に、総理府令の定めるところにより、本土法第五条各号に掲げる事項を<wbr>沖縄県知事に届け出なければならない。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法の施行の際沖縄の区域内において、特定施設に相当する施設（前条第一項<wbr>の規定により本土法第五条から第七条までの規定によりされたものとみなされた届出に<wbr>係る特定施設に相当するものを除く。）を設置している者（設置の工事をしている者を<wbr>含む。）で同法第二条第三項に規定する排出水を排出するものは、法の施行の日から起<wbr>算して三月以内に、総理府令の定めるところにより、本土法第五条各号に掲げる事項を<wbr>沖縄県知事に届け出なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出をした者は、本土法第六条の規定による届出をしたものとみ<wbr>なして、同法の規定を適用する。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による届出をした者は、本土法第六条の規定による届出をしたものとみ<wbr>なして、同法の規定を適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による届出をせず、又は虚偽の届出をした者は、五万円以下の罰金に<wbr>処する。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定による届出をせず、又は虚偽の届出をした者は、五万円以下の罰金に<wbr>処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">４　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対して同項の罰金刑を科する。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">４　法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又<wbr>は人の業務に関し、前項の違反行為をしたときは、行為者を罰するほか、その法人又は<wbr>人に対して同項の罰金刑を科する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法の施行の際沖縄の区域内において本土法第二条第二項に規定する特定施設<wbr>に相当する施設を設置している者の当該施設を設置している工場又は事業場から排出さ<wbr>れる水については、本土法第十二条第一項の規定は、法の施行の日から起算して六月を<wbr>経過する日までの間（当該施設が水質汚濁防止法施行令（昭和四十六年政令第百八十八<wbr>号）別表第二に掲げる施設である場合にあつては、一年を経過する日までの間）は、適<wbr>用しない。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法の施行の際沖縄の区域内において本土法第二条第二項に規定する特定施設<wbr>に相当する施設を設置している者の当該施設を設置している工場又は事業場から排出さ<wbr>れる水については、本土法第十二条第一項の規定は、法の施行の日から起算して六月を<wbr>経過する日までの間（当該施設が水質汚濁防止法施行令（昭和四十六年政令第百八十八<wbr>号）別表第二に掲げる施設である場合にあつては、一年を経過する日までの間）は、適<wbr>用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">２　第十一条第一項の規定により本土法の規定によりされたものとみなされた届出に係<wbr>る特定施設で法の施行後に設置されることとなるものの当該設置されることとなる工場<wbr>又は事業場から排出される水についても、前項と同様とする。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">２　第十一条第一項の規定により本土法の規定によりされたものとみなされた届出に係<wbr>る特定施設で法の施行後に設置されることとなるものの当該設置されることとなる工場<wbr>又は事業場から排出される水についても、前項と同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">この政令は、法の施行の日（昭和四十七年五月十五日）から施行する。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">この政令は、法の施行の日（昭和四十七年五月十五日）から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

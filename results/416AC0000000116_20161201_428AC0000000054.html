@@ -1,0 +1,1287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十六年法律第百十六号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十六年法律第百十六号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">武力攻撃事態及び存立危機事態における外国軍用品等の海上輸送の規制に関する法律</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">武力攻撃事態及び存立危機事態における外国軍用品等の海上輸送の規制に関する法律</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第三条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　外国軍用品等の海上輸送の規制（第四条―第六条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　外国軍用品等の海上輸送の規制（第四条―第六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　外国軍用品審判所（第七条―第十五条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　外国軍用品審判所（第七条―第十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　停船検査及び回航措置</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　停船検査及び回航措置</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一節　停船検査（第十六条―第二十六条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第一節　停船検査（第十六条―第二十六条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二節　回航措置（第二十七条―第三十四条）</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二節　回航措置（第二十七条―第三十四条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三節　雑則（第三十五条―第三十八条）</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第三節　雑則（第三十五条―第三十八条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第五章　審判手続（第三十九条―第六十条）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">第五章　審判手続（第三十九条―第六十条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第六章　審決の執行（第六十一条―第六十五条）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第六章　審決の執行（第六十一条―第六十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第七章　補償（第六十六条・第六十七条）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第七章　補償（第六十六条・第六十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第八章　雑則（第六十八条―第七十二条）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第八章　雑則（第六十八条―第七十二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第九章　罰則（第七十三条―第七十七条）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第九章　罰則（第七十三条―第七十七条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、武力攻撃事態（武力攻撃事態等及び存立危機事態における我が国<wbr>の平和と独立並びに国及び国民の安全の確保に関する法律（平成十五年法律第七十九号<wbr>）第二条第二号に規定する武力攻撃事態をいう。以下同じ。）及び存立危機事態（同条<wbr>第四号に規定する存立危機事態をいう。以下同じ。）に際して、外国軍用品等の海上輸<wbr>送を規制するため、自衛隊法（昭和二十九年法律第百六十五号）第七十六条第一項の規<wbr>定により出動を命ぜられた海上自衛隊の部隊が実施する停船検査及び回航措置の手続並<wbr>びに防衛省に設置する外国軍用品審判所における審判の手続等を定め、もって我が国の<wbr>平和と独立並びに国及び国民の安全の確保に資することを目的とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、武力攻撃事態（武力攻撃事態等及び存立危機事態における我が国<wbr>の平和と独立並びに国及び国民の安全の確保に関する法律（平成十五年法律第七十九号<wbr>）第二条第二号に規定する武力攻撃事態をいう。以下同じ。）及び存立危機事態（同条<wbr>第四号に規定する存立危機事態をいう。以下同じ。）に際して、外国軍用品等の海上輸<wbr>送を規制するため、自衛隊法（昭和二十九年法律第百六十五号）第七十六条第一項の規<wbr>定により出動を命ぜられた海上自衛隊の部隊が実施する停船検査及び回航措置の手続並<wbr>びに防衛省に設置する外国軍用品審判所における審判の手続等を定め、もって我が国の<wbr>平和と独立並びに国及び国民の安全の確保に資することを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において、次の各号に掲げる用語の意義は、それぞれ当該各号に定め<wbr>るところによる。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において、次の各号に掲げる用語の意義は、それぞれ当該各号に定め<wbr>るところによる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">一　外国軍隊等　武力攻撃事態又は存立危機事態において、武力攻撃（武力攻撃事態等<wbr>及び存立危機事態における我が国の平和と独立並びに国及び国民の安全の確保に関する<wbr>法律第二条第一号に規定する武力攻撃をいう。第十六条において同じ。）又は存立危機<wbr>武力攻撃（同法第二条第八号ハ（１）に規定する存立危機武力攻撃をいう。次号におい<wbr>て同じ。）を行っている外国の軍隊その他これに類する組織をいう。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">一　外国軍隊等　武力攻撃事態又は存立危機事態において、武力攻撃（武力攻撃事態等<wbr>及び存立危機事態における我が国の平和と独立並びに国及び国民の安全の確保に関する<wbr>法律第二条第一号に規定する武力攻撃をいう。第十六条において同じ。）又は存立危機<wbr>武力攻撃（同法第二条第八号ハ（１）に規定する存立危機武力攻撃をいう。次号におい<wbr>て同じ。）を行っている外国の軍隊その他これに類する組織をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">二　外国軍用品　次のイからチまでのいずれかに掲げる物品（政令で指定するものに限<wbr>る。）で外国軍隊等が所在する地域を仕向地とするもの及び次のリからヲまでのいずれ<wbr>かに掲げる物品（政令で指定するものに限る。）で、武力攻撃事態においては外国軍隊<wbr>等が所在する我が国の領域又は我が国周辺の公海（海洋法に関する国際連合条約に規定<wbr>する排他的経済水域を含む。以下同じ。）上の地域を、存立危機事態においては外国軍<wbr>隊等が所在する存立危機武力攻撃を受けている外国の領域又は当該外国周辺の公海上の<wbr>地域を仕向地とするものをいう。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">二　外国軍用品　次のイからチまでのいずれかに掲げる物品（政令で指定するものに限<wbr>る。）で外国軍隊等が所在する地域を仕向地とするもの及び次のリからヲまでのいずれ<wbr>かに掲げる物品（政令で指定するものに限る。）で、武力攻撃事態においては外国軍隊<wbr>等が所在する我が国の領域又は我が国周辺の公海（海洋法に関する国際連合条約に規定<wbr>する排他的経済水域を含む。以下同じ。）上の地域を、存立危機事態においては外国軍<wbr>隊等が所在する存立危機武力攻撃を受けている外国の領域又は当該外国周辺の公海上の<wbr>地域を仕向地とするものをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">イ　核兵器、化学兵器、生物兵器若しくは毒素兵器（これらの運搬の用に供されるミサ<wbr>イルその他のこれらの運搬手段を含む。）又は対人地雷</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">イ　核兵器、化学兵器、生物兵器若しくは毒素兵器（これらの運搬の用に供されるミサ<wbr>イルその他のこれらの運搬手段を含む。）又は対人地雷</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">ロ　銃砲</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">ロ　銃砲</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ハ　銃砲弾又は軍用の爆発物（イに掲げるものを除く。）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ハ　銃砲弾又は軍用の爆発物（イに掲げるものを除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ニ　軍用の武器（イからハまでに掲げるものを除く。）</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ニ　軍用の武器（イからハまでに掲げるものを除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">ホ　軍用の航空機、ロケット、船舶又は車両（イに掲げるものを除く。）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">ホ　軍用の航空機、ロケット、船舶又は車両（イに掲げるものを除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ヘ　軍用の通信機器又は電子機器</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ヘ　軍用の通信機器又は電子機器</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">ト　イからヘまでに掲げるものの部分品又は附属品</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">ト　イからヘまでに掲げるものの部分品又は附属品</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">チ　軍用の火薬類（爆発物を除く。）又は軍用の燃料</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">チ　軍用の火薬類（爆発物を除く。）又は軍用の燃料</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">リ　装甲板、軍用ヘルメット、防弾衣その他軍用の装備品（イからトまでに掲げるもの<wbr>を除く。）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">リ　装甲板、軍用ヘルメット、防弾衣その他軍用の装備品（イからトまでに掲げるもの<wbr>を除く。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">ヌ　航空機、ロケット、船舶若しくは車両の修理若しくは整備に用いられる装置又はそ<wbr>の部分品若しくは附属品</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">ヌ　航空機、ロケット、船舶若しくは車両の修理若しくは整備に用いられる装置又はそ<wbr>の部分品若しくは附属品</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">ル　航空機、ロケット、船舶又は自動車の燃料（チに掲げるものを除く。）、潤滑油又<wbr>は作動油</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">ル　航空機、ロケット、船舶又は自動車の燃料（チに掲げるものを除く。）、潤滑油又<wbr>は作動油</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">ヲ　食糧（外国軍隊等に仕向けられたものに限る。）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">ヲ　食糧（外国軍隊等に仕向けられたものに限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">三　外国軍用品等　外国軍用品又は外国軍隊等の構成員をいう。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">三　外国軍用品等　外国軍用品又は外国軍隊等の構成員をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">四　船舶　軍艦等（軍艦及び各国政府が所有し、又は運航する船舶であって、非商業的<wbr>目的のみに使用されるものをいう。以下同じ。）以外の船舶をいう。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">四　船舶　軍艦等（軍艦及び各国政府が所有し、又は運航する船舶であって、非商業的<wbr>目的のみに使用されるものをいう。以下同じ。）以外の船舶をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">五　船長等　船舶の船長又は船長に代わって船舶を指揮する者をいう。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">五　船長等　船舶の船長又は船長に代わって船舶を指揮する者をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">六　艦長等　第四条第一項の規定により第四章の規定による措置を命ぜられた海上自衛<wbr>隊の自衛艦その他の部隊の長をいう。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">六　艦長等　第四条第一項の規定により第四章の規定による措置を命ぜられた海上自衛<wbr>隊の自衛艦その他の部隊の長をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">七　停船検査　外国軍用品等を輸送しているかどうかを確かめるため、船舶の進行を停<wbr>止させて立入検査をし、又は乗組員及び旅客（以下「乗組員等」という。）に対して必<wbr>要な質問をすることをいう。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">七　停船検査　外国軍用品等を輸送しているかどうかを確かめるため、船舶の進行を停<wbr>止させて立入検査をし、又は乗組員及び旅客（以下「乗組員等」という。）に対して必<wbr>要な質問をすることをいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">八　回航措置　停船検査を行った船舶の船長等に対し、我が国の港（政令で指定するも<wbr>のに限る。第二十八条第一項において同じ。）へ回航すべき旨を命じ、当該命令の履行<wbr>を確保するために必要な監督をすることをいう。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">八　回航措置　停船検査を行った船舶の船長等に対し、我が国の港（政令で指定するも<wbr>のに限る。第二十八条第一項において同じ。）へ回航すべき旨を命じ、当該命令の履行<wbr>を確保するために必要な監督をすることをいう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（国際法規の遵守）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（国際法規の遵守）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第三条　第四章の規定による措置その他この法律に基づく手続を実施するに当たり、国<wbr>際の法規及び慣例によるべき場合にあっては、これを遵守しなければならない。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第三条　第四章の規定による措置その他この法律に基づく手続を実施するに当たり、国<wbr>際の法規及び慣例によるべき場合にあっては、これを遵守しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第二章　外国軍用品等の海上輸送の規制</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第二章　外国軍用品等の海上輸送の規制</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（海上自衛隊の部隊による措置）</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">（海上自衛隊の部隊による措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　防衛大臣は、自衛隊法第七十六条第一項の規定により海上自衛隊の全部又は一<wbr>部に出動が命ぜられた場合において、我が国領海、外国の領海（海上自衛隊の部隊が第<wbr>四章の規定による措置を行うことについて当該外国の同意がある場合に限る。）又は公<wbr>海において外国軍用品等の海上輸送を規制する必要があると認めるときは、内閣総理大<wbr>臣の承認を得て、同項の規定により出動を命ぜられた海上自衛隊の部隊に、同章の規定<wbr>による措置を命ずることができる。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第四条　防衛大臣は、自衛隊法第七十六条第一項の規定により海上自衛隊の全部又は一<wbr>部に出動が命ぜられた場合において、我が国領海、外国の領海（海上自衛隊の部隊が第<wbr>四章の規定による措置を行うことについて当該外国の同意がある場合に限る。）又は公<wbr>海において外国軍用品等の海上輸送を規制する必要があると認めるときは、内閣総理大<wbr>臣の承認を得て、同項の規定により出動を命ぜられた海上自衛隊の部隊に、同章の規定<wbr>による措置を命ずることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　防衛大臣は、前項の規定による命令をするときは、停船検査を実施する区域（以下<wbr>「実施区域」という。）を告示して定めなければならない。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">２　防衛大臣は、前項の規定による命令をするときは、停船検査を実施する区域（以下<wbr>「実施区域」という。）を告示して定めなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（関係機関等に対する周知）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（関係機関等に対する周知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第五条　防衛大臣は、前条第二項の告示をしたときは、直ちに、外務大臣にその旨を通<wbr>知するものとする。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第五条　防衛大臣は、前条第二項の告示をしたときは、直ちに、外務大臣にその旨を通<wbr>知するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　外務大臣は、前項の通知を受けたときは、遅滞なく、関係する外国政府及び国際機<wbr>関に対して、外国軍用品の範囲及び実施区域を周知させる措置をとらなければならない<wbr>。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">２　外務大臣は、前項の通知を受けたときは、遅滞なく、関係する外国政府及び国際機<wbr>関に対して、外国軍用品の範囲及び実施区域を周知させる措置をとらなければならない<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品等の輸送の規制）</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品等の輸送の規制）</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第六条　外国軍用品審判所は、第二十七条第三項の規定による送致を受けた積荷又は第<wbr>三十四条の規定による送致を受けた事件に係る船舶の積荷（以下この条及び第五十二条<wbr>第一項から第三項までにおいて「積荷」と総称する。）が第二条第二号イに該当する外<wbr>国軍用品であるときは、第五章に規定する手続に従い、これを廃棄しなければならない<wbr>。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">第六条　外国軍用品審判所は、第二十七条第三項の規定による送致を受けた積荷又は第<wbr>三十四条の規定による送致を受けた事件に係る船舶の積荷（以下この条及び第五十二条<wbr>第一項から第三項までにおいて「積荷」と総称する。）が第二条第二号イに該当する外<wbr>国軍用品であるときは、第五章に規定する手続に従い、これを廃棄しなければならない<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、積荷が第二条第二号ロからチまでのいずれかに該当する外国<wbr>軍用品であるときは、第五章に規定する手続に従い、その輸送を停止しなければならな<wbr>い。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、積荷が第二条第二号ロからチまでのいずれかに該当する外国<wbr>軍用品であるときは、第五章に規定する手続に従い、その輸送を停止しなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、積荷が第二条第二号リからヲまでのいずれかに該当する外国<wbr>軍用品である場合において、必要があると認めるときは、第五章に規定する手続に従い<wbr>、その輸送を停止することができる。</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、積荷が第二条第二号リからヲまでのいずれかに該当する外国<wbr>軍用品である場合において、必要があると認めるときは、第五章に規定する手続に従い<wbr>、その輸送を停止することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">４　外国軍用品審判所は、第三十四条の規定による送致を受けた事件に係る船舶が外国<wbr>軍用品等を輸送しており、かつ、次の各号のいずれかに該当する場合において、当該船<wbr>舶が外国軍用品等の海上輸送を反復して行うことを防止するため必要があると認めると<wbr>きは、第五章に規定する手続に従い、その航行を停止することができる。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">４　外国軍用品審判所は、第三十四条の規定による送致を受けた事件に係る船舶が外国<wbr>軍用品等を輸送しており、かつ、次の各号のいずれかに該当する場合において、当該船<wbr>舶が外国軍用品等の海上輸送を反復して行うことを防止するため必要があると認めると<wbr>きは、第五章に規定する手続に従い、その航行を停止することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　当該船舶の傭よう船者が外国軍隊等であるとき。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　当該船舶の傭よう船者が外国軍隊等であるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げるもののほか、当該船舶の船長等が外国軍隊等の指揮監督を受けるとき<wbr>。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　前号に掲げるもののほか、当該船舶の船長等が外国軍隊等の指揮監督を受けるとき<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">三　当該船舶の旅客の相当数が外国軍隊等の構成員であるとき。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">三　当該船舶の旅客の相当数が外国軍隊等の構成員であるとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に準ずるものとして政令で定めるとき。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に準ずるものとして政令で定めるとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第三章　外国軍用品審判所</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第三章　外国軍用品審判所</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（設置）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（設置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第七条　防衛省に、臨時に、特別の機関として、外国軍用品審判所を置く。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第七条　防衛省に、臨時に、特別の機関として、外国軍用品審判所を置く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所の設置の場所及び期間は、政令で定める。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所の設置の場所及び期間は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（任務）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（任務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第八条　外国軍用品審判所は、艦長等が停船検査を行った船舶に係る事件（以下単に「<wbr>事件」という。）の調査及び審判を行うことを任務とする。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第八条　外国軍用品審判所は、艦長等が停船検査を行った船舶に係る事件（以下単に「<wbr>事件」という。）の調査及び審判を行うことを任務とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（所掌事務）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（所掌事務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第九条　外国軍用品審判所は、前条の任務を達成するため、次に掲げる事務をつかさど<wbr>る。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第九条　外国軍用品審判所は、前条の任務を達成するため、次に掲げる事務をつかさど<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">一　事件について必要な調査に関すること。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">一　事件について必要な調査に関すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">二　審判に関すること。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">二　審判に関すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">三　審決の執行に関すること。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">三　審決の執行に関すること。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品審判所長）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品審判所長）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十条　外国軍用品審判所の長は、外国軍用品審判所長とし、第十二条第一項の審判官<wbr>をもって充てる。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十条　外国軍用品審判所の長は、外国軍用品審判所長とし、第十二条第一項の審判官<wbr>をもって充てる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（支部）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（支部）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第十一条　外国軍用品審判所の事務の一部を取り扱わせるため、所要の地に、支部を置<wbr>くことができる。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第十一条　外国軍用品審判所の事務の一部を取り扱わせるため、所要の地に、支部を置<wbr>くことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　支部の名称、位置、管轄区域及び内部組織は、政令で定める。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">２　支部の名称、位置、管轄区域及び内部組織は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（審判官及び事務官）</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（審判官及び事務官）</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">第十二条　外国軍用品審判所に審判官及び事務官を置く。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">第十二条　外国軍用品審判所に審判官及び事務官を置く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">２　審判官は、法律（国際法規を含む。）、防衛又は海事に関し知識経験を有する者で<wbr>あって、政令で定める資格を有するもののうちから、防衛大臣が任命する。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">２　審判官は、法律（国際法規を含む。）、防衛又は海事に関し知識経験を有する者で<wbr>あって、政令で定める資格を有するもののうちから、防衛大臣が任命する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">３　審判官の定数は、政令で定める。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">３　審判官の定数は、政令で定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">４　事務官は、命を受け、事務に従事する。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">４　事務官は、命を受け、事務に従事する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（審判官の職権の独立）</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">（審判官の職権の独立）</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十三条　審判官は、独立してその職権を行う。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">第十三条　審判官は、独立してその職権を行う。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（構成）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（構成）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第十四条　外国軍用品審判所は、審判官五名をもって構成する合議体で、事件について<wbr>必要な調査及び審判を行う。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第十四条　外国軍用品審判所は、審判官五名をもって構成する合議体で、事件について<wbr>必要な調査及び審判を行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　合議体の合議は、過半数により決する。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">２　合議体の合議は、過半数により決する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所長は、各事件について、第一項の合議体を構成すべき審判官を指<wbr>定しなければならない。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所長は、各事件について、第一項の合議体を構成すべき審判官を指<wbr>定しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">４　外国軍用品審判所長は、前項の規定により指定した審判官のうち一人を審判長とし<wbr>て指定しなければならない。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">４　外国軍用品審判所長は、前項の規定により指定した審判官のうち一人を審判長とし<wbr>て指定しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">５　審判長は、その事件について必要な調査及び審判に関する事務を総理する。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">５　審判長は、その事件について必要な調査及び審判に関する事務を総理する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（事務局）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（事務局）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十五条　外国軍用品審判所の事務を処理させるため、外国軍用品審判所に事務局を置<wbr>く。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">第十五条　外国軍用品審判所の事務を処理させるため、外国軍用品審判所に事務局を置<wbr>く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　事務局の内部組織は、政令で定める。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">２　事務局の内部組織は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第四章　停船検査及び回航措置</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">第四章　停船検査及び回航措置</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第一節　停船検査</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第一節　停船検査</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（停船検査）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（停船検査）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第十六条　艦長等は、武力攻撃が発生した事態又は存立危機事態において、実施区域を<wbr>航行している船舶が外国軍用品等を輸送していることを疑うに足りる相当な理由がある<wbr>ときは、この節の定めるところにより、当該実施区域において、当該船舶について停船<wbr>検査を行うことができる。ただし、当該船舶が軍艦等に警護されている場合は、この限<wbr>りでない。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第十六条　艦長等は、武力攻撃が発生した事態又は存立危機事態において、実施区域を<wbr>航行している船舶が外国軍用品等を輸送していることを疑うに足りる相当な理由がある<wbr>ときは、この節の定めるところにより、当該実施区域において、当該船舶について停船<wbr>検査を行うことができる。ただし、当該船舶が軍艦等に警護されている場合は、この限<wbr>りでない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（停船命令）</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">（停船命令）</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第十七条　艦長等は、停船検査を行おうとするときは、あらかじめ、無線その他の通信<wbr>手段を用いて、当該船舶に対し、進行の停止を命ずるものとする。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">第十七条　艦長等は、停船検査を行おうとするときは、あらかじめ、無線その他の通信<wbr>手段を用いて、当該船舶に対し、進行の停止を命ずるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、前項の規定により進行の停止を命じた場合において、当該船舶がこれに<wbr>従わないときは、接近、追尾、伴走又は進路前方における待機を行って、繰り返し進行<wbr>の停止を命ずるものとする。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、前項の規定により進行の停止を命じた場合において、当該船舶がこれに<wbr>従わないときは、接近、追尾、伴走又は進路前方における待機を行って、繰り返し進行<wbr>の停止を命ずるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の場合において、艦長等は、自衛艦旗を掲げるほか、必要に応じ、呼びかけ<wbr>、信号弾及び照明弾の使用その他の適当な手段により、自己の存在を示すものとする。<wbr></span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の場合において、艦長等は、自衛艦旗を掲げるほか、必要に応じ、呼びかけ<wbr>、信号弾及び照明弾の使用その他の適当な手段により、自己の存在を示すものとする。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（船上検査の実施）</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（船上検査の実施）</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第十八条　艦長等は、前条第一項又は第二項の規定による命令を受けた船舶が停止した<wbr>ときは、海上自衛隊の三等海尉以上の自衛官を当該船舶に乗り込ませ、第二十条から第<wbr>二十二条までの規定による検査（以下「船上検査」という。）を行わせるものとする。<wbr></span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第十八条　艦長等は、前条第一項又は第二項の規定による命令を受けた船舶が停止した<wbr>ときは、海上自衛隊の三等海尉以上の自衛官を当該船舶に乗り込ませ、第二十条から第<wbr>二十二条までの規定による検査（以下「船上検査」という。）を行わせるものとする。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（船長等に対する告知）</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">（船長等に対する告知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第十九条　前条の自衛官（以下「船上検査官」という。）は、船上検査を行う船舶に乗<wbr>船したときは、その船長等に対し、船上検査を行う旨及び船上検査の手続に関し苦情が<wbr>あるときは艦長等に対し理由を記載した文書を提出して苦情の申出をすることができる<wbr>旨を告知するものとする。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">第十九条　前条の自衛官（以下「船上検査官」という。）は、船上検査を行う船舶に乗<wbr>船したときは、その船長等に対し、船上検査を行う旨及び船上検査の手続に関し苦情が<wbr>あるときは艦長等に対し理由を記載した文書を提出して苦情の申出をすることができる<wbr>旨を告知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（船舶書類の検査）</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（船舶書類の検査）</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第二十条　船上検査官は、船長等に対し、次に掲げる書類（以下「船舶書類」という。<wbr>）の提示を求めることができる。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第二十条　船上検査官は、船長等に対し、次に掲げる書類（以下「船舶書類」という。<wbr>）の提示を求めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">一　船舶国籍証書その他の船舶の国籍を証明する書類</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">一　船舶国籍証書その他の船舶の国籍を証明する書類</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">二　乗組員等の名簿</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">二　乗組員等の名簿</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">三　航海日誌その他の航行の状況を記録する書類</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">三　航海日誌その他の航行の状況を記録する書類</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">四　船荷証券その他の積荷に関する書類</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">四　船荷証券その他の積荷に関する書類 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（乗組員等への質問）</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（乗組員等への質問）</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　船上検査官は、必要があると認めるときは、乗組員等に質問をすることが<wbr>できる。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　船上検査官は、必要があると認めるときは、乗組員等に質問をすることが<wbr>できる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（積荷の検査）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（積荷の検査）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　船上検査官は、前二条の規定による検査を行った場合においても、なお当<wbr>該船舶が外国軍用品等を輸送している疑いがあると認めるときは、船長等を立ち会わせ<wbr>て、積荷を検査することができる。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第二十二条　船上検査官は、前二条の規定による検査を行った場合においても、なお当<wbr>該船舶が外国軍用品等を輸送している疑いがあると認めるときは、船長等を立ち会わせ<wbr>て、積荷を検査することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（出入禁止）</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（出入禁止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　船上検査官は、船上検査を行う間は、乗組員等（船長等を除く。）に対し<wbr>、許可を得ないでその場所に出入りすることを禁止することができる。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　船上検査官は、船上検査を行う間は、乗組員等（船長等を除く。）に対し<wbr>、許可を得ないでその場所に出入りすることを禁止することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">（身分証明書の提示等）</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">（身分証明書の提示等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　船上検査官は、船上検査を行うときは、その身分を示す証明書を携帯し、<wbr>船長等の請求があるときは、これを提示しなければならない。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">第二十四条　船上検査官は、船上検査を行うときは、その身分を示す証明書を携帯し、<wbr>船長等の請求があるときは、これを提示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">２　第二十条から前条までの規定による権限は、犯罪捜査のために認められたものと解<wbr>してはならない。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">２　第二十条から前条までの規定による権限は、犯罪捜査のために認められたものと解<wbr>してはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（艦長等への報告）</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（艦長等への報告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　船上検査官は、船上検査を行ったときは、直ちにその結果を艦長等に報告<wbr>しなければならない。</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第二十五条　船上検査官は、船上検査を行ったときは、直ちにその結果を艦長等に報告<wbr>しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（停船検査の終了）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（停船検査の終了）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　艦長等は、前条の報告を受けたときは、次条第一項の規定による引渡しの<wbr>求め又は第二十八条第一項の規定による命令をするときを除き、速やかに、停船検査を<wbr>終了しなければならない。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第二十六条　艦長等は、前条の報告を受けたときは、次条第一項の規定による引渡しの<wbr>求め又は第二十八条第一項の規定による命令をするときを除き、速やかに、停船検査を<wbr>終了しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第二節　回航措置</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第二節　回航措置</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品の引渡し）</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品の引渡し）</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　第二十五条の報告を受けた艦長等は、当該報告に係る船舶の積荷が外国軍<wbr>用品であると認められ、かつ、当該積荷をその自衛艦に収容することができる場合にお<wbr>いて、第六条第四項各号のいずれにも該当しないと認めるときは、当該船舶の船長等に<wbr>対し、当該積荷の引渡しを求めることができる。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十七条　第二十五条の報告を受けた艦長等は、当該報告に係る船舶の積荷が外国軍<wbr>用品であると認められ、かつ、当該積荷をその自衛艦に収容することができる場合にお<wbr>いて、第六条第四項各号のいずれにも該当しないと認めるときは、当該船舶の船長等に<wbr>対し、当該積荷の引渡しを求めることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、前項の引渡しを受けたときは、調書を作成し、当該船舶の船長等に交付<wbr>しなければならない。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、前項の引渡しを受けたときは、調書を作成し、当該船舶の船長等に交付<wbr>しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">３　艦長等は、第一項の引渡しを受けたときは、速やかに、書類及び当該積荷とともに<wbr>事件を外国軍用品審判所に送致しなければならない。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">３　艦長等は、第一項の引渡しを受けたときは、速やかに、書類及び当該積荷とともに<wbr>事件を外国軍用品審判所に送致しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（回航命令）</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（回航命令）</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　第二十五条の報告を受けた艦長等は、次の各号のいずれかに該当するとき<wbr>は、当該報告に係る船舶の船長等に対し、我が国の港へ回航すべきことを命ずることが<wbr>できる。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　第二十五条の報告を受けた艦長等は、次の各号のいずれかに該当するとき<wbr>は、当該報告に係る船舶の船長等に対し、我が国の港へ回航すべきことを命ずることが<wbr>できる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">一　当該船長等が前条第一項の規定による外国軍用品の引渡しの求めに応じないとき。<wbr></span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">一　当該船長等が前条第一項の規定による外国軍用品の引渡しの求めに応じないとき。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">二　当該船舶が外国軍用品等を輸送していると認めるとき（前条第一項の規定により外<wbr>国軍用品の引渡しを求めることができる場合を除く。）。</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">二　当該船舶が外国軍用品等を輸送していると認めるとき（前条第一項の規定により外<wbr>国軍用品の引渡しを求めることができる場合を除く。）。</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">三　当該報告のほか、当該船舶の外観、航海の態様、乗組員等の異常な挙動その他周囲<wbr>の事情等から判断して、なお当該船舶が外国軍用品等を輸送している疑いがあると認め<wbr>るとき（前二号に該当するときを除く。）。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">三　当該報告のほか、当該船舶の外観、航海の態様、乗組員等の異常な挙動その他周囲<wbr>の事情等から判断して、なお当該船舶が外国軍用品等を輸送している疑いがあると認め<wbr>るとき（前二号に該当するときを除く。）。</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、前項の規定による命令をしようとするときは、あらかじめ、船長等に対<wbr>し、弁明を記載した文書を提出する機会を与えなければならない。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、前項の規定による命令をしようとするときは、あらかじめ、船長等に対<wbr>し、弁明を記載した文書を提出する機会を与えなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（監視措置）</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">（監視措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　艦長等は、前条第一項の規定による命令をしたときは、船上検査官に、当<wbr>該船舶の船舶書類及びその積荷のうち外国軍用品であるもの（外国軍用品の疑いがある<wbr>ものを含む。）の移動を監視するために必要な封印をさせ、又は装置を取り付けさせる<wbr>ことができる。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　艦長等は、前条第一項の規定による命令をしたときは、船上検査官に、当<wbr>該船舶の船舶書類及びその積荷のうち外国軍用品であるもの（外国軍用品の疑いがある<wbr>ものを含む。）の移動を監視するために必要な封印をさせ、又は装置を取り付けさせる<wbr>ことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（回航監督官の派遣）</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（回航監督官の派遣）</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第三十条　艦長等は、第二十八条第一項の規定による命令をしたときは、当該命令の履<wbr>行の確保に必要な監督をさせるため、海上自衛隊の三等海尉以上の自衛官を当該命令に<wbr>係る船舶（以下「回航船舶」という。）に乗り込ませるものとする。</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第三十条　艦長等は、第二十八条第一項の規定による命令をしたときは、当該命令の履<wbr>行の確保に必要な監督をさせるため、海上自衛隊の三等海尉以上の自衛官を当該命令に<wbr>係る船舶（以下「回航船舶」という。）に乗り込ませるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（船長等に対する告知）</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">（船長等に対する告知）</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　前条の自衛官（以下「回航監督官」という。）は、回航船舶に乗船したと<wbr>きは、その船長等に対し、第二十八条第一項の規定による命令の内容及び回航措置の手<wbr>続に関し苦情があるときは艦長等に対し理由を記載した文書を提出して苦情の申出をす<wbr>ることができる旨を告知するものとする。</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">第三十一条　前条の自衛官（以下「回航監督官」という。）は、回航船舶に乗船したと<wbr>きは、その船長等に対し、第二十八条第一項の規定による命令の内容及び回航措置の手<wbr>続に関し苦情があるときは艦長等に対し理由を記載した文書を提出して苦情の申出をす<wbr>ることができる旨を告知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（回航監督官の権限）</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">（回航監督官の権限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　回航監督官は、第二十八条第一項の規定による命令の履行の確保又は航行<wbr>の安全若しくは船内の秩序維持のため必要があると認めるときは、回航船舶の船長等に<wbr>対し、必要な措置をとるべきことを指示することができる。</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">第三十二条　回航監督官は、第二十八条第一項の規定による命令の履行の確保又は航行<wbr>の安全若しくは船内の秩序維持のため必要があると認めるときは、回航船舶の船長等に<wbr>対し、必要な措置をとるべきことを指示することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">２　回航監督官は、船長等が前項の規定による指示に従わない場合において、やむを得<wbr>ない必要があるときは、自ら当該指示に係る措置をとることができる。</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">２　回航監督官は、船長等が前項の規定による指示に従わない場合において、やむを得<wbr>ない必要があるときは、自ら当該指示に係る措置をとることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">３　艦長等は、回航監督官に、第二十九条に規定する措置を講じさせることができる。<wbr></span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">３　艦長等は、回航監督官に、第二十九条に規定する措置を講じさせることができる。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（回航船舶への自衛艦旗の掲揚）</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（回航船舶への自衛艦旗の掲揚）</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　回航監督官は、回航船舶に、当該船舶の旗国（海洋法に関する国際連合条<wbr>約第九十一条に規定するその旗を掲げる権利を有する国をいう。）の国旗及び自衛艦旗<wbr>を掲げさせるものとする。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第三十三条　回航監督官は、回航船舶に、当該船舶の旗国（海洋法に関する国際連合条<wbr>約第九十一条に規定するその旗を掲げる権利を有する国をいう。）の国旗及び自衛艦旗<wbr>を掲げさせるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品審判所への送致）</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（外国軍用品審判所への送致）</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　艦長等は、回航船舶が我が国の港に到着したときは、速やかに、書類とと<wbr>もに事件を外国軍用品審判所に送致しなければならない。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第三十四条　艦長等は、回航船舶が我が国の港に到着したときは、速やかに、書類とと<wbr>もに事件を外国軍用品審判所に送致しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">第三節　雑則</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">第三節　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（防衛大臣への報告）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（防衛大臣への報告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　艦長等は、停船検査を行ったとき、又は回航措置をとったときは、速やか<wbr>に、当該停船検査又は回航措置に関する報告書を作成し、防衛大臣に提出しなければな<wbr>らない。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第三十五条　艦長等は、停船検査を行ったとき、又は回航措置をとったときは、速やか<wbr>に、当該停船検査又は回航措置に関する報告書を作成し、防衛大臣に提出しなければな<wbr>らない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、第二十八条第一項の規定による命令をしたとき、又は船長等から第十九<wbr>条若しくは第三十一条に規定する苦情の申出があったときは、直ちにその旨を防衛大臣<wbr>に報告しなければならない。</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">２　艦長等は、第二十八条第一項の規定による命令をしたとき、又は船長等から第十九<wbr>条若しくは第三十一条に規定する苦情の申出があったときは、直ちにその旨を防衛大臣<wbr>に報告しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">３　防衛大臣は、前項の規定による報告を受けたときは、必要に応じ、関係機関への連<wbr>絡その他の措置を講ずるものとする。</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">３　防衛大臣は、前項の規定による報告を受けたときは、必要に応じ、関係機関への連<wbr>絡その他の措置を講ずるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（艦長等の配慮義務）</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">（艦長等の配慮義務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　艦長等並びに船上検査官及び回航監督官は、停船検査を行い、又は回航措<wbr>置をとるときは、その対象となる船舶が必要以上に予定の航路を変更することのないよ<wbr>うに配慮しなければならない。</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">第三十六条　艦長等並びに船上検査官及び回航監督官は、停船検査を行い、又は回航措<wbr>置をとるときは、その対象となる船舶が必要以上に予定の航路を変更することのないよ<wbr>うに配慮しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（武器の使用）</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（武器の使用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　警察官職務執行法（昭和二十三年法律第百三十六号）第七条の規定は、こ<wbr>の章の規定による措置を命ぜられた海上自衛隊の部隊の自衛官の職務の執行について準<wbr>用する。</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第三十七条　警察官職務執行法（昭和二十三年法律第百三十六号）第七条の規定は、こ<wbr>の章の規定による措置を命ぜられた海上自衛隊の部隊の自衛官の職務の執行について準<wbr>用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">２　前項において準用する警察官職務執行法第七条の規定により武器を使用する場合の<wbr>ほか、同項に規定する自衛官は、艦長等が第十七条第二項の規定に基づき当該船舶の進<wbr>行の停止を繰り返し命じても乗組員等がこれに応ぜずなお当該自衛官の職務の執行に抵<wbr>抗し、又は逃亡しようとする場合において、当該船舶の進行を停止させるために他に手<wbr>段がないと信ずるに足りる相当な理由があるときは、艦長等の命令により、その事態に<wbr>応じ合理的に必要と判断される限度において、武器を使用することができる。</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">２　前項において準用する警察官職務執行法第七条の規定により武器を使用する場合の<wbr>ほか、同項に規定する自衛官は、艦長等が第十七条第二項の規定に基づき当該船舶の進<wbr>行の停止を繰り返し命じても乗組員等がこれに応ぜずなお当該自衛官の職務の執行に抵<wbr>抗し、又は逃亡しようとする場合において、当該船舶の進行を停止させるために他に手<wbr>段がないと信ずるに足りる相当な理由があるときは、艦長等の命令により、その事態に<wbr>応じ合理的に必要と判断される限度において、武器を使用することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（抑留対象者の取扱い）</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（抑留対象者の取扱い）</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　停船検査を行う船舶又は回航船舶内に抑留対象者（武力攻撃事態及び存立<wbr>危機事態における捕虜等の取扱いに関する法律（平成十六年法律第百十七号）第三条第<wbr>六号に規定する抑留対象者をいう。）がある場合におけるその取扱いについては、同法<wbr>の定めるところによる。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第三十八条　停船検査を行う船舶又は回航船舶内に抑留対象者（武力攻撃事態及び存立<wbr>危機事態における捕虜等の取扱いに関する法律（平成十六年法律第百十七号）第三条第<wbr>六号に規定する抑留対象者をいう。）がある場合におけるその取扱いについては、同法<wbr>の定めるところによる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">第五章　審判手続</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">第五章　審判手続</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（送致事件の調査）</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（送致事件の調査）</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　外国軍用品審判所は、第二十七条第三項又は第三十四条の規定による事件<wbr>の送致を受けたときは、当該事件について必要な調査をしなければならない。</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　外国軍用品審判所は、第二十七条第三項又は第三十四条の規定による事件<wbr>の送致を受けたときは、当該事件について必要な調査をしなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（調査のための強制処分）</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">（調査のための強制処分）</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第四十条　外国軍用品審判所は、第三十四条の規定による事件の送致を受けたときは、<wbr>当該事件に係る船舶の船長等に対し、当該船舶の出航を禁止することができる。</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">第四十条　外国軍用品審判所は、第三十四条の規定による事件の送致を受けたときは、<wbr>当該事件に係る船舶の船長等に対し、当該船舶の出航を禁止することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により出航を禁止する期間は、事件が送致された日から起算して一月と<wbr>する。ただし、外国軍用品審判所は、通じて一月を超えない範囲で、当該期間を延長す<wbr>ることができる。</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により出航を禁止する期間は、事件が送致された日から起算して一月と<wbr>する。ただし、外国軍用品審判所は、通じて一月を超えない範囲で、当該期間を延長す<wbr>ることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、第四十五条第一項又は第二項の規定による決定をしたとき、<wbr>その他第一項の船舶の出航を禁止する必要がなくなったときは、前項の期間内であって<wbr>も、第一項の規定による命令を取り消さなければならない。</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、第四十五条第一項又は第二項の規定による決定をしたとき、<wbr>その他第一項の船舶の出航を禁止する必要がなくなったときは、前項の期間内であって<wbr>も、第一項の規定による命令を取り消さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　外国軍用品審判所は、事件について必要な調査をするため、次に掲げる処<wbr>分をすることができる。</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">第四十一条　外国軍用品審判所は、事件について必要な調査をするため、次に掲げる処<wbr>分をすることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">一　当該事件に係る船舶の乗組員その他の関係者又は参考人に出頭を命じて審問し、又<wbr>はこれらの者から意見若しくは報告を徴すること。</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">一　当該事件に係る船舶の乗組員その他の関係者又は参考人に出頭を命じて審問し、又<wbr>はこれらの者から意見若しくは報告を徴すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">二　鑑定人に出頭を命じて鑑定させること。</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">二　鑑定人に出頭を命じて鑑定させること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">三　当該事件に係る船舶の船舶書類、積荷その他当該船舶に関する物件の所持者に対し<wbr>、当該物件の提出を命じ、又は提出された物件若しくは第二十七条第三項の規定による<wbr>送致を受けた積荷を留置すること。</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">三　当該事件に係る船舶の船舶書類、積荷その他当該船舶に関する物件の所持者に対し<wbr>、当該物件の提出を命じ、又は提出された物件若しくは第二十七条第三項の規定による<wbr>送致を受けた積荷を留置すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">四　当該事件に係る船舶その他必要な場所に立ち入り、前号に規定する物件を検査する<wbr>こと。</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">四　当該事件に係る船舶その他必要な場所に立ち入り、前号に規定する物件を検査する<wbr>こと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、相当と認めるときは、外国軍用品審判所の事務官を調査官に<wbr>指定し、前項の処分をさせることができる。</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、相当と認めるときは、外国軍用品審判所の事務官を調査官に<wbr>指定し、前項の処分をさせることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により立入検査をする調査官は、その身分を示す証明書を携帯し、関係<wbr>者の請求があるときは、これを提示しなければならない。</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により立入検査をする調査官は、その身分を示す証明書を携帯し、関係<wbr>者の請求があるときは、これを提示しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">４　第一項又は第二項の規定による立入検査の権限は、犯罪捜査のために認められたも<wbr>のと解してはならない。</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">４　第一項又は第二項の規定による立入検査の権限は、犯罪捜査のために認められたも<wbr>のと解してはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">（留置物件の保管等）</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">（留置物件の保管等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　外国軍用品審判所は、前条第一項第三号の規定により留置した物件（以下<wbr>「留置物件」という。）のうち運搬又は保管に不便なものについては、看守者を置き、<wbr>又は適当と認める者に、その承諾を得て、これを保管させることができる。</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　外国軍用品審判所は、前条第一項第三号の規定により留置した物件（以下<wbr>「留置物件」という。）のうち運搬又は保管に不便なものについては、看守者を置き、<wbr>又は適当と認める者に、その承諾を得て、これを保管させることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、留置物件のうち、人の生命又は財産を害する急迫した危険を<wbr>生ずるおそれがあるものを廃棄することができる。</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、留置物件のうち、人の生命又は財産を害する急迫した危険を<wbr>生ずるおそれがあるものを廃棄することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">（留置物件の返還）</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">（留置物件の返還）</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">第四十三条　外国軍用品審判所は、留置物件について留置の必要がなくなったときは、<wbr>その返還を受けるべき者にこれを還付しなければならない。</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">第四十三条　外国軍用品審判所は、留置物件について留置の必要がなくなったときは、<wbr>その返還を受けるべき者にこれを還付しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、前項の留置物件の返還を受けるべき者の住所若しくは居所が<wbr>わからないため、又はその他の事由によりこれを還付することができない場合において<wbr>は、政令で定めるところにより、その旨を公告しなければならない。</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、前項の留置物件の返還を受けるべき者の住所若しくは居所が<wbr>わからないため、又はその他の事由によりこれを還付することができない場合において<wbr>は、政令で定めるところにより、その旨を公告しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">３　前項の公告に係る留置物件について、公告の日から六月を経過しても還付の請求が<wbr>ないときは、その留置物件は、国庫に帰属する。</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">３　前項の公告に係る留置物件について、公告の日から六月を経過しても還付の請求が<wbr>ないときは、その留置物件は、国庫に帰属する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">４　前項の期間内であっても、価値のない留置物件は、これを廃棄し、保管に不便な物<wbr>件は、政令で定めるところにより、これを売却してその代価を保管することができる。<wbr></span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">４　前項の期間内であっても、価値のない留置物件は、これを廃棄し、保管に不便な物<wbr>件は、政令で定めるところにより、これを売却してその代価を保管することができる。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（調書の作成）</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">（調書の作成）</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第四十四条　外国軍用品審判所は、事件について必要な調査をしたときは、その要旨を<wbr>調書に記載し、かつ、特に第四十条第一項又は第四十一条第一項の規定による処分があ<wbr>ったときは、その結果を明らかにしておかなければならない。</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">第四十四条　外国軍用品審判所は、事件について必要な調査をしたときは、その要旨を<wbr>調書に記載し、かつ、特に第四十条第一項又は第四十一条第一項の規定による処分があ<wbr>ったときは、その結果を明らかにしておかなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">（審判の開始）</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">（審判の開始）</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">第四十五条　外国軍用品審判所は、事件について必要な調査の結果、第六条各項に規定<wbr>する場合のいずれかに該当すると認めるときは、審判を開始する旨の決定をしなければ<wbr>ならない。</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">第四十五条　外国軍用品審判所は、事件について必要な調査の結果、第六条各項に規定<wbr>する場合のいずれかに該当すると認めるときは、審判を開始する旨の決定をしなければ<wbr>ならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、前項に規定する場合を除き、審判を開始しない旨の決定をし<wbr>なければならない。</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、前項に規定する場合を除き、審判を開始しない旨の決定をし<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">３　第四十条の規定は、外国軍用品審判所が、事件について必要な調査の結果、第六条<wbr>第四項に規定する場合に該当すると認めて、第一項の規定による審判開始決定をしたと<wbr>きについて準用する。この場合において、第四十条第二項本文中「事件が送致された日<wbr>」とあるのは「第四十五条第一項の規定による審判開始決定の日」と、「一月」とある<wbr>のは「三月」と、同項ただし書中「通じて一月を超えない範囲で、当該期間を延長する<wbr>」とあるのは「特に必要があると認めるときは、一月ごとに当該期間を更新する」と、<wbr>同条第三項中「第四十五条第一項又は第二項の規定による決定」とあるのは「第五十二<wbr>条第四項又は第五項の審決」と読み替えるものとする。</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">３　第四十条の規定は、外国軍用品審判所が、事件について必要な調査の結果、第六条<wbr>第四項に規定する場合に該当すると認めて、第一項の規定による審判開始決定をしたと<wbr>きについて準用する。この場合において、第四十条第二項本文中「事件が送致された日<wbr>」とあるのは「第四十五条第一項の規定による審判開始決定の日」と、「一月」とある<wbr>のは「三月」と、同項ただし書中「通じて一月を超えない範囲で、当該期間を延長する<wbr>」とあるのは「特に必要があると認めるときは、一月ごとに当該期間を更新する」と、<wbr>同条第三項中「第四十五条第一項又は第二項の規定による決定」とあるのは「第五十二<wbr>条第四項又は第五項の審決」と読み替えるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">第四十六条　外国軍用品審判所は、前条第一項の規定による審判開始決定をしたときは<wbr>、政令で定めるところにより、その旨を公告しなければならない。</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">第四十六条　外国軍用品審判所は、前条第一項の規定による審判開始決定をしたときは<wbr>、政令で定めるところにより、その旨を公告しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">２　前項の公告があったときは、利害関係者は、公告の日から三十日以内に、外国軍用<wbr>品審判所に意見書を提出することができる。</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">２　前項の公告があったときは、利害関係者は、公告の日から三十日以内に、外国軍用<wbr>品審判所に意見書を提出することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、前項の期間が経過した後、審判を開始するものとする。</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、前項の期間が経過した後、審判を開始するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">４　第二項の規定にかかわらず、利害関係者は、外国軍用品審判所がやむを得ない事情<wbr>があると認めるときは、同項の期間が経過した後であっても、意見書を提出することが<wbr>できる。</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">４　第二項の規定にかかわらず、利害関係者は、外国軍用品審判所がやむを得ない事情<wbr>があると認めるときは、同項の期間が経過した後であっても、意見書を提出することが<wbr>できる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">（調査官の権限）</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">（調査官の権限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">第四十七条　第四十一条第二項の規定により指定された調査官は、審判に立ち会い、証<wbr>拠の申出その他必要な行為をすることができる。</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">第四十七条　第四十一条第二項の規定により指定された調査官は、審判に立ち会い、証<wbr>拠の申出その他必要な行為をすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">（審判の公開）</span></code></td>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">（審判の公開）</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">第四十八条　審判は、これを公開しなければならない。ただし、国の安全が害されるお<wbr>それ又は外国政府との交渉上不利益を被るおそれがあると認めるときは、これを公開し<wbr>ないことができる。</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">第四十八条　審判は、これを公開しなければならない。ただし、国の安全が害されるお<wbr>それ又は外国政府との交渉上不利益を被るおそれがあると認めるときは、これを公開し<wbr>ないことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">（審判長の権限）</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">（審判長の権限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">第四十九条　審判長は、開廷中審判を指揮し、審判廷の秩序を維持する。</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">第四十九条　審判長は、開廷中審判を指揮し、審判廷の秩序を維持する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">２　審判長は、審判を妨げる者に対し退廷を命じ、その他審判廷の秩序を維持するため<wbr>必要な措置をとることができる。</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">２　審判長は、審判を妨げる者に対し退廷を命じ、その他審判廷の秩序を維持するため<wbr>必要な措置をとることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（証拠の取調べ）</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（証拠の取調べ）</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">第五十条　外国軍用品審判所は、申立により、又は職権で、必要な証拠を取り調べるこ<wbr>とができる。</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">第五十条　外国軍用品審判所は、申立により、又は職権で、必要な証拠を取り調べるこ<wbr>とができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">202</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　刑事訴訟法（昭和二十三年法律第百三十一号）</span><span style="color: #000000; background-color: #efcb05; ">、</span><span style="color: #000000; background-color: #efcb05; ">から第百四十七条まで、第百四十<wbr>九条、第百五十四条から第百五十六条まで、第百六十五条及び第百六十六条の規定は、<wbr>外国軍用品審判所が、審判に際して、参考人を審問し、又は鑑定人に鑑定を命ずる手続<wbr>について準用する。この場合において、同法第百四十三条及び第百六十五条中「裁判所<wbr>」とあるのは「外国軍用品審判所」と、同法第百四十三条、第百四十四条、第百四十五<wbr>条第一項、第百五十四条及び第百五十六条第一項中「証人」とあるのは「参考人」と、<wbr>同法第百四十三条、第百四十四条及び第百四十五条第一項中「尋問する」とあるのは「<wbr>審問する」と、同法第百四十九条ただし書中「、証言の拒絶が被告人のためのみにする<wbr>権利の濫用と認められる場合（被告人が本人である場合を除く。）その他裁判所の規則<wbr>で」とあるのは「その他外国軍用品審判所が」と、同法第百五十五条第一項中「尋問し<wbr>なければ」とあるのは「審問しなければ」と読み替えるものとする。</span></code></td>
+<td class="ln">202</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　刑事訴訟法（昭和二十三年法律第百三十一号）</span><span class="sf17b18">第百四十三条</span><span style="color: #000000; background-color: #efcb05; ">、</span><span class="sf17b18">第百四十四条</span><span style="color: #000000; background-color: #efcb05; ">から第<wbr>百四十七条まで、第百四十九条、第百五十四条から第百五十六条まで、第百六十五条及<wbr>び第百六十六条の規定は、外国軍用品審判所が、審判に際して、参考人を審問し、又は<wbr>鑑定人に鑑定を命ずる手続について準用する。この場合において、同法第百四十三条及<wbr>び第百六十五条中「裁判所」とあるのは「外国軍用品審判所」と、同法第百四十三条、<wbr>第百四十四条、第百四十五条第一項、第百五十四条及び第百五十六条第一項中「証人」<wbr>とあるのは「参考人」と、同法第百四十三条、第百四十四条及び第百四十五条第一項中<wbr>「尋問する」とあるのは「審問する」と、同法第百四十九条ただし書中「、証言の拒絶<wbr>が被告人のためのみにする権利の濫用と認められる場合（被告人が本人である場合を除<wbr>く。）その他裁判所の規則で」とあるのは「その他外国軍用品審判所が」と、同法第百<wbr>五十五条第一項中「尋問しなければ」とあるのは「審問しなければ」と読み替えるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">（利害関係者の意見の陳述等）</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">（利害関係者の意見の陳述等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">第五十一条　第四十六条第二項又は第四項の規定により意見書を提出した利害関係者又<wbr>はその代理人は、外国軍用品審判所に対し、審判廷における意見の陳述を申し出、又は<wbr>証拠を提出することができる。</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">第五十一条　第四十六条第二項又は第四項の規定により意見書を提出した利害関係者又<wbr>はその代理人は、外国軍用品審判所に対し、審判廷における意見の陳述を申し出、又は<wbr>証拠を提出することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、前項の申出があるときは、審判の期日において、その意見を<wbr>陳述させるものとする。ただし、審判の状況その他の事情を考慮して、相当でないと認<wbr>めるときは、意見の陳述に代えて意見を記載した書面を提出させ、又は意見の陳述をさ<wbr>せないことができる。</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、前項の申出があるときは、審判の期日において、その意見を<wbr>陳述させるものとする。ただし、審判の状況その他の事情を考慮して、相当でないと認<wbr>めるときは、意見の陳述に代えて意見を記載した書面を提出させ、又は意見の陳述をさ<wbr>せないことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">（審決）</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">（審決）</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">第五十二条　外国軍用品審判所は、審判手続を経た後、積荷が第二条第二号イに該当す<wbr>る外国軍用品であると認めるときは、当該積荷について廃棄の審決をしなければならな<wbr>い。</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">第五十二条　外国軍用品審判所は、審判手続を経た後、積荷が第二条第二号イに該当す<wbr>る外国軍用品であると認めるときは、当該積荷について廃棄の審決をしなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、審判手続を経た後、積荷が第二条第二号ロからチまでのいず<wbr>れかに該当する外国軍用品であると認めるときは、当該積荷について輸送停止の審決を<wbr>しなければならない。</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">２　外国軍用品審判所は、審判手続を経た後、積荷が第二条第二号ロからチまでのいず<wbr>れかに該当する外国軍用品であると認めるときは、当該積荷について輸送停止の審決を<wbr>しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、審判手続を経た後、積荷が第二条第二号リからヲまでのいず<wbr>れかに該当する外国軍用品であると認める場合において、必要があると認めるときは、<wbr>当該積荷について輸送停止の審決をしなければならない。</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">３　外国軍用品審判所は、審判手続を経た後、積荷が第二条第二号リからヲまでのいず<wbr>れかに該当する外国軍用品であると認める場合において、必要があると認めるときは、<wbr>当該積荷について輸送停止の審決をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">４　外国軍用品審判所は、審判手続を経た後、第三十四条の規定による送致を受けた事<wbr>件に係る船舶が外国軍用品等を輸送しており、かつ、第六条第四項各号のいずれかに該<wbr>当すると認める場合において、当該船舶が外国軍用品等の海上輸送を反復して行うこと<wbr>を防止するため必要があると認めるときは、航行停止の審決をしなければならない。</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">４　外国軍用品審判所は、審判手続を経た後、第三十四条の規定による送致を受けた事<wbr>件に係る船舶が外国軍用品等を輸送しており、かつ、第六条第四項各号のいずれかに該<wbr>当すると認める場合において、当該船舶が外国軍用品等の海上輸送を反復して行うこと<wbr>を防止するため必要があると認めるときは、航行停止の審決をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">５　外国軍用品審判所は、審判手続を経た後、第六条各項に規定する場合のいずれにも<wbr>該当しないと認めるときは、その旨を明らかにする審決をしなければならない。</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">５　外国軍用品審判所は、審判手続を経た後、第六条各項に規定する場合のいずれにも<wbr>該当しないと認めるときは、その旨を明らかにする審決をしなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">（証拠による事実認定）</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">（証拠による事実認定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">第五十三条　前条の審決においては、公知の事実を除き、審判手続において取り調べた<wbr>証拠によって事実を認定しなければならない。</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">第五十三条　前条の審決においては、公知の事実を除き、審判手続において取り調べた<wbr>証拠によって事実を認定しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">（審決の方式）</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">（審決の方式）</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">第五十四条　第五十二条の審決においては、認定した事実、証拠の標目及び法令の適用<wbr>を示さなければならない。</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">第五十四条　第五十二条の審決においては、認定した事実、証拠の標目及び法令の適用<wbr>を示さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">（審決の効力発生時期）</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">（審決の効力発生時期）</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">第五十五条　審決は、審判廷における言渡しによってその効力を生ずる。</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">第五十五条　審決は、審判廷における言渡しによってその効力を生ずる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">（審決の公告）</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">（審決の公告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">第五十六条　外国軍用品審判所は、第五十二条の審決をしたときは、政令で定めるとこ<wbr>ろにより、その旨を公告しなければならない。</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">第五十六条　外国軍用品審判所は、第五十二条の審決をしたときは、政令で定めるとこ<wbr>ろにより、その旨を公告しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">（審決の取消し）</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">（審決の取消し）</span></code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第五十七条　外国軍用品審判所は、第五十二条第二項から第四項までの審決をした後、<wbr>当該審決に係る積荷又は船舶についてその所有権の移転、仕向地の変更その他の事由に<wbr>より当該審決の要件である事実が消滅し、又は当該事実に変更があったと認めるときは<wbr>、審決をもってこれを取り消すことができる。</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">第五十七条　外国軍用品審判所は、第五十二条第二項から第四項までの審決をした後、<wbr>当該審決に係る積荷又は船舶についてその所有権の移転、仕向地の変更その他の事由に<wbr>より当該審決の要件である事実が消滅し、又は当該事実に変更があったと認めるときは<wbr>、審決をもってこれを取り消すことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">第五十八条　外国軍用品審判所は、第五十二条第二項から第四項までの審決をした後、<wbr>武力攻撃事態又は存立危機事態が終結したときは、遅滞なく、審決をもってこれを取り<wbr>消さなければならない。</span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">第五十八条　外国軍用品審判所は、第五十二条第二項から第四項までの審決をした後、<wbr>武力攻撃事態又は存立危機事態が終結したときは、遅滞なく、審決をもってこれを取り<wbr>消さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">（事件記録の閲覧、審決書の謄本の交付等）</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">（事件記録の閲覧、審決書の謄本の交付等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">第五十九条　利害関係者は、外国軍用品審判所に対し、審判開始決定後、事件記録の閲<wbr>覧若しくは謄写又は審決書の謄本若しくは抄本の交付を求めることができる。</span></code></td>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">第五十九条　利害関係者は、外国軍用品審判所に対し、審判開始決定後、事件記録の閲<wbr>覧若しくは謄写又は審決書の謄本若しくは抄本の交付を求めることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">（防衛省令への委任）</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">（防衛省令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">第六十条　この法律に定めるもののほか、外国軍用品審判所の審判の手続に関し必要な<wbr>事項は、防衛省令で定める。</span></code></td>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">第六十条　この法律に定めるもののほか、外国軍用品審判所の審判の手続に関し必要な<wbr>事項は、防衛省令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">第六章　審決の執行</span></code></td>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">第六章　審決の執行</span></code></td>
+</tr>
+<tr>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">（審決の執行者）</span></code></td>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">（審決の執行者）</span></code></td>
+</tr>
+<tr>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">第六十一条　審決は、外国軍用品審判所長が指定する外国軍用品審判所の事務官（以下<wbr>「審決執行官」という。）がこれを執行する。</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">第六十一条　審決は、外国軍用品審判所長が指定する外国軍用品審判所の事務官（以下<wbr>「審決執行官」という。）がこれを執行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">（廃棄の審決の執行）</span></code></td>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">（廃棄の審決の執行）</span></code></td>
+</tr>
+<tr>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">第六十二条　審決執行官は、第五十二条第一項の審決があったときは、当該審決に係る<wbr>積荷の無害化のための措置を講じた上で、これを廃棄しなければならない。</span></code></td>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">第六十二条　審決執行官は、第五十二条第一項の審決があったときは、当該審決に係る<wbr>積荷の無害化のための措置を講じた上で、これを廃棄しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">（輸送停止の審決の執行）</span></code></td>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">（輸送停止の審決の執行）</span></code></td>
+</tr>
+<tr>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">第六十三条　審決執行官は、第五十二条第二項又は第三項の審決があったときは、当該<wbr>審決に係る積荷を占有して保管しなければならない。</span></code></td>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">第六十三条　審決執行官は、第五十二条第二項又は第三項の審決があったときは、当該<wbr>審決に係る積荷を占有して保管しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">２　審決執行官は、前項の積荷が腐敗し、若しくは変質したとき、又は腐敗若しくは変<wbr>質のおそれがあるときは、政令で定めるところにより、これを売却してその代価を保管<wbr>することができる。</span></code></td>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">２　審決執行官は、前項の積荷が腐敗し、若しくは変質したとき、又は腐敗若しくは変<wbr>質のおそれがあるときは、政令で定めるところにより、これを売却してその代価を保管<wbr>することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">３　審決執行官は、第一項の積荷のうち、人の生命若しくは財産を害する急迫した危険<wbr>を生ずるおそれがあるもの又は腐敗、変質その他やむを得ない理由により著しく価値が<wbr>減少したもので買受人がないものを廃棄することができる。</span></code></td>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">３　審決執行官は、第一項の積荷のうち、人の生命若しくは財産を害する急迫した危険<wbr>を生ずるおそれがあるもの又は腐敗、変質その他やむを得ない理由により著しく価値が<wbr>減少したもので買受人がないものを廃棄することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">（航行停止の審決の執行）</span></code></td>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">（航行停止の審決の執行）</span></code></td>
+</tr>
+<tr>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">第六十四条　審決執行官は、第五十二条第四項の審決があったときは、第二十条第一号<wbr>に掲げる書類その他の当該審決に係る船舶の航行のために必要な文書を取り上げて保管<wbr>するとともに、当該船舶の出航を禁止しなければならない。</span></code></td>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">第六十四条　審決執行官は、第五十二条第四項の審決があったときは、第二十条第一号<wbr>に掲げる書類その他の当該審決に係る船舶の航行のために必要な文書を取り上げて保管<wbr>するとともに、当該船舶の出航を禁止しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">（取消し審決の執行）</span></code></td>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">（取消し審決の執行）</span></code></td>
+</tr>
+<tr>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">第六十五条　審決執行官は、第五十七条又は第五十八条の規定により、第五十二条第二<wbr>項又は第三項の審決を取り消す審決があったときは、第六十三条第一項又は第二項の規<wbr>定により保管する当該審決に係る積荷又はその代価をその返還を受けるべき者に還付し<wbr>なければならない。</span></code></td>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">第六十五条　審決執行官は、第五十七条又は第五十八条の規定により、第五十二条第二<wbr>項又は第三項の審決を取り消す審決があったときは、第六十三条第一項又は第二項の規<wbr>定により保管する当該審決に係る積荷又はその代価をその返還を受けるべき者に還付し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">２　第四十三条第二項から第四項までの規定は、前項の場合について準用する。</span></code></td>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">２　第四十三条第二項から第四項までの規定は、前項の場合について準用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">３　審決執行官は、第五十七条又は第五十八条の規定により、第五十二条第四項の審決<wbr>を取り消す審決があったときは、取り消された審決に係る船舶の船長等に前条の規定に<wbr>より保管する文書を還付するとともに、当該船舶の出航を許可しなければならない。</span></code></td>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">３　審決執行官は、第五十七条又は第五十八条の規定により、第五十二条第四項の審決<wbr>を取り消す審決があったときは、取り消された審決に係る船舶の船長等に前条の規定に<wbr>より保管する文書を還付するとともに、当該船舶の出航を許可しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">第七章　補償</span></code></td>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">第七章　補償</span></code></td>
+</tr>
+<tr>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">第六十六条　外国軍用品審判所が第四十五条第二項の規定による審判を開始しない旨の<wbr>決定をしたとき、第五十二条第五項の審決をしたとき、又は外国軍用品審判所の審決を<wbr>取り消す裁判が確定したときは、当該決定又は審決に係る船舶の所有者、賃借人又は傭<wbr>よう船者は、国に対し、当該船舶の回航措置により生じた損失（外国軍用品審判所が第<wbr>四十条第一項（第四十五条第三項において準用する場合を含む。第六十九条において同<wbr>じ。）の規定による命令をした場合にあっては、当該命令により生じた損失を含む。）<wbr>の補償を請求することができる。</span></code></td>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">第六十六条　外国軍用品審判所が第四十五条第二項の規定による審判を開始しない旨の<wbr>決定をしたとき、第五十二条第五項の審決をしたとき、又は外国軍用品審判所の審決を<wbr>取り消す裁判が確定したときは、当該決定又は審決に係る船舶の所有者、賃借人又は傭<wbr>よう船者は、国に対し、当該船舶の回航措置により生じた損失（外国軍用品審判所が第<wbr>四十条第一項（第四十五条第三項において準用する場合を含む。第六十九条において同<wbr>じ。）の規定による命令をした場合にあっては、当該命令により生じた損失を含む。）<wbr>の補償を請求することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">244</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第六十七条　国は、前条の補償を行った場合においては、同一の事由については、その<wbr>価額の限度において、国家</span><span style="color: #000000; background-color: #efcb05; ">（昭和二十二年法律第百二十五号）又は民法（明治二十九年<wbr>法律第八十九号）による損害賠償の責めを免れる。</span></code></td>
+<td class="ln">244</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第六十七条　国は、前条の補償を行った場合においては、同一の事由については、その<wbr>価額の限度において、国家</span><span class="sf17b18">賠償法</span><span style="color: #000000; background-color: #efcb05; ">（昭和二十二年法律第百二十五号）又は民法（明治二<wbr>十九年法律第八十九号）による損害賠償の責めを免れる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">第八章　雑則</span></code></td>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">第八章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">（参考人等の費用の請求）</span></code></td>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">（参考人等の費用の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">第六十八条　第四十一条第一項第一号若しくは第二号又は第二項の規定により出頭又は<wbr>鑑定を命ぜられた参考人又は鑑定人は、政令で定めるところにより、旅費、日当その他<wbr>の費用を請求することができる。</span></code></td>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">第六十八条　第四十一条第一項第一号若しくは第二号又は第二項の規定により出頭又は<wbr>鑑定を命ぜられた参考人又は鑑定人は、政令で定めるところにより、旅費、日当その他<wbr>の費用を請求することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">（乗組員等への便宜供与）</span></code></td>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">（乗組員等への便宜供与）</span></code></td>
+</tr>
+<tr>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">第六十九条　外国軍用品審判所は、第四十条第一項又は第六十四条の規定により出航を<wbr>禁止された船舶の乗組員等の本邦への上陸又は本邦からの出国に際して、これらの者が<wbr>出入国管理及び難民認定法（昭和二十六年政令第三百十九号）等の法令による手続を行<wbr>う場合においてその手続を円滑に行うことができるようにするため、必要な便宜を供与<wbr>するものとする。</span></code></td>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">第六十九条　外国軍用品審判所は、第四十条第一項又は第六十四条の規定により出航を<wbr>禁止された船舶の乗組員等の本邦への上陸又は本邦からの出国に際して、これらの者が<wbr>出入国管理及び難民認定法（昭和二十六年政令第三百十九号）等の法令による手続を行<wbr>う場合においてその手続を円滑に行うことができるようにするため、必要な便宜を供与<wbr>するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">（行政手続法の適用除外）</span></code></td>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">（行政手続法の適用除外）</span></code></td>
+</tr>
+<tr>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">第七十条　この法律に基づく処分については、行政手続法（平成五年法律第八十八号）<wbr>第三章の規定は、適用しない。</span></code></td>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">第七十条　この法律に基づく処分については、行政手続法（平成五年法律第八十八号）<wbr>第三章の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">（審査請求の制限）</span></code></td>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">（審査請求の制限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">第七十一条　この法律に基づく処分については、審査請求をすることができない。</span></code></td>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">第七十一条　この法律に基づく処分については、審査請求をすることができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">第七十二条　この法律に特別の定めがあるもののほか、この法律の実施のため必要な事<wbr>項は、政令で定める。</span></code></td>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">第七十二条　この法律に特別の定めがあるもののほか、この法律の実施のため必要な事<wbr>項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">第九章　罰則</span></code></td>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">第九章　罰則</span></code></td>
+</tr>
+<tr>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">第七十三条　第五十条第二項の規定により宣誓した参考人又は鑑定人が虚偽の陳述又は<wbr>鑑定をしたときは、三月以上十年以下の懲役に処する。</span></code></td>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">第七十三条　第五十条第二項の規定により宣誓した参考人又は鑑定人が虚偽の陳述又は<wbr>鑑定をしたときは、三月以上十年以下の懲役に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">２　前項の罪を犯した者が、審判手続終了前であって、かつ、犯罪の発覚する前に自白<wbr>したときは、その刑を軽減又は免除することができる。</span></code></td>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">２　前項の罪を犯した者が、審判手続終了前であって、かつ、犯罪の発覚する前に自白<wbr>したときは、その刑を軽減又は免除することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">第七十四条　第四十一条第一項第四号の規定による検査を拒み、妨げ、又は忌避した者<wbr>は、一年以下の懲役又は五十万円以下の罰金に処する。</span></code></td>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">第七十四条　第四十一条第一項第四号の規定による検査を拒み、妨げ、又は忌避した者<wbr>は、一年以下の懲役又は五十万円以下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">第七十五条　第四十条第一項（第四十五条第三項において準用する場合を含む。）の規<wbr>定による処分に違反した者は、六月以下の懲役又は三十万円以下の罰金に処する。</span></code></td>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">第七十五条　第四十条第一項（第四十五条第三項において準用する場合を含む。）の規<wbr>定による処分に違反した者は、六月以下の懲役又は三十万円以下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">第七十六条　次の各号のいずれかに該当する者は、三十万円以下の罰金に処する。</span></code></td>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">第七十六条　次の各号のいずれかに該当する者は、三十万円以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">一　第四十一条第一項第一号又は第二項の規定による船舶関係者又は参考人に対する処<wbr>分に違反して出頭せず、陳述をせず、虚偽の陳述をし、又は報告をせず、若しくは虚偽<wbr>の報告をした者</span></code></td>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">一　第四十一条第一項第一号又は第二項の規定による船舶関係者又は参考人に対する処<wbr>分に違反して出頭せず、陳述をせず、虚偽の陳述をし、又は報告をせず、若しくは虚偽<wbr>の報告をした者</span></code></td>
+</tr>
+<tr>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">二　第四十一条第一項第二号又は第二項の規定による鑑定人に対する処分に違反して出<wbr>頭せず、鑑定をせず、又は虚偽の鑑定をした者</span></code></td>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">二　第四十一条第一項第二号又は第二項の規定による鑑定人に対する処分に違反して出<wbr>頭せず、鑑定をせず、又は虚偽の鑑定をした者</span></code></td>
+</tr>
+<tr>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">三　第四十一条第一項第三号又は第二項の規定による物件の所持者に対する処分に違反<wbr>して物件を提出しない者</span></code></td>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">三　第四十一条第一項第三号又は第二項の規定による物件の所持者に対する処分に違反<wbr>して物件を提出しない者</span></code></td>
+</tr>
+<tr>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">四　第五十条第二項において準用する刑事訴訟法第百五十四条又は第百六十六条の規定<wbr>による参考人又は鑑定人に対する命令に違反して宣誓をしない者</span></code></td>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">四　第五十条第二項において準用する刑事訴訟法第百五十四条又は第百六十六条の規定<wbr>による参考人又は鑑定人に対する命令に違反して宣誓をしない者 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">第七十七条　第四十九条第二項の規定による審判長の命令に従わなかった者は、五万円<wbr>以下の過料に処する。</span></code></td>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">第七十七条　第四十九条第二項の規定による審判長の命令に従わなかった者は、五万円<wbr>以下の過料に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年一二月二二日法律第一一八号）　抄</span></code></td>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年一二月二二日法律第一一八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六九号）　抄</span></code></td>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政不服審査法（平成二十六年法律第六十八号）の施行の日から<wbr>施行する。</span></code></td>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政不服審査法（平成二十六年法律第六十八号）の施行の日から<wbr>施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">第五条　行政庁の処分その他の行為又は不作為についての不服申立てであってこの法律<wbr>の施行前にされた行政庁の処分その他の行為又はこの法律の施行前にされた申請に係る<wbr>行政庁の不作為に係るものについては、この附則に特別の定めがある場合を除き、なお<wbr>従前の例による。</span></code></td>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">第五条　行政庁の処分その他の行為又は不作為についての不服申立てであってこの法律<wbr>の施行前にされた行政庁の処分その他の行為又はこの法律の施行前にされた申請に係る<wbr>行政庁の不作為に係るものについては、この附則に特別の定めがある場合を除き、なお<wbr>従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">（訴訟に関する経過措置）</span></code></td>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">（訴訟に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律による改正前の法律の規定により不服申立てに対する行政庁の裁決、<wbr>決定その他の行為を経た後でなければ訴えを提起できないこととされる事項であって、<wbr>当該不服申立てを提起しないでこの法律の施行前にこれを提起すべき期間を経過したも<wbr>の（当該不服申立てが他の不服申立てに対する行政庁の裁決、決定その他の行為を経た<wbr>後でなければ提起できないとされる場合にあっては、当該他の不服申立てを提起しない<wbr>でこの法律の施行前にこれを提起すべき期間を経過したものを含む。）の訴えの提起に<wbr>ついては、なお従前の例による。</span></code></td>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律による改正前の法律の規定により不服申立てに対する行政庁の裁決、<wbr>決定その他の行為を経た後でなければ訴えを提起できないこととされる事項であって、<wbr>当該不服申立てを提起しないでこの法律の施行前にこれを提起すべき期間を経過したも<wbr>の（当該不服申立てが他の不服申立てに対する行政庁の裁決、決定その他の行為を経た<wbr>後でなければ提起できないとされる場合にあっては、当該他の不服申立てを提起しない<wbr>でこの法律の施行前にこれを提起すべき期間を経過したものを含む。）の訴えの提起に<wbr>ついては、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">280</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の規定による改正前の法律の規定（前条の規定によりなお従前の例による<wbr>こととされる場合を含む。）により異議申立てが提起された処分その他の行為であって<wbr>、この法律の規定による改正後の法律の規定により審査請求に対する裁決を経た後でな<wbr>ければ取消しの訴えを提起することができないこととされるものの取消しの訴えの提起<wbr>については、なお従前の例による。</span></code></td>
+<td class="ln">280</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の規定による改正前の法律の規定（前条の規定によりなお従前の例による<wbr>こととされる場合を含む。）により異議申立てが提起された処分その他の行為であって<wbr>、この法律の規定による改正後の法律の規定により審査請求に対する裁決を経た後でな<wbr>ければ取消しの訴えを提起することができないこととされるものの取消しの訴えの提起<wbr>については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">３　不服申立てに対する行政庁の裁決、決定その他の行為の取消しの訴えであって、こ<wbr>の法律の施行前に提起されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">281</td><td class="sf3b2"><code><span class="sf3b2">３　不服申立てに対する行政庁の裁決、決定その他の行為の取消しの訴えであって、こ<wbr>の法律の施行前に提起されたものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">282</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">第九条　この法律の施行前にした行為並びに附則第五条及び前二条の規定によりなお従<wbr>前の例によることとされる場合におけるこの法律の施行後にした行為に対する罰則の適<wbr>用については、なお従前の例による。</span></code></td>
+<td class="ln">283</td><td class="sf3b2"><code><span class="sf3b2">第九条　この法律の施行前にした行為並びに附則第五条及び前二条の規定によりなお従<wbr>前の例によることとされる場合におけるこの法律の施行後にした行為に対する罰則の適<wbr>用については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">284</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">第十条　附則第五条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置（罰則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">285</td><td class="sf3b2"><code><span class="sf3b2">第十条　附則第五条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置（罰則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月三〇日法律第七六号）　抄</span></code></td>
+<td class="ln">286</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二七年九月三〇日法律第七六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">287</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">288</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">（調整規定）</span></code></td>
+<td class="ln">289</td><td class="sf3b2"><code><span class="sf3b2">（調整規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行の日（附則第十条において「施行日」という。）が刑事訴訟法<wbr>等の一部を改正する法律（平成二十七年法律第　　　号）附則第一条第二号に掲げる規<wbr>定の施行の日前である場合には、同法附則第十二条（見出しを含む。）中「武力攻撃事<wbr>態における外国軍用品等の海上輸送の規制に関する法律」とあるのは、「武力攻撃事態<wbr>及び存立危機事態における外国軍用品等の海上輸送の規制に関する法律」とする。</span></code></td>
+<td class="ln">290</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行の日（附則第十条において「施行日」という。）が刑事訴訟法<wbr>等の一部を改正する法律（平成二十七年法律第　　　号）附則第一条第二号に掲げる規<wbr>定の施行の日前である場合には、同法附則第十二条（見出しを含む。）中「武力攻撃事<wbr>態における外国軍用品等の海上輸送の規制に関する法律」とあるのは、「武力攻撃事態<wbr>及び存立危機事態における外国軍用品等の海上輸送の規制に関する法律」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年六月三日法律第五四号）　抄</span></code></td>
+<td class="ln">291</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二八年六月三日法律第五四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">292</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">293</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">293</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">一・二　略</span></code></td>
+<td class="ln">294</td><td class="sf3b2"><code><span class="sf3b2">一・二　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">三　第一条（前号に掲げる改正規定を除く。）及び第六条の規定並びに次条並びに附則<wbr>第四条、第六条、第八条、第十条、第十一条（裁判員の参加する刑事裁判に関する法律<wbr>（平成十六年法律第六十三号）第六十四条第一項の表第四十三条第四項、第六十九条、<wbr>第七十六条第二項、第八十五条、第百八条第三項、第百二十五条第一項、第百六十三条<wbr>第一項、第百六十九条、第二百七十八条の二第二項、第二百九十七条第二項、第三百十<wbr>六条の十一の項及び第六十五条第四項の改正規定に限る。）及び第十二条から第十五条<wbr>までの規定　公布の日から起算して六月を超えない範囲内において政令で定める日</span></code></td>
+<td class="ln">295</td><td class="sf3b2"><code><span class="sf3b2">三　第一条（前号に掲げる改正規定を除く。）及び第六条の規定並びに次条並びに附則<wbr>第四条、第六条、第八条、第十条、第十一条（裁判員の参加する刑事裁判に関する法律<wbr>（平成十六年法律第六十三号）第六十四条第一項の表第四十三条第四項、第六十九条、<wbr>第七十六条第二項、第八十五条、第百八条第三項、第百二十五条第一項、第百六十三条<wbr>第一項、第百六十九条、第二百七十八条の二第二項、第二百九十七条第二項、第三百十<wbr>六条の十一の項及び第六十五条第四項の改正規定に限る。）及び第十二条から第十五条<wbr>までの規定　公布の日から起算して六月を超えない範囲内において政令で定める日 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

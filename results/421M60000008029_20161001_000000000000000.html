@@ -1,0 +1,351 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十一年総務省令第二十九号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十一年総務省令第二十九号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国家公務員退職手当法の規定に基づく意見の聴取の手続に関する規則</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国家公務員退職手当法の規定に基づく意見の聴取の手続に関する規則</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">国家公務員退職手当法（昭和二十八年法律第百八十二号）第十四条第三項及び第十五条<wbr>第四項（同法第十六条第二項及び第十七条第七項において準用する場合を含む。）の規<wbr>定を実施するため、国家公務員退職手当法の規定に基づく意見の聴取の手続に関する規<wbr>則を次のように制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">国家公務員退職手当法（昭和二十八年法律第百八十二号）第十四条第三項及び第十五条<wbr>第四項（同法第十六条第二項及び第十七条第七項において準用する場合を含む。）の規<wbr>定を実施するため、国家公務員退職手当法の規定に基づく意見の聴取の手続に関する規<wbr>則を次のように制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（趣旨）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（趣旨）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　国家公務員退職手当法（以下「法」という。）第十四条第三項又は第十五条第<wbr>四項（法第十六条第二項及び第十七条第七項において準用する場合を含む。以下同じ。<wbr>）の規定により退職手当管理機関（法第十一条第二号に規定する退職手当管理機関をい<wbr>う。以下同じ。）が行う意見の聴取の手続については、この内閣官房令の定めるところ<wbr>による。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　国家公務員退職手当法（以下「法」という。）第十四条第三項又は第十五条第<wbr>四項（法第十六条第二項及び第十七条第七項において準用する場合を含む。以下同じ。<wbr>）の規定により退職手当管理機関（法第十一条第二号に規定する退職手当管理機関をい<wbr>う。以下同じ。）が行う意見の聴取の手続については、この内閣官房令の定めるところ<wbr>による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　この規則において、次の各号に掲げる用語の意義は、それぞれ当該各号に定め<wbr>るところによる。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　この規則において、次の各号に掲げる用語の意義は、それぞれ当該各号に定め<wbr>るところによる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　主宰者　法第十四条第四項、第十五条第五項、第十六条第三項及び第十七条第八項<wbr>において準用する行政手続法（平成五年法律第八十八号。以下「準用行政手続法」とい<wbr>う。）第十九条第一項の規定により意見の聴取を主宰する者をいう。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">一　主宰者　法第十四条第四項、第十五条第五項、第十六条第三項及び第十七条第八項<wbr>において準用する行政手続法（平成五年法律第八十八号。以下「準用行政手続法」とい<wbr>う。）第十九条第一項の規定により意見の聴取を主宰する者をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　当事者　準用行政手続法第十五条第一項の規定による通知を受けた者（同条第三項<wbr>後段の規定により当該通知が到達したものとみなされる者を含む。）をいう。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">二　当事者　準用行政手続法第十五条第一項の規定による通知を受けた者（同条第三項<wbr>後段の規定により当該通知が到達したものとみなされる者を含む。）をいう。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　関係人　当事者以外の者であって法に照らし法第十四条第一項（同項第三号に該当<wbr>する場合に限る。）及び第二項、第十五条第一項、第十六条第一項並びに第十七条第一<wbr>項から第五項までの規定による処分につき利害関係を有するものと認められる者をいう<wbr>。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">三　関係人　当事者以外の者であって法に照らし法第十四条第一項（同項第三号に該当<wbr>する場合に限る。）及び第二項、第十五条第一項、第十六条第一項並びに第十七条第一<wbr>項から第五項までの規定による処分につき利害関係を有するものと認められる者をいう<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">四　参加人　準用行政手続法第十七条第一項の規定により意見の聴取に関する手続に参<wbr>加する関係人をいう。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">四　参加人　準用行政手続法第十七条第一項の規定により意見の聴取に関する手続に参<wbr>加する関係人をいう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の期日等の変更）</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の期日等の変更）</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第三条　退職手当管理機関が準用行政手続法第十五条第一項の通知をした場合（同条第<wbr>三項の規定により通知をした場合を含む。）において、当事者は、やむを得ない理由が<wbr>ある場合には、退職手当管理機関に対し、意見の聴取の期日又は場所の変更を申し出る<wbr>ことができる。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第三条　退職手当管理機関が準用行政手続法第十五条第一項の通知をした場合（同条第<wbr>三項の規定により通知をした場合を含む。）において、当事者は、やむを得ない理由が<wbr>ある場合には、退職手当管理機関に対し、意見の聴取の期日又は場所の変更を申し出る<wbr>ことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　退職手当管理機関は、前項の申出により、又は職権により、意見の聴取の期日又は<wbr>場所を変更することができる。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　退職手当管理機関は、前項の申出により、又は職権により、意見の聴取の期日又は<wbr>場所を変更することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">３　退職手当管理機関は、前項の規定により意見の聴取の期日又は場所を変更したとき<wbr>は、速やかに、その旨を当事者、参加人（その時までに準用行政手続法第十七条第一項<wbr>の求めを受諾し、又は同項の許可を受けている者に限る。）及び第五条に規定する参考<wbr>人に通知しなければならない。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">３　退職手当管理機関は、前項の規定により意見の聴取の期日又は場所を変更したとき<wbr>は、速やかに、その旨を当事者、参加人（その時までに準用行政手続法第十七条第一項<wbr>の求めを受諾し、又は同項の許可を受けている者に限る。）及び第五条に規定する参考<wbr>人に通知しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（関係人の参加許可の手続）</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（関係人の参加許可の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第四条　準用行政手続法第十七条第一項の規定による許可の申請については、関係人は<wbr>、速やかに、その氏名、住所及び当該意見の聴取に係る不利益処分につき利害関係を有<wbr>することの疎明を記載した書面を主宰者に提出してこれを行うものとする。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第四条　準用行政手続法第十七条第一項の規定による許可の申請については、関係人は<wbr>、速やかに、その氏名、住所及び当該意見の聴取に係る不利益処分につき利害関係を有<wbr>することの疎明を記載した書面を主宰者に提出してこれを行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者は、前項の許可をしたときは、速やかに、その旨を当該申請者に通知しなけ<wbr>ればならない。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者は、前項の許可をしたときは、速やかに、その旨を当該申請者に通知しなけ<wbr>ればならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（参考人）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（参考人）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第五条　主宰者は、必要があると認めるときは、学識経験のある者その他の参考人（以<wbr>下単に「参考人」という。）に対し、意見の聴取に関する手続に参加することを求める<wbr>ことができる。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第五条　主宰者は、必要があると認めるときは、学識経験のある者その他の参考人（以<wbr>下単に「参考人」という。）に対し、意見の聴取に関する手続に参加することを求める<wbr>ことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（文書等の閲覧の手続）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（文書等の閲覧の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　準用行政手続法第十八条第一項の規定による閲覧の求めについては、当事者又<wbr>は当該不利益処分がされた場合に自己の利益を害されることとなる参加人（以下この条<wbr>において「当事者等」という。）は、その氏名、住所及び閲覧をしようとする資料の標<wbr>目を記載した書面を退職手当管理機関に提出してこれを行うものとする。ただし、意見<wbr>の聴取の期日における審理の進行に応じて必要となった場合の閲覧については、口頭で<wbr>求めれば足りる。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第六条　準用行政手続法第十八条第一項の規定による閲覧の求めについては、当事者又<wbr>は当該不利益処分がされた場合に自己の利益を害されることとなる参加人（以下この条<wbr>において「当事者等」という。）は、その氏名、住所及び閲覧をしようとする資料の標<wbr>目を記載した書面を退職手当管理機関に提出してこれを行うものとする。ただし、意見<wbr>の聴取の期日における審理の進行に応じて必要となった場合の閲覧については、口頭で<wbr>求めれば足りる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　退職手当管理機関は、閲覧を許可したときは、その場で閲覧させる場合を除き、速<wbr>やかに、閲覧の日時及び場所を当該当事者等に通知しなければならない。この場合にお<wbr>いて、退職手当管理機関は、意見の聴取の審理における当事者等の意見陳述の準備を妨<wbr>げることがないよう配慮するものとする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　退職手当管理機関は、閲覧を許可したときは、その場で閲覧させる場合を除き、速<wbr>やかに、閲覧の日時及び場所を当該当事者等に通知しなければならない。この場合にお<wbr>いて、退職手当管理機関は、意見の聴取の審理における当事者等の意見陳述の準備を妨<wbr>げることがないよう配慮するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　退職手当管理機関は、意見の聴取の期日における審理の進行に応じて必要となった<wbr>資料の閲覧の求めがあった場合に、当該審理において閲覧させることができないとき（<wbr>準用行政手続法第十八条第一項後段の規定による拒否の場合を除く。）は、閲覧の日時<wbr>及び場所を指定し、当該当事者等に通知しなければならない。この場合において、主宰<wbr>者は、準用行政手続法第二十二条第一項の規定に基づき、当該閲覧の日時以降の日を新<wbr>たな意見の聴取の期日として定めるものとする。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">３　退職手当管理機関は、意見の聴取の期日における審理の進行に応じて必要となった<wbr>資料の閲覧の求めがあった場合に、当該審理において閲覧させることができないとき（<wbr>準用行政手続法第十八条第一項後段の規定による拒否の場合を除く。）は、閲覧の日時<wbr>及び場所を指定し、当該当事者等に通知しなければならない。この場合において、主宰<wbr>者は、準用行政手続法第二十二条第一項の規定に基づき、当該閲覧の日時以降の日を新<wbr>たな意見の聴取の期日として定めるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（主宰者の指名の手続）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（主宰者の指名の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第七条　準用行政手続法第十九条第一項の規定による主宰者の指名は、意見の聴取の通<wbr>知の時までに行うものとする。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第七条　準用行政手続法第十九条第一項の規定による主宰者の指名は、意見の聴取の通<wbr>知の時までに行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者が準用行政手続法第十九条第二項各号のいずれかに該当するに至ったとき、<wbr>又は主宰者が死亡し若しくは心身の故障その他継続して意見の聴取を行えない事由によ<wbr>り意見の聴取を行うことができなくなったときは、退職手当管理機関は、速やかに、新<wbr>たな主宰者を指名しなければならない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者が準用行政手続法第十九条第二項各号のいずれかに該当するに至ったとき、<wbr>又は主宰者が死亡し若しくは心身の故障その他継続して意見の聴取を行えない事由によ<wbr>り意見の聴取を行うことができなくなったときは、退職手当管理機関は、速やかに、新<wbr>たな主宰者を指名しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（補佐人の出頭許可の手続）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（補佐人の出頭許可の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">29</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第八条　</span><span style="color: #000000; background-color: #efcb05; ">第二十条第三項の規定による許可の申請については、当事者又は参加人は、速<wbr>やかに、補佐人の氏名、住所、当事者又は参加人との関係及び補佐する事項を記載した<wbr>書面を主宰者に提出してこれを行うものとする。ただし、準用行政手続法第二十二条第<wbr>二項（準用行政手続法第二十五条後段において準用する場合を含む。）の規定により通<wbr>知された意見の聴取の期日に出頭させようとする補佐人であって既に受けた許可に係る<wbr>事項につき補佐するものについては、この限りでない。</span></code></td>
+<td class="ln">29</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第八条　</span><span class="sf17b18">準用行政手続法</span><span style="color: #000000; background-color: #efcb05; ">第二十条第三項の規定による許可の申請については、当事者又<wbr>は参加人は、速やかに、補佐人の氏名、住所、当事者又は参加人との関係及び補佐する<wbr>事項を記載した書面を主宰者に提出してこれを行うものとする。ただし、準用行政手続<wbr>法第二十二条第二項（準用行政手続法第二十五条後段において準用する場合を含む。）<wbr>の規定により通知された意見の聴取の期日に出頭させようとする補佐人であって既に受<wbr>けた許可に係る事項につき補佐するものについては、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者は、前項の許可をしたときは、速やかに、その旨を当該当事者又は参加人に<wbr>通知しなければならない。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者は、前項の許可をしたときは、速やかに、その旨を当該当事者又は参加人に<wbr>通知しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">３　補佐人の陳述は、当該当事者又は参加人が直ちに取り消さないときは、自ら陳述し<wbr>たものとみなす。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">３　補佐人の陳述は、当該当事者又は参加人が直ちに取り消さないときは、自ら陳述し<wbr>たものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の期日における陳述の制限及び秩序維持）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の期日における陳述の制限及び秩序維持）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第九条　主宰者は、意見の聴取の期日に出頭した者が当該事案の範囲を超えて陳述する<wbr>ときその他議事を整理するためにやむを得ないと認めるときは、その者に対し、その陳<wbr>述を制限することができる。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第九条　主宰者は、意見の聴取の期日に出頭した者が当該事案の範囲を超えて陳述する<wbr>ときその他議事を整理するためにやむを得ないと認めるときは、その者に対し、その陳<wbr>述を制限することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者は、前項に規定する場合のほか、意見の聴取の審理の秩序を維持するため、<wbr>意見の聴取の審理を妨害し、又はその秩序を乱す者に対し退場を命ずる等適当な措置を<wbr>とることができる。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者は、前項に規定する場合のほか、意見の聴取の審理の秩序を維持するため、<wbr>意見の聴取の審理を妨害し、又はその秩序を乱す者に対し退場を命ずる等適当な措置を<wbr>とることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の期日における審理の公開）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取の期日における審理の公開）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第十条　退職手当管理機関は、準用行政手続法第二十条第六項の規定により意見の聴取<wbr>の期日における審理の公開を相当と認めたときは、意見の聴取の期日及び場所を公示す<wbr>るものとする。この場合において、退職手当管理機関は、当事者、参加人（その時まで<wbr>に準用行政手続法第十七条第一項の求めを受諾し、又は同項の許可を受けている者に限<wbr>る。）及び参考人に対し、速やかに、その旨を通知するものとする。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第十条　退職手当管理機関は、準用行政手続法第二十条第六項の規定により意見の聴取<wbr>の期日における審理の公開を相当と認めたときは、意見の聴取の期日及び場所を公示す<wbr>るものとする。この場合において、退職手当管理機関は、当事者、参加人（その時まで<wbr>に準用行政手続法第十七条第一項の求めを受諾し、又は同項の許可を受けている者に限<wbr>る。）及び参考人に対し、速やかに、その旨を通知するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（陳述書の提出の方法等）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（陳述書の提出の方法等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第十一条　準用行政手続法第二十一条第一項の規定による陳述書の提出は、提出する者<wbr>の氏名、住所、意見の聴取の件名及び当該意見の聴取に係る不利益処分の原因となる事<wbr>実その他当該事案の内容についての意見を記載した書面により行うものとする。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第十一条　準用行政手続法第二十一条第一項の規定による陳述書の提出は、提出する者<wbr>の氏名、住所、意見の聴取の件名及び当該意見の聴取に係る不利益処分の原因となる事<wbr>実その他当該事案の内容についての意見を記載した書面により行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取調書及び報告書の記載事項）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取調書及び報告書の記載事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第十二条　準用行政手続法第二十四条第一項に規定する調書（以下「意見の聴取調書」<wbr>という。）には、次に掲げる事項（意見の聴取の期日における審理が行われなかった場<wbr>合においては、第四号に掲げる事項を除く。）を記載し、主宰者がこれに記名押印しな<wbr>ければならない。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第十二条　準用行政手続法第二十四条第一項に規定する調書（以下「意見の聴取調書」<wbr>という。）には、次に掲げる事項（意見の聴取の期日における審理が行われなかった場<wbr>合においては、第四号に掲げる事項を除く。）を記載し、主宰者がこれに記名押印しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　意見の聴取の件名</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　意見の聴取の件名</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　意見の聴取の期日及び場所</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　意見の聴取の期日及び場所</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　主宰者の氏名及び職名</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　主宰者の氏名及び職名</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">四　意見の聴取の期日に出頭した当事者及び参加人又はこれらの者の代理人若しくは補<wbr>佐人（以下この項及び第三項において「当事者等」という。）並びに参考人の氏名及び<wbr>住所並びに退職手当管理機関の職員の氏名及び職名</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">四　意見の聴取の期日に出頭した当事者及び参加人又はこれらの者の代理人若しくは補<wbr>佐人（以下この項及び第三項において「当事者等」という。）並びに参考人の氏名及び<wbr>住所並びに退職手当管理機関の職員の氏名及び職名</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">五　意見の聴取の期日に出頭しなかった当事者等の氏名及び住所並びに当該当事者等の<wbr>うち当事者及びその代理人にあっては、出頭しなかったことについての正当な理由の有<wbr>無</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">五　意見の聴取の期日に出頭しなかった当事者等の氏名及び住所並びに当該当事者等の<wbr>うち当事者及びその代理人にあっては、出頭しなかったことについての正当な理由の有<wbr>無</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">六　当事者等、参考人及び退職手当管理機関の職員の陳述の要旨（提出された陳述書に<wbr>おける意見の陳述を含む。）</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">六　当事者等、参考人及び退職手当管理機関の職員の陳述の要旨（提出された陳述書に<wbr>おける意見の陳述を含む。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">七　証拠書類等が提出されたときは、その標目</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">七　証拠書類等が提出されたときは、その標目</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">八　その他参考となるべき事項</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">八　その他参考となるべき事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　意見の聴取調書には、書面、図画、写真その他主宰者が適当と認めるものを添付し<wbr>て調書の一部とすることができる。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　意見の聴取調書には、書面、図画、写真その他主宰者が適当と認めるものを添付し<wbr>て調書の一部とすることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">３　準用行政手続法第二十四条第三項に規定する報告書（以下単に「報告書」という。<wbr>）には、次に掲げる事項を記載し、主宰者がこれに記名押印しなければならない。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">３　準用行政手続法第二十四条第三項に規定する報告書（以下単に「報告書」という。<wbr>）には、次に掲げる事項を記載し、主宰者がこれに記名押印しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">一　意見</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">一　意見</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">二　不利益処分の原因となる事実に対する当事者等の主張</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">二　不利益処分の原因となる事実に対する当事者等の主張</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">三　理由</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">三　理由 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取調書及び報告書の閲覧の手続）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（意見の聴取調書及び報告書の閲覧の手続）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第十三条　準用行政手続法第二十四条第四項の規定による閲覧の求めについては、当事<wbr>者又は参加人は、その氏名、住所及び閲覧をしようとする意見の聴取調書又は報告書の<wbr>件名を記載した書面を、意見の聴取の終結前にあっては意見の聴取の主宰者に、意見の<wbr>聴取の終結後にあっては退職手当管理機関に提出してこれを行うものとする。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第十三条　準用行政手続法第二十四条第四項の規定による閲覧の求めについては、当事<wbr>者又は参加人は、その氏名、住所及び閲覧をしようとする意見の聴取調書又は報告書の<wbr>件名を記載した書面を、意見の聴取の終結前にあっては意見の聴取の主宰者に、意見の<wbr>聴取の終結後にあっては退職手当管理機関に提出してこれを行うものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者又は退職手当管理機関は、閲覧を許可したときは、その場で閲覧させる場合<wbr>を除き、速やかに、閲覧の日時及び場所を当該当事者又は参加人に通知しなければなら<wbr>ない。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">２　主宰者又は退職手当管理機関は、閲覧を許可したときは、その場で閲覧させる場合<wbr>を除き、速やかに、閲覧の日時及び場所を当該当事者又は参加人に通知しなければなら<wbr>ない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">この省令は、国家公務員退職手当法等の一部を改正する法律（平成二十年法律第九十五<wbr>号）の施行の日（平成二十一年四月一日）から施行する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">この省令は、国家公務員退職手当法等の一部を改正する法律（平成二十年法律第九十五<wbr>号）の施行の日（平成二十一年四月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年五月二九日総務省令第五二号）　抄</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年五月二九日総務省令第五二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、国家公務員法等の一部を改正する法律（平成二十六年法律第二十二号<wbr>）の施行の日（平成二十六年五月三十日）から施行する。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">１　この省令は、国家公務員法等の一部を改正する法律（平成二十六年法律第二十二号<wbr>）の施行の日（平成二十六年五月三十日）から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

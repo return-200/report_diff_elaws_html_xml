@@ -1,0 +1,623 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第二百一号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十一年法律第二百一号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">独立行政法人工業所有権情報・研修館法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">独立行政法人工業所有権情報・研修館法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">目次</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第五条）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則（第一条―第五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員（第六条―第十条）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員（第六条―第十条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十一条・第十二条）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等（第十一条・第十二条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十三条）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則（第十三条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十四条・第十五条）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則（第十四条・第十五条）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">附則 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第一章　総則</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人工業所有権情報・研修館の名称、目的、業務の範囲<wbr>等に関する事項を定めることを目的とする。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人工業所有権情報・研修館の名称、目的、業務の範囲<wbr>等に関する事項を定めることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（名称）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、独立行政法人工業所有権情報・研修館とする。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律及び独立行政法人通則法（平成十一年法律第百三号。以下「通則法」<wbr>という。）の定めるところにより設立される通則法第二条第一項に規定する独立行政法<wbr>人の名称は、独立行政法人工業所有権情報・研修館とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（情報・研修館の目的）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">（情報・研修館の目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　独立行政法人工業所有権情報・研修館（以下「情報・研修館」という。）は、<wbr>発明、実用新案、意匠及び商標に関する公報、審査及び審判に関する文献その他の工業<wbr>所有権に関する情報の収集、整理及び提供を行うとともに、特許庁の職員その他の工業<wbr>所有権に関する業務に従事する者に対する研修を行うこと等により、工業所有権の保護<wbr>及び利用の促進を図ることを目的とする。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">第三条　独立行政法人工業所有権情報・研修館（以下「情報・研修館」という。）は、<wbr>発明、実用新案、意匠及び商標に関する公報、審査及び審判に関する文献その他の工業<wbr>所有権に関する情報の収集、整理及び提供を行うとともに、特許庁の職員その他の工業<wbr>所有権に関する業務に従事する者に対する研修を行うこと等により、工業所有権の保護<wbr>及び利用の促進を図ることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（中期目標管理法人）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">（中期目標管理法人）</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条の二　情報・研修館は、通則法第二条第二項に規定する中期目標管理法人とする<wbr>。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">第三条の二　情報・研修館は、通則法第二条第二項に規定する中期目標管理法人とする<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">（事務所）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　情報・研修館は、主たる事務所を東京都に置く。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">第四条　情報・研修館は、主たる事務所を東京都に置く。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">（資本金）</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第五条　政府は、必要があると認めるときは、予算で定める金額の範囲内において、情<wbr>報・研修館に出資することができる。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">第五条　政府は、必要があると認めるときは、予算で定める金額の範囲内において、情<wbr>報・研修館に出資することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　情報・研修館は、前項の規定による政府の出資があったときは、その出資額を資本<wbr>金とし、又はその出資額により資本金を増加するものとする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">２　情報・研修館は、前項の規定による政府の出資があったときは、その出資額を資本<wbr>金とし、又はその出資額により資本金を増加するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第二章　役員及び職員</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（役員）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第六条　情報・研修館に、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第六条　情報・研修館に、役員として、その長である理事長及び監事二人を置く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　情報・研修館に、役員として、理事一人を置くことができる。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　情報・研修館に、役員として、理事一人を置くことができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（理事の職務及び権限等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第七条　理事は、理事長の定めるところにより、理事長を補佐して情報・研修館の業務<wbr>を掌理する。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第七条　理事は、理事長の定めるところにより、理事長を補佐して情報・研修館の業務<wbr>を掌理する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">２　通則法第十九条第二項の個別法で定める役員は、理事とする。ただし、理事が置か<wbr>れていないときは、監事とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">３　前項ただし書の場合において、通則法第十九条第二項の規定により理事長の職務を<wbr>代理し又はその職務を行う監事は、その間、監事の職務を行ってはならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（理事の任期）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（理事の任期）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事の任期は、二年とする。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第八条　理事の任期は、二年とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の秘密保持義務）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の秘密保持義務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第九条　情報・研修館の役員及び職員は、職務上知ることのできた秘密を漏らしてはな<wbr>らない。その職を退いた後も、同様とする。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第九条　情報・研修館の役員及び職員は、職務上知ることのできた秘密を漏らしてはな<wbr>らない。その職を退いた後も、同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の地位）</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">（役員及び職員の地位）</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第十条　情報・研修館の役員及び職員は、刑法（明治四十年法律第四十五号）その他の<wbr>罰則の適用については、法令により公務に従事する職員とみなす。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">第十条　情報・研修館の役員及び職員は、刑法（明治四十年法律第四十五号）その他の<wbr>罰則の適用については、法令により公務に従事する職員とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">第三章　業務等</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（業務の範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第十一条　情報・研修館は、第三条の目的を達成するため、次の業務を行う。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第十一条　情報・研修館は、第三条の目的を達成するため、次の業務を行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　発明、実用新案、意匠及び商標に関する公報、見本及びひな形を収集し、保管し、<wbr>及び陳列し、並びにこれらを閲覧させ、又は観覧させること。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">一　発明、実用新案、意匠及び商標に関する公報、見本及びひな形を収集し、保管し、<wbr>及び陳列し、並びにこれらを閲覧させ、又は観覧させること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　審査及び審判に関する図書及び書類その他必要な文献を収集し、及び保管し、並び<wbr>にこれらを閲覧させること。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">二　審査及び審判に関する図書及び書類その他必要な文献を収集し、及び保管し、並び<wbr>にこれらを閲覧させること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　工業所有権の流通の促進を図るため必要な情報の収集、整理及び提供を行うこと。<wbr></span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　工業所有権の流通の促進を図るため必要な情報の収集、整理及び提供を行うこと。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に掲げるもののほか、工業所有権に関する情報の活用の促進を図るため必要<wbr>な情報の収集、整理及び提供を行うこと。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">四　前三号に掲げるもののほか、工業所有権に関する情報の活用の促進を図るため必要<wbr>な情報の収集、整理及び提供を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">五　工業所有権に関する相談に関すること。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">五　工業所有権に関する相談に関すること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">六　工業所有権に関する情報システムの整備及び管理を行うこと。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">六　工業所有権に関する情報システムの整備及び管理を行うこと。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">七　特許庁の職員その他の工業所有権に関する業務に従事する者に対する研修を行うこ<wbr>と。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">七　特許庁の職員その他の工業所有権に関する業務に従事する者に対する研修を行うこ<wbr>と。</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">八　前各号の業務に附帯する業務を行うこと。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">八　前各号の業務に附帯する業務を行うこと。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">（積立金の処分）</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第十二条　情報・研修館は、通則法第二十九条第二項第一号に規定する中期目標の期間<wbr>（以下この項において「中期目標の期間」という。）の最後の事業年度に係る通則法第<wbr>四十四条第一項又は第二項の規定による整理を行った後、同条第一項の規定による積立<wbr>金があるときは、その額に相当する金額のうち経済産業大臣の承認を受けた金額を、当<wbr>該中期目標の期間の次の中期目標の期間に係る通則法第三十条第一項の認可を受けた中<wbr>期計画（同項後段の規定による変更の認可を受けたときは、その変更後のもの）の定め<wbr>るところにより、当該次の中期目標の期間における前条に規定する業務の財源に充てる<wbr>ことができる。</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">第十二条　情報・研修館は、通則法第二十九条第二項第一号に規定する中期目標の期間<wbr>（以下この項において「中期目標の期間」という。）の最後の事業年度に係る通則法第<wbr>四十四条第一項又は第二項の規定による整理を行った後、同条第一項の規定による積立<wbr>金があるときは、その額に相当する金額のうち経済産業大臣の承認を受けた金額を、当<wbr>該中期目標の期間の次の中期目標の期間に係る通則法第三十条第一項の認可を受けた中<wbr>期計画（同項後段の規定による変更の認可を受けたときは、その変更後のもの）の定め<wbr>るところにより、当該次の中期目標の期間における前条に規定する業務の財源に充てる<wbr>ことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　経済産業大臣は、前項の規定による承認をしようとするときは、財務大臣に協議し<wbr>なければならない。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">２　経済産業大臣は、前項の規定による承認をしようとするときは、財務大臣に協議し<wbr>なければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">３　情報・研修館は、第一項に規定する積立金の額に相当する金額から同項の規定によ<wbr>る承認を受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しな<wbr>ければならない。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">３　情報・研修館は、第一項に規定する積立金の額に相当する金額から同項の規定によ<wbr>る承認を受けた金額を控除してなお残余があるときは、その残余の額を国庫に納付しな<wbr>ければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">４　前三項に定めるもののほか、納付金の納付の手続その他積立金の処分に関し必要な<wbr>事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">第四章　雑則</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">（主務大臣等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第十三条　情報・研修館に係る通則法における主務大臣及び主務省令は、それぞれ経済<wbr>産業大臣及び経済産業省令とする。</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">第十三条　情報・研修館に係る通則法における主務大臣及び主務省令は、それぞれ経済<wbr>産業大臣及び経済産業省令とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第五章　罰則</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第十四条　第九条の規定に違反し、その職務に関して知得した特許出願中の発明、実用<wbr>新案登録出願中の考案又は意匠登録出願中の意匠に関する秘密を漏らし、又はこれらに<wbr>関する秘密を盗用した者は、一年以下の懲役又は五十万円以下の罰金に処する。</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">第十四条　第九条の規定に違反し、その職務に関して知得した特許出願中の発明、実用<wbr>新案登録出願中の考案又は意匠登録出願中の意匠に関する秘密を漏らし、又はこれらに<wbr>関する秘密を盗用した者は、一年以下の懲役又は五十万円以下の罰金に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">２　第九条の規定に違反して秘密（前項に規定するものを除く。）を漏らした者は、一<wbr>年以下の懲役又は三十万円以下の罰金に処する。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">２　第九条の規定に違反して秘密（前項に規定するものを除く。）を漏らした者は、一<wbr>年以下の懲役又は三十万円以下の罰金に処する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十五条　次の各号のいずれかに該当する場合には、その違反行為をした情報・研修館<wbr>の役員は、二十万円以下の過料に処する。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十五条　次の各号のいずれかに該当する場合には、その違反行為をした情報・研修館<wbr>の役員は、二十万円以下の過料に処する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　第十一条に規定する業務以外の業務を行ったとき。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　第十一条に規定する業務以外の業務を行ったとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　第十二条第一項の規定により経済産業大臣の承認を受けなければならない場合にお<wbr>いて、その承認を受けなかったとき。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　第十二条第一項の規定により経済産業大臣の承認を受けなければならない場合にお<wbr>いて、その承認を受けなかったとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十三年一月六日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第二条　情報館の成立の際現に特許庁の部局又は機関で政令で定めるものの職員である<wbr>者は、別に辞令を発せられない限り、情報館の成立の日において、情報館の相当の職員<wbr>となるものとする。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第二条　情報館の成立の際現に特許庁の部局又は機関で政令で定めるものの職員である<wbr>者は、別に辞令を発せられない限り、情報館の成立の日において、情報館の相当の職員<wbr>となるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">68</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　情報館の成立の際現に前条に規定する政令で定める部局又は機関の職員である<wbr>者のうち、情報館の成立の日において引き続き情報館の職員となったもの（次条におい<wbr>て「引継職員」という。）であって、情報館の成立の日の前日において経済産業大臣又<wbr>はその委任を受けた者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（<wbr></span><span style="color: #000000; background-color: #efcb05; ">附則第六条第二項、第七条第四項又は第八条第四項において準用する場合を含む。以下<wbr>この条において同じ。）の規定による認定を受けているものが、情報館の成立の日にお<wbr>いて児童手当又は同法附則第六条第一項、第七条第一項若しくは第八条第一項の給付（<wbr>以下この条において「特例給付等」という。）の支給要件に該当するときは、その者に<wbr>対する児童手当又は特例給付等の支給に関しては、情報館の成立の日において同法第七<wbr>条第一項の規定による市町村長（特別区の区長を含む。）の認定があったものとみなす<wbr>。この場合において、その認定があったものとみなされた児童手当又は特例給付等の支<wbr>給は、同法第八条第二項（同法附則第六条第二項、第七条第四項又は第八条第四項にお<wbr>いて準用する場合を含む。）の規定にかかわらず、情報館の成立の日の前日の属する月<wbr>の翌月から始める。</span></code></td>
+<td class="ln">68</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第三条　情報館の成立の際現に前条に規定する政令で定める部局又は機関の職員である<wbr>者のうち、情報館の成立の日において引き続き情報館の職員となったもの（次条におい<wbr>て「引継職員」という。）であって、情報館の成立の日の前日において経済産業大臣又<wbr>はその委任を受けた者から児童手当法（昭和四十六年法律第七十三号）第七条第一項（<wbr></span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">附則第六条第二項、第七条第四項又は第八条第四項において準用する場合を含む。<wbr>以下この条において同じ。）の規定による認定を受けているものが、情報館の成立の日<wbr>において児童手当又は同法附則第六条第一項、第七条第一項若しくは第八条第一項の給<wbr>付（以下この条において「特例給付等」という。）の支給要件に該当するときは、その<wbr>者に対する児童手当又は特例給付等の支給に関しては、情報館の成立の日において同法<wbr>第七条第一項の規定による市町村長（特別区の区長を含む。）の認定があったものとみ<wbr>なす。この場合において、その認定があったものとみなされた児童手当又は特例給付等<wbr>の支給は、同法第八条第二項（同法附則第六条第二項、第七条第四項又は第八条第四項<wbr>において準用する場合を含む。）の規定にかかわらず、情報館の成立の日の前日の属す<wbr>る月の翌月から始める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（情報館の職員となる者の職員団体についての経過措置）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（情報館の職員となる者の職員団体についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第四条　情報館の成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）第<wbr>百八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員である<wbr>ものは、情報館の成立の際国営企業及び特定独立行政法人の労働関係に関する法律（昭<wbr>和二十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この場合<wbr>において、当該職員団体が法人であるときは、法人である労働組合となるものとする。<wbr></span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第四条　情報館の成立の際現に存する国家公務員法（昭和二十二年法律第百二十号）第<wbr>百八条の二第一項に規定する職員団体であって、その構成員の過半数が引継職員である<wbr>ものは、情報館の成立の際国営企業及び特定独立行政法人の労働関係に関する法律（昭<wbr>和二十三年法律第二百五十七号）の適用を受ける労働組合となるものとする。この場合<wbr>において、当該職員団体が法人であるときは、法人である労働組合となるものとする。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、情報館の成立の日から起算<wbr>して六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二条<wbr>及び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる事<wbr>務所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、情報館の成立の日から起算<wbr>して六十日を経過する日までに、労働組合法（昭和二十四年法律第百七十四号）第二条<wbr>及び第五条第二項の規定に適合する旨の労働委員会の証明を受け、かつ、その主たる事<wbr>務所の所在地において登記しなければ、その日の経過により解散するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、情報館の成立の日から起算<wbr>して六十日を経過する日までは、労働組合法第二条ただし書（第一号に係る部分に限る<wbr>。）の規定は、適用しない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合となったものについては、情報館の成立の日から起算<wbr>して六十日を経過する日までは、労働組合法第二条ただし書（第一号に係る部分に限る<wbr>。）の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（権利義務の承継）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第五条　情報館の成立の際、第十条に規定する業務に関し、現に国が有する権利及び義<wbr>務のうち政令で定めるものは、情報館の成立の時において情報館が承継する。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第五条　情報館の成立の際、第十条に規定する業務に関し、現に国が有する権利及び義<wbr>務のうち政令で定めるものは、情報館の成立の時において情報館が承継する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（国有財産の無償使用）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（国有財産の無償使用）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第六条　国は、情報館の成立の際現に経済産業省の部局又は機関で政令で定めるものに<wbr>使用されている国有財産であって政令で定めるものを、政令で定めるところにより、情<wbr>報館の用に供するため、情報館に無償で使用させることができる。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第六条　国は、情報館の成立の際現に経済産業省の部局又は機関で政令で定めるものに<wbr>使用されている国有財産であって政令で定めるものを、政令で定めるところにより、情<wbr>報館の用に供するため、情報館に無償で使用させることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第八条　附則第二条から第六条までに定めるもののほか、情報館の設立に伴い必要な経<wbr>過措置その他この法律の施行に関し必要な経過措置は、政令で定める。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第八条　附則第二条から第六条までに定めるもののほか、情報館の設立に伴い必要な経<wbr>過措置その他この法律の施行に関し必要な経過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年五月二六日法律第八四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年六月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年六月四日法律第七九号）　抄</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年六月四日法律第七九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十七年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十七年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">一　附則第六条の規定　公布の日</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">一　附則第六条の規定　公布の日</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">二　略</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">二　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">三　第三条の規定（前号に掲げる改正規定を除く。）及び第五条の規定並びに附則第四<wbr>条（第一項を除く。）、第五条、第八条及び第九条の規定　平成十六年十月一日</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">三　第三条の規定（前号に掲げる改正規定を除く。）及び第五条の規定並びに附則第四<wbr>条（第一項を除く。）、第五条、第八条及び第九条の規定　平成十六年十月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（独立行政法人工業所有権総合情報館法の改正に伴う経過措置）</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（独立行政法人工業所有権総合情報館法の改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第五条　独立行政法人工業所有権総合情報館は、附則第一条ただし書第三号に掲げる規<wbr>定の施行の時において、独立行政法人工業所有権情報・研修館（以下「情報・研修館」<wbr>という。）となるものとする。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第五条　独立行政法人工業所有権総合情報館は、附則第一条ただし書第三号に掲げる規<wbr>定の施行の時において、独立行政法人工業所有権情報・研修館（以下「情報・研修館」<wbr>という。）となるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">２　一部施行日の前日又は一部施行日から起算して二年六月を超えない範囲内において<wbr>政令で定める日（以下「指定日」という。）の前日において現に特許庁の部局又は機関<wbr>でそれぞれ政令で定めるものの職員である者は、経済産業大臣が指名する者を除き、別<wbr>に辞令を発せられない限り、一部施行日又は指定日において、それぞれ情報・研修館の<wbr>相当の職員となるものとする。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">２　一部施行日の前日又は一部施行日から起算して二年六月を超えない範囲内において<wbr>政令で定める日（以下「指定日」という。）の前日において現に特許庁の部局又は機関<wbr>でそれぞれ政令で定めるものの職員である者は、経済産業大臣が指名する者を除き、別<wbr>に辞令を発せられない限り、一部施行日又は指定日において、それぞれ情報・研修館の<wbr>相当の職員となるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">３　一部施行日の前日又は指定日の前日において現に前項に規定するそれぞれ政令で定<wbr>める部局又は機関の職員である者のうち、一部施行日又は指定日において引き続き情報<wbr>・研修館の職員となったものであって、一部施行日の前日又は指定日の前日において経<wbr>済産業大臣又はその委任を受けた者から児童手当法（昭和四十六年法律第七十三号）第<wbr>七条第一項（同法附則第六条第二項、第七条第四項又は第八条第四項において準用する<wbr>場合を含む。以下この条において同じ。）の規定による認定を受けているものが、一部<wbr>施行日又は指定日において児童手当又は同法附則第六条第一項、第七条第一項若しくは<wbr>第八条第一項の給付（以下この条において「特例給付等」という。）の支給要件に該当<wbr>するときは、その者に対する児童手当又は特例給付等の支給に関しては、一部施行日又<wbr>は指定日において、それぞれ同法第七条第一項の規定による市町村長（特別区の区長を<wbr>含む。）の認定があったものとみなす。この場合において、その認定があったものとみ<wbr>なされた児童手当又は特例給付等の支給は、同法第八条第二項（同法附則第六条第二項<wbr>、第七条第四項又は第八条第四項において準用する場合を含む。）の規定にかかわらず<wbr>、それぞれ一部施行日の前日又は指定日の前日の属する月の翌月から始める。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">３　一部施行日の前日又は指定日の前日において現に前項に規定するそれぞれ政令で定<wbr>める部局又は機関の職員である者のうち、一部施行日又は指定日において引き続き情報<wbr>・研修館の職員となったものであって、一部施行日の前日又は指定日の前日において経<wbr>済産業大臣又はその委任を受けた者から児童手当法（昭和四十六年法律第七十三号）第<wbr>七条第一項（同法附則第六条第二項、第七条第四項又は第八条第四項において準用する<wbr>場合を含む。以下この条において同じ。）の規定による認定を受けているものが、一部<wbr>施行日又は指定日において児童手当又は同法附則第六条第一項、第七条第一項若しくは<wbr>第八条第一項の給付（以下この条において「特例給付等」という。）の支給要件に該当<wbr>するときは、その者に対する児童手当又は特例給付等の支給に関しては、一部施行日又<wbr>は指定日において、それぞれ同法第七条第一項の規定による市町村長（特別区の区長を<wbr>含む。）の認定があったものとみなす。この場合において、その認定があったものとみ<wbr>なされた児童手当又は特例給付等の支給は、同法第八条第二項（同法附則第六条第二項<wbr>、第七条第四項又は第八条第四項において準用する場合を含む。）の規定にかかわらず<wbr>、それぞれ一部施行日の前日又は指定日の前日の属する月の翌月から始める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">４　一部施行日の前日又は指定日の前日において、第五条の規定による改正後の独立行<wbr>政法人工業所有権情報・研修館法第十条第四号、第六号及び第七号に掲げる業務（これ<wbr>に附帯する業務を含む。）に関し、現に国が有する権利及び義務のうちそれぞれ政令で<wbr>定めるものは、一部施行日又は指定日において、それぞれ情報・研修館が承継する。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">４　一部施行日の前日又は指定日の前日において、第五条の規定による改正後の独立行<wbr>政法人工業所有権情報・研修館法第十条第四号、第六号及び第七号に掲げる業務（これ<wbr>に附帯する業務を含む。）に関し、現に国が有する権利及び義務のうちそれぞれ政令で<wbr>定めるものは、一部施行日又は指定日において、それぞれ情報・研修館が承継する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">５　国は、一部施行日の前日又は指定日の前日において現に第二項に規定するそれぞれ<wbr>政令で定める部局又は機関に使用されている国有財産であってそれぞれ政令で定めるも<wbr>のを、政令で定めるところにより、情報・研修館の用に供するため、情報・研修館に無<wbr>償で使用させることができる。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">５　国は、一部施行日の前日又は指定日の前日において現に第二項に規定するそれぞれ<wbr>政令で定める部局又は機関に使用されている国有財産であってそれぞれ政令で定めるも<wbr>のを、政令で定めるところにより、情報・研修館の用に供するため、情報・研修館に無<wbr>償で使用させることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第六条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置は、政令で定める。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第六条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日法律第二七号）　抄</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年三月三一日法律第二七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十八年四月一日から施行する。ただし、附則第八条の規定は<wbr>、公布の日から施行する。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十八年四月一日から施行する。ただし、附則第八条の規定は<wbr>、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">（職員の引継ぎ等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行の際現に独立行政法人工業所有権情報・研修館の職員である者<wbr>は、別に辞令を発せられない限り、この法律の施行の日（以下「施行日」という。）に<wbr>おいて、引き続き独立行政法人工業所有権情報・研修館の職員となるものとする。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行の際現に独立行政法人工業所有権情報・研修館の職員である者<wbr>は、別に辞令を発せられない限り、この法律の施行の日（以下「施行日」という。）に<wbr>おいて、引き続き独立行政法人工業所有権情報・研修館の職員となるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条の規定により独立行政法人工業所有権情報・研修館（以下「施行日後の情<wbr>報・研修館」という。）の職員となった者に対する国家公務員法（昭和二十二年法律第<wbr>百二十号）第八十二条第二項の規定の適用については、施行日後の情報・研修館の職員<wbr>を同項に規定する特別職国家公務員等と、前条の規定により国家公務員としての身分を<wbr>失ったことを任命権者の要請に応じ同項に規定する特別職国家公務員等となるため退職<wbr>したこととみなす。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第三条　前条の規定により独立行政法人工業所有権情報・研修館（以下「施行日後の情<wbr>報・研修館」という。）の職員となった者に対する国家公務員法（昭和二十二年法律第<wbr>百二十号）第八十二条第二項の規定の適用については、施行日後の情報・研修館の職員<wbr>を同項に規定する特別職国家公務員等と、前条の規定により国家公務員としての身分を<wbr>失ったことを任命権者の要請に応じ同項に規定する特別職国家公務員等となるため退職<wbr>したこととみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第四条　附則第二条の規定により施行日後の情報・研修館の職員となる者に対しては、<wbr>国家公務員退職手当法（昭和二十八年法律第百八十二号）に基づく退職手当は、支給し<wbr>ない。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">第四条　附則第二条の規定により施行日後の情報・研修館の職員となる者に対しては、<wbr>国家公務員退職手当法（昭和二十八年法律第百八十二号）に基づく退職手当は、支給し<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２　施行日後の情報・研修館は、前項の規定の適用を受けた施行日後の情報・研修館の<wbr>職員の退職に際し、退職手当を支給しようとするときは、その者の国家公務員退職手当<wbr>法第二条第一項に規定する職員（同条第二項の規定により職員とみなされる者を含む。<wbr>）としての引き続いた在職期間を施行日後の情報・研修館の職員としての在職期間とみ<wbr>なして取り扱うべきものとする。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２　施行日後の情報・研修館は、前項の規定の適用を受けた施行日後の情報・研修館の<wbr>職員の退職に際し、退職手当を支給しようとするときは、その者の国家公務員退職手当<wbr>法第二条第一項に規定する職員（同条第二項の規定により職員とみなされる者を含む。<wbr>）としての引き続いた在職期間を施行日後の情報・研修館の職員としての在職期間とみ<wbr>なして取り扱うべきものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">３　施行日の前日の独立行政法人工業所有権情報・研修館（以下「施行日前の情報・研<wbr>修館」という。）に職員として在職する者が、附則第二条の規定により引き続いて施行<wbr>日後の情報・研修館の職員となり、かつ、引き続き施行日後の情報・研修館の職員とし<wbr>て在職した後引き続いて国家公務員退職手当法第二条第一項に規定する職員となった場<wbr>合におけるその者の同法に基づいて支給する退職手当の算定の基礎となる勤続期間の計<wbr>算については、その者の施行日後の情報・研修館の職員としての在職期間を同項に規定<wbr>する職員としての引き続いた在職期間とみなす。ただし、その者が施行日後の情報・研<wbr>修館を退職したことにより退職手当（これに相当する給付を含む。）の支給を受けてい<wbr>るときは、この限りでない。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">３　施行日の前日の独立行政法人工業所有権情報・研修館（以下「施行日前の情報・研<wbr>修館」という。）に職員として在職する者が、附則第二条の規定により引き続いて施行<wbr>日後の情報・研修館の職員となり、かつ、引き続き施行日後の情報・研修館の職員とし<wbr>て在職した後引き続いて国家公務員退職手当法第二条第一項に規定する職員となった場<wbr>合におけるその者の同法に基づいて支給する退職手当の算定の基礎となる勤続期間の計<wbr>算については、その者の施行日後の情報・研修館の職員としての在職期間を同項に規定<wbr>する職員としての引き続いた在職期間とみなす。ただし、その者が施行日後の情報・研<wbr>修館を退職したことにより退職手当（これに相当する給付を含む。）の支給を受けてい<wbr>るときは、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">４　施行日後の情報・研修館は、施行日の前日に施行日前の情報・研修館の職員として<wbr>在職し、附則第二条の規定により引き続いて施行日後の情報・研修館の職員となった者<wbr>のうち施行日から雇用保険法（昭和四十九年法律第百十六号）による失業等給付の受給<wbr>資格を取得するまでの間に施行日後の情報・研修館を退職したものであって、その退職<wbr>した日まで施行日前の情報・研修館の職員として在職したものとしたならば国家公務員<wbr>退職手当法第十条の規定による退職手当の支給を受けることができるものに対しては、<wbr>同条の規定の例により算定した退職手当の額に相当する額を退職手当として支給するも<wbr>のとする。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">４　施行日後の情報・研修館は、施行日の前日に施行日前の情報・研修館の職員として<wbr>在職し、附則第二条の規定により引き続いて施行日後の情報・研修館の職員となった者<wbr>のうち施行日から雇用保険法（昭和四十九年法律第百十六号）による失業等給付の受給<wbr>資格を取得するまでの間に施行日後の情報・研修館を退職したものであって、その退職<wbr>した日まで施行日前の情報・研修館の職員として在職したものとしたならば国家公務員<wbr>退職手当法第十条の規定による退職手当の支給を受けることができるものに対しては、<wbr>同条の規定の例により算定した退職手当の額に相当する額を退職手当として支給するも<wbr>のとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（国家公務員退職手当法の適用に関する経過措置）</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（国家公務員退職手当法の適用に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第五条　施行日前に施行日前の情報・研修館を退職した者の退職手当について国家公務<wbr>員退職手当法等の一部を改正する法律（平成二十年法律第九十五号）附則第二条の規定<wbr>によりなお従前の例によることとされる場合における同法第一条の規定による改正前の<wbr>国家公務員退職手当法第十二条の二及び第十二条の三の規定の適用については、施行日<wbr>後の情報・研修館の理事長は、同法第十二条の二第一項に規定する各省各庁の長等とみ<wbr>なす。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">第五条　施行日前に施行日前の情報・研修館を退職した者の退職手当について国家公務<wbr>員退職手当法等の一部を改正する法律（平成二十年法律第九十五号）附則第二条の規定<wbr>によりなお従前の例によることとされる場合における同法第一条の規定による改正前の<wbr>国家公務員退職手当法第十二条の二及び第十二条の三の規定の適用については、施行日<wbr>後の情報・研修館の理事長は、同法第十二条の二第一項に規定する各省各庁の長等とみ<wbr>なす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">（労働組合についての経過措置）</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">（労働組合についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際現に存する特定独立行政法人等の労働関係に関する法律（<wbr>昭和二十三年法律第二百五十七号。次条において「特労法」という。）第四条第二項に<wbr>規定する労働組合であって、その構成員の過半数が附則第二条の規定により施行日後の<wbr>情報・研修館の職員となる者であるものは、この法律の施行の際労働組合法（昭和二十<wbr>四年法律第百七十四号）の適用を受ける労働組合となるものとする。この場合において<wbr>、当該労働組合が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際現に存する特定独立行政法人等の労働関係に関する法律（<wbr>昭和二十三年法律第二百五十七号。次条において「特労法」という。）第四条第二項に<wbr>規定する労働組合であって、その構成員の過半数が附則第二条の規定により施行日後の<wbr>情報・研修館の職員となる者であるものは、この法律の施行の際労働組合法（昭和二十<wbr>四年法律第百七十四号）の適用を受ける労働組合となるものとする。この場合において<wbr>、当該労働組合が法人であるときは、法人である労働組合となるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、施行日から起算して六十日<wbr>を経過する日までに、労働組合法第二条及び第五条第二項の規定に適合する旨の労働委<wbr>員会の証明を受け、かつ、その主たる事務所の所在地において登記しなければ、その日<wbr>の経過により解散するものとする。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により法人である労働組合となったものは、施行日から起算して六十日<wbr>を経過する日までに、労働組合法第二条及び第五条第二項の規定に適合する旨の労働委<wbr>員会の証明を受け、かつ、その主たる事務所の所在地において登記しなければ、その日<wbr>の経過により解散するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合法の適用を受ける労働組合となったものについては、<wbr>施行日から起算して六十日を経過する日までは、同法第二条ただし書（第一号に係る部<wbr>分に限る。）の規定は、適用しない。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の規定により労働組合法の適用を受ける労働組合となったものについては、<wbr>施行日から起算して六十日を経過する日までは、同法第二条ただし書（第一号に係る部<wbr>分に限る。）の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（不当労働行為の申立て等についての経過措置）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（不当労働行為の申立て等についての経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第七条　施行日前に特労法第十八条の規定に基づき施行日前の情報・研修館がした解雇<wbr>に係る中央労働委員会に対する申立て及び中央労働委員会による命令の期間については<wbr>、なお従前の例による。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第七条　施行日前に特労法第十八条の規定に基づき施行日前の情報・研修館がした解雇<wbr>に係る中央労働委員会に対する申立て及び中央労働委員会による命令の期間については<wbr>、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の際現に中央労働委員会に係属している施行日前の情報・研修館と<wbr>その職員に係る特労法の適用を受ける労働組合とを当事者とするあっせん、調停又は仲<wbr>裁に係る事件に関する特労法第三章（第十二条から第十六条までの規定を除く。）及び<wbr>第六章に規定する事項については、なお従前の例による。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行の際現に中央労働委員会に係属している施行日前の情報・研修館と<wbr>その職員に係る特労法の適用を受ける労働組合とを当事者とするあっせん、調停又は仲<wbr>裁に係る事件に関する特労法第三章（第十二条から第十六条までの規定を除く。）及び<wbr>第六章に規定する事項については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第八条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置は、政令で定める。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第八条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一二月二六日法律第九五号）　抄</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年一二月二六日法律第九五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、独立行政法人通則法の一部を改正する法律（平成二十六年法律第<wbr>六十六号。以下「通則法改正法」という。）の施行の日から施行する。ただし、次の各<wbr>号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">一　附則第十四条第二項、第十八条及び第三十条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（処分等の効力）</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　この法律の施行前にこの法律による改正前のそれぞれの法律（これに基づ<wbr>く命令を含む。）の規定によってした又はすべき処分、手続その他の行為であってこの<wbr>法律による改正後のそれぞれの法律（これに基づく命令を含む。以下この条において「<wbr>新法令」という。）に相当の規定があるものは、法律（これに基づく政令を含む。）に<wbr>別段の定めのあるものを除き、新法令の相当の規定によってした又はすべき処分、手続<wbr>その他の行為とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">第二十九条　この法律の施行前にした行為及びこの附則の規定によりなおその効力を有<wbr>することとされる場合におけるこの法律の施行後にした行為に対する罰則の適用につい<wbr>ては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令等への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">第三十条　附則第三条から前条までに定めるもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令（人事院の所掌する事項について<wbr>は、人事院規則）で定める。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

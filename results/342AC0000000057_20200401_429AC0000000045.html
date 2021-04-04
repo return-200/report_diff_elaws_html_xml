@@ -1,0 +1,1223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十二年法律第五十七号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和四十二年法律第五十七号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">戦没者の父母等に対する特別給付金支給法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">戦没者の父母等に対する特別給付金支給法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（この法律の趣旨）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（この法律の趣旨）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、戦没者の父母等に対する特別給付金の支給に関し必要な事項を規<wbr>定するものとする。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、戦没者の父母等に対する特別給付金の支給に関し必要な事項を規<wbr>定するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「戦没者の父母等」とは、昭和十二年七月七日以後に死亡し<wbr>た者（同日前の負傷又は疾病により死亡した者を除く。）の父母又は祖父母であつたこ<wbr>とにより、昭和四十二年四月一日において次の各号に掲げる給付を受ける権利を有する<wbr>者（以下「遺族年金受給権者たる父母等」という。）であつて、当該死亡した者の死亡<wbr>の当時その死亡した者以外には子も孫もいなかつたものをいう。ただし、その後昭和四<wbr>十二年三月三十一日までの間に子（養子、その者を継父母とする継子及びその者を嫡母<wbr>とする庶子を除く。）又は孫（当該死亡した者の死亡後にその者の養子又はその者を継<wbr>父母とする継子若しくはその者を嫡母とする庶子となつた者の子である孫を除く。）を<wbr>有するに至つた者を除く。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律において「戦没者の父母等」とは、昭和十二年七月七日以後に死亡し<wbr>た者（同日前の負傷又は疾病により死亡した者を除く。）の父母又は祖父母であつたこ<wbr>とにより、昭和四十二年四月一日において次の各号に掲げる給付を受ける権利を有する<wbr>者（以下「遺族年金受給権者たる父母等」という。）であつて、当該死亡した者の死亡<wbr>の当時その死亡した者以外には子も孫もいなかつたものをいう。ただし、その後昭和四<wbr>十二年三月三十一日までの間に子（養子、その者を継父母とする継子及びその者を嫡母<wbr>とする庶子を除く。）又は孫（当該死亡した者の死亡後にその者の養子又はその者を継<wbr>父母とする継子若しくはその者を嫡母とする庶子となつた者の子である孫を除く。）を<wbr>有するに至つた者を除く。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">一　死亡した者が、恩給法の一部を改正する法律（昭和二十一年法律第三十一号）によ<wbr>る改正前の恩給法（大正十二年法律第四十八号）第十九条に規定する軍人、準軍人その<wbr>他もとの陸軍又は海軍部内の公務員又は公務員に準ずべき者（戦時又は事変に際し臨時<wbr>特設の部局又は陸海軍の部隊に配属せしめたる文官補闕の件（明治三十八年勅令第四十<wbr>三号）に規定する文官を含む。）であつたことにより支給される恩給法第七十五条第一<wbr>項第二号に規定する扶助料</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">一　死亡した者が、恩給法の一部を改正する法律（昭和二十一年法律第三十一号）によ<wbr>る改正前の恩給法（大正十二年法律第四十八号）第十九条に規定する軍人、準軍人その<wbr>他もとの陸軍又は海軍部内の公務員又は公務員に準ずべき者（戦時又は事変に際し臨時<wbr>特設の部局又は陸海軍の部隊に配属せしめたる文官補闕の件（明治三十八年勅令第四十<wbr>三号）に規定する文官を含む。）であつたことにより支給される恩給法第七十五条第一<wbr>項第二号に規定する扶助料</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">二　恩給法の一部を改正する法律（昭和二十八年法律第百五十五号。以下「法律第百五<wbr>十五号」という。）附則第二十九条の二の規定の適用により支給される恩給法第七十五<wbr>条第一項第二号に規定する扶助料、法律第百五十五号附則第三十五条の三に規定する扶<wbr>助料、恩給法の一部を改正する法律（昭和二十九年法律第二百号）附則第四項に規定す<wbr>る扶助料又は旧軍人等の遺族に対する恩給等の特例に関する法律（昭和三十一年法律第<wbr>百七十七号）第三条第二項に規定する扶助料</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">二　恩給法の一部を改正する法律（昭和二十八年法律第百五十五号。以下「法律第百五<wbr>十五号」という。）附則第二十九条の二の規定の適用により支給される恩給法第七十五<wbr>条第一項第二号に規定する扶助料、法律第百五十五号附則第三十五条の三に規定する扶<wbr>助料、恩給法の一部を改正する法律（昭和二十九年法律第二百号）附則第四項に規定す<wbr>る扶助料又は旧軍人等の遺族に対する恩給等の特例に関する法律（昭和三十一年法律第<wbr>百七十七号）第三条第二項に規定する扶助料</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">三　戦傷病者戦没者遺族等援護法（昭和二十七年法律第百二十七号。以下「遺族援護法<wbr>」という。）第二十三条第一項第一号に掲げる遺族に支給される同法による遺族年金又<wbr>は戦傷病者戦没者遺族等援護法の一部を改正する法律（昭和二十八年法律第百八十一号<wbr>）附則第二十項若しくは戦傷病者戦没者遺族等援護法の一部を改正する法律（昭和三十<wbr>年法律第百四十四号）附則第十一項の規定により支給される遺族年金</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">三　戦傷病者戦没者遺族等援護法（昭和二十七年法律第百二十七号。以下「遺族援護法<wbr>」という。）第二十三条第一項第一号に掲げる遺族に支給される同法による遺族年金又<wbr>は戦傷病者戦没者遺族等援護法の一部を改正する法律（昭和二十八年法律第百八十一号<wbr>）附則第二十項若しくは戦傷病者戦没者遺族等援護法の一部を改正する法律（昭和三十<wbr>年法律第百四十四号）附則第十一項の規定により支給される遺族年金</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">四　遺族援護法第二十三条第二項第一号に掲げる遺族に支給される同法による遺族給与<wbr>金</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">四　遺族援護法第二十三条第二項第一号に掲げる遺族に支給される同法による遺族給与<wbr>金</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">五　旧令による共済組合等からの年金受給者のための特別措置法（昭和二十五年法律第<wbr>二百五十六号）第三条の規定により承継した義務に基づき、又は同法第七条の三の規定<wbr>により国家公務員共済組合連合会が支給する年金たる給付のうち、公務による死亡を支<wbr>給事由とするもの</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">五　旧令による共済組合等からの年金受給者のための特別措置法（昭和二十五年法律第<wbr>二百五十六号）第三条の規定により承継した義務に基づき、又は同法第七条の三の規定<wbr>により国家公務員共済組合連合会が支給する年金たる給付のうち、公務による死亡を支<wbr>給事由とするもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">六　遺族援護法第二条第一項第二号に規定する軍属であつた者で同法第三条第一項第二<wbr>号に規定する在職期間内における負傷又は疾病により死亡したものの遺族に対し、国家<wbr>公務員共済組合連合会が支給する年金たる給付のうち、公務による死亡を支給事由とす<wbr>るもの</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">六　遺族援護法第二条第一項第二号に規定する軍属であつた者で同法第三条第一項第二<wbr>号に規定する在職期間内における負傷又は疾病により死亡したものの遺族に対し、国家<wbr>公務員共済組合連合会が支給する年金たる給付のうち、公務による死亡を支給事由とす<wbr>るもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項ただし書に規定する「継父母」、「継子」、「嫡母」及び「庶子」は、それぞ<wbr>れ民法の一部を改正する法律（昭和二十二年法律第二百二十二号）による改正前の民法<wbr>（明治二十九年法律第八十九号）に規定する継父母、継子、嫡母又は庶子をいうものと<wbr>する。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項ただし書に規定する「継父母」、「継子」、「嫡母」及び「庶子」は、それぞ<wbr>れ民法の一部を改正する法律（昭和二十二年法律第二百二十二号）による改正前の民法<wbr>（明治二十九年法律第八十九号）に規定する継父母、継子、嫡母又は庶子をいうものと<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">３　昭和四十二年四月一日において次の各号のいずれかに該当する者は、第一項の規定<wbr>の適用については、同日において同項各号に掲げる給付を受ける権利を有する者とみな<wbr>す。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">３　昭和四十二年四月一日において次の各号のいずれかに該当する者は、第一項の規定<wbr>の適用については、同日において同項各号に掲げる給付を受ける権利を有する者とみな<wbr>す。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　第一項各号に規定する法律（同項第五号に掲げる給付については、当該給付に係る<wbr>法令）の規定による先順位者又は同項各号に掲げる給付を受ける権利を有する者がいる<wbr>ためこれらの給付を受ける権利を有しない父母及び祖父母</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　第一項各号に規定する法律（同項第五号に掲げる給付については、当該給付に係る<wbr>法令）の規定による先順位者又は同項各号に掲げる給付を受ける権利を有する者がいる<wbr>ためこれらの給付を受ける権利を有しない父母及び祖父母</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当していないた<wbr>め第一項第三号又は第四号に掲げる給付を受ける権利を有しない父母及び祖父母</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当していないた<wbr>め第一項第三号又は第四号に掲げる給付を受ける権利を有しない父母及び祖父母 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第二条の二　遺族年金受給権者たる父母等であつて、当該死亡した者の死亡の当時その<wbr>死亡した者以外の子又は孫のうちにその遺族年金受給権者たる父母等と氏を同じくする<wbr>子又は孫がいなかつたもの（昭和四十二年四月一日から昭和四十四年九月三十日までの<wbr>間に死亡した者を除く。）は、当該死亡した者に係る戦没者の父母等がない場合に限り<wbr>、戦没者の父母等とみなす。ただし、当該死亡した者の死亡の後同日までの間にその遺<wbr>族年金受給権者たる父母等と氏を同じくする前条第一項ただし書に規定する子又は孫を<wbr>有するに至つた者を除く。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第二条の二　遺族年金受給権者たる父母等であつて、当該死亡した者の死亡の当時その<wbr>死亡した者以外の子又は孫のうちにその遺族年金受給権者たる父母等と氏を同じくする<wbr>子又は孫がいなかつたもの（昭和四十二年四月一日から昭和四十四年九月三十日までの<wbr>間に死亡した者を除く。）は、当該死亡した者に係る戦没者の父母等がない場合に限り<wbr>、戦没者の父母等とみなす。ただし、当該死亡した者の死亡の後同日までの間にその遺<wbr>族年金受給権者たる父母等と氏を同じくする前条第一項ただし書に規定する子又は孫を<wbr>有するに至つた者を除く。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金の支給）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金の支給）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第三条　戦没者の父母等には、特別給付金を支給する。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第三条　戦没者の父母等には、特別給付金を支給する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">２　前項の特別給付金を受けるべき戦没者の父母等の順位は、父母、祖父母の順序によ<wbr>る。この場合においては、父母及び祖父母について、それぞれ当該死亡した者の死亡の<wbr>当時その者によつて生計を維持し、又はその者と生計をともにしていた者を先にし、同<wbr>順位の父母については、養父母を先にし実父母を後にし、同順位の祖父母については、<wbr>養父母の父母を先にし実父母の父母を後にし、父母の養父母を先にし実父母を後にする<wbr>。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">２　前項の特別給付金を受けるべき戦没者の父母等の順位は、父母、祖父母の順序によ<wbr>る。この場合においては、父母及び祖父母について、それぞれ当該死亡した者の死亡の<wbr>当時その者によつて生計を維持し、又はその者と生計をともにしていた者を先にし、同<wbr>順位の父母については、養父母を先にし実父母を後にし、同順位の祖父母については、<wbr>養父母の父母を先にし実父母の父母を後にし、父母の養父母を先にし実父母を後にする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により第一項の特別給付金を受けるべき順位にある戦没者の父母等が、<wbr>昭和四十二年四月一日において生死不明であり、かつ、同日以後引き続き二年以上（そ<wbr>の者が同日までに二年以上生死不明であるときは、一年以上）生死不明である場合にお<wbr>いて、同順位者がないときは、次順位者の申請により、当該次順位者（当該次順位者と<wbr>同順位の他の戦没者の父母等があるときは、そのすべての同順位者）を第一項の特別給<wbr>付金を受けるべき順位の戦没者の父母等とみなすことができる。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により第一項の特別給付金を受けるべき順位にある戦没者の父母等が、<wbr>昭和四十二年四月一日において生死不明であり、かつ、同日以後引き続き二年以上（そ<wbr>の者が同日までに二年以上生死不明であるときは、一年以上）生死不明である場合にお<wbr>いて、同順位者がないときは、次順位者の申請により、当該次順位者（当該次順位者と<wbr>同順位の他の戦没者の父母等があるときは、そのすべての同順位者）を第一項の特別給<wbr>付金を受けるべき順位の戦没者の父母等とみなすことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">４　前項に規定する次順位者が、昭和四十二年四月一日において生死不明であり、かつ<wbr>、同日以後引き続き二年以上（その者が同日までに二年以上生死不明であるときは、一<wbr>年以上）生死不明である場合も、同項と同様とする。</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">４　前項に規定する次順位者が、昭和四十二年四月一日において生死不明であり、かつ<wbr>、同日以後引き続き二年以上（その者が同日までに二年以上生死不明であるときは、一<wbr>年以上）生死不明である場合も、同項と同様とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">５　戦没者の父母等であつて、第一項の特別給付金を受ける権利を取得した日から五年<wbr>を経過した日において次の各号のいずれかに該当し、かつ、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日の前日までの間にその者と氏を同じくする子（養<wbr>子を除く。以下この条において同じ。）又は孫（当該死亡した者の死亡後にその者の養<wbr>子となつた者の子である孫を除く。以下この条において同じ。）を有するに至らなかつ<wbr>たものには、特別給付金を支給する。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">５　戦没者の父母等であつて、第一項の特別給付金を受ける権利を取得した日から五年<wbr>を経過した日において次の各号のいずれかに該当し、かつ、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日の前日までの間にその者と氏を同じくする子（養<wbr>子を除く。以下この条において同じ。）又は孫（当該死亡した者の死亡後にその者の養<wbr>子となつた者の子である孫を除く。以下この条において同じ。）を有するに至らなかつ<wbr>たものには、特別給付金を支給する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる給付を受ける権利を有する者</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる給付を受ける権利を有する者</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">イ　第二条第一項各号に掲げる給付</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">イ　第二条第一項各号に掲げる給付</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ロ　遺族援護法第二十三条第一項第四号又は第五号に掲げる遺族に支給される同法によ<wbr>る遺族年金</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">ロ　遺族援護法第二十三条第一項第四号又は第五号に掲げる遺族に支給される同法によ<wbr>る遺族年金</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ハ　遺族援護法第二十三条第二項第四号に掲げる遺族に支給される同法による遺族給与<wbr>金</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">ハ　遺族援護法第二十三条第二項第四号に掲げる遺族に支給される同法による遺族給与<wbr>金</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">ニ　戦傷病者戦没者遺族等援護法等の一部を改正する法律（昭和四十五年法律第二十七<wbr>号）附則第五条第一項の規定により支給される遺族年金</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">ニ　戦傷病者戦没者遺族等援護法等の一部を改正する法律（昭和四十五年法律第二十七<wbr>号）附則第五条第一項の規定により支給される遺族年金</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ホ　戦傷病者戦没者遺族等援護法等の一部を改正する法律（昭和四十六年法律第五十一<wbr>号）附則第七条第一項の規定により支給される遺族年金</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">ホ　戦傷病者戦没者遺族等援護法等の一部を改正する法律（昭和四十六年法律第五十一<wbr>号）附則第七条第一項の規定により支給される遺族年金</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">二　第二条第三項第一号に掲げる者</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">二　第二条第三項第一号に掲げる者</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">三　遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当していないた<wbr>め第二条第一項第三号若しくは第四号又は第一号ロからホまでに掲げる給付を受ける権<wbr>利を有しない者</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">三　遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当していないた<wbr>め第二条第一項第三号若しくは第四号又は第一号ロからホまでに掲げる給付を受ける権<wbr>利を有しない者</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">６　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において同項各号のいずれかに該当し、かつ、当<wbr>該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその者<wbr>と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する。<wbr></span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">６　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において同項各号のいずれかに該当し、かつ、当<wbr>該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその者<wbr>と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">７　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ、<wbr>当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその<wbr>者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する<wbr>。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">７　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ、<wbr>当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその<wbr>者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">８　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ、<wbr>当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその<wbr>者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する<wbr>。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">８　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ、<wbr>当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその<wbr>者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">９　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ、<wbr>当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその<wbr>者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する<wbr>。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">９　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける権<wbr>利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ、<wbr>当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にその<wbr>者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給する<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">１０　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">１０　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">１１　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">１１　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">１２　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">１２　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">１３　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">１３　前項の特別給付金を受ける権利を取得した者であつて、当該特別給付金を受ける<wbr>権利を取得した日から五年を経過した日において第五項各号のいずれかに該当し、かつ<wbr>、当該特別給付金を受ける権利を取得した日から五年を経過した日の前日までの間にそ<wbr>の者と氏を同じくする子又は孫を有するに至らなかつたものには、特別給付金を支給す<wbr>る。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（裁定）</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">（裁定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第四条　特別給付金を受ける権利の裁定は、これを受けようとする者の請求に基づいて<wbr>、厚生労働大臣が行なう。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">第四条　特別給付金を受ける権利の裁定は、これを受けようとする者の請求に基づいて<wbr>、厚生労働大臣が行なう。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金の額及び記名国債の交付）</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金の額及び記名国債の交付）</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第五条　特別給付金の額は、第三条第一項の特別給付金にあつては十万円、同条第五項<wbr>の特別給付金にあつては三十万円、同条第六項又は第七項の特別給付金にあつては六十<wbr>万円、同条第八項の特別給付金にあつては七十五万円、同条第九項の特別給付金にあつ<wbr>ては九十万円、同条第十項から第十三項までの特別給付金にあつては百万円とし、それ<wbr>ぞれ五年以内に償還すべき記名国債をもつて交付する。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">第五条　特別給付金の額は、第三条第一項の特別給付金にあつては十万円、同条第五項<wbr>の特別給付金にあつては三十万円、同条第六項又は第七項の特別給付金にあつては六十<wbr>万円、同条第八項の特別給付金にあつては七十五万円、同条第九項の特別給付金にあつ<wbr>ては九十万円、同条第十項から第十三項までの特別給付金にあつては百万円とし、それ<wbr>ぞれ五年以内に償還すべき記名国債をもつて交付する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により交付するため、政府は、必要な金額を限度として国債を発行する<wbr>ことができる。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により交付するため、政府は、必要な金額を限度として国債を発行する<wbr>ことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により発行する国債は、無利子とする。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">３　前項の規定により発行する国債は、無利子とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">４　第二項の規定により発行する国債については、政令で定める場合を除くほか、譲渡<wbr>、担保権の設定その他の処分をすることができない。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">４　第二項の規定により発行する国債については、政令で定める場合を除くほか、譲渡<wbr>、担保権の設定その他の処分をすることができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">５　前各項に定めるもののほか、第二項の規定により発行する国債に関し必要な事項で<wbr>、都道府県知事が処理しなければならないものは政令で、その他のものは財務省令で定<wbr>める。</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">５　前各項に定めるもののほか、第二項の規定により発行する国債に関し必要な事項で<wbr>、都道府県知事が処理しなければならないものは政令で、その他のものは財務省令で定<wbr>める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金を受ける権利を有する者が数人ある場合の請求）</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金を受ける権利を有する者が数人ある場合の請求）</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第六条　同一の支給事由により特別給付金を受ける権利を有する者が数人ある場合にお<wbr>いては、これらの者は、全員のために、そのうち一人を選定して、当該特別給付金の請<wbr>求を行なわなければならない。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">第六条　同一の支給事由により特別給付金を受ける権利を有する者が数人ある場合にお<wbr>いては、これらの者は、全員のために、そのうち一人を選定して、当該特別給付金の請<wbr>求を行なわなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金を受ける権利の受継）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金を受ける権利の受継）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第七条　特別給付金を受ける権利を有する者が死亡した場合において、死亡した者がそ<wbr>の死亡前に特別給付金の請求をしていなかつたときは、死亡した者の相続人は、自己の<wbr>名で、死亡した者の特別給付金を請求することができる。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第七条　特別給付金を受ける権利を有する者が死亡した場合において、死亡した者がそ<wbr>の死亡前に特別給付金の請求をしていなかつたときは、死亡した者の相続人は、自己の<wbr>名で、死亡した者の特別給付金を請求することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、同順位の相続人が数人あるときは、その一人のした特別給付<wbr>金の請求は、全員のためにその全額につきしたものとみなし、その一人に対してした特<wbr>別給付金の裁定は、全員に対してしたものとみなす。</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、同順位の相続人が数人あるときは、その一人のした特別給付<wbr>金の請求は、全員のためにその全額につきしたものとみなし、その一人に対してした特<wbr>別給付金の裁定は、全員に対してしたものとみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">３　第五条第一項に規定する国債の記名者が死亡した場合において、同順位の相続人が<wbr>数人あるときは、その一人のした当該死亡した者の死亡前に支払うべきであつた同項に<wbr>規定する国債の償還金の請求又は同項に規定する国債の記名変更の請求は、全員のため<wbr>にその全額につきしたものとみなし、その一人に対してした同項に規定する国債の償還<wbr>金の支払又は同項に規定する国債の記名変更は、全員に対してしたものとみなす。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">３　第五条第一項に規定する国債の記名者が死亡した場合において、同順位の相続人が<wbr>数人あるときは、その一人のした当該死亡した者の死亡前に支払うべきであつた同項に<wbr>規定する国債の償還金の請求又は同項に規定する国債の記名変更の請求は、全員のため<wbr>にその全額につきしたものとみなし、その一人に対してした同項に規定する国債の償還<wbr>金の支払又は同項に規定する国債の記名変更は、全員に対してしたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（時効）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（時効）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第八条　特別給付金を受ける権利は、これを行使することができる時から三年間行使し<wbr>ないときは、時効によつて消滅する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第八条　特別給付金を受ける権利は、これを行使することができる時から三年間行使し<wbr>ないときは、時効によつて消滅する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">（時効の完成猶予及び更新）</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">（時効の完成猶予及び更新）</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第九条　特別給付金に関する処分についての審査請求は、時効の完成猶予及び更新につ<wbr>いては、裁判上の請求とみなす。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">第九条　特別給付金に関する処分についての審査請求は、時効の完成猶予及び更新につ<wbr>いては、裁判上の請求とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（譲渡又は担保の禁止）</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">（譲渡又は担保の禁止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十条　特別給付金を受ける権利は、譲渡し、又は担保に供することができない。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">第十条　特別給付金を受ける権利は、譲渡し、又は担保に供することができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（差押えの禁止）</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">（差押えの禁止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十一条　特別給付金を受ける権利及び第五条第一項に規定する国債は、差し押えるこ<wbr>とができない。</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">第十一条　特別給付金を受ける権利及び第五条第一項に規定する国債は、差し押えるこ<wbr>とができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">（非課税）</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">（非課税）</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">第十二条　租税その他の公課は、特別給付金を標準として、課することができない。</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">第十二条　租税その他の公課は、特別給付金を標準として、課することができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">２　特別給付金に関する書類及び第五条第一項に規定する国債を担保とする金銭の貸借<wbr>に関する書類には、印紙税を課さない。</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">２　特別給付金に関する書類及び第五条第一項に規定する国債を担保とする金銭の貸借<wbr>に関する書類には、印紙税を課さない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第十三条　削除</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第十三条　削除 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（国債の償還金の返還の免除）</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">（国債の償還金の返還の免除）</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十四条　死亡したものと認定されていた者が生存していることが判明した場合におい<wbr>て、その者の父母又は祖父母に第五条第一項に規定する国債の償還金が支払われている<wbr>ときは、当該生存の事実が判明した日までにすでに支払われていた当該国債の償還金は<wbr>、国庫に返還させないことができる。</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">第十四条　死亡したものと認定されていた者が生存していることが判明した場合におい<wbr>て、その者の父母又は祖父母に第五条第一項に規定する国債の償還金が支払われている<wbr>ときは、当該生存の事実が判明した日までにすでに支払われていた当該国債の償還金は<wbr>、国庫に返還させないことができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、第五条第一項に規定する国債の償還金の支払を受け<wbr>ていた者は、生存の事実を遅滞なく厚生労働大臣に届け出なければ、前項の規定の適用<wbr>を受けることができない。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">２　前項に規定する場合において、第五条第一項に規定する国債の償還金の支払を受け<wbr>ていた者は、生存の事実を遅滞なく厚生労働大臣に届け出なければ、前項の規定の適用<wbr>を受けることができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（都道府県が処理する事務）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（都道府県が処理する事務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十五条　この法律に規定する厚生労働大臣の権限に属する事務の一部は、政令で定め<wbr>るところにより、都道府県知事が行うこととすることができる。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第十五条　この法律に規定する厚生労働大臣の権限に属する事務の一部は、政令で定め<wbr>るところにより、都道府県知事が行うこととすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（政令及び省令への委任）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（政令及び省令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十六条　この法律に特別の規定がある場合を除くほか、特別給付金に係る請求、申請<wbr>又は届出の経由に関して必要な事項は政令で、この法律の実施のための手続その他その<wbr>執行について必要な細則は厚生労働省令で定める。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第十六条　この法律に特別の規定がある場合を除くほか、特別給付金に係る請求、申請<wbr>又は届出の経由に関して必要な事項は政令で、この法律の実施のための手続その他その<wbr>執行について必要な細則は厚生労働省令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行し、昭和四十二年四月一日から適用する。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行し、昭和四十二年四月一日から適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（国債の発行の日）</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">（国債の発行の日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　第五条第二項に規定する国債の発行の日は、第三条第一項の特別給付金に係るもの<wbr>にあつては昭和四十二年五月十六日とし、同条第五項から第十三項までの特別給付金に<wbr>係るものにあつては当該特別給付金を受ける権利を取得する日とする。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　第五条第二項に規定する国債の発行の日は、第三条第一項の特別給付金に係るもの<wbr>にあつては昭和四十二年五月十六日とし、同条第五項から第十三項までの特別給付金に<wbr>係るものにあつては当該特別給付金を受ける権利を取得する日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金の支給の特例）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（特別給付金の支給の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">４　昭和四十二年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者戦<wbr>没者遺族等援護法等の一部を改正する法律（昭和四十五年法律第二十七号。以下「法律<wbr>第二十七号」という。）による改正後の遺族援護法第四条第四項第二号の規定により同<wbr>法第二十三条第二項に規定する遺族給与金（同項第二号及び第三号に掲げる遺族に支給<wbr>されるものを除く。）を受ける権利を有するに至つた者（遺族援護法第二十五条第一項<wbr>第三号又は第五号に規定する条件に該当しているとするならば当該遺族給与金を受ける<wbr>べき者を含む。）又は法律第二十七号附則第五条の規定により同条第一項に規定する遺<wbr>族年金を受ける権利を有するに至つた者（遺族援護法第二十五条第一項第三号又は第五<wbr>号に規定する条件に該当しているとするならば当該遺族年金を受けるべき者を含む。）<wbr>は、第二条第一項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">４　昭和四十二年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者戦<wbr>没者遺族等援護法等の一部を改正する法律（昭和四十五年法律第二十七号。以下「法律<wbr>第二十七号」という。）による改正後の遺族援護法第四条第四項第二号の規定により同<wbr>法第二十三条第二項に規定する遺族給与金（同項第二号及び第三号に掲げる遺族に支給<wbr>されるものを除く。）を受ける権利を有するに至つた者（遺族援護法第二十五条第一項<wbr>第三号又は第五号に規定する条件に該当しているとするならば当該遺族給与金を受ける<wbr>べき者を含む。）又は法律第二十七号附則第五条の規定により同条第一項に規定する遺<wbr>族年金を受ける権利を有するに至つた者（遺族援護法第二十五条第一項第三号又は第五<wbr>号に規定する条件に該当しているとするならば当該遺族年金を受けるべき者を含む。）<wbr>は、第二条第一項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">５　前項の規定により特別給付金を受ける権利を有することとなるべき者については、<wbr>第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十四<wbr>年九月三十日」とあるのは、それぞれ「昭和四十六年九月三十日」とする。</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">５　前項の規定により特別給付金を受ける権利を有することとなるべき者については、<wbr>第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十四<wbr>年九月三十日」とあるのは、それぞれ「昭和四十六年九月三十日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">６　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五条<wbr>第二項に規定する国債の発行の日は、昭和四十六年十月一日とする。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">６　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五条<wbr>第二項に規定する国債の発行の日は、昭和四十六年十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">７　昭和四十二年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者戦<wbr>没者遺族等援護法等の一部を改正する法律（昭和四十六年法律第五十一号。以下「法律<wbr>第五十一号」という。）による遺族援護法第二十三条の規定の改正により遺族年金若し<wbr>くは遺族給与金を受ける権利を有するに至つた者（同法第二十五条第一項第三号又は第<wbr>五号に規定する条件に該当しているとするならば当該遺族年金又は遺族給与金を受ける<wbr>べき者を含む。）又は法律第五十一号附則第七条の規定により遺族年金を受ける権利を<wbr>有するに至つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該<wbr>当しているとするならば当該遺族年金を受けるべき者を含む。）は、第二条第一項に規<wbr>定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">７　昭和四十二年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者戦<wbr>没者遺族等援護法等の一部を改正する法律（昭和四十六年法律第五十一号。以下「法律<wbr>第五十一号」という。）による遺族援護法第二十三条の規定の改正により遺族年金若し<wbr>くは遺族給与金を受ける権利を有するに至つた者（同法第二十五条第一項第三号又は第<wbr>五号に規定する条件に該当しているとするならば当該遺族年金又は遺族給与金を受ける<wbr>べき者を含む。）又は法律第五十一号附則第七条の規定により遺族年金を受ける権利を<wbr>有するに至つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該<wbr>当しているとするならば当該遺族年金を受けるべき者を含む。）は、第二条第一項に規<wbr>定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定により特別給付金を受ける権利を有することとなるべき者については、<wbr>第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十四<wbr>年九月三十日」とあるのは、それぞれ「昭和四十七年九月三十日」とする。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">８　前項の規定により特別給付金を受ける権利を有することとなるべき者については、<wbr>第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十四<wbr>年九月三十日」とあるのは、それぞれ「昭和四十七年九月三十日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">９　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五条<wbr>第二項に規定する国債の発行の日は、昭和四十七年十月一日とする。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">９　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五条<wbr>第二項に規定する国債の発行の日は、昭和四十七年十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">85</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">１０　昭和四十二年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和四十七年法律第三十九号）による遺<wbr>族援護法第二条第三項第六号若しくは第四条第四項第二号の規定の改正により同法第二<wbr>十三条第二項に規定する遺族給与金（同項第一号に掲げる遺族に支給されるものに限る<wbr>。）を受ける権利を有するに至つた者（同法第二十五条第一項第三号又は第五号に規定<wbr>する条件に該当しているとするならば当該遺族給与金を受けるべき者を含む。）又は戦<wbr>傷病者戦没者遺族等援護法施行令等の一部を改正する政令（昭和四十七年政令第二百二<wbr>十二号）による</span><span style="color: #000000; background-color: #efcb05; ">施行令（昭和二十七年政令第百四十三号）第一条の四第一項の規定の改<wbr>正により同法第二十三条第一項に規定する遺族年金（同項第一号に掲げる遺族に支給さ<wbr>れるものに限る。）を受ける権利を有するに至つた者（同法第二十五条第一項第三号又<wbr>は第五号に規定する条件に該当しているとするならば当該遺族年金を受けるべき者を含<wbr>む。）は、第二条第一項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">85</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">１０　昭和四十二年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和四十七年法律第三十九号）による遺<wbr>族援護法第二条第三項第六号若しくは第四条第四項第二号の規定の改正により同法第二<wbr>十三条第二項に規定する遺族給与金（同項第一号に掲げる遺族に支給されるものに限る<wbr>。）を受ける権利を有するに至つた者（同法第二十五条第一項第三号又は第五号に規定<wbr>する条件に該当しているとするならば当該遺族給与金を受けるべき者を含む。）又は戦<wbr>傷病者戦没者遺族等援護法施行令等の一部を改正する政令（昭和四十七年政令第二百二<wbr>十二号）による</span><span class="sf17b18">戦傷病者戦没者遺族等援護法</span><span style="color: #000000; background-color: #efcb05; ">施行令（昭和二十七年政令第百四十三号）<wbr>第一条の四第一項の規定の改正により同法第二十三条第一項に規定する遺族年金（同項<wbr>第一号に掲げる遺族に支給されるものに限る。）を受ける権利を有するに至つた者（同<wbr>法第二十五条第一項第三号又は第五号に規定する条件に該当しているとするならば当該<wbr>遺族年金を受けるべき者を含む。）は、第二条第一項に規定する遺族年金受給権者たる<wbr>父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">１１　昭和四十二年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、昭和四十八年四月<wbr>一日において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺<wbr>族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">１１　昭和四十二年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、昭和四十八年四月<wbr>一日において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺<wbr>族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">１２　前二項の規定により特別給付金を受ける権利を有することとなるべき者について<wbr>は、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四<wbr>十四年九月三十日」とあるのはそれぞれ「昭和四十八年九月三十日」と、第三条第三項<wbr>及び第四項中「昭和四十二年四月一日」とあるのは「昭和四十八年十月一日」とする。<wbr></span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">１２　前二項の規定により特別給付金を受ける権利を有することとなるべき者について<wbr>は、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四<wbr>十四年九月三十日」とあるのはそれぞれ「昭和四十八年九月三十日」と、第三条第三項<wbr>及び第四項中「昭和四十二年四月一日」とあるのは「昭和四十八年十月一日」とする。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">１３　前三項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和四十八年十月一日とする。</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">１３　前三項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和四十八年十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">１４　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和四十八年法律第六十四号）による遺<wbr>族援護法第二十三条第一項第四号又は第二項第四号の規定の改正により遺族年金又は遺<wbr>族給与金を受ける権利を有するに至つた者（同法第二十五条第一項第三号又は第五号に<wbr>規定する条件に該当しているとするならば当該遺族年金又は遺族給与金を受けるべき者<wbr>を含む。）は、第二条第一項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">１４　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和四十八年法律第六十四号）による遺<wbr>族援護法第二十三条第一項第四号又は第二項第四号の規定の改正により遺族年金又は遺<wbr>族給与金を受ける権利を有するに至つた者（同法第二十五条第一項第三号又は第五号に<wbr>規定する条件に該当しているとするならば当該遺族年金又は遺族給与金を受けるべき者<wbr>を含む。）は、第二条第一項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">１５　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和四十九年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和四十九年十月一日」とする。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">１５　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和四十九年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和四十九年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">１６　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和四十九年十月一日とする。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">１６　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和四十九年十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">１７　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母であつた<wbr>ことにより、昭和四十九年十月一日において第二条第一項第一号又は第三号に掲げる給<wbr>付を受ける権利を有する者（同日において同条第三項各号のいずれかに該当する者を含<wbr>む。）であつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同<wbr>じくする同条第一項ただし書に規定する子又は孫を有するに至らなかつたもの（以下こ<wbr>の項において「父母等」という。）は、第三条第五項に規定する者とみなす。ただし、<wbr>当該死亡した者の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の<wbr>当時その死亡した者以外に子も孫もいなかつた父母等が同年十月一日においてない場合<wbr>にあつては、父母等と氏を同じくする子又は孫とする。）がいた父母等については、こ<wbr>の限りでない。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">１７　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母であつた<wbr>ことにより、昭和四十九年十月一日において第二条第一項第一号又は第三号に掲げる給<wbr>付を受ける権利を有する者（同日において同条第三項各号のいずれかに該当する者を含<wbr>む。）であつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同<wbr>じくする同条第一項ただし書に規定する子又は孫を有するに至らなかつたもの（以下こ<wbr>の項において「父母等」という。）は、第三条第五項に規定する者とみなす。ただし、<wbr>当該死亡した者の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の<wbr>当時その死亡した者以外に子も孫もいなかつた父母等が同年十月一日においてない場合<wbr>にあつては、父母等と氏を同じくする子又は孫とする。）がいた父母等については、こ<wbr>の限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">１８　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和四十九年<wbr>十月一日」と読み替えるものとする。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">１８　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和四十九年<wbr>十月一日」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">１９　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和四十九年法律第五十一号）による遺<wbr>族援護法第二条第三項第七号の規定の改正により遺族給与金を受ける権利を有するに至<wbr>つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当している<wbr>とするならば当該遺族給与金を受けるべき者を含む。）は、第二条第一項に規定する遺<wbr>族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">１９　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和四十九年法律第五十一号）による遺<wbr>族援護法第二条第三項第七号の規定の改正により遺族給与金を受ける権利を有するに至<wbr>つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当している<wbr>とするならば当該遺族給与金を受けるべき者を含む。）は、第二条第一項に規定する遺<wbr>族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">２０　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十年七月三十一日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十年八月一日」とする。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">２０　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十年七月三十一日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十年八月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">２１　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和五十年十月一日とする。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">２１　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和五十年十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">２２　昭和十二年七月七日以後に死亡した者（同日前の負傷又は疾病により死亡した者<wbr>を除く。）の父母又は祖父母であつたことにより、戦傷病者戦没者遺族等援護法等の一<wbr>部を改正する法律（昭和五十一年法律第二十二号）附則第三条第一項又は第二項の規定<wbr>により遺族年金又は遺族給与金を受ける権利を有するに至つた者は、第二条第一項に規<wbr>定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">２２　昭和十二年七月七日以後に死亡した者（同日前の負傷又は疾病により死亡した者<wbr>を除く。）の父母又は祖父母であつたことにより、戦傷病者戦没者遺族等援護法等の一<wbr>部を改正する法律（昭和五十一年法律第二十二号）附則第三条第一項又は第二項の規定<wbr>により遺族年金又は遺族給与金を受ける権利を有するに至つた者は、第二条第一項に規<wbr>定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２３　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十二年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十二年十月一日」とする。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">２３　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十二年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十二年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">２４　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和五十二年十月一日とする。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">２４　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和五十二年十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">２５　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和五十三年法律第三十三号）による遺<wbr>族援護法第二条第三項第四号の規定の改正により遺族援護法第二十三条第二項に規定す<wbr>る遺族給与金（同項第一号又は第四号に掲げる遺族に支給されるものに限る。）を受け<wbr>る権利を有するに至つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する<wbr>条件に該当しているとするならば当該遺族給与金を受けるべき者を含む。）は、第二条<wbr>第一項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">２５　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和五十三年法律第三十三号）による遺<wbr>族援護法第二条第三項第四号の規定の改正により遺族援護法第二十三条第二項に規定す<wbr>る遺族給与金（同項第一号又は第四号に掲げる遺族に支給されるものに限る。）を受け<wbr>る権利を有するに至つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する<wbr>条件に該当しているとするならば当該遺族給与金を受けるべき者を含む。）は、第二条<wbr>第一項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">２６　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十四年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十四年十月一日」とする。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">２６　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十四年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十四年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">２７　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和五十四年十月一日とする。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">２７　前二項の規定により特別給付金を受ける権利を有するに至つた者に交付する第五<wbr>条第二項に規定する国債の発行の日は、昭和五十四年十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２８　昭和十二年七月七日以後に死亡した者（同日前の負傷又は疾病により死亡した者<wbr>を除く。）の父母又は祖父母であつたことにより、戦傷病者戦没者遺族等援護法等の一<wbr>部を改正する法律（昭和五十四年法律第二十九号）附則第六条第一項又は第二項の規定<wbr>により遺族援護法第二十三条第一項に規定する遺族年金（同項第一号、第四号又は第五<wbr>号に掲げる遺族に支給されるものに限る。）又は同条第二項に規定する遺族給与金（同<wbr>項第一号又は第四号に掲げる遺族に支給されるものに限る。）を受ける権利を有するに<wbr>至つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当してい<wbr>るとするならば当該遺族年金又は遺族給与金を受けるべき者を含む。）は、第二条第一<wbr>項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">２８　昭和十二年七月七日以後に死亡した者（同日前の負傷又は疾病により死亡した者<wbr>を除く。）の父母又は祖父母であつたことにより、戦傷病者戦没者遺族等援護法等の一<wbr>部を改正する法律（昭和五十四年法律第二十九号）附則第六条第一項又は第二項の規定<wbr>により遺族援護法第二十三条第一項に規定する遺族年金（同項第一号、第四号又は第五<wbr>号に掲げる遺族に支給されるものに限る。）又は同条第二項に規定する遺族給与金（同<wbr>項第一号又は第四号に掲げる遺族に支給されるものに限る。）を受ける権利を有するに<wbr>至つた者（遺族援護法第二十五条第一項第三号又は第五号に規定する条件に該当してい<wbr>るとするならば当該遺族年金又は遺族給与金を受けるべき者を含む。）は、第二条第一<wbr>項に規定する遺族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">２９　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十五年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十五年十月一日」とする。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">２９　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十五年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十五年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">３０　昭和十二年七月七日以後に負傷し、又は疾病にかかり、これにより昭和四十八年<wbr>三月三十一日以前に死亡した者の父母又は祖父母であつたことにより、昭和五十五年十<wbr>二月一日において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者が死亡<wbr>により除籍された当時（以下「除籍時」という。）から同年十一月三十日までの間にそ<wbr>の者と氏を同じくする第二条第一項ただし書に規定する子又は孫を有するに至らなかつ<wbr>た者（以下この項において「父母等」という。）であつて、当該死亡した者の除籍時に<wbr>氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時に子も孫もいなかつ<wbr>た他の父母等が同年十二月一日においている場合にあつては、当該死亡した者の除籍時<wbr>に子も孫もいなかつたものに限る。）は、同条第一項に規定する戦没者の父母等とみな<wbr>す。ただし、その者が特別給付金を受ける権利を取得した場合及び当該死亡した者の死<wbr>亡に関し他に特別給付金を受ける権利を取得した者がある場合は、この限りでない。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">３０　昭和十二年七月七日以後に負傷し、又は疾病にかかり、これにより昭和四十八年<wbr>三月三十一日以前に死亡した者の父母又は祖父母であつたことにより、昭和五十五年十<wbr>二月一日において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者が死亡<wbr>により除籍された当時（以下「除籍時」という。）から同年十一月三十日までの間にそ<wbr>の者と氏を同じくする第二条第一項ただし書に規定する子又は孫を有するに至らなかつ<wbr>た者（以下この項において「父母等」という。）であつて、当該死亡した者の除籍時に<wbr>氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時に子も孫もいなかつ<wbr>た他の父母等が同年十二月一日においている場合にあつては、当該死亡した者の除籍時<wbr>に子も孫もいなかつたものに限る。）は、同条第一項に規定する戦没者の父母等とみな<wbr>す。ただし、その者が特別給付金を受ける権利を取得した場合及び当該死亡した者の死<wbr>亡に関し他に特別給付金を受ける権利を取得した者がある場合は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">３１　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十五年十<wbr>二月一日」とする。</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">３１　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十五年十<wbr>二月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">３２　附則第二十八項から前項までの規定により特別給付金を受ける権利を有するに至<wbr>つた者に交付する第五条第二項に規定する国債の発行の日は、昭和五十五年十二月一日<wbr>とする。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">３２　附則第二十八項から前項までの規定により特別給付金を受ける権利を有するに至<wbr>つた者に交付する第五条第二項に規定する国債の発行の日は、昭和五十五年十二月一日<wbr>とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">３３　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和五十六年法律第二十六号。以下「法<wbr>律第二十六号」という。）による遺族援護法第二条第三項第四号の規定の改正により遺<wbr>族援護法第二十三条第二項に規定する遺族給与金（同項第一号又は第四号に掲げる遺族<wbr>に支給されるものに限る。）を受ける権利を有するに至つた者（遺族援護法第二十五条<wbr>第一項第三号又は第五号に規定する条件に該当しているとするならば当該遺族給与金を<wbr>受けるべき者を含む。）は、第二条第一項に規定する遺族年金受給権者たる父母等とみ<wbr>なす。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">３３　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、戦傷病者<wbr>戦没者遺族等援護法等の一部を改正する法律（昭和五十六年法律第二十六号。以下「法<wbr>律第二十六号」という。）による遺族援護法第二条第三項第四号の規定の改正により遺<wbr>族援護法第二十三条第二項に規定する遺族給与金（同項第一号又は第四号に掲げる遺族<wbr>に支給されるものに限る。）を受ける権利を有するに至つた者（遺族援護法第二十五条<wbr>第一項第三号又は第五号に規定する条件に該当しているとするならば当該遺族給与金を<wbr>受けるべき者を含む。）は、第二条第一項に規定する遺族年金受給権者たる父母等とみ<wbr>なす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">３４　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十七年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十七年十月一日」とする。</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">３４　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十七年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十七年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">３５　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、法律第二<wbr>十六号による遺族援護法第二条第三項第四号の規定の改正により遺族援護法第二十三条<wbr>第二項に規定する遺族給与金（同項第一号又は第四号に掲げる遺族に支給されるものに<wbr>限る。）を受ける権利を有するに至つた者（遺族援護法第二十五条第一項第三号又は第<wbr>五号に規定する条件に該当しているとするならば当該遺族給与金を受けるべき者を含む<wbr>。）であつて、当該死亡した者の除籍時から昭和五十七年九月三十日までの間にその者<wbr>と氏を同じくする第二条第一項ただし書に規定する子又は孫を有するに至らなかつたも<wbr>の（以下この項において「父母等」という。）のうち、当該死亡した者の除籍時に氏を<wbr>同じくする子も孫もいなかつた者（当該死亡した者の除籍時に子も孫もいなかつた他の<wbr>父母等が同年十月一日においている場合にあつては、当該死亡した者の除籍時に子も孫<wbr>もいなかつた者に限る。）は、同条第一項に規定する戦没者の父母等とみなす。ただし<wbr>、その者が他の事由により特別給付金を受ける権利を取得した場合及び当該死亡した者<wbr>の死亡に関し他に特別給付金を受ける権利を有することとなる者がある場合は、この限<wbr>りでない。</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">３５　昭和四十八年三月三十一日以前に死亡した者の父母又は祖父母として、法律第二<wbr>十六号による遺族援護法第二条第三項第四号の規定の改正により遺族援護法第二十三条<wbr>第二項に規定する遺族給与金（同項第一号又は第四号に掲げる遺族に支給されるものに<wbr>限る。）を受ける権利を有するに至つた者（遺族援護法第二十五条第一項第三号又は第<wbr>五号に規定する条件に該当しているとするならば当該遺族給与金を受けるべき者を含む<wbr>。）であつて、当該死亡した者の除籍時から昭和五十七年九月三十日までの間にその者<wbr>と氏を同じくする第二条第一項ただし書に規定する子又は孫を有するに至らなかつたも<wbr>の（以下この項において「父母等」という。）のうち、当該死亡した者の除籍時に氏を<wbr>同じくする子も孫もいなかつた者（当該死亡した者の除籍時に子も孫もいなかつた他の<wbr>父母等が同年十月一日においている場合にあつては、当該死亡した者の除籍時に子も孫<wbr>もいなかつた者に限る。）は、同条第一項に規定する戦没者の父母等とみなす。ただし<wbr>、その者が他の事由により特別給付金を受ける権利を取得した場合及び当該死亡した者<wbr>の死亡に関し他に特別給付金を受ける権利を有することとなる者がある場合は、この限<wbr>りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">３６　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十七年十<wbr>月一日」とする。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">３６　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十七年十<wbr>月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">３７　附則第三十三項から前項までの規定により特別給付金を受ける権利を有するに至<wbr>つた者に交付する第五条第二項に規定する国債の発行の日は、昭和五十七年十月一日と<wbr>する。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">３７　附則第三十三項から前項までの規定により特別給付金を受ける権利を有するに至<wbr>つた者に交付する第五条第二項に規定する国債の発行の日は、昭和五十七年十月一日と<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">３８　昭和四十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、昭和五十八年四月<wbr>一日において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺<wbr>族年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">３８　昭和四十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、昭和五十八年四月<wbr>一日において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺<wbr>族年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">３９　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十八年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十八年十月一日」とする。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">３９　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「昭和五十八年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「昭和五十八年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">４０　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより昭和四十八年四月一日以後に死亡した者の父母又は祖父母であつたこと<wbr>により、昭和五十八年四月一日において第二条第一項第一号又は第三号に掲げる給付を<wbr>受ける権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。<wbr>）であつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じく<wbr>する第三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項におい<wbr>て「父母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡し<wbr>た者の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死<wbr>亡した者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては<wbr>、父母等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでな<wbr>い。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">４０　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより昭和四十八年四月一日以後に死亡した者の父母又は祖父母であつたこと<wbr>により、昭和五十八年四月一日において第二条第一項第一号又は第三号に掲げる給付を<wbr>受ける権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。<wbr>）であつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じく<wbr>する第三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項におい<wbr>て「父母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡し<wbr>た者の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死<wbr>亡した者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては<wbr>、父母等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">４１　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十八年<wbr>十月一日」と読み替えるものとする。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">４１　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十八年<wbr>十月一日」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">４２　昭和四十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、昭和五十八年四月<wbr>一日において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時か<wbr>ら同年九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫<wbr>を有するに至らなかつた者（以下この項において「父母等」という。）であつて、当該<wbr>死亡した者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍<wbr>時に子も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該<wbr>死亡した者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する<wbr>戦没者の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を<wbr>取得した場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有するこ<wbr>ととなる者がある場合は、この限りでない。</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">４２　昭和四十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、昭和五十八年四月<wbr>一日において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時か<wbr>ら同年九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫<wbr>を有するに至らなかつた者（以下この項において「父母等」という。）であつて、当該<wbr>死亡した者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍<wbr>時に子も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該<wbr>死亡した者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する<wbr>戦没者の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を<wbr>取得した場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有するこ<wbr>ととなる者がある場合は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">４３　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十八年十<wbr>月一日」とする。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">４３　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「昭和五十八年十<wbr>月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">４４　附則第三十八項、第三十九項及び前二項の規定により特別給付金を受ける権利を<wbr>有するに至つた者に交付する第五条第二項に規定する国債の発行の日は、昭和五十八年<wbr>十月一日とする。</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">４４　附則第三十八項、第三十九項及び前二項の規定により特別給付金を受ける権利を<wbr>有するに至つた者に交付する第五条第二項に規定する国債の発行の日は、昭和五十八年<wbr>十月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">４５　昭和五十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、平成五年四月一日<wbr>において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺族年<wbr>金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">４５　昭和五十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、平成五年四月一日<wbr>において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺族年<wbr>金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">４６　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「平成五年九月三十日」と、第三条第三項及び第<wbr>四項中「昭和四十二年四月一日」とあるのは「平成五年十月一日」とする。</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">４６　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「平成五年九月三十日」と、第三条第三項及び第<wbr>四項中「昭和四十二年四月一日」とあるのは「平成五年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">４７　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより昭和五十八年四月一日以後に死亡した者の父母又は祖父母であつたこと<wbr>により、平成五年四月一日において第二条第一項第一号又は第三号に掲げる給付を受け<wbr>る権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。）で<wbr>あつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じくする<wbr>第三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項において「<wbr>父母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡した者<wbr>の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死亡し<wbr>た者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては、父<wbr>母等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでない。<wbr></span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">４７　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより昭和五十八年四月一日以後に死亡した者の父母又は祖父母であつたこと<wbr>により、平成五年四月一日において第二条第一項第一号又は第三号に掲げる給付を受け<wbr>る権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。）で<wbr>あつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じくする<wbr>第三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項において「<wbr>父母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡した者<wbr>の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死亡し<wbr>た者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては、父<wbr>母等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでない。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">４８　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成五年十月<wbr>一日」と読み替えるものとする。</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">４８　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成五年十月<wbr>一日」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">４９　昭和五十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、平成五年四月一日<wbr>において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時から同<wbr>年九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫を有<wbr>するに至らなかつた者（以下この項において「父母等」という。）であつて、当該死亡<wbr>した者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時に<wbr>子も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該死亡<wbr>した者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する戦没<wbr>者の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を取得<wbr>した場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有することと<wbr>なる者がある場合は、この限りでない。</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">４９　昭和五十八年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病<wbr>により死亡した者を除く。）の父母又は祖父母であつたことにより、平成五年四月一日<wbr>において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時から同<wbr>年九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫を有<wbr>するに至らなかつた者（以下この項において「父母等」という。）であつて、当該死亡<wbr>した者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時に<wbr>子も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該死亡<wbr>した者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する戦没<wbr>者の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を取得<wbr>した場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有することと<wbr>なる者がある場合は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">５０　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成五年十月一<wbr>日」とする。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">５０　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成五年十月一<wbr>日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">５１　附則第四十五項、第四十六項及び前二項の規定により特別給付金を受ける権利を<wbr>有するに至つた者に交付する第五条第二項に規定する国債の発行の日は、平成五年十月<wbr>一日とする。</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">５１　附則第四十五項、第四十六項及び前二項の規定により特別給付金を受ける権利を<wbr>有するに至つた者に交付する第五条第二項に規定する国債の発行の日は、平成五年十月<wbr>一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">５２　平成五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病によ<wbr>り死亡した者を除く。）の父母又は祖父母であつたことにより、平成十五年四月一日に<wbr>おいて第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺族年金<wbr>受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">５２　平成五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病によ<wbr>り死亡した者を除く。）の父母又は祖父母であつたことにより、平成十五年四月一日に<wbr>おいて第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺族年金<wbr>受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">５３　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「平成十五年九月三十日」と、第三条第三項及び<wbr>第四項中「昭和四十二年四月一日」とあるのは「平成十五年十月一日」とする。</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">５３　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「平成十五年九月三十日」と、第三条第三項及び<wbr>第四項中「昭和四十二年四月一日」とあるのは「平成十五年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">５４　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより平成五年四月一日以後に死亡した者の父母又は祖父母であつたことによ<wbr>り、平成十五年四月一日において第二条第一項第一号又は第三号に掲げる給付を受ける<wbr>権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。）であ<wbr>つて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じくする第<wbr>三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項において「父<wbr>母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡した者の<wbr>死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死亡した<wbr>者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては、父母<wbr>等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでない。</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">５４　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより平成五年四月一日以後に死亡した者の父母又は祖父母であつたことによ<wbr>り、平成十五年四月一日において第二条第一項第一号又は第三号に掲げる給付を受ける<wbr>権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。）であ<wbr>つて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じくする第<wbr>三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項において「父<wbr>母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡した者の<wbr>死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死亡した<wbr>者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては、父母<wbr>等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">５５　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成十五年十<wbr>月一日」と読み替えるものとする。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">５５　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成十五年十<wbr>月一日」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">５６　平成五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病によ<wbr>り死亡した者を除く。）の父母又は祖父母であつたことにより、平成十五年四月一日に<wbr>おいて第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時から同年<wbr>九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫を有す<wbr>るに至らなかつた者（以下この項において「父母等」という。）であつて、当該死亡し<wbr>た者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時に子<wbr>も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該死亡し<wbr>た者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する戦没者<wbr>の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を取得し<wbr>た場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有することとな<wbr>る者がある場合は、この限りでない。</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">５６　平成五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病によ<wbr>り死亡した者を除く。）の父母又は祖父母であつたことにより、平成十五年四月一日に<wbr>おいて第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時から同年<wbr>九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫を有す<wbr>るに至らなかつた者（以下この項において「父母等」という。）であつて、当該死亡し<wbr>た者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時に子<wbr>も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該死亡し<wbr>た者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する戦没者<wbr>の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を取得し<wbr>た場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有することとな<wbr>る者がある場合は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">５７　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成十五年十月<wbr>一日」とする。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">５７　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成十五年十月<wbr>一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">５８　附則第五十二項、第五十三項及び前二項の規定により特別給付金を受ける権利を<wbr>有するに至つた者に交付する第五条第二項に規定する国債の発行の日は、平成十五年十<wbr>月一日とする。</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">５８　附則第五十二項、第五十三項及び前二項の規定により特別給付金を受ける権利を<wbr>有するに至つた者に交付する第五条第二項に規定する国債の発行の日は、平成十五年十<wbr>月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">５９　平成十五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病に<wbr>より死亡した者を除く。）の父母又は祖父母であつたことにより、平成二十五年四月一<wbr>日において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺族<wbr>年金受給権者たる父母等とみなす。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">５９　平成十五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病に<wbr>より死亡した者を除く。）の父母又は祖父母であつたことにより、平成二十五年四月一<wbr>日において第三条第五項各号のいずれかに該当する者は、第二条第一項に規定する遺族<wbr>年金受給権者たる父母等とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">６０　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「平成二十五年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「平成二十五年十月一日」とする。</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">６０　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第二条第一項中「昭和四十二年三月三十一日」とあり、及び第二条の二中「昭和四十<wbr>四年九月三十日」とあるのはそれぞれ「平成二十五年九月三十日」と、第三条第三項及<wbr>び第四項中「昭和四十二年四月一日」とあるのは「平成二十五年十月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">６１　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより平成十五年四月一日以後に死亡した者の父母又は祖父母であつたことに<wbr>より、平成二十五年四月一日において第二条第一項第一号又は第三号に掲げる給付を受<wbr>ける権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。）<wbr>であつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じくす<wbr>る第三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項において<wbr>「父母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡した<wbr>者の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死亡<wbr>した者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては、<wbr>父母等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでない<wbr>。</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">６１　昭和六年九月十八日から昭和十二年七月六日までの間に負傷し、又は疾病にかか<wbr>り、これにより平成十五年四月一日以後に死亡した者の父母又は祖父母であつたことに<wbr>より、平成二十五年四月一日において第二条第一項第一号又は第三号に掲げる給付を受<wbr>ける権利を有する者（同日において同条第三項各号のいずれかに該当する者を含む。）<wbr>であつて、当該死亡した者の死亡の後同年九月三十日までの間にその者と氏を同じくす<wbr>る第三条第五項に規定する子又は孫を有するに至らなかつたもの（以下この項において<wbr>「父母等」という。）は、第三条第五項に規定する者とみなす。ただし、当該死亡した<wbr>者の死亡の当時その死亡した者以外に子又は孫（当該死亡した者の死亡の当時その死亡<wbr>した者以外に子も孫もいなかつた父母等が同年十月一日においてない場合にあつては、<wbr>父母等と氏を同じくする子又は孫とする。）がいた父母等については、この限りでない<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">６２　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成二十五年<wbr>十月一日」と読み替えるものとする。</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">６２　前項の場合には、第三条第二項から第四項までの規定を準用する。この場合にお<wbr>いて、同条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成二十五年<wbr>十月一日」と読み替えるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">６３　平成十五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病に<wbr>より死亡した者を除く。）の父母又は祖父母であつたことにより、平成二十五年四月一<wbr>日において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時から<wbr>同年九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫を<wbr>有するに至らなかつた者（以下この項において「父母等」という。）であつて、当該死<wbr>亡した者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時<wbr>に子も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該死<wbr>亡した者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する戦<wbr>没者の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を取<wbr>得した場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有すること<wbr>となる者がある場合は、この限りでない。</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">６３　平成十五年四月一日以後に死亡した者（昭和十二年七月七日前の負傷又は疾病に<wbr>より死亡した者を除く。）の父母又は祖父母であつたことにより、平成二十五年四月一<wbr>日において第三条第五項各号のいずれかに該当し、かつ、当該死亡した者の除籍時から<wbr>同年九月三十日までの間にその者と氏を同じくする第三条第五項に規定する子又は孫を<wbr>有するに至らなかつた者（以下この項において「父母等」という。）であつて、当該死<wbr>亡した者の除籍時に氏を同じくする子も孫もいなかつたもの（当該死亡した者の除籍時<wbr>に子も孫もいなかつた他の父母等が同年十月一日においている場合にあつては、当該死<wbr>亡した者の除籍時に子も孫もいなかつたものに限る。）は、第二条第一項に規定する戦<wbr>没者の父母等とみなす。ただし、その者が他の事由により特別給付金を受ける権利を取<wbr>得した場合及び当該死亡した者の死亡に関し他に特別給付金を受ける権利を有すること<wbr>となる者がある場合は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">６４　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成二十五年十<wbr>月一日」とする。</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">６４　前項の規定により特別給付金を受ける権利を有することとなるべき者については<wbr>、第三条第三項及び第四項中「昭和四十二年四月一日」とあるのは、「平成二十五年十<wbr>月一日」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">６５　附則第五十九項、第六十項及び前二項の規定により特別給付金を受ける権利を有<wbr>するに至つた者に交付する第五条第二項に規定する国債の発行の日は、平成二十五年十<wbr>月一日とする。</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">６５　附則第五十九項、第六十項及び前二項の規定により特別給付金を受ける権利を有<wbr>するに至つた者に交付する第五条第二項に規定する国債の発行の日は、平成二十五年十<wbr>月一日とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">（国債の償還金の支払の特例）</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">（国債の償還金の支払の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">６６　第五条第一項に規定する国債の償還金については、当分の間、その消滅時効が完<wbr>成した場合においても、その支払をすることができる。</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">６６　第五条第一項に規定する国債の償還金については、当分の間、その消滅時効が完<wbr>成した場合においても、その支払をすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四四年七月一五日法律第六一号）　抄</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四四年七月一五日法律第六一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十四年十月一日から施行する。</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十四年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（戦没者の父母等に対する特別給付金支給法の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">（戦没者の父母等に対する特別給付金支給法の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第十条　この法律による戦没者の父母等に対する特別給付金支給法の改正により特別給<wbr>付金を受ける権利を有するに至つた者に支給する同法第五条第二項に規定する国債の発<wbr>行の日は、同法附則第二項の規定にかかわらず、昭和四十四年十月一日とする。</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">第十条　この法律による戦没者の父母等に対する特別給付金支給法の改正により特別給<wbr>付金を受ける権利を有するに至つた者に支給する同法第五条第二項に規定する国債の発<wbr>行の日は、同法附則第二項の規定にかかわらず、昭和四十四年十月一日とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四六年四月三〇日法律第五一号）　抄</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四六年四月三〇日法律第五一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十六年十月一日から施行する。</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十六年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四六年一二月三一日法律第一三〇号）　抄</span></code></td>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四六年一二月三一日法律第一三〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、琉球諸島及び大東諸島に関する日本国とアメリカ合衆国との間の協定<wbr>の効力発生の日から施行する。</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、琉球諸島及び大東諸島に関する日本国とアメリカ合衆国との間の協定<wbr>の効力発生の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年五月二九日法律第三九号）　抄</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四七年五月二九日法律第三九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十七年十月一日から施行する。</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十七年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年七月二四日法律第六四号）　抄</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四八年七月二四日法律第六四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十八年十月一日から施行する。ただし、第四条中戦没者等<wbr>の妻に対する特別給付金支給法第三条、第四条第一項及び附則第二項の改正規定、第五<wbr>条中戦傷病者特別援護法第十八条第二項の改正規定、第七条中戦没者の父母等に対する<wbr>特別給付金支給法第三条、第五条第一項及び附則第二項の改正規定並びに附則第三条か<wbr>ら附則第五条までの規定は、公布の日から施行する。</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十八年十月一日から施行する。ただし、第四条中戦没者等<wbr>の妻に対する特別給付金支給法第三条、第四条第一項及び附則第二項の改正規定、第五<wbr>条中戦傷病者特別援護法第十八条第二項の改正規定、第七条中戦没者の父母等に対する<wbr>特別給付金支給法第三条、第五条第一項及び附則第二項の改正規定並びに附則第三条か<wbr>ら附則第五条までの規定は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">２　この法律による改正後の戦没者等の妻に対する特別給付金支給法第三条、第四条第<wbr>一項及び附則第二項の規定、この法律による改正後の戦傷病者特別援護法第十八条第二<wbr>項の規定、この法律による改正後の戦没者の父母等に対する特別給付金支給法第三条、<wbr>第五条第一項及び附則第二項の規定並びに附則第三条及び附則第五条の規定は、昭和四<wbr>十八年四月一日から適用する。</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">２　この法律による改正後の戦没者等の妻に対する特別給付金支給法第三条、第四条第<wbr>一項及び附則第二項の規定、この法律による改正後の戦傷病者特別援護法第十八条第二<wbr>項の規定、この法律による改正後の戦没者の父母等に対する特別給付金支給法第三条、<wbr>第五条第一項及び附則第二項の規定並びに附則第三条及び附則第五条の規定は、昭和四<wbr>十八年四月一日から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（戦没者の父母等に対する特別給付金支給法の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">（戦没者の父母等に対する特別給付金支給法の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第五条　昭和四十二年四月一日に戦没者の父母等に対する特別給付金支給法による特別<wbr>給付金を受ける権利を取得した者に関し、この法律による改正後の同法第三条第五項の<wbr>規定を適用する場合においては、同項中「五年」とあるのは、「六年」とする。</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">第五条　昭和四十二年四月一日に戦没者の父母等に対する特別給付金支給法による特別<wbr>給付金を受ける権利を取得した者に関し、この法律による改正後の同法第三条第五項の<wbr>規定を適用する場合においては、同項中「五年」とあるのは、「六年」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">２　昭和四十二年十月一日に戦没者の父母等に対する特別給付金支給法による特別給付<wbr>金を受ける権利を取得した者に関し、この法律による改正後の同法第三条第五項の規定<wbr>を適用する場合においては、同項中「五年」とあるのは、「五年六月」とする。</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">２　昭和四十二年十月一日に戦没者の父母等に対する特別給付金支給法による特別給付<wbr>金を受ける権利を取得した者に関し、この法律による改正後の同法第三条第五項の規定<wbr>を適用する場合においては、同項中「五年」とあるのは、「五年六月」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">３　前二項に規定する者に交付する戦没者の父母等に対する特別給付金支給法第三条第<wbr>五項の特別給付金に係る同法第五条第二項に規定する国債の発行の日は、この法律によ<wbr>る改正後の同法附則第二項の規定にかかわらず、昭和四十八年五月一日とする。</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">３　前二項に規定する者に交付する戦没者の父母等に対する特別給付金支給法第三条第<wbr>五項の特別給付金に係る同法第五条第二項に規定する国債の発行の日は、この法律によ<wbr>る改正後の同法附則第二項の規定にかかわらず、昭和四十八年五月一日とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四九年五月二〇日法律第五一号）　抄</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四九年五月二〇日法律第五一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和四十九年九月一日から施行する。ただし、第二条中未帰還者留守<wbr>家族等援護法第十六条第一項の改正規定、第五条中戦傷病者特別援護法第十八条第二項<wbr>及び第十九条第一項の改正規定並びに附則第四項の規定は公布の日から、第四条、第六<wbr>条及び第七条の規定は同年十月一日から施行する。</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和四十九年九月一日から施行する。ただし、第二条中未帰還者留守<wbr>家族等援護法第十六条第一項の改正規定、第五条中戦傷病者特別援護法第十八条第二項<wbr>及び第十九条第一項の改正規定並びに附則第四項の規定は公布の日から、第四条、第六<wbr>条及び第七条の規定は同年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四九年六月二七日法律第一〇〇号）</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四九年六月二七日法律第一〇〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五〇年三月三一日法律第一〇号）　抄</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五〇年三月三一日法律第一〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和五十年八月一日から施行する。</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和五十年八月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年五月二四日法律第四五号）　抄</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五二年五月二四日法律第四五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める<wbr>日から施行する。</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める<wbr>日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">三　第七条、第八条、第十条及び附則第五条の規定　昭和五十二年十月一日</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">三　第七条、第八条、第十条及び附則第五条の規定　昭和五十二年十月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五三年四月二八日法律第三三号）　抄</span></code></td>
+<td class="ln">177</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五三年四月二八日法律第三三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">１　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める日か<wbr>ら施行する。</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">１　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める日か<wbr>ら施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">一　第一条、第三条、第五条、第七条及び第八条の規定　公布の日</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">一　第一条、第三条、第五条、第七条及び第八条の規定　公布の日</span></code></td>
+</tr>
+<tr>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">２　次の各号に掲げる規定は、昭和五十三年四月一日から適用する。</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">２　次の各号に掲げる規定は、昭和五十三年四月一日から適用する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">一から三まで　略</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">一から三まで　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">四　第七条の規定による改正後の戦没者の父母等に対する特別給付金支給法第三条第五<wbr>項及び第六項、第五条第一項並びに附則第二項の規定</span></code></td>
+<td class="ln">182</td><td class="sf3b2"><code><span class="sf3b2">四　第七条の規定による改正後の戦没者の父母等に対する特別給付金支給法第三条第五<wbr>項及び第六項、第五条第一項並びに附則第二項の規定 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五四年五月八日法律第二九号）　抄</span></code></td>
+<td class="ln">183</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五四年五月八日法律第二九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める<wbr>日から施行する。</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める<wbr>日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">三　第三条、第七条、第九条、第十条、次条、附則第五条及び附則第六条の規定　昭和<wbr>五十四年十月一日</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">三　第三条、第七条、第九条、第十条、次条、附則第五条及び附則第六条の規定　昭和<wbr>五十四年十月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五五年三月三一日法律第一七号）　抄</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五五年三月三一日法律第一七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">１　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める日か<wbr>ら施行する。</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">１　この法律の規定は、次の各号に掲げる区分に従い、それぞれ当該各号に定める日か<wbr>ら施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+<td class="ln">190</td><td class="sf3b2"><code><span class="sf3b2">一及び二　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">三　第八条及び第九条の規定　昭和五十五年十月一日</span></code></td>
+<td class="ln">191</td><td class="sf3b2"><code><span class="sf3b2">三　第八条及び第九条の規定　昭和五十五年十月一日</span></code></td>
+</tr>
+<tr>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">四　第三条及び第十条の規定　昭和五十五年十二月一日</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">四　第三条及び第十条の規定　昭和五十五年十二月一日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年八月一〇日法律第七三号）　抄</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年八月一〇日法律第七三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">（施行期日等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、第四条から第六条までの規定は<wbr>、昭和五十七年十月一日から施行する。</span></code></td>
+<td class="ln">195</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から施行する。ただし、第四条から第六条までの規定は<wbr>、昭和五十七年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五八年五月四日法律第三〇号）　抄</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五八年五月四日法律第三〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和五十八年十月一日から施行する。ただし、第二条中戦没者等の妻<wbr>に対する特別給付金支給法第三条、第四条第一項及び附則第二項の改正規定並びに第三<wbr>条中戦没者の父母等に対する特別給付金支給法第三条、第五条第一項及び附則第二項の<wbr>改正規定は、公布の日から施行する。</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、昭和五十八年十月一日から施行する。ただし、第二条中戦没者等の妻<wbr>に対する特別給付金支給法第三条、第四条第一項及び附則第二項の改正規定並びに第三<wbr>条中戦没者の父母等に対する特別給付金支給法第三条、第五条第一項及び附則第二項の<wbr>改正規定は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">２　第二条の規定による改正後の戦没者等の妻に対する特別給付金支給法第三条、第四<wbr>条第一項及び附則第二項並びに第三条の規定による改正後の戦没者の父母等に対する特<wbr>別給付金支給法第三条、第五条第一項及び附則第二項の規定は、昭和五十八年四月一日<wbr>から適用する。</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">２　第二条の規定による改正後の戦没者等の妻に対する特別給付金支給法第三条、第四<wbr>条第一項及び附則第二項並びに第三条の規定による改正後の戦没者の父母等に対する特<wbr>別給付金支給法第三条、第五条第一項及び附則第二項の規定は、昭和五十八年四月一日<wbr>から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五八年一二月三日法律第八二号）　抄</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五八年一二月三日法律第八二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和五十九年四月一日から施行する。</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和五十九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五九年一二月二五日法律第八七号）　抄</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五九年一二月二五日法律第八七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十年四月一日から施行する。</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要<wbr>な事項は、政令で定める。</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">第二十八条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要<wbr>な事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年一二月四日法律第九三号）　抄</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六一年一二月四日法律第九三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十二年四月一日から施行する。</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和六十二年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要<wbr>な事項は、政令で定める。</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">第四十二条　附則第二条から前条までに定めるもののほか、この法律の施行に関し必要<wbr>な事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年五月二四日法律第五八号）</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和六三年五月二四日法律第五八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の戦傷病者戦没者遺族等援護法の規定及び第二条の規定<wbr>による改正後の戦没者の父母等に対する特別給付金支給法の規定は、昭和六十三年四月<wbr>一日から適用する。</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の戦傷病者戦没者遺族等援護法の規定及び第二条の規定<wbr>による改正後の戦没者の父母等に対する特別給付金支給法の規定は、昭和六十三年四月<wbr>一日から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年五月一九日法律第四五号）　抄</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年五月一九日法律第四五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第二条中戦没者等の妻に対する特別<wbr>給付金支給法附則第二十九項の改正規定及び同法附則中第三十一項を第三十七項とし、<wbr>第三十項の次に六項を加える改正規定並びに第三条中戦没者の父母等に対する特別給付<wbr>金支給法附則中第四十五項を第五十二項とし、第四十四項の次に七項を加える改正規定<wbr>は、平成五年十月一日から施行する。</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第二条中戦没者等の妻に対する特別<wbr>給付金支給法附則第二十九項の改正規定及び同法附則中第三十一項を第三十七項とし、<wbr>第三十項の次に六項を加える改正規定並びに第三条中戦没者の父母等に対する特別給付<wbr>金支給法附則中第四十五項を第五十二項とし、第四十四項の次に七項を加える改正規定<wbr>は、平成五年十月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の戦傷病者戦没者遺族等援護法の規定、第二条の規定に<wbr>よる改正後の戦没者等の妻に対する特別給付金支給法第三条、第四条第一項及び附則第<wbr>二項の規定並びに第三条の規定による改正後の戦没者の父母等に対する特別給付金支給<wbr>法第三条、第五条第一項及び附則第二項の規定は、平成五年四月一日から適用する。</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の戦傷病者戦没者遺族等援護法の規定、第二条の規定に<wbr>よる改正後の戦没者等の妻に対する特別給付金支給法第三条、第四条第一項及び附則第<wbr>二項の規定並びに第三条の規定による改正後の戦没者の父母等に対する特別給付金支給<wbr>法第三条、第五条第一項及び附則第二項の規定は、平成五年四月一日から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年六月一四日法律第八二号）　抄</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年六月一四日法律第八二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成九年四月一日から施行する。</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成九年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">（旧適用法人共済組合が存続すること等に伴う戦没者の父母等に対する特別給付金支給<wbr>法に係る経過措置）</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2">（旧適用法人共済組合が存続すること等に伴う戦没者の父母等に対する特別給付金支給<wbr>法に係る経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">第百十三条　存続組合又は指定基金が特例業務を行う間においては、前条の規定による<wbr>改正後の戦没者の父母等に対する特別給付金支給法第二条第一項第六号中「国家公務員<wbr>共済組合連合会」とあるのは、「国家公務員共済組合連合会又は厚生年金保険法等の一<wbr>部を改正する法律（平成八年法律第八十二号）附則第三十二条第二項に規定する存続組<wbr>合若しくは同法附則第四十八条第一項に規定する指定基金」と読み替えるものとする。<wbr></span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2">第百十三条　存続組合又は指定基金が特例業務を行う間においては、前条の規定による<wbr>改正後の戦没者の父母等に対する特別給付金支給法第二条第一項第六号中「国家公務員<wbr>共済組合連合会」とあるのは、「国家公務員共済組合連合会又は厚生年金保険法等の一<wbr>部を改正する法律（平成八年法律第八十二号）附則第三十二条第二項に規定する存続組<wbr>合若しくは同法附則第四十八条第一項に規定する指定基金」と読み替えるものとする。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年三月二七日法律第九号）</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年三月二七日法律第九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">この法律は、平成十年四月一日から施行する。</span></code></td>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2">この法律は、平成十年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年七月一六日法律第八七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">227</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成十二年四月一日から施行する。ただし、次の各号に掲げる規<wbr>定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中地方自治法第二百五十条の次に五条、節名並びに二款及び款名を加える改<wbr>正規定（同法第二百五十条の九第一項に係る部分（両議院の同意を得ることに係る部分<wbr>に限る。）に限る。）、第四十条中自然公園法附則第九項及び第十項の改正規定（同法<wbr>附則第十項に係る部分に限る。）、第二百四十四条の規定（農業改良助長法第十四条の<wbr>三の改正規定に係る部分を除く。）並びに第四百七十二条の規定（市町村の合併の特例<wbr>に関する法律第六条、第八条及び第十七条の改正規定に係る部分を除く。）並びに附則<wbr>第七条、第十条、第十二条、第五十九条ただし書、第六十条第四項及び第五項、第七十<wbr>三条、第七十七条、第百五十七条第四項から第六項まで、第百六十条、第百六十三条、<wbr>第百六十四条並びに第二百二条の規定　公布の日</span></code></td>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2">一　第一条中地方自治法第二百五十条の次に五条、節名並びに二款及び款名を加える改<wbr>正規定（同法第二百五十条の九第一項に係る部分（両議院の同意を得ることに係る部分<wbr>に限る。）に限る。）、第四十条中自然公園法附則第九項及び第十項の改正規定（同法<wbr>附則第十項に係る部分に限る。）、第二百四十四条の規定（農業改良助長法第十四条の<wbr>三の改正規定に係る部分を除く。）並びに第四百七十二条の規定（市町村の合併の特例<wbr>に関する法律第六条、第八条及び第十七条の改正規定に係る部分を除く。）並びに附則<wbr>第七条、第十条、第十二条、第五十九条ただし書、第六十条第四項及び第五項、第七十<wbr>三条、第七十七条、第百五十七条第四項から第六項まで、第百六十条、第百六十三条、<wbr>第百六十四条並びに第二百二条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">（国等の事務）</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2">（国等の事務）</span></code></td>
+</tr>
+<tr>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">第百五十九条　この法律による改正前のそれぞれの法律に規定するもののほか、この法<wbr>律の施行前において、地方公共団体の機関が法律又はこれに基づく政令により管理し又<wbr>は執行する国、他の地方公共団体その他公共団体の事務（附則第百六十一条において「<wbr>国等の事務」という。）は、この法律の施行後は、地方公共団体が法律又はこれに基づ<wbr>く政令により当該地方公共団体の事務として処理するものとする。</span></code></td>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2">第百五十九条　この法律による改正前のそれぞれの法律に規定するもののほか、この法<wbr>律の施行前において、地方公共団体の機関が法律又はこれに基づく政令により管理し又<wbr>は執行する国、他の地方公共団体その他公共団体の事務（附則第百六十一条において「<wbr>国等の事務」という。）は、この法律の施行後は、地方公共団体が法律又はこれに基づ<wbr>く政令により当該地方公共団体の事務として処理するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">第百六十条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下こ<wbr>の条及び附則第百六十三条において同じ。）の施行前に改正前のそれぞれの法律の規定<wbr>によりされた許可等の処分その他の行為（以下この条において「処分等の行為」という<wbr>。）又はこの法律の施行の際現に改正前のそれぞれの法律の規定によりされている許可<wbr>等の申請その他の行為（以下この条において「申請等の行為」という。）で、この法律<wbr>の施行の日においてこれらの行為に係る行政事務を行うべき者が異なることとなるもの<wbr>は、附則第二条から前条までの規定又は改正後のそれぞれの法律（これに基づく命令を<wbr>含む。）の経過措置に関する規定に定めるものを除き、この法律の施行の日以後におけ<wbr>る改正後のそれぞれの法律の適用については、改正後のそれぞれの法律の相当規定によ<wbr>りされた処分等の行為又は申請等の行為とみなす。</span></code></td>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2">第百六十条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下こ<wbr>の条及び附則第百六十三条において同じ。）の施行前に改正前のそれぞれの法律の規定<wbr>によりされた許可等の処分その他の行為（以下この条において「処分等の行為」という<wbr>。）又はこの法律の施行の際現に改正前のそれぞれの法律の規定によりされている許可<wbr>等の申請その他の行為（以下この条において「申請等の行為」という。）で、この法律<wbr>の施行の日においてこれらの行為に係る行政事務を行うべき者が異なることとなるもの<wbr>は、附則第二条から前条までの規定又は改正後のそれぞれの法律（これに基づく命令を<wbr>含む。）の経過措置に関する規定に定めるものを除き、この法律の施行の日以後におけ<wbr>る改正後のそれぞれの法律の適用については、改正後のそれぞれの法律の相当規定によ<wbr>りされた処分等の行為又は申請等の行為とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前に改正前のそれぞれの法律の規定により国又は地方公共団体の機<wbr>関に対し報告、届出、提出その他の手続をしなければならない事項で、この法律の施行<wbr>の日前にその手続がされていないものについては、この法律及びこれに基づく政令に別<wbr>段の定めがあるもののほか、これを、改正後のそれぞれの法律の相当規定により国又は<wbr>地方公共団体の相当の機関に対して報告、届出、提出その他の手続をしなければならな<wbr>い事項についてその手続がされていないものとみなして、この法律による改正後のそれ<wbr>ぞれの法律の規定を適用する。</span></code></td>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前に改正前のそれぞれの法律の規定により国又は地方公共団体の機<wbr>関に対し報告、届出、提出その他の手続をしなければならない事項で、この法律の施行<wbr>の日前にその手続がされていないものについては、この法律及びこれに基づく政令に別<wbr>段の定めがあるもののほか、これを、改正後のそれぞれの法律の相当規定により国又は<wbr>地方公共団体の相当の機関に対して報告、届出、提出その他の手続をしなければならな<wbr>い事項についてその手続がされていないものとみなして、この法律による改正後のそれ<wbr>ぞれの法律の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">（不服申立てに関する経過措置）</span></code></td>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2">（不服申立てに関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">第百六十一条　施行日前にされた国等の事務に係る処分であって、当該処分をした行政<wbr>庁（以下この条において「処分庁」という。）に施行日前に行政不服審査法に規定する<wbr>上級行政庁（以下この条において「上級行政庁」という。）があったものについての同<wbr>法による不服申立てについては、施行日以後においても、当該処分庁に引き続き上級行<wbr>政庁があるものとみなして、行政不服審査法の規定を適用する。この場合において、当<wbr>該処分庁の上級行政庁とみなされる行政庁は、施行日前に当該処分庁の上級行政庁であ<wbr>った行政庁とする。</span></code></td>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2">第百六十一条　施行日前にされた国等の事務に係る処分であって、当該処分をした行政<wbr>庁（以下この条において「処分庁」という。）に施行日前に行政不服審査法に規定する<wbr>上級行政庁（以下この条において「上級行政庁」という。）があったものについての同<wbr>法による不服申立てについては、施行日以後においても、当該処分庁に引き続き上級行<wbr>政庁があるものとみなして、行政不服審査法の規定を適用する。この場合において、当<wbr>該処分庁の上級行政庁とみなされる行政庁は、施行日前に当該処分庁の上級行政庁であ<wbr>った行政庁とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、上級行政庁とみなされる行政庁が地方公共団体の機関である<wbr>ときは、当該機関が行政不服審査法の規定により処理することとされる事務は、新地方<wbr>自治法第二条第九項第一号に規定する第一号法定受託事務とする。</span></code></td>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2">２　前項の場合において、上級行政庁とみなされる行政庁が地方公共団体の機関である<wbr>ときは、当該機関が行政不服審査法の規定により処理することとされる事務は、新地方<wbr>自治法第二条第九項第一号に規定する第一号法定受託事務とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">第百六十四条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置<wbr>（罰則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">238</td><td class="sf3b2"><code><span class="sf3b2">第百六十四条　この附則に規定するもののほか、この法律の施行に伴い必要な経過措置<wbr>（罰則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+<td class="ln">239</td><td class="sf3b2"><code><span class="sf3b2">（検討）</span></code></td>
+</tr>
+<tr>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。</span></code></td>
+<td class="ln">240</td><td class="sf3b2"><code><span class="sf3b2">第二百五十条　新地方自治法第二条第九項第一号に規定する第一号法定受託事務につい<wbr>ては、できる限り新たに設けることのないようにするとともに、新地方自治法別表第一<wbr>に掲げるもの及び新地方自治法に基づく政令に示すものについては、地方分権を推進す<wbr>る観点から検討を加え、適宜、適切な見直しを行うものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。</span></code></td>
+<td class="ln">241</td><td class="sf3b2"><code><span class="sf3b2">第二百五十一条　政府は、地方公共団体が事務及び事業を自主的かつ自立的に執行でき<wbr>るよう、国と地方公共団体との役割分担に応じた地方税財源の充実確保の方途について<wbr>、経済情勢の推移等を勘案しつつ検討し、その結果に基づいて必要な措置を講ずるもの<wbr>とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">244</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日</span></code></td>
+<td class="ln">245</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年七月三一日法律第九八号）　抄</span></code></td>
+<td class="ln">246</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年七月三一日法律第九八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">247</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公社法の施行の日から施行する。ただし、次の各号に掲げる規定<wbr>は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">248</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公社法の施行の日から施行する。ただし、次の各号に掲げる規定<wbr>は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">一　第一章第一節（別表第一から別表第四までを含む。）並びに附則第二十八条第二項<wbr>、第三十三条第二項及び第三項並びに第三十九条の規定　公布の日</span></code></td>
+<td class="ln">249</td><td class="sf3b2"><code><span class="sf3b2">一　第一章第一節（別表第一から別表第四までを含む。）並びに附則第二十八条第二項<wbr>、第三十三条第二項及び第三項並びに第三十九条の規定　公布の日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">250</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　この法律に規定するもののほか、公社法及びこの法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">251</td><td class="sf3b2"><code><span class="sf3b2">第三十九条　この法律に規定するもののほか、公社法及びこの法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年三月三一日法律第一五号）</span></code></td>
+<td class="ln">252</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年三月三一日法律第一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">この法律は、平成十五年四月一日から施行する。ただし、第一条中戦没者等の妻に対す<wbr>る特別給付金支給法附則第三十七項の改正規定及び同法附則第四十二項を同法附則第五<wbr>十項とし、同法附則第四十一項の次に八項を加える改正規定並びに第二条中戦没者の父<wbr>母等に対する特別給付金支給法附則第五十二項を同法附則第五十九項とし、同法附則第<wbr>五十一項の次に七項を加える改正規定は、同年十月一日から施行する。</span></code></td>
+<td class="ln">253</td><td class="sf3b2"><code><span class="sf3b2">この法律は、平成十五年四月一日から施行する。ただし、第一条中戦没者等の妻に対す<wbr>る特別給付金支給法附則第三十七項の改正規定及び同法附則第四十二項を同法附則第五<wbr>十項とし、同法附則第四十一項の次に八項を加える改正規定並びに第二条中戦没者の父<wbr>母等に対する特別給付金支給法附則第五十二項を同法附則第五十九項とし、同法附則第<wbr>五十一項の次に七項を加える改正規定は、同年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年四月一八日法律第一八号）</span></code></td>
+<td class="ln">254</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二〇年四月一八日法律第一八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行し、この法律による改正後の戦没者の父母等に対する特<wbr>別給付金支給法の規定は、平成二十年四月一日から適用する。</span></code></td>
+<td class="ln">255</td><td class="sf3b2"><code><span class="sf3b2">この法律は、公布の日から施行し、この法律による改正後の戦没者の父母等に対する特<wbr>別給付金支給法の規定は、平成二十年四月一日から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年六月一二日法律第四〇号）</span></code></td>
+<td class="ln">256</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二五年六月一二日法律第四〇号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第一条中戦没者等の妻に対する特別<wbr>給付金支給法附則第五十項の改正規定及び同法附則第五十七項を同法附則第六十七項と<wbr>し、同法附則第五十六項の次に十項を加える改正規定並びに第二条中戦没者の父母等に<wbr>対する特別給付金支給法附則第五十九項を同法附則第六十六項とし、同法附則第五十八<wbr>項の次に七項を加える改正規定は、平成二十五年十月一日から施行する。</span></code></td>
+<td class="ln">257</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。ただし、第一条中戦没者等の妻に対する特別<wbr>給付金支給法附則第五十項の改正規定及び同法附則第五十七項を同法附則第六十七項と<wbr>し、同法附則第五十六項の次に十項を加える改正規定並びに第二条中戦没者の父母等に<wbr>対する特別給付金支給法附則第五十九項を同法附則第六十六項とし、同法附則第五十八<wbr>項の次に七項を加える改正規定は、平成二十五年十月一日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の戦没者等の妻に対する特別給付金支給法第三条、第四<wbr>条第一項及び附則第二項の規定並びに第二条の規定による改正後の戦没者の父母等に対<wbr>する特別給付金支給法第三条、第五条第一項及び附則第二項の規定は、平成二十五年四<wbr>月一日から適用する。</span></code></td>
+<td class="ln">258</td><td class="sf3b2"><code><span class="sf3b2">２　第一条の規定による改正後の戦没者等の妻に対する特別給付金支給法第三条、第四<wbr>条第一項及び附則第二項の規定並びに第二条の規定による改正後の戦没者の父母等に対<wbr>する特別給付金支給法第三条、第五条第一項及び附則第二項の規定は、平成二十五年四<wbr>月一日から適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月四日法律第五一号）　抄</span></code></td>
+<td class="ln">259</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月四日法律第五一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">260</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十七年四月一日から施行する。</span></code></td>
+<td class="ln">261</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、平成二十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+<td class="ln">262</td><td class="sf3b2"><code><span class="sf3b2">（処分、申請等に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">第七条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下この条<wbr>及び次条において同じ。）の施行前にこの法律による改正前のそれぞれの法律の規定に<wbr>よりされた許可等の処分その他の行為（以下この項において「処分等の行為」という。<wbr>）又はこの法律の施行の際現にこの法律による改正前のそれぞれの法律の規定によりさ<wbr>れている許可等の申請その他の行為（以下この項において「申請等の行為」という。）<wbr>で、この法律の施行の日においてこれらの行為に係る行政事務を行うべき者が異なるこ<wbr>ととなるものは、附則第二条から前条までの規定又はこの法律による改正後のそれぞれ<wbr>の法律（これに基づく命令を含む。）の経過措置に関する規定に定めるものを除き、こ<wbr>の法律の施行の日以後におけるこの法律による改正後のそれぞれの法律の適用について<wbr>は、この法律による改正後のそれぞれの法律の相当規定によりされた処分等の行為又は<wbr>申請等の行為とみなす。</span></code></td>
+<td class="ln">263</td><td class="sf3b2"><code><span class="sf3b2">第七条　この法律（附則第一条各号に掲げる規定については、当該各規定。以下この条<wbr>及び次条において同じ。）の施行前にこの法律による改正前のそれぞれの法律の規定に<wbr>よりされた許可等の処分その他の行為（以下この項において「処分等の行為」という。<wbr>）又はこの法律の施行の際現にこの法律による改正前のそれぞれの法律の規定によりさ<wbr>れている許可等の申請その他の行為（以下この項において「申請等の行為」という。）<wbr>で、この法律の施行の日においてこれらの行為に係る行政事務を行うべき者が異なるこ<wbr>ととなるものは、附則第二条から前条までの規定又はこの法律による改正後のそれぞれ<wbr>の法律（これに基づく命令を含む。）の経過措置に関する規定に定めるものを除き、こ<wbr>の法律の施行の日以後におけるこの法律による改正後のそれぞれの法律の適用について<wbr>は、この法律による改正後のそれぞれの法律の相当規定によりされた処分等の行為又は<wbr>申請等の行為とみなす。</span></code></td>
+</tr>
+<tr>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前にこの法律による改正前のそれぞれの法律の規定により国又は地<wbr>方公共団体の機関に対し報告、届出、提出その他の手続をしなければならない事項で、<wbr>この法律の施行の日前にその手続がされていないものについては、この法律及びこれに<wbr>基づく政令に別段の定めがあるもののほか、これを、この法律による改正後のそれぞれ<wbr>の法律の相当規定により国又は地方公共団体の相当の機関に対して報告、届出、提出そ<wbr>の他の手続をしなければならない事項についてその手続がされていないものとみなして<wbr>、この法律による改正後のそれぞれの法律の規定を適用する。</span></code></td>
+<td class="ln">264</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前にこの法律による改正前のそれぞれの法律の規定により国又は地<wbr>方公共団体の機関に対し報告、届出、提出その他の手続をしなければならない事項で、<wbr>この法律の施行の日前にその手続がされていないものについては、この法律及びこれに<wbr>基づく政令に別段の定めがあるもののほか、これを、この法律による改正後のそれぞれ<wbr>の法律の相当規定により国又は地方公共団体の相当の機関に対して報告、届出、提出そ<wbr>の他の手続をしなければならない事項についてその手続がされていないものとみなして<wbr>、この法律による改正後のそれぞれの法律の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">265</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">第九条　附則第二条から前条までに規定するもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">266</td><td class="sf3b2"><code><span class="sf3b2">第九条　附則第二条から前条までに規定するもののほか、この法律の施行に関し必要な<wbr>経過措置（罰則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六九号）　抄</span></code></td>
+<td class="ln">267</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二六年六月一三日法律第六九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">268</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政不服審査法（平成二十六年法律第六十八号）の施行の日から<wbr>施行する。</span></code></td>
+<td class="ln">269</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政不服審査法（平成二十六年法律第六十八号）の施行の日から<wbr>施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+<td class="ln">270</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">第五条　行政庁の処分その他の行為又は不作為についての不服申立てであってこの法律<wbr>の施行前にされた行政庁の処分その他の行為又はこの法律の施行前にされた申請に係る<wbr>行政庁の不作為に係るものについては、この附則に特別の定めがある場合を除き、なお<wbr>従前の例による。</span></code></td>
+<td class="ln">271</td><td class="sf3b2"><code><span class="sf3b2">第五条　行政庁の処分その他の行為又は不作為についての不服申立てであってこの法律<wbr>の施行前にされた行政庁の処分その他の行為又はこの法律の施行前にされた申請に係る<wbr>行政庁の不作為に係るものについては、この附則に特別の定めがある場合を除き、なお<wbr>従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">（訴訟に関する経過措置）</span></code></td>
+<td class="ln">272</td><td class="sf3b2"><code><span class="sf3b2">（訴訟に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律による改正前の法律の規定により不服申立てに対する行政庁の裁決、<wbr>決定その他の行為を経た後でなければ訴えを提起できないこととされる事項であって、<wbr>当該不服申立てを提起しないでこの法律の施行前にこれを提起すべき期間を経過したも<wbr>の（当該不服申立てが他の不服申立てに対する行政庁の裁決、決定その他の行為を経た<wbr>後でなければ提起できないとされる場合にあっては、当該他の不服申立てを提起しない<wbr>でこの法律の施行前にこれを提起すべき期間を経過したものを含む。）の訴えの提起に<wbr>ついては、なお従前の例による。</span></code></td>
+<td class="ln">273</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律による改正前の法律の規定により不服申立てに対する行政庁の裁決、<wbr>決定その他の行為を経た後でなければ訴えを提起できないこととされる事項であって、<wbr>当該不服申立てを提起しないでこの法律の施行前にこれを提起すべき期間を経過したも<wbr>の（当該不服申立てが他の不服申立てに対する行政庁の裁決、決定その他の行為を経た<wbr>後でなければ提起できないとされる場合にあっては、当該他の不服申立てを提起しない<wbr>でこの法律の施行前にこれを提起すべき期間を経過したものを含む。）の訴えの提起に<wbr>ついては、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の規定による改正前の法律の規定（前条の規定によりなお従前の例による<wbr>こととされる場合を含む。）により異議申立てが提起された処分その他の行為であって<wbr>、この法律の規定による改正後の法律の規定により審査請求に対する裁決を経た後でな<wbr>ければ取消しの訴えを提起することができないこととされるものの取消しの訴えの提起<wbr>については、なお従前の例による。</span></code></td>
+<td class="ln">274</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の規定による改正前の法律の規定（前条の規定によりなお従前の例による<wbr>こととされる場合を含む。）により異議申立てが提起された処分その他の行為であって<wbr>、この法律の規定による改正後の法律の規定により審査請求に対する裁決を経た後でな<wbr>ければ取消しの訴えを提起することができないこととされるものの取消しの訴えの提起<wbr>については、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">３　不服申立てに対する行政庁の裁決、決定その他の行為の取消しの訴えであって、こ<wbr>の法律の施行前に提起されたものについては、なお従前の例による。</span></code></td>
+<td class="ln">275</td><td class="sf3b2"><code><span class="sf3b2">３　不服申立てに対する行政庁の裁決、決定その他の行為の取消しの訴えであって、こ<wbr>の法律の施行前に提起されたものについては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+<td class="ln">276</td><td class="sf3b2"><code><span class="sf3b2">（その他の経過措置の政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">第十条　附則第五条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置（罰則に関する経過措置を含む。）は、政令で定める。</span></code></td>
+<td class="ln">277</td><td class="sf3b2"><code><span class="sf3b2">第十条　附則第五条から前条までに定めるもののほか、この法律の施行に関し必要な経<wbr>過措置（罰則に関する経過措置を含む。）は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二日法律第四五号）</span></code></td>
+<td class="ln">278</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二日法律第四五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">この法律は、民法改正法の施行の日から施行する。ただし、第百三条の二、第百三条の<wbr>三、第二百六十七条の二、第二百六十七条の三及び第三百六十二条の規定は、公布の日<wbr>から施行する。</span></code></td>
+<td class="ln">279</td><td class="sf3b2"><code><span class="sf3b2">この法律は、民法改正法の施行の日から施行する。ただし、第百三条の二、第百三条の<wbr>三、第二百六十七条の二、第二百六十七条の三及び第三百六十二条の規定は、公布の日<wbr>から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

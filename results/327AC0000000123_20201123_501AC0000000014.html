@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和二十七年法律第百二十三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和二十七年法律第百二十三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">日本国とアメリカ合衆国との間の相互協力及び安全保障条約第六条に基づく施設及び区<wbr>域並びに日本国における合衆国軍隊の地位に関する協定及び日本国における国際連合の<wbr>軍隊の地位に関する協定の実施に伴う道路運送法等の特例に関する法律</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">日本国とアメリカ合衆国との間の相互協力及び安全保障条約第六条に基づく施設及び区<wbr>域並びに日本国における合衆国軍隊の地位に関する協定及び日本国における国際連合の<wbr>軍隊の地位に関する協定の実施に伴う道路運送法等の特例に関する法律</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（合衆国軍隊等に対する道路運送法等の適用除外）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（合衆国軍隊等に対する道路運送法等の適用除外）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　合衆国軍隊（日本国とアメリカ合衆国との間の相互協力及び安全保障条約に基<wbr>づき日本国内にあるアメリカ合衆国の陸軍、空軍及び海軍をいう。以下同じ。）及び国<wbr>際連合の軍隊（日本国における国際連合の軍隊の地位に関する協定第一条に規定する国<wbr>際連合の軍隊をいう。以下同じ。）には、道路運送法（昭和二十六年法律第百八十三号<wbr>）第九十四条及び第九十五条の規定は、適用しない。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　合衆国軍隊（日本国とアメリカ合衆国との間の相互協力及び安全保障条約に基<wbr>づき日本国内にあるアメリカ合衆国の陸軍、空軍及び海軍をいう。以下同じ。）及び国<wbr>際連合の軍隊（日本国における国際連合の軍隊の地位に関する協定第一条に規定する国<wbr>際連合の軍隊をいう。以下同じ。）には、道路運送法（昭和二十六年法律第百八十三号<wbr>）第九十四条及び第九十五条の規定は、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">5</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　合衆国軍隊及び国際連合の軍隊には、道路運送車両法（昭和二十六年法律第百八十<wbr>五号）第四条、第十九条、第二十九条、第三十一条から第三十三条まで、第四十条から<wbr>第四十五条まで、第四十七条から第五十条まで、第五十四条、</span><span style="color: #000000; background-color: #efcb05; ">の二、第五十六条、第五<wbr>十八条、第六十三条、第六十六条、第七十三条第一項、第九十七条の三、第九十九条か<wbr>ら第九十九条の三まで及び第百条の規定は、適用しない。</span></code></td>
+<td class="ln">5</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">２　合衆国軍隊及び国際連合の軍隊には、道路運送車両法（昭和二十六年法律第百八十<wbr>五号）第四条、第十九条、第二十九条、第三十一条から第三十三条まで、第四十条から<wbr>第四十五条まで、第四十七条から第五十条まで、第五十四条、</span><span class="sf17b18">第五十四条</span><span style="color: #000000; background-color: #efcb05; ">の二、第五十<wbr>六条、第五十八条、第六十三条、第六十六条、第七十三条第一項、第九十七条の三、第<wbr>九十九条から第九十九条の三まで及び第百条の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（日本国との平和条約の効力発生に伴う経過規定）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（日本国との平和条約の効力発生に伴う経過規定）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている自動車（道<wbr>路運送車両法に規定する自動車をいう。以下同じ。）をその時において使用する者は、<wbr>この法律の施行の日から六箇月間は、道路運送法第九十九条の届出をしなくてもよい。<wbr></span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている自動車（道<wbr>路運送車両法に規定する自動車をいう。以下同じ。）をその時において使用する者は、<wbr>この法律の施行の日から六箇月間は、道路運送法第九十九条の届出をしなくてもよい。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第三条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている自動車（軽<wbr>自動車及び二輪の小型自動車を除く。）は、この法律の施行の日から六箇月間は、道路<wbr>運送車両法第四条の規定により登録を受け、及び同法第五十八条の規定により検査を受<wbr>け、自動車検査証の交付を受けなくても運行の用に供してもよい。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第三条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている自動車（軽<wbr>自動車及び二輪の小型自動車を除く。）は、この法律の施行の日から六箇月間は、道路<wbr>運送車両法第四条の規定により登録を受け、及び同法第五十八条の規定により検査を受<wbr>け、自動車検査証の交付を受けなくても運行の用に供してもよい。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法第十九条、第五十条、第六十四条及び第六十六条の規定は、この法<wbr>律の施行の日から六箇月間は、前項の自動車については、適用しない。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法第十九条、第五十条、第六十四条及び第六十六条の規定は、この法<wbr>律の施行の日から六箇月間は、前項の自動車については、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第四条　前条の規定は、同条第一項の自動車が左の各号の一に該当するに至つた場合に<wbr>は、適用しない。但し、第二号の場合については、所有者又は使用者の変更後十五日以<wbr>内は、この限りでない。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第四条　前条の規定は、同条第一項の自動車が左の各号の一に該当するに至つた場合に<wbr>は、適用しない。但し、第二号の場合については、所有者又は使用者の変更後十五日以<wbr>内は、この限りでない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">一　この法律の施行の際、現に表示している自動車の登録番号標が滅失し、き損し、又<wbr>はその識別が困難になつたとき。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">一　この法律の施行の際、現に表示している自動車の登録番号標が滅失し、き損し、又<wbr>はその識別が困難になつたとき。</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">二　所有者又は使用者に変更があつたとき。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">二　所有者又は使用者に変更があつたとき。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第五条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている二輪の小型<wbr>自動車は、この法律の施行の日から六箇月間は、道路運送車両法第五十八条の規定によ<wbr>り検査を受け、自動車検査証の交付を受けなくても運行の用に供してもよい。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">第五条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている二輪の小型<wbr>自動車は、この法律の施行の日から六箇月間は、道路運送車両法第五十八条の規定によ<wbr>り検査を受け、自動車検査証の交付を受けなくても運行の用に供してもよい。</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法第五十条、第六十四条、第六十六条及び第七十三条第一項の規定は<wbr>、この法律の施行の日から六箇月間は、前項の自動車については、適用しない。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法第五十条、第六十四条、第六十六条及び第七十三条第一項の規定は<wbr>、この法律の施行の日から六箇月間は、前項の自動車については、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている軽自動車は<wbr>、この法律の施行の日から六箇月間は、道路運送車両法第九十七条の三第一項の規定に<wbr>より届出をし、車両番号の指定を受けなくても運行の用に供してもよい。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際、現に連合国占領軍の機関の登録を受けている軽自動車は<wbr>、この法律の施行の日から六箇月間は、道路運送車両法第九十七条の三第一項の規定に<wbr>より届出をし、車両番号の指定を受けなくても運行の用に供してもよい。</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法第九十七条の三第二項の規定は、この法律の施行の日から六箇月間<wbr>は、前項の自動車については、適用しない。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">２　道路運送車両法第九十七条の三第二項の規定は、この法律の施行の日から六箇月間<wbr>は、前項の自動車については、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">この法律は、日本国との平和条約の最初の効力発生の日から施行する。</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">この法律は、日本国との平和条約の最初の効力発生の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二九年六月一日法律第一五二号）</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二九年六月一日法律第一五二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、日本国における国際連合の軍隊の地位に関する協定の最初の効力発生<wbr>の日から施行する。</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、日本国における国際連合の軍隊の地位に関する協定の最初の効力発生<wbr>の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">２　日本国における国際連合の軍隊の地位に関する協定の最初の署名の日又はその後六<wbr>箇月以内に同協定の当事者となる政府に係るものについては、同協定第二十一条４及び<wbr>第二十二条４において同協定がそ及されないこととなる場合を除き、この法律中第三条<wbr>の規定は昭和二十七年七月十五日から、その他の規定は昭和二十七年四月二十八日から<wbr>適用する。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">２　日本国における国際連合の軍隊の地位に関する協定の最初の署名の日又はその後六<wbr>箇月以内に同協定の当事者となる政府に係るものについては、同協定第二十一条４及び<wbr>第二十二条４において同協定がそ及されないこととなる場合を除き、この法律中第三条<wbr>の規定は昭和二十七年七月十五日から、その他の規定は昭和二十七年四月二十八日から<wbr>適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三五年六月二三日法律第一〇二号）　抄</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三五年六月二三日法律第一〇二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、日本国とアメリカ合衆国との間の相互協力及び安全保障条約の効<wbr>力発生の日から施行する。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、日本国とアメリカ合衆国との間の相互協力及び安全保障条約の効<wbr>力発生の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年九月二日法律第九一号）　抄</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五七年九月二日法律第九一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年一二月一九日法律第八三号）　抄</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成元年一二月一九日法律第八三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年七月四日法律第八六号）　抄</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年七月四日法律第八六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年五月二七日法律第七四号）　抄</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一〇年五月二七日法律第七四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年七月一七日法律第八九号）　抄</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年七月一七日法律第八九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二年六月を超えない範囲内において政令で<wbr>定める日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施<wbr>行する。</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二年六月を超えない範囲内において政令で<wbr>定める日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施<wbr>行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">一　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">二　第五十条、第五十一条及び第五十四条の改正規定、第五十四条の次に一条を加える<wbr>改正規定、第六十九条第二項及び第三項の改正規定、第七十四条の改正規定、第九十九<wbr>条の次に二条を加える改正規定（第九十九条の二に係る部分に限る。）、第百八条第一<wbr>号及び第二号の改正規定、第百九条第一号及び第六号の改正規定並びに附則第十五条の<wbr>規定　公布の日から起算して一年を超えない範囲内において政令で定める日</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">二　第五十条、第五十一条及び第五十四条の改正規定、第五十四条の次に一条を加える<wbr>改正規定、第六十九条第二項及び第三項の改正規定、第七十四条の改正規定、第九十九<wbr>条の次に二条を加える改正規定（第九十九条の二に係る部分に限る。）、第百八条第一<wbr>号及び第二号の改正規定、第百九条第一号及び第六号の改正規定並びに附則第十五条の<wbr>規定　公布の日から起算して一年を超えない範囲内において政令で定める日</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">三　略</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">三　略 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年五月一九日法律第四〇号）　抄</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年五月一九日法律第四〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して十月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して十月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月二四日法律第一四号）　抄</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月二四日法律第一四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して一年を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">一～三　略</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">一～三　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">四　第三条並びに附則第十四条、第二十条及び第二十一条の二の規定　公布の日から起<wbr>算して一年六月を超えない範囲内において政令で定める日</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">四　第三条並びに附則第十四条、第二十条及び第二十一条の二の規定　公布の日から起<wbr>算して一年六月を超えない範囲内において政令で定める日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月三一日法律第一六号）　抄</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年五月三一日法律第一六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して九月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して九月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

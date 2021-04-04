@@ -1,0 +1,579 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和二十六年法律第百八十七号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和二十六年法律第百八十七号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">自動車抵当法</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">自動車抵当法</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（この法律の目的）</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">（この法律の目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、自動車に関する動産信用の増進により、自動車運送事業の健全な<wbr>発達及び自動車による輸送の振興を図ることを目的とする。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、自動車に関する動産信用の増進により、自動車運送事業の健全な<wbr>発達及び自動車による輸送の振興を図ることを目的とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">（定義）</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律で「自動車」とは、道路運送車両法（昭和二十六年法律第百八十五号<wbr>）による登録を受けた自動車をいう。但し、大型特殊自動車で建設機械抵当法（昭和二<wbr>十九年法律第九十七号）第二条に規定する建設機械であるものを除く。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律で「自動車」とは、道路運送車両法（昭和二十六年法律第百八十五号<wbr>）による登録を受けた自動車をいう。但し、大型特殊自動車で建設機械抵当法（昭和二<wbr>十九年法律第九十七号）第二条に規定する建設機械であるものを除く。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の目的）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の目的）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第三条　自動車は、抵当権の目的とすることができる。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第三条　自動車は、抵当権の目的とすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の内容）</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の内容）</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第四条　抵当権者は、債務者又は第三者が占有を移さないで債務の担保に供した自動車<wbr>（以下「抵当自動車」という。）につき、他の債権者に先だつて、自己の債権の弁済を<wbr>受けることができる。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">第四条　抵当権者は、債務者又は第三者が占有を移さないで債務の担保に供した自動車<wbr>（以下「抵当自動車」という。）につき、他の債権者に先だつて、自己の債権の弁済を<wbr>受けることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（対抗要件）</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">（対抗要件）</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第五条　自動車の抵当権の得喪及び変更は、道路運送車両法に規定する自動車登録ファ<wbr>イルに登録を受けなければ、第三者に対抗することができない。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">第五条　自動車の抵当権の得喪及び変更は、道路運送車両法に規定する自動車登録ファ<wbr>イルに登録を受けなければ、第三者に対抗することができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項の登録に関する事項は、政令で定める。</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">２　前項の登録に関する事項は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の効力の及ぶ範囲）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の効力の及ぶ範囲）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第六条　抵当権は、抵当自動車に付加して一体となつている物に及ぶ。ただし、設定行<wbr>為に別段の定めがある場合及び債務者の行為について民法（明治二十九年法律第八十九<wbr>号）第四百二十四条第三項に規定する詐害行為取消請求をすることができる場合は、こ<wbr>の限りでない。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第六条　抵当権は、抵当自動車に付加して一体となつている物に及ぶ。ただし、設定行<wbr>為に別段の定めがある場合及び債務者の行為について民法（明治二十九年法律第八十九<wbr>号）第四百二十四条第三項に規定する詐害行為取消請求をすることができる場合は、こ<wbr>の限りでない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（不可分性）</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（不可分性）</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第七条　抵当権者は、債権の全部の弁済を受けるまでは、抵当自動車の全部につき、そ<wbr>の権利を行使することができる。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第七条　抵当権者は、債権の全部の弁済を受けるまでは、抵当自動車の全部につき、そ<wbr>の権利を行使することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（物上代位）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（物上代位）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第八条　抵当権は、抵当自動車の譲渡、貸付、滅失又はきヽ損によつて抵当権設定者が<wbr>受けるべき金銭その他の物に対しても、これを行使することができる。この場合におい<wbr>ては、その払渡又は引渡前に差押をしなければならない。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第八条　抵当権は、抵当自動車の譲渡、貸付、滅失又はきヽ損によつて抵当権設定者が<wbr>受けるべき金銭その他の物に対しても、これを行使することができる。この場合におい<wbr>ては、その払渡又は引渡前に差押をしなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（物上保証人の求償権）</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（物上保証人の求償権）</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第九条　他人の債務を担保するため抵当権を設定した者がその債務を弁済し、又は抵当<wbr>権の実行によつて抵当自動車の所有権を失つたときは、民法に規定する保証債務に関す<wbr>る規定に従い、債務者に対して求償権を有する。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第九条　他人の債務を担保するため抵当権を設定した者がその債務を弁済し、又は抵当<wbr>権の実行によつて抵当自動車の所有権を失つたときは、民法に規定する保証債務に関す<wbr>る規定に従い、債務者に対して求償権を有する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の順位）</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の順位）</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第十条　数個の債権を担保するため同一の自動車につき抵当権を設定したときは、その<wbr>抵当権の順位は、登録の前後による。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第十条　数個の債権を担保するため同一の自動車につき抵当権を設定したときは、その<wbr>抵当権の順位は、登録の前後による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（先取特権との順位）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（先取特権との順位）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第十一条　同一の自動車について抵当権及び先取特権が競合する場合には、抵当権は、<wbr>民法第三百三十条第一項に規定する第一順位の先取特権と同順位とする。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第十一条　同一の自動車について抵当権及び先取特権が競合する場合には、抵当権は、<wbr>民法第三百三十条第一項に規定する第一順位の先取特権と同順位とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（担保される利息等）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（担保される利息等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第十二条　抵当権者が利息その他の定期金を請求する権利を有するときは、その満期と<wbr>なつた最後の二年分についてのみその抵当権を行使することができる。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第十二条　抵当権者が利息その他の定期金を請求する権利を有するときは、その満期と<wbr>なつた最後の二年分についてのみその抵当権を行使することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、抵当権者が債務の不履行によつて生じた損害の賠償を請求する権利<wbr>を有する場合においてその最後の二年分についても適用する。但し、利息その他の定期<wbr>金と通算して二年分をこえることができない。</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、抵当権者が債務の不履行によつて生じた損害の賠償を請求する権利<wbr>を有する場合においてその最後の二年分についても適用する。但し、利息その他の定期<wbr>金と通算して二年分をこえることができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（代価弁済）</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">（代価弁済）</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第十三条　抵当自動車を譲り受けた第三者が抵当権者の請求に応じてその代価を弁済し<wbr>たときは、抵当権は、その第三者のために消滅する。</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">第十三条　抵当自動車を譲り受けた第三者が抵当権者の請求に応じてその代価を弁済し<wbr>たときは、抵当権は、その第三者のために消滅する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（第三取得者の費用償還請求権）</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（第三取得者の費用償還請求権）</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第十四条　抵当自動車を取得した第三者が抵当自動車につき必要費又は有益費を出した<wbr>ときは、民法第百九十六条の区別に従い、抵当自動車の代価をもつて最も先にその償還<wbr>を受けることができる。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第十四条　抵当自動車を取得した第三者が抵当自動車につき必要費又は有益費を出した<wbr>ときは、民法第百九十六条の区別に従い、抵当自動車の代価をもつて最も先にその償還<wbr>を受けることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（一般財産からの弁済）</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">（一般財産からの弁済）</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第十五条　抵当権者は、抵当自動車の代価で弁済を受けない債権の部分についてのみ他<wbr>の財産から弁済を受けることができる。</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">第十五条　抵当権者は、抵当自動車の代価で弁済を受けない債権の部分についてのみ他<wbr>の財産から弁済を受けることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、抵当自動車の代価に先だつて他の財産の代価を配当すべき場合には<wbr>、適用しない。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定は、抵当自動車の代価に先だつて他の財産の代価を配当すべき場合には<wbr>、適用しない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">３　前項の場合において、抵当権者に第一項の規定による弁済を受けさせるため、他の<wbr>債権者は、抵当権者に配当すべき金額の供託を請求することができる。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">３　前項の場合において、抵当権者に第一項の規定による弁済を受けさせるため、他の<wbr>債権者は、抵当権者に配当すべき金額の供託を請求することができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（抵当権者に対する通知）</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">（抵当権者に対する通知）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">38</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十六条　国土交通大臣は、抵当自動車について道路運送車両法第十五条の規定による<wbr>永久抹消登録、</span><span style="color: #000000; background-color: #efcb05; ">第十五条の二第二項の規定による輸出抹消仮登録又は同法第十六条第一<wbr>項の申請に基づく一時抹消登録をしたときは、遅滞なく、抵当権者に通知しなければな<wbr>らない。同法第十五条の二第一項の規定による輸出抹消仮登録の申請又は同法第十六条<wbr>第一項の規定による一時抹消登録の申請を受理したときも同様である。</span></code></td>
+<td class="ln">38</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第十六条　国土交通大臣は、抵当自動車について道路運送車両法第十五条の規定による<wbr>永久抹消登録、</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第十五条の二第二項の規定による輸出抹消仮登録又は同法第十六条<wbr>第一項の申請に基づく一時抹消登録をしたときは、遅滞なく、抵当権者に通知しなけれ<wbr>ばならない。同法第十五条の二第一項の規定による輸出抹消仮登録の申請又は同法第十<wbr>六条第一項の規定による一時抹消登録の申請を受理したときも同様である。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の実行）</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">（抵当権の実行）</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第十七条　抵当権者は、前条後段の通知を受けたときは、その自動車に対して、直ちに<wbr>、その権利を実行することができる。</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">第十七条　抵当権者は、前条後段の通知を受けたときは、その自動車に対して、直ちに<wbr>、その権利を実行することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により抵当権を実行しようとするときは、抵当権者は、前条後段の通知<wbr>を受けた日から三箇月以内に、その手続をしなければならない。</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定により抵当権を実行しようとするときは、抵当権者は、前条後段の通知<wbr>を受けた日から三箇月以内に、その手続をしなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　国土交通大臣は、前項の規定により抵当権の実行の手続をすることができる期間内<wbr>及び抵当権の実行の終わるまでの期間内は、第一項の自動車について道路運送車両法第<wbr>十五条の二第二項の規定による輸出抹消仮登録及び同法第十六条第一項の申請に基づく<wbr>一時抹消登録をすることができない。</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">３　国土交通大臣は、前項の規定により抵当権の実行の手続をすることができる期間内<wbr>及び抵当権の実行の終わるまでの期間内は、第一項の自動車について道路運送車両法第<wbr>十五条の二第二項の規定による輸出抹消仮登録及び同法第十六条第一項の申請に基づく<wbr>一時抹消登録をすることができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">４　買受人が代金を納付したときは、第一項の自動車について道路運送車両法第十五条<wbr>の二第一項の規定による輸出抹消仮登録の申請又は同法第十六条第一項の規定による一<wbr>時抹消登録の申請がなかつたものとみなす。</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">４　買受人が代金を納付したときは、第一項の自動車について道路運送車両法第十五条<wbr>の二第一項の規定による輸出抹消仮登録の申請又は同法第十六条第一項の規定による一<wbr>時抹消登録の申請がなかつたものとみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（時効による消滅）</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">（時効による消滅）</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第十八条　抵当権は、債務者及び抵当権設定者に対しては、その担保する債権と同時で<wbr>なければ、時効によつて消滅しない。</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">第十八条　抵当権は、債務者及び抵当権設定者に対しては、その担保する債権と同時で<wbr>なければ、時効によつて消滅しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十九条　債務者又は抵当権設定者以外の者が抵当自動車につき取得時効に必要な条件<wbr>を具備した占有をしたときは、抵当権は、これによつて消滅する。</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">第十九条　債務者又は抵当権設定者以外の者が抵当自動車につき取得時効に必要な条件<wbr>を具備した占有をしたときは、抵当権は、これによつて消滅する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（根抵当権）</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">（根抵当権）</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第十九条の二　抵当権は、設定行為をもつて定めるところにより、一定の範囲に属する<wbr>不特定の債権を極度額の限度において担保するためにも設定することができる。</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">第十九条の二　抵当権は、設定行為をもつて定めるところにより、一定の範囲に属する<wbr>不特定の債権を極度額の限度において担保するためにも設定することができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　民法第三百九十八条の二第二項及び第三項、第三百九十八条の三から第三百九十八<wbr>条の十まで、第三百九十八条の十二第一項、第三百九十八条の十三、第三百九十八条の<wbr>十四第一項本文及び第二項並びに第三百九十八条の十九から第三百九十八条の二十二ま<wbr>での規定は、前項の抵当権について準用する。</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">２　民法第三百九十八条の二第二項及び第三項、第三百九十八条の三から第三百九十八<wbr>条の十まで、第三百九十八条の十二第一項、第三百九十八条の十三、第三百九十八条の<wbr>十四第一項本文及び第二項並びに第三百九十八条の十九から第三百九十八条の二十二ま<wbr>での規定は、前項の抵当権について準用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（質権設定の禁止）</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">（質権設定の禁止）</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第二十条　自動車は、質権の目的とすることができない。</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">第二十条　自動車は、質権の目的とすることができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（行政手続法の適用除外）</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">（行政手続法の適用除外）</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　自動車の抵当権の登録については、行政手続法（平成五年法律第八十八号<wbr>）第二章及び第三章の規定は、適用しない。</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">第二十一条　自動車の抵当権の登録については、行政手続法（平成五年法律第八十八号<wbr>）第二章及び第三章の規定は、適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この法律は、昭和二十七年四月一日から施行する。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">この法律は、昭和二十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二七年四月二八日法律第一〇二号）　抄</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二七年四月二八日法律第一〇二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二九年五月一五日法律第九七号）　抄</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和二九年五月一五日法律第九七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">１　この法律の施行期日は、公布の日から起算して六箇月をこえない範囲内において、<wbr>政令で定める。</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">１　この法律の施行期日は、公布の日から起算して六箇月をこえない範囲内において、<wbr>政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年七月一五日法律第一四九号）　抄</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和三八年七月一五日法律第一四九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を経過した日から施行する。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して三月を経過した日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四四年八月一日法律第六八号）　抄</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四四年八月一日法律第六八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律中、第一条、次条、附則第三条及び附則第六条の規定は、公布の日か<wbr>ら起算して六月をこえない範囲内において政令で定める日から、第二条、附則第四条及<wbr>び附則第五条の規定は、公布の日から起算して一年をこえない範囲内において政令で定<wbr>める日から施行する。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律中、第一条、次条、附則第三条及び附則第六条の規定は、公布の日か<wbr>ら起算して六月をこえない範囲内において政令で定める日から、第二条、附則第四条及<wbr>び附則第五条の規定は、公布の日から起算して一年をこえない範囲内において政令で定<wbr>める日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四六年六月三日法律第九九号）　抄</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和四六年六月三日法律第九九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十七年四月一日から施行する。</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、昭和四十七年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（経過措置の原則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律による改正後の民法（以下「新法」という。）の規定は、別段の定め<wbr>がある場合を除き、この法律の施行の際現に存する抵当権で根抵当であるもの（以下「<wbr>旧根抵当権」という。）にも適用する。ただし、改正前の民法（以下「旧法」という。<wbr>）の規定により生じた効力を妨げない。</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">第二条　この法律による改正後の民法（以下「新法」という。）の規定は、別段の定め<wbr>がある場合を除き、この法律の施行の際現に存する抵当権で根抵当であるもの（以下「<wbr>旧根抵当権」という。）にも適用する。ただし、改正前の民法（以下「旧法」という。<wbr>）の規定により生じた効力を妨げない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（新法の適用の制限）</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">（新法の適用の制限）</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第三条　旧根抵当権で、極度額についての定めが新法の規定に適合していないもの又は<wbr>附記によらない極度額の増額の登記があるものについては、その極度額の変更、新法第<wbr>三百九十八条の四の規定による担保すべき債権の範囲又は債務者の変更、新法第三百九<wbr>十八条の十二の規定による根抵当権の譲渡、新法第三百九十八条の十三の規定による根<wbr>抵当権の一部譲渡及び新法第三百九十八条の十四第一項ただし書の規定による定めは、<wbr>することができない。</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">第三条　旧根抵当権で、極度額についての定めが新法の規定に適合していないもの又は<wbr>附記によらない極度額の増額の登記があるものについては、その極度額の変更、新法第<wbr>三百九十八条の四の規定による担保すべき債権の範囲又は債務者の変更、新法第三百九<wbr>十八条の十二の規定による根抵当権の譲渡、新法第三百九十八条の十三の規定による根<wbr>抵当権の一部譲渡及び新法第三百九十八条の十四第一項ただし書の規定による定めは、<wbr>することができない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（極度額についての定めの変更）</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">（極度額についての定めの変更）</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第四条　旧根抵当権で、極度額についての定めが新法の規定に適合していないものにつ<wbr>いては、元本の確定前に限り、その定めを変更して新法の規定に適合するものとするこ<wbr>とができる。この場合においては、後順位の抵当権者その他の第三者の承諾を得ること<wbr>を要しない。</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">第四条　旧根抵当権で、極度額についての定めが新法の規定に適合していないものにつ<wbr>いては、元本の確定前に限り、その定めを変更して新法の規定に適合するものとするこ<wbr>とができる。この場合においては、後順位の抵当権者その他の第三者の承諾を得ること<wbr>を要しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（附記によらない極度額の増額の登記がある旧根抵当権の分割）</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">（附記によらない極度額の増額の登記がある旧根抵当権の分割）</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第五条　附記によらない極度額の増額の登記がある旧根抵当権については、元本の確定<wbr>前に限り、根抵当権者及び根抵当権設定者の合意により、当該旧根抵当権を分割して増<wbr>額に係る部分を新法の規定による独立の根抵当権とすることができる。この場合におい<wbr>ては、旧根抵当権を目的とする権利は、当該増額に係る部分について消滅する。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">第五条　附記によらない極度額の増額の登記がある旧根抵当権については、元本の確定<wbr>前に限り、根抵当権者及び根抵当権設定者の合意により、当該旧根抵当権を分割して増<wbr>額に係る部分を新法の規定による独立の根抵当権とすることができる。この場合におい<wbr>ては、旧根抵当権を目的とする権利は、当該増額に係る部分について消滅する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による分割をする場合には、増額に係る部分を目的とする権利を有する<wbr>者その他の利害の関係を有する者の承諾を得なければならない。</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定による分割をする場合には、増額に係る部分を目的とする権利を有する<wbr>者その他の利害の関係を有する者の承諾を得なければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（元本の確定すべき期日に関する経過措置）</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">（元本の確定すべき期日に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際旧根抵当権について現に存する担保すべき元本の確定すべ<wbr>き時期に関する定め又はその登記は、その定めにより元本が確定することとなる日をも<wbr>つて新法第三百九十八条の六第一項の期日とする定め又はその登記とみなす。ただし、<wbr>その定めにより元本が確定することとなる日がこの法律の施行の日から起算して五年を<wbr>経過する日より後であるときは、当該定め又はその登記は、当該五年を経過する日をも<wbr>つて同項の期日とする定め又はその登記とみなす。</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">第六条　この法律の施行の際旧根抵当権について現に存する担保すべき元本の確定すべ<wbr>き時期に関する定め又はその登記は、その定めにより元本が確定することとなる日をも<wbr>つて新法第三百九十八条の六第一項の期日とする定め又はその登記とみなす。ただし、<wbr>その定めにより元本が確定することとなる日がこの法律の施行の日から起算して五年を<wbr>経過する日より後であるときは、当該定め又はその登記は、当該五年を経過する日をも<wbr>つて同項の期日とする定め又はその登記とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（弁済による代位に関する経過措置）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（弁済による代位に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第七条　この法律の施行前から引き続き旧根抵当権の担保すべき債務を弁済するについ<wbr>て正当な利益を有していた者が、この法律の施行後元本の確定前にその債務を弁済した<wbr>場合における代位に関しては、なお従前の例による。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第七条　この法律の施行前から引き続き旧根抵当権の担保すべき債務を弁済するについ<wbr>て正当な利益を有していた者が、この法律の施行後元本の確定前にその債務を弁済した<wbr>場合における代位に関しては、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（元本の確定の時期に関する経過措置）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（元本の確定の時期に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十条　この法律の施行前に、新法第三百九十八条の二十第一項第一号に規定する申立<wbr>て、同項第二号に規定する差押え、同項第三号に規定する競売手続の開始若しくは差押<wbr>え又は同項第四号に規定する破産手続開始の決定があつた旧根抵当権で、担保すべき元<wbr>本が確定していないものについては、この法律の施行の日にこれらの事由が生じたもの<wbr>とみなして、同項の規定を適用する。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十条　この法律の施行前に、新法第三百九十八条の二十第一項第一号に規定する申立<wbr>て、同項第二号に規定する差押え、同項第三号に規定する競売手続の開始若しくは差押<wbr>え又は同項第四号に規定する破産手続開始の決定があつた旧根抵当権で、担保すべき元<wbr>本が確定していないものについては、この法律の施行の日にこれらの事由が生じたもの<wbr>とみなして、同項の規定を適用する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（旧根抵当権の消滅請求に関する経過措置）</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">（旧根抵当権の消滅請求に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第十一条　極度額についての定めが新法の規定に適合していない旧根抵当権については<wbr>、その優先権の限度額を極度額とみなして、新法第三百九十八条の二十二の規定を適用<wbr>する。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">第十一条　極度額についての定めが新法の規定に適合していない旧根抵当権については<wbr>、その優先権の限度額を極度額とみなして、新法第三百九十八条の二十二の規定を適用<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（自動車抵当法の一部改正に伴う経過措置）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（自動車抵当法の一部改正に伴う経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　前条の規定による自動車抵当法の一部改正に伴う経過措置については、附<wbr>則第二条、附則第三条第一項、附則第四条から附則第七条まで、附則第十条及び附則第<wbr>十一条の規定の例による。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第二十三条　前条の規定による自動車抵当法の一部改正に伴う経過措置については、附<wbr>則第二条、附則第三条第一項、附則第四条から附則第七条まで、附則第十条及び附則第<wbr>十一条の規定の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五四年三月三〇日法律第五号）　抄</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">附　則　（昭和五四年三月三〇日法律第五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、民事執行法（昭和五十四年法律第四号）の施行の日（昭和五十五年十<wbr>月一日）から施行する。</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">１　この法律は、民事執行法（昭和五十四年法律第四号）の施行の日（昭和五十五年十<wbr>月一日）から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前に申し立てられた民事執行、企業担保権の実行及び破産の事件に<wbr>ついては、なお従前の例による。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">２　この法律の施行前に申し立てられた民事執行、企業担保権の実行及び破産の事件に<wbr>ついては、なお従前の例による。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">３　前項の事件に関し執行官が受ける手数料及び支払又は償還を受ける費用の額につい<wbr>ては、同項の規定にかかわらず、最高裁判所規則の定めるところによる。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">３　前項の事件に関し執行官が受ける手数料及び支払又は償還を受ける費用の額につい<wbr>ては、同項の規定にかかわらず、最高裁判所規則の定めるところによる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一一月一二日法律第八九号）　抄</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成五年一一月一二日法律第八九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政手続法（平成五年法律第八十八号）の施行の日から施行する<wbr>。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、行政手続法（平成五年法律第八十八号）の施行の日から施行する<wbr>。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">（政令への委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第十五条　附則第二条から前条までに定めるもののほか、この法律の施行に関して必要<wbr>な経過措置は、政令で定める。</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">第十五条　附則第二条から前条までに定めるもののほか、この法律の施行に関して必要<wbr>な経過措置は、政令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年一二月二二日法律第一六〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律（第二条及び第三条を除く。）は、平成十三年一月六日から施行する<wbr>。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">一　第九百九十五条（核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を<wbr>改正する法律附則の改正規定に係る部分に限る。）、第千三百五条、第千三百六条、第<wbr>千三百二十四条第二項、第千三百二十六条第二項及び第千三百四十四条の規定　公布の<wbr>日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年七月一七日法律第八九号）　抄</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年七月一七日法律第八九号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二年六月を超えない範囲内において政令で<wbr>定める日から施行する。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して二年六月を超えない範囲内において政令で<wbr>定める日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年六月一八日法律第一二四号）　抄</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年六月一八日法律第一二四号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、新不動産登記法の施行の日から施行する。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、新不動産登記法の施行の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一二月一日法律第一四七号）　抄</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一二月一日法律第一四七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して六月を超えない範囲内において政令で定め<wbr>る日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年五月一九日法律第四〇号）　抄</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年五月一九日法律第四〇号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して十月を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">第一条　この法律は、公布の日から起算して十月を超えない範囲内において政令で定め<wbr>る日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">一から三まで　略</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">一から三まで　略</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">四　第一条中道路運送法第四十一条第四項の改正規定及び第二条の規定（前三号に掲げ<wbr>る改正規定並びに道路運送車両法第四十八条第一項の改正規定及び同法第六十一条第二<wbr>項第二号の改正規定（「及び二輪の小型自動車」を加える部分を除く。）を除く。）並<wbr>びに附則第八条から第十条まで、第十七条、第二十一条、第二十七条（土砂等を運搬す<wbr>る大型自動車による交通事故の防止等に関する特別措置法（昭和四十二年法律第百三十<wbr>一号）第九条第四項の改正規定に限る。）及び第二十八条の規定　公布の日から起算し<wbr>て二年六月を超えない範囲内において政令で定める日</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">四　第一条中道路運送法第四十一条第四項の改正規定及び第二条の規定（前三号に掲げ<wbr>る改正規定並びに道路運送車両法第四十八条第一項の改正規定及び同法第六十一条第二<wbr>項第二号の改正規定（「及び二輪の小型自動車」を加える部分を除く。）を除く。）並<wbr>びに附則第八条から第十条まで、第十七条、第二十一条、第二十七条（土砂等を運搬す<wbr>る大型自動車による交通事故の防止等に関する特別措置法（昭和四十二年法律第百三十<wbr>一号）第九条第四項の改正規定に限る。）及び第二十八条の規定　公布の日から起算し<wbr>て二年六月を超えない範囲内において政令で定める日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二日法律第四五号）</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月二日法律第四五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">この法律は、民法改正法の施行の日から施行する。ただし、第百三条の二、第百三条の<wbr>三、第二百六十七条の二、第二百六十七条の三及び第三百六十二条の規定は、公布の日<wbr>から施行する。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">この法律は、民法改正法の施行の日から施行する。ただし、第百三条の二、第百三条の<wbr>三、第二百六十七条の二、第二百六十七条の三及び第三百六十二条の規定は、公布の日<wbr>から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

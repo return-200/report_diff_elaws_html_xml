@@ -1,0 +1,655 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和五十五年政令第二百七十三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">昭和五十五年政令第二百七十三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">幹線道路の沿道の整備に関する法律施行令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">幹線道路の沿道の整備に関する法律施行令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、幹線道路の沿道の整備に関する法律（昭和五十五年法律第三十四号）第五条第<wbr>一項、第九条第一項及び第二項、第十条第一項、第十一条第一項及び第二項、第十二条<wbr>第一項、第十四条並びに第十五条の規定に基づき、この政令を制定する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">内閣は、幹線道路の沿道の整備に関する法律（昭和五十五年法律第三十四号）第五条第<wbr>一項、第九条第一項及び第二項、第十条第一項、第十一条第一項及び第二項、第十二条<wbr>第一項、第十四条並びに第十五条の規定に基づき、この政令を制定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（自動車交通量の基準）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（自動車交通量の基準）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　幹線道路の沿道の整備に関する法律（以下「法」という。）第五条第一項第一<wbr>号の政令で定める基準は、自動車の日交通量が一万台（自動車の日交通量のうち国土交<wbr>通省令で定める大型の自動車の日交通量の占める割合が幹線道路網を構成する道路にお<wbr>ける標準的な値を超える道路にあつては、一万台未満四千台以上の範囲内で当該割合に<wbr>応じ国土交通省令で定めるところにより算定した台数）であることとする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　幹線道路の沿道の整備に関する法律（以下「法」という。）第五条第一項第一<wbr>号の政令で定める基準は、自動車の日交通量が一万台（自動車の日交通量のうち国土交<wbr>通省令で定める大型の自動車の日交通量の占める割合が幹線道路網を構成する道路にお<wbr>ける標準的な値を超える道路にあつては、一万台未満四千台以上の範囲内で当該割合に<wbr>応じ国土交通省令で定めるところにより算定した台数）であることとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　前項の自動車の日交通量の算定に関し必要な事項は、国土交通省令で定める。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　前項の自動車の日交通量の算定に関し必要な事項は、国土交通省令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（道路交通騒音の基準）</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">（道路交通騒音の基準）</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第五条第一項第二号の政令で定める基準は、次の各号のいずれかに該当する<wbr>こととする。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第五条第一項第二号の政令で定める基準は、次の各号のいずれかに該当する<wbr>こととする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">一　路端における夜間の道路交通騒音の大きさが六十五デシベルであること。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">一　路端における夜間の道路交通騒音の大きさが六十五デシベルであること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">二　路端における昼間の道路交通騒音の大きさが七十デシベルであること。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">二　路端における昼間の道路交通騒音の大きさが七十デシベルであること。</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">２　前項の道路交通騒音の大きさの測定又は算定に関し必要な事項は、国土交通省令で<wbr>定める。</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">２　前項の道路交通騒音の大きさの測定又は算定に関し必要な事項は、国土交通省令で<wbr>定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">３　国土交通大臣は、前項の国土交通省令を定めようとするときは、あらかじめ、環境<wbr>大臣に協議しなければならない。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">３　国土交通大臣は、前項の国土交通省令を定めようとするときは、あらかじめ、環境<wbr>大臣に協議しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（法第九条第一項の政令で定める地域）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">（法第九条第一項の政令で定める地域）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第九条第一項の政令で定める地域は、次に掲げるものとする。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">第三条　法第九条第一項の政令で定める地域は、次に掲げるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　都市計画法（昭和四十三年法律第百号）第七条第一項に規定する区域区分に関する<wbr>都市計画が定められていない都市計画区域内の同法第八条第一項第一号に規定する用途<wbr>地域が定められている土地の区域</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">一　都市計画法（昭和四十三年法律第百号）第七条第一項に規定する区域区分に関する<wbr>都市計画が定められていない都市計画区域内の同法第八条第一項第一号に規定する用途<wbr>地域が定められている土地の区域</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　土地区画整理法（昭和二十九年法律第百十九号）による土地区画整理事業の施行に<wbr>係る区域、都市計画法第二十九条第一項の許可を受けた開発行為に係る区域又は旧住宅<wbr>地造成事業に関する法律（昭和三十九年法律第百六十号）第四条の認可を受けた住宅地<wbr>造成事業の施行に係る区域で、相当数の住居等が集合することが確実と見込まれる地域<wbr></span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">二　土地区画整理法（昭和二十九年法律第百十九号）による土地区画整理事業の施行に<wbr>係る区域、都市計画法第二十九条第一項の許可を受けた開発行為に係る区域又は旧住宅<wbr>地造成事業に関する法律（昭和三十九年法律第百六十号）第四条の認可を受けた住宅地<wbr>造成事業の施行に係る区域で、相当数の住居等が集合することが確実と見込まれる地域<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">三　前二号に掲げるもののほか、市町村の中心の市街地その他の地域で国土交通省令で<wbr>定める要件に該当するもの</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">三　前二号に掲げるもののほか、市町村の中心の市街地その他の地域で国土交通省令で<wbr>定める要件に該当するもの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（法第九条第二項第一号の政令で定める施設）</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">（法第九条第二項第一号の政令で定める施設）</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第九条第二項第一号の政令で定める施設は、公園、緑地、広場その他の公共<wbr>空地（緩衝空地を除く。）又は道（道路法（昭和二十七年法律第百八十号）による道路<wbr>を除く。以下同じ。）とする。</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">第四条　法第九条第二項第一号の政令で定める施設は、公園、緑地、広場その他の公共<wbr>空地（緩衝空地を除く。）又は道（道路法（昭和二十七年法律第百八十号）による道路<wbr>を除く。以下同じ。）とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（法第九条第四項第一号の政令で定める施設）</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">（法第九条第四項第一号の政令で定める施設）</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第九条第四項第一号の政令で定める施設は、道路若しくは道又は公園、緑地<wbr>、広場その他の公共空地とする。</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">第五条　法第九条第四項第一号の政令で定める施設は、道路若しくは道又は公園、緑地<wbr>、広場その他の公共空地とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（沿道地区整備計画において定める建築物等に関する事項）</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">（沿道地区整備計画において定める建築物等に関する事項）</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　法第九条第六項第二号の建築物等に関する事項で政令で定めるものは、垣<wbr>又はさくの構造の制限とする。</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">第五条の二　法第九条第六項第二号の建築物等に関する事項で政令で定めるものは、垣<wbr>又はさくの構造の制限とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（法第九条の四及び第九条の六の政令で定める施設）</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">（法第九条の四及び第九条の六の政令で定める施設）</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第九条の四及び第九条の六の政令で定める施設は、道とする。</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">第六条　法第九条の四及び第九条の六の政令で定める施設は、道とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（届出を要する行為）</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">（届出を要する行為）</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第十条第一項各号列記以外の部分の政令で定める行為は、次の各号に掲げる<wbr>土地の区域内において行う当該各号に定める行為とする。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">第七条　法第十条第一項各号列記以外の部分の政令で定める行為は、次の各号に掲げる<wbr>土地の区域内において行う当該各号に定める行為とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　沿道地区計画において用途の制限が定められ、又は用途に応じて建築物その他の工<wbr>作物（以下「建築物等」という。）に関する制限が定められている土地の区域　建築物<wbr>等の用途の変更（用途変更後の建築物等が沿道地区計画において定められた用途の制限<wbr>又は用途に応じた建築物等に関する制限に適合しないこととなる場合に限る。）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">一　沿道地区計画において用途の制限が定められ、又は用途に応じて建築物その他の工<wbr>作物（以下「建築物等」という。）に関する制限が定められている土地の区域　建築物<wbr>等の用途の変更（用途変更後の建築物等が沿道地区計画において定められた用途の制限<wbr>又は用途に応じた建築物等に関する制限に適合しないこととなる場合に限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　沿道地区計画において建築物等の形態又は色彩その他の意匠の制限が定められてい<wbr>る土地の区域　建築物等の形態又は色彩その他の意匠の変更</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">二　沿道地区計画において建築物等の形態又は色彩その他の意匠の制限が定められてい<wbr>る土地の区域　建築物等の形態又は色彩その他の意匠の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">三　沿道地区計画において法第九条第六項第三号に掲げる事項が定められている土地の<wbr>区域　木竹の伐採</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">三　沿道地区計画において法第九条第六項第三号に掲げる事項が定められている土地の<wbr>区域　木竹の伐採 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（通常の管理行為、軽易な行為その他の行為）</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">（通常の管理行為、軽易な行為その他の行為）</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第十条第一項第一号の政令で定める行為は、次に掲げるものとする。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">第八条　法第十条第一項第一号の政令で定める行為は、次に掲げるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる土地の区画形質の変更</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">一　次に掲げる土地の区画形質の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">イ　建築物等で仮設のものの新築、改築又は増築の用に供する目的で行う土地の区画形<wbr>質の変更</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">イ　建築物等で仮設のものの新築、改築又は増築の用に供する目的で行う土地の区画形<wbr>質の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">ロ　既存の建築物等の管理のために必要な土地の区画形質の変更</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">ロ　既存の建築物等の管理のために必要な土地の区画形質の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">ハ　農林漁業を営むために行う土地の区画形質の変更</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">ハ　農林漁業を営むために行う土地の区画形質の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">二　次に掲げる建築物等の新築、改築又は増築</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">二　次に掲げる建築物等の新築、改築又は増築</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　前号イに掲げる建築物等の新築、改築又は増築</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">イ　前号イに掲げる建築物等の新築、改築又は増築</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　屋外広告物で表示面積が一平方メートル以下であり、かつ、高さが三メートル以下<wbr>であるものの表示又は掲出のために必要な工作物（建築物以外の工作物をいう。以下こ<wbr>の号において同じ。）の新築、改築又は増築</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">ロ　屋外広告物で表示面積が一平方メートル以下であり、かつ、高さが三メートル以下<wbr>であるものの表示又は掲出のために必要な工作物（建築物以外の工作物をいう。以下こ<wbr>の号において同じ。）の新築、改築又は増築</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ハ　水道管、下水道管その他これらに類する工作物で地下に設けるものの新築、改築又<wbr>は増築</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">ハ　水道管、下水道管その他これらに類する工作物で地下に設けるものの新築、改築又<wbr>は増築</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">ニ　建築物の存する敷地内の当該建築物に附属する物干場、建築設備、受信用の空中線<wbr>系（その支持物を含む。）、旗ざおその他これらに類する工作物の新築、改築又は増築<wbr></span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">ニ　建築物の存する敷地内の当該建築物に附属する物干場、建築設備、受信用の空中線<wbr>系（その支持物を含む。）、旗ざおその他これらに類する工作物の新築、改築又は増築<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">ホ　農林漁業を営むために必要な物置、作業小屋その他これらに類する建築物等の新築<wbr>、改築又は増築</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">ホ　農林漁業を営むために必要な物置、作業小屋その他これらに類する建築物等の新築<wbr>、改築又は増築</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　次に掲げる建築物等の用途の変更</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">三　次に掲げる建築物等の用途の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">イ　第一号イに掲げる建築物等の用途の変更</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">イ　第一号イに掲げる建築物等の用途の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">ロ　建築物等の用途を前号ホに掲げるものとする建築物等の用途の変更</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2">ロ　建築物等の用途を前号ホに掲げるものとする建築物等の用途の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">四　第二号に掲げる建築物等の形態又は色彩その他の意匠の変更</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">四　第二号に掲げる建築物等の形態又は色彩その他の意匠の変更</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">五　次に掲げる木竹の伐採</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">五　次に掲げる木竹の伐採</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">イ　除伐、間伐、整枝等木竹の保育のために通常行われる木竹の伐採</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">イ　除伐、間伐、整枝等木竹の保育のために通常行われる木竹の伐採</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ロ　枯損した木竹又は危険な木竹の伐採</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ロ　枯損した木竹又は危険な木竹の伐採</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">ハ　自家の生活の用に充てるために必要な木竹の伐採</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">ハ　自家の生活の用に充てるために必要な木竹の伐採</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">ニ　仮植した木竹の伐採</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">ニ　仮植した木竹の伐採</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">ホ　測量、実地調査又は施設の保守の支障となる木竹の伐採</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">ホ　測量、実地調査又は施設の保守の支障となる木竹の伐採</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げるもののほか、法令又はこれに基づく処分による義務の履行として行<wbr>う行為</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">六　前各号に掲げるもののほか、法令又はこれに基づく処分による義務の履行として行<wbr>う行為 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（都市計画事業の施行として行う行為に準ずる行為）</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">（都市計画事業の施行として行う行為に準ずる行為）</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第九条　法第十条第一項第四号の都市計画事業の施行として行う行為に準ずる行為とし<wbr>て政令で定めるものは、次に掲げるものとする。</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">第九条　法第十条第一項第四号の都市計画事業の施行として行う行為に準ずる行為とし<wbr>て政令で定めるものは、次に掲げるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　都市計画施設を管理することとなる者が当該都市施設に関する都市計画に適合して<wbr>行う行為</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">一　都市計画施設を管理することとなる者が当該都市施設に関する都市計画に適合して<wbr>行う行為</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　土地区画整理事業の施行として行う行為</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">二　土地区画整理事業の施行として行う行為</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">三　都市再開発法（昭和四十四年法律第三十八号）による市街地再開発事業の施行とし<wbr>て行う行為</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">三　都市再開発法（昭和四十四年法律第三十八号）による市街地再開発事業の施行とし<wbr>て行う行為</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">四　大都市地域における住宅及び住宅地の供給の促進に関する特別措置法（昭和五十年<wbr>法律第六十七号）による住宅街区整備事業の施行として行う行為</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">四　大都市地域における住宅及び住宅地の供給の促進に関する特別措置法（昭和五十年<wbr>法律第六十七号）による住宅街区整備事業の施行として行う行為</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">五　密集市街地における防災街区の整備の促進に関する法律（平成九年法律第四十九号<wbr>）による防災街区整備事業の施行として行う行為</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">五　密集市街地における防災街区の整備の促進に関する法律（平成九年法律第四十九号<wbr>）による防災街区整備事業の施行として行う行為 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（法第十条第一項第五号の政令で定める行為）</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">（法第十条第一項第五号の政令で定める行為）</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第十条第一項第五号の政令で定める行為は、次に掲げるものとする。</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第十条第一項第五号の政令で定める行為は、次に掲げるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">63</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　建築基準法（昭和二十五年法律第二百一号）第六条第一項（</span><span style="color: #000000; background-color: #efcb05; ">第八十七条第一項又は<wbr>第八十八条第二項において準用する場合を含む。）の確認又は</span><span style="color: #000000; background-color: #efcb05; ">第十八条第二項（</span><span style="color: #000000; background-color: #efcb05; ">第八十<wbr>七条第一項又は第八十八条第二項において準用する場合を含む。）の通知を要する建築<wbr>物等の新築、改築若しくは増築又は用途の変更（当該建築物等又はその敷地について沿<wbr>道地区計画において定められている内容（次に掲げる事項を除く。）の全てが</span><span style="color: #000000; background-color: #efcb05; ">第六十八<wbr>条の二第一項（同法第八十七条第二項若しくは第三項又は第八十八条第二項において準<wbr>用する場合を含む。）の規定に基づく条例で制限として定められている場合に限る。）<wbr></span></code></td>
+<td class="ln">63</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　建築基準法（昭和二十五年法律第二百一号）第六条第一項（</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第八十七条第一項<wbr>又は第八十八条第二項において準用する場合を含む。）の確認又は</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第十八条第二項<wbr>（</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第八十七条第一項又は第八十八条第二項において準用する場合を含む。）の通知<wbr>を要する建築物等の新築、改築若しくは増築又は用途の変更（当該建築物等又はその敷<wbr>地について沿道地区計画において定められている内容（次に掲げる事項を除く。）の全<wbr>てが</span><span class="sf17b18">同法</span><span style="color: #000000; background-color: #efcb05; ">第六十八条の二第一項（同法第八十七条第二項若しくは第三項又は第八十八条<wbr>第二項において準用する場合を含む。）の規定に基づく条例で制限として定められてい<wbr>る場合に限る。）</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">イ　沿道地区計画において定められている建築物の容積率の最高限度で、建築基準法第<wbr>六十八条の五の規定により同法第五十二条第一項第一号から第四号までに定める数値と<wbr>みなされるもの、同法第六十八条の五の二の規定により同法第五十二条第一項各号に定<wbr>める数値とみなされるもの又は同法第六十八条の五の三の規定により同法第五十二条第<wbr>一項第二号若しくは第三号に定める数値とみなされるもの</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">イ　沿道地区計画において定められている建築物の容積率の最高限度で、建築基準法第<wbr>六十八条の五の規定により同法第五十二条第一項第一号から第四号までに定める数値と<wbr>みなされるもの、同法第六十八条の五の二の規定により同法第五十二条第一項各号に定<wbr>める数値とみなされるもの又は同法第六十八条の五の三の規定により同法第五十二条第<wbr>一項第二号若しくは第三号に定める数値とみなされるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">ロ　沿道地区計画（沿道地区整備計画において、法第九条の六の規定による壁面の位置<wbr>の制限、壁面後退区域における工作物の設置の制限及び建築物の高さの最高限度が定め<wbr>られているものに限る。）において定められている建築物の容積率の最高限度で、当該<wbr>敷地に係る建築基準法第五十二条の規定による建築物の容積率の最高限度を超えるもの<wbr></span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">ロ　沿道地区計画（沿道地区整備計画において、法第九条の六の規定による壁面の位置<wbr>の制限、壁面後退区域における工作物の設置の制限及び建築物の高さの最高限度が定め<wbr>られているものに限る。）において定められている建築物の容積率の最高限度で、当該<wbr>敷地に係る建築基準法第五十二条の規定による建築物の容積率の最高限度を超えるもの<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">ハ　沿道地区計画（沿道再開発等促進区が定められている区域に限る。）において定め<wbr>られている次に掲げる事項</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">ハ　沿道地区計画（沿道再開発等促進区が定められている区域に限る。）において定め<wbr>られている次に掲げる事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（1）　建築物の容積率の最高限度で、当該敷地に係る用途地域に関する都市計画にお<wbr>いて定められた建築物の容積率を超えるもの</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">（1）　建築物の容積率の最高限度で、当該敷地に係る用途地域に関する都市計画にお<wbr>いて定められた建築物の容積率を超えるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（2）　建築物の建蔽率の最高限度で、当該敷地に係る用途地域に関する都市計画にお<wbr>いて定められた建築物の建蔽率を超えるもの</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">（2）　建築物の建蔽率の最高限度で、当該敷地に係る用途地域に関する都市計画にお<wbr>いて定められた建築物の建蔽率を超えるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（3）　建築物の高さの最高限度で、当該敷地に係る都市計画法第八条第一項第一号に<wbr>規定する第一種低層住居専用地域、第二種低層住居専用地域又は田園住居地域に関する<wbr>都市計画において定められた建築物の高さの限度を超えるもの</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">（3）　建築物の高さの最高限度で、当該敷地に係る都市計画法第八条第一項第一号に<wbr>規定する第一種低層住居専用地域、第二種低層住居専用地域又は田園住居地域に関する<wbr>都市計画において定められた建築物の高さの限度を超えるもの</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">二　都市緑地法（昭和四十八年法律第七十二号）第二十条第一項の規定に基づく条例の<wbr>規定により、同項の許可を要する同法第十四条第一項各号に掲げる行為</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">二　都市緑地法（昭和四十八年法律第七十二号）第二十条第一項の規定に基づく条例の<wbr>規定により、同項の許可を要する同法第十四条第一項各号に掲げる行為</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">三　都市計画法第二十九条第一項第三号に掲げる開発行為その他の公益上必要な事業の<wbr>実施に係る行為で沿道地区計画の目的を達成する上で著しい支障を及ぼすおそれが少な<wbr>いと認められるもののうち、用途上又は構造上やむを得ないものとして国土交通省令で<wbr>定めるもの</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">三　都市計画法第二十九条第一項第三号に掲げる開発行為その他の公益上必要な事業の<wbr>実施に係る行為で沿道地区計画の目的を達成する上で著しい支障を及ぼすおそれが少な<wbr>いと認められるもののうち、用途上又は構造上やむを得ないものとして国土交通省令で<wbr>定めるもの &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（法第十条の二第一項の政令で定める土地）</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（法第十条の二第一項の政令で定める土地）</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十条の二　法第十条の二第一項の政令で定める土地は、国又は地方公共団体が所有す<wbr>る土地で公共施設の用に供されているもの、農地、採草放牧地及び森林とする。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十条の二　法第十条の二第一項の政令で定める土地は、国又は地方公共団体が所有す<wbr>る土地で公共施設の用に供されているもの、農地、採草放牧地及び森林とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（法第十一条第一項の政令で定める土地）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（法第十一条第一項の政令で定める土地）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第十一条第一項の政令で定める土地は、次に掲げる土地とする。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第十一条第一項の政令で定める土地は、次に掲げる土地とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">一　道路、公園、緑地その他の公共施設又は公用施設に関する事業の用に供する土地</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">一　道路、公園、緑地その他の公共施設又は公用施設に関する事業の用に供する土地</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">二　都市計画法第四条第七項に規定する市街地開発事業又は地方公共団体が行うこれに<wbr>準ずる事業で国土交通省令で定めるものの用に供する土地</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">二　都市計画法第四条第七項に規定する市街地開発事業又は地方公共団体が行うこれに<wbr>準ずる事業で国土交通省令で定めるものの用に供する土地</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">三　法第十二条第一項の遮音上有効な機能を有する建築物として国土交通省令で定める<wbr>もの（第十三条において「緩衝建築物」という。）に関する事業の用に供する土地</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">三　法第十二条第一項の遮音上有効な機能を有する建築物として国土交通省令で定める<wbr>もの（第十三条において「緩衝建築物」という。）に関する事業の用に供する土地</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">四　沿道地区計画の区域内において行われる前三号に掲げる事業に係る代替地の用に供<wbr>する土地</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">四　沿道地区計画の区域内において行われる前三号に掲げる事業に係る代替地の用に供<wbr>する土地 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（貸付金の償還期間及び償還方法）</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">（貸付金の償還期間及び償還方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法第十一条第一項又は第十三条の四第一項の規定による貸付金の償還期間は<wbr>、十年（六年以内の据置期間を含む。）以内とし、その償還は、均等年賦償還の方法に<wbr>よるものとする。</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">第十二条　法第十一条第一項又は第十三条の四第一項の規定による貸付金の償還期間は<wbr>、十年（六年以内の据置期間を含む。）以内とし、その償還は、均等年賦償還の方法に<wbr>よるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（緩衝建築物の建築等に要する費用の負担）</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">（緩衝建築物の建築等に要する費用の負担）</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法第十二条第一項の規定により道路管理者に負担することを求めることがで<wbr>きる費用の額は、緩衝建築物のうち沿道整備道路の路面から高さおおむね九メートル（<wbr>沿道地区計画に建築物の高さの最低限度が定められている場合にあつては、当該最低限<wbr>度の範囲内で当該建築物の遮音上の効果を考慮して国土交通大臣が定める高さ）以下の<wbr>部分（以下この条において「対象部分」という。）の建築及びその敷地の整備に通常要<wbr>する費用（従前の緩衝建築物の全部又は一部を除却して新たに緩衝建築物を建築する場<wbr>合にあつては、当該従前の緩衝建築物の対象部分に相当する部分の建築及びその敷地の<wbr>整備に通常要する費用を除く。）の額に国土交通大臣が定める率を乗じて得た額とする<wbr>。</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">第十三条　法第十二条第一項の規定により道路管理者に負担することを求めることがで<wbr>きる費用の額は、緩衝建築物のうち沿道整備道路の路面から高さおおむね九メートル（<wbr>沿道地区計画に建築物の高さの最低限度が定められている場合にあつては、当該最低限<wbr>度の範囲内で当該建築物の遮音上の効果を考慮して国土交通大臣が定める高さ）以下の<wbr>部分（以下この条において「対象部分」という。）の建築及びその敷地の整備に通常要<wbr>する費用（従前の緩衝建築物の全部又は一部を除却して新たに緩衝建築物を建築する場<wbr>合にあつては、当該従前の緩衝建築物の対象部分に相当する部分の建築及びその敷地の<wbr>整備に通常要する費用を除く。）の額に国土交通大臣が定める率を乗じて得た額とする<wbr>。</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">２　前項の率は、道路交通騒音により生ずる障害の防止又は軽減について遮しや音上対<wbr>象部分の建築により得られる効用と同等の効用が得られる道路構造の改善に通常要する<wbr>費用の額の対象部分の建築及びその敷地の整備に通常要する費用の額に対する割合を限<wbr>度とし、緩衝建築物の用途、その背後地の土地利用の状況等を勘案して定めるものとす<wbr>る。</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">２　前項の率は、道路交通騒音により生ずる障害の防止又は軽減について遮しや音上対<wbr>象部分の建築により得られる効用と同等の効用が得られる道路構造の改善に通常要する<wbr>費用の額の対象部分の建築及びその敷地の整備に通常要する費用の額に対する割合を限<wbr>度とし、緩衝建築物の用途、その背後地の土地利用の状況等を勘案して定めるものとす<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の対象部分の建築及びその敷地の整備に通常要する費用並びに前項の道路構<wbr>造の改善に通常要する費用の算定に関し必要な事項は、国土交通省令で定める。</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">３　前二項の対象部分の建築及びその敷地の整備に通常要する費用並びに前項の道路構<wbr>造の改善に通常要する費用の算定に関し必要な事項は、国土交通省令で定める。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（法第十三条第二項の助成措置を講ずる場合）</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">（法第十三条第二項の助成措置を講ずる場合）</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第十三条の二　法第十三条第二項の助成措置は、同条第一項に規定する特定住宅の所有<wbr>者又は当該特定住宅に関する所有権以外の権利を有する者が当該特定住宅について防音<wbr>上有効な構造とするための工事を行うことが、法令（条例を含む。）に基づく規制によ<wbr>りできない場合又は当該特定住宅を同項の制限が定められた区域外に移転し、若しくは<wbr>除却するものとした場合においてこれにより必要となる費用に照らして不適当であると<wbr>認められる場合に限り、講ずることができる。</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">第十三条の二　法第十三条第二項の助成措置は、同条第一項に規定する特定住宅の所有<wbr>者又は当該特定住宅に関する所有権以外の権利を有する者が当該特定住宅について防音<wbr>上有効な構造とするための工事を行うことが、法令（条例を含む。）に基づく規制によ<wbr>りできない場合又は当該特定住宅を同項の制限が定められた区域外に移転し、若しくは<wbr>除却するものとした場合においてこれにより必要となる費用に照らして不適当であると<wbr>認められる場合に限り、講ずることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">（権限の委任）</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法に規定する国土交通大臣の権限は、地方整備局長及び北海道開発局長に委<wbr>任する。</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法に規定する国土交通大臣の権限は、地方整備局長及び北海道開発局長に委<wbr>任する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（算定方法）</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">（算定方法）</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第十五条　次の各号に掲げる長さの算定方法は、それぞれ当該各号に定めるところによ<wbr>る。</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">第十五条　次の各号に掲げる長さの算定方法は、それぞれ当該各号に定めるところによ<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">一　建築物の沿道整備道路に面する部分の長さ　建築物の周囲の地面に接する外壁又は<wbr>これに代わる柱の面で囲まれた部分の水平投影の沿道整備道路に面する長さによる。</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">一　建築物の沿道整備道路に面する部分の長さ　建築物の周囲の地面に接する外壁又は<wbr>これに代わる柱の面で囲まれた部分の水平投影の沿道整備道路に面する長さによる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">二　敷地の沿道整備道路に接する部分の長さ　敷地の沿道整備道路に接する部分の水平<wbr>投影の長さによる。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">二　敷地の沿道整備道路に接する部分の長さ　敷地の沿道整備道路に接する部分の水平<wbr>投影の長さによる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、法の施行の日（昭和五十五年十月二十五日）から施行する。</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、法の施行の日（昭和五十五年十月二十五日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二年一一月九日政令第三二五号）　抄</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二年一一月九日政令第三二五号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、大都市地域における住宅地等の供給の促進に関する特別措置法の一部<wbr>を改正する法律（平成二年法律第六十二号）の施行の日（平成二年十一月二十日）から<wbr>施行する。</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、大都市地域における住宅地等の供給の促進に関する特別措置法の一部<wbr>を改正する法律（平成二年法律第六十二号）の施行の日（平成二年十一月二十日）から<wbr>施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年七月二九日政令第二五五号）</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成六年七月二九日政令第二五五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、公布の日から施行する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第十三条第一項の規定は、この政令の施行の日以後に幹線道路の沿道の整<wbr>備に関する法律第十二条第二項の規定による申出があった同条第一項の規定による費用<wbr>の負担について適用し、同日前に同条第二項の規定による申出があった同条第一項の規<wbr>定による費用の負担については、なお従前の例による。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">２　改正後の第十三条第一項の規定は、この政令の施行の日以後に幹線道路の沿道の整<wbr>備に関する法律第十二条第二項の規定による申出があった同条第一項の規定による費用<wbr>の負担について適用し、同日前に同条第二項の規定による申出があった同条第一項の規<wbr>定による費用の負担については、なお従前の例による。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年一〇月二五日政令第三〇八号）　抄</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成八年一〇月二五日政令第三〇八号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、幹線道路の沿道の整備に関する法律等の一部を改正する法律の施行の<wbr>日（平成八年十一月十日）から施行する。</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、幹線道路の沿道の整備に関する法律等の一部を改正する法律の施行の<wbr>日（平成八年十一月十日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月三一日政令第一一五号）</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一一年三月三一日政令第一一五号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十一年四月一日から施行する。</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">この政令は、平成十一年四月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年六月七日政令第三一二号）　抄</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一二年六月七日政令第三一二号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施行の<wbr>日（平成十三年一月六日）から施行する。</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">１　この政令は、内閣法の一部を改正する法律（平成十一年法律第八十八号）の施行の<wbr>日（平成十三年一月六日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月三〇日政令第九八号）</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一三年三月三〇日政令第九八号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、都市計画法及び建築基準法の一部を改正する法律（以下「改正法<wbr>」という。）の施行の日（平成十三年五月十八日。以下「施行日」という。）から施行<wbr>する。</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、都市計画法及び建築基準法の一部を改正する法律（以下「改正法<wbr>」という。）の施行の日（平成十三年五月十八日。以下「施行日」という。）から施行<wbr>する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一一月一三日政令第三三一号）　抄</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一四年一一月一三日政令第三三一号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、建築基準法等の一部を改正する法律の施行の日（平成十五年一月<wbr>一日）から施行する。</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、建築基準法等の一部を改正する法律の施行の日（平成十五年一月<wbr>一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第四条　この政令の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">第四条　この政令の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月一七日政令第五二三号）</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一五年一二月一七日政令第五二三号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、密集市街地における防災街区の整備の促進に関する法律等の一部<wbr>を改正する法律の施行の日（平成十五年十二月十九日）から施行する。</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、密集市街地における防災街区の整備の促進に関する法律等の一部<wbr>を改正する法律の施行の日（平成十五年十二月十九日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">（罰則に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二条　この政令の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">第二条　この政令の施行前にした行為に対する罰則の適用については、なお従前の例に<wbr>よる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一二月一五日政令第三九六号）　抄</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一六年一二月一五日政令第三九六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、都市緑地保全法等の一部を改正する法律（以下「改正法」という<wbr>。）の施行の日（平成十六年十二月十七日。以下「施行日」という。）から施行する。<wbr></span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、都市緑地保全法等の一部を改正する法律（以下「改正法」という<wbr>。）の施行の日（平成十六年十二月十七日。以下「施行日」という。）から施行する。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">（処分、手続等の効力に関する経過措置）</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">（処分、手続等の効力に関する経過措置）</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">第四条　改正法附則第二条から第五条まで及び前二条に規定するもののほか、施行日前<wbr>に改正法による改正前のそれぞれの法律又はこの政令による改正前のそれぞれの政令の<wbr>規定によってした処分、手続その他の行為であって、改正法による改正後のそれぞれの<wbr>法律又はこの政令による改正後のそれぞれの政令に相当の規定があるものは、これらの<wbr>規定によってした処分、手続その他の行為とみなす。</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">第四条　改正法附則第二条から第五条まで及び前二条に規定するもののほか、施行日前<wbr>に改正法による改正前のそれぞれの法律又はこの政令による改正前のそれぞれの政令の<wbr>規定によってした処分、手続その他の行為であって、改正法による改正後のそれぞれの<wbr>法律又はこの政令による改正後のそれぞれの政令に相当の規定があるものは、これらの<wbr>規定によってした処分、手続その他の行為とみなす。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年五月二五日政令第一八二号）</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一七年五月二五日政令第一八二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">この政令は、景観法附則ただし書に規定する規定の施行の日（平成十七年六月一日）か<wbr>ら施行する。</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">この政令は、景観法附則ただし書に規定する規定の施行の日（平成十七年六月一日）か<wbr>ら施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年八月三〇日政令第二八二号）</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年八月三〇日政令第二八二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">この政令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月一四日政令第一五六号）　抄</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年六月一四日政令第一五六号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、都市緑地法等の一部を改正する法律の施行の日（平成二十九年六<wbr>月十五日）から施行する。ただし、第一条の規定、第二条中都市公園法施行令第十条を<wbr>同令第十条の二とし、同令第二章中同条の前に一条を加える改正規定並びに第五条から<wbr>第十六条まで及び第十八条から第二十二条までの規定は、同法附則第一条第二号に掲げ<wbr>る規定の施行の日（平成三十年四月一日）から施行する。</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">第一条　この政令は、都市緑地法等の一部を改正する法律の施行の日（平成二十九年六<wbr>月十五日）から施行する。ただし、第一条の規定、第二条中都市公園法施行令第十条を<wbr>同令第十条の二とし、同令第二章中同条の前に一条を加える改正規定並びに第五条から<wbr>第十六条まで及び第十八条から第二十二条までの規定は、同法附則第一条第二号に掲げ<wbr>る規定の施行の日（平成三十年四月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

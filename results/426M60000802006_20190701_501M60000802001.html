@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十六年内閣府・国土交通省令第六号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十六年内閣府・国土交通省令第六号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国土交通省関係国家戦略特別区域法第二十六条に規定する政令等規制事業に係る省令の<wbr>特例に関する措置を定める命令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">国土交通省関係国家戦略特別区域法第二十六条に規定する政令等規制事業に係る省令の<wbr>特例に関する措置を定める命令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">国家戦略特別区域法（平成二十五年法律第百七号）第二十六条の規定に基づき、国土交<wbr>通省関係国家戦略特別区域法第二十六条に規定する政令等規制事業に係る省令の特例に<wbr>関する措置を定める命令を次のように定める。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">国家戦略特別区域法（平成二十五年法律第百七号）第二十六条の規定に基づき、国土交<wbr>通省関係国家戦略特別区域法第二十六条に規定する政令等規制事業に係る省令の特例に<wbr>関する措置を定める命令を次のように定める。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（道路運送法施行規則の特例）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（道路運送法施行規則の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">5</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　国家戦略特別区域法（以下「法」という。）第七条の国家戦略特別区域会議が<wbr>、法第八条第二項第二号に規定する特定事業として、国家戦略特別区域空港アクセスバ<wbr>ス事業（道路運送法（昭和二十六年法律第百八十三号）第五条第一項第三号に規定する<wbr>路線定期運行を行う一般乗合旅客自動車運送事業（同法第三条第一号イに掲げる一般乗<wbr>合旅客自動車運送事業をいう。）であって、国家戦略特別区域（法第二条第一項に規定<wbr>する国家戦略特別区域をいう。以下同じ。）内に存する空港（空港</span><span style="color: #000000; background-color: #efcb05; ">（昭和三十一年法律<wbr>第八十号）第二条に規定する空港をいう。以下同じ。）を起点又は終点とするものをい<wbr>う。以下同じ。）を定めた区域計画（法第八条第一項に規定する区域計画をいう。以下<wbr>同じ。）について、内閣総理大臣の認定を申請し、その認定を受けたときは、当該認定<wbr>の日以後は、当該区域計画に定められた次項の空港に係る国家戦略特別区域空港アクセ<wbr>スバス事業に対する</span><span style="color: #000000; background-color: #efcb05; ">施行規則（昭和二十六年運輸省令第七十五号）第十条第一項第一号<wbr>ロ及び第十五条の十三第一項の規定の適用については、同号ロ中「路線」とあるのは「<wbr>路線又は国家戦略特別区域（国家戦略特別区域法（平成二十五年法律第百七号）第二条<wbr>第一項に規定する国家戦略特別区域をいう。）内に存する空港（空港法（昭和三十一年<wbr>法律第八十号）第二条に規定する空港をいう。）を起点若しくは終点とする路線」と、<wbr>同号ロ及び同項中「長距離急行運送」とあるのは「長距離急行運送等」とする。</span></code></td>
+<td class="ln">5</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第一条　国家戦略特別区域法（以下「法」という。）第七条の国家戦略特別区域会議が<wbr>、法第八条第二項第二号に規定する特定事業として、国家戦略特別区域空港アクセスバ<wbr>ス事業（道路運送法（昭和二十六年法律第百八十三号）第五条第一項第三号に規定する<wbr>路線定期運行を行う一般乗合旅客自動車運送事業（同法第三条第一号イに掲げる一般乗<wbr>合旅客自動車運送事業をいう。）であって、国家戦略特別区域（法第二条第一項に規定<wbr>する国家戦略特別区域をいう。以下同じ。）内に存する空港（空港</span><span class="sf17b18">法</span><span style="color: #000000; background-color: #efcb05; ">（昭和三十一年法<wbr>律第八十号）第二条に規定する空港をいう。以下同じ。）を起点又は終点とするものを<wbr>いう。以下同じ。）を定めた区域計画（法第八条第一項に規定する区域計画をいう。以<wbr>下同じ。）について、内閣総理大臣の認定を申請し、その認定を受けたときは、当該認<wbr>定の日以後は、当該区域計画に定められた次項の空港に係る国家戦略特別区域空港アク<wbr>セスバス事業に対する</span><span class="sf17b18">道路運送法</span><span style="color: #000000; background-color: #efcb05; ">施行規則（昭和二十六年運輸省令第七十五号）第十条<wbr>第一項第一号ロ及び第十五条の十三第一項の規定の適用については、同号ロ中「路線」<wbr>とあるのは「路線又は国家戦略特別区域（国家戦略特別区域法（平成二十五年法律第百<wbr>七号）第二条第一項に規定する国家戦略特別区域をいう。）内に存する空港（空港法（<wbr>昭和三十一年法律第八十号）第二条に規定する空港をいう。）を起点若しくは終点とす<wbr>る路線」と、同号ロ及び同項中「長距離急行運送」とあるのは「長距離急行運送等」と<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　前項の区域計画には、法第八条第二項第四号に掲げる事項として、国家戦略特別区<wbr>域空港アクセスバス事業に係る空港を定めるものとする。</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">２　前項の区域計画には、法第八条第二項第四号に掲げる事項として、国家戦略特別区<wbr>域空港アクセスバス事業に係る空港を定めるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の認定を受けた区域計画に定められた国家戦略特別区域空港アクセスバス事<wbr>業が実施される場合には、当該国家戦略特別区域空港アクセスバス事業の関係者は、国<wbr>家戦略特別区域空港アクセスバス事業が適正に実施されるよう、必要な措置を講じ、公<wbr>正な競争の確保が図られるよう努めるものとする。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">３　第一項の認定を受けた区域計画に定められた国家戦略特別区域空港アクセスバス事<wbr>業が実施される場合には、当該国家戦略特別区域空港アクセスバス事業の関係者は、国<wbr>家戦略特別区域空港アクセスバス事業が適正に実施されるよう、必要な措置を講じ、公<wbr>正な競争の確保が図られるよう努めるものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（旅行業法施行規則の特例）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">（旅行業法施行規則の特例）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第七条の国家戦略特別区域会議が、法第八条第二項第二号に規定する特定事<wbr>業として、国家戦略特別区域旅行業務取扱管理者確保事業（旅館業法（昭和二十三年法<wbr>律第百三十八号）第三条の二第一項に規定する営業者又はその団体であって、国家戦略<wbr>特別区域において地域限定旅行業（旅行業法施行規則（昭和四十六年運輸省令第六十一<wbr>号）第三条第四項に規定する地域限定旅行業をいう。）を営む者（当該国家戦略特別区<wbr>域内の企画旅行（旅行業法（昭和二十七年法律第二百三十九号）第四条第一項第四号に<wbr>規定する企画旅行をいう。）を実施する者に限る。）である者が、その営業所（国家戦<wbr>略特別区域内に所在するものに限る。）に選任する旅行業法第十一条の二第一項に規定<wbr>する旅行業務取扱管理者を確保する事業をいう。以下同じ。）を定めた区域計画につい<wbr>て、内閣総理大臣の認定を申請し、その認定を受けたときは、当該認定の日以後は、当<wbr>該国家戦略特別区域旅行業務取扱管理者確保事業を行う者が選任する旅行業務取扱管理<wbr>者についての旅行業法施行規則第二十条の規定の適用については、「次の各号に掲げる<wbr>とおり」とあるのは「観光庁長官が実施する国内旅行実務に係る研修の課程を修了した<wbr>もの」と、「それぞれ当該各号に定める試験科目」とあるのは「国内旅行業務取扱管理<wbr>者試験の試験科目のうち、宿泊約款に関する知識、観光庁長官が告示で定める運送約款<wbr>に関する知識の一部及び国内旅行実務」とする。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">第二条　法第七条の国家戦略特別区域会議が、法第八条第二項第二号に規定する特定事<wbr>業として、国家戦略特別区域旅行業務取扱管理者確保事業（旅館業法（昭和二十三年法<wbr>律第百三十八号）第三条の二第一項に規定する営業者又はその団体であって、国家戦略<wbr>特別区域において地域限定旅行業（旅行業法施行規則（昭和四十六年運輸省令第六十一<wbr>号）第三条第四項に規定する地域限定旅行業をいう。）を営む者（当該国家戦略特別区<wbr>域内の企画旅行（旅行業法（昭和二十七年法律第二百三十九号）第四条第一項第四号に<wbr>規定する企画旅行をいう。）を実施する者に限る。）である者が、その営業所（国家戦<wbr>略特別区域内に所在するものに限る。）に選任する旅行業法第十一条の二第一項に規定<wbr>する旅行業務取扱管理者を確保する事業をいう。以下同じ。）を定めた区域計画につい<wbr>て、内閣総理大臣の認定を申請し、その認定を受けたときは、当該認定の日以後は、当<wbr>該国家戦略特別区域旅行業務取扱管理者確保事業を行う者が選任する旅行業務取扱管理<wbr>者についての旅行業法施行規則第二十条の規定の適用については、「次の各号に掲げる<wbr>とおり」とあるのは「観光庁長官が実施する国内旅行実務に係る研修の課程を修了した<wbr>もの」と、「それぞれ当該各号に定める試験科目」とあるのは「国内旅行業務取扱管理<wbr>者試験の試験科目のうち、宿泊約款に関する知識、観光庁長官が告示で定める運送約款<wbr>に関する知識の一部及び国内旅行実務」とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定の適用を受けている旅行業務取扱管理者であって、旅行業法第十一条の<wbr>三の規定による国内旅行業務取扱管理者試験に合格した者についての旅行業法施行規則<wbr>第十四条第一項及び第二項の規定の適用については、同条第一項中「第七号様式」とあ<wbr>るのは、「国土交通省関係国家戦略特別区域法第二十六条に規定する政令等規制事業に<wbr>係る省令の特例に関する措置を定める命令第一号様式」と、同条第二項中「第八号様式<wbr>」とあるのは「国土交通省関係国家戦略特別区域法第二十六条に規定する政令等規制事<wbr>業に係る省令の特例に関する措置を定める命令第二号様式」とする。</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">２　前項の規定の適用を受けている旅行業務取扱管理者であって、旅行業法第十一条の<wbr>三の規定による国内旅行業務取扱管理者試験に合格した者についての旅行業法施行規則<wbr>第十四条第一項及び第二項の規定の適用については、同条第一項中「第七号様式」とあ<wbr>るのは、「国土交通省関係国家戦略特別区域法第二十六条に規定する政令等規制事業に<wbr>係る省令の特例に関する措置を定める命令第一号様式」と、同条第二項中「第八号様式<wbr>」とあるのは「国土交通省関係国家戦略特別区域法第二十六条に規定する政令等規制事<wbr>業に係る省令の特例に関する措置を定める命令第二号様式」とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">この命令は、公布の日から施行する。</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">この命令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三〇日内閣府・国土交通省令第二号）</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二九年三月三〇日内閣府・国土交通省令第二号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">この命令は、公布の日から施行する。</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">この命令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年六月二七日内閣府・国土交通省令第一号）</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">附　則　（令和元年六月二七日内閣府・国土交通省令第一号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">この命令は、不正競争防止法等の一部を改正する法律の施行の日（令和元年七月一日）<wbr>から施行する。</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">この命令は、不正競争防止法等の一部を改正する法律の施行の日（令和元年七月一日）<wbr>から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一号様式（第二条関係）</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第一号様式（第二条関係）</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">18</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第二号様式（第二条関係）</span></code></td>
+<td class="ln">18</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">19</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">第二号様式（第二条関係）</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">20</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

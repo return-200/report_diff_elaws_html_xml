@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十三年環境省令第九号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成二十三年環境省令第九号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">東日本大震災に対処するための窒素酸化物排出基準等を適用しない期間の特例に関する<wbr>省令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">東日本大震災に対処するための窒素酸化物排出基準等を適用しない期間の特例に関する<wbr>省令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">自動車から排出される窒素酸化物及び粒子状物質の特定地域における総量の削減等に関<wbr>する特別措置法（平成四年法律第七十号）を実施するため、東日本大震災に対処するた<wbr>めの窒素酸化物排出基準等を適用しない期間の特例に関する省令を次のように定める。<wbr></span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">自動車から排出される窒素酸化物及び粒子状物質の特定地域における総量の削減等に関<wbr>する特別措置法（平成四年法律第七十号）を実施するため、東日本大震災に対処するた<wbr>めの窒素酸化物排出基準等を適用しない期間の特例に関する省令を次のように定める。<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">4</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">１　初度登録日（自動車が初めて道路運送車両法（昭和二十六年法律第百八十五号）第<wbr>四条の規定により自動車登録ファイルに登録を受けた日をいう。）が平成十四年九月三<wbr>十日以前の自動車（自動車から排出される窒素酸化物及び粒子状物質の特定地域におけ<wbr>る総量の削減等に関する特別措置法（平成四年法律第七十号）第十二条第一項に規定す<wbr>る窒素酸化物排出自動車又は粒子状物質排出自動車のうち消防自動車（自動車から排出<wbr>される窒素酸化物及び粒子状物質の特定地域における総量の削減等に関する特別措置法<wbr>施行令（平成四年政令第三百六十五号）別表第二の五の項の規定に基づき環境大臣が定<wbr>めるものに限る。）であって、当該自動車に係る自動車検査証に記入された有効期間の<wbr>満了日が平成二十三年十月一日から平成二十四年三月三十一日までの間に到来し、かつ<wbr>、当該自動車に係る特定期日（自動車から排出される窒素酸化物及び粒子状物質の特定<wbr>地域における総量の削減等に関する特別措置法施行規則の一部を改正する省令（平成十<wbr>四年環境省令第三号。以下「平成十四年改正規則」という。）附則第二条、第四条、第<wbr>六条又は第七条に規定する特定期日をいう。以下同じ。）が当該自動車に係る自動車検<wbr>査証に記入された有効期間の満了日以前に到来するものに限る。）であって、平成二十<wbr>三年十月一日から平成二十四年三月三十一日までの間に、当該自動車に係る特定期日以<wbr>降の日が初めて有効期間の満了日として記入された自動車検査証が交付又は返付された<wbr>後初めて当該自動車に係る道路運送車両法第六十二条の規定による継続検査を受け、又<wbr>は当該自動車に係る同法第六十三条の規定による臨時検査（当該自動車に係る特定期日<wbr>以降に受けるものに限る。）を受けるものについては、</span><span style="color: #000000; background-color: #efcb05; ">施行規則（平成四年総理府令第<wbr>五十三号）第四条の規定は、平成十四年改正規則附則第二条、第四条、第六条又は第七<wbr>条の規定にかかわらず、当該継続検査又は臨時検査（次項において「特例検査」という<wbr>。）の後初めて受ける道路運送車両法の規定による新規検査、継続検査、臨時検査（平<wbr>成二十四年四月一日以降に受けるものに限る。）、構造等変更検査又は予備検査の前日<wbr>までは適用しない。</span></code></td>
+<td class="ln">4</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">１　初度登録日（自動車が初めて道路運送車両法（昭和二十六年法律第百八十五号）第<wbr>四条の規定により自動車登録ファイルに登録を受けた日をいう。）が平成十四年九月三<wbr>十日以前の自動車（自動車から排出される窒素酸化物及び粒子状物質の特定地域におけ<wbr>る総量の削減等に関する特別措置法（平成四年法律第七十号）第十二条第一項に規定す<wbr>る窒素酸化物排出自動車又は粒子状物質排出自動車のうち消防自動車（自動車から排出<wbr>される窒素酸化物及び粒子状物質の特定地域における総量の削減等に関する特別措置法<wbr>施行令（平成四年政令第三百六十五号）別表第二の五の項の規定に基づき環境大臣が定<wbr>めるものに限る。）であって、当該自動車に係る自動車検査証に記入された有効期間の<wbr>満了日が平成二十三年十月一日から平成二十四年三月三十一日までの間に到来し、かつ<wbr>、当該自動車に係る特定期日（自動車から排出される窒素酸化物及び粒子状物質の特定<wbr>地域における総量の削減等に関する特別措置法施行規則の一部を改正する省令（平成十<wbr>四年環境省令第三号。以下「平成十四年改正規則」という。）附則第二条、第四条、第<wbr>六条又は第七条に規定する特定期日をいう。以下同じ。）が当該自動車に係る自動車検<wbr>査証に記入された有効期間の満了日以前に到来するものに限る。）であって、平成二十<wbr>三年十月一日から平成二十四年三月三十一日までの間に、当該自動車に係る特定期日以<wbr>降の日が初めて有効期間の満了日として記入された自動車検査証が交付又は返付された<wbr>後初めて当該自動車に係る道路運送車両法第六十二条の規定による継続検査を受け、又<wbr>は当該自動車に係る同法第六十三条の規定による臨時検査（当該自動車に係る特定期日<wbr>以降に受けるものに限る。）を受けるものについては、</span><span class="sf17b18">自動車から排出される窒素酸化<wbr>物及び粒子状物質の特定地域における総量の削減等に関する特別措置法</span><span style="color: #000000; background-color: #efcb05; ">施行規則（平成<wbr>四年総理府令第五十三号）第四条の規定は、平成十四年改正規則附則第二条、第四条、<wbr>第六条又は第七条の規定にかかわらず、当該継続検査又は臨時検査（次項において「特<wbr>例検査」という。）の後初めて受ける道路運送車両法の規定による新規検査、継続検査<wbr>、臨時検査（平成二十四年四月一日以降に受けるものに限る。）、構造等変更検査又は<wbr>予備検査の前日までは適用しない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">２　特例検査を受けた自動車に係る特定期日については、平成十四年改正規則附則第二<wbr>条、第四条、第六条又は第七条の規定にかかわらず、平成二十四年四月一日とする。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">２　特例検査を受けた自動車に係る特定期日については、平成十四年改正規則附則第二<wbr>条、第四条、第六条又は第七条の規定にかかわらず、平成二十四年四月一日とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">附　則</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">この省令は、公布の日から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年九月二九日環境省令第一九号）</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成二三年九月二九日環境省令第一九号）</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十三年十月一日から施行する。</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">この省令は、平成二十三年十月一日から施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

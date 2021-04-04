@@ -1,0 +1,571 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">e-Gov法令検索</th>
+<th colspan="2" class="title" style="width:50.000000%">XML→TEXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十二年通商産業省令第百五十三号</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">平成十二年通商産業省令第百五十三号</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">原子力発電環境整備機構の財務及び会計に関する省令</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">原子力発電環境整備機構の財務及び会計に関する省令</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">特定放射性廃棄物の最終処分に関する法律（平成十二年法律第百十七号）第六十八条の<wbr>規定に基づき、原子力発電環境整備機構の財務及び会計に関する省令を次のように制定<wbr>する。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">特定放射性廃棄物の最終処分に関する法律（平成十二年法律第百十七号）第六十八条の<wbr>規定に基づき、原子力発電環境整備機構の財務及び会計に関する省令を次のように制定<wbr>する。</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（経理原則）</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">（経理原則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　原子力発電環境整備機構（以下「機構」という。）は、その事業の財政状態及<wbr>び経営成績を明らかにするため、財産の増減及び異動並びに収益及び費用をその発生の<wbr>事実に基づいて経理しなければならない。</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">第一条　原子力発電環境整備機構（以下「機構」という。）は、その事業の財政状態及<wbr>び経営成績を明らかにするため、財産の増減及び異動並びに収益及び費用をその発生の<wbr>事実に基づいて経理しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（勘定区分）</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">（勘定区分）</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　機構の会計においては、貸借対照表勘定及び損益勘定を設け、貸借対照表勘定<wbr>においては資産、負債及び純資産を計算し、損益勘定においては収益及び費用を計算す<wbr>る。</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">第二条　機構の会計においては、貸借対照表勘定及び損益勘定を設け、貸借対照表勘定<wbr>においては資産、負債及び純資産を計算し、損益勘定においては収益及び費用を計算す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、次に掲げるところにより経理を区分し、それぞれについて貸借対照表勘定<wbr>及び損益勘定を設けて経理するものとする。</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、次に掲げるところにより経理を区分し、それぞれについて貸借対照表勘定<wbr>及び損益勘定を設けて経理するものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">一　特定放射性廃棄物の最終処分に関する法律（以下「法」という。）第五十六条第一<wbr>項第一号に掲げる業務に係る経理</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">一　特定放射性廃棄物の最終処分に関する法律（以下「法」という。）第五十六条第一<wbr>項第一号に掲げる業務に係る経理</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">二　法第五十六条第一項第二号に掲げる業務に係る経理</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">二　法第五十六条第一項第二号に掲げる業務に係る経理</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">三　法第五十六条第二項に掲げる業務に係る経理</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">三　法第五十六条第二項に掲げる業務に係る経理</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">四　その他の経理</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">四　その他の経理</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項の規定により区分して経理する場合において、経理をすべき事項が当<wbr>該経理に係る勘定以外の勘定において経理をすべき事項と共通の事項であるため、当該<wbr>勘定に係る部分を区別して経理をすることが困難なときは、当該事項については、あら<wbr>かじめ経済産業大臣に提出する基準に従って、事業年度の期間中一括して経理をし、当<wbr>該事業年度の末日現在において各勘定に配分することにより経理をすることができる。<wbr></span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項の規定により区分して経理する場合において、経理をすべき事項が当<wbr>該経理に係る勘定以外の勘定において経理をすべき事項と共通の事項であるため、当該<wbr>勘定に係る部分を区別して経理をすることが困難なときは、当該事項については、あら<wbr>かじめ経済産業大臣に提出する基準に従って、事業年度の期間中一括して経理をし、当<wbr>該事業年度の末日現在において各勘定に配分することにより経理をすることができる。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（予算の内容）</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">（予算の内容）</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第三条　機構の予算は、予算総則及び収入支出予算とする。</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">第三条　機構の予算は、予算総則及び収入支出予算とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（予算総則）</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">（予算総則）</span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第四条　予算総則には、収入支出予算に関する総括的規定を設けるほか、次の事項に関<wbr>する規定を設けるものとする。</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">第四条　予算総則には、収入支出予算に関する総括的規定を設けるほか、次の事項に関<wbr>する規定を設けるものとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">一　第七条の規定による債務を負担する行為について、事項ごとにその負担する債務の<wbr>限度額、その行為に基づいて支出すべき年限及びその必要な理由</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">一　第七条の規定による債務を負担する行為について、事項ごとにその負担する債務の<wbr>限度額、その行為に基づいて支出すべき年限及びその必要な理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">二　第八条第二項の規定による経費の指定</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">二　第八条第二項の規定による経費の指定</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">三　第九条第一項ただし書の規定による経費の指定</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">三　第九条第一項ただし書の規定による経費の指定</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">四　長期借入金及び短期借入金の借入限度額</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2">四　長期借入金及び短期借入金の借入限度額</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">五　その他予算の実施に関し必要な事項</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">五　その他予算の実施に関し必要な事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（収入支出予算）</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">（収入支出予算）</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第五条　収入支出予算は、第二条第二項の規定により区分した経理ごとに勘定を設け、<wbr>収入にあってはその性質、支出にあってはその目的に従って区分するものとする。</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">第五条　収入支出予算は、第二条第二項の規定により区分した経理ごとに勘定を設け、<wbr>収入にあってはその性質、支出にあってはその目的に従って区分するものとする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（予備費）</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">（予備費）</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構は、予見することができない理由による支出予算の不足を補うため、収入<wbr>支出予算に予備費を設けることができる。</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2">第六条　機構は、予見することができない理由による支出予算の不足を補うため、収入<wbr>支出予算に予備費を設けることができる。</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、予備費を使用したときは、速やかに、使用の理由、金額及び積算の基礎を<wbr>明らかにした書類を経済産業大臣に提出しなければならない。</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、予備費を使用したときは、速やかに、使用の理由、金額及び積算の基礎を<wbr>明らかにした書類を経済産業大臣に提出しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（債務を負担する行為）</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">（債務を負担する行為）</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第七条　機構は、支出予算の金額の範囲内におけるもののほか、その業務を行うため必<wbr>要があるときは、毎事業年度、予算をもって経済産業大臣の認可を受けた金額の範囲内<wbr>において、債務を負担する行為をすることができる。</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">第七条　機構は、支出予算の金額の範囲内におけるもののほか、その業務を行うため必<wbr>要があるときは、毎事業年度、予算をもって経済産業大臣の認可を受けた金額の範囲内<wbr>において、債務を負担する行為をすることができる。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（支出予算の流用等）</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">（支出予算の流用等）</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第八条　機構は、支出予算については、当該予算に定める目的のほかに使用してはなら<wbr>ない。</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">第八条　機構は、支出予算については、当該予算に定める目的のほかに使用してはなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、予算総則で指定する経費の金額については、経済産業大臣の承認を受けな<wbr>ければ、それらの経費の間又は他の経費との間に相互流用し、又はこれに予備費を使用<wbr>することができない。</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、予算総則で指定する経費の金額については、経済産業大臣の承認を受けな<wbr>ければ、それらの経費の間又は他の経費との間に相互流用し、又はこれに予備費を使用<wbr>することができない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項の規定による予算の流用又は予備費の使用について経済産業大臣の承<wbr>認を受けようとするときは、流用又は使用の理由、金額及び積算の基礎を明らかにした<wbr>書類を経済産業大臣に提出しなければならない。</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、前項の規定による予算の流用又は予備費の使用について経済産業大臣の承<wbr>認を受けようとするときは、流用又は使用の理由、金額及び積算の基礎を明らかにした<wbr>書類を経済産業大臣に提出しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（支出予算の繰越し）</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">（支出予算の繰越し）</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第九条　機構は、支出予算の経費の金額のうち、当該事業年度内に支出決定を終わらな<wbr>かったものについて、予算の実施上必要があるときは、これを翌事業年度に繰り越して<wbr>使用することができる。ただし、予算総則で指定する経費の金額については、あらかじ<wbr>め経済産業大臣の承認を受けなければならない。</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">第九条　機構は、支出予算の経費の金額のうち、当該事業年度内に支出決定を終わらな<wbr>かったものについて、予算の実施上必要があるときは、これを翌事業年度に繰り越して<wbr>使用することができる。ただし、予算総則で指定する経費の金額については、あらかじ<wbr>め経済産業大臣の承認を受けなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、前項ただし書の規定による承認を受けようとするときは、当該事業年度末<wbr>までに、事項ごとに、繰越しを必要とする理由及び金額を明らかにした書類を経済産業<wbr>大臣に提出しなければならない。</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、前項ただし書の規定による承認を受けようとするときは、当該事業年度末<wbr>までに、事項ごとに、繰越しを必要とする理由及び金額を明らかにした書類を経済産業<wbr>大臣に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、第一項の規定による繰越しをしたときは、翌事業年度の五月三十一日まで<wbr>に、繰越計算書を経済産業大臣に提出しなければならない。</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">３　機構は、第一項の規定による繰越しをしたときは、翌事業年度の五月三十一日まで<wbr>に、繰越計算書を経済産業大臣に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">４　前項の繰越計算書は、支出予算と同一の区分により作成し、かつ、これに次の事項<wbr>を記載しなければならない。</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">４　前項の繰越計算書は、支出予算と同一の区分により作成し、かつ、これに次の事項<wbr>を記載しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">一　繰越しに係る経費の支出予算現額</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">一　繰越しに係る経費の支出予算現額</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">二　前号の支出予算現額のうち支出決定済額</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2">二　前号の支出予算現額のうち支出決定済額</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">三　第一号の支出予算現額のうち翌事業年度への繰越額</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">三　第一号の支出予算現額のうち翌事業年度への繰越額</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">四　第一号の支出予算現額のうち不用額</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">四　第一号の支出予算現額のうち不用額 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（事業計画）</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">（事業計画）</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第六十四条の事業計画には、次の事項に関する計画を記載しなければならな<wbr>い。</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">第十条　法第六十四条の事業計画には、次の事項に関する計画を記載しなければならな<wbr>い。</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">45</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　</span><span style="color: #000000; background-color: #efcb05; ">に規定する第一種特定放射性廃棄物に係る次の事項</span></code></td>
+<td class="ln">45</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">一　</span><span class="sf17b18">法第五十六条第一項第一号</span><span style="color: #000000; background-color: #efcb05; ">に規定する第一種特定放射性廃棄物に係る次の事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">イ　法第五十六条第一項第一号イに規定する概要調査地区等の選定に関する事項</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">イ　法第五十六条第一項第一号イに規定する概要調査地区等の選定に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第五十六条第一項第一号ロに規定する最終処分施設の建設及び改良、維持その他<wbr>の管理に関する事項</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第五十六条第一項第一号ロに規定する最終処分施設の建設及び改良、維持その他<wbr>の管理に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ハ　法第五十六条第一項第一号ハに規定する第一種特定放射性廃棄物の最終処分に関す<wbr>る事項</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ハ　法第五十六条第一項第一号ハに規定する第一種特定放射性廃棄物の最終処分に関す<wbr>る事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ニ　法第五十六条第一項第一号ニに規定する最終処分を終了した後の当該最終処分施設<wbr>の閉鎖及び閉鎖後の当該最終処分施設が所在した区域の管理に関する事項</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ニ　法第五十六条第一項第一号ニに規定する最終処分を終了した後の当該最終処分施設<wbr>の閉鎖及び閉鎖後の当該最終処分施設が所在した区域の管理に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">ホ　法第五十六条第一項第一号ホに規定する法第十一条第一項の拠出金の徴収に関する<wbr>事項</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2">ホ　法第五十六条第一項第一号ホに規定する法第十一条第一項の拠出金の徴収に関する<wbr>事項</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">51</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二　</span><span style="color: #000000; background-color: #efcb05; ">に規定する第二種特定放射性廃棄物に係る次の事項</span></code></td>
+<td class="ln">51</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">二　</span><span class="sf17b18">法第五十六条第一項第二号</span><span style="color: #000000; background-color: #efcb05; ">に規定する第二種特定放射性廃棄物に係る次の事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">イ　法第五十六条第一項第二号イに規定する概要調査地区等の選定に関する事項</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">イ　法第五十六条第一項第二号イに規定する概要調査地区等の選定に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第五十六条第一項第二号ロに規定する最終処分施設の建設及び改良、維持その他<wbr>の管理に関する事項</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">ロ　法第五十六条第一項第二号ロに規定する最終処分施設の建設及び改良、維持その他<wbr>の管理に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">ハ　法第五十六条第一項第二号ハに規定する第二種特定放射性廃棄物の最終処分に関す<wbr>る事項</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">ハ　法第五十六条第一項第二号ハに規定する第二種特定放射性廃棄物の最終処分に関す<wbr>る事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">ニ　法第五十六条第一項第二号ニに規定する最終処分を終了した後の当該最終処分施設<wbr>の閉鎖及び閉鎖後の当該最終処分施設が所在した区域の管理に関する事項</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">ニ　法第五十六条第一項第二号ニに規定する最終処分を終了した後の当該最終処分施設<wbr>の閉鎖及び閉鎖後の当該最終処分施設が所在した区域の管理に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">ホ　法第五十六条第一項第二号ホに規定する法第十一条の二第一項の拠出金の徴収に関<wbr>する事項</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">ホ　法第五十六条第一項第二号ホに規定する法第十一条の二第一項の拠出金の徴収に関<wbr>する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">三　法第五十六条第二項に規定する委託を受けて行う業務に関する事項</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">三　法第五十六条第二項に規定する委託を受けて行う業務に関する事項</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">四　その他必要な事項</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">四　その他必要な事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（資金計画）</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">（資金計画）</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第六十四条の資金計画には、次の事項に関する計画を記載しなければなら<wbr>ない。</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">第十一条　法第六十四条の資金計画には、次の事項に関する計画を記載しなければなら<wbr>ない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　資金調達の方法</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">一　資金調達の方法</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　資金の使途</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">二　資金の使途</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">三　その他必要な事項</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">三　その他必要な事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（予算、事業計画及び資金計画の認可の申請）</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">（予算、事業計画及び資金計画の認可の申請）</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第十二条　機構は、法第六十四条前段の認可を受けようとするときは、毎事業年度開始<wbr>前に（機構の成立の日の属する事業年度にあっては、成立後遅滞なく）、申請書に次に<wbr>掲げる書類を添えて経済産業大臣に提出しなければならない。</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">第十二条　機構は、法第六十四条前段の認可を受けようとするときは、毎事業年度開始<wbr>前に（機構の成立の日の属する事業年度にあっては、成立後遅滞なく）、申請書に次に<wbr>掲げる書類を添えて経済産業大臣に提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">一　前事業年度の予定貸借対照表及び予定損益計算書</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">一　前事業年度の予定貸借対照表及び予定損益計算書</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">二　当該事業年度の予定貸借対照表及び予定損益計算書</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">二　当該事業年度の予定貸借対照表及び予定損益計算書</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">三　その他当該予算、事業計画及び資金計画の参考となる書類</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">三　その他当該予算、事業計画及び資金計画の参考となる書類</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、法第六十四条後段の変更の認可を受けようとするときは、変更しようとす<wbr>る事項及びその理由を記載した申請書を経済産業大臣に提出しなければならない。この<wbr>場合において、変更が前項第二号又は第三号に掲げる書類の変更を伴うときは、当該変<wbr>更後の書類を添付しなければならない。</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、法第六十四条後段の変更の認可を受けようとするときは、変更しようとす<wbr>る事項及びその理由を記載した申請書を経済産業大臣に提出しなければならない。この<wbr>場合において、変更が前項第二号又は第三号に掲げる書類の変更を伴うときは、当該変<wbr>更後の書類を添付しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（収入支出等の報告）</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">（収入支出等の報告）</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第十三条　機構は、事業年度の各四半期ごとに、収入及び支出については合計残高試算<wbr>表により、第七条の規定により負担した債務については事項ごとに金額を明らかにした<wbr>報告書により、当該四半期経過後一月以内に経済産業大臣に報告しなければならない。<wbr></span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">第十三条　機構は、事業年度の各四半期ごとに、収入及び支出については合計残高試算<wbr>表により、第七条の規定により負担した債務については事項ごとに金額を明らかにした<wbr>報告書により、当該四半期経過後一月以内に経済産業大臣に報告しなければならない。<wbr> &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（事業報告書）</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">（事業報告書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法第六十五条第二項の事業報告書には、第十条の事業計画及び第十一条の資<wbr>金計画の実施の結果を記載しなければならない。</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">第十四条　法第六十五条第二項の事業報告書には、第十条の事業計画及び第十一条の資<wbr>金計画の実施の結果を記載しなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（決算報告書）</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">（決算報告書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第十五条　法第六十五条第二項の決算報告書は、収入支出決算書及び債務に関する計算<wbr>書とする。</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">第十五条　法第六十五条第二項の決算報告書は、収入支出決算書及び債務に関する計算<wbr>書とする。</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">２　前項の決算報告書には、第四条の規定により予算総則に規定した事項に係る予算の<wbr>実施の結果を示さなければならない。</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">２　前項の決算報告書には、第四条の規定により予算総則に規定した事項に係る予算の<wbr>実施の結果を示さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（収入支出決算書）</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">（収入支出決算書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第十六条　前条第一項の収入支出決算書は、収入支出予算と同一の区分により作成し、<wbr>かつ、これに次の事項を記載しなければならない。</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">第十六条　前条第一項の収入支出決算書は、収入支出予算と同一の区分により作成し、<wbr>かつ、これに次の事項を記載しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">一　収入</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">一　収入</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">イ　収入予算額</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">イ　収入予算額</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">ロ　収入決定済額</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">ロ　収入決定済額</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">ハ　収入予算額と収入決定済額との差額</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">ハ　収入予算額と収入決定済額との差額</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">二　支出</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">二　支出</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">イ　支出予算額</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">イ　支出予算額</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">ロ　前事業年度からの繰越額</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">ロ　前事業年度からの繰越額</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">ハ　予備費の使用の金額及びその理由</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">ハ　予備費の使用の金額及びその理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">ニ　流用の金額及びその理由</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">ニ　流用の金額及びその理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">ホ　支出予算現額</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">ホ　支出予算現額</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">ヘ　支出決定済額</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">ヘ　支出決定済額</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">ト　翌事業年度への繰越額</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">ト　翌事業年度への繰越額</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">チ　不用額</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">チ　不用額 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（債務に関する計算書）</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">（債務に関する計算書）</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第十七条　第十五条第一項の債務に関する計算書には、第七条の規定により負担した債<wbr>務の金額を事項ごとに示さなければならない。</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">第十七条　第十五条第一項の債務に関する計算書には、第七条の規定により負担した債<wbr>務の金額を事項ごとに示さなければならない。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（借入金の認可）</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">（借入金の認可）</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第十八条　機構は、法第六十七条第一項の規定により長期借入金若しくは短期借入金の<wbr>借入れの認可を受けようとするとき、又は同条第二項ただし書の規定により短期借入金<wbr>の借換えの認可を受けようとするときは、次の事項を記載した申請書を経済産業大臣に<wbr>提出しなければならない。</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">第十八条　機構は、法第六十七条第一項の規定により長期借入金若しくは短期借入金の<wbr>借入れの認可を受けようとするとき、又は同条第二項ただし書の規定により短期借入金<wbr>の借換えの認可を受けようとするときは、次の事項を記載した申請書を経済産業大臣に<wbr>提出しなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">一　借入を必要とする理由</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">一　借入を必要とする理由</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">二　借入金の額</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">二　借入金の額</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">三　借入先</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">三　借入先</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">四　借入金の利率</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">四　借入金の利率</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">五　借入金の償還の方法及び期限</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">五　借入金の償還の方法及び期限</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">六　利息の支払いの方法及び期限</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">六　利息の支払いの方法及び期限</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">七　その他必要な事項</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">七　その他必要な事項 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（会計規程）</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">（会計規程）</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第十九条　機構は、その財務及び会計に関し、会計規程を定めなければならない。</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">第十九条　機構は、その財務及び会計に関し、会計規程を定めなければならない。</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、前項の会計規程を定めようとするときは、経済産業大臣の承認を受けなけ<wbr>ればならない。これを変更しようとするときも、同様とする。</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">２　機構は、前項の会計規程を定めようとするときは、経済産業大臣の承認を受けなけ<wbr>ればならない。これを変更しようとするときも、同様とする。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">附　則　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、法附則第一条第二号に掲げる規定の施行の日（平成十二年九月一<wbr>日）から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、法附則第一条第二号に掲げる規定の施行の日（平成十二年九月一<wbr>日）から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行す<wbr>る。</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">一　第十条第一号ハ及びニ、同条第二号ハ及びニ並びに同条第三号（法第五十六条第二<wbr>項第一号に規定する委託を受けて行う業務に係る部分に限る。）の規定　法附則第一条<wbr>第三号に掲げる規定の施行の日</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2">一　第十条第一号ハ及びニ、同条第二号ハ及びニ並びに同条第三号（法第五十六条第二<wbr>項第一号に規定する委託を受けて行う業務に係る部分に限る。）の規定　法附則第一条<wbr>第三号に掲げる規定の施行の日</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">二　附則第二条の規定　平成十三年一月六日</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">二　附則第二条の規定　平成十三年一月六日 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年四月二八日経済産業省令第六三号）　抄</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一八年四月二八日経済産業省令第六三号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、会社法の施行の日（平成十八年五月一日）から施行する。</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、会社法の施行の日（平成十八年五月一日）から施行する。 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年一二月二五日経済産業省令第七七号）　抄</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">附　則　（平成一九年一二月二五日経済産業省令第七七号）　抄</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">（施行期日）</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特定放射性廃棄物の最終処分に関する法律等の一部を改正する法<wbr>律の施行の日（平成二十年四月一日）より施行する。</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">第一条　この省令は、特定放射性廃棄物の最終処分に関する法律等の一部を改正する法<wbr>律の施行の日（平成二十年四月一日）より施行する。 &nbsp;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
